@@ -1,0 +1,13 @@
+
+<body>
+    <form>
+        <fieldset>
+                <legend>Application Form</legend>
+                First Name:<input name="firstName" type="text" placeholder="Enter your first name" />
+                Last Name:<input name="lastName" type="text" placeholder="Enter your last name" />
+                Email Address:<input name="emailAddress" type="email" placeholder="Enter your email" />
+            
+        </fieldset>
+    </form>
+</body>
+</html>
