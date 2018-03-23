@@ -12,6 +12,8 @@ nav ul, footer ul {
 
 .container {
     background-color: #DFDCE3;
+    padding: 8px;
+    margin: 0;
 }
 
 nav > ul {margin: 0}
