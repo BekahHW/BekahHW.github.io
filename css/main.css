@@ -8,6 +8,18 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
+
+#title {
+    font-family: Montserrat, sans-serif;
+font-size: 24px;
+}
+
+#name {
+      font-family: 'Homemade Apple', cursive;
+  font-size: 24px
+}
+
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
