@@ -9,6 +9,10 @@ nav ul, footer ul {
     font-weight: bold;
 }
 
+header {
+    background-color: yellow;
+}
+
 #title {
     font-family: Montserrat, sans-serif;
 font-size: 24px;
