@@ -10,6 +10,10 @@ nav ul, footer ul {
  
 }
 
+.container {
+    background-color: #DFDCE3;
+}
+
 nav > ul {margin: 0}
 
 nav {
@@ -52,7 +56,6 @@ p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: black;
-    background-color: #DFDCE3;
 }
 
 footer {
