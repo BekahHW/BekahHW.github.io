@@ -1,7 +1,6 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: #DFDCE3;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -12,8 +11,7 @@ nav ul, footer ul {
 }
 
 nav > ul {margin: 0}
-/* TRYING TO DECREASE GAP BT NAV AND HEADER
- */
+
 nav {
     background-color: #0375B4;
     text-align: center;
@@ -54,11 +52,12 @@ p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: black;
+    background-color: #DFDCE3;
 }
 
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-size: 12px;
     background-color: #0375B4;
     text-align: center;
 }
