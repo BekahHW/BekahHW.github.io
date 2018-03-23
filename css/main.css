@@ -7,20 +7,26 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
+ 
+}
+
+nav {
+    background-color: gray;
 }
 
 header {
     background-color: yellow;
+    text-align: center;
 }
 
 #title {
     font-family: Montserrat, sans-serif;
-font-size: 24px;
+font-size: 50px;
 }
 
 #name {
       font-family: 'Homemade Apple', cursive;
-  font-size: 24px
+  font-size: 50px;
 }
 
 
@@ -42,7 +48,7 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: black;
 }
 footer {
     border-top: 1px solid #d5d5d5;
