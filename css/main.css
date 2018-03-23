@@ -20,7 +20,7 @@ nav ul, footer ul {
 nav > ul {margin: 0}
 
 nav {
-    background-color: #0375B4;
+/*     background-color: #0375B4; */
     text-align: center;
 }
 
@@ -57,6 +57,7 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    text-align: center;
 }
 
 p {
@@ -68,8 +69,9 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: 12px;
- background: linear-gradient(#0375B4, #007849);    
+ background: linear-gradient(#007849, #0375B4);    
     text-align: center;
+     display: flex;
     height: 100px;
 }
 
