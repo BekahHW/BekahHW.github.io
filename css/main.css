@@ -25,7 +25,7 @@ nav {
 }
 
 header {
-    background-color:#f7ef6a;
+   background: linear-gradient(#0375B4, #007849);
     text-align: center;
 }
 
@@ -68,8 +68,9 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: 12px;
-    background-color: #0375B4;
+ background: linear-gradient(#0375B4, #007849);    
     text-align: center;
+    height: 100px;
 }
 
 ul.posts { 
