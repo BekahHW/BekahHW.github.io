@@ -1,23 +1,24 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 100%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 8px;
-    margin: 0 auto;
-    list-style: none;
     font-weight: bold;
     color: white;
     width: 100%;
- 
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .container {
     background-color: white;
     padding: 8px;
     margin: 0;
-    height: 700 px;
+    height: 700px;
 }
 
 nav > ul {
@@ -49,10 +50,10 @@ font-size: 50px;
 }
 
 
-nav ul li, footer ul li {
+/* nav ul li, footer ul li {
     display: inline-block;
-/*     margin-right: 20px; */
-}
+/*     margin-right: 20px; }*/
+
 
 a {
     text-decoration: none;
@@ -77,9 +78,8 @@ p {
 
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: 12px;
+    font-size: 20px;
  background: black;    
-    text-align: center;
      display: flex;
     height: 100px;
     width: 100%
