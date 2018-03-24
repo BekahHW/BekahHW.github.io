@@ -16,8 +16,10 @@ nav ul, footer ul {
 
 .container {
     background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding: 8px;
-    margin: 0;
     height: 500px;
     width:70%;
 }
