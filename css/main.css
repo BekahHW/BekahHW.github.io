@@ -8,11 +8,12 @@ nav ul, footer ul {
     margin: 0;
     list-style: none;
     font-weight: bold;
+    color: white;
  
 }
 
 .container {
-    background-color: #6BBAA7;
+    background-color: white;
     padding: 8px;
     margin: 0;
 }
@@ -20,23 +21,25 @@ nav ul, footer ul {
 nav > ul {margin: 0}
 
 nav {
-/*     background-color: #0375B4; */
+ background-color:black;
     text-align: center;
 }
 
 header {
-   background: linear-gradient(#6C648B, #B6A19E);
+   background: black;
     text-align: center;
 }
 
 #title {
     font-family: Montserrat, sans-serif;
 font-size: 50px;
+    color: white;
 }
 
 #name {
       font-family: 'Homemade Apple', cursive;
   font-size: 50px;
+    color: white;
 }
 
 
@@ -69,7 +72,7 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: 12px;
- background: linear-gradient(#B6A19E, #6C648B);    
+ background: black;    
     text-align: center;
      display: flex;
     height: 100px;
