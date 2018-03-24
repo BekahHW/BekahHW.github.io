@@ -1,10 +1,10 @@
 body {
-    margin: 60px auto;
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: bold;
     color: white;
     width: 100%;
   list-style: none;
@@ -18,11 +18,13 @@ nav ul, footer ul {
     background-color: white;
     padding: 8px;
     margin: 0;
-    height: 700px;
+    height: 500px;
+    width:70%;
 }
 
 nav > ul {
     margin: 0;
+    font-weight: bold;
 }
 
 nav {
