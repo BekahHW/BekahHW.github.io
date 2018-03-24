@@ -86,7 +86,8 @@ footer {
  background: black;    
      display: flex;
     height: 100px;
-    width: 100%
+    width: 100%;
+    position: absolute;
 }
 
 ul.posts { 
