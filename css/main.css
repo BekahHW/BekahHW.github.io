@@ -3,6 +3,11 @@ body {
     padding: 0;
     width: 100%;
 }
+
+.blurb{
+    height: 500px;
+}
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: white;
@@ -20,7 +25,6 @@ nav ul, footer ul {
     margin-left: auto;
     margin-right: auto;
     padding: 8px;
-    height: 500px;
     width:70%;
 }
 
