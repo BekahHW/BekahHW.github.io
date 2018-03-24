@@ -12,7 +12,7 @@ nav ul, footer ul {
 }
 
 .container {
-    background-color: #DFDCE3;
+    background-color: #6BBAA7;
     padding: 8px;
     margin: 0;
 }
@@ -25,7 +25,7 @@ nav {
 }
 
 header {
-   background: linear-gradient(#0375B4, #007849);
+   background: linear-gradient(#6C648B, #B6A19E);
     text-align: center;
 }
 
@@ -69,7 +69,7 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: 12px;
- background: linear-gradient(#007849, #0375B4);    
+ background: linear-gradient(#B6A19E, #6C648B);    
     text-align: center;
      display: flex;
     height: 100px;
