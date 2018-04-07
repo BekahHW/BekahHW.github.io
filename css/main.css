@@ -43,6 +43,8 @@ header {
    background: black;
     text-align: center;
     width: 100%;
+    background-image: url('https://picsum.photos/g/200/300?image=399');
+   background-repeat: no-repeat;
 }
 
 #title {
