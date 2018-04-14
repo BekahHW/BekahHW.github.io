@@ -1,4 +1,4 @@
-If one of your goals isn’t to help someone, you’re doing it wrong
+
 I’ve been incredibly fortunate to find an amazing community of people cheering me on as I learn to code. I haven’t had to face discrimination in the workplace, people demeaning my abilities because I’m a woman, or implicit sexism. But I also code from my home and find my support system through hashtags. I’ve heard the stories of workplace problems and palpably uncomfortable working situations. And I’ve heard people say, what do you want me to do about it? I wasn’t the one instigating the actions. To those people, here’s what I want you to do:
 
 <h1> Be Nice to Someone</h1>
