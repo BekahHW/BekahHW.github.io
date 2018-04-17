@@ -48,6 +48,11 @@ header {
    background-repeat: no-repeat; */
 }
 
+#Bek {
+  border-radius: 50%;
+  margin: auto;
+}
+
 #title {
     font-family: Montserrat, sans-serif;
 font-size: 50px;
