@@ -6,6 +6,7 @@ body {
 
 .blurb{
     height: 400px;
+    font-family: 'Exo 2', sans-serif;
 }
 
 nav ul, footer ul {
@@ -26,7 +27,7 @@ nav ul, footer ul {
     margin-right: auto;
     padding: 8px;
     width:70%;
-    font-family: 'Exo 2', sans-serif;
+
 }
 
 nav > ul {
