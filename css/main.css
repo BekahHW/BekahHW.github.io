@@ -53,7 +53,7 @@ header {
 font-size: 50px;
     color: white;
 }
-
+l
 #name {
       font-family: 'Homemade Apple', cursive;
   font-size: 50px;
@@ -85,15 +85,15 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: 20px;
- background: black;    
+ background: black;
      display: flex;
     height: 100px;
     width: 100%;
     position: fixed;bottom:0;left:0;right:0;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 20px;
     height: 400px;
 }
