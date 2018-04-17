@@ -6,6 +6,7 @@ My code is sometimes disastrous. I’m not sure what I’m doing, I’m just sor
 ## Leave some love notes
 <p>Another good coding practice is to comment out your code. Even with my dirty code, I would have had some idea of what I was trying to do if there were comments. I would love to go back through projects I’ve worked on and see what I was thinking. Not only does this help with communication among developers, but for newbie coders like me, it can help us to track our progress. (For newbs who want to know more about commenting out code, [this is a pretty good resource](https://medium.freecodecamp.org/code-comments-the-good-the-bad-and-the-ugly-be9cc65fbf83).)
 
+
 ## Put some lipstick on it
 
 You should always polish your work. That means taking some time to go back and clean it up, test it out, and even proofread the copy. Last week, I posted a blog that I was really excited about. In the preview mode, everything looked good. Apparently, that was not the case, and I had screwed up the link formatting--still not sure how I overlooked that. I thought I had my lipstick on properly, but really I was wearing it on my teeth. Your code should be readable, in good form, and produce the desired results on the screen.
