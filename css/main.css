@@ -26,6 +26,7 @@ nav ul, footer ul {
     margin-right: auto;
     padding: 8px;
     width:70%;
+    font-family: 'Exo 2', sans-serif;
 }
 
 nav > ul {
@@ -47,6 +48,7 @@ header {
     background-size: cover;
    background-repeat: no-repeat; */
 }
+
 
 #Bek {
   border-radius: 50%;
