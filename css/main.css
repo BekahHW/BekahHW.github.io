@@ -69,6 +69,7 @@ font-size: 50px;
 }
 
 
+
 a {
     text-decoration: none;
     color: #999;
@@ -76,6 +77,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+h2, h3, h4 {
+  font-family: 'Exo 2', sans-serif;
 }
 
 h1 {
