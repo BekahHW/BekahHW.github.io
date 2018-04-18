@@ -4,6 +4,21 @@ body {
     width: 100%;
 }
 
+/* .backgroundimg {
+   background: no-repeat center/100% url("https://www.pexels.com/collections/birds-nu6l8s0/");
+  /* https://picsum.photos/g/200/300?image=399 */
+  /* width: 100%;
+  height: auto; */
+
+}
+/* body background {
+    width: 100%;
+    height: auto;
+    img: no-repeat;
+
+
+} */
+
 .blurb{
     /* height: 400px; */
     font-family: 'Exo 2', sans-serif;
@@ -26,7 +41,7 @@ nav ul, footer ul {
     margin-left: auto;
     margin-right: auto;
     padding: 8px;
-    width:70%;
+    width:80%;
 
 }
 
@@ -39,6 +54,8 @@ nav {
  background-color:black;
     text-align: center;
     width: 100%;
+    padding: 16px;
+    margin-top: 16px;
 }
 
 header {
@@ -64,13 +81,13 @@ header {
 #title {
     font-family: Montserrat, sans-serif;
 font-size: 50px;
-    color: white;
+    color: black;
 }
 
 #name {
       font-family: 'Homemade Apple', cursive;
   font-size: 50px;
-    color: white;
+    color: black;
 }
 
 .notebody, .noteinfo {
@@ -124,4 +141,44 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+/* playing with column */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.col30 {
+  width: 30%;
+  display: flex;
+}
+
+.col70{
+  width: 70%;
+}
+
+.vertical-align {
+  align-items: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }

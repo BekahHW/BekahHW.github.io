@@ -3,18 +3,30 @@ layout: default
 title: Bekah Hawrot Weigel
 ---
 
-<div class="blurb">
-<h1>Hi there, I'm Bekah Hawrot Weigel!</h1>
-<p>I'm making this crazy journey into coding and hopefully helping some people along the way.  <a href="/about">Read more about me.</a></p>
-</div>
+<div class="row">
+<div class="column col30">
+	<div class="vertical-align">
+		<div id="title">Life + Code</div>
+		<div id="name">with Bekah</div>
+	</div>
 
-<div class="blog excerpt">
-	<h1>Recent Blog Posts</h1>
-	{% for post in site.posts limit:1 %}
-	<div>
-
-      <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-      {{ post.excerpt }}
 </div>
-  {% endfor %}
+<div class="column col70" >
+	<div class="blurb">
+		<h1>Hi there, I'm Bekah Hawrot Weigel!</h1>
+		<p>I'm making this crazy journey into coding and hopefully helping some people along the way.  <a href="/about">Read more about me.</a></p>
+		<hr/>
+	</div>
+	<div class="blog excerpt">
+		<h1>Recent Blog Posts</h1>
+		{% for post in site.posts limit:1 %}
+		<div>
+
+	      <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+	      {{ post.excerpt }}
+	</div>
+	  {% endfor %}
+	</div>
+	</div>
+
 </div>
