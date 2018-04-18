@@ -8,11 +8,12 @@ title: Bekah Hawrot Weigel
 <p>I'm making this crazy journey into coding and hopefully helping some people along the way.  <a href="/about">Read more about me.</a></p>
 </div>
 
-<ul>
+<div class="blob excerpt">
+	<h1>Recent Blog Posts</h1>
+	<div>
   {% for post in site.posts %}
-    <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       {{ post.excerpt }}
-    </li>
+</div>
   {% endfor %}
-</ul>
+</div>
