@@ -50,6 +50,11 @@ header {
    background-repeat: no-repeat; */
 }
 
+.title, .date {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+}
+
 
 #Bek {
   border-radius: 50%;
