@@ -6,5 +6,27 @@ title: Bekah Hawrot Weigel
 <div class="blurb">
 <h1>Hi there, I'm Bekah Hawrot Weigel!</h1>
 <p>I'm making this crazy journey into coding and hopefully helping some people along the way.  <a href="/about">Read more about me.</a></p>
-</div><!-- /.blurb -->
-		
+</div>
+
+<div class="posts">
+    {% for post in paginator.posts %}
+    <div class="post-teaser">
+      <header>
+        <h1>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+        </h1>
+        <p class="meta">
+          {{ post.date | date: "%B %-d, %Y" }}
+        </p>
+      </header>
+      <div class="excerpt">
+        {{ post.excerpt }}
+        <a class="button" href="{{ post.url | relative_url }}">
+          {{ site.theme_settings.str_continue_reading }}
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
