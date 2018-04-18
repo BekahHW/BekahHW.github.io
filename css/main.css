@@ -68,6 +68,10 @@ font-size: 50px;
     color: white;
 }
 
+.notebody, noteinfo {
+  font-family: 'Quicksand', sans-serif;
+
+}
 
 
 a {
