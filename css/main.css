@@ -110,10 +110,10 @@ footer {
     font-size: 20px;
  background: black;
      display: flex;
-    height: 100px;
     width: 100%;
     position: fixed;bottom:0;left:0;right:0;
     padding: 16px;
+    margin-top: 16px;
 }
 
 ul.posts {
