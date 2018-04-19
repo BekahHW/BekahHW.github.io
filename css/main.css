@@ -96,6 +96,7 @@ font-size: 50px;
 
 
 .circle {
+
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -179,6 +180,7 @@ hr {
 }
 
 .col30 {
+  padding: 50px 0;
   width: 30%;
   display: flex;
 }
