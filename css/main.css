@@ -90,20 +90,23 @@ font-size: 50px;
     color: black;
 } */
 
+
+
+
+
+
 .circle {
-  width: 150px;
-  height: 1500px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
-  line-height: 150px;
+  line-height: 250px;
   text-align: center;
   background: #000;
   font-family: Montserrat, sans-serif;
-font-size: 50px;
     color: white;
 }
-
 
 
 
