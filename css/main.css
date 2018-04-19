@@ -91,12 +91,12 @@ font-size: 50px;
 } */
 
 .circle {
-  width: 20px;
-  height: 200px;
+  width: 150px;
+  height: 1500px;
   border-radius: 50%;
   font-size: 50px;
   color: #fff;
-  line-height: 200px;
+  line-height: 150px;
   text-align: center;
   background: #000;
   font-family: Montserrat, sans-serif;
