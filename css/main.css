@@ -78,7 +78,7 @@ header {
   margin: auto;
 }
 
-#title {
+/* #title {
     font-family: Montserrat, sans-serif;
 font-size: 50px;
     color: black;
@@ -88,7 +88,25 @@ font-size: 50px;
       font-family: 'Homemade Apple', cursive;
   font-size: 50px;
     color: black;
+} */
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 300px;
+  text-align: center;
+  background: #000;
+  font-family: Montserrat, sans-serif;
+font-size: 50px;
+    color: white;
 }
+
+
+
+
 
 .notebody, .noteinfo {
   font-family: 'Quicksand', sans-serif;
