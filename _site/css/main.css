@@ -225,6 +225,12 @@ hr {
   /* Decrease this padding for small screens */
 }
 
+@media screen and (max-width: 600px) {
+  .excerpt {
+    padding: 0;
+  }
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
