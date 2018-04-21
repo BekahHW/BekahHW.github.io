@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Don't Forget the Lipstick: A couple best practices for new coders"
+date: 2018-04-17
+---
 I have a very disorganized 148 page google doc of notes I’ve taken from all the online resources I’ve used for HTML, CSS, JS, and ethereum. They don’t look pretty. In fact, they’re messier than my living room. One day I’ll get around to organizing and cleaning them up, but that might be when I don’t need them any more. For now the Command F key, keeps everything where it needs to be. But just because my coding notes are a mess, doesn’t mean my code should be a mess. In fact, I wish I would’ve taken the time to get my code ready to date as I was doing tutorials. Here’s what that means:
 
 ## Write clean code, make friends
