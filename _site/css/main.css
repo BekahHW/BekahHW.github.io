@@ -130,7 +130,11 @@ font-size: 50px;
 }
 
 
-
+.notes
+{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 
 .notebody, .noteinfo {
   font-family: 'Quicksand', sans-serif;
