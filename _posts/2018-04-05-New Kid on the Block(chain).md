@@ -2,6 +2,7 @@
 layout: post
 title: "New Kid on the Block(chain)"
 date: 2018-04-05
+category: blockchain
 ---
 
 Yep, I love puns. I probably love them more than I love coding, but that’s because I’ve spent my last ten years as an adjunct English instructor. Actually, I think that I really enjoyed learning some Solidity because of that background. Over the past couple of weeks, I’ve jumped from JavaScript to learning more about Crypto, specifically Ethereum and Solidity.
