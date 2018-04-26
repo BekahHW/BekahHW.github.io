@@ -3,6 +3,7 @@ body {
     padding: 0;
     width: 100%;
     background-color: #f7f7f7;
+    min-height: 100vh;
 }
 
 /* .backgroundimg {
@@ -45,7 +46,7 @@ nav ul, footer ul {
 }
 
 .container {
-    background-color: white;
+  background-color: #f7f7f7;
         padding: 25px;
     /* display: block;
     margin-left: auto;
