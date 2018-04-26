@@ -3,6 +3,7 @@ body {
     padding: 0;
     width: 100%;
     background-color: #f7f7f7;
+    min-height: 100vh;
 }
 
 /* .backgroundimg {
@@ -150,7 +151,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-    box-shadow:  0px 12px 16px 0px rgba(0, 0, 255, .2);
 }
 
 h2, h3, h4 {
@@ -160,11 +160,10 @@ h2, h3, h4 {
 h1 {
     font-size: 48px;
     font-family: 'Quicksand', sans-serif;
-    color: #353535;
 }
 
 p {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.5;
     color: black;
     font-family: 'Exo 2', sans-serif;
@@ -213,7 +212,7 @@ hr {
   padding: 50px 0;
   width: 30%;
   display: flex;
-  /* background-color: #f7f7f7 */
+  background-color: #f7f7f7
 }
 
 .sidebar-content {
@@ -224,7 +223,7 @@ hr {
   width: 70%;
   padding-top: 21px;
   padding-bottom: 24px;
-  /* background-color: #f7f7f7; */
+  background-color: #f7f7f7;
 }
 
 .home_recent{
