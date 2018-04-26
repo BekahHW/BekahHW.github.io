@@ -151,6 +151,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+
 }
 
 h2, h3, h4 {
@@ -184,10 +185,14 @@ ul.posts {
     margin: 20px auto 40px;
     font-size: 20px;
     height: 400px;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 ul.posts li {
     list-style: none;
+    font-family: 'Quicksand', sans-serif;
+
 }
 /* playing with column */
 hr {
