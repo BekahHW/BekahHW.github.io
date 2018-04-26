@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    background-color: #f7f7f7;
 }
 
 /* .backgroundimg {
@@ -44,7 +45,7 @@ nav ul, footer ul {
 }
 
 .container {
-    background-color: white;
+  background-color: #f7f7f7;
         padding: 25px;
     /* display: block;
     margin-left: auto;
@@ -64,7 +65,7 @@ nav ul, footer ul {
 } */
 
 nav {
- background-color:black;
+ background-color:#353535;
  /* background-color: rgba(0, 0, 0, 0.8); */
 
     text-align: center;
@@ -78,7 +79,7 @@ nav {
 
 header {
 
-   background: black;
+   background: #353535;
     text-align: center;
     width: 100%;
 /*     background-image: url('https://picsum.photos/g/200/300?image=399');
@@ -120,10 +121,10 @@ font-size: 50px;
   height: 200px;
   border-radius: 50%;
   font-size: 35px;
-  color: #fff;
+  color: #353535;
   line-height: 200px;
   text-align: center;
-  background: #000;
+  background: #353535;
   font-family: Montserrat, sans-serif;
     color: white;
     margin: 0 auto;
@@ -149,6 +150,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    box-shadow:  0px 12px 16px 0px rgba(0, 0, 255, .2);
 }
 
 h2, h3, h4 {
@@ -158,10 +160,11 @@ h2, h3, h4 {
 h1 {
     font-size: 48px;
     font-family: 'Quicksand', sans-serif;
+    color: #353535;
 }
 
 p {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.5;
     color: black;
     font-family: 'Exo 2', sans-serif;
@@ -170,7 +173,7 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: 20px;
- background: black;
+ background: #353535;
      display: flex;
     width: 100%;
     position: fixed;bottom:0;left:0;right:0;
@@ -182,10 +185,14 @@ ul.posts {
     margin: 20px auto 40px;
     font-size: 20px;
     height: 400px;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 ul.posts li {
     list-style: none;
+    font-family: 'Quicksand', sans-serif;
+
 }
 /* playing with column */
 hr {
@@ -206,6 +213,7 @@ hr {
   padding: 50px 0;
   width: 30%;
   display: flex;
+  /* background-color: #f7f7f7 */
 }
 
 .sidebar-content {
@@ -216,6 +224,7 @@ hr {
   width: 70%;
   padding-top: 21px;
   padding-bottom: 24px;
+  /* background-color: #f7f7f7; */
 }
 
 .home_recent{
