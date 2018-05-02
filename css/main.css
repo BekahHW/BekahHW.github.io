@@ -146,11 +146,11 @@ font-size: 50px;
 
 a {
     text-decoration: none;
-    color: #999;
+    color: white;
 }
 
 a:hover {
-    text-decoration: underline;
+     text-shadow: 8px 8px 10px #d15fee;
 
 }
 
