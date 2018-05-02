@@ -154,6 +154,10 @@ a:hover {
 
 }
 
+a .nav {
+  text-color: gray;
+}
+
 h2, h3, h4 {
   font-family: 'Exo 2', sans-serif;
 }
