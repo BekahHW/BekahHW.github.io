@@ -32,7 +32,7 @@ text-align: center
 font-weight: bold;
 }
 
-nav ul, footer ul {
+footer ul {
     color: white;
     width: 100%;
   list-style: none;
@@ -43,6 +43,18 @@ nav ul, footer ul {
   font-family: 'Exo 2', sans-serif;
   font-weight: bold;
 
+}
+
+nav ul {
+  color: black;
+  width: 100%;
+list-style: none;
+margin: 0 2px;
+padding: 0;
+display: flex;
+justify-content: space-around;
+font-family: 'Exo 2', sans-serif;
+font-weight: bold;
 }
 
 .container {
@@ -66,12 +78,12 @@ nav ul, footer ul {
 } */
 
 nav {
- background-color:#353535;
+ /* background-color:#353535; */
  /* background-color: rgba(0, 0, 0, 0.8); */
 
     text-align: center;
     width: 100%;
-    padding: 16px;
+    padding-top: 16px;
     margin-bottom: 16px;
     position: fixed;
 
@@ -79,8 +91,7 @@ nav {
 }
 
 header {
-
-   background: #353535;
+   /* background: #353535; */
     text-align: center;
     width: 100%;
 /*     background-image: url('https://picsum.photos/g/200/300?image=399');
@@ -99,22 +110,6 @@ header {
   margin: auto;
 }
 
-/* #title {
-    font-family: Montserrat, sans-serif;
-font-size: 50px;
-    color: black;
-}
-
-#name {
-      font-family: 'Homemade Apple', cursive;
-  font-size: 50px;
-    color: black;
-} */
-
-
-
-
-
 
 .circle {
 
@@ -122,10 +117,10 @@ font-size: 50px;
   height: 200px;
   border-radius: 50%;
   font-size: 35px;
-  color: #353535;
+  color: black;
   line-height: 200px;
   text-align: center;
-  background: #353535;
+  background: black;
   font-family: Montserrat, sans-serif;
     color: white;
     margin: 0 auto;
@@ -152,7 +147,7 @@ div.circle:hover {
 
 a {
     text-decoration: none;
-    color: gray;
+    color: black;
 }
 
 a:hover {
@@ -160,9 +155,13 @@ a:hover {
 
 }
 
-.nav {
-color: white;
+.topline {
+  margin-top: 20px;
 }
+
+/* .nav {
+color: white;
+} */
 
 h2, h3, h4 {
   font-family: 'Exo 2', sans-serif;
@@ -220,7 +219,8 @@ hr {
 }
 
 .col30 {
-  padding: 50px 0;
+  padding-bottom: 10px;
+  padding-top: 60px;
   width: 30%;
   display: flex;
   background-color: #f7f7f7
@@ -253,6 +253,35 @@ hr {
   .excerpt {
     padding: 0;
   }
+  .col70{
+    padding-top:5px;
+  }
+  h1 {
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+nav {
+    text-align: center;
+    width: 100%;
+    padding-top: 16px;
+    position: relative;
+}
+.col30 {
+    /* padding-bottom: 10px; */
+    /* padding-top: 60px; */
+    width: 30%;
+    display: flex;
+    background-color: #f7f7f7;
+    padding-top: 5px;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    margin-bottom: 0px;
 }
 
 /* Clear floats after the columns */
