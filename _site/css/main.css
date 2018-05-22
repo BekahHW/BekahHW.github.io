@@ -131,6 +131,12 @@ font-size: 50px;
     margin: 0 auto;
 }
 
+div.circle:hover {
+  background: #874c96;
+  color: #874c96;
+  font-family:Montserrat, sans-serif;
+    color: black;
+}
 
 .notes
 {
