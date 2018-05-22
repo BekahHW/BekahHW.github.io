@@ -4,7 +4,6 @@ title: "An Introvert Coder's Guide to Networking through Social Media"
 date: 2018-05-18
 ---
 
-How Social Media affected my coding
 I’m an awkward INTJ. If you don't know what that means, I love this description from [16 Personalities](https://www.16personalities.com/intj-personality):
 >_INTJs are brilliant and confident in bodies of knowledge they have taken the time to understand, but unfortunately the social contract is unlikely to be one of those subjects. White lies and small talk are hard enough as it is for a type that craves truth and depth, but INTJs may go so far as to see many social conventions as downright stupid...INTJs are defined by their tendency to move through life as though it were a giant chess board, pieces constantly shifting with consideration and intelligence, always assessing new tactics, strategies and contingency plans, constantly outmaneuvering their peers in order to maintain control of a situation while maximizing their freedom to move about_.
 
