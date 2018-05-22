@@ -85,7 +85,7 @@ nav {
     width: 100%;
     padding-top: 16px;
     margin-bottom: 16px;
-    position: fixed;
+    position: relative;
 
 
 }
