@@ -27,6 +27,15 @@ body {
     margin: 10px;
 }
 
+.about {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.Mothercoder {
+  text-align: center;
+}
+
 .hey {
 text-align: center
 font-weight: bold;
