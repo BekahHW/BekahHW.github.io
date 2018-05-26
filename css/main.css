@@ -136,10 +136,9 @@ header {
 }
 
 div.circle:hover {
-  background: #874c96;
-  color: #874c96;
+  background: radial-gradient(violet, purple, indigo, blue);
   font-family:Montserrat, sans-serif;
-    color: black;
+    color: white;
 }
 
 .notes
