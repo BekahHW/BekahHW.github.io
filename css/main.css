@@ -164,7 +164,7 @@ div.circle:hover {
 
 a {
     text-decoration: none;
-    color: black;
+    color: gray;
 }
 
 a:hover {
@@ -193,7 +193,7 @@ p {
     font-size: 18px;
     line-height: 1.5;
     color: black;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Gudea', sans-serif;
 }
 
 footer {
