@@ -32,8 +32,8 @@ body {
 }
 
 .about {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
 }
 
 .Mothercoder {
@@ -116,12 +116,14 @@ header {
 .title {
   font-family: 'Work Sans', sans-serif;
   font-size: 24px;
+  text-align:center;
 }
 
 .date {
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
-  color: gray
+  color: gray;
+  margin-left: 12.5%;
 }
 
 #Bek {
@@ -159,6 +161,8 @@ div.circle:hover {
 
 .notebody, .noteinfo {
   font-family: 'Quicksand', sans-serif;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
 
 }
 
@@ -274,7 +278,9 @@ hr {
 
 @media screen and (max-width: 600px) {
   .excerpt {
-    padding: 0;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right:2%;
   }
   .col70{
     padding-top:5px;
