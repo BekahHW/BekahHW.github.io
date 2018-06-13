@@ -170,11 +170,11 @@ div.circle:hover {
 
 a {
     text-decoration: none;
-    color: black;
+    color: gray;
 }
 
 a:hover {
-     text-shadow: 8px 8px 10px #d15fee;
+     text-shadow: 8px 8px 10px #99b2db;
 
 }
 
