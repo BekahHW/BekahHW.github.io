@@ -3,11 +3,6 @@ layout: post
 title: "The Coder's Journey: Act II"
 date: 2018-06-14
 ---
----
-layout: post
-Title:
-Date: 2016-06-14
----
 
 If you read my last post, you know I’ve made it a little further in my coder’s quest. This post, I’m switching it up a bit from Joseph Campbell to Chris Vogler, who’s 2007 take on the [Hero’s Journey](https://en.wikipedia.org/wiki/Hero%27s_journey), [The Writer’s Journey](https://en.wikipedia.org/wiki/The_Writer%27s_Journey:_Mythic_Structure_for_Writers), inspired nearly all of my writing. When we last met our hero, she had just composed her first bit of code and couldn’t turn back. She. Was. Hooked. But now in the heart of the challenge of coding, where would she go? How would she do? This is the second act of our hero’s journey.
 
