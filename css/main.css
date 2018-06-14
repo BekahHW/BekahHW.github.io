@@ -160,6 +160,8 @@ div.circle:hover {
 {
   padding-top: 16px;
   padding-bottom: 16px;
+  background-color: white;
+  height: 76vh;
 }
 
 .notebody, .noteinfo {
@@ -288,7 +290,7 @@ hr {
 
 @media screen and (max-width: 600px) {
   .excerpt {
-    padding-bottom: 5%;
+    padding-bottom: 15%;
     padding-left: 2%;
     padding-right:2%;
   }
