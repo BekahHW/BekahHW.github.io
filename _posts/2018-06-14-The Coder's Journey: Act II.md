@@ -1,6 +1,11 @@
 ---
 layout: post
-Title: “The Coder’s Journey: Act II”
+title: "The Coder's Journey: Act II"
+date: 2018-06-14
+---
+---
+layout: post
+Title:
 Date: 2016-06-14
 ---
 
