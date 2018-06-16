@@ -160,7 +160,7 @@ div.circle:hover {
 {
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: white;
+  /* background-color: white; */
   height: 76vh;
 }
 
@@ -226,7 +226,7 @@ footer {
 ul.posts {
     margin: 20px auto 40px;
     font-size: 20px;
-    height: 400px;
+    height: 100%;
     font-family: 'Quicksand', sans-serif;
 
 }
