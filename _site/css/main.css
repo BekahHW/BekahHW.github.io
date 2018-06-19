@@ -160,12 +160,15 @@ div.circle:hover {
 {
   padding-top: 16px;
   padding-bottom: 16px;
+  /* background-color: white; */
+  height: 76vh;
 }
 
 .notebody, .noteinfo {
   font-family: 'Quicksand', sans-serif;
   padding-left: 12.5%;
   padding-right: 12.5%;
+  padding-bottom: 12.5%;
 
 }
 
@@ -223,7 +226,7 @@ footer {
 ul.posts {
     margin: 20px auto 40px;
     font-size: 20px;
-    height: 400px;
+    height: 100%;
     font-family: 'Quicksand', sans-serif;
 
 }
@@ -255,7 +258,7 @@ hr {
   width: 30%;
   display: flex;
   background-color: white;
-  height: 72vh;
+  height: 76vh;
 }
 
 .sidebar-content {
@@ -288,7 +291,7 @@ hr {
 
 @media screen and (max-width: 600px) {
   .excerpt {
-    padding-bottom: 5%;
+    padding-bottom: 15%;
     padding-left: 2%;
     padding-right:2%;
   }
