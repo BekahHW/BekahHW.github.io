@@ -14,18 +14,17 @@ The easiest way to tell if you're looking at a global variable is if the variabl
 ### Local
 Local variables either begin with a lower case letter or an underscore. They can only be used within the method or loop in which they're found. Local variables, then, are defined by scope. With every new scope, local variables change. A more common way to see a local variable is as passed as a parameter for a method. In the example below, "count" is treated as a local variable.
 
-``` def times_kids_ask_for_snacks(count)
-      if count <=10
-        count +=1
-        puts "Mom is happy."
-      elsif count > 10 && count < 20
-        puts "Mom is annoyed."
-        else
-        puts "NO!"
-      end
+```
+def times_kids_ask_for_snacks(count)
+    if count <=10
+      count +=1
+      puts "Mom is happy."
+    elsif count > 10 && count < 20
+      puts "Mom is annoyed."
+      else
+      puts "NO!"
     end
-
-   times_kids_ask_for_snacks(31)
+  end
       ```
 
 ### Instance
