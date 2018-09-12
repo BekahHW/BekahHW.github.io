@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Breaking Down Ruby Variable Scope"
-date: 2018-11-09
+date: 2018-09-12
 ---
 
 I'm building my way up to a personal project. But before I approach the project, I want to reinforce basic knowledge by going over what I've learned about Ruby and SQL so I can do what I want. For me, the basics start with the different types of variables used in Ruby. Although I'm primarily using local variables, it doesn't make sense to move forward without knowing what other types of variables are out there.
