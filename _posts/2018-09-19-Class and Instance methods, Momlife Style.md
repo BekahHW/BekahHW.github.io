@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Class and Instance methods, Momlife Style"
-date: 2018-09-29
+date: 2018-09-19
 ---
 Once you understand variables, you're ready to dive into classes and objects. A class, in simple terms, is like a blueprint for objects. I like to think of it as an overall storage center for things of a same type. For example, I'm working on a program for my moms group where I need information about moms and student helpers. It might make sense for me to have a mom class in order to organize all of the instances of moms and a student class to organize my instances of students. An instance is a particular occurrence of an object. Within each class, I'll have instances of moms, which is really information about one particular mom. So instance = specific.
 
