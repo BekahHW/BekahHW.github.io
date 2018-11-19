@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2018-11-19
-title: Let's do some chores: A Sinatra Project
+title: "Let's do some chores: A Sinatra Project"
 ---
 
 For years, when I was teaching college English, I would give students an assignment that had general guidelines and expectations, but they would need to come up with a topic. There were always tears. How could I expect them to come up with their own topic?! It wasn’t fair! Now that I was a student again, I was facing that blank screen, wondering how on earth I would come up with a topic. I was given the general guidelines to create a CRUD, MVC app using Sinatra, and t should track something that’s important to me.
