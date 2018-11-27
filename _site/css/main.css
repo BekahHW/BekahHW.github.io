@@ -10,6 +10,7 @@ body {
     position: relative;
     text-align: center;
     color: white;
+    padding-top: 0;
 }
 
 
@@ -99,7 +100,7 @@ nav {
     text-align: center;
     width: 100%;
     padding-top: 16px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     position: relative;
     background-color: floralwhite;
 
@@ -110,17 +111,38 @@ header {
     text-align: center;
     width: 100%;
     background-color: white;
+    padding-bottom: 0;
 
 /*     background-image: url('https://picsum.photos/g/200/300?image=399');
     background-size: cover;
    background-repeat: no-repeat; */
 }
 
-#headline {
+#headline_name {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'homemade apple', cursive;
+    font-size: 3em;
+}
+
+#line {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+
+#headline {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'homemade apple', cursive;
+    font-size: 3em;
 }
 
 /* {
