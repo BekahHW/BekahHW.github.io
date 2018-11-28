@@ -11,8 +11,18 @@ body {
     text-align: center;
     color: white;
     padding-top: 0;
+    width: 100%;
 }
 
+.header_img {
+  height: 30%;
+  width: 100%;
+}
+
+.header {
+  height: 30%;
+  width: 100%;
+}
 
 /* .backgroundimg {
    background: no-repeat center/100% url("https://www.pexels.com/collections/birds-nu6l8s0/");
@@ -68,16 +78,16 @@ footer ul {
 }
 
 nav ul {
-  color: black;
-  width: 100%;
+  color: grey;
+  /* width: 100%; */
 list-style: none;
 margin: 0 2px;
-padding: 0;
+padding: 3px;
 display: flex;
 justify-content: space-around;
 font-family: 'Gudea', sans-serif;
 font-weight: bold;
-    background-color: floralwhite;
+    background-color: white;
     font-size: 1.5em;
 }
 
@@ -102,8 +112,7 @@ nav {
     padding-top: 16px;
     /* margin-bottom: 16px; */
     position: relative;
-    background-color: floralwhite;
-
+    background-color: white;
 }
 
 header {
@@ -123,7 +132,7 @@ header {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'homemade apple', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 3em;
 }
 
@@ -141,8 +150,8 @@ header {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'homemade apple', cursive;
-    font-size: 3em;
+    font-family: 'Work sans', sans-serif;
+    font-size: 2em;
 }
 
 /* {
@@ -223,9 +232,6 @@ a:hover {
   margin-top: 20px;
 }
 
-/* .nav {
-color: white;
-} */
 
 h2, h3, h4 {
   font-family: 'Gudea', sans-serif;
@@ -241,6 +247,7 @@ p {
     line-height: 1.5;
     color: black;
     font-family: 'Work Sans', sans-serif;
+    height: 80%;
 }
 
 footer {
@@ -294,7 +301,7 @@ hr {
   width: 30%;
   display: flex;
   background-color: white;
-  height: 76vh;
+  height: 94vh;
 }
 
 .sidebar-content {
@@ -304,12 +311,26 @@ hr {
 #recent_blog{
   margin-top: 0;
 }
-.col70{
-  width: 68%;
+.column.space {
+  width: 4%;
+  height: 94vh;
+  background-color: #f7f7f7;
+}
+.col70 {
+  padding-bottom: 10px;
+  padding-top: 1em;
+  padding-right: 2%;
+  width: 60%;
+  display: flex;
+  background-color: white;
+  height: 94vh;
+}
+/* .col70{
+  width: 60%;
   padding-top: 1em;
   padding-bottom: 24px;
   background-color: #f7f7f7;
-}
+} */
 
 .home_recent{
   text-align: center;
@@ -319,13 +340,37 @@ hr {
 }
 
 .excerpt {
-  padding: 0 24px 0 100px;
+  padding: 0 2px 0 20px;
   font-family: 'Work Sans', sans-serif;
 
   /* Decrease this padding for small screens */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 545px) {
+  .column.space {
+    width: 4%;
+    background-color: white;
+    height: 0;
+}
+  .header_img {
+    width: 100%;
+    height: 30%;
+  }
+
+
+  p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: black;
+      font-family: 'Work Sans', sans-serif;
+      /* height: 80%; */
+  }
+
+.img_container {
+  width: 100%;
+  height: 30%;
+}
+
   .excerpt {
     padding-bottom: 15%;
     padding-left: 2%;
@@ -333,6 +378,7 @@ hr {
   }
   .col70{
     padding-top:5px;
+    background-color: white;
   }
   h1 {
     font-size: 40px;
@@ -344,7 +390,7 @@ nav {
     width: 100%;
     padding-top: 16px;
     position: relative;
-    background-color: floralwhite;
+    background-color: white;
     font-size: .75em;
   }
 
@@ -354,7 +400,7 @@ nav {
     width: 30%;
     height: 40vh;
     display: flex;
-    background-color: #f7f7f7;
+    background-color: white;
     padding-top: 5px;
 }
 hr {
@@ -376,5 +422,15 @@ hr {
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
+    }
+
+    .header_img {
+      width: 100%;
+      height: 30%;
+    }
+
+    .img_container {
+      width: 100%;
+      height: 30%;
     }
 }
