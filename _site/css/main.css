@@ -14,6 +14,21 @@ body {
     width: 100%;
 }
 
+.hero-image {
+  background-image: url('https://picsum.photos/800/300?image=664'); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 300px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+
+/* .backgroundimg {
+   background: no-repeat center/100% url("https://www.pexels.com/collections/birds-nu6l8s0/");
+  /* https://picsum.photos/g/200/300?image=399 */
+  /* width: 100%;
+  height: auto; */
+
+}
 .header_img {
   height: 30%;
   width: 100%;
@@ -22,6 +37,8 @@ body {
 .header {
   height: 30%;
   width: 100%;
+  background: url('https://picsum.photos/500/300?image=830');
+  background-size: cover;
 }
 
 /* .backgroundimg {
@@ -129,29 +146,32 @@ header {
 
 #headline_name {
     position: absolute;
-    top: 40%;
+    top: 13%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Work sans', sans-serif;
+    color: #4a576b;
     font-size: 3em;
 }
 
 #line {
     position: absolute;
-    top: 45%;
+    top: 14%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
+    color: white;
 }
 
 
 #headline {
     position: absolute;
-    top: 60%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Work sans', sans-serif;
     font-size: 2em;
+    color: white;
 }
 
 /* {
@@ -250,6 +270,14 @@ p {
     height: 80%;
 }
 
+#intro {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    height:auto;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: 20px;
@@ -301,7 +329,7 @@ hr {
   width: 30%;
   display: flex;
   background-color: white;
-  height: 94vh;
+  height: 65vh;
 }
 
 .sidebar-content {
@@ -323,7 +351,7 @@ hr {
   width: 60%;
   display: flex;
   background-color: white;
-  height: 94vh;
+  height: 65vh;
 }
 /* .col70{
   width: 60%;
@@ -347,6 +375,38 @@ hr {
 }
 
 @media screen and (max-width: 545px) {
+
+  #headline_name {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Work sans', sans-serif;
+      color: white;
+      font-size: 3em;
+  }
+
+  #line {
+      position: absolute;
+      top: 16%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3em;
+      color: white;
+  }
+
+
+  #headline {
+      position: absolute;
+      top: 24%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Work sans', sans-serif;
+      font-size: 2em;
+      color: white;
+  }
+
+
   .column.space {
     width: 4%;
     background-color: white;
@@ -408,7 +468,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -417,6 +477,10 @@ hr {
     content: "";
     display: table;
     clear: both;
+}
+
+#headline {
+  font-size: 1.5em;
 }
 
 @media screen and (max-width: 600px) {
