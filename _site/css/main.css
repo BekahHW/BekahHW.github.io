@@ -156,10 +156,10 @@ header {
 
 #line {
     position: absolute;
-    top: 14%;
+    top: 15.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3em;
+    font-size: 1em;
     color: white;
 }
 
