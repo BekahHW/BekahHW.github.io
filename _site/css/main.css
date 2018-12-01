@@ -15,20 +15,15 @@ body {
 }
 
 .hero-image {
-  background-image: url('https://picsum.photos/800/300?image=664'); /* The image used */
+  background-image: url('https://picsum.photos/1200/300?image=664'); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 300px; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-
-/* .backgroundimg {
-   background: no-repeat center/100% url("https://www.pexels.com/collections/birds-nu6l8s0/");
-  /* https://picsum.photos/g/200/300?image=399 */
-  /* width: 100%;
-  height: auto; */
-
+  /* Photo by Jonathan Bean on Unsplash */
 }
+
 .header_img {
   height: 30%;
   width: 100%;
@@ -41,24 +36,8 @@ body {
   background-size: cover;
 }
 
-/* .backgroundimg {
-   background: no-repeat center/100% url("https://www.pexels.com/collections/birds-nu6l8s0/");
-  /* https://picsum.photos/g/200/300?image=399 */
-  /* width: 100%;
-  height: auto; */
+/* } */
 
-}
-/* body background {
-    width: 100%;
-    height: auto;
-    img: no-repeat;
-
-
-} */
-
-/* img[alt="monomyth"] {
-  width: 60%;
-} */
 
 .blurb{
     /* height: 400px; */
@@ -102,8 +81,7 @@ margin: 0 2px;
 padding: 3px;
 display: flex;
 justify-content: space-around;
-font-family: 'Gudea', sans-serif;
-font-weight: bold;
+font-family: 'Work sans', sans-serif;
     background-color: white;
     font-size: 1.5em;
 }
@@ -111,17 +89,7 @@ font-weight: bold;
 .container {
   background-color: #f7f7f7;
         padding: 25px;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    width:80%; */
-
 }
-
-
-
-
 
 nav {
     text-align: center;
@@ -133,15 +101,10 @@ nav {
 }
 
 header {
-   /* background: #353535; */
     text-align: center;
     width: 100%;
     background-color: white;
     padding-bottom: 0;
-
-/*     background-image: url('https://picsum.photos/g/200/300?image=399');
-    background-size: cover;
-   background-repeat: no-repeat; */
 }
 
 #headline_name {
@@ -163,26 +126,15 @@ header {
     color: floralwhite;
 }
 
-
 #headline {
     position: absolute;
     top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* font-family: 'Cormorant Upright', serif; */
     font-family: 'Poiret One', cursive;
-    /* font-family: 'Srisakdi', cursive; */
-
     font-size: 1.5em;
     color: floralwhite;
 }
-
-/* {
-  padding-top: .5em;
-  font-family: 'Poppins', sans-serif;
-  font-size: 3em;
-  padding-bottom: .3em;
-} */
 
 .title {
   font-family: 'Work Sans', sans-serif;
@@ -281,7 +233,6 @@ ul.posts {
     font-size: 20px;
     height: 100%;
     font-family: 'Quicksand', sans-serif;
-
 }
 
 ul.posts li {
@@ -448,6 +399,22 @@ hr {
 #headline {
   font-size: 1.5em;
 }
+
+
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+  #headline_name {
+      top: 15%;
+  }
+
+  #line {
+      top: 18%;
+  }
+
+  #headline {
+      top: 24%;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
     .column {
