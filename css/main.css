@@ -158,7 +158,7 @@ header {
 
 .notebody, .noteinfo {
   font-family: 'Quicksand', sans-serif;
-  padding: 7%;
+  padding: 2% 5% 5% 5%;
   background-color: white;
 }
 
