@@ -27,15 +27,16 @@ To login, the user would need a username and a password. To protect the user, I 
 
 As I worked on my controller, I knew it was important that the only way someone should have access to the information was if they were logged in. I developed a helper method just for that.
 
-  ```
+```
   def redirect_if_not_logged_in
       if !logged_in?
         redirect "/users/login?error=Please log in first"
       end
     end
-    ```
+```
 
-Logistically, the program looks like this: A user logs in. Once the login has been validated, the user is taken to a new family member page, a simple form that asks for the family member’s name. Once a name is created, the user is taken to a show page that gives the option as three forms to delete, assign chores, or create a new family member. If the user clicks assign chore, the controller moves over to chores/new. This was the trickiest part. I wanted the user to be able to assign chores to the family members they created. However, I wanted one chore to be created and assigned to one family member. The best way to do this was using select, which was a little tricky, because I also needed the name to display on the next page. Here’s how I did it:
+The program looks like this: A user logs in. Once the login has been validated, the user is taken to a new family member page, a simple form that asks for the family member’s name. Once a name is created, the user is taken to a show page that gives the option as three forms to delete, assign chores, or create a new family member. If the user clicks assign chore, the controller moves over to chores/new. This was the trickiest part. I wanted the user to be able to assign chores to the family members they created. However, I wanted one chore to be created and assigned to one family member. The best way to do this was using select, which was a little tricky, because I also needed the name to display on the next page. Here’s how I did it:
+
 ```
   <p><label>Who does this chore belong to?</label> </p>
 
@@ -46,10 +47,13 @@ Logistically, the program looks like this: A user logs in. Once the login has be
   <% end %>
 </select>
 ```
+
 The key was the select name. I had to connect the chore to the family_member_id, in order to be able to access the family_member’s name on the next page:
+
 ```
 <%= @chore.family_member.name%>
 ```
+
 In this step, the family_member is displayed along with the chore, the room in which the chore is done, the day of the week the chore is assigned, and the description of the chore.
 
 The project went through three different iterations before the final path. Here are some tips on project building in Ruby that I learned along the way:
