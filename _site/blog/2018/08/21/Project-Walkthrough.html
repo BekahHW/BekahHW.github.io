@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bekah Hawrot Weigel Life and Code</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<style>
+			@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+			@import url('https://fonts.googleapis.com/css?family=Exo+2:200');
+			@import url('https://fonts.googleapis.com/css?family=Exo+2:200|Quicksand');
+			@import url('https://fonts.googleapis.com/css?family=Gudea|Heebo|Work+Sans');
+			@import url('https://fonts.googleapis.com/css?family=Gudea|Work+Sans');
+			@import url('https://fonts.googleapis.com/css?family=Gudea|Poppins|Work+Sans');
+			@import url('https://fonts.googleapis.com/css?family=Gudea|Poppins|Rozha+One|Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Charmonman|Cormorant+Upright|PT+Sans|Poiret+One|Ranga|Sacramento|Sedgwick+Ave|Srisakdi');</style>
+	</head>
+	<body>
+	<nav>
+	<ul>
+			<li><a class="nav" href="/">Home</a></li>
+			<li><a class="nav" href="/about">About</a></li>
+<!--         		<li><a href="/contact">Contact</a></li> -->
+			<li><a class="nav" href="/blog">Blog</a></li>
+	</ul>
+</nav>
+		<header>
+			<!-- <div class="img_container"> -->
+			<!-- <img id="header_img" src='https://picsum.photos/500/300?image=961'> -->
+			<!-- <img id="header_img" src='https://picsum.photos/500/300?image=830'> -->
+			<!-- <img id="header_img" src='https://picsum.photos/500/300?image=918'> -->
+<div class='hero-image'>
+
+			<div id="headline_name">BekahHW</div>
+			<div id="line">____________</div>
+		<div id="headline">A Coder's Journey</div>
+			</div>
+	</header>
+
+		<div class="container">
+
+      <!-- <h1>Project Walkthrough</h1>
+<p class="meta">21 Aug 2018</p> -->
+
+<div class="notes">
+		<div class="note single">
+			<h1 class="title">Project Walkthrough</h1>
+
+			<h2 class="date"><info datetime="2018-08-21 00:00:00 -0400">
+				21 Aug 2018 
+			</info></h2>
+			<!-- Post content -->
+			<div class="notebody">
+				<p>For my first solo project with Flatiron School, I had to create a CLI Ruby Gem where I scraped data from a website and went at least one level deep. Because I’m still in this weird space where I feel like I don’t know anything even though I’ve learned a lot over the past 232 days that I’ve coded, I was a little terrified to take a step toward my project. Luckily, my mentor messaged me about doing a video chat, and she got me going. But then I needed to do some mapping out.</p>
+
+<p>My idea was to scrape a site with the <a href="https://editorial.rottentomatoes.com/article/fearless-female-movie-heroes-who-inspire-us/">top 72 heroines in movies</a>.I’m both a feminist and a person who’s written more than a handful of screenplays and spec pilots. So it’s important to me to have strong female characters and to give credit to the writers who rarely get credit (it’s usually the director and movie stars who get the credit). After providing the user with a random list of ten of those movies to choose from, I would scrape more information, including the year, overall rank, heroine rank with summary.</p>
+
+<p>To do this, I would need three classes: Filmography, CLI, and Scraper. The Filmography class would contain the attr_accessor for the information I was storing for each instance. The Scraper class would build the method for scraping the data from the rottentomatoes site. The CLI would provide the command line interface that asked the user for input and called the scraper methods to return the data.</p>
+
+<p>To start, it was both easy and natural to start with the Filmography class. I knew the data I wanted to scrape, so I created attr_accessor, a class method @@all = [] in order to store the information I was scraping, a self.all method to access the information, and a save method, so there would be something in that array.</p>
+
+<p>Next up, I could start my CLI. I would need to start the process, then provide a list, and then let the user select options from the list. The start method was simple. The method greeted the user and called the next method, list.</p>
+
+<p>The list method was more complex. I didn’t want to return the full list of 72 because that’s a lot for the user to look through. Instead, I wanted a random list of 10 movies. I decided to use the sample method. Easy enough. I was able to return a sample of ten movies with index starting with “1”. Next, I asked the user to select a movie for more info. Here’s where I ran into hours worth of problems.</p>
+
+<p>When the user selected a number from the list, it returned info on a movie, but the number the user selected corresponded with the number from the rottentomatoes list, rather than the random list I created. At this point, I was working with an additional method. I was having a hard time understanding how to set the list equal to a variable and then accessing that variable from the next method. Then I thought it might work to ask the user to give the input by the title of the movie. This would require me to compare this title, to a title in the array and then return the information. This was starting to get complicated.</p>
+
+<p>Luckily, I was able to pair program with another student who helped me to discover how to set the list equal to a variable that I could continue to access. I honestly was so close. One of the things I decided to do was use one method instead of two to simplify the logic. Now, the user could select a movie, information was returned, and then I wanted to do one more scrape.</p>
+
+<p>So now I was onto my second scrape. Because I think screenwriters don’t get the credit they deserve, I want the user to be aware of who the screenwriter is, and what other movies the screenwriter has written.</p>
+
+<p>The next scrape required me to scrape from another page that corresponded to url of the movie chosen. MORE PROBLEMS. As I inspected the page, I saw that the data was very generically titled. Instead of being able to grab the data piece by piece (director, rating, screenwriter), I had to grab the whole unordered list. It took me a while, but I was able to. The problem was, the formatting was really off and too difficult to read. I tried to .strip and to do some funky gsub-ing, and it didn’t get me where I needed to be.</p>
+
+<p>I was really disappointed this wasn’t going to work, but I decided on a consolation prize. I would open the url in a new window, so at the very least the user could find the screenwriter on their own. I initialized the movie url in my Scraper method and added the open_in_browser method in the Filmography class, and then I called it in my CLI method.</p>
+
+<p>Although it didn’t go the way I wanted it to, there was a natural flow of information that came to a natural conclusion, so I’m satisfied with the results. Next week I’ll walk my tech lead through the program and answer any questions. And now I can say that I made something on my own. I’ve internalized these concepts. I can speak them aloud. That’s what motivates me to keep moving forward.</p>
+
+<p>Class: building block of our objects/instances</p>
+
+			</div>
+			<!-- Post info -->
+			<div class="noteinfo">
+			<!-- include some categories and tags maybe? -->
+			</div>
+
+			<!-- <hr> -->
+
+			<!-- Post comments -->
+			<!-- <div class="notecomments">
+				<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'BekahHW';
+ 
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+			</div>
+		</div>
+</div><!- /.notes -->
+
+
+		</div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li><a href="mailto:rhawrot@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        		<li><a href="https://github.com/BekahHW"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+			<li><a href="https://twitter.com/BekahHW"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          		<li><a href="https://www.instagram.com/bekahhawrot/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          		<li><a href="https://www.linkedin.com/in/bekah-hawrot-weigel-33046419/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
