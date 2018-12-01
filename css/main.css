@@ -146,7 +146,7 @@ header {
 
 #headline_name {
     position: absolute;
-    top: 13%;
+    top: 22%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Quicksand', sans-serif;
@@ -156,7 +156,7 @@ header {
 
 #line {
     position: absolute;
-    top: 15.5%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1em;
@@ -166,7 +166,7 @@ header {
 
 #headline {
     position: absolute;
-    top: 18%;
+    top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* font-family: 'Cormorant Upright', serif; */
@@ -402,7 +402,7 @@ hr {
   .col70{
     padding-top:5px;
     background-color: white;
-    height: 70%;
+    height: 60%;
     width: 90%;
   }
 
