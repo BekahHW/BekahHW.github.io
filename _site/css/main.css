@@ -46,9 +46,8 @@ body {
 }
 
 .about {
-  padding-left: 12.5%;
-  padding-right: 12.5%;
-  padding-bottom: 12.5%;
+  padding: 4%;
+  background-color: white;
 }
 
 .Mothercoder {
@@ -168,6 +167,7 @@ header {
   padding-left: 12.5%;
   padding-right: 12.5%;
   padding-bottom: 12.5%;
+  background-color: white;
 
 }
 
