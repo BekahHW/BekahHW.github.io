@@ -22,6 +22,10 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   /* Photo by Jonathan Bean on Unsplash */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header_img {
@@ -107,29 +111,19 @@ header {
 }
 
 #headline_name {
-    position: absolute;
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: 'Quicksand', sans-serif;
     color: floralwhite;
     font-size: 3em;
 }
 
 #line {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 1em;
     color: floralwhite;
+    margin-top: -10px;
+    margin-bottom: 8px;
 }
 
 #headline {
-    position: absolute;
-    top: 28%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: 'Poiret One', cursive;
     font-size: 1.5em;
     color: floralwhite;
@@ -164,11 +158,8 @@ header {
 
 .notebody, .noteinfo {
   font-family: 'Quicksand', sans-serif;
-  padding-left: 12.5%;
-  padding-right: 12.5%;
-  padding-bottom: 12.5%;
+  padding: 7%;
   background-color: white;
-
 }
 
 
@@ -308,19 +299,6 @@ hr {
 }
 
 @media screen and (max-width: 545px) {
-
-  #headline_name {
-      top: 15%;
-  }
-
-  #line {
-      top: 16%;
-    }
-
-  #headline {
-      top: 24%;
-  }
-
   .column.space {
     width: 4%;
     background-color: white;
@@ -401,21 +379,6 @@ hr {
 }
 
 
-@media screen and (max-width: 1024px) and (min-width: 700px) {
-  #headline_name {
-      top: 15%;
-  }
-
-  #line {
-      top: 18%;
-  }
-
-  #headline {
-      top: 24%;
-  }
-}
-
-
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
@@ -433,39 +396,12 @@ hr {
 }
 
 @media screen and (max-width: 400px) {
-  #headline_name {
-      top: 20%;
-  }
-
-  #line {
-      top: 24%;
-  }
-
-  #headline {
-      top: 31%;
-  }
 
   .col30 {
       height: 30%;
       display: flex;
       background-color: white;
       padding-top: 5px;
-  }
-
-}
-
-@media screen and (max-width: 450px) and (min-width: 401px) {
-  #headline_name {
-      top: 20%;
-  }
-
-  #line {
-      top: 24%;
-  }
-
-
-  #headline {
-      top:28%;
   }
 
 }
