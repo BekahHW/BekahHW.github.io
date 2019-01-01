@@ -7,7 +7,7 @@ title: "I've Coded 365 Days Straight and Here's What I've Learned"
 When I woke up last January 1, I didn't set out to code for a whole year with no days off. I didn't set out to code in my car on long trips, to go to my first tech conference, or to be on tech-related podcasts. I woke up with the goal of creating a positive habit when so many other things around me still felt chaotic. I made one New Year's Resolution, and that was to complete 100 days of code. I didn't have to code for hours everyday, but I should put some code down on the screen. And then after 100 days, I kept going. Someone on Twitter asked me what my ultimate goal was, and at the time I didn't have one. I just liked what I was doing. In retrospect, coding everyday taught me a lot about what I am capable of, and only one part of that is being a developer. Here are the biggest lessons I've learned:
 
 ## If you build it, they will come.
-Well, not they, but it. The drive to want to code increased with everyday I coded. I'll add a caveat to that. It increased when I was working on the curriculum I loved with [Flatiron School](www.flatironschool.com). I wanted to wake up earlier to get in more coding time. It became more than just a habit, it became a dream.
+Well, not they, but it. The drive to want to code increased with everyday I coded. I'll add a caveat to that. It increased when I was working on the curriculum I loved with [Flatiron School](https://flatironschool.com/. I wanted to wake up earlier to get in more coding time. It became more than just a habit, it became a dream.
 
 ## Learn how to use the right tools.
 When I started, I wasn't using atom, my terminal, dev tools, or pry. I was just committing and reloading. Or trying and trying and trying without really knowing what wasn't working. Honestly I just didn't realize how important these tools were for my learning. Taking the time to understand what exactly was happening with this code was not only practical, but it was an investment in the long-term goal.
@@ -33,6 +33,6 @@ And with all of this, I've had an amazing year. I don't know if I'll keep coding
 * I've pair-programmed multiple times
 * I was part of Flatiron School's beta cohort program and it was a game-changer
 * I've formed an amazing network of tech people
-* I've faced the challenges of learning to code while momming 4 kids with the help of [Moms Can: Code](www.momscancode.com)
+* I've faced the challenges of learning to code while momming 4 kids with the help of [Moms Can: Code](https://www.momscancode.com/)
 
-The first six months of this year were a struggle. The last six, I rocked it. But I've learned how far I can stretch myself, how hard I can work towards my goals. There were days I thought I wouldn't get through, but now I know I can. A lot of that has to do with drive, motivation, but without community there's nothing. Over the last 365 days, I've learned to dream again, to be proud of myself, and that may have been my biggest challenge. 
+The first six months of this year were a struggle. The last six, I rocked it. But I've learned how far I can stretch myself, how hard I can work towards my goals. There were days I thought I wouldn't get through, but now I know I can. A lot of that has to do with drive, motivation, but without community there's nothing. Over the last 365 days, I've learned to dream again, to be proud of myself, and that may have been my biggest challenge.
