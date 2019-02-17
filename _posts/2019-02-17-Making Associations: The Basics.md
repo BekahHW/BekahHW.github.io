@@ -1,9 +1,9 @@
-
 ---
 layout: post
 date: 2019-02-17
 title: "Making Associations: The Basics"
 ---
+
 I think to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, how would they describe their relationship? The most common relationships are belongs_to, has_many, has_many, through:, and has_one. What do those even mean? I find the best way to understand relationships is through an example.
 
 Right now, I’m working on a project for screenwriters. The purpose of the project is to allow the screenwriter to enter their project and to track query letters sent to agents. So first, I start with my models. I know I’ll need a user, but in this case, I’ll call that a screenwriter. Next, I want to make a screenplay model. That screenplay should have at least one genre, so I’ll create a genre model. Last, I’ll create an agent model.
