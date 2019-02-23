@@ -11,8 +11,8 @@ So far, these are our models: Screenwriter, Screenplay, Genre, Agent. That's a g
 
 |  --   Screenwriter   -- |  --  Screenplay --   |  -- Agent  -- | --  Genre  --  |
 |-----|-----|-----|-----|
-| name   | title    |  name   |   type  |
-| email  | logline   |    accepting submissions |     |
+| name   | title    |   name   |   type  |
+| email  | logline   |    accepting |     |
 |    |   query letter  |   email  |       |
 
 
@@ -20,7 +20,7 @@ This is the information we want to put into the database. When we go to write ou
 
 You can see that it's a little bit long, so along with the query letter--an email that asks agents to represent the screenplay and also provides the screenplay's genre, logline, summary, and author bio--it will be assigned text.
 
-The last type, boolean, assigns a value of true or false. Guess which attribute will be a boolean....If you guessed accepting submissions you're right! Generally speaking, you won't know the answer to this question about agents. And I've found that many agents who say they aren't taking new writers, will if they find the right writer. Either way, you can leave it blank in the submission form if you don't know.
+The last type, boolean, assigns a value of true or false. Guess which attribute will be a boolean....If you guessed accepting you're right! Generally speaking, you won't know the answer to this question about agents. And I've found that many agents who say they aren't taking new writers, will if they find the right writer. Either way, you can leave it blank in the submission form if you don't know.
 
 Ok, so we have the information we need, so what do we do with it? Well, if you have your models and database set up, you can create a migration. Make sure that in your db folder, you also have a migrate folder to handle your migrations. My favorite way to create a migration is using Rails and ActiveRecord because it makes it so easy.
 
