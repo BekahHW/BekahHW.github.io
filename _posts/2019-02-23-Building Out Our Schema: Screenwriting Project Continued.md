@@ -9,11 +9,11 @@ So we have our models and associations, but before we really start to code, we n
 So far, these are our models: Screenwriter, Screenplay, Genre, Agent. That's a great start, but we need to be able to store information about these models in a database. Eventually, we'll be using postgres.
 
 
-| Screenwriter  |Screenplay   | Agent  |Genre   |
-|---|---|---|---|
-| name  | title  | name   | type  |
-| email  | logline  |  accepting submissions |   |
-|   | query letter  |  email |     |
+|  --   Screenwriter   -- |  --  Screenplay --   |  -- Agent  -- | --  Genre  --  |
+|-----|-----|-----|-----|
+| name   | title    |  name   |   type  |
+| email  | logline   |    accepting submissions |     |
+|    |   query letter  |   email  |       |
 
 
 This is the information we want to put into the database. When we go to write our migrations, however, we need to know what type of data each submission is. In this case, we are going to use three types: string, text, and boolean. Generally, you use string for short text inputs like name, email, etc. Loglines are short and sweet explanations of your entire screenplay, but in terms of classifying data, aren't under 255 characters. For example, my brother and I wrote a screenplay with the following logline: *In the future, society is on the brink of a meltdown when new technology is introduced that changes aging forever and restores prosperity to the United States. But Benjamin Braverly, a rising star in the company that created the technology learns that everyone has been deceived and that technology is masking a huge secret.*
