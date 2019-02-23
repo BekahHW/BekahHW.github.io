@@ -9,7 +9,7 @@ So we have our models and associations, but before we really start to code, we n
 So far, these are our models: Screenwriter, Screenplay, Genre, Agent. That's a great start, but we need to be able to store information about these models in a database. Eventually, we'll be using postgres.
 
 
-|  --   Screenwriter   -- |  --  Screenplay --   |  -- Agent  -- | --  Genre  --  |
+|  Screenwriter   |   Screenplay   |   Agent  |   Genre   |
 |-----|-----|-----|-----|
 | name   | title    |   name   |   type  |
 | email  | logline   |    accepting |     |
