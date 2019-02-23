@@ -54,7 +54,7 @@ You could've written that all our yourself and then run rake:db migrate, but I f
 If you take a look at your db/schema.rb file, you'll see a bunch of commented out text followed by something like this:
 
 ```
-ActiveRecord::Schema.define(version: 2019_01_29_234143) do
+ActiveRecord::Schema.define(version: 2019_02_23_somenumbers) do
 
   create_table "screenwriters", force: :cascade do |t|
     t.string "name"
