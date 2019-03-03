@@ -154,6 +154,7 @@ header {
   padding-bottom: 16px;
   /* background-color: white; */
   height: 76vh;
+  margin: 10%;
 }
 
 .notebody, .noteinfo {
