@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "So You're About to Apply for Dev Jobs: advice from your Twitter"
+title: "So You're About to Apply for Dev Jobs: advice from your Twitter Friends"
 date: 2019-03-03
 ---
 There's enough pressure going into an interview. You don't need to be unprepared too. Feeling anxious about my upcoming job search, I turned to the hive mind that is Twitter. Here's what I learned:
