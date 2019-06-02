@@ -4,7 +4,8 @@
 	<head>
 		<title>Bekah Hawrot Weigel Life and Code</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
+		<link rel="stylesheet" type="text/css" href="/css/mountain.css">
 		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			<style>
 			@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
@@ -26,10 +27,6 @@
 	</ul>
 </nav>
 		<header>
-			<!-- <div class="img_container"> -->
-			<!-- <img id="header_img" src='https://picsum.photos/500/300?image=961'> -->
-			<!-- <img id="header_img" src='https://picsum.photos/500/300?image=830'> -->
-			<!-- <img id="header_img" src='https://picsum.photos/500/300?image=918'> -->
 <div class='hero-image'>
 
 			<div id="headline_name">BekahHW</div>
@@ -38,113 +35,46 @@
 			</div>
 	</header>
 
-		<div class="container">
+		<!-- <div class="container">
 
-      <!-- <h1>Let's do some chores: A Sinatra Project</h1>
-<p class="meta">19 Nov 2018</p> -->
+      
 
-<div class="notes">
-		<div class="note single">
-			<h1 class="title">Let's do some chores: A Sinatra Project</h1>
+		</div>/.container -->
 
-			<h2 class="date"><info datetime="2018-11-19 00:00:00 -0500">
-				19 Nov 2018 
-			</info></h2>
-			<!-- Post content -->
-			<div class="notebody">
-				<p>For years, when I was teaching college English, I would give students an assignment that had general guidelines and expectations, but they would need to come up with a topic. There were always tears. How could I expect them to come up with their own topic?! It wasn’t fair! Now that I was a student again, I was facing that blank screen, wondering how on earth I would come up with a topic. I was given the general guidelines to create a CRUD, MVC app using Sinatra, and t should track something that’s important to me.</p>
+<div class='mountain'>
+	<div class='snow'></div>
+	<div class='snow-jagged'></div>
+	<div class='snow-jagged-2'></div>
 
-<p>After some brainstorming (restaurants that accommodate food allergies, my books by genre, etc.), I decided the best idea would be to be able to assign my kids chores. I could make it an Alexa skill, and then they could just ask Alexa which chores they had today. Boom! Now my life is so much easier. (The Alexa skill is outside of the scope of the project, but the initial setup in Sinatra both fulfills the requirements and could be modified to become an Alexa skill.)</p>
+</div>
+<div class='mountain-shadow'>
+	<div class='snow-jagged-3'></div>
+	<div class='snow-shadow'></div>
+</div>
 
-<p>It’s always a good idea to start with wireframing–get a good idea of what you want and the order of appearance. It’s ok if this changes during the course of the project, but go back to your wireframe to keep things straight. (Trust me, I learned the hard way.)</p>
+<div class='mountain-1'>
+	<div class='snow-2'></div>
+	<div class='snow-jagged-4'></div>
+</div>
+<div class='mountain-shadow-1'>
+	<div class='snow-shadow-2'></div>
 
-<p>Like my students, I had a hard time with the blank screen, but lucky for me, I watched a video on the corneal gem and started there. Corneal generates a template with built in basic CSS. One of the coolest parts, I’d later find out is that Corneal <a href="https://blog.yechiel.me/of-scaffolds-and-gems-140bdbe2e005">was created by fellow Flatiron School students</a>. So bam, I had a working structure for my project, and suddenly it felt less intimidating.</p>
+	<div class='snow-jagged-shadow-2'></div>
+</div>
 
-<p>The next step was to define my associations in my models:</p>
-<ul>
-  <li>The User would have_many :family_members</li>
-  <li>The Family_member would have_many :chores and belong_to a :user</li>
-  <li>The Chores would belong_to a :family_member</li>
-</ul>
+<div class='mountain-2'>
+	<div class='snow-green'></div>
+	<div class='snow-jagged-green'></div>
+	<div class='snow-jagged-green-2'></div>
 
-<p>After the associations are clear and the models are set up, it’s easy to get your databases set up as well. Here are a couple of important things to remember before you jump into it:</p>
-<ul>
-  <li>You can’t use the word “type” as one of your values. It’s a reserved word.</li>
-  <li>Foreign keys aren’t automatically inserted if you have your models set up.</li>
-</ul>
+</div>
+<div class='mountain-shadow-2'>
+	<div class='snow-shadow-green'></div>
 
-<p>Once that was sorted out, I was ready for the views and controllers. I knew each would need a new, edit, and show file, and the user would need a login page as well. (And yes, the user does have the ability to delete family members. So in case you just need some catharsis…)</p>
+	<div class='snow-jagged-shadow-green'></div>
+	<div class='snow-jagged-shadow-green-2'></div>
 
-<p>To login, the user would need a username and a password. To protect the user, I used the bcrypt gem to protect the password, and I enabled sessions in the Application Controller to allow the user to login and logout and to store the information for each user.</p>
-
-<p>As I worked on my controller, I knew it was important that the only way someone should have access to the information was if they were logged in. I developed a helper method just for that.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  def redirect_if_not_logged_in
-      if !logged_in?
-        redirect "/users/login?error=Please log in first"
-      end
-    end
-</code></pre></div></div>
-
-<p>The program looks like this: A user logs in. Once the login has been validated, the user is taken to a new family member page, a simple form that asks for the family member’s name. Once a name is created, the user is taken to a show page that gives the option as three forms to delete, assign chores, or create a new family member. If the user clicks assign chore, the controller moves over to chores/new. This was the trickiest part. I wanted the user to be able to assign chores to the family members they created. However, I wanted one chore to be created and assigned to one family member. The best way to do this was using select, which was a little tricky, because I also needed the name to display on the next page. Here’s how I did it:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;p&gt;&lt;label&gt;Who does this chore belong to?&lt;/label&gt; &lt;/p&gt;
-
-  &lt;select name="chore[family_member_id]"&gt;
-
-    &lt;%  @family_member.each do |f| %&gt;
-    &lt;option  id="&lt;%= f.id%&gt;" value="&lt;%= f.id%&gt;"&gt;&lt;%= f.name %&gt;&lt;/option&gt;
-  &lt;% end %&gt;
-&lt;/select&gt;
-</code></pre></div></div>
-
-<p>The key was the select name. I had to connect the chore to the family_member_id, in order to be able to access the family_member’s name on the next page:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;%= @chore.family_member.name%&gt;
-</code></pre></div></div>
-
-<p>In this step, the family_member is displayed along with the chore, the room in which the chore is done, the day of the week the chore is assigned, and the description of the chore.</p>
-
-<p>The project went through three different iterations before the final path. Here are some tips on project building in Ruby that I learned along the way:</p>
-
-<ul>
-  <li>Make binding.pry your friend. Honestly, I learn the most when I’m in a pry session. It helps me to see exactly what’s happening.</li>
-  <li>Don’t panic when something isn’t working the way you intended it to. Take it back to the drawing board. Do some brainstorming to think things through before you jump into the problem. It’ll be easier in the long run.</li>
-  <li>It’s ok to ask someone else to look at your code. I never would’ve figured out select if I hadn’t.</li>
-  <li>If you think you’re done, DO NOT announce it on Twitter. You’ll only jinx it and have to go back and fix code three more times.</li>
-</ul>
-
-<p>Happy coding!</p>
-
-			</div>
-			<!-- Post info -->
-			<div class="noteinfo">
-			<!-- include some categories and tags maybe? -->
-			</div>
-
-			<!-- <hr> -->
-
-			<!-- Post comments -->
-			<!-- <div class="notecomments">
-				<div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'BekahHW';
- 
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-			</div>
-		</div>
-</div><!- /.notes -->
-
-
-		</div><!-- /.container -->
+</div>
 		<footer>
     		<ul>
         		<li><a href="mailto:rhawrot@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
