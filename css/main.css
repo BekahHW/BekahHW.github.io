@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #f7f7f7;
+    background-color: #a1c3d1;
     min-height: 50vh;
 }
 
@@ -15,16 +15,20 @@ body {
 .blurb{
     /* height: 400px; */
     font-family: 'Gudea', sans-serif;
-    margin: 10px;
+    margin-top: 12%;
 }
 
 .about {
-  padding: 4%;
+ margin: 8%;
+ padding: 2%;
   background-color: white;
+  display: flex;
 }
 
 .Mothercoder {
   text-align: center;
+      padding-top: 15px;
+    margin: 0px;
 }
 
 .hey {
@@ -59,8 +63,13 @@ font-family: 'Work sans', sans-serif;
 }
 
 .container {
-  background-color: #f7f7f7;
-        padding: 25px;
+  /* wave pattern by by Paul Salentiny */
+  background-color: #a1c3d1;
+  background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #a1c3d1;
+background-size: 110px 200px;
+background-repeat: repeat-x;
 }
 
 .tagline {
@@ -164,7 +173,7 @@ h1 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.5em;
     line-height: 1.5;
     color: black;
     font-family: 'Work Sans', sans-serif;
@@ -383,11 +392,26 @@ hr {
   font-size: 1.5em;
 }
 
+@media screen and (max-width: 850px){
+  .about {
+    margin: 10%;
+    padding: 2%;
+    background-color: white;
+}
+}
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 720px) {
     .column {
         width: 100%;
     }
+    .about {
+    margin-top: 30%;
+    margin-bottom: 20%;
+
+    padding: 2%;
+    background-color: white;
+}
 
     .header_img {
       width: 100%;
@@ -408,5 +432,12 @@ hr {
       background-color: white;
       padding-top: 5px;
   }
+
+   .about {
+    margin-top: 30%;
+    margin-bottom: 20%;
+
+    padding: 2%;
+    background-color: white;
 
 }
