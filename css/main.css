@@ -11,6 +11,11 @@ body {
 
 /* } */
 
+.blogTitle {
+  text-align: center;
+  margin:0%;
+  padding: 3%;
+}
 
 .blurb{
     /* height: 400px; */
