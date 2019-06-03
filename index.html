@@ -1,38 +1,7 @@
 ---
-layout: default
+layout: index
 title: Bekah Hawrot Weigel
 ---
 <body>
-	<div class="main">
-<div class="row">
-<div class="column col30">
 
-	<div class="sidebar-content">
-		</div>
-		<div class="blurb">
-			<div class="hey"><h2 align="center"> - - - - HELLO! - - - - </h2></div>
-			<div class="intro" align="center">I'm Bekah Hawrot Weigel</div>
-			<p id="intro">I'm making this journey into coding and hopefully helping some people along the way.  <a href="/about">Read more about me.</a></p>
-			<hr/>
-		</div>
-	</div>
-<div class='column space'></div>
-</div>
-<div class="column col70" >
-	<div class="blog excerpt">
-		<h1 id = "recent_blog">Recent Blog Post</h1>
-		{% for post in site.posts limit:1 %}
-		<div>
-
-	      <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-	      {{ post.excerpt }}
-				<a href="{{ post.url }}"><span>Read more...</span></a>
-
-	</div>
-	  {% endfor %}
-	</div>
-	</div>
-
-</div>
-</div>
 </body>
