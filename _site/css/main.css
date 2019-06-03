@@ -3,42 +3,11 @@ body {
     padding: 0;
     width: 100%;
     background-color: #f7f7f7;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
-.img_container {
-    position: relative;
-    text-align: center;
-    color: white;
-    padding-top: 0;
-    width: 100%;
-}
 
-.hero-image {
-  background-image: url('https://picsum.photos/1200/300?image=664'); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 300px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-  /* Photo by Jonathan Bean on Unsplash */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
-.header_img {
-  height: 30%;
-  width: 100%;
-}
-
-.header {
-  height: 30%;
-  width: 100%;
-  background: url('https://picsum.photos/500/300?image=830');
-  background-size: cover;
-}
 
 /* } */
 
@@ -92,6 +61,11 @@ font-family: 'Work sans', sans-serif;
 .container {
   background-color: #f7f7f7;
         padding: 25px;
+}
+
+.tagline {
+  text-align: right;
+  margin-right: 25%
 }
 
 nav {
@@ -205,6 +179,24 @@ p {
     height:auto;
 }
 
+ul.navLinks li {
+   font-size: 40px;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+     list-style-type: none;
+    color: white;
+}
+ul.socialLinks li {
+   font-size: 30px;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+     list-style-type: none;
+    color: white;
+    justify-content: space-around;
+    display: inline-block;
+    padding-left: 5%;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: 20px;
@@ -254,8 +246,18 @@ hr {
   padding-right: 2%;
   width: 30%;
   display: flex;
-  background-color: white;
-  height: 65vh;
+  background-color:#a1c3d1;
+  /* height: 65vh; */
+  
+}
+
+.links {
+  color: white;
+    z-index: 6;
+position: absolute;
+  content: '';
+  bottom: 282px;
+  left: 582px;
 }
 
 .sidebar-content {
@@ -267,7 +269,7 @@ hr {
 }
 .column.space {
   width: 4%;
-  height: 94vh;
+  /* height: 94vh; */
   background-color: #f7f7f7;
 }
 .col70 {
@@ -276,8 +278,8 @@ hr {
   padding-right: 2%;
   width: 60%;
   display: flex;
-  background-color: white;
-  height: 65vh;
+  background-color: #a1c3d1;
+  /* height: 65vh; */
 }
 /* .col70{
   width: 60%;
@@ -333,7 +335,7 @@ hr {
   .col70{
     padding-top:5px;
     background-color: white;
-    height: 60%;
+    /* height: 60%; */
     width: 90%;
   }
 
@@ -355,7 +357,7 @@ nav {
     /* padding-bottom: 10px; */
     /* padding-top: 60px; */
     width: 30%;
-    height: 30%;
+    /* height: 30%; */
     display: flex;
     background-color: white;
     padding-top: 5px;
