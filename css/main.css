@@ -86,7 +86,7 @@ header {
 
 #headline_name {
     font-family: 'Quicksand', sans-serif;
-    color: floralwhite;
+    color: #44318D;
     font-size: 3em;
 }
 
@@ -98,9 +98,9 @@ header {
 }
 
 #headline {
-    font-family: 'Poiret One', cursive;
-    font-size: 1.5em;
-    color: floralwhite;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    color: #8B008B;
 }
 
 .title {
@@ -256,8 +256,9 @@ hr {
     z-index: 6;
 position: absolute;
   content: '';
-  bottom: 282px;
-  left: 582px;
+  bottom: 2%;
+  left: 68%;
+  width: 35%
 }
 
 .sidebar-content {

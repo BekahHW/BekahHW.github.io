@@ -160,7 +160,7 @@ body {
   .snow-jagged-4 {
     position: absolute;
     content: '';
-    bottom: -136px;
+    bottom: -135px;
     left: -50px;
     border-top: 40px solid #dddddd;
     border-right: 34px solid transparent;
@@ -242,7 +242,7 @@ body {
 .snow-jagged-green {
   position: absolute;
   content: '';
-  bottom: -138px;
+  bottom: -137px;
   left: -89px;
   border-top: 40px solid #dddddd;
   border-right: 34px solid transparent;
@@ -253,7 +253,7 @@ body {
 .snow-jagged-green-2 {
   position: absolute;
   content: '';
-  bottom: -138px;
+  bottom: -137px;
   left: -33px;
   border-top: 40px solid #dddddd;
   border-right: 34px solid transparent;
