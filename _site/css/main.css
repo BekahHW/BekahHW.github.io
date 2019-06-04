@@ -167,6 +167,13 @@ a:hover {
   margin-top: 20px;
 }
 
+/* Coding Portfolio */
+
+.projects {
+  text-decoration: bold;
+  color:  #8B008B;
+}
+
 
 h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
