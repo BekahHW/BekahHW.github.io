@@ -1,8 +1,37 @@
 /* tutorial by: https://www.youtube.com/watch?v=8Y9uoSYvtnI   */
+/* cloud resource: http://jsfiddle.net/zessx/LLVRB/ */
 
 body {
     background: #a1c3d1;
   }
+
+  
+  .cloud  {
+	width: 350px; height: 120px;
+	background: white;
+	border-radius: 100px;
+	position: absolute;
+  margin: 150px 50px;
+  top: 65%; 
+  right: 30%;
+}
+.cloud:after, .cloud:before {
+	content: '';
+	position: absolute;
+	background: white;
+	z-index: 1
+}
+
+.cloud:after {
+	width: 100px; height: 100px;
+	top: -50px; left: 50px;
+	border-radius: 100px;
+}
+.cloud:before {
+	width: 180px; height: 180px;
+	top: -90px; right: 50px;
+	border-radius: 200px;
+}
 
   .snow{
     position: absolute;
@@ -304,3 +333,8 @@ body {
   transform: skewY(-18deg)
 }
 
+@media screen and (max-width: 770px) {
+  .cloud {
+    top: 55%;
+  }
+}
