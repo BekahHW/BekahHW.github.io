@@ -193,6 +193,12 @@ a:hover {
   color: #E98074;
 }
 
+.codingProjects{
+    list-style: none;
+    font-family: 'Work sans', sans-serif;
+
+}
+
 
 h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
