@@ -170,8 +170,27 @@ a:hover {
 /* Coding Portfolio */
 
 .projects {
+  width: 80%;
+ margin: 8%;
+ padding: 2%;
+  background-color: white;
+}
+
+.fuschia {
   text-decoration: bold;
   color:  #8B008B;
+}
+
+.green {
+  color: #008B8B
+}
+
+.purple {
+  color: #44318D;
+}
+
+.peach {
+  color: #E98074;
 }
 
 
@@ -438,6 +457,14 @@ hr {
 }
 
 @media screen and (max-width: 415px) {
+
+  .projects {
+     width: 80%;
+     margin: 8%;
+     margin-top: 20%;
+     padding: 2%;
+     background-color: white;
+}
 
   .blogTitle {
   text-align: center;
