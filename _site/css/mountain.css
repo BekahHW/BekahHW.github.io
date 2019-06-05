@@ -12,8 +12,8 @@ body {
 	border-radius: 100px;
 	position: absolute;
   margin: 150px 50px;
-  top: 65%; 
-  right: 30%;
+  top: 35%; 
+  right: 45%;
 }
 .cloud:after, .cloud:before {
 	content: '';
@@ -335,6 +335,6 @@ body {
 
 @media screen and (max-width: 770px) {
   .cloud {
-    top: 55%;
+    top: 30%;
   }
 }

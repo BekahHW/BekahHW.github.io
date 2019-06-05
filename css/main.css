@@ -8,7 +8,9 @@ body {
 
 
 
-
+.wrapper {
+  display: grid;
+grid-template-columns: 70% 30%}
 /* } */
 
 .blogTitle {
@@ -65,6 +67,12 @@ justify-content: space-around;
 font-family: 'Work sans', sans-serif;
     background-color: white;
     font-size: 1.5em;
+}
+
+svg {
+  width:70%;
+  position: absolute;
+  bottom:0;
 }
 
 .container {
@@ -199,6 +207,16 @@ a:hover {
 
 }
 
+.grass {
+    background-color: green;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 16px;
+    padding-top: 27px;
+}
+
 
 h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
@@ -232,7 +250,7 @@ ul.navLinks li {
      list-style-type: none;
     color: white;
 }
-ul.socialLinks li {
+.socialLinks {
    font-size: 30px;
     height: 100%;
     font-family: 'Quicksand', sans-serif;
@@ -241,6 +259,16 @@ ul.socialLinks li {
     justify-content: space-around;
     display: inline-block;
     padding-left: 5%;
+}
+.mail {
+   font-size: 30px;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+     list-style-type: none;
+    color: white;
+    justify-content: space-around;
+    display: inline-block;
+    padding-left: 0%;
 }
 
 footer {
@@ -436,6 +464,10 @@ hr {
       display: inline;
       width: 50%;
   }
+
+  svg {
+    width: 100%;
+  }
     .column {
         width: 100%;
     }
@@ -459,15 +491,22 @@ hr {
 }
 
 @media screen and (max-width: 415px) {
+svg {
+    width: 100%;
+  }
+
+  .social {
+    padding: 0%;
+  }
+
+  .tagline {
+    margin-right: 0%;
+  }
+
     .links {
       color: white;
-      z-index: 6;
-      position: absolute;
-      bottom: 45%;
-      content: '';
-      left: 25%;
-      display: inline;
-      width: 100%;
+      bottom: 35%;
+  
     }
   .projects {
      width: 80%;
@@ -498,7 +537,41 @@ hr {
   .blogTitle {
   text-align: center;
   margin:0%;
-font-size: 2em;
+  font-size: 2em;
   padding: 11%;
 }
+
+ul.navLinks li {
+    font-size: 30px;
+}
+
+.links {
+      bottom: 25%;
+    }
+
+    #headline_name {
+    font-size: 2em;
+}
+
+.social {
+    padding: 0%;
+    font-size: 1px;
+}
+}
+
+@media screen and (max-width: 375px) {
+ .links {
+      color: white;
+      bottom: 35%;
+    }
+
+    #headline {
+    font-size: 1.1em;
+}
+
+.social {
+    padding: 0%;
+    font-size: 1px;
+}
+  
 }
