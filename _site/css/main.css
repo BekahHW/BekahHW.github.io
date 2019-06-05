@@ -284,12 +284,12 @@ footer {
 }
 
 ul.posts {
-       margin: 20px auto 40px;
+margin: 56px auto 105px;
     font-size: 20px;
     height: 100%;
     font-family: 'Quicksand', sans-serif;
-    margin-top: 10%;
     padding-bottom: 10%;
+        padding-top: 24px;
     width: 80%;
     background: white;
 }
@@ -504,10 +504,9 @@ svg {
     }
   .projects {
      width: 80%;
-     margin: 8%;
-     margin-top: 20%;
-    padding: 1px 32px 1px 10px;
-     background-color: white;
+    margin: 100px 31px 119px;
+    padding: 1px 8px 57px 10px;
+   background-color: white;
 }
 
   .blogTitle {
@@ -561,6 +560,10 @@ ul.navLinks li {
 
     #headline {
     font-size: 1.1em;
+}
+
+.projects {
+  margin: 57px 31px 119px
 }
 
 .social {
