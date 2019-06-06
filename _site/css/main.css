@@ -297,6 +297,7 @@ margin: 56px auto 105px;
 ul.posts li {
     list-style: none;
     font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
 
 }
 /* playing with column */
