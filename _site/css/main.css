@@ -4,9 +4,16 @@ body {
     width: 100%;
     background-color: #a1c3d1;
     min-height: 50vh;
+    overflow-x:hidden
 }
 
+.projectTitle {
+  color:#008E8E
+}
 
+.description {
+  font-style: italic;
+}
 
 .wrapper {
   display: grid;
@@ -208,6 +215,7 @@ a:hover {
 .codingProjects{
     list-style: none;
     font-family: 'Work sans', sans-serif;
+    line-height: 1.5;
     /* margin-bottom: 10%;
     padding-bottom: 10%; */
 
@@ -288,8 +296,9 @@ margin: 56px auto 105px;
     font-size: 20px;
     height: 100%;
     font-family: 'Quicksand', sans-serif;
-    padding-bottom: 10%;
-        padding-top: 24px;
+    /* padding-bottom: 10%;
+        padding-top: 24px; */
+        padding: 20px 20px;
     width: 80%;
     background: white;
 }
@@ -456,16 +465,12 @@ hr {
 
 
 @media screen and (max-width: 769px) {
-  .links {
-      color: white;
-      z-index: 6;
-      position: absolute;
-      bottom: 50%;
-      content: '';
-      left: 25%;
-      display: inline;
-      width: 50%;
-  }
+   .links {
+     bottom: 50%;
+    left: 25%;
+    display: inline;
+    width: 50%;
+}
 
   svg {
     width: 100%;
@@ -486,6 +491,7 @@ hr {
 }
 
 @media screen and (max-width: 415px) {
+ 
 svg {
     width: 100%;
   }
@@ -527,6 +533,9 @@ svg {
 }
 
 @media screen and (max-width: 320px) {
+   #line {
+      font-size: 0.7em;
+  }
 
   .blogTitle {
   text-align: center;
