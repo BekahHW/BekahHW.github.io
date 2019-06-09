@@ -307,7 +307,7 @@ ul.posts li {
     list-style: none;
     font-family: 'Quicksand', sans-serif;
     line-height: 1.5;
-
+    padding: 3.5px;
 }
 /* playing with column */
 hr {
