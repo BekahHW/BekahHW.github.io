@@ -4,19 +4,6 @@ title: "My Rails + JS Project: A lesson in detective work"
 date: 2019-03-23
 ---
 
-To me, the biggest impediments to any open source project are time, validation, abilities, and community. We want developers to be included as part of the Ruby, and Ruby OSS, community, to be valued for their time,  and to feel comfortable contributing at any level (from new to senior developer). I would love to see Ruby OSS work hard to provide opportunities for new coders and minorities. Some of the ways I think Ruby OSS can improve include:
-
--Ensuring that developers have some sort of recognition, whether monetary, a badge system, social media shout-outs, and/or recognition of contributors on the README.
--Encouraging companies to allow employees to spend work time on OSS projects.
--Creating open source community events like live coding sessions, Q&A’s with top contributors or managers.
--Creating better onboarding of new contributors, very clearly written contributor.md files.
--Adding autoformatting and linting software setup to eliminate style-related discussions and issues on PRs.
--Including clear codes of conduct to ensure respect and empathy.
--Ensuring efficiency in merging PRs or give timely feedback so contributors are validated and see acknowledgment for their work.
--Labeling issues accurately: contributors shouldn’t have to ask if it’s beginner friendly, an issue that needs to be resolved, etc.
--Inviting frequent contributors to be part of a core team.
--Being open to feedback and welcoming to new members.
-
 
 I’ll admit, when I started taking my Rails project and adding JavaScript, it broke my heart a little. I loved where I had left off and I had big plans for how to expand it. I could see it all in my mind. But I know it’s never productive to be precious with your work. The second reservation that I had was JavaScript wasn’t exactly clicking. And what I mean by that is I could execute JS if someone told me, but I wasn’t conceptually understanding it. Why would I use this? Where would I use this? I kept waiting for it to click, and it kept not clicking. Because I had made it through the lessons and sought outside resources, I decided I should just jump in. The problem with jumping in when you don’t know exactly where you’re going, is that you just kind of put your finger on the map and say, “this looks like a good place to start” with no context as to whether that nice looking spot on the map is really a suitable place. And my finger landed on a join model, UserDisorder.
 
