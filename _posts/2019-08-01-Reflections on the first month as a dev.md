@@ -1,0 +1,12 @@
+---
+layout: post
+date: 08-01-2019
+title: Reflections on the First Month as a Dev
+---
+Confession: I never thought I’d be a developer. I thought that I would finish my bootcamp, and I fully believed that no one would hire me. I thought maybe I would end up teaching beginner coding courses because it’s not far from my last career. I’m a really driven person, but perfectionism keeps me from being a really confident person. I’ve been a dev now for a month, and I still can’t believe it. I frequently feel like I could be let go at any point, mostly because I still haven’t wrapped my head around this whole career transition thing yet.
+
+One of the greatest parts of being a developer is learning something new every day. This past month, I’ve learned how to use React hooks, which I had no experience with prior to getting this job. I learned how to use a ternary with inline styles. I’ve learned when not to use a ternary. I’ve learned that sometimes I don’t trust myself enough. Sometimes I make things more complicated than they should be. Sometimes I think things are simpler than they are. I’m still learning how to estimate how long something new will take me.
+
+I’ve learned that sometimes I need those thirty-seven tabs open that all talk about the problem that I’m having in a different way because some part of each of them makes sense to me, but I need to piece them all together before I figure out how to deal with my coding challenge. I’ve learned that sometimes I just need to be a better proofreader. That sometimes I’m doing the right thing with the wrong array. That talking about my code aloud to no one but myself, reading this coding story, explaining to myself the flow and connections and relationships is so important to my growth process.
+
+I’ve been a dev for a month today, and today I’m giving my first conference talk on community and gatekeepers. One of the greatest things about belonging to so many amazing tech communities is that even when I don’t feel like I’m good enough to be here, I know that I have the support of others in the community and that many of them feel the same way. I couldn’t have spent the last month in isolation. I know many people don’t recommend having a remote job as your first dev job, but it’s been perfect for me because I’m surrounded by community, support, and open access to the others I’m working with. It’s not about remote v physical location, IMO. It’s about whether or not there’s a strong community around you, you’re willing to grow, and you’re ok with making mistakes along the way.
