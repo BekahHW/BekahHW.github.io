@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2020-01-02
-title: Developer Toddlerhood: I've Been a Dev for Six Months
+title: "Developer Toddlerhood: I've Been a Dev for Six Months"
 ---
 
 I’ve been a dev for six months. Most days, I still think I’m going to get fired. I think I’m not good enough. I think I should know more. But that’s kind of my MO. I always think I’m not doing as well as I should be doing. It is not a reflection on the people I work with or anyone around me. It’s how I push myself. There are some days where the self-doubt is worse than others. Those are usually the days where I spend hours trying to track down what exactly is going on with this code I’m working on. And there are other days where I remind myself of how far I’ve come.
