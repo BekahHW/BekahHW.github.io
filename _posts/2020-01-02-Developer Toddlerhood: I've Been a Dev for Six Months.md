@@ -1,0 +1,17 @@
+---
+layout: post
+date: 2020-01-02
+title: Developer Toddlerhood: I've Been a Dev for Six Months
+---
+
+I’ve been a dev for six months. Most days, I still think I’m going to get fired. I think I’m not good enough. I think I should know more. But that’s kind of my MO. I always think I’m not doing as well as I should be doing. It is not a reflection on the people I work with or anyone around me. It’s how I push myself. There are some days where the self-doubt is worse than others. Those are usually the days where I spend hours trying to track down what exactly is going on with this code I’m working on. And there are other days where I remind myself of how far I’ve come.
+
+Early on in my job, I was pretty stuck, so I sent a message asking for a little direction. “Why don’t you share what you have and we can talk through it?” Nope. No. No thank you. Yes, I refused to share my code with my boss, saying that it was too messy right now. I have a coding method that might not work for everyone and in the beginning, it was super messy. I sometimes throw everything at my code editor and wait to see what sticks. I comment one thing out and then another. I have about a million and a half console.logs and I’m not even sure if what I have written reflects anything that anyone who has any coding training would ever put up. Now you can probably better understand why I’m surprised I haven’t been fired yet.
+
+Recently, someone asked me the great question, “When do you know when to ask for help?” I don’t have a great answer for this. Once, someone told me that if I were stuck for twenty-minutes, I should ask for help. But recently, I’ve found that trying to hunt through all of the files and to understand what was happening in each file takes a much longer time than twenty minutes. So for me, the goal is to keep searching until I’ve run out of options. I take notes. I map things out. I write out check-boxes. I do what I have to, to learn.
+
+Before I got a job, I pretty strongly believed I wouldn’t get a dev job, and that React would never be my thing. Since I’ve started, I’ve not only learned hooks, I’ve learned storybook.js, how to write tests, how to better think through logic when I’m using React. I’ve learned when to ask questions and when to trust that I need to give myself a little bit more time. I’m lucky to be in a supportive work environment, where I’m encouraged to learn, grow, and ask questions.
+
+Six months as a dev has taught me that every day is a new challenge. It will take me longer to figure out a problem than it will for someone who’s been coding for three years. I think about it like this: when I had a one-year-old, they were learning to talk, string a couple of words together, and to walk without falling. But now at three, my youngest can hold whole conversations, climb up playground equipment and say the word Mandalorian. There’s less awkwardness in their steps and language.
+
+I can’t use “five-syllable words” in my code yet, but I’m working on smoothing out my syntax. I’m thinking more clearly about what each piece does and how other devs will understand my code  Sometimes I need hand-holding. Sometimes I surprise myself. But the last six months have been the best of my life, and coding is certainly a part of that. And now, I look forward to walking through my code and talking about it. Because it’s more about growing and learning to see new things than how my code compares to anyone else’s.
