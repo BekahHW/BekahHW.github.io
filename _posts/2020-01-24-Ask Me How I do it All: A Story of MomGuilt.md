@@ -1,0 +1,21 @@
+---
+layout: post
+date: 2020-01-24
+title: "Ask Me How I Do it All: A Story of #MomGuilt"
+---
+
+It’s okay to ask me how I “do it.” It’s ok for you to ask me how I balance motherhood and work. Not every mom is ok with that, and I get why. But the reality is that many moms, probably most, bear the [mental load of the family](https://www.mother.ly/life/the-mental-load-falls-squarely-on-mothers-shouldersand-its-making-us-very-tired). And when I was learning to code, I found the conversations I had that were the most important to my journey were the ones about how moms were able to still mom and code, the ones about why we felt guilty when worked, about how we felt so exhausted at the end of the day. It’s ok to ask me how I “do it.”
+
+It’s okay to ask me if I feel guilty. I do. All the time.  I feel guilty when my kids are home from school for break. I don’t know if I should try to work when they’re playing or get a babysitter. Until recently, I felt guilty that I could never seem to keep up with the laundry and the housework, and sometimes even the homework. I felt guilty that I felt annoyed when my kids interrupted me because I work from home and sometimes I work on the weekends.
+
+When I was learning to code, I kept hearing other moms who were ahead of me say over and over and over, “get childcare!”, “get someone to clean your house!” Until, 2020, those were never options for me. I wondered how I could ever do it without those things. I did, but I felt guilty about every single thing in my life.
+
+I’m 90% sure I was born feeling guilty. So that’s the natural state of my life. I envy the moms who don’t feel guilty. I want you to teach me your ways. But I want to do all the things. A lot of that guilt comes from *knowing* that I am able to do each of these things individually. I know that I can cook every meal. I know that I can coordinate all the schedules. I know that I can get up early and work before the kids get up. I know that I can give me kids *all* the magical experiences of childhood that I had. But here’s the thing: I cannot do all of those things and work.
+
+And I don’t know how to adjust to that most of the time. It’s a learning curve to figure out what I can and cannot still do. I still go to all the kids’ field trips. I don’t fold all the kids’ clothes. I still coordinate all the kids’ schedules. I don’t clean the house. This is a very new reality for us. A month ago, I was doing it all. But as I was reading Tim Ferriss’ [Four Hour Work Week](https://fourhourworkweek.com/), something finally clicked.
+
+To get closer to my goals and my dreams, I needed to be most efficient. To do that, I needed to outsource the things--if possible--that weren’t making me happy. I *hate* cleaning. When I was a kid, I had to clean my own room. You better believe that years went by where you couldn’t even see my floor. I’m better than that now, but I still don’t like it. I wish I could say that the guild went away with the outsourcing tough.
+
+I feel guilty that my kids will think that I don’t work hard enough, that they’ll think they can just throw money at the things that don’t make them happy.  That they’ll wonder why I didn’t take off the days that they were off or why I didn’t make beautiful cupcakes for their birthday parties.
+
+But here’s the thing. I love working. When I was fifteen years old, I worked three jobs and put in my first 50 hour work week, because I liked work. I’m accepting that I will continue to feel guilty because I do carry the mental load, because I was born feeling guilty. But I’m also going to feel happy. And I know that there are a ton of other moms out there who feel guilty for working, not working, just being. And that’s why I’m okay with you asking me about it. Because I know that sometimes we feel isolated in our guilt, and that’s the worst place to be. So if you want to talk about it, or if you want someone to validate your feelings, let me know. I’m right here feeling it next to you.
