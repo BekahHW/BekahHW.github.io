@@ -1,0 +1,18 @@
+---
+title: "Bootcamp Isn't All Happy Face Emojis"
+date: 2020-03-02
+type: post
+---
+Everyone’s experience in bootcamp is different, but every bootcamp graduate I’ve talked to--whether it’s been a full-time intense bootcamp, remote self-paced, or anything in between--have all admitted that the commitment was incredibly stressful. For most of us, we’re changing careers and balancing other things like jobs, relationships, family, and, yes, even sometimes, a social life. But learning to code takes all of your focus and your energy, and puts you in a high-stress environment for as long as you’re learning. And sometimes I forget to mention that when I talk about how great it was.
+
+If you don’t have people in your life who are understanding, it’s going to add a greater challenge. To be fully transparent, when my husband was career-changing five and a half years ago and told me he needed to take this course and spend his extra time learning a thing called “React,” I wasn’t exactly supportive. I didn’t know what that meant. I was pregnant with my third kid, and for the life of me, I could not understand how this would help our family in the long run. He’d try to explain, but I knew nothing about coding. So nothing he said made any sense at all. I’ll be honest here, there was a lot of resentment. And it wasn’t until he landed his first full-time dev job that I understand the opportunities that this gave him and how it would positively impact our future.
+
+So I was really fortunate to go to bootcamp and have a spouse that understood the challenges of learning to code, finding yourself experiencing the “dark night of the soul” moment, every third day, and wanting to do nothing but learn to code in all your free moments. But he understood, because he had been there before. In some ways, that’s a luxury. Not everyone has that.
+
+It’s exhausting to spend hours trying to learn something new. Yes, you’ve been sitting at a computer all day. No, you haven’t been swinging kettlebells or running a marathon, but you will still be exhausted. And you’ll be frustrated with yourself for not remembering what you understood yesterday. And, if you’re like me, you’ll be cranky when you just can’t get it. You’ll be emotionally spent after trying to figure out this coding puzzle you’ve been working on.
+
+Learning to code doesn’t just challenge your brain, it fully challenges *you*. You might lose friends or relationships. You might hear people ask over and over again, “*Why* are you doing this?” You might even cry.
+
+When I talk about how great bootcamp is or how I’ve had amazing opportunities because of bootcamp, it’s not that I intentionally leave out the part about how emotionally exhausting and stressful it is. It’s that the breath of fresh air that I breathed in the moment I started to actually feel like a developer makes that seem like a far-off memory. I’m going to try harder to tell prospective bootcampers about the challenges along with the opportunities, so they don’t feel so alone in those moments where it feels like one tiny thing can cause everything around you to shatter.
+
+Coming out of this experience helped to form me into a person that I’m proud of. I’ve been honest about my experience before bootcamp. My mental health was not in the best shape. Coding helped me to get to a place where I was mentally healthy because I learned how strong I was. I learned that I could get through trauma, that I am smart, that I can get through challenges piled on top of challenges, that I could still mom my four kids and make good decisions for my family, *and* I could find a job that was flexible and supportive and could help me be the best person I could be.
