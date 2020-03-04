@@ -17,8 +17,11 @@ notes: active
 				{{ content }}
 			</div>
 			<!-- Post info -->
+			{% for categories in page.categories %}
+
 			<div class="noteinfo">
-				{{page.categories}}
+	 <span >{{ categories }}</span>
+ {% endfor %}
 			<!-- include some categories and tags maybe? -->
 			</div>
 
