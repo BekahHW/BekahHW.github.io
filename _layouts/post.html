@@ -15,15 +15,17 @@ notes: active
 			<!-- Post content -->
 			<div class="notebody">
 				{{ content }}
+				<div class="noteinfo">
+		 <span >{{ categories }}</span>
+				<!-- include some categories and tags maybe? -->
+				</div>
+				{% endfor %}
 			</div>
 			<!-- Post info -->
 			{% for categories in page.categories %}
 
-			<div class="noteinfo">
-	 <span >{{ categories }}</span>
- {% endfor %}
-			<!-- include some categories and tags maybe? -->
-			</div>
+
+
 
 			<!-- <hr> -->
 
