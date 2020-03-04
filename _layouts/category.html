@@ -1,10 +1,15 @@
 ---
 layout: default
 ---
+<div class="notes">
+  <div class="note single">
+
 <div class="notebody">
 {% for post in site.categories[page.category] %}
   <h1 class="title">  <a href="{{ post.url | absolute_url }}">
       {{ post.title }}
     </a></h1>
 {% endfor %}
+</div>
+</div>
 </div>
