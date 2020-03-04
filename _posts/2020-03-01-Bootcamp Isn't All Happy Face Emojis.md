@@ -2,6 +2,7 @@
 title: "Bootcamp Isn't All Happy Face Emojis"
 date: 2020-02-28
 type: post
+categories: Bootcamp
 ---
 Everyone’s experience in bootcamp is different, but every bootcamp graduate I’ve talked to--whether it’s been a full-time intense bootcamp, remote self-paced, or anything in between--have all admitted that the commitment was incredibly stressful. For most of us, we’re changing careers and balancing other things like jobs, relationships, family, and, yes, even sometimes, a social life. But learning to code takes all of your focus and your energy, and puts you in a high-stress environment for as long as you’re learning. And sometimes I forget to mention that when I talk about how great it was.
 
