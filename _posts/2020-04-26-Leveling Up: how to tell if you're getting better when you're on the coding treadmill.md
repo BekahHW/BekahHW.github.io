@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2020-26-04
-title: "Leveling Up: how to tell if you're getting better when you're on the coder treadmill"
+date: 2020-04-26
+title: "Leveling Up: how to tell if you're getting better when you're on the coding treadmill"
 ---
 
 When you’re in a field that has a never-ending amount of learning, it’s hard to feel like you’re making progress. You’re on a treadmill and there will never be a finish line. And that’s simultaneously exciting and exhausting. It’s hard to figure out if you’re making progress. How can you tell what progress even means? It means that you learn to ask the right questions. You learn when to ask for help. You learn your process to find the answers in the way that’s most effective for you. You do things that are out of your comfort zone.
