@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-04-06
+date: 2020-07-01
 title: "Twelve Lessons for Twelve Months as a Dev"
 ---
 
