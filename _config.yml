@@ -1,3 +1,13 @@
+defaults:
+  - scope:
+      path: "_posts/blog"
+    values:
+      type: "blog"
+  - scope:
+      path: "_posts/memoir"
+    values:
+      type: "memoir"
+
 name: Bekah HW blog
 markdown: kramdown
 permalink: blog/:year/:month/:day/:title
