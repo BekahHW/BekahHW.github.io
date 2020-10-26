@@ -15,9 +15,13 @@ Pairing not only forces you to communicate your ideas, but it also gives you the
 Pairing can be overwhelming when you first start. So here are a couple of tips:
 
 - Pair with someone who is one step ahead of you. Sometimes this can take the pressure off.
+
 - Take turns driving and navigating. Sometimes you’ll do the typing while someone else gives you the directions and vice versa.
+
 - Ask a more senior dev if you can watch them work through a problem.
+
 - If someone offers to pair with you, take them up on it, no matter how nervous you are.
+
 - Don’t be afraid to ask for someone to pair with you on a project. It might be their open source project, your project, or something for work. If you have someone you are comfortable with, that’s great. But if you don’t, ask a slack group you’re a part of or even Twitter. In my experience, if someone offers, it’s because they want to help.
 
 I wish I had spent more time pairing when I was learning. Learning to communicate clearly and getting comfortable asking questions was the most important part of feeling like I was a developer. The fastest way I can see to getting there is by pairing or working on a team. It also might look like the scariest, but with a supportive community there’s only progress.
