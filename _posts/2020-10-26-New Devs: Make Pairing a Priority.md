@@ -1,5 +1,5 @@
 ---
-layout: post
+type: post
 date: 2020-10-26
 title: "New Devs: Make Pairing a Priority"
 ---
