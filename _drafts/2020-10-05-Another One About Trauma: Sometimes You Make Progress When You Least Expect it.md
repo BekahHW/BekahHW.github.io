@@ -1,0 +1,19 @@
+“You’re not my problem.” These words have haunted me for years. I thought they had finally stopped, but I realize they’ve been whispering behind me every time I accomplish something, every time I think I’m making progress, every time I feel like I belong. Those are the words my OBGYN said to me when I came into her office five days after giving birth. Five days after the most intense pain of my life. Five days of horrific symptoms that she said sometimes “happen to moms of four kids.” Those are the whispered words I couldn’t identify for the last ten days that have made my anxiety palpable leading up to now, the anniversary of the trauma almost to the minute. 
+
+Those are the words that made me feel not worthy. Not worthy of treatment. The ones that made me feel less than human. The words that made me feel like I didn’t deserve to be treated with kindness and empathy. Those words that made me doubt everything I knew about my body. The words that stole my confidence and replaced it with a child-like terror that I would never be worthy to do anything. Because if I wasn’t worthy of having a doctor listen to me in the most vulnerable state of my life, then why should anyone else listen to me?
+
+I’ve spent a lot of the last ten days angry at myself. Why do I feel so anxious? I have a better support system than I’ve ever had. I have friends. I’ve been vulnerable in ways that I never have with other people. I’m proud of where I am, of who I am, of all the progress that I’ve made. But then I could feel the anxiety in my body. If I wasn’t hyperfocusing, it was a million pins and needles through my whole body. It was the tightness in my chest. It was that feeling like I couldn’t breathe. 
+
+And then it was a constant battle with my brain. Why would anyone want to be friends with me? Why did I ever think that I could be a developer? 
+
+You’re just going to disappoint everyone. There are better people out there. Let them do the things you’re trying to do. Just stop now before you make things worse. You’ve already let them down. No one wants to listen to someone who is crazy.
+
+And I knew these things weren’t true. And they were things I would never say to anyone else because I know they’re false. But they kept coming back. And then I started to believe them. Because why would they come back if they weren’t true? It took a conversation and a lot of reflection to realize something: I was listening to the whisper. She was telling me that I wasn’t good enough, worthy enough to be listened to, to be who I am. And that moment of realization brought a profound relief that I’ve only felt once before. 
+
+It’s not like something clicks and then it goes away. But it’s like you’ve suddenly found the path on the map that will lead you to the next place. It’s the thing that allows room for growth and progress. It’s the thing that wipes away the fears that you will never be whole again. 
+
+It’s a little bit of hope.
+
+Because when you’ve spiraled down into utter darkness, that pin-head glimmer of light is enough to help you move forward; it’s enough to illuminate that whisper into something tangible that you can grab. It’s enough that instead of being paralyzed by life, I made some proactive choices. They weren’t huge choices, but they were little steps in the right direction.
+
+Someone once told me “The pain of trauma won’t ever go away. It will just get different.” And that’s hard to understand unless you’re standing there, whether with your wound opened to the world or hidden where no one can see. Tonight it feels different than it did this morning. And tomorrow it might feel like something old or something new. It’s not ever predictable. But I’m going to take this as a win and say thank you to those people who reached out to me after writing about my trauma. Whether sharing your own stories or acknowledging mine, you’re part of my journey to where I am tonight.
