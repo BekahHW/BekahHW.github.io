@@ -18,7 +18,7 @@ Cypress is An open source, JavaScript end-to-end (E2E) testing framework that bu
 
 ## Why is Cypress good for beginners?
 
-It’s readable.
+### It’s readable.
 
 ```
 context("Login", () => {
@@ -38,7 +38,7 @@ As you keep reading, you see that it’s finding the input, typing, and checking
 
 (And if you’re familiar with Testing Library, you can also add Cypress Testing library to leverage those commands as well--highly recommend.)
 
-The testrunner.
+### The testrunner rocks.
 
 When you run cypress open, the testrunner opens in the browser. The testrunner allows you to see exactly where each part of the test is happening and where it fails. You can see each step in the browser. So if we’re looking at the example above, you would see the email address being typed in the input. When you test a button click, you see that as the test runs. You see what you wrote.
 
