@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bekah HW blog</title>
+    <description>A blog about my journey into tech</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>I am a Woman in Tech</title>
+        <description>&lt;h2 id=&quot;i-am-a-woman-in-tech&quot;&gt;I am a Woman in Tech.*&lt;/h2&gt;
+
+&lt;p&gt;That means that I am technical.&lt;br /&gt;
+That means that I am a community builder.
+That means that I can give a technical talk in the same week that I mentor and MC an event.&lt;br /&gt;
+That means that I don’t want to be put in the project management track.&lt;br /&gt;
+That means that there are unexplored tech fields out there, and I’m going to explore them.&lt;br /&gt;
+That means that I will get stuck sometimes and ask for help.&lt;br /&gt;
+That means that I will be willing to share my experiences.&lt;br /&gt;
+That means that I will tell other women about who to avoid in tech.&lt;br /&gt;
+That means that I will know the answer or how to find it.&lt;br /&gt;
+That means that I am devoted to growing and learning and figuring it out.&lt;br /&gt;
+That means that what I value most is good people.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-am-a-mom-in-tech&quot;&gt;I am a mom in tech.&lt;/h2&gt;
+
+&lt;p&gt;That means that I will not apologize when I put my kids first.&lt;br /&gt;
+That means that sometimes my kids will come into my camera range and wave or scream or cry or kick each other.&lt;br /&gt;
+That means that when I have time to code, I will put all the more drive into it.&lt;br /&gt;
+That means that tech will never be the most important thing in my life.&lt;br /&gt;
+That means that I recognize the importance of community, dependability, and flexibility.&lt;br /&gt;
+That means that I do not have time to waste.&lt;br /&gt;
+That means that I will not work with people who have a problem with that or who passive-aggressively comment on the number of children I have.&lt;br /&gt;
+That means that I have specific opinions, viewpoints, and perspectives on things that most other people in tech do not have.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-am-a-community-creator-in-tech&quot;&gt;I am a community creator in tech.&lt;/h2&gt;
+
+&lt;p&gt;That means that I have a community that I am fiercely in support of.&lt;br /&gt;
+That means that I see every person as a human being before I ever look at them as a dev.&lt;br /&gt;
+That means that I allow myself to be vulnerable because I know how important that is.&lt;br /&gt;
+That means that I value community over competition, caring over pushing people to the very limits of their emotional wellbeing.&lt;br /&gt;
+That means that I value growth and mentorship and teaching at all levels.&lt;br /&gt;
+That means that I meet people where they are.&lt;br /&gt;
+That means that I value exploration.&lt;br /&gt;
+That means that people are what matter.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-am-an-adhd-person-in-tech&quot;&gt;I am an ADHD person in tech.&lt;/h2&gt;
+
+&lt;p&gt;That means that I communicate differently than a lot of people I know.&lt;br /&gt;
+That means that sometimes when I’m really excited about an idea, I talk loud and fast and for a long time without realizing it.&lt;br /&gt;
+That means that sometimes I hyper-focus and it takes a longgggg time to break out of it.&lt;br /&gt;
+That means that other times, I can’t focus at all.&lt;br /&gt;
+That means that sometimes I feel things very intensely and find it hard to communicate.&lt;br /&gt;
+That means that sometimes I over-communicate.&lt;br /&gt;
+That means that I value my systems.&lt;br /&gt;
+That means that sometimes when other people are going to sleep I just can’t stop myself.&lt;br /&gt;
+That means that I deeply value the people who have agreed to come on this journey with me. &lt;br /&gt;
+That means that I’m running a marathon, but sprinting the whole time–and I love it.&lt;/p&gt;
+
+&lt;p&gt;I am a person in tech.&lt;br /&gt;
+I am dynamic and complex.&lt;br /&gt;
+I reserve the right to change at any time.&lt;br /&gt;
+I will not be labeled as one thing.&lt;br /&gt;
+I can do all of the things that I want, and if you tell me I can’t I’ll take that as a challenge.&lt;/p&gt;
+
+&lt;p&gt;When I was 18, an adult woman told me, “Bekah, you can’t change the world.”&lt;/p&gt;
+
+&lt;p&gt;Watch me.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;*This is not met to represent anyone else; it’s solely based on my feelings and experiences.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 27 Nov 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2020/11/27/I-am-a-Woman-in-Tech</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/11/27/I-am-a-Woman-in-Tech</guid>
+        
+      </item>
+    
+      <item>
+        <title>Let Them Write Tests: An Argument for Cypress</title>
+        <description>&lt;p&gt;When I was learning to code, testing was covered a little bit, but I didn’t grasp the full awesomeness of what we test and why we test it. But I have been lucky enough–yes, I said lucky–to learn more about testing and dive into Testing Library and Cypress, but I’m just going to talk about Cypress here. Not only did I learn how to test, and strategies behind testing, but I also learned a lot about the codebase I was working in, how the components work together, how the user interacts with the program.&lt;/p&gt;
+
+&lt;p&gt;And this is a big win. These are things that new devs struggle with. Yes, I may have had a couple of nightmares about the tests I was writing. Yes, I may have been stuck in testing hell for a while. But learning these things helped me to gain confidence as a developer. Letting new devs write tests benefits everyone.&lt;/p&gt;
+
+&lt;p&gt;And Cypress is a pretty good place to start for your frontend needs.&lt;/p&gt;
+
+&lt;p&gt;And if you’re still not convinced that you should be writing E2E tests, let &lt;a href=&quot;https://kentcdodds.com/blog/confidently-shipping-code&quot;&gt;Kent C. Dodds&lt;/a&gt; convince you: “I write tests because they allow me to accomplish more than I could otherwise. I now have thousands of Kents in the form of automated tests telling me whether changes are breaking use cases.”&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-cypress&quot;&gt;What is Cypress&lt;/h2&gt;
+
+&lt;p&gt;Cypress is An open source, JavaScript end-to-end (E2E) testing framework that bundles tools and libraries to get your tests up and running quickly. And one of the cool things about it is that it runs in the browser.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-is-cypress-good-for-beginners&quot;&gt;Why is Cypress good for beginners?&lt;/h2&gt;
+
+&lt;h3 id=&quot;its-readable&quot;&gt;It’s readable.&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;context(&quot;Login&quot;, () =&amp;gt; {
+  beforeEach(() =&amp;gt; {
+    cy.visit(&quot;localhost:8080/login&quot;);
+  });
+  it(&quot;finds and types email&quot;, () =&amp;gt; {
+    cy.get(&quot;#email&quot;)
+      .type(&quot;leslieKnope@pawnee.gov&quot;)
+      .should(&quot;have.value&quot;, &quot;leslieKnope@pawnee.gov&quot;);
+  })
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Just looking at the test above, you get an idea of what’s happening. Before each test is run in this section, the testrunner visits the url that’s specified. The “it” block tells what to expect and checks for the outcome. Also takes a callback (“verb”) and checks the assertion.&lt;/p&gt;
+
+&lt;p&gt;As you keep reading, you see that it’s finding the input, typing, and checking that the value is there.&lt;/p&gt;
+
+&lt;p&gt;(And if you’re familiar with Testing Library, you can also add Cypress Testing library to leverage those commands as well–highly recommend.)&lt;/p&gt;
+
+&lt;h3 id=&quot;the-testrunner-rocks&quot;&gt;The testrunner rocks.&lt;/h3&gt;
+
+&lt;p&gt;When you run cypress open, the testrunner opens in the browser. The testrunner allows you to see exactly where each part of the test is happening and where it fails. You can see each step in the browser. So if we’re looking at the example above, you would see the email address being typed in the input. When you test a button click, you see that as the test runs. You see what you wrote.&lt;/p&gt;
+
+&lt;p&gt;And along with that, when your test fails, you see exactly where it fails and there are usually really great error messages that go along with the failure.&lt;/p&gt;
+
+&lt;p&gt;With the ease of setup–getting it up and running only takes a couple of minutes–the readability of tests, and the testrunner giving a really clear picture of what the tests are doing and how you’re interacting with your software, using Cypress to test your frontend shouldn’t be a hard decision.&lt;/p&gt;
+
+&lt;p&gt;And if you’re new to the devlife and you’re wondering what to learn next or to add to your project, this is a great place to start.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Nov 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2020/11/21/Let-Them-Write-Tests-An-Argument-for-Cypress</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/11/21/Let-Them-Write-Tests-An-Argument-for-Cypress</guid>
+        
+      </item>
+    
+      <item>
+        <title>I'll say it again: Kindness Matters</title>
+        <description>&lt;p&gt;The world can be a really messy and hard and sad place sometimes. And we’re all carrying our own stories. Some of us wear them on our sleeves. Some of us let them slip out from time to time. Some of us keep them very well hidden. Some of us do them all. But at the end of the day, it doesn’t matter if we’re a frontend dev–or if you know how to spell it–a backend dev, a data scientist, or learning to dev. We’re all human. And kindness matters. I said it &lt;a href=&quot;https://bekahhw.github.io/blog/2018/04/14/If-one-of-your-goals-isn-t-to-help-someone,-you-re-doing-it-wrong&quot;&gt;before&lt;/a&gt;, and I’ll say it again.&lt;/p&gt;
+
+&lt;p&gt;And here’s the thing, yes, you should be a decent human being, but also, being a kind and empathetic human being allows so much more room for growth for those around you. I feel kind of gross even saying that thing; productivity shouldn’t be your motivation to be a kind person, but, hey, if that’s what gets you there, fine.&lt;/p&gt;
+
+&lt;p&gt;I’ve talked about going through trauma, and if you want to hear more of that story, you can check out my &lt;a href=&quot;http://beautyinthescar.com/&quot;&gt;trauma-blog&lt;/a&gt; that I just started, but two of the most important things I took from that experience are 1. community matters and 2. the person-centered approach.&lt;/p&gt;
+
+&lt;p&gt;Now, person-centered care–a term I’m stealing from the medical community–is when a person puts your experiences, wellbeing, needs and feelings at the centre of the caring and support process, and means we seek to understand and have empathy for your daily experience. If we remember that each of the people in our communities aren’t just workers and they’re dynamic human beings with multiple responsibilities who both succeed and fail everyday, we’ll do a better job of avoiding becoming a gatekeeper and creating stronger communities. The person-centered approach is driven by empathy and the mindset that each person on your team has something valuable to contribute.&lt;/p&gt;
+
+&lt;h2 id=&quot;be-a-gandolf&quot;&gt;Be a Gandolf&lt;/h2&gt;
+
+&lt;p&gt;When we use this person-centered approach, a couple of things should happen: empathy is increased and we move away from a Me/Them model towards a We/Us model. What exactly does that mean? It means that we work together as a team to accomplish a goal, rather than making someone feel excluded from the team. This is not to say that there’s no leadership. If anything, the leader should establish this mentality and make it easier for the other teammates to follow suit.&lt;/p&gt;
+
+&lt;h2 id=&quot;let-the-hobbits-speak&quot;&gt;Let the Hobbits speak&lt;/h2&gt;
+
+&lt;p&gt;Allowing everyone to become active participants in establishing the type of community that helps everyone to thrive, helps to create the “we” instead of “them.”
+If you’re doing these things–inclusivity, positivity, we-mentality, person-centered approach–it should create an environment where everyone learns from each other. I think this is one of the most important parts of creating positive community and decreasing gatekeepers. By keeping our minds open to learning from anyone in an organization no matter the status or role, we allow ourselves to be versatile and open to growth.&lt;/p&gt;
+
+&lt;h2 id=&quot;but-how-does-that-contribute-to-productivity&quot;&gt;But &lt;em&gt;how&lt;/em&gt; does that contribute to productivity?&lt;/h2&gt;
+
+&lt;p&gt;A growth mindset is one where the individual believes hard work, openness to input from others, and learning can develop talents as opposed to a fixed mindset where a person is more likely to believe they are born with talents. According to Harvard business review, “[employees from companies with a growth-mindset] report feeling far more empowered and committed; they also receive far greater organizational support for collaboration and innovation. In contrast, people at primarily fixed-mindset companies report more of only one thing: cheating and deception among employees, presumably to gain an advantage in the talent race.”&lt;/p&gt;
+
+&lt;h2 id=&quot;employees-in-a-growth-mindset-company-are&quot;&gt;Employees in a “growth mindset” company are:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;47% likelier to say that their colleagues are trustworthy,&lt;/li&gt;
+  &lt;li&gt;34% likelier to feel a strong sense of ownership and commitment to the company,&lt;/li&gt;
+  &lt;li&gt;65% likelier to say that the company supports risk taking, and&lt;/li&gt;
+  &lt;li&gt;49% likelier to say that the company fosters innovation -&lt;a href=&quot;https://hbr.org/archive-toc/BR1411&quot;&gt;Harvard Business Review&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hearing the horror stories of other early devs makes my heart hurt. It’s not that hard to be a kind human being. This has been a &lt;em&gt;really, really&lt;/em&gt; hard week for me. My PTSD from an event four years ago was triggered and it took me a while to figure out what the heck was happening with my brain, why I couldn’t sleep, why that anxiety was crushing my chest. But do you know what makes it feel manageable? Having kind and caring people around me. The people who care first about &lt;em&gt;me&lt;/em&gt; as a person and not what I got done this week. And a side-effect of that, &lt;em&gt;yes&lt;/em&gt; is that I got stuff done.&lt;/p&gt;
+
+&lt;p&gt;I wrote a presentation and tests and refactored code and wrote blog posts and organized events and mentored people. None of that happens if I don’t know that I have support. If no one asks me how I’m doing, and &lt;em&gt;means&lt;/em&gt; it. But also, it’s okay if I did none of that. Be kind to your employees, be kind to your co-workers, and be the best listener you can be. Because you don’t know what anyone else has been through, and acknowledging everyone’s experiences and supporting each other is more important than that code you’re writing anyway.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Nov 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2020/11/08/I'll-say-it-again-Kindess-Matters</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/11/08/I'll-say-it-again-Kindess-Matters</guid>
+        
+      </item>
+    
+      <item>
+        <title>Hacktoberfest 2020: The Best One Yet</title>
+        <description>&lt;p&gt;Last year, I didn’t complete Hacktoberfest. And I felt pretty bad about that.I spent hours looking through issues, hoping to find one that was tagged as a “good first issue” that was actually a good first issue and not a 20-hour project. It didn’t happen. And honestly, it made me sad. I wanted to try to get into open source, but it didn’t feel very open. Fast forward to this year. I started a little thing called Virtual Coffee in April, and by September I had a co-founder to help me support the community, and we decided to create a team to do our first major event with Hacktoberfest.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A lot of work&lt;/em&gt; was put into planning and executing this event. But, wow, was it worth it. This year I was a contributor, maintainer, and mentor. Never would I have imagined that I would go from last years’ disappointment to fulfilling all these roles and learning so much along the way.&lt;/p&gt;
+
+&lt;p&gt;But here’s the thing: Last year I failed because I didn’t have community, because I didn’t feel supported.&lt;/p&gt;
+
+&lt;h2 id=&quot;as-a-maintainer&quot;&gt;As A Maintainer&lt;/h2&gt;
+
+&lt;p&gt;I wasn’t prepared for this at all. My React Native project was a ball of tangled yarn to start with. I had started the project when I had no business starting it–which, by the way, I totally recommend–and then abandoned it for a while (or a year). With the encouragement of some amazing &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;VirtualCoffee&lt;/a&gt; members, I decided to see what I could do. And what I learned is that I can do far more with a community of people who care about the project who have had no experience in React Native than I ever could do by myself. I also learned that experienced developers were there to support me, encourage me, and spend time talking me through everything from MVPs to dev experience to issues I had setting up my first open-source coding project.&lt;/p&gt;
+
+&lt;p&gt;I also learned, it’s damn hard and time consuming to write good issues, but that makes the difference in building community. One of my favorite moments of the entire month is when a contributor tweeted that my project had the best documentation that she’d read. And that documentation doesn’t happen without my Hacktoberfest team. With them, especially &lt;a href=&quot;https://twitter.com/tkshillinz&quot;&gt;Kirk&lt;/a&gt; I learned how to create better documentation and issues.&lt;/p&gt;
+
+&lt;h2 id=&quot;as-a-mentor&quot;&gt;As A Mentor&lt;/h2&gt;
+
+&lt;p&gt;In no universe did I ever feel ready to be a mentor. I’ve got about a year and a quarter under my belt and it seemed very unreasonable to mentor anyone at any stage.The thought of it sent imposter electricity up and down my spine. And here’s where community comes in again. Talking through my self-doubt can be really hard. But I’m lucky that I’ve been able to be vulnerable with the people in my community. When I told &lt;a href=&quot;https://twitter.com/danieltott&quot;&gt;Dan&lt;/a&gt; about my insecurities, he had a lot of great advice. It’s a learning experience. And if you’re honest about where you are and you let them know that some of this will be learning together, everyone grows.&lt;/p&gt;
+
+&lt;p&gt;There were a lot of looking things up together. There were/are some unanswered questions. But honesty and vulnerability are kind of the thing I’m always working towards. I’m a work-in-progress and that won’t ever stop. But that’s what coding’s about. And if I can show that to someone else, someone with less experience than me, and if they can find some self-acceptance there, then that’s my biggest win.&lt;/p&gt;
+
+&lt;h2 id=&quot;as-a-contributor&quot;&gt;As A Contributor&lt;/h2&gt;
+
+&lt;p&gt;There are no fireworks wins here. My last PR was a one word update to a ReadMe. But I wrote some Elm code for the first time ever with the help of a great maintainer, and I learned about how important it is to value contributors, to allow them to be part of the community. I know that I’m more likely to want to contribute to the people who are on my team, who I know I can talk to and ask questions and it’s the people who never make me feel like I am bothering them.&lt;/p&gt;
+
+&lt;p&gt;Open source is an amazing place to be. And there’s so much talk about how it’s a great place for new coders to get experience. Except everyone forgets to mention that a lot of, and maybe even most, OSS projects are not friendly to new coders. Friendly is creating documentation that everyone can understand. Friendly is creating an environment where everyone knows they can ask any question they have. Friendly is inviting opportunities to develop that community from the ground up.&lt;/p&gt;
+
+&lt;p&gt;It doesn’t matter if you hit those four PRs and earned a t-shirt. What matters is you were open to trying. There are some projects that make it a better experience than others. Open-source projects don’t end with Hacktoberfest. I think the best thing that I learned this year was that with the right community–for me, that’s not necessarily the most technical, it’s the one with the heart and passion to keep learning and moving forward–it’s a movement to build things for everyone. And that’s the energy I want.&lt;/p&gt;
+
+&lt;p&gt;This Hacktoberfest was a beautiful experience, and I am so very thankful for the Virtual Coffee team that made it possible. I’m thankful for all their volunteer hours and their desire to help everyone in our community to grow. I am thankful for the maintainers who paired and offered their projects to our community. I am thankful for the mentors who spent time with our community members helping them to grow. I am thankful for the mentorship I had to be able to be a maintainer, contributor, and mentor. Community matters, folks. And I am a part of the best one 💖&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 Nov 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2020/11/02/Hacktoberfest-2020-The-best-one-yet</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/11/02/Hacktoberfest-2020-The-best-one-yet</guid>
+        
+      </item>
+    
+      <item>
+        <title>New Devs: Make Pairing a Priority</title>
+        <description>&lt;p&gt;One of the questions I’ve been asked most frequently is also one that I asked most frequently when I first started: “when will I start to feel comfortable, like I’m good enough to be a developer?” One of the most common answers was between eight and twelve months into your first job. And although I think this is accurate, it doesn’t quite get at what I think should be the question: What will help me to be more comfortable as a developer? And while I have a handful of ideas, I think one of the most important things is pairing.&lt;/p&gt;
+
+&lt;p&gt;When I taught college English I frequently had complaints about my attendance policy. Why did they have to be there? Because when you’re talking about literature, you aren’t memorizing facts, you’re learning how to talk and grow and to think critically. And the best way to do this is to both discuss your observations and analyses with other people and to listen to other people’s perspectives and approaches. And I think the same thing happens when you’re coding, and it’s one of the things that many bootcamp grads and self-taught devs don’t get the opportunity to do.&lt;/p&gt;
+
+&lt;p&gt;At its core, coding is writing and style and communication. You’re communicating with the program. You’re communicating with other developers, project managers, and users. If you can’t communicate your ideas, if you can’t write them in a way that’s logical, then things don’t work or you don’t understand why they work. I don’t think you need a complete, in-depth understanding, but you need to have a sense of why you used this approach for this problem and what this approach does.&lt;/p&gt;
+
+&lt;p&gt;Pairing not only forces you to communicate your ideas, but it also gives you the opportunity for feedback, questions, and discussion. One of the biggest challenges when you’re learning to code is &lt;strong&gt;&lt;em&gt;you don’t know, what you don’t know, until you know it.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Pairing can be overwhelming when you first start. So here are a couple of tips:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pair with someone who is one step ahead of you. Sometimes this can take the pressure off.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Take turns driving and navigating. Sometimes you’ll do the typing while someone else gives you the directions and vice versa.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ask a more senior dev if you can watch them work through a problem.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If someone offers to pair with you, take them up on it, no matter how nervous you are.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t be afraid to ask for someone to pair with you on a project. It might be their open source project, your project, or something for work. If you have someone you are comfortable with, that’s great. But if you don’t, ask a slack group you’re a part of or even Twitter. In my experience, if someone offers, it’s because they want to help.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I wish I had spent more time pairing when I was learning. Learning to communicate clearly and getting comfortable asking questions was the most important part of feeling like I was a developer. The fastest way I can see to getting there is by pairing or working on a team. It also might look like the scariest, but with a supportive community there’s only progress.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Oct 2020 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2020/10/26/New-Devs-Make-Pairing-a-Priority</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/10/26/New-Devs-Make-Pairing-a-Priority</guid>
+        
+      </item>
+    
+      <item>
+        <title>The Thing About Trauma Is...</title>
+        <description>&lt;p&gt;The thing about trauma is, it doesn’t stick to your timeline. The thing about trauma is, when you think you’re done with it, it creeps back in. The thing about trauma is, you find yourself in constant fight or flight and you second guess every single decision you make and whether or not you’re too much for the people in your life. You wonder if you’re overreacting. You wonder if the people you call your friends will stop being your friends because that’s all you can focus on. You wonder if you will always feel alone. The thing about trauma is, even when you have worked so fucking hard, it still creeps up.&lt;/p&gt;
+
+&lt;p&gt;Monday is my fourth trauma anniversary. It’s complicated. Monday is my youngest kids’ fourth birthday. We simultaneously celebrate her life while I remember the pain of my organs rupturing into each other. When I remember the doctors not believing me. When I remember being sent home with “Sometimes moms of four go through this.” When I remember crying next to my bed thinking that I could not live the rest of my life like this. Trauma is not forgiving. And I try my hardest every year to focus on how thankful I am for where I am in my life. I am thankful that trauma lead me to code. I am thankful for having the best people in my life. I am thankful for understanding myself.&lt;/p&gt;
+
+&lt;p&gt;But even though my brain accepts these things, my body doesn’t. I haven’t had a good night’s sleep in probably a week and a half and it’ll probably be another three or four weeks before I do. As soon as I leave a state of hyperfocus, I can feel the anxiety in every single part of my body. My body thinks it’s not safe. My body remembers, and it won’t let me move forward. If it doesn’t sleep, it won’t come close to dying. If it doesn’t sleep, nothing bad will happen. If it doesn’t sleep, it won’t…If it doesn’t sleep.&lt;/p&gt;
+
+&lt;p&gt;I tried really hard this week. I tried to keep my schedule full. I went to therapy twice. I tried to pretend things were normal. I tried to help other people. I tried really hard this week, and I feel like I failed at every. single. turn. I felt alone in that hospital room. I was back there. No one believed me. No one helped me. And I couldn’t breath.&lt;/p&gt;
+
+&lt;p&gt;This week was a constant challenge to breath. I wanted to do my best for the people around me, but I couldn’t breath. The entire week was a battle with myself. A battle to prove to myself that I was more than my trauma. A battle to prove I that I was not that 31 year old in the doctor’s office who was not the doctor’s “problem.” It was a battle to prove that I had worth, that I was a solution, that I mattered enough to someone.&lt;/p&gt;
+
+&lt;p&gt;And it’s hard when your mind and your body are fighting you. It’s hard when you second guess what everyone says to you because this time of year triggers a general distrust. It’s hard that you don’t feel good enough, worth enough, to be around amazing people. It’s fucking hard.&lt;/p&gt;
+
+&lt;p&gt;And it’s hard to talk about. I don’t know how long I’ll leave this post up, but probably not forever. It’s hard to tell people who don’t understand trauma how broken you feel. It’s hard to explain that you want to feel differently, but something you don’t know how to control won’t let you.&lt;/p&gt;
+
+&lt;p&gt;I did my best this week, but it feels like I fell short by a million miles. It feels like I didn’t do anything worth while. It feels hard and sad and like I’ve fallen down. Down. Down. And I don’t know how to get up or climb out or forge a new path. It physically hurts. It’s like part of my soul is continually being sucked out.&lt;/p&gt;
+
+&lt;p&gt;I know I’m not at fault. And I’ve been in treatment for a while. I’m four years past my trauma, and it’s still hard. Trauma doesn’t just stop. So if you’re heart hurts right now, I’m sorry. I’m sorry it hurts. My heart hurts right with you.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 02 Oct 2020 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2020/10/02/The-Thing-About-Trauama-Is</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/10/02/The-Thing-About-Trauama-Is</guid>
+        
+      </item>
+    
+      <item>
+        <title>Building Community is just as Important as Building Products</title>
+        <description>&lt;p&gt;Move fast and break things. You hear that a lot in tech. And I’m here to call bullshit. Because you don’t build relationships fast and break them. You don’t create trust by breaking things. You don’t depend on things that break. You don’t step on the ice of a pond with a pair of ice skates to figure out if it’s strong enough to hold you. You figure it out before you trust it. You know if it’s solid. And &lt;em&gt;that’s&lt;/em&gt; what enables you to soar.&lt;/p&gt;
+
+&lt;p&gt;What enables you to glide across the ice, what allows you to soar is the trust that comes from having that solid base. And it doesn’t matter how great the software is if you don’t have great people behind it, because if you don’t have great people the software will eventually fail. It’s possible to push through and make something great, but that doesn’t last without injury. When you push the people on the team so hard that they don’t have time to recover, that they never feel like they’ve won a minute in their career, you are responsible for the breakdown of the product, goals, and/or organization.&lt;/p&gt;
+
+&lt;p&gt;When you have a community who can trust each other, when you have a community who supports each other, when you have a community who can be honest and transparent, &lt;em&gt;that’s&lt;/em&gt; when you have the potential to make amazing things. That’s when you have the potential to change this industry. Because you have the ability to soar because you can trust each other, because you know that if someone stops you, it’s for good reasons, because when they let you go, they’ll be there to support you even if the ice starts to feel a little thin. They’ll get you back to the shore and you’ll re-evaluate for next time. But you’ll be damn sure that no one lets you make the same mistake again.&lt;/p&gt;
+
+&lt;p&gt;One of my all-time favorite quotes is from James Clear in &lt;em&gt;Atomic Habits&lt;/em&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Nothing sustains motivation better than belonging to the tribe. It transforms a personal quest into a shared one.
+Previously, you were on your own. Your identity was singular. You are a reader. You are a musician. You are an athlete.
+When you join a book club or a band or a cycling group, your identity becomes linked to those around you. Growth and change is no longer an individual pursuit. We are readers. We are musicians. We are cyclists.
+The shared identity begins to reinforce your personal identity. This is why remaining part of a group after achieving a goal is crucial to maintaining your habits. It’s friendship and community that embed a new identity and help behaviors last over the long run.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Driven by empathy and the mindset that each person on your team has something valuable to contribute, communities that have a growth-mindset, the ones that have each-others backs are the ones that change the industry. I’m not interested in being a part of something that doesn’t want to change the industry. I’m not interested in doing the things the way they’ve always been done. I’m interested in working with good people because I know that they are interested in changing the world. I know that they will inspire me, when I feel uninspired. And I’ll be there to inspire them some day too. Because, for me, there is no point in doing things if it’s not to change things for the better, if it’s not to make products or changes in the industry that will improve the lives of someone we know. I’m a firm believer that it doesn’t happen unless we can trust the people around us. And when both of those things align, something beautiful will happen.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Sep 2020 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2020/09/22/Building-Community-is-just-as-Improtant-as-Building-Products</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/09/22/Building-Community-is-just-as-Improtant-as-Building-Products</guid>
+        
+      </item>
+    
+      <item>
+        <title>ADHD, the Quarantine, and Me</title>
+        <description>&lt;p&gt;A couple of months ago, I was diagnosed with ADHD. One of the things I’ve learned after being diagnosed is that there is so much I don’t know and I’m learning everyday. Yesterday, someone shared &lt;a href=&quot;https://twitter.com/tld1403/status/1288673819415191552?s=20&quot;&gt;this tweet&lt;/a&gt; in our Virtual Coffee slack and it helped me to break down the parts that I’m really struggling with right now. I’ve only told a couple of people, though it was both a surprise and not a surprise. And honestly, I was waiting to write this blogpost until after I “got a handle on it.” Spoiler alert: I don’t have a handle on it. Maybe I never will. But maybe this will help someone out. Maybe it will help you to know that being at home during quarantine with kids has intensified my symptoms in ways I couldn’t imagine. Maybe it would help you to know that I miss those hours I spent hyperfocusing on code maybe more than anything else during these times. Maybe it would help someone to know that some days things are ok, and then other days I learn something new about ADHD and it sends me down the rabbit hole of looking at my past interactions and feeling a new pain, a new wound because I can see that those times someone told me that I talked to loud or too fast or too much was a symptom of my ADHD. Maybe it will help someone.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-little-backstory&quot;&gt;A Little Backstory&lt;/h2&gt;
+
+&lt;p&gt;Growing up, I didn’t have the ADHD struggles I’ve commonly heard about. But about a year ago, I read more about ADHD and started seriously thinking I might have it. I mentioned to my sister-in-law (a counselor) that I might have it, and she said, “You didn’t know?” And then in true ADHD fashion, I kinda forgot about it. Because I did well at school and work, it didn’t feel like a problem. And here’s the thing, knowing what I know now, I think the reason I did so well was because though not all of my family is diagnosed with ADHD, I’m pretty sure they would be. And I believe the coping mechanisms that allowed my parents to succeed, allowed me to succeed in school and work as well.&lt;/p&gt;
+
+&lt;p&gt;See, where it really affected me was in social situations. If you checked out that tweet I posted above, you’ll recognize the categories that changed my understanding of my own experience with ADHD and my understanding of myself: Hyperfixation, Getting Upset Easily, and Rejection Sensitive Dysphoria–if you’re going to read one article on this, &lt;a href=&quot;https://blackgirllostkeys.com/adhd/adhd-rejection-sensitive-dysphoria/&quot;&gt;this is the one&lt;/a&gt;. I’ve always had a hard time making connections, and I’ve been in situations where people have criticized my passion in social situations. “You get too excited.” “Shhh, why are you talking so loud.” These are the things I remember, how I think of myself. Another big one for me is Memory Loss, “Why didn’t you do X? I’ve told you a million times…You’re just not trying hard enough…You just don’t care…” And even when I told my doctors I was having problems with focus and concentration, they said, “That happens to moms.” So for a long time, I’ve been accepting this as my life, hoping that maybe this “mom-brain” would go away.&lt;/p&gt;
+
+&lt;p&gt;It’s those comments that have made me feel like I’m not good enough, I’m not smart enough. To be a programmer, to be a mom, to be a friend. These feelings and my lack of understanding of how my brain works differently than other people’s that have led to anxiety. And most of this hit me in adulthood. It wasn’t until I heard other people talking about it, until I read other people sharing their experiences on Twitter that I had the courage to ask more about it.&lt;/p&gt;
+
+&lt;h2 id=&quot;adhd--coding&quot;&gt;ADHD &amp;amp; Coding&lt;/h2&gt;
+
+&lt;p&gt;I’ve spent a lot of my life being good at hyperfocusing. I like and enjoy a lot of different things, and coding is one of them. Looking back at my &lt;a href=&quot;https://bekahhw.github.io/blog/2018/04/23/How-coding-has-been-therapeutic-for-my-PTSD&quot;&gt;post-trauma self&lt;/a&gt;–the one where I had anxiety, depression, and PTSD–I realize why life felt so chaotic. My brain was spending all its energy bouncing from traumatic memory to traumatic memory. And it hadn’t hit me until just now that when I started coding, I got back my hyperfocus. I always say that coding saved me, but that’s by extension of hyperfocus. It can be comforting and it feels normal and when I have hyperfocus in my day, I’m much better able to handle any other chaos that comes. When I find something that I hyperfocus on, I also want to talk about it and do it all the time, which can also make social situations challenging. Believe it or not, not everyone wants to hear about what I learned about writing tests today. It becomes a large part of my personality. But I find that when I do have that in my life, things like my memory improve. I don’t have an explanation for that, but I’m sure someone else out there does. The point is, when I have hyperfocus in my life, I feel like I can complete the tasks that I have scheduled for the day, that I can almost relax. I feel the most like myself.&lt;/p&gt;
+
+&lt;h2 id=&quot;adhd--the-quarantine&quot;&gt;ADHD &amp;amp; the Quarantine&lt;/h2&gt;
+
+&lt;p&gt;Here’s where things got bad. Like really bad. I love my kids. I have four of them. And I’ve spent a lot of time taking them places (museums, hiking, after school activities) by myself. And that’s when I feel like I do my best momming. I think a lot of it has to do with my ability to focus on new and interesting things, whereas being in the house, there are so many things that need my attention–the kids, the dishes, the cooking, the laundry, the leaking sink, bills, work, etc. Being in the house without focus is like being hooked by a thousand different strings pulling me in different directions and I can’t ever finish anything because I’m hooked in too many different directions. It’s exhausting.&lt;/p&gt;
+
+&lt;p&gt;And maybe it sounds weird, but before the quarantine, I was working from home and things were fine. But that’s because I had an expectation of working 3-4 hours a day at a certain time, and knowing I would be able to finish something. And finishing something feels pretty damn good. But when quarantine hit, I suddenly found myself in a situation where I was parenting these kids for like 16 hours a day and because of social distancing and my husband’s job obligations I didn’t have much help for a while. To top it off, my coding drastically decreased and I didn’t have that focus time. So I didn’t have the relief and reset that I find with hyperfocus. I had four kids at home that now found me as their mom, teacher, BFF, fill-in-whatever-else-they needed-me-to-be-that-day, and it has been a constant and chaotic time. And for a long time, I felt like a failure every single day.&lt;/p&gt;
+
+&lt;p&gt;Once school ended, things got a lot better, but I still struggle. I don’t have the quiet coding time that I used to have. I’m carrying more responsibility than I did pre-COVID. And I find it really hard to not have a set time period to code. So my schedule frequently looks like this: code until a kid needs something or is crying or is telling on another kid for eating ice cream before breakfast. Take a break to help said kid(s). Repeat. And so what ends up happening some days is I feel like I’ve neither done all the coding I wanted to get done nor have I parented in the way that I want to. Everything is frustration. And sometimes I’m feeling pretty desperate for time to have a brain that doesn’t feel like a pinball machine. The days that I do get a couple of hours of kid-free code time, those are the days that I feel like I can take on the world.&lt;/p&gt;
+
+&lt;h2 id=&quot;treatment&quot;&gt;Treatment&lt;/h2&gt;
+
+&lt;p&gt;I wanted to write this post after I was treated and felt good about where I am. But this is my current frustration. I’ve had people recommend I try CBD blunts, essential oils, diet and exercise changes. And while those things may help some people, with my current situation I, and my therapist, strongly feel that I need to try medication.&lt;/p&gt;
+
+&lt;p&gt;Before trying any of the commonly prescribed medications, my doctor wanted to try an off-label or new use of a medication for six weeks. The problem is, that medicine made me so incredibly tired. So tired that I fell asleep around 2 or 3pm just because I sat down. So tired that when I went to see my therapist I couldn’t remember if the light I had gone through was red or green.&lt;/p&gt;
+
+&lt;p&gt;After some modifications, my doctor decided to prescribe me Vyvanse. I had hope for the first time in a long time. Except when I went to pick up the prescription, my insurance company rejected it because they want my doctor to sign an authorization form. How the prescription that my doctor signed is not enough of an authorization, I’ll never know. But now I’m waiting to hear back from a doctor who is on paternity leave in the hopes that I can have my medication. In the hopes that the anxiety caused by my brain’s inability to focus right now can find some relief.&lt;/p&gt;
+
+&lt;p&gt;This is a new journey for me, and I’m grateful to everyone out there sharing their ADHD stories because I wouldn’t understand any of this unless I read your story first. One of my favorite Twitter accounts and blogs that was recommended to me is &lt;a href=&quot;https://twitter.com/blkgirllostkeys&quot;&gt;Ŕene Brooks&lt;/a&gt;, so if you’re interested in learning more, she’s a great place to start. I didn’t want to write this until I had answers I could share. But through the guidance of others, I’ve learned that my answers might not be the ones that work for you and it might take a really long time to find the answers I’m looking for. And maybe just reading about my experience is enough to help someone feel not alone. Not everyone will understand you. Sometimes it’s even the people who are closest to you.&lt;/p&gt;
+
+&lt;p&gt;When I was diagnosed I was both overwhelmed and had a sense of relief. I was fortunate enough to have people in my life that I’ve met in the Twitter tech space that I could ask them about their experiences. And understanding this whole experience has been a challenge that feels kind of like a choose your own adventure story except, when you make a decision you get sent to a page that doesn’t make any sense with the story you’ve already read. And in those times, I go back and read those conversations, because they are a treasure trove of information that remind me that I am ok. One of the best pieces of advice that I go back to when I’m having a tough day is “the problem is you’ve had the wrong set of instructions for your brain this entire time.” I just sit with that and take a deep breath. This might mean writing my own instructions or taking bits and pieces from other people, but for sure it does mean to not judge myself based on the wrong set of instructions I’ve been using.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Aug 2020 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2020/08/03/ADHD,-the-Quarantine,-and-Me</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/08/03/ADHD,-the-Quarantine,-and-Me</guid>
+        
+      </item>
+    
+      <item>
+        <title>The Tech Industry is Failing Junior Devs</title>
+        <description>&lt;p&gt;We talk a lot about how there aren’t opportunities for junior devs, about how we lure people into tech with promises of tons of jobs and good pay and without needing a degree. And then they graduate from bootcamp or have built enough projects that they feel confident enough to begin applying. And then it happens; they discover the life-sucking, existential-crisis inducing process of trying to find a job as a junior dev.&lt;/p&gt;
+
+&lt;p&gt;What happens to all those jobs? Why are there so many people championing juniors, but at the same time not jumping at the chance to hire juniors? Well, the things that no one tells you about juniors is that they cost the company money; as one company owner put it, they’re “a net negative on the company.” But why? Because as a new dev, juniors are kind of like a rookie or Smalls from the Sandlot. They don’t know how to throw the baseball as far as the other player, they need to be coached. They need to learn how to hit the ball with precision, the best way to hold the bat. They need to know where to position themselves in the outfield, what the names of the positions are. They have the general idea of what the game is and what it should look like, but frequently don’t know how to play as a member of the team.&lt;/p&gt;
+
+&lt;p&gt;As a result, another player usually needs to spend time coaching them. That means that not only are &lt;em&gt;they&lt;/em&gt; slower than the other players, but that the player coaching them slows down too. That’s not necessarily a bad thing, and I strongly believe in learning through teaching, but the point is, it takes time and resources to condition the junior dev to become part of the major league. A junior developer is an investment. And with the way devs change jobs in this industry, it can be a risky investment. So what are some things that juniors can do to make themselves stand out?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;I &lt;em&gt;strongly&lt;/em&gt; recommend doing open source work. Open source work shows that you can look at and contribute to an existing codebase. It gives you experience contributing and communicating with a team. As a dev, you’ll likely be working on a team, and proving that you can, goes a long way.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Work on group projects. Depending on the project and the number of people on the team, this can be a good way to work on communication and level up your development skills. Sometimes this means working with a smaller codebase, other times you could be walking into something more complicated. IMO, the more uncomfortable it makes you, the more you’ll learn.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Build your own projects. Building communication skills is really important, but being a life-long learner should always be a goal. Someone once told me to create projects like this: Create a small project that implements a feature. Next, create a new project that implements that feature &lt;em&gt;and&lt;/em&gt; something new. And then continue to do that. I think the equation is to practice what you’ve learned and add something new every time.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find your community. I think I’ve put this in most of my blog posts. It’s &lt;em&gt;that&lt;/em&gt; important. Having a network to cheer you on, to mentor you, to push you forward, and to recommend you will help you find your first job.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;But the onus shouldn’t just be on the junior developers. Companies need to do a better job of creating workplaces that keep junior devs. If you create an environment that is empathetic, growth-focused, one where senior devs know they’ll be mentoring juniors, where they’re excited about helping someone to grow, junior devs will stay and eventually be the senior devs who take the time to bring in the new junior devs. Hire senior devs who aren’t afraid to tell junior devs that they have broken things. Hire senior devs who are patient enough to not make junior devs feel stupid for asking questions. Hire senior devs who know that institutional knowledge and cultivating relationships will help to make that junior dev feel at home.&lt;/p&gt;
+
+&lt;p&gt;I think one of the top things that holds junior devs back is fear. Fear of applying, fear of talking positively about themselves, fear of being told they’re not good enough, fear that instead of having their questions answered, they’ll be laughed at. But if you have junior devs who have good mentors and a positive work environment, they’re more likely to level up quicker.&lt;/p&gt;
+
+&lt;p&gt;I’m one of the lucky ones. I found a job immediately, and it’s been a really good one. Most juniors come into this tech journey with people telling them “there are sooooo many jobs.” What they don’t say is those jobs are for mid to senior level devs. What they don’t say is that they’ll cheer you on, but they won’t invest in you. What they won’t say is it might take you a year, &lt;em&gt;a year&lt;/em&gt;, to find your first job. And it might be at a crappy place that hires you because you are a junior and they want you to do the work of a senior with junior level pay. It’s time to call bullshit. If you’re a junior and you’re looking for a job, keep working on your skills. If you’re a company thinking about hiring juniors or are currently hiring them. Invest in them. They’ll grow with your company. They’ll be an asset. There’s a scenario where everyone wins, we all just need to talk more openly about how to make that happen.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Jul 2020 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2020/07/20/The-Tech-Industry-is-Failing-Junior-Devs</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/07/20/The-Tech-Industry-is-Failing-Junior-Devs</guid>
+        
+      </item>
+    
+      <item>
+        <title>Twelve Lessons for Twelve Months as a Dev</title>
+        <description>&lt;p&gt;I started working as a developer a year ago today. To this day, I still don’t understand how/why I was hired, but I was/am super happy to have the opportunity to do work that I never truly believed I would have. When I started bootcamp, it was still therapeutic. I’ve never been “naturally smart,” but I’ve always been a hard-worker. I knew I could complete the bootcamp with enough hard work, but I never thought anyone would hire me, let alone as a front-end dev. But what I’ve discovered over the last year was that despite the many, many times that I thought I would do everyone a favor and go back to teaching, I actually have learned a ton and I kinda feel like I belong here. It’s not easy, and I’ll certainly continue to grow, but I’ve learned a lot along the way that I want to share.&lt;/p&gt;
+
+&lt;p&gt;1- &lt;strong&gt;Get Comfortable with being Uncomfortable.&lt;/strong&gt;
+This is the advice I’ve probably received the most, and it’s at the top of my list because it’s what caused so much self-doubt. It was worse than when I first started teaching college courses. When I started teaching, I was 23, short (5’1 and ¾ ), and probably only looked 16. My (guy) students wouldn’t listen, acted totally inappropriate (one hit on me), and I had to have other teachers come observe my classroom to help me with classroom management. And that’s kind of what coding felt like everyday for a longggggg time. Chaos. I got through that semester of teaching, but it wasn’t pretty. In the same way, I got through the first six months of coding, which I’m sure was not pretty in any way. But for most devs, that’s part of the game. You’re stepping into a new world, with a million problems, 3.5 million ways to solve them, and sometimes those 3.5 million answers only hint at the way that &lt;strong&gt;you&lt;/strong&gt; need to solve it. Spoiler alert: this is going to be your career, so get used to it.&lt;/p&gt;
+
+&lt;p&gt;2- &lt;strong&gt;Communicate.&lt;/strong&gt;
+The one thing I wish I would’ve done better at in the beginning. The clearer you can communicate with those around you, the easier it will be. Everyone communicates differently, so finding the way that works best for you and those around you will be really important to your growth. Coding is all about learning everyday. If there’s someone there who can help you learn, utilize that person. You’ll learn faster. You’ll get to see how they think. You’ll find new ways of thinking about things as well. Look, the hero never makes it to the final battle without a mentor.&lt;/p&gt;
+
+&lt;p&gt;3- &lt;strong&gt;Sometimes you have to dive down the rabbit hole.&lt;/strong&gt;
+Yes, that might sound like it contradicts the previous point, but I think you can only develop your own method and understanding of your abilities once you’ve spent seventeen hours trying to figure out one issue. Ok, it doesn’t have to be seventeen hours, but it’s worth while to take your time to really think things through, develop a process, and look at the problem you’re trying to solve. For me, I’ve discovered that having a notebook next to me, writing out the problem and potential solutions as I go, and then checking off what I’ve done both helps me to communicate what I’ve tried when I &lt;em&gt;still&lt;/em&gt; can’t figure out the problem, and it allows me to avoid circling around the same solutions.&lt;/p&gt;
+
+&lt;p&gt;4- &lt;strong&gt;Find community.&lt;/strong&gt;
+This has been important to me every step of the way. And community won’t always mean the same time. For a long time, I only felt comfortable with other moms in tech, sometimes it’s other people at my level of learning, right now I’m really enjoying being around devs at all stages of their learning journey during Virtual Coffee. But it definitely helps to be able to voice your frustrations, reach out to people you trust, and celebrate your wins together.&lt;/p&gt;
+
+&lt;p&gt;5- &lt;strong&gt;Let others help.&lt;/strong&gt;
+So this is a tough one for me. I’m used to working independently. I’m used to doing all the things, usually by myself. But coding can be a team sport. It is not a failure to let other people help you. It is part of the learning experience. That’s also how you grow and learn to communicate together. It’s what allows for team-building. It’s how you’ll learn how to be a good teacher yourself.&lt;/p&gt;
+
+&lt;p&gt;6- &lt;strong&gt;It’s ok to feel like you aren’t ready.&lt;/strong&gt;
+Every damn day.&lt;/p&gt;
+
+&lt;p&gt;7- &lt;strong&gt;Find the balance that works for you.&lt;/strong&gt;
+Some people thrive by coding a forty hour workweek, a side hustle, and extra learning every night. That’s not ever going to be an option for me, so finding a balance of learning while working and being satisfied with that balance was super important and super helpful in avoiding burnout. There has not been a day this year where I’ve said, “I really don’t want to code today.” And I think that’s because I didn’t max out. Sometimes I did more coding and learning than others, but I also gave myself some grace when I couldn’t do all the things.&lt;/p&gt;
+
+&lt;p&gt;8- &lt;strong&gt;You can’t learn everything.&lt;/strong&gt;
+There are so many shiny new tech things out there that it’s easy to get distracted. Would I love to learn more about machine learning? 100%. But I can’t do that right now. Do I need to know three different JS frameworks? No. But knowing one pretty well is probably more important than knowing surface level implementation of three.&lt;/p&gt;
+
+&lt;p&gt;9- &lt;strong&gt;Don’t be afraid.&lt;/strong&gt;
+I had a lot of fears that I had to overcome this year. Fear of failure. Fear of not being good enough. Fear of breaking things. Fear of saying things that would make people want to run from tech instead of learning more. Fear of never being able to understand what I was looking at. Fear that I was overvaluing myself. Fear that I would never find a job. Fear that I would never find a job working with good people. Fear that someone would discover that I was not really a dev. Don’t do that to yourself. It’s going to be hard. You will have doubts. But you are where you are supposed to be on this coding journey. It might not be as far as you want. You may not have hit the training montage yet, or maybe you’re at the really painful beginning of that montage, but fear will only keep you from growing.&lt;/p&gt;
+
+&lt;p&gt;10- &lt;strong&gt;You’re learning, even when you feel like you’re stagnant.&lt;/strong&gt;
+I don’t know why I can’t get this through my head. Every time I think I’m standing still, I need to take a break and look at the code I wrote three months ago. It doesn’t feel like I’m better at writing code, but there is proof that I am. I need to look back at my notes. I need to remember how hard it felt to start a project, only to look at it now and see how easy it is.&lt;/p&gt;
+
+&lt;p&gt;11- &lt;strong&gt;Google. Google. Google.&lt;/strong&gt;
+If I had a BFF necklace, the second half would go to google. Everybody googles things. Tech moves too fast to not have to google things. Senior devs google. We all google, and that doesn’t make us less of a dev.&lt;/p&gt;
+
+&lt;p&gt;12- &lt;strong&gt;Enjoy yourself.&lt;/strong&gt;
+I love coding. I love my job. I don’t think I’ve ever been in a position where I can’t wait to get back to work after taking time off. I love the focus and problem solving. I love feeling like I’m part of a larger community of people. I love that even when I’m struggling and frustrated that I know I’ll break through and figure it out, and that I’ll smile at the end of it. Yes, it’s challenging. Yes, some people do it just for the money. But enjoying yourself will keep you from burning out and keep you wanting to come back for more.&lt;/p&gt;
+
+&lt;p&gt;And just in case twelve lessons aren’t enough, here’s a bonus: work with good people.&lt;/p&gt;
+
+&lt;p&gt;I spent ten years teaching college English. I didn’t love it, but I didn’t hate it. I never thought I would change careers. And it wasn’t until I changed to tech that I really realized how frustrating it had been. By really &lt;a href=&quot;https://bekahhw.github.io/blog/2018/04/23/How-coding-has-been-therapeutic-for-my-PTSD&quot;&gt;weird circumstances&lt;/a&gt; I ended up in tech, and it’s been a wild ride. And despite the initial fears and self-doubt, despite the wildness of the COVID-related interviewing experiences, I wouldn’t trade this for anything. I’ve been so lucky to work with amazing people, to work with someone who wants to help me to learn and grow, to grow with other developers, to find multiple communities who have supported me, offered advice, and cheered me on. And I have never in my entire life felt such a strong sense of belonging. So thank you to all of those people who have been there for me. And if you’re just starting your journey or just found your first dev job, know that it might be hard and a rollercoaster of a year, but I hope that you find an experience that’s been as great as mine.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Jul 2020 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2020/07/01/Twelve-Lessons-for-Twelve-Months-as-a-Dev</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/07/01/Twelve-Lessons-for-Twelve-Months-as-a-Dev</guid>
+        
+      </item>
+    
+  </channel>
+</rss>
