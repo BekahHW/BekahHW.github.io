@@ -16,6 +16,7 @@
     @import url('https://fonts.googleapis.com/css?family=Gudea|Poppins|Rozha+One|Work+Sans');
     @import url('https://fonts.googleapis.com/css?family=Charmonman|Cormorant+Upright|PT+Sans|Poiret+One|Ranga|Sacramento|Sedgwick+Ave|Srisakdi');
   </style>
+<link href='https://bekahhw.github.io/feed.xml' rel='alternate' type='application/atom+xml'>
 </head>
 
 <body>
@@ -36,15 +37,17 @@
 <p class="meta">23 Feb 2019</p> -->
 
 <div class="notes">
-		<div class="note single">
-			<h1 class="title">Building Out Our Schema: Screenwriting Project Continued</h1>
+  <div class="note single">
+    <h1 class="title">Building Out Our Schema: Screenwriting Project Continued</h1>
 
-			<h2 class="date"><info datetime="2019-02-23 00:00:00 -0500">
-				23 Feb 2019 
-			</info></h2>
-			<!-- Post content -->
-			<div class="notebody">
-				<p>So we have our models and associations, but before we really start to code, we need to get a better idea of what information these models will hold. When we look at the schema, it gives us a picture of what the database looks like, what information it accepts and stores. First, we’ll create the attributes, and then we’ll look at how to use ActiveRecord to create migrations for our schema.</p>
+    <h2 class="date">
+      <info datetime="2019-02-23 00:00:00 -0500">
+        23 Feb 2019 
+      </info>
+    </h2>
+    <!-- Post content -->
+    <div class="notebody">
+      <p>So we have our models and associations, but before we really start to code, we need to get a better idea of what information these models will hold. When we look at the schema, it gives us a picture of what the database looks like, what information it accepts and stores. First, we’ll create the attributes, and then we’ll look at how to use ActiveRecord to create migrations for our schema.</p>
 
 <p>So far, these are our models: Screenwriter, Screenplay, Genre, Agent. That’s a great start, but we need to be able to store information about these models in a database. Eventually, we’ll be using postgres.</p>
 
@@ -129,32 +132,9 @@ end
 
 <p>I would go through and do this for the other data we’ve come up with, just switching string out for the correct datatype. This means we’re just about ready to get something we can see on a screen down in your text editor. But more about controllers and views later.</p>
 
-			</div>
-			<!-- Post info -->
-			<div class="noteinfo">
-			<!-- include some categories and tags maybe? -->
-			</div>
-
-			<!-- <hr> -->
-
-			<!-- Post comments -->
-			<!-- <div class="notecomments">
-				<div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'BekahHW';
- 
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-			</div>
-		</div>
-</div><!- /.notes -->
+    </div>
+  </div>
+</div>
 
 
   </div>
@@ -169,6 +149,7 @@ end
               aria-label="instagram icon"></i></a></li>
         <li class="socialLinks"><a href="https://www.linkedin.com/in/bekah-hawrot-weigel-33046419/"><i class="fa fa-linkedin"
               aria-label="LinkedIn icon"></i></a></li>
+              <li class="socialLinks"><a href='https://bekahhw.github.io/feed.xml' rel='alternate' type='application/atom+xml'><i class="fa fa-rss"></i></a></li>
     </ul>
   </footer>
 </body>
