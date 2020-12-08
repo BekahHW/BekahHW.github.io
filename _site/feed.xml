@@ -7,6 +7,82 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>I Came into Tech via Trauma</title>
+        <description>&lt;p&gt;I don’t have a traditional path into tech. I came into tech because my organs ruptured when I had my fourth kid. I came into tech because I had PTSD. I came into tech because I have ADHD. I came into tech because after I had surgery to remove one organ and restructure another, I overdosed on morphine and then spent the next six days teaching from a hospital bed because I didn’t have any rights as an adjunct instructor. I came into tech because I just wanted it to stop. I wanted my brain to stop. When I coded, it stopped.&lt;/p&gt;
+
+&lt;p&gt;My journey into tech isn’t typical. And depending on how honest I am, my story is shocking. I didn’t mean to make a career change. I just wanted to have something, to feel like I could succeed at anything at all. I came into tech because the last six years of being an adjunct instructor I fought to have rights, to get a pay increase, to create a community. And I left with nothing. I came into tech because I found support, a community that I was seeking for years.&lt;/p&gt;
+
+&lt;p&gt;Four days after having my fourth kid, I went into my OBGYNs office. It haunts me. I told her about the horrific symptoms I was experiencing, and she told me “it’s not my problem.” I’ve told this story a thousand times, and it still hurts to say it. And it hurts because she said it to me, but it hurts because I’m not the only one who has felt abandoned in the room.&lt;/p&gt;
+
+&lt;p&gt;I’m not the only one who has felt like there was no hope. I’m not the only one who’s felt like no one could ever understand. I’m not the only one who has been left alone in the corner to watch every other person go on living their life while I died a little bit more inside everyday.&lt;/p&gt;
+
+&lt;p&gt;It’s everybody’s problem.&lt;/p&gt;
+
+&lt;p&gt;There is not a moment in time that I don’t carry that with me. I carry it with me because I very much do not ever want any other person to feel that way. I carry it with me, because it drives a force inside of me to do what I can to change the systems that make people feel like they are nothing, like they are not worthy, like no one should help them. When I left that room that day, I thought that I was not worth anyone’s time. I wasn’t a person; I was a problem.&lt;/p&gt;
+
+&lt;p&gt;I have always been a passionate person. I have always been intense. It has both been a characteristic that drives me and one that has isolated me from people. Sometimes I’m too much for people. I am more than they can handle. But I can’t help being fully myself. I can’t help that I can’t stop myself when I see new paths for change or growth or whatever that are driven by this intense desire to make sure that no one feels alone.&lt;/p&gt;
+
+&lt;p&gt;I started a blog to talk about my trauma and this is a crossover post. I learned to code because it stopped the trauma from repeating over and over in my head while I sat in front of the computer. I kept coding because I had community. I got excited about coding because I realized that code could’ve prevented what happened to me. But that’s women’s health, and not enough people care about women’s health.&lt;/p&gt;
+
+&lt;p&gt;If no one will do the thing that needs to be done, I will. But I also know that when we work in isolation, we will never be as effective as we can be with a community. Because with a community there is support. With a community there is meaning and purpose and growth.&lt;/p&gt;
+
+&lt;p&gt;A couple of years ago I was at JSConf Hawaii, and I told a woman that although my trauma was the worst thing that ever happened to me, I wouldn’t take it back. I’m a better person. Without that trauma, I don’t know the importance of community. WIthout that trauma, I don’t get into tech. Without trauma Virtual Coffee is never started. Without trauma I don’t understand the importance of vulnerability, of meeting people where they are at, of letting people &lt;em&gt;know&lt;/em&gt; me; I guard and protect myself. I don’t become the developer that I can be. I don’t find a way to push through those times when people tell me that I can’t do both; that I can’t create community and be a developer.&lt;/p&gt;
+
+&lt;p&gt;This post is very much about how I became a developer, but it’s very much more about how I became &lt;em&gt;me&lt;/em&gt;. And that’s the important part. Because I am a person first. And being human, recognizing the diverse experiences and challenges and talents and perspectives of the people around us matters.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Dec 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2020/12/07/I-Came-into-Tech-via-Trauma</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/12/07/I-Came-into-Tech-via-Trauma</guid>
+        
+      </item>
+    
+      <item>
+        <title>We need to talk: More on the problems juniors are facing</title>
+        <description>&lt;p&gt;I spend a lot of time talking about the challenges junior developers face when they are trying to break into tech. And honestly, there’s probably a whole book to write about this, a whole chapter on how most education (university, bootcamp, and online paths) doesn’t prepare new devs in the ways that they need to, how junior devs cost companies money, about how some companies let others mentor junior devs just so they can poach them with huge salary increases, about how creating a system of training and transition from support roles to developer roles could be a better way to approach the issue, about how talking more openly about it and about how trying to think about how to flip the hiring process on its head is a good place to start.&lt;/p&gt;
+
+&lt;p&gt;I’m not going to write about any of that. I’m just going to point out some of the problems juniors are facing and suggest where we might want to start rethinking this process.&lt;/p&gt;
+
+&lt;h2 id=&quot;clear-exploitation&quot;&gt;Clear Exploitation&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Having junior devs write code that goes into your code base without paying them and without making that clear during an interview.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;An interview is not an excuse for free work.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Asking junior devs to do work on your projects with no intention of hiring.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Interviewing a ton of juniors just to figure out who you can get for the least amount of money. (Tangent: when I lost my job during COVID, I interviewed for a position. I did the best on the take home test and was offered the position. But the catch was that the founder offered me $30/hr and told me that she was hoping to get me for less of an hourly wage since I was more junior and then I could work more hours.)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Posting a job and interviewing without a real commitment to hiring.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Crushing a candidate’s soul in an interview–some of it is toxic culture, and some of it is trying to check their resilience—that is not what that does—to make the candidate feel grateful for being offered a job.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;other-problems-to-consider&quot;&gt;Other problems to consider&lt;/h2&gt;
+
+&lt;p&gt;Portfolios don’t always capture what you’re looking for or are mixed with other people’s work or are the same projects over and over and over (to-do list anyone?). New tangent: I think that being able to communicate code, ask questions, and talk about process and approach can be a better way of judging a candidate. So even opening up one of their projects from GitHub or portfolio and asking them to walk through it and talk about the process, and ask what they would do differently, where they were challenged, etc. could be as useful.&lt;/p&gt;
+
+&lt;p&gt;Giving a coding challenge doesn’t ensure you’re receiving a candidate’s work. I’ve heard hiring managers say that they’ve hired ppl who have done well on take-home tests, but couldn’t keep up with the job or couldn’t explain concepts at work that they applied in the take-home.&lt;/p&gt;
+
+&lt;p&gt;Part of this whole problem is that being a junior looking for a job is a rat race. And everyone knows it.
+We are exploiting desperation by over-requiring and having unreasonable expectations in interviews.
+With a ton of juniors trying to break into tech, a ton of companies without an honest interest in hiring, and then juniors githubs stacked with multiple 4-hour take-home tests, spending 40 hours a week trying to find a job, and frequently for months, there’s a boat-load of problems. And it’s a catch 22 because juniors need more experience. How are they supposed to do that when they’re spending 40hrs a week trying to find a job?
+These circumstances do not mimic the job.&lt;/p&gt;
+
+&lt;p&gt;I don’t have a solution here. I just see the problem and the frustration and know that tech is losing good people because most of it isn’t even trying to figure it out. In a sense, this model is survival of the fittest, and I’m not okay with that.&lt;/p&gt;
+
+&lt;p&gt;What I want is maybe idealistic. I want to see people and not candidates. I want a clear recognition that each of these people have lives and responsibilities. I want to see the value put on communication. I want to see people and organizations who have the ability to mentor and support to do it. I was lucky to get my first job as a developer. I didn’t have a take-home test or a whiteboard interview. I had a conversation. And that won’t work in every scenario, but I’ll tell you what, &lt;strong&gt;&lt;em&gt;seeing&lt;/em&gt;&lt;/strong&gt; the person in the interview is a good place to start.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Nov 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2020/11/30/We-need-to-talk-More-on-the-problems-juniors-are-facing</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/11/30/We-need-to-talk-More-on-the-problems-juniors-are-facing</guid>
+        
+      </item>
+    
+      <item>
         <title>I am a Woman in Tech</title>
         <description>&lt;h2 id=&quot;i-am-a-woman-in-tech&quot;&gt;I am a Woman in Tech.*&lt;/h2&gt;
 
@@ -334,91 +410,6 @@ The shared identity begins to reinforce your personal identity. This is why rema
         <pubDate>Mon, 03 Aug 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2020/08/03/ADHD,-the-Quarantine,-and-Me</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2020/08/03/ADHD,-the-Quarantine,-and-Me</guid>
-        
-      </item>
-    
-      <item>
-        <title>The Tech Industry is Failing Junior Devs</title>
-        <description>&lt;p&gt;We talk a lot about how there aren’t opportunities for junior devs, about how we lure people into tech with promises of tons of jobs and good pay and without needing a degree. And then they graduate from bootcamp or have built enough projects that they feel confident enough to begin applying. And then it happens; they discover the life-sucking, existential-crisis inducing process of trying to find a job as a junior dev.&lt;/p&gt;
-
-&lt;p&gt;What happens to all those jobs? Why are there so many people championing juniors, but at the same time not jumping at the chance to hire juniors? Well, the things that no one tells you about juniors is that they cost the company money; as one company owner put it, they’re “a net negative on the company.” But why? Because as a new dev, juniors are kind of like a rookie or Smalls from the Sandlot. They don’t know how to throw the baseball as far as the other player, they need to be coached. They need to learn how to hit the ball with precision, the best way to hold the bat. They need to know where to position themselves in the outfield, what the names of the positions are. They have the general idea of what the game is and what it should look like, but frequently don’t know how to play as a member of the team.&lt;/p&gt;
-
-&lt;p&gt;As a result, another player usually needs to spend time coaching them. That means that not only are &lt;em&gt;they&lt;/em&gt; slower than the other players, but that the player coaching them slows down too. That’s not necessarily a bad thing, and I strongly believe in learning through teaching, but the point is, it takes time and resources to condition the junior dev to become part of the major league. A junior developer is an investment. And with the way devs change jobs in this industry, it can be a risky investment. So what are some things that juniors can do to make themselves stand out?&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;I &lt;em&gt;strongly&lt;/em&gt; recommend doing open source work. Open source work shows that you can look at and contribute to an existing codebase. It gives you experience contributing and communicating with a team. As a dev, you’ll likely be working on a team, and proving that you can, goes a long way.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Work on group projects. Depending on the project and the number of people on the team, this can be a good way to work on communication and level up your development skills. Sometimes this means working with a smaller codebase, other times you could be walking into something more complicated. IMO, the more uncomfortable it makes you, the more you’ll learn.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Build your own projects. Building communication skills is really important, but being a life-long learner should always be a goal. Someone once told me to create projects like this: Create a small project that implements a feature. Next, create a new project that implements that feature &lt;em&gt;and&lt;/em&gt; something new. And then continue to do that. I think the equation is to practice what you’ve learned and add something new every time.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Find your community. I think I’ve put this in most of my blog posts. It’s &lt;em&gt;that&lt;/em&gt; important. Having a network to cheer you on, to mentor you, to push you forward, and to recommend you will help you find your first job.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;But the onus shouldn’t just be on the junior developers. Companies need to do a better job of creating workplaces that keep junior devs. If you create an environment that is empathetic, growth-focused, one where senior devs know they’ll be mentoring juniors, where they’re excited about helping someone to grow, junior devs will stay and eventually be the senior devs who take the time to bring in the new junior devs. Hire senior devs who aren’t afraid to tell junior devs that they have broken things. Hire senior devs who are patient enough to not make junior devs feel stupid for asking questions. Hire senior devs who know that institutional knowledge and cultivating relationships will help to make that junior dev feel at home.&lt;/p&gt;
-
-&lt;p&gt;I think one of the top things that holds junior devs back is fear. Fear of applying, fear of talking positively about themselves, fear of being told they’re not good enough, fear that instead of having their questions answered, they’ll be laughed at. But if you have junior devs who have good mentors and a positive work environment, they’re more likely to level up quicker.&lt;/p&gt;
-
-&lt;p&gt;I’m one of the lucky ones. I found a job immediately, and it’s been a really good one. Most juniors come into this tech journey with people telling them “there are sooooo many jobs.” What they don’t say is those jobs are for mid to senior level devs. What they don’t say is that they’ll cheer you on, but they won’t invest in you. What they won’t say is it might take you a year, &lt;em&gt;a year&lt;/em&gt;, to find your first job. And it might be at a crappy place that hires you because you are a junior and they want you to do the work of a senior with junior level pay. It’s time to call bullshit. If you’re a junior and you’re looking for a job, keep working on your skills. If you’re a company thinking about hiring juniors or are currently hiring them. Invest in them. They’ll grow with your company. They’ll be an asset. There’s a scenario where everyone wins, we all just need to talk more openly about how to make that happen.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 20 Jul 2020 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2020/07/20/The-Tech-Industry-is-Failing-Junior-Devs</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2020/07/20/The-Tech-Industry-is-Failing-Junior-Devs</guid>
-        
-      </item>
-    
-      <item>
-        <title>Twelve Lessons for Twelve Months as a Dev</title>
-        <description>&lt;p&gt;I started working as a developer a year ago today. To this day, I still don’t understand how/why I was hired, but I was/am super happy to have the opportunity to do work that I never truly believed I would have. When I started bootcamp, it was still therapeutic. I’ve never been “naturally smart,” but I’ve always been a hard-worker. I knew I could complete the bootcamp with enough hard work, but I never thought anyone would hire me, let alone as a front-end dev. But what I’ve discovered over the last year was that despite the many, many times that I thought I would do everyone a favor and go back to teaching, I actually have learned a ton and I kinda feel like I belong here. It’s not easy, and I’ll certainly continue to grow, but I’ve learned a lot along the way that I want to share.&lt;/p&gt;
-
-&lt;p&gt;1- &lt;strong&gt;Get Comfortable with being Uncomfortable.&lt;/strong&gt;
-This is the advice I’ve probably received the most, and it’s at the top of my list because it’s what caused so much self-doubt. It was worse than when I first started teaching college courses. When I started teaching, I was 23, short (5’1 and ¾ ), and probably only looked 16. My (guy) students wouldn’t listen, acted totally inappropriate (one hit on me), and I had to have other teachers come observe my classroom to help me with classroom management. And that’s kind of what coding felt like everyday for a longggggg time. Chaos. I got through that semester of teaching, but it wasn’t pretty. In the same way, I got through the first six months of coding, which I’m sure was not pretty in any way. But for most devs, that’s part of the game. You’re stepping into a new world, with a million problems, 3.5 million ways to solve them, and sometimes those 3.5 million answers only hint at the way that &lt;strong&gt;you&lt;/strong&gt; need to solve it. Spoiler alert: this is going to be your career, so get used to it.&lt;/p&gt;
-
-&lt;p&gt;2- &lt;strong&gt;Communicate.&lt;/strong&gt;
-The one thing I wish I would’ve done better at in the beginning. The clearer you can communicate with those around you, the easier it will be. Everyone communicates differently, so finding the way that works best for you and those around you will be really important to your growth. Coding is all about learning everyday. If there’s someone there who can help you learn, utilize that person. You’ll learn faster. You’ll get to see how they think. You’ll find new ways of thinking about things as well. Look, the hero never makes it to the final battle without a mentor.&lt;/p&gt;
-
-&lt;p&gt;3- &lt;strong&gt;Sometimes you have to dive down the rabbit hole.&lt;/strong&gt;
-Yes, that might sound like it contradicts the previous point, but I think you can only develop your own method and understanding of your abilities once you’ve spent seventeen hours trying to figure out one issue. Ok, it doesn’t have to be seventeen hours, but it’s worth while to take your time to really think things through, develop a process, and look at the problem you’re trying to solve. For me, I’ve discovered that having a notebook next to me, writing out the problem and potential solutions as I go, and then checking off what I’ve done both helps me to communicate what I’ve tried when I &lt;em&gt;still&lt;/em&gt; can’t figure out the problem, and it allows me to avoid circling around the same solutions.&lt;/p&gt;
-
-&lt;p&gt;4- &lt;strong&gt;Find community.&lt;/strong&gt;
-This has been important to me every step of the way. And community won’t always mean the same time. For a long time, I only felt comfortable with other moms in tech, sometimes it’s other people at my level of learning, right now I’m really enjoying being around devs at all stages of their learning journey during Virtual Coffee. But it definitely helps to be able to voice your frustrations, reach out to people you trust, and celebrate your wins together.&lt;/p&gt;
-
-&lt;p&gt;5- &lt;strong&gt;Let others help.&lt;/strong&gt;
-So this is a tough one for me. I’m used to working independently. I’m used to doing all the things, usually by myself. But coding can be a team sport. It is not a failure to let other people help you. It is part of the learning experience. That’s also how you grow and learn to communicate together. It’s what allows for team-building. It’s how you’ll learn how to be a good teacher yourself.&lt;/p&gt;
-
-&lt;p&gt;6- &lt;strong&gt;It’s ok to feel like you aren’t ready.&lt;/strong&gt;
-Every damn day.&lt;/p&gt;
-
-&lt;p&gt;7- &lt;strong&gt;Find the balance that works for you.&lt;/strong&gt;
-Some people thrive by coding a forty hour workweek, a side hustle, and extra learning every night. That’s not ever going to be an option for me, so finding a balance of learning while working and being satisfied with that balance was super important and super helpful in avoiding burnout. There has not been a day this year where I’ve said, “I really don’t want to code today.” And I think that’s because I didn’t max out. Sometimes I did more coding and learning than others, but I also gave myself some grace when I couldn’t do all the things.&lt;/p&gt;
-
-&lt;p&gt;8- &lt;strong&gt;You can’t learn everything.&lt;/strong&gt;
-There are so many shiny new tech things out there that it’s easy to get distracted. Would I love to learn more about machine learning? 100%. But I can’t do that right now. Do I need to know three different JS frameworks? No. But knowing one pretty well is probably more important than knowing surface level implementation of three.&lt;/p&gt;
-
-&lt;p&gt;9- &lt;strong&gt;Don’t be afraid.&lt;/strong&gt;
-I had a lot of fears that I had to overcome this year. Fear of failure. Fear of not being good enough. Fear of breaking things. Fear of saying things that would make people want to run from tech instead of learning more. Fear of never being able to understand what I was looking at. Fear that I was overvaluing myself. Fear that I would never find a job. Fear that I would never find a job working with good people. Fear that someone would discover that I was not really a dev. Don’t do that to yourself. It’s going to be hard. You will have doubts. But you are where you are supposed to be on this coding journey. It might not be as far as you want. You may not have hit the training montage yet, or maybe you’re at the really painful beginning of that montage, but fear will only keep you from growing.&lt;/p&gt;
-
-&lt;p&gt;10- &lt;strong&gt;You’re learning, even when you feel like you’re stagnant.&lt;/strong&gt;
-I don’t know why I can’t get this through my head. Every time I think I’m standing still, I need to take a break and look at the code I wrote three months ago. It doesn’t feel like I’m better at writing code, but there is proof that I am. I need to look back at my notes. I need to remember how hard it felt to start a project, only to look at it now and see how easy it is.&lt;/p&gt;
-
-&lt;p&gt;11- &lt;strong&gt;Google. Google. Google.&lt;/strong&gt;
-If I had a BFF necklace, the second half would go to google. Everybody googles things. Tech moves too fast to not have to google things. Senior devs google. We all google, and that doesn’t make us less of a dev.&lt;/p&gt;
-
-&lt;p&gt;12- &lt;strong&gt;Enjoy yourself.&lt;/strong&gt;
-I love coding. I love my job. I don’t think I’ve ever been in a position where I can’t wait to get back to work after taking time off. I love the focus and problem solving. I love feeling like I’m part of a larger community of people. I love that even when I’m struggling and frustrated that I know I’ll break through and figure it out, and that I’ll smile at the end of it. Yes, it’s challenging. Yes, some people do it just for the money. But enjoying yourself will keep you from burning out and keep you wanting to come back for more.&lt;/p&gt;
-
-&lt;p&gt;And just in case twelve lessons aren’t enough, here’s a bonus: work with good people.&lt;/p&gt;
-
-&lt;p&gt;I spent ten years teaching college English. I didn’t love it, but I didn’t hate it. I never thought I would change careers. And it wasn’t until I changed to tech that I really realized how frustrating it had been. By really &lt;a href=&quot;https://bekahhw.github.io/blog/2018/04/23/How-coding-has-been-therapeutic-for-my-PTSD&quot;&gt;weird circumstances&lt;/a&gt; I ended up in tech, and it’s been a wild ride. And despite the initial fears and self-doubt, despite the wildness of the COVID-related interviewing experiences, I wouldn’t trade this for anything. I’ve been so lucky to work with amazing people, to work with someone who wants to help me to learn and grow, to grow with other developers, to find multiple communities who have supported me, offered advice, and cheered me on. And I have never in my entire life felt such a strong sense of belonging. So thank you to all of those people who have been there for me. And if you’re just starting your journey or just found your first dev job, know that it might be hard and a rollercoaster of a year, but I hope that you find an experience that’s been as great as mine.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 01 Jul 2020 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2020/07/01/Twelve-Lessons-for-Twelve-Months-as-a-Dev</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2020/07/01/Twelve-Lessons-for-Twelve-Months-as-a-Dev</guid>
         
       </item>
     
