@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bekah Hawrot Weigel Life and Code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+    @import url('https://fonts.googleapis.com/css?family=Exo+2:200');
+    @import url('https://fonts.googleapis.com/css?family=Exo+2:200|Quicksand');
+    @import url('https://fonts.googleapis.com/css?family=Gudea|Heebo|Work+Sans');
+    @import url('https://fonts.googleapis.com/css?family=Gudea|Work+Sans');
+    @import url('https://fonts.googleapis.com/css?family=Gudea|Poppins|Work+Sans');
+    @import url('https://fonts.googleapis.com/css?family=Gudea|Poppins|Rozha+One|Work+Sans');
+    @import url('https://fonts.googleapis.com/css?family=Charmonman|Cormorant+Upright|PT+Sans|Poiret+One|Ranga|Sacramento|Sedgwick+Ave|Srisakdi');
+  </style>
+<link href='https://bekahhw.github.io/feed.xml' rel='alternate' type='application/atom+xml'>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a class="nav" href="/">Home</a></li>
+      <li><a class="nav" href="/about">About</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a class="nav" href="/blog">Blog</a></li>
+    </ul>
+  </nav>
+  <header>
+  </header>
+
+  <div class="container">
+
+    <!-- <h1>Let Them Write Tests: Writing Your First Cypress Test</h1>
+<p class="meta">17 Jan 2021</p> -->
+
+<div class="notes">
+  <div class="note single">
+    <h1 class="title">Let Them Write Tests: Writing Your First Cypress Test</h1>
+
+    <h2 class="date">
+      <info datetime="2021-01-17 00:00:00 -0500">
+        17 Jan 2021 
+      </info>
+    </h2>
+    <!-- Post content -->
+    <div class="notebody">
+      <p><em>This is a continuation of <a href="https://dev.to/bekahhw/let-them-write-tests-an-argument-for-cypress-19o2">this post</a></em></p>
+
+<p>I like writing tests. I like the structure. I like when they find bugs. I even like when they give me nightmares. But I think I like them most because they’re accessible and getting Cypress setup is quick and painless.</p>
+
+<p>I’ve already made my case for why you should write tests. Now I’m going to take you through getting Cypress up and running and writing your first test.</p>
+
+<p>In your terminal:
+Cd into your project path: <code class="highlighter-rouge">cd /your_project/path</code></p>
+
+<p>For example, I might have a project called coding-blog in my Project folder. So when I open my terminal, I put in: <code class="highlighter-rouge">cd Project/coding-blog</code></p>
+
+<p>(Capitalization doesn’t matter here, but spelling and order do.)</p>
+
+<p>Now we’re ready to get it installed. (For more detailed instructions, <a href="https://docs.cypress.io/guides/getting-started/installing-cypress.html#npm-install">the docs</a> are the place to be.) For less detailed instructions: In your terminal put <code class="highlighter-rouge">npm install cypress</code> (if you’re using npm). If you’re using yarn, type: <code class="highlighter-rouge">yarn add cypress</code>. It shouldn’t take that long to install, but while you’re waiting I recommend checking out the <a href="https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell">Cypress docs</a>, because I can guarantee you’ll be spending quality time there.</p>
+
+<p>Once it’s all done installing, you’re ready to explore some folders. You’ll notice in your file directory that you now have a Cypress folder. In that folder, you’ll find fixtures, integration, plugins, and support. You’ll also notice that you have a cypress.json file in your file structure.</p>
+
+<p>Let’s start there. You’ll see that you can customize this. For this go-round, we’re just going to use the localhost address for the baseUrl that you’ll be using to test.</p>
+
+<p><code class="highlighter-rouge">{
+  "baseUrl": "http://localhost:3000/”
+}</code></p>
+
+<p>Ok. We’re getting closer. Now open your Cypress folder, and click on integration. This is where we’ll write our first tests.</p>
+
+<p>Now we need to figure out how to write the tests. Let’s pretend we’re testing a new user form. The file we’re testing is called NewUser.js, so we’ll create our new file with the name newUser.js in the Cypress/integration folder.</p>
+
+<p>There are two main pieces of a Cypress test. First, an example. Then the explanation.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>describe('new user form', () =&gt; {
+  it('displays form validation', () =&gt; {
+    cy.visit('/users/new')
+    cy.get('#first_name').type('Bekah')    
+    cy.get('#first_name').should('have.value', 'Bekah', 'be.visible')
+  })
+})
+</code></pre></div></div>
+<h3 id="explanation">Explanation</h3>
+<p>The test is looking for an input with the id “first_name.” It finds the input, types in the name and then checks that the name is visible in the input. But what are these sections?</p>
+
+<h4 id="describe">Describe</h4>
+<p>Has two arguments: a string (“subject”)–in this case “new user form” and the callback (“it”) that the runs the code</p>
+
+<h4 id="it">It</h4>
+<p>This block tells what to expect and checks for the outcome. Also takes a callback (“verb”)–in this case “displays the form”–and checks the assertion-&gt; should have a value and be visible.</p>
+
+<p>Each “it” block is a test. You can include multiple it blocks in a describe. For example, you might want to test validation on the form. If the user tries to submit without entering their name, an error appears on the screen. That should have it’s own “it” block.</p>
+
+<p>How do you know what to test? Well, that’s another post. But you want to be sure that users can use your software. So start there.
+To run the test, you can either open it in the testrunner, which runs in the browser and lets you actually see the action happening, or you can run it headlessly with the command <code class="highlighter-rouge">cypress run</code>.
+To run the command in your terminal, you’ll either start with yarn or npm, depending on which your project uses and then the appropriate command. So in this case, I would run <code class="highlighter-rouge">yarn cypress open</code>. 
+The test runner would open, and then I would select the file I want to test and watch the tests run.</p>
+
+<p>Cool, right? And the nice thing about tests is if something isn’t working or if it breaks, you know right away.</p>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+  <footer>
+    <ul>
+        <li class="mail"><a href="mailto:rhawrot@gmail.com"><i class="fa fa-envelope" aria-label="send mail icon"></i></a></li>
+        <li class="socialLinks"><a href="https://github.com/BekahHW"><i class="fa fa-github" aria-label="gituhub icon"></i></a>
+        </li>
+        <li class="socialLinks"><a href="https://twitter.com/BekahHW"><i class="fa fa-twitter"
+              aria-label="twitter icon"></i></a></li>
+        <li class="socialLinks"><a href="https://www.instagram.com/bekahhw/"><i class="fa fa-instagram"
+              aria-label="instagram icon"></i></a></li>
+        <li class="socialLinks"><a href="https://www.linkedin.com/in/bekah-hawrot-weigel-33046419/"><i class="fa fa-linkedin"
+              aria-label="LinkedIn icon"></i></a></li>
+              <li class="socialLinks"><a href='https://bekahhw.github.io/feed.xml' rel='alternate' type='application/atom+xml'><i class="fa fa-rss"></i></a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

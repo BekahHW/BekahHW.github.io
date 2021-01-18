@@ -7,6 +7,68 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Let Them Write Tests: Writing Your First Cypress Test</title>
+        <description>&lt;p&gt;&lt;em&gt;This is a continuation of &lt;a href=&quot;https://dev.to/bekahhw/let-them-write-tests-an-argument-for-cypress-19o2&quot;&gt;this post&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I like writing tests. I like the structure. I like when they find bugs. I even like when they give me nightmares. But I think I like them most because they’re accessible and getting Cypress setup is quick and painless.&lt;/p&gt;
+
+&lt;p&gt;I’ve already made my case for why you should write tests. Now I’m going to take you through getting Cypress up and running and writing your first test.&lt;/p&gt;
+
+&lt;p&gt;In your terminal:
+Cd into your project path: &lt;code class=&quot;highlighter-rouge&quot;&gt;cd /your_project/path&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, I might have a project called coding-blog in my Project folder. So when I open my terminal, I put in: &lt;code class=&quot;highlighter-rouge&quot;&gt;cd Project/coding-blog&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(Capitalization doesn’t matter here, but spelling and order do.)&lt;/p&gt;
+
+&lt;p&gt;Now we’re ready to get it installed. (For more detailed instructions, &lt;a href=&quot;https://docs.cypress.io/guides/getting-started/installing-cypress.html#npm-install&quot;&gt;the docs&lt;/a&gt; are the place to be.) For less detailed instructions: In your terminal put &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install cypress&lt;/code&gt; (if you’re using npm). If you’re using yarn, type: &lt;code class=&quot;highlighter-rouge&quot;&gt;yarn add cypress&lt;/code&gt;. It shouldn’t take that long to install, but while you’re waiting I recommend checking out the &lt;a href=&quot;https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell&quot;&gt;Cypress docs&lt;/a&gt;, because I can guarantee you’ll be spending quality time there.&lt;/p&gt;
+
+&lt;p&gt;Once it’s all done installing, you’re ready to explore some folders. You’ll notice in your file directory that you now have a Cypress folder. In that folder, you’ll find fixtures, integration, plugins, and support. You’ll also notice that you have a cypress.json file in your file structure.&lt;/p&gt;
+
+&lt;p&gt;Let’s start there. You’ll see that you can customize this. For this go-round, we’re just going to use the localhost address for the baseUrl that you’ll be using to test.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{
+  &quot;baseUrl&quot;: &quot;http://localhost:3000/”
+}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok. We’re getting closer. Now open your Cypress folder, and click on integration. This is where we’ll write our first tests.&lt;/p&gt;
+
+&lt;p&gt;Now we need to figure out how to write the tests. Let’s pretend we’re testing a new user form. The file we’re testing is called NewUser.js, so we’ll create our new file with the name newUser.js in the Cypress/integration folder.&lt;/p&gt;
+
+&lt;p&gt;There are two main pieces of a Cypress test. First, an example. Then the explanation.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;describe('new user form', () =&amp;gt; {
+  it('displays form validation', () =&amp;gt; {
+    cy.visit('/users/new')
+    cy.get('#first_name').type('Bekah')    
+    cy.get('#first_name').should('have.value', 'Bekah', 'be.visible')
+  })
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;explanation&quot;&gt;Explanation&lt;/h3&gt;
+&lt;p&gt;The test is looking for an input with the id “first_name.” It finds the input, types in the name and then checks that the name is visible in the input. But what are these sections?&lt;/p&gt;
+
+&lt;h4 id=&quot;describe&quot;&gt;Describe&lt;/h4&gt;
+&lt;p&gt;Has two arguments: a string (“subject”)–in this case “new user form” and the callback (“it”) that the runs the code&lt;/p&gt;
+
+&lt;h4 id=&quot;it&quot;&gt;It&lt;/h4&gt;
+&lt;p&gt;This block tells what to expect and checks for the outcome. Also takes a callback (“verb”)–in this case “displays the form”–and checks the assertion-&amp;gt; should have a value and be visible.&lt;/p&gt;
+
+&lt;p&gt;Each “it” block is a test. You can include multiple it blocks in a describe. For example, you might want to test validation on the form. If the user tries to submit without entering their name, an error appears on the screen. That should have it’s own “it” block.&lt;/p&gt;
+
+&lt;p&gt;How do you know what to test? Well, that’s another post. But you want to be sure that users can use your software. So start there.
+To run the test, you can either open it in the testrunner, which runs in the browser and lets you actually see the action happening, or you can run it headlessly with the command &lt;code class=&quot;highlighter-rouge&quot;&gt;cypress run&lt;/code&gt;.
+To run the command in your terminal, you’ll either start with yarn or npm, depending on which your project uses and then the appropriate command. So in this case, I would run &lt;code class=&quot;highlighter-rouge&quot;&gt;yarn cypress open&lt;/code&gt;. 
+The test runner would open, and then I would select the file I want to test and watch the tests run.&lt;/p&gt;
+
+&lt;p&gt;Cool, right? And the nice thing about tests is if something isn’t working or if it breaks, you know right away.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 Jan 2021 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2021/01/17/Let-Them-Write-Tests-Writing-Your-First-Cypress-Test</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2021/01/17/Let-Them-Write-Tests-Writing-Your-First-Cypress-Test</guid>
+        
+      </item>
+    
+      <item>
         <title>2020: A Year in Review</title>
         <description>&lt;p&gt;&lt;em&gt;It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair.&lt;/em&gt; - Charles Dickens&lt;/p&gt;
 
@@ -395,31 +457,6 @@ If you’re doing these things–inclusivity, positivity, we-mentality, person-c
         <pubDate>Fri, 02 Oct 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2020/10/02/The-Thing-About-Trauama-Is</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2020/10/02/The-Thing-About-Trauama-Is</guid>
-        
-      </item>
-    
-      <item>
-        <title>Building Community is just as Important as Building Products</title>
-        <description>&lt;p&gt;Move fast and break things. You hear that a lot in tech. And I’m here to call bullshit. Because you don’t build relationships fast and break them. You don’t create trust by breaking things. You don’t depend on things that break. You don’t step on the ice of a pond with a pair of ice skates to figure out if it’s strong enough to hold you. You figure it out before you trust it. You know if it’s solid. And &lt;em&gt;that’s&lt;/em&gt; what enables you to soar.&lt;/p&gt;
-
-&lt;p&gt;What enables you to glide across the ice, what allows you to soar is the trust that comes from having that solid base. And it doesn’t matter how great the software is if you don’t have great people behind it, because if you don’t have great people the software will eventually fail. It’s possible to push through and make something great, but that doesn’t last without injury. When you push the people on the team so hard that they don’t have time to recover, that they never feel like they’ve won a minute in their career, you are responsible for the breakdown of the product, goals, and/or organization.&lt;/p&gt;
-
-&lt;p&gt;When you have a community who can trust each other, when you have a community who supports each other, when you have a community who can be honest and transparent, &lt;em&gt;that’s&lt;/em&gt; when you have the potential to make amazing things. That’s when you have the potential to change this industry. Because you have the ability to soar because you can trust each other, because you know that if someone stops you, it’s for good reasons, because when they let you go, they’ll be there to support you even if the ice starts to feel a little thin. They’ll get you back to the shore and you’ll re-evaluate for next time. But you’ll be damn sure that no one lets you make the same mistake again.&lt;/p&gt;
-
-&lt;p&gt;One of my all-time favorite quotes is from James Clear in &lt;em&gt;Atomic Habits&lt;/em&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Nothing sustains motivation better than belonging to the tribe. It transforms a personal quest into a shared one.
-Previously, you were on your own. Your identity was singular. You are a reader. You are a musician. You are an athlete.
-When you join a book club or a band or a cycling group, your identity becomes linked to those around you. Growth and change is no longer an individual pursuit. We are readers. We are musicians. We are cyclists.
-The shared identity begins to reinforce your personal identity. This is why remaining part of a group after achieving a goal is crucial to maintaining your habits. It’s friendship and community that embed a new identity and help behaviors last over the long run.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Driven by empathy and the mindset that each person on your team has something valuable to contribute, communities that have a growth-mindset, the ones that have each-others backs are the ones that change the industry. I’m not interested in being a part of something that doesn’t want to change the industry. I’m not interested in doing the things the way they’ve always been done. I’m interested in working with good people because I know that they are interested in changing the world. I know that they will inspire me, when I feel uninspired. And I’ll be there to inspire them some day too. Because, for me, there is no point in doing things if it’s not to change things for the better, if it’s not to make products or changes in the industry that will improve the lives of someone we know. I’m a firm believer that it doesn’t happen unless we can trust the people around us. And when both of those things align, something beautiful will happen.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 22 Sep 2020 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2020/09/22/Building-Community-is-just-as-Improtant-as-Building-Products</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2020/09/22/Building-Community-is-just-as-Improtant-as-Building-Products</guid>
         
       </item>
     
