@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Five Hot Takes for the New Year"
+date: 2021-01-28
+---
+ 
+I spend a lot of time stuck in my head, wondering if what I say is going to hurt someone or lead them on the wrong path, or flat-out be wrong. And that's exhausting. I love going on podcasts, but the after-effect is that I rethink my every statement to see if it could possibly hurt someone. And there have been times that I've asked podcasts to cut something. But the truth is, we all live our own story. And sometimes we say things wrong, but we give the right advice. And sometimes our advice is meaningful for a bunch of people, but not one. And sometimes our stories impact one person and that's it. But I'm here for that one person. Because if you have ever felt alone, like you are the only one who understands your experience, that _one_ experience that you can relate to, can make the _biggest_ difference.
+ 
+So this post isn't going to give all the details, because I have spent my detail energy for the week, but it will give you my hot takes, that I want to reserve energy for in upcoming posts, if you want it:
+ 
+1. Let people know when they provide you with valuable information
+I cannot tell you how many times I have considered stopping whatever I was doing, but then I got one message that affirmed what I did or said, and that was enough. Over at [Virtual Coffee](http://virtualcoffee.io/), we're planning our second round of Lightning Talks. Last round, I strong-armed my way through a lot of the event organizing alone. This time, I'm working to create processes and engage and empower members to create this event. In our meeting on Monday, I was honest with them: Last time I was so exhausted that I wanted to sleep for a month. And then I started seeing how much our members appreciated it, how proud our speakers were. And then I said, "how soon can we do this again." And someone responded, "The post-conference high." And that's very much the feeling I get when one person tells me about how my sharing has impacted their lives. So if someone has written, spoken, tweeted, whatever, in a way that has motivated you, _tell them_, because that will motivate them too.
+2. You're never going to be ready, so start.
+I have four kids, and I always laugh when people tell me they aren't ready to have kids. I wasn't ready for any of this. In fact, I never had dreams or goals of being married or being a mom. Fun fact, I was 21 when I got married, and 24 when I had my first kid. I'm not going to apologize for telling my story. I'm not telling _you_ this is your story. But this is one of the times that I pushed past fear and made meaning in my life. And it was hard. A lot. But, I most certainly grew leaps and bounds. When I started my blog, I didn't even know that dev tools were a thing. And if you go back far enough in my code, you can see that I didn't know that.
+3. Have the hard conversations.
+Hard conversations are...hard. But they are worth it. If you can come out the other end of very difficult conversations, if you can disagree with someone and find a meeting point, if you can approach them with empathy, honestly, and leave with clarity, then you can do so much. _And_ you'll know the people you can do it with.
+4. Reach out to people in your network.
+The worst thing you can get is a no or no response. I feel like I have had a masters class in entrepreneurship in the last couple of months because I have _asked_ founders, owners, consultants, to talk to me about my use-case. And nearly all of them have said yes and been amazing. Early-2020 Bekah wouldn't have done that. And I can't explain exactly what happened, except I allowed myself to think of myself as a capable person who was willing to stake a small embarrassment for the opportunity of learning from the people I value most in the tech community.
+5. People will disappoint you.
+There have been a number of times where I've felt _used_ as a promotional story. I would help _them_ to elevate themselves because they helped _me_, a mom of 4 kids, a career-changer, a trauma-survivor. And then when I reached out to them, when I asked for support, there was nothing. And it hurt. A lot. But here's the thing: I am a mother of four. I am a career-changer. I am a trauma-survivor. And I have a community of people who love and support me. And if you are reading this and you feel like you have no one, I can 100% guarantee that [Virtual Coffee](https://virtualcoffee.io/) has a place for you. We are here to meet every person where they are. To support, and to guide, to mentor and provide for. And I know my community, and I know that they will be your people if you let us.
+
+
+
