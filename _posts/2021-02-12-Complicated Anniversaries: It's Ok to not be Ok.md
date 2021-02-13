@@ -16,7 +16,7 @@ I know.
 
 I know this feeling  well.
 
-And I have desparately tried to get away from it for the last four and a half years. And, "hello, trauma, we meet again. And you're compounding yourself on top of what I'm already going through. And this time, fuck you, because you're stacking yourself on top of my kids too. And I could barely hold on when it was _just_ me. But now you're trying to take them down too. And I will not stand for it."
+And I have desperately tried to get away from it for the last four and a half years. And, "hello, trauma, we meet again. And you're compounding yourself on top of what I'm already going through. And this time, fuck you, because you're stacking yourself on top of my kids too. And I could barely hold on when it was _just_ me. But now you're trying to take them down too. And I will not stand for it."
 
 "Last time, it was almost all of me. I couldn't see my life past trauma, until one person, just one, reached out and said, I've been through this. It was different, but also the same. And I heard the words that I thought in my head. And I understood the self-dount, and I heard the voices of every single person who doubted me in my life and I said "Fuck you." But this time, it's not just me. It's me, it's my kids and my family, it's my friends--who I love deeply--it's the community that has held tight to each other. And it's hard. I am trying so very hard to be the one who can hold everyone up. And I know that we all hold each other up, but it's hard. It's a trustfall, right?
 
