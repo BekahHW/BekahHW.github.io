@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://BekahHW.github.io/blog/2021/03/13/Getting-Out-of-My-Comfort-Zone</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/blog/2021/02/12/Complicated-Anniversaries-It's-Ok-to-not-be-Ok</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/blog/2021/01/28/Five-Hot-Takes-for-the-New-Year</loc>
+    </url>
+    
+    <url>
         <loc>http://BekahHW.github.io/blog/2021/01/17/Let-Them-Write-Tests-Writing-Your-First-Cypress-Test</loc>
     </url>
     
@@ -294,6 +306,14 @@
     
     
     <url>
+        <loc>http://BekahHW.github.io/404.html</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
         <loc>http://BekahHW.github.io/categories/</loc>
     </url>
     
@@ -310,7 +330,7 @@
     
     
     <url>
-        <loc>http://BekahHW.github.io/about/</loc>
+        <loc>http://BekahHW.github.io/portfolio/</loc>
     </url>
     
     
@@ -326,7 +346,7 @@
     
     
     <url>
-        <loc>http://BekahHW.github.io/portfolio/</loc>
+        <loc>http://BekahHW.github.io/</loc>
     </url>
     
     
@@ -334,7 +354,7 @@
     
     
     <url>
-        <loc>http://BekahHW.github.io/</loc>
+        <loc>http://BekahHW.github.io/about/</loc>
     </url>
     
     

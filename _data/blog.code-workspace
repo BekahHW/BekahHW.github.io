@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"name": "_data",
+		"path": "../../../Downloads/kross-jekyll-master/_data"
+	},
+	{
+		"name": "_pages",
+		"path": "../../../Downloads/kross-jekyll-master/_pages"
+	},
+	{
+		"name": "BekahHW.github.io",
+		"path": ".."
+	}
+],
+  "settings": {}
+}
