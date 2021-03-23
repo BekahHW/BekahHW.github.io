@@ -13,7 +13,8 @@ What it became was a beautiful community of people who I missed when they weren'
 And this is (a non-exhaustive) list of what I've learned from those Coffees:
 
 - Caring about other people, _really_ knowing and caring about them, can make a huge impact.
-- Sometimes you won't know what to say. That's ok. You can learn and grow and apologize when you need to.
+- Sometimes you won't know what to say. That's ok.
+- Apologize when you need to.
 - People you've never met in real life can be your closest friends.
 - Like we say at the beginning of every coffee, "An awkward pause for one person, can be an opportunity for another person to join in."
 - Sometimes differences in opinions and life experiences can be really hard to navigate, but if you put in the time and effort, they can lead to some of the most important moments of growth.
@@ -23,9 +24,10 @@ And this is (a non-exhaustive) list of what I've learned from those Coffees:
 - Sometimes people will disappoint you.
 - Sometimes people won't like you or won't think you're good enough, and it will hurt.
 - Sometimes remembering the little things are the most meaningful.
-- Everyone is motivated in different ways. Knowing them, understanding where they're at in life can go a long way in being a supportive friend.
+- Everyone is motivated in different ways. Knowing them, understanding where they're at in life, can go a long way in being a supportive friend.
 - Kindness matters.
 - Sometimes honesty hurts, even when it's offered with kindness.
+- Willingness to listen and openness to different opinions is important.
 - Having a supportive community is one of the most important things for growth.
 - Sometimes you're the only one who shows up for that person on your screen.
 - Psychological safety is incredibly important.
@@ -34,3 +36,5 @@ And this is (a non-exhaustive) list of what I've learned from those Coffees:
 - Vulnerability invites vulnerability.
 - There is never a time when I don't learn from someone else.
 - Sometimes people just need a chance. Sometimes you have to be willing to offer that chance.
+
+There is so much I've learned from these Tuesday/Thursday zoom coffees. Having the opportunity to see and hear from people all over the world, with all different experience levels has been an irreplaceable experience. When you're in a place where you feel supported and safe, you're ability to grow--in expected and unexpected ways--is unparalleled.
