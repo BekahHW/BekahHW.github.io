@@ -14,7 +14,7 @@ Virtual Coffee is a lot of different things, to a lot of different people, but, 
 
 > Virtual Coffee is, and always will be, a genuine community of people who value and prioritize supporting one another. We know that growth comes at all levels and that no matter what stage of the developer journey you're on, you can teach and learn.
 
-I have lived through a lot of growth in the last year, because accidentally starting a community during a pandemic can force that on you. I learned a lot about myself, and a lot about community, and I'm sharing this because a lot of that time was incredibly fulfilling and a lot of that time was lonely; and I've had a hard time finding people who are talking about the three Ls: learning, lonliness, and lovliness.
+I have lived through a lot of growth in the last year, because accidentally starting a community during a pandemic can force that on you. I learned a lot about myself, and a lot about community, and I'm sharing this because a lot of that time was incredibly fulfilling and a lot of that time was lonely; and I've had a hard time finding people who are talking about the three Ls: learning, loneliness, and loveliness.
 
 ## Learning
 ### What I've learned
@@ -55,7 +55,7 @@ _Tangent time: In 7th grade I ran track. I wanted to run the hurdles. I could cl
 
 - That sometimes your gut feeling will be wrong, and that's ok. You learn from that experience and take it with you to the next. Sometimes it's messy. Sometimes it puts you behind where you expect to be, but it puts you ahead for the next time it happens.
 
-## Lonliness
+## loneliness
 ### On Getting Through the Hard Times
 
 When you accidentally start a community, you accidentally become the leader, and then you give your time and sometimes your money to make sure the community keeps going. 
@@ -72,7 +72,7 @@ But here's the thing, I hit a breaking point--well, probably a couple of times. 
 
 I've hit _a lot_ of personal life challenges in the last year. But I've known who I should message first in those situations, who had my back, who would carry me when I was down, who would support the community. And that's psychological safety, but it's also friendship. And knowing that _people_ are there for the community is so important to me in those times.
 
-## Lovliness
+## loveliness
 
 I've never been good with friendships. I'm shy. I'm an introvert--or maybe an ambivert, but that's tbd. My ADHD dx in the last year has played a huge role in understanding this as well. 
 
