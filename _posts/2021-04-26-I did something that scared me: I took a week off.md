@@ -30,7 +30,7 @@ I looked at how I've been doing things from an objective level, from the perspec
 
 I learned that burnout happens in different ways and with different feelings.
 
-I learned about the importance of boundaries and clearly setting them up. Because I've continually said that I have boundaries but they're easy to blur when you don't have a clear guide to stop.
+I learned about the importance of boundaries and clearly setting them up. Because I've continually said that I have boundaries, but they're easy to blur when you don't have a clear guide to stop.
 
 I learned that I probably wasn't doing a good job of providing an example for the Virtual Coffee members.
 
@@ -50,4 +50,10 @@ Creating space between myself and the community also allowed me to not be caught
 
 I could walk through things without having to _do_ the things. And I could much better identify where the chaos happens, where processes can be improved, where things are working well, where the community has really done a great job of innovating and responding to the groups needs.
 
-### I practiced what I advocate
+### Where I'm at now
+
+I'm three days into my first week back at Virtual Coffee, and I'm proud of myself for working on ways to set boundaries, to not let myself fall back into old habits.
+
+I'm _really_ happy to see my friends. And that's part of what makes this so hard. This community, these people, they're my people. They're the people I enjoy being around. They're the people I want to share my wins and losses with. And maybe that's how all community creators feel, or maybe that's what happens when you accidentally start a community. I don't know.
+
+But I do know that providing the best support for the community means that I'll need to take more time off, and that I need to prioritize creating clearer paths of communication and support. And it probably means that I need to tell myself that I can do this. Even though I'm afraid that I'm not the best person to be doing this, I can do it, and I can learn, and I can grow into the person I want to while doing this, with the support of the community.
