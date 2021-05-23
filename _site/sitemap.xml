@@ -2,6 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://BekahHW.github.io/blog/2021/04/26/I-did-something-that-scared-me-I-took-a-week-off</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/blog/2021/04/20/Coding-is-Pattern-Matching</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/blog/2021/04/03/One-Year-of-Virtual-Coffee-lessons-from-an-accidental-community-creator</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/blog/2021/03/23/The-Lessons-I've-Learned-from-100-Virtual-Coffees</loc>
+    </url>
+    
+    <url>
         <loc>http://BekahHW.github.io/blog/2021/03/13/Getting-Out-of-My-Comfort-Zone</loc>
     </url>
     
@@ -314,23 +330,7 @@
     
     
     <url>
-        <loc>http://BekahHW.github.io/categories/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://BekahHW.github.io/feed.xml</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://BekahHW.github.io/portfolio/</loc>
+        <loc>http://BekahHW.github.io/about</loc>
     </url>
     
     
@@ -346,7 +346,7 @@
     
     
     <url>
-        <loc>http://BekahHW.github.io/</loc>
+        <loc>http://BekahHW.github.io/portfolio/</loc>
     </url>
     
     
@@ -354,8 +354,10 @@
     
     
     <url>
-        <loc>http://BekahHW.github.io/about/</loc>
+        <loc>http://BekahHW.github.io/</loc>
     </url>
+    
+    
     
     
     

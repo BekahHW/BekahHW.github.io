@@ -1,8 +1,58 @@
-name: Bekah HW blog
-markdown: kramdown
-permalink: blog/:year/:month/:day/:title
-paginate: 5
-paginate_path: "/blog/page:num/"
-
+# Site setings
+name: 'Subtle'
 description: A blog about my journey into tech
-url: https://bekahhw.github.io
+# meta_description: 'Jekyll template, minimal style, perfect for bloggers.'
+greetings: 'Hello & Welcome! I'm BekahHW.'
+logo:
+favicon: 'assets/images/favicon.ico'
+baseurl: https://bekahhw.github.io
+production_url: https://bekahhw.github.io
+disqus: 'justgoodthemes'
+mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
+cover_image: covers/6.jpeg
+# Add your GA Tracking Id
+ga_analytics: 
+
+# Contact form setings
+email: rhawrot@gmail.com
+contact_page_description: "Horace theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
+thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
+
+# Social links
+twitter: 'BekahHW'
+github: 'BekahHW'
+
+instagram: 'BekahHW'
+linkedin: 'username'
+
+# Navigation
+navigation:
+  - text: About
+    url: /about
+  - text: Portfolio
+    url: /portfolio
+  - text: Blog
+    url: /blog
+
+# Required Plugins
+plugins_dir:
+  - jekyll-paginate
+  - jekyll-tagsgenerator
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Pagination
+paginate: 7
+paginate_path: /page:num/
+
+# Permalinks
+# permalink: /:title
+permalink: blog/:year/:month/:day/:title
+
+# Other
+markdown: kramdown
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed

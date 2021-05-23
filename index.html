@@ -1,7 +1,20 @@
 ---
-layout: index
-title: Bekah Hawrot Weigel
+layout: default
+title: Home
 ---
-<body>
 
-</body>
+<!-- Posts Index -->
+<main class="site-main">
+    <div class="site-content">
+        <div class="post-list inner">
+            {% for post in paginator.posts %}
+            {% include postbox.html %}
+            {% endfor %}
+        </div><!-- .post-list -->
+
+        <!-- Pagination-->
+        {% include pagination.html %}
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->
+
