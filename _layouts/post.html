@@ -1,24 +1,88 @@
 ---
 layout: default
-notes: active
+disqus: false
+post_class: post-template
 ---
 
-<!-- <h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p> -->
+<main class="site-main">
+    <div class="site-content">
 
-<div class="notes">
-  <div class="note single">
-    <h1 class="title">{{ page.title }}</h1>
+        <article class="post-template">
 
-    <h2 class="date">
-      <info datetime="{{ page.date }}">
-        {{ page.date | date_to_string }} {% if page.author %} by {{ page.author
-        }} {% endif %}
-      </info>
-    </h2>
-    <!-- Post content -->
-    <div class="notebody">
-      {{ content }}
-    </div>
-  </div>
-</div>
+            <header class="cover post-header">
+            
+                {% if page.featured_image %}
+                <div class="cover-bg" style="background-image: url({{ site.baseurl }}{{ page.featured_image }})">
+                </div>
+                {% endif %}
+                <div class="cover-content">
+                    <div class="inner">
+                
+                        {% if page.tags.size > 0 %}
+                        <div class="tag-links">
+                            {% for tag in page.tags %} {% if forloop.index == page.tags.size %}
+                            <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '- ' }}/'>{{ tag | camelcase }}</a>
+                            {% else %}
+                            <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '- ' }}/'>{{ tag | camelcase }}</a>
+                            {% endif %}
+                            {% endfor %}
+                        </div><!-- .tag-links -->
+                        {% endif %}
+                
+                        <h1 class="post-title">{{ page.title }}</h1>
+                
+                        <div class="post-meta">
+                            <span class="post-meta-wrap">
+                                
+                                {% for author in site.data.authors %}
+                                {% if author[1].username == page.author %}
+
+                                {% if author[1].picture %}
+                                <img class="author-avatar" src="{{ site.baseurl }}{{ author[1].picture }}"
+                                    alt="{{ page.author }}">
+                                {% endif %}
+
+                                <span class="post-author"><a href="{{ site.baseurl }}/author/{{ page.author }}/">{{ author[1].name }}</a></span>
+                                {% endif %}
+                                {% endfor %}
+
+                                <time class="published" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+                                    {{ page.date | date: "%B %-d, %Y" }}
+                                </time>
+                            </span>
+                        </div><!-- .post-meta -->
+                
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+
+            </header><!-- .cover -->
+
+
+            <div class="inner">
+            <div class="post-content">
+                {{content}}
+            </div>
+
+            <footer class="post-footer share-post">
+            
+            
+                <span>Share:</span>
+                <a class="circle" target="_blank"
+                    href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}">
+                <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
+                </a>
+                <a class="circle" target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}"><i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
+            
+            
+            </footer>
+
+            {% include disqus.html %}
+            </div><!-- .inner -->
+        </article>
+
+        {% include post-navigation.html %}
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->

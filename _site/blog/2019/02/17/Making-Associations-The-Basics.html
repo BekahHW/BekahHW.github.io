@@ -2,52 +2,85 @@
 <html lang="en">
 
 <head>
-  <title>Bekah Hawrot Weigel Life and Code</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
-    @import url('https://fonts.googleapis.com/css?family=Exo+2:200');
-    @import url('https://fonts.googleapis.com/css?family=Exo+2:200|Quicksand');
-    @import url('https://fonts.googleapis.com/css?family=Gudea|Heebo|Work+Sans');
-    @import url('https://fonts.googleapis.com/css?family=Gudea|Work+Sans');
-    @import url('https://fonts.googleapis.com/css?family=Gudea|Poppins|Work+Sans');
-    @import url('https://fonts.googleapis.com/css?family=Gudea|Poppins|Rozha+One|Work+Sans');
-    @import url('https://fonts.googleapis.com/css?family=Charmonman|Cormorant+Upright|PT+Sans|Poiret+One|Ranga|Sacramento|Sedgwick+Ave|Srisakdi');
-  </style>
-<link href='https://bekahhw.github.io/feed.xml' rel='alternate' type='application/atom+xml'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+        <title>Making Associations: The Basics</title>
+        <meta name="description" content="I like to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, ...">
+        <link rel="canonical" href="http://localhost:4000/blog/2019/02/17/Making-Associations-The-Basics">
+    
+
+    <!-- Site Favicon -->
+    <link rel="shortcut icon" href="http://localhost:4000/" type="image/png" />
+
+    <!-- Font Embed Code -->
+    <link href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
+
+    <!-- CSS Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
 </head>
 
-<body>
-  <nav>
-    <ul>
-      <li><a class="nav" href="/">Home</a></li>
-      <li><a class="nav" href="/about">About</a></li>
-      <li><a href="/portfolio">Portfolio</a></li>
-      <li><a class="nav" href="/blog">Blog</a></li>
-    </ul>
-  </nav>
-  <header>
-  </header>
+<body class="home-template">
 
-  <div class="container">
+    <div id="page" class="site">
 
-    <!-- <h1>Making Associations: The Basics</h1>
-<p class="meta">17 Feb 2019</p> -->
+        
+        <header class="site-header">
 
-<div class="notes">
-  <div class="note single">
-    <h1 class="title">Making Associations: The Basics</h1>
+    
+    <h1 class="site-title"><a href="/" rel="home">Bekah HW blog</a></h1>
+    
 
-    <h2 class="date">
-      <info datetime="2019-02-17 00:00:00 -0500">
-        17 Feb 2019 
-      </info>
-    </h2>
-    <!-- Post content -->
-    <div class="notebody">
-      <p>I like to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, how would they describe their relationship? The most common relationships are belongs_to, has_many, has_many, through:, and has_one. What do those even mean? I find the best way to understand relationships is through an example.</p>
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->
+        
+        
+
+        <main class="site-main">
+    <div class="site-content">
+
+        <article class="post-template">
+
+            <header class="cover post-header">
+            
+                
+                <div class="cover-content">
+                    <div class="inner">
+                
+                        
+                
+                        <h1 class="post-title">Making Associations: The Basics</h1>
+                
+                        <div class="post-meta">
+                            <span class="post-meta-wrap">
+                                
+                                
+                                
+                                
+
+                                <time class="published" datetime="2019-02-17">
+                                    February 17, 2019
+                                </time>
+                            </span>
+                        </div><!-- .post-meta -->
+                
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+
+            </header><!-- .cover -->
+
+
+            <div class="inner">
+            <div class="post-content">
+                <p>I like to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, how would they describe their relationship? The most common relationships are belongs_to, has_many, has_many, through:, and has_one. What do those even mean? I find the best way to understand relationships is through an example.</p>
 
 <p>Right now, I’m working on a project for screenwriters. The purpose of the project is to allow the screenwriter to enter their project and to track query letters sent to agents. So first, I start with my models. I know I’ll need a user, but in this case, I’ll call that a screenwriter. Next, I want to make a screenplay model. That screenplay should have at least one genre, so I’ll create a genre model. Last, I’ll create an agent model.</p>
 
@@ -59,26 +92,166 @@
 
 <p>It won’t always be really clear what the associations are, and that’s ok. Take some time to map out some of the relationships until you get a feel for it. At the beginning of my Rails project, I had a hard time imagining what the relationships looked like, but by the end of the project I couldn’t understand what I didn’t understand about it. The more you do it, the more natural it becomes.</p>
 
+            </div>
+
+            <footer class="post-footer share-post">
+            
+            
+                <span>Share:</span>
+                <a class="circle" target="_blank"
+                    href="https://twitter.com/share?text=Making+Associations%3A+The+Basics&amp;url=blog/2019/02/17/Making-Associations-The-Basics">
+                <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
+                </a>
+                <a class="circle" target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=blog/2019/02/17/Making-Associations-The-Basics"><i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
+            
+            
+            </footer>
+
+            
+
+            </div><!-- .inner -->
+        </article>
+
+        <nav class="post-navigation">
+
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+
+        
+        <a href="/blog/2019/02/23/Building-Out-Our-Schema-Screenwriting-Project-Continued" class="nav-next">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Next</span><span class="nav-title">Building Out Our Schema: Screenwriting Project Continued</span><span
+                    class="nav-date">February 23, 2019</span>
+            </div>
+
+        </a>
+        
+
+        
+        <a href="/blog/2019/02/01/For-All-My-Parents-Learning-to-Code" class="nav-previous">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Previous</span>
+                <span class="nav-title">For All My Parents Learning to Code</span>
+                <span class="nav-date">February 1, 2019</span>
+            </div>
+
+        </a>
+        
+
+    </div><!-- .nav-links-->
+</nav><!-- .post-navigation -->
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->
+
+        
+
+        
+
+        <aside class="sidebar">
+	<div class="sidebar-scrollable">
+		<div class="inner">
+			<div class="widget-area">
+	
+				<nav class="site-navigation">
+					<h2>Explore Website</h2>
+					<ul class="menu">
+						
+					</ul>
+				</nav>
+
+				
+<section class="widget widget-text">
+    <h2 class="widget-title">About Bekah HW blog</h2>
+    <p>A blog about my journey into tech</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+ 
+<section class="widget widget-tags">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        
     </div>
-  </div>
-</div>
+</section>
 
+				
+			</div><!-- .widget-area -->
+			<a class="sidebar-toggle">
+				<span class="screen-reader-text">Close</span>
+				<span class="icon" aria-hidden="true"></span>
+			</a>
+		</div><!-- .inner -->
+	</div><!-- .sidebar-scrollable -->
+</aside><!-- .sidebar -->
+        <footer class="site-footer">
+    <div class="inner">
 
-  </div>
-  <footer>
-    <ul>
-        <li class="mail"><a href="mailto:rhawrot@gmail.com"><i class="fa fa-envelope" aria-label="send mail icon"></i></a></li>
-        <li class="socialLinks"><a href="https://github.com/BekahHW"><i class="fa fa-github" aria-label="gituhub icon"></i></a>
-        </li>
-        <li class="socialLinks"><a href="https://twitter.com/BekahHW"><i class="fa fa-twitter"
-              aria-label="twitter icon"></i></a></li>
-        <li class="socialLinks"><a href="https://www.instagram.com/bekahhw/"><i class="fa fa-instagram"
-              aria-label="instagram icon"></i></a></li>
-        <li class="socialLinks"><a href="https://www.linkedin.com/in/bekah-hawrot-weigel-33046419/"><i class="fa fa-linkedin"
-              aria-label="LinkedIn icon"></i></a></li>
-              <li class="socialLinks"><a href='https://bekahhw.github.io/feed.xml' rel='alternate' type='application/atom+xml'><i class="fa fa-rss"></i></a></li>
-    </ul>
-  </footer>
+        <div class="offsite-links">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <a href="https://www.vimeo.com/" class="circle" target="_blank">
+        <i class="icon-vimeo" aria-hidden="true"></i>
+        <span class="screen-reader-text">Vimeo</span>
+    </a>
+
+    <a href="https://www.youtube.com/user/" class="circle" target="_blank">
+        <i class="icon-youtube" aria-hidden="true"></i>
+        <span class="screen-reader-text">YouTube</span>
+    </a>
+
+    <a href="/rss/" class="circle" target="_blank">
+        <i class="icon-feed" aria-hidden="true"></i>
+        <span class="screen-reader-text">RSS</span>
+    </a>
+
+</div><!-- .offsite-links -->
+        <div class="site-info">
+            <a href="#">Bekah HW blog</a> &copy; 2021 . Subtle theme by
+            <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>.
+            <br /> Powered by
+            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+    </div><!-- .site -->
+
+    
+    <!-- Javascript Assets -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/custom.js"></script>
+
 </body>
 
 </html>

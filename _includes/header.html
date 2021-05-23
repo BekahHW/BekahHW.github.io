@@ -1,28 +1,21 @@
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand font-tertiary h3" href="{{ site.baseurl }}/">
-      {% if site.data.settings.logo %}
-        <img src="{{ site.data.settings.logo | absolute_url }}" alt="{{ site.data.settings.title }}">
-        {% else if %}
-        <h3 class="text-white font-tertiary">{{site.data.settings.title}}</h3>
-      {% endif %}
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<header class="site-header">
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
-        </li>
-        {% for link in site.data.settings.menu %}
-          <li class="nav-item {{ class }}">
-            <a class="nav-link" href="{{ link.link }}">{{ link.name }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </nav>
-</header>
+    {% if site.logo != null %}
+    <p class="site-logo">
+        <a href="{{ site.baseurl }}/" rel="home">
+            <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}" />
+        </a>
+    </p>
+    <h1 class="site-title screen-reader-text">
+        <a href="{{ site.baseurl }}" rel="home">{{site.title}}</a>
+    </h1>
+    {% else %}
+    <h1 class="site-title"><a href="{{ site.baseurl }}/" rel="home">{{site.name}}</a></h1>
+    {% endif %}
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->

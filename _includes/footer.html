@@ -1,34 +1,15 @@
-<!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.email }}</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.phone }}</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.address }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">{{site.data.settings.copyright | markdownify}}</p>
-  </div>
-</footer>
-<!-- /footer -->
+<footer class="site-footer">
+    <div class="inner">
 
+        {% include social-links.html %}
+        <div class="site-info">
+            <a href="#">{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }} . Subtle theme by
+            <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>.
+            <br /> Powered by
+            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
 
-<!-- JS Plugins -->
-{% for js in site.data.plugins.js %}
-<script src="{{ js | relative_url }}"></script>
-{% endfor %}
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
 
-<!-- Main Script -->
-<script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
