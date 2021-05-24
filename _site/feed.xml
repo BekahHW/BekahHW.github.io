@@ -1,29 +1,522 @@
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>BekahHW</title>
+    <description>Code. Community. Feelings. It's all here.</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>I did something that scared me: I took a week off</title>
+        <description>&lt;p&gt;A friend recently asked me if I am a results or a process person. I told her that I’m a momentum person. I like to move. I don’t like breaks. But when we hit the one year mark of &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt;, and I realized that I hadn’t had a week off in a year I didn’t &lt;em&gt;want&lt;/em&gt; to take time off, but I thought I probably &lt;em&gt;should&lt;/em&gt;. And it was the right call.&lt;/p&gt;
+
+&lt;p&gt;Here’s why:&lt;/p&gt;
+
+&lt;h3 id=&quot;i-had-time-to-work-on-things-i-missed&quot;&gt;I had time to work on things I missed&lt;/h3&gt;
+
+&lt;p&gt;Part of the problem of being momentum-driven is that you go with the flow and the things that excite you. And when you have a community of a couple hundred people, there are &lt;em&gt;a lot&lt;/em&gt; of cool ideas. And I’ve been full force on the Virtual Coffee train for a while.&lt;/p&gt;
+
+&lt;p&gt;Taking time off created time for me to revisit some of the things I love doing. I coded more. I worked on my postpartum wellness app. I spent less time on my phone. I spent time thinking about what I want and where I want to be. I created a new system for tasks and project for myself (it’s colored post-it notes that I stick on my wall, but it’s been great for brainstorming and prioritizing).&lt;/p&gt;
+
+&lt;p&gt;I got to do a personal training session for the first time in a very long time. I worked on three different kinds of box jumps, because when you’re as short as I am, you’ve gotta make up for that somewhere.&lt;/p&gt;
+
+&lt;p&gt;I had fun. I had energizing conversations. I laughed.&lt;/p&gt;
+
+&lt;h3 id=&quot;i-had-the-opportunity-to-do-some-tough-self-evaluation&quot;&gt;I had the opportunity to do some tough self-evaluation&lt;/h3&gt;
+
+&lt;p&gt;On Tuesday at 9:00am EDT–when I usually host Virtual Coffee–I worked with my &lt;a href=&quot;https://katiecmckenna.com/&quot;&gt;favorite career coach&lt;/a&gt;, who helped me to breakdown tasks, prioritize, and to think strategically and practically.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Just finished meeting with the amazing &lt;a href=&quot;https://twitter.com/katiecmckenna?ref_src=twsrc%5Etfw&quot;&gt;@katiecmckenna&lt;/a&gt; and it’s always a great use of my time. She asks the hard questions, says the things that are hard to hear, and helps me to believe in myself. (Also, she’s hilarious, kind, and a great author.) &lt;a href=&quot;https://t.co/TfQDUVAggz&quot;&gt;https://t.co/TfQDUVAggz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Bekah Hawrot Weigel (@BekahHW) &lt;a href=&quot;https://twitter.com/BekahHW/status/1384513366190866436?ref_src=twsrc%5Etfw&quot;&gt;April 20, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;She made me break down the hours I spend on work and Virtual Coffee, and helped me realize some hard truths about some bad habits I was forming. She helped me find action items and made plans to hold me accountable. (If she asks, yes I am working on them!)&lt;/p&gt;
+
+&lt;p&gt;I looked at how I’ve been doing things from an objective level, from the perspective of “what advice would you give someone else who told you this is what they’ve been doing?”&lt;/p&gt;
+
+&lt;p&gt;I learned that burnout happens in different ways and with different feelings.&lt;/p&gt;
+
+&lt;p&gt;I learned about the importance of boundaries and clearly setting them up. Because I’ve continually said that I have boundaries, but they’re easy to blur when you don’t have a clear guide to stop.&lt;/p&gt;
+
+&lt;p&gt;I learned that I probably wasn’t doing a good job of providing an example for the Virtual Coffee members.&lt;/p&gt;
+
+&lt;p&gt;I learned that I need to believe in myself, to acknowledge my strengths rather than devaluing them, and to recognize that what I’m doing–both as a developer and a community builder–is good and worthwhile work.&lt;/p&gt;
+
+&lt;h3 id=&quot;i-can-come-back-with-renewed-energy&quot;&gt;I can come back with renewed energy&lt;/h3&gt;
+
+&lt;p&gt;I thought I would be anxious the whole week. It was like leaving my kids for a weekend with my parents the first time. I was sad the first day, but then I inhaled deeply and felt renewed and refreshed and ready to jump back in after the break was over.&lt;/p&gt;
+
+&lt;p&gt;I needed it without knowing that I needed it. As an introvert, I’ve not done a great job of recognizing how impacted I’ve been by constantly being engaged. I’ve somehow developed the ability to get through the week, and then I hit the weekend and feel like I’ve been hit by a truck. I didn’t feel that this weekend.&lt;/p&gt;
+
+&lt;p&gt;And one of my “action items” from this break is to take a week off every quarter. Because I know it’s good for me, and it’s good for the community too.&lt;/p&gt;
+
+&lt;h3 id=&quot;i-could-see-the-virtual-coffee-pain-points-more-clearly&quot;&gt;I could see the Virtual Coffee pain points more clearly&lt;/h3&gt;
+
+&lt;p&gt;Creating space between myself and the community also allowed me to not be caught up in all the day-to-day organizing and responding and allowed me to see things from a new perspective.&lt;/p&gt;
+
+&lt;p&gt;I could walk through things without having to &lt;em&gt;do&lt;/em&gt; the things. And I could much better identify where the chaos happens, where processes can be improved, where things are working well, where the community has really done a great job of innovating and responding to the groups needs.&lt;/p&gt;
+
+&lt;h3 id=&quot;where-im-at-now&quot;&gt;Where I’m at now&lt;/h3&gt;
+
+&lt;p&gt;I’m three days into my first week back at Virtual Coffee, and I’m proud of myself for working on ways to set boundaries, to not let myself fall back into old habits.&lt;/p&gt;
+
+&lt;p&gt;I’m &lt;em&gt;really&lt;/em&gt; happy to see my friends. And that’s part of what makes this so hard. This community, these people, they’re my people. They’re the people I enjoy being around. They’re the people I want to share my wins and losses with. And maybe that’s how all community creators feel, or maybe that’s what happens when you accidentally start a community. I don’t know.&lt;/p&gt;
+
+&lt;p&gt;But I do know that providing the best support for the community means that I’ll need to take more time off, and that I need to prioritize creating clearer paths of communication and support. And it probably means that I need to tell myself that I can do this. Even though I’m afraid that I’m not the best person to be doing this, I can do it, and I can learn, and I can grow into the person I want to while doing this, with the support of the community.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Apr 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/I-did-something-that-scared-me-I-took-a-week-off</link>
+        <guid isPermaLink="true">http://localhost:4000/I-did-something-that-scared-me-I-took-a-week-off</guid>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Coding is Pattern-Matching: a growth-mindset perspective</title>
+        <description>&lt;p&gt;A couple of years ago I was talking to a woman who was doing simultaneous Masters degrees from Carnegie Mellon University and running a brain study on chronic depression. When we were talking about her multiple degrees and her musical experience, all while she let me pick her brain about neurology, she said something that stuck with me, “All life is pattern-matching.” She explained the connections between her mathematical and scientific experience with her creative endeavors, and it made sense. Patterns are everywhere, and we learn through recognizing and seeing the patterns, internalizing them, applying them, and eventually understanding them.&lt;/p&gt;
+
+&lt;p&gt;This is the approach I try to turn to when I’m frustrated with myself when I don’t “understand” the code that I’m seeing on the page. And &lt;em&gt;this&lt;/em&gt; is a perspective that I would’ve benefitted from when I was learning to code, but most recently now, it’s what I lean into when I’m frustrated with myself for not understanding new concepts.&lt;/p&gt;
+
+&lt;h2 id=&quot;but-why-is-a-pattern-matching-perspective-important-to-coding&quot;&gt;But &lt;em&gt;why&lt;/em&gt; is a pattern-matching perspective important to coding?&lt;/h2&gt;
+
+&lt;p&gt;I don’t know about you, but I’ve let out some desperate cries to the universe to &lt;em&gt;please just let me get this so I can move on!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;And then one night, the magical neural-pathway fairy comes and sprinkles its coding dust onto my brain and I wake up, and suddenly it’s clicked. And I can’t remember why I couldn’t get it the day before.&lt;/p&gt;
+
+&lt;p&gt;But the perspective that coding is pattern-matching removes (at least some of) that frustration, tames those desperate cries to the universe, and empowers my progress rather than prohibits it.&lt;/p&gt;
+
+&lt;h2 id=&quot;but-what-does-pattern-matching-for-coding-even-mean&quot;&gt;But &lt;em&gt;what&lt;/em&gt; does pattern-matching for coding even mean?&lt;/h2&gt;
+
+&lt;p&gt;Sometimes you get hung up on “understanding” all of the concepts. And, of course, that’s important. But you shouldn’t be stuck on learning the same thing over and over in the attempt to &lt;em&gt;really&lt;/em&gt; understand something. That will come later.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pattern-matching perspective: Looking at the patterns in code and being able to replicate those patterns in other projects. You don’t have to know why the pieces work, just that they are the pieces, and how they match.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For example, let’s look at a JavaScript Object:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const person = {name: 'Leslie', job:'Parks and Recreation Deputy Director', favoriteFood:'waffles'}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Okay, so maybe we need to create another person object. We don’t need to know why there are curly braces here or why there are colons. We don’t &lt;em&gt;need&lt;/em&gt; to know that there are keys and values. We need to recognize the pattern.&lt;/p&gt;
+
+&lt;p&gt;What we need to recognize is that there are general attribute indicators (name, job, favoriteFood), that are followed by colons and then specific information, wrapped in quotes. And all of this is wrapped in curly braces.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;We’re just breaking down the pieces so we can apply this in our own situation.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the most important lessons I’ve learned is that the more I apply the code that I’ve learned in practical ways (real world projects), the more I’m able to understand it.&lt;/p&gt;
+
+&lt;p&gt;If someone would’ve told me that I needed to totally understand all of JavaScript before moving on to React, I would still be learning JavaScript.&lt;/p&gt;
+
+&lt;p&gt;We shouldn’t be waiting to fully understand. Tech changes so quickly that full mastery likely won’t ever happen.&lt;/p&gt;
+
+&lt;p&gt;As I’m moving into new projects, I’m taking this mindset with me. I’m looking for patterns and applying them. The next step is recognizing what we need in our coding projects by seeing the patterns in the code. And maybe that sparks an Aha! moment, like I could really use a useEffect here. Or using grid seems like a practical choice here. (But that Aha! moment deserves its own blog post.) And finally, those patterns click in our brains and we start to understand the hows and whys and whats of coding.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Apr 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Coding-is-Pattern-Matching</link>
+        <guid isPermaLink="true">http://localhost:4000/Coding-is-Pattern-Matching</guid>
+        
+      </item>
+    
+      <item>
+        <title>One Year of Community: The Three Ls of an Accidental Community Creator</title>
+        <description>&lt;p&gt;It started with a tweet.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Anyone interested in talking job search over virtual coffee tomorrow morning?&lt;/p&gt;&amp;mdash; Bekah Hawrot Weigel (@BekahHW) &lt;a href=&quot;https://twitter.com/BekahHW/status/1245829083025428481?ref_src=twsrc%5Etfw&quot;&gt;April 2, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;And a year later, we’re &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;here&lt;/a&gt;. We’re here with a community I couldn’t have dreamt up. We’re here talking about the future. Thinking about the next time we do a Hacktoberfest event, the third time we run &lt;a href=&quot;youtube.com/watch?v=UQl8q09BpiA&amp;amp;list=PLh9uT23TA65infGqUUaVibI0IssI0G6NY&quot;&gt;lightning talks&lt;/a&gt;, about the next set of &lt;a href=&quot;https://virtualcoffee.io/podcast/&quot;&gt;podcast episodes&lt;/a&gt; we record, about the amazing things our members are doing, about collaborations.&lt;/p&gt;
+
+&lt;p&gt;Virtual Coffee is a lot of different things, to a lot of different people, but, as it says on our &lt;a href=&quot;https://virtualcoffee.io/about/&quot;&gt;About page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Virtual Coffee is, and always will be, a genuine community of people who value and prioritize supporting one another. We know that growth comes at all levels and that no matter what stage of the developer journey you’re on, you can teach and learn.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have lived through a lot of growth in the last year, because accidentally starting a community during a pandemic can force that on you. I learned a lot about myself, and a lot about community, and I’m sharing this because a lot of that time was incredibly fulfilling and a lot of that time was lonely; and I’ve had a hard time finding people who are talking about the three Ls: learning, loneliness, and loveliness.&lt;/p&gt;
+
+&lt;h2 id=&quot;learning&quot;&gt;Learning&lt;/h2&gt;
+&lt;h3 id=&quot;what-ive-learned&quot;&gt;What I’ve learned&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I’ve learned that sometimes it is a joy to give and share with people.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That trusting the people you’re collaborating with is so important.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That you should be able to argue and disagree with the people you trust.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That I am energized by other people’s energy.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That sometimes things will work out like you anticipate and other times they most definitely do &lt;em&gt;not&lt;/em&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That a supported community will form their own subcommunities within your group and be amazing while doing it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That sometimes the members you think are confident are silently struggling.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That sometimes you have to trust your gut feeling. You know it’s not right, but you can’t explain why. And for me, most times my gut has been right.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That the best education you can get will happen when you reach out and ask for it.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I am either intensely shy or I go for it. Usually, the go-for-it-Bekah comes when I find value in what I’m doing; when I’m working with other people. But it especially comes when I see other people’s needs that aren’t being met. And if “cold DMing” other founders, devs, community managers can help me support my community, my friends, then I do it without thinking or worrying.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;That so many people will tell you that what you’re doing isn’t possible.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Tangent time: In 7th grade I ran track. I wanted to run the hurdles. I could clear them fine with no training, and had the second fastest time on my team. When I asked the coach if I could run them, he told me no. “You’re too short.” That’s the moment in my life where I realized that when people told me I couldn’t, it became an instant challenge. I can be an early career developer. I can create community. I can find a way to keep us intimate and small and grow at the same time. I can do the things that I never thought I could. Four years ago, I never would’ve expected that I would be this person. I never would’ve guessed I’d even be a developer. I don’t believe in the impossible. I embrace it as a challenge.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-im-still-learning&quot;&gt;What I’m Still Learning&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;That a &lt;em&gt;yes&lt;/em&gt; can be a no to a hundred other things.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That sometimes honesty hurts, but the people around you deserve honesty.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That I don’t need to be an expert.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That asking for help is normal.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That sometimes your gut feeling will be wrong, and that’s ok. You learn from that experience and take it with you to the next. Sometimes it’s messy. Sometimes it puts you behind where you expect to be, but it puts you ahead for the next time it happens.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;loneliness&quot;&gt;loneliness&lt;/h2&gt;
+&lt;h3 id=&quot;on-getting-through-the-hard-times&quot;&gt;On Getting Through the Hard Times&lt;/h3&gt;
+
+&lt;p&gt;When you accidentally start a community, you accidentally become the leader, and then you give your time and sometimes your money to make sure the community keeps going.&lt;/p&gt;
+
+&lt;p&gt;And suddenly you find that you’ve been giving every ounce of yourself, and you’re tired. And you want to scream out for help, but it’s hard. You don’t want to let anyone down. You don’t want anyone to know that you’ve thought that other people would do a better job and that you should hand it over to those other people and walk away for the betterment of the community.&lt;/p&gt;
+
+&lt;p&gt;And at some point, you start to feel like you’re not part of the community.&lt;/p&gt;
+
+&lt;p&gt;And if you’re not supported, this leads straight to burnout. (And super shoutout to Dan and Kirk, who have brought me back more than once from that point.)&lt;/p&gt;
+
+&lt;p&gt;It is a lonely space to feel like you have no one to talk to. To feel like the decisions you’ve made were not the right ones, and you don’t know how to recover from that. To hear from people you respect, that you can’t do what you’re trying to do.&lt;/p&gt;
+
+&lt;p&gt;But here’s the thing, I hit a breaking point–well, probably a couple of times. But what allowed me to push through those times was knowing who supported me. And, for me, that happened when I was silently struggling, and my friends could read it on my face and came to help. I’m working at getting better at verbalizing this. But their support saved me, saved the community, and made beautiful experiences.&lt;/p&gt;
+
+&lt;p&gt;I’ve hit &lt;em&gt;a lot&lt;/em&gt; of personal life challenges in the last year. But I’ve known who I should message first in those situations, who had my back, who would carry me when I was down, who would support the community. And that’s psychological safety, but it’s also friendship. And knowing that &lt;em&gt;people&lt;/em&gt; are there for the community is so important to me in those times.&lt;/p&gt;
+
+&lt;h2 id=&quot;loveliness&quot;&gt;loveliness&lt;/h2&gt;
+
+&lt;p&gt;I’ve never been good with friendships. I’m shy. I’m an introvert–or maybe an ambivert, but that’s tbd. My ADHD dx in the last year has played a huge role in understanding this as well.&lt;/p&gt;
+
+&lt;p&gt;I’ve never felt so at home with a group of people.&lt;/p&gt;
+
+&lt;p&gt;Seeing their kindness, their excitement, their growth. Seeing their willingness to help each other and to be helped. To share and be vulnerable. To cheer each other on.&lt;/p&gt;
+
+&lt;p&gt;It’s special. There’s authenticity. No bravado. And I can’t tell you how many times I’ve had a DM or been a part of a thread, that’s given me what I needed to get me through a hard time. Or when members have shown up, because they are my friends–most of whom I have yet to meet.&lt;/p&gt;
+
+&lt;p&gt;And that’s it. Do your community leaders care about the community? Because it’s easy to spot many of the people who are &lt;em&gt;playing&lt;/em&gt; the role. Authenticity matters.&lt;/p&gt;
+
+&lt;p&gt;Last week three things happened that further solidified that this is one of my favorite places.&lt;/p&gt;
+
+&lt;p&gt;The first was a thread in the #neurodiverse channel. What started out as an ADHD discussion, went into a true and beautiful ADHD thread that was clever, random, and hilarious, and brought the energy I love about my neurodiversity and the community I’ve found through Virtual Coffee.&lt;/p&gt;
+
+&lt;p&gt;The second was when I realized that I’ve been doing Virtual Coffee for a year straight, and haven’t had a week off for a year. I messaged Dan–who is an Organization Maintainer with me–to ask if he thought it would be ok for me to take a week off. And I got nothing but support.&lt;/p&gt;
+
+&lt;p&gt;Taking time off is not an easy thing for me to do, but when we interviewed &lt;a href=&quot;https://twitter.com/tomcudd&quot;&gt;Tom Cudd&lt;/a&gt; for the Virtual Coffee podcast, he talked about how he set the example for his team with his work habits. And it was validation. Because I’ll tell members to practice self-care and to refuse to work more than 40 hours a week, but the truth is, I’m bad at setting that boundary for myself.&lt;/p&gt;
+
+&lt;p&gt;Virtual Coffee isn’t a job, and I haven’t made any money doing it, but I spend a lot of my time developing the community, meeting with people who can help me understand how to support our members, developing events and processes and docs and topics that encourage growth and mentorship at all stages.&lt;/p&gt;
+
+&lt;p&gt;And so I’m going to do it. I’m going to take a week off this month. And it will be hard, but I’ve already got ideas for what I’m going to do. (One will involve heavy weights.) But honestly, it’s important. I love this community with my whole heart, and they’ve seen my tears more than a handful of times because I give them the fullness of myself. But I also need to allow myself a time to focus on my personal growth as well.&lt;/p&gt;
+
+&lt;p&gt;I could spend hours talking about what I’ve learned in the last year, but I am very thankful that I’ve done it with Virtual Coffee. I am thankful for the DMs I get encouraging me. I am thankful for the kindness that everyone shares. I am thankful for the support of my fellow maintainers. I am thankful for the community members who support each other. I am thankful for those around me who realize that I’m struggling, but I don’t know how to verbalize it. And I am thankful for the subtle moments of acceptance. Because those have been the ones that’ve powered me through this intensely challenging year.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 03 Apr 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/One-Year-of-Virtual-Coffee-lessons-from-an-accidental-community-creator</link>
+        <guid isPermaLink="true">http://localhost:4000/One-Year-of-Virtual-Coffee-lessons-from-an-accidental-community-creator</guid>
+        
+      </item>
+    
+      <item>
+        <title>Lessons I've Learned from 100 Virtual Coffees</title>
+        <description>&lt;p&gt;It’s almost been a year since Virtual Coffee was born from my cry of desperation into the Twittersphere. From knowing that I couldn’t let myself be isolated during the time the world was calling for isolation. I knew from my experience with trauma four years ago that &lt;em&gt;I&lt;/em&gt; needed community to get me through this, even though I’m shy and an introvert and that reaching out into the Twitter void and opening myself up at this most vulnerable moment was terrifying. And now on this 100th Coffee, I’m going to talk about what I’ve learned just from those zoom sessions–I’ll save the rest of the things I’ve learned for the one-year Virtual Coffee post.&lt;/p&gt;
+
+&lt;p&gt;What those coffees started as were a place to talk during social isolation, a place to make friends, a place to laugh and to cry and to watch my 3 year old daughter pour all the leave-in conditioner she could find into my hair. It started as a place to be fully myself because the stress of looking for work during the pandemic, of having the kids home and doing school, of not knowing what tomorrow’s interview would bring was enough that I didn’t even have the emotional energy to spend trying to only show the parts of myself I thought were acceptable.&lt;/p&gt;
+
+&lt;p&gt;What it became was a beautiful community of people who I missed when they weren’t there, an event that people were putting in newsletters, a place where you are welcomed to participate in the ways that make you feel comfortable. A place where every person is met and welcomed as a person before anything else–developer, student, founder. A place where every person can be a mentor, a student, a friend.&lt;/p&gt;
+
+&lt;p&gt;And this is (a non-exhaustive) list of what I’ve learned from those Coffees:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Caring about other people, &lt;em&gt;really&lt;/em&gt; knowing and caring about them, can make a huge impact.&lt;/li&gt;
+  &lt;li&gt;Sometimes you won’t know what to say. That’s ok.&lt;/li&gt;
+  &lt;li&gt;Apologize when you need to.&lt;/li&gt;
+  &lt;li&gt;People you’ve never met in real life can be your closest friends.&lt;/li&gt;
+  &lt;li&gt;Like we say at the beginning of every coffee, “An awkward pause for one person, can be an opportunity for another person to join in.”&lt;/li&gt;
+  &lt;li&gt;Sometimes differences in opinions and life experiences can be really hard to navigate, but if you put in the time and effort, they can lead to some of the most important moments of growth.&lt;/li&gt;
+  &lt;li&gt;One person’s support can make all the difference.&lt;/li&gt;
+  &lt;li&gt;It is ok to ask questions, to ask for clarification, to disagree.&lt;/li&gt;
+  &lt;li&gt;Sometimes you’ll disappoint people.&lt;/li&gt;
+  &lt;li&gt;Sometimes people will disappoint you.&lt;/li&gt;
+  &lt;li&gt;Sometimes people won’t like you or won’t think you’re good enough, and it will hurt.&lt;/li&gt;
+  &lt;li&gt;Sometimes remembering the little things are the most meaningful.&lt;/li&gt;
+  &lt;li&gt;Everyone is motivated in different ways. Knowing them, understanding where they’re at in life, can go a long way in being a supportive friend.&lt;/li&gt;
+  &lt;li&gt;Kindness matters.&lt;/li&gt;
+  &lt;li&gt;Sometimes honesty hurts, even when it’s offered with kindness.&lt;/li&gt;
+  &lt;li&gt;Willingness to listen and openness to different opinions is important.&lt;/li&gt;
+  &lt;li&gt;Having a supportive community is one of the most important things for growth.&lt;/li&gt;
+  &lt;li&gt;Sometimes you’re the only one who shows up for that person on your screen.&lt;/li&gt;
+  &lt;li&gt;Psychological safety is incredibly important.&lt;/li&gt;
+  &lt;li&gt;Bidets are &lt;em&gt;not&lt;/em&gt; for snorkeling.&lt;/li&gt;
+  &lt;li&gt;Sometimes we underestimate people who are different than us.&lt;/li&gt;
+  &lt;li&gt;Vulnerability invites vulnerability.&lt;/li&gt;
+  &lt;li&gt;There is never a time when I don’t learn from someone else.&lt;/li&gt;
+  &lt;li&gt;Sometimes people just need a chance. Sometimes you have to be willing to offer that chance.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is so much I’ve learned from these Tuesday/Thursday zoom coffees. Having the opportunity to see and hear from people all over the world, with all different experience levels has been an irreplaceable experience. When you’re in a place where you feel supported and safe, you’re ability to grow–in expected and unexpected ways–is unparalleled.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 Mar 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/The-Lessons-I've-Learned-from-100-Virtual-Coffees</link>
+        <guid isPermaLink="true">http://localhost:4000/The-Lessons-I've-Learned-from-100-Virtual-Coffees</guid>
+        
+      </item>
+    
+      <item>
+        <title>Getting Out of My Comfort Zone</title>
+        <description>&lt;p&gt;I &lt;em&gt;like&lt;/em&gt; my comfort zone. A lot. It’s a familiar space. It’s a warm blanket, a cup of coffee, in front of a fire. It’s the crack of the bat against a baseball on a hot July day. It’s hearing that song from when I was eleven and still knowing all the words. I think comfort zones are good, but pushing ourselves out of them, pushing ourselves into unknown territories, those are the places we grow.&lt;/p&gt;
+
+&lt;p&gt;The last twelve months have been a lot of growing, and I didn’t even have to push myself to do it. The world did it for me. But there are times when I felt like I had been comfortable for too long, and I needed to push myself to do those things that scared me.&lt;/p&gt;
+
+&lt;p&gt;Sometimes that thing was asking for help instead of going deeper down the rabbit hole by myself. Sometimes it was accepting someone’s offer to help. Sometimes it was jumping into a new adventure without all the planning and discussions I would have done if I wanted to make sure the moment was just right. Taking my first dev job, almost two years ago, was pushing myself way out of my comfort zone. Sometimes it’s sharing these moments with others. Some of these things I talk about on this &lt;a href=&quot;https://virtualcoffee.io/podcast/0109-bekah-dan/&quot;&gt;Virtual Coffee podcast episode&lt;/a&gt;, which itself is one of the things that I did to force myself out of my comfort zone.&lt;/p&gt;
+
+&lt;p&gt;I recently decided I was going to livestream talking through and working on my postpartum wellness app, which was absolutely terrifying. But I was inspired by Drew Clements talking about how he livestreams working on &lt;a href=&quot;https://protege.dev/&quot;&gt;Protege.dev&lt;/a&gt; as an accountability tool. It’s not enough that I’m still very much new to React Native. I wanted to add to that the accountability that comes with livestreaming.I’ve only done it a couple of times, but I learned that it’s not about having all of the answers; it’s about communicating when you don’t.&lt;/p&gt;
+
+&lt;p&gt;It’s ok to have questions. It’s ok to look things up. It’s ok to forget how to do something you’ve done 100x before. It happens.&lt;/p&gt;
+
+&lt;p&gt;It’s about not getting frustrated when you don’t have those things. It’s about learning how to move forward, how to grow. And it’s remembering that process the next time you have that feeling of not being good enough.&lt;/p&gt;
+
+&lt;p&gt;There are so many times that I’m mad at myself for not knowing more or for feeling like I should be better at coding than I am. That I should have more done than I do. And that’s not productive; negative self talk does not help me grow. (I’m going to say it again, for the people who need to hear it; also, me. I need to hear it again.) Negative self talk does not help me grow.&lt;/p&gt;
+
+&lt;p&gt;Getting out of your comfort zone and growing is hard. And sometimes it means hearing things that are hard to hear. Sometimes, it’s having those hard conversations when you want to ignore the problem and hope it disappears.&lt;/p&gt;
+
+&lt;p&gt;A friend said to me the other day, “Bekah, there’s a reason they’re called growing pains. It doesn’t feel good.” I think it’s about embracing that pain by getting out of your comfort zone, but not being &lt;em&gt;stuck&lt;/em&gt; in the place you were last time, last week, last tutorial.&lt;/p&gt;
+
+&lt;p&gt;You don’t solve problems by ignoring them. You tackle the error in your console one piece at a time. And sometimes it’s minutes and sometimes it’s days, but damn it feels good when you finally have that project up on the screen. And that’s worth it.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 13 Mar 2021 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/Getting-Out-of-My-Comfort-Zone</link>
+        <guid isPermaLink="true">http://localhost:4000/Getting-Out-of-My-Comfort-Zone</guid>
+        
+      </item>
+    
+      <item>
+        <title>Complicated Anniversaries: It's Ok to Not Be Ok</title>
+        <description>&lt;p&gt;Life has been &lt;em&gt;weird&lt;/em&gt; lately. It’s been complicated, and I’ve had a hard time understanding why. And then I read this tweet:&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;We're coming up on a year of being in this pandemic, there's some sort of weird existential dread hitting a lot of us.
+
+The bad news: we're all in this at the same time, together. The good news: we're all in this at the same time, together.&lt;/p&gt;&amp;mdash; Sarah Drasner (@sarah_edo) &lt;a href=&quot;https://twitter.com/sarah_edo/status/1360023399104274433&quot;&gt;February 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;And that was it. That was the moment where I thought “oh, I know how this goes.” I know about trauma anniversaries. I know what they do to me. I know how I struggle through thinking through things. I know how I’m anxious. I know how I’m irritable. I know how my mind races at night, how I wake up at 2am and can’t go back to sleep, I know how I feel like a wrecking ball of emotions because I’m freaking doing the best I can do and I feel like I’m letting every single person down because the world is fucking overwhelming.&lt;/p&gt;
+
+&lt;p&gt;I know.&lt;/p&gt;
+
+&lt;p&gt;I know this feeling  well.&lt;/p&gt;
+
+&lt;p&gt;And I have desperately tried to get away from it for the last four and a half years. And, “hello, trauma, we meet again. And you’re compounding yourself on top of what I’m already going through. And this time, fuck you, because you’re stacking yourself on top of my kids too. And I could barely hold on when it was &lt;em&gt;just&lt;/em&gt; me. But now you’re trying to take them down too. And I will not stand for it.”&lt;/p&gt;
+
+&lt;p&gt;“Last time, it was almost all of me. I couldn’t see my life past trauma, until one person, just one, reached out and said, I’ve been through this. It was different, but also the same. And I heard the words that I thought in my head. And I understood the self-dount, and I heard the voices of every single person who doubted me in my life and I said “Fuck you.” But this time, it’s not just me. It’s me, it’s my kids and my family, it’s my friends–who I love deeply–it’s the community that has held tight to each other. And it’s hard. I am trying so very hard to be the one who can hold everyone up. And I know that we all hold each other up, but it’s hard. It’s a trustfall, right?&lt;/p&gt;
+
+&lt;p&gt;And here’s the thing: we fail at a trustfall if we’re not honest with ourselves. It’s ok to not be ok. It’s ok to say that. It’s a good thing to reach out for support. We’re all very much going through this together–and some of us are dealing with extra things on top of it–and if anything, we learn about the importance of honesty, of commmunication, of empathy. And we all come out the other end as a stronger community.&lt;/p&gt;
+
+&lt;p&gt;But for now, can we be ok struggling together? Can we be ok having off weeks together? Because this is all normal–a normal trauma response–and let’s acknowledge that for many of us, that’s what the entire last year has been.&lt;/p&gt;
+
+&lt;p&gt;And it’s ok for the last year to have some amazing and bright spots. It’s ok for the last year to feel empty. But now, more than ever, I want you to know that I am here for you. I am here if we have never spoken, I am here if we’ve had a million conversations but haven’t felt close, I am here for you wherever you are in your life if you feel this way. Because I will never leave anyone in isolation. I’m here. And it doesn’t matter what role you’ve had in my life. I am just here for you.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Feb 2021 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/Complicated-Anniversaries-It's-Ok-to-not-be-Ok</link>
+        <guid isPermaLink="true">http://localhost:4000/Complicated-Anniversaries-It's-Ok-to-not-be-Ok</guid>
+        
+      </item>
+    
+      <item>
+        <title>Five Hot Takes for the New Year</title>
+        <description>&lt;p&gt;I spend a lot of time stuck in my head, wondering if what I say is going to hurt someone or lead them on the wrong path, or flat-out be wrong. And that’s exhausting. I love going on podcasts, but the after-effect is that I rethink my every statement to see if it could possibly hurt someone. And there have been times that I’ve asked podcasts to cut something. But the truth is, we all live our own story. And sometimes we say things wrong, but we give the right advice. And sometimes our advice is meaningful for a bunch of people, but not one. And sometimes our stories impact one person and that’s it. But I’m here for that one person. Because if you have ever felt alone, like you are the only one who understands your experience, that &lt;em&gt;one&lt;/em&gt; experience that you can relate to, can make the &lt;em&gt;biggest&lt;/em&gt; difference.&lt;/p&gt;
+
+&lt;p&gt;So this post isn’t going to give all the details, because I have spent my detail energy for the week, but it will give you my hot takes, that I want to reserve energy for in upcoming posts, if you want it:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Let people know when they provide you with valuable information
+I cannot tell you how many times I have considered stopping whatever I was doing, but then I got one message that affirmed what I did or said, and that was enough. Over at &lt;a href=&quot;http://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt;, we’re planning our second round of Lightning Talks. Last round, I strong-armed my way through a lot of the event organizing alone. This time, I’m working to create processes and engage and empower members to create this event. In our meeting on Monday, I was honest with them: Last time I was so exhausted that I wanted to sleep for a month. And then I started seeing how much our members appreciated it, how proud our speakers were. And then I said, “how soon can we do this again.” And someone responded, “The post-conference high.” And that’s very much the feeling I get when one person tells me about how my sharing has impacted their lives. So if someone has written, spoken, tweeted, whatever, in a way that has motivated you, &lt;em&gt;tell them&lt;/em&gt;, because that will motivate them too.&lt;/li&gt;
+  &lt;li&gt;You’re never going to be ready, so start.
+I have four kids, and I always laugh when people tell me they aren’t ready to have kids. I wasn’t ready for any of this. In fact, I never had dreams or goals of being married or being a mom. Fun fact, I was 21 when I got married, and 24 when I had my first kid. I’m not going to apologize for telling my story. I’m not telling &lt;em&gt;you&lt;/em&gt; this is your story. But this is one of the times that I pushed past fear and made meaning in my life. And it was hard. A lot. But, I most certainly grew leaps and bounds. When I started my blog, I didn’t even know that dev tools were a thing. And if you go back far enough in my code, you can see that I didn’t know that.&lt;/li&gt;
+  &lt;li&gt;Have the hard conversations.
+Hard conversations are…hard. But they are worth it. If you can come out the other end of very difficult conversations, if you can disagree with someone and find a meeting point, if you can approach them with empathy, honestly, and leave with clarity, then you can do so much. &lt;em&gt;And&lt;/em&gt; you’ll know the people you can do it with.&lt;/li&gt;
+  &lt;li&gt;Reach out to people in your network.
+The worst thing you can get is a no or no response. I feel like I have had a masters class in entrepreneurship in the last couple of months because I have &lt;em&gt;asked&lt;/em&gt; founders, owners, consultants, to talk to me about my use-case. And nearly all of them have said yes and been amazing. Early-2020 Bekah wouldn’t have done that. And I can’t explain exactly what happened, except I allowed myself to think of myself as a capable person who was willing to stake a small embarrassment for the opportunity of learning from the people I value most in the tech community.&lt;/li&gt;
+  &lt;li&gt;You are not defined by others, and along with that good communities will help you when you feel alone.
+There have been a number of times where I’ve felt &lt;em&gt;used&lt;/em&gt; as a promotional story. I would help &lt;em&gt;them&lt;/em&gt; to elevate themselves because they helped &lt;em&gt;me&lt;/em&gt;, a mom of 4 kids, a career-changer, a trauma-survivor. And then when I reached out to them, when I asked for support, there was nothing. And it hurt. A lot. But here’s the thing: I am a mother of four. I am a career-changer. I am a trauma-survivor. And I have a community of people who love and support me. And if you are reading this and you feel like you have no one, I can 100% guarantee that &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt; has a place for you. We are here to meet every person where they are. To support, and to guide, to mentor and provide for. And I know my community, and I know that they will be your people if you let us.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Thu, 28 Jan 2021 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/Five-Hot-Takes-for-the-New-Year</link>
+        <guid isPermaLink="true">http://localhost:4000/Five-Hot-Takes-for-the-New-Year</guid>
+        
+      </item>
+    
+      <item>
+        <title>Let Them Write Tests: Writing Your First Cypress Test</title>
+        <description>&lt;p&gt;&lt;em&gt;This is a continuation of &lt;a href=&quot;https://dev.to/bekahhw/let-them-write-tests-an-argument-for-cypress-19o2&quot;&gt;this post&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I like writing tests. I like the structure. I like when they find bugs. I even like when they give me nightmares. But I think I like them most because they’re accessible and getting Cypress setup is quick and painless.&lt;/p&gt;
+
+&lt;p&gt;I’ve already made my case for why you should write tests. Now I’m going to take you through getting Cypress up and running and writing your first test.&lt;/p&gt;
+
+&lt;p&gt;In your terminal:
+Cd into your project path: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd /your_project/path&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, I might have a project called coding-blog in my Project folder. So when I open my terminal, I put in: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd Project/coding-blog&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(Capitalization doesn’t matter here, but spelling and order do.)&lt;/p&gt;
+
+&lt;p&gt;Now we’re ready to get it installed. (For more detailed instructions, &lt;a href=&quot;https://docs.cypress.io/guides/getting-started/installing-cypress.html#npm-install&quot;&gt;the docs&lt;/a&gt; are the place to be.) For less detailed instructions: In your terminal put &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install cypress&lt;/code&gt; (if you’re using npm). If you’re using yarn, type: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn add cypress&lt;/code&gt;. It shouldn’t take that long to install, but while you’re waiting I recommend checking out the &lt;a href=&quot;https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell&quot;&gt;Cypress docs&lt;/a&gt;, because I can guarantee you’ll be spending quality time there.&lt;/p&gt;
+
+&lt;p&gt;Once it’s all done installing, you’re ready to explore some folders. You’ll notice in your file directory that you now have a Cypress folder. In that folder, you’ll find fixtures, integration, plugins, and support. You’ll also notice that you have a cypress.json file in your file structure.&lt;/p&gt;
+
+&lt;p&gt;Let’s start there. You’ll see that you can customize this. For this go-round, we’re just going to use the localhost address for the baseUrl that you’ll be using to test.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{
+  &quot;baseUrl&quot;: &quot;http://localhost:3000/”
+}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok. We’re getting closer. Now open your Cypress folder, and click on integration. This is where we’ll write our first tests.&lt;/p&gt;
+
+&lt;p&gt;Now we need to figure out how to write the tests. Let’s pretend we’re testing a new user form. The file we’re testing is called NewUser.js, so we’ll create our new file with the name newUser.js in the Cypress/integration folder.&lt;/p&gt;
+
+&lt;p&gt;There are two main pieces of a Cypress test. First, an example. Then the explanation.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;describe('new user form', () =&amp;gt; {
+  it('displays form validation', () =&amp;gt; {
+    cy.visit('/users/new')
+    cy.get('#first_name').type('Bekah')    
+    cy.get('#first_name').should('have.value', 'Bekah', 'be.visible')
+  })
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;explanation&quot;&gt;Explanation&lt;/h3&gt;
+&lt;p&gt;The test is looking for an input with the id “first_name.” It finds the input, types in the name and then checks that the name is visible in the input. But what are these sections?&lt;/p&gt;
+
+&lt;h4 id=&quot;describe&quot;&gt;Describe&lt;/h4&gt;
+&lt;p&gt;Has two arguments: a string (“subject”)–in this case “new user form” and the callback (“it”) that the runs the code&lt;/p&gt;
+
+&lt;h4 id=&quot;it&quot;&gt;It&lt;/h4&gt;
+&lt;p&gt;This block tells what to expect and checks for the outcome. Also takes a callback (“verb”)–in this case “displays the form”–and checks the assertion-&amp;gt; should have a value and be visible.&lt;/p&gt;
+
+&lt;p&gt;Each “it” block is a test. You can include multiple it blocks in a describe. For example, you might want to test validation on the form. If the user tries to submit without entering their name, an error appears on the screen. That should have it’s own “it” block.&lt;/p&gt;
+
+&lt;p&gt;How do you know what to test? Well, that’s another post. But you want to be sure that users can use your software. So start there.
+To run the test, you can either open it in the testrunner, which runs in the browser and lets you actually see the action happening, or you can run it headlessly with the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cypress run&lt;/code&gt;.
+To run the command in your terminal, you’ll either start with yarn or npm, depending on which your project uses and then the appropriate command. So in this case, I would run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn cypress open&lt;/code&gt;. 
+The test runner would open, and then I would select the file I want to test and watch the tests run.&lt;/p&gt;
+
+&lt;p&gt;Cool, right? And the nice thing about tests is if something isn’t working or if it breaks, you know right away.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 Jan 2021 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/Let-Them-Write-Tests-Writing-Your-First-Cypress-Test</link>
+        <guid isPermaLink="true">http://localhost:4000/Let-Them-Write-Tests-Writing-Your-First-Cypress-Test</guid>
+        
+      </item>
+    
+      <item>
+        <title>2020: A Year in Review</title>
+        <description>&lt;p&gt;&lt;em&gt;It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair.&lt;/em&gt; - Charles Dickens&lt;/p&gt;
+
+&lt;p&gt;I mean, how could you expect me to start this post with anything else? 2020 was an entire lifetime, it was emotions that no one has ever felt before. It was &lt;em&gt;a&lt;/em&gt; thing.&lt;/p&gt;
+
+&lt;p&gt;I didn’t have huge goals coming into 2020, but I was ready for it:&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;2019 was my warmup year.&lt;/p&gt;&amp;mdash; Bekah Hawrot Weigel (@BekahHW) &lt;a href=&quot;https://twitter.com/BekahHW/status/1211954474706714625?ref_src=twsrc%5Etfw&quot;&gt;December 31, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Well, you know, I thought I was ready for it. And I did make some small, but very meaningful goals:
+&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Make a site for my memoir with Gatsby, keep learning what I need at my job.&lt;/p&gt;&amp;mdash; Bekah Hawrot Weigel (@BekahHW) &lt;a href=&quot;https://twitter.com/BekahHW/status/1212511229123670018?ref_src=twsrc%5Etfw&quot;&gt;January 1, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Did I meet those goals? Actually, kind of and more. I did build a &lt;a href=&quot;https://beautyinthescar.com/&quot;&gt;site&lt;/a&gt; for my memoir, and I did learn new things for my job.&lt;/p&gt;
+
+&lt;p&gt;But I wasn’t ready for 2020. And it took me a long time to get over that. I had this idea in my head that since &lt;a href=&quot;https://beautyinthescar.com/the-first-one/&quot;&gt;I had gone through trauma&lt;/a&gt;, I could navigate other traumas that came my way, that I could leverage that experience.&lt;/p&gt;
+
+&lt;p&gt;And then I found myself crying every single night after I lost my job because of COVID, after my children’s school closed and I was supervising four kids doing at home learning while I was trying to interview for jobs. When I learned that &lt;a href=&quot;https://dev.to/bekahhw/job-searching-in-the-time-of-covid-19-1jei&quot;&gt;tech interviews can be soul-crushing&lt;/a&gt;. And all I could think about was: why can’t I do &lt;em&gt;this&lt;/em&gt; trauma?&lt;/p&gt;
+
+&lt;p&gt;This trauma, this global trauma of a pandemic wasn’t just about me. It wasn’t a hurdle that I could navigate. It was my trauma, my kids trauma, my family’s trauma, and it was the trauma of every single person affected by the pandemic. You don’t navigate the trauma of the world by yourself. And that’s very much what made this year the year I found people I call my friends, the year that I felt like I belonged, the year that Virtual Coffee became a huge part of my story.&lt;/p&gt;
+
+&lt;p&gt;When I lost my job, I felt alone, empty. I knew that feeling. And I knew that I had to do something before it turned into despair. And so &lt;a href=&quot;https://dev.to/bekahhw/what-is-virtual-coffee-4omm&quot;&gt;Virtual Coffee&lt;/a&gt; was born. The highlight from that post is this line about what the point of Virtual Coffee is: &lt;em&gt;The point is to form community. To meet new devs. To learn from each other. To offer advice. The point is to not feel alone.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;And that’s what it did. I felt better about making my way through the job search because there were friends there to support me. I felt better about taking a contract using React Native for the first time, because there were people cheering me on. I felt understood when I was diagnosed with &lt;a href=&quot;https://dev.to/bekahhw/adhd-the-quarantine-and-me-4apa&quot;&gt;ADHD&lt;/a&gt;. I felt joy when my job opened back up and I had the mentorship to grow as a frontend developer, to learn new things, to have confidence in myself.&lt;/p&gt;
+
+&lt;p&gt;And so 2020 became the year where I had the support to do things that I didn’t dream of. 2020 became the year where I founded a community of developers, the year that I mentored when I didn’t think I knew enough to mentor, when I could finally call myself a developer.&lt;/p&gt;
+
+&lt;p&gt;It’s the year that I became an open-source maintainer for my &lt;a href=&quot;https://github.com/BekahHW/postpartum-wellness-app&quot;&gt;post-partum wellness app&lt;/a&gt; because my friends encouraged me to have faith in myself. It was the year that I organized three online events for our community, where I gave my first technical talk on end-to-end testing with Cypress the same week that I MCed my first lightning talk event. It’s the year I recorded my first podcasts as a co-host and not as a guest.&lt;/p&gt;
+
+&lt;p&gt;It’s the year where I was inspired by people around me. Where I learned that it’s ok to lean on other people when you need it. When sometimes the people I least expected to accept me–all of me–to encourage me, to push me, to support me, did.&lt;/p&gt;
+
+&lt;p&gt;It’s the year that I learned that sometimes progress is not what you think it looks like. That sometimes hard conversations are the ones that you need to have. That therapy is good. That sometimes all you need to do is ask for help or advice or guidance. That growth is painful.&lt;/p&gt;
+
+&lt;p&gt;This is the year that I cried and cried and cried. It was &lt;em&gt;hard&lt;/em&gt;. It &lt;em&gt;is&lt;/em&gt; hard. And complicated. And some days the anxiety keeps me up at night. And some weeks I can’t stop thinking about how awful some of the moments have been. But those beautiful moments, they’ve been so much more intensely beautiful because of the contrast.&lt;/p&gt;
+
+&lt;p&gt;In a lot of ways, my year of coding, my year of life, can best be described by this paragraph from my first post in my &lt;a href=&quot;https://beautyinthescar.com/the-first-one/&quot;&gt;trauma blog&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;And so this is my project. This is the space for vulnerability. This is the place for rawness and being allowed to be. This is the place where I show my scars. Where my body is mine. Where the scar that horrified and disgusted me has become a mark of pride. A reminder that I have survived. That I am a better person everyday for the ways I’ve changed. This is about the journey through trauma, the dirty and dark parts, the parts that I’m proud of, the parts where I say this was the worst experience of my life, but would never in a million years take it back. This is about finding beauty in the scar.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 28 Dec 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2020-A-Year-in-Review</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-A-Year-in-Review</guid>
+        
+      </item>
+    
+      <item>
+        <title>I Came into Tech via Trauma</title>
+        <description>&lt;p&gt;I don’t have a traditional path into tech. I came into tech because my organs ruptured when I had my fourth kid. I came into tech because I had PTSD. I came into tech because I have &lt;a href=&quot;https://bekahhw.github.io/blog/2020/08/03/ADHD,-the-Quarantine,-and-Me&quot;&gt;ADHD&lt;/a&gt;. I came into tech because after I had surgery to remove one organ and restructure another, I overdosed on morphine and then spent the next six days teaching from a hospital bed because I didn’t have any rights as an adjunct instructor. I came into tech because I just wanted it to stop. I wanted my brain to stop. When I coded, it stopped.&lt;/p&gt;
+
+&lt;p&gt;My journey into tech isn’t typical. And depending on how honest I am, my story is shocking. I didn’t mean to make a career change. I just wanted to have something, to feel like I could succeed at anything at all. I came into tech because the last six years of being an adjunct instructor I fought to have rights, to get a pay increase, to create a community. And I left with nothing. I came into tech because I found support, a community that I was seeking for years.&lt;/p&gt;
+
+&lt;p&gt;Four days after having my fourth kid, I went into my OBGYNs office. It haunts me. I told her about the horrific symptoms I was experiencing, and she told me “it’s not my problem.” I’ve told this story a thousand times, and it still hurts to say it. And it hurts because she said it to me, but it hurts because I’m not the only one who has felt abandoned in the room.&lt;/p&gt;
+
+&lt;p&gt;I’m not the only one who has felt like there was no hope. I’m not the only one who’s felt like no one could ever understand. I’m not the only one who has been left alone in the corner to watch every other person go on living their life while I died a little bit more inside everyday.&lt;/p&gt;
+
+&lt;p&gt;It’s everybody’s problem.&lt;/p&gt;
+
+&lt;p&gt;There is not a moment in time that I don’t carry that with me. I carry it with me because I very much do not ever want any other person to feel that way. I carry it with me, because it drives a force inside of me to do what I can to change the systems that make people feel like they are nothing, like they are not worthy, like no one should help them. When I left that room that day, I thought that I was not worth anyone’s time. I wasn’t a person; I was a problem.&lt;/p&gt;
+
+&lt;p&gt;I have always been a passionate person. I have always been intense. It has both been a characteristic that drives me and one that has isolated me from people. Sometimes I’m too much for people. I am more than they can handle. But I can’t help being fully myself. I can’t help that I can’t stop myself when I see new paths for change or growth or whatever that are driven by this intense desire to make sure that no one feels alone.&lt;/p&gt;
+
+&lt;p&gt;I started a &lt;a href=&quot;https://beautyinthescar.com/&quot;&gt;blog&lt;/a&gt; to talk about my trauma and this is a crossover post. I learned to code because it stopped the trauma from repeating over and over in my head while I sat in front of the computer. I kept coding because I had community. I got excited about coding because I realized that code could’ve prevented what happened to me. But that’s women’s health, and not enough people care about women’s health.&lt;/p&gt;
+
+&lt;p&gt;If no one will do the thing that needs to be done, I will. But I also know that when we work in isolation, we will never be as effective as we can be with a community. Because with a community there is support. With a community there is meaning and purpose and growth.&lt;/p&gt;
+
+&lt;p&gt;A couple of years ago I was at JSConf Hawaii, and I told a woman that although my trauma was the worst thing that ever happened to me, I wouldn’t take it back. I’m a better person. Without that trauma, I don’t know the importance of community. WIthout that trauma, I don’t get into tech. Without trauma &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt; is never started. Without trauma I don’t understand the importance of vulnerability, of meeting people where they are at, of letting people &lt;em&gt;know&lt;/em&gt; me; I guard and protect myself. I don’t become the developer that I can be. I don’t find a way to push through those times when people tell me that I can’t do both; that I can’t create community and be a developer.&lt;/p&gt;
+
+&lt;p&gt;This post is very much about how I became a developer, but it’s very much more about how I became &lt;em&gt;me&lt;/em&gt;. And that’s the important part. Because I am a person first. And being human, recognizing the diverse experiences and challenges and talents and perspectives of the people around us matters.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Dec 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/I-Came-into-Tech-via-Trauma</link>
+        <guid isPermaLink="true">http://localhost:4000/I-Came-into-Tech-via-Trauma</guid>
+        
+      </item>
+    
   </channel>
 </rss>
+
