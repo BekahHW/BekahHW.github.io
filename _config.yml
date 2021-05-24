@@ -6,7 +6,7 @@ greetings: "Hello! I'm BekahHW, a developer & community creator."
 logo:
 favicon: "assets/images/favicon.ico"
 baseurl:
-production_url: https://bekahhw.github.io
+production_url: https://bekahhw.github.io/
 # disqus: "justgoodthemes"
 mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
 cover_image: covers/6.jpeg
@@ -19,17 +19,18 @@ contact_page_description: "Horace theme comes with a contact form built-in. You 
 thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
 # Social links
-twitter: "@BekahHW"
-github: "@BekahHW"
+twitter: "BekahHW"
+github: "BekahHW"
 instagram: "BekahHW"
 linkedin: "bekah-hawrot-weigel"
+youtube: "virtualcoffeeio"
+# rss: "https://bekahhw.github.io/feed.xml"
 
 # Navigation
 navigation:
   - text: About
     url: /about
-  - text: Style Guide
-    url: /style-guide
+
   - text: Code & Community
     url: /code-and-community
 
