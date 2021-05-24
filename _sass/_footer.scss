@@ -1,0 +1,45 @@
+/**
+ * 7. Site Footer
+ * ----------------------------------------------------------------------------
+ */
+
+.site-footer {
+	background-color: $black;
+	border-top: 1px solid rgba(90, 90, 90, 0.3);
+	padding-bottom: 60px;
+	padding-top: 90px;
+	text-align: center;
+}
+
+.offsite-links {
+	margin-bottom: 45px;
+}
+
+.offsite-links a {
+	margin: 0 7px 15px;
+}
+
+.site-info {
+	color: $gray;
+	font-size: 10px;
+	letter-spacing: 2px;
+	margin-bottom: 45px;
+	text-transform: uppercase;
+}
+
+.site-info a:hover {
+	color: $gray-light;
+}
+
+.site-footer .arrow-up:before,
+.site-footer .arrow-up:after {
+	background-color: $gray;
+	-webkit-transition: all .3s;
+	-moz-transition:	all .3s;
+	transition:			all .3s;
+}
+
+.site-footer .arrow-up:hover:before,
+.site-footer .arrow-up:hover:after {
+	background-color: $color-accent;
+}

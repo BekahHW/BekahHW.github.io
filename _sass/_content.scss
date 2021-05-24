@@ -1,0 +1,669 @@
+/**
+ * 6. Content
+ * ----------------------------------------------------------------------------
+ */
+
+/**
+ * 6.1 Posts and Pages
+ * ----------------------------------------------------------------------------
+ */
+
+.cover {
+	background-color: $black;
+	display: table;
+	height: 100vh;
+	margin-bottom: 90px;
+	position: relative;
+	width: 100%;
+}
+
+.paged .hero,
+.page-header {
+	height: 480px;
+}
+
+.cover-bg {
+	-webkit-animation: 	fadein 1s ease-in-out;
+	-moz-animation:		fadein 1s ease-in-out;
+	animation:			fadein 1s ease-in-out;
+	background-position: center;
+	background-size: cover;
+	bottom: 0;
+	left: 0;
+	opacity: 0.3;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.cover-content {
+	display: table-cell;
+	position: relative;
+	vertical-align: middle;
+	width: 100%;	
+}
+
+.hero .cover-content,
+.post-header .cover-content {
+	text-align: center;
+}
+
+.cover-content .inner {
+	padding-bottom: 120px;
+	padding-top: 135px;
+}
+
+.cover .arrow-down {
+	-webkit-animation-duration:	2s;
+	-moz-animation-duration:	2s;
+	animation-duration:			2s;
+	-webkit-animation-name:	blink;
+	-moz-animation-name:	blink;
+	animation-name:			blink;
+	-webkit-animation-iteration-count:	infinite;
+	-moz-animation-iteration-count:		infinite;
+	animation-iteration-count:			infinite;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -15px;
+	position: absolute;
+}
+
+.cover .arrow-down:before,
+.cover .arrow-down:after {
+	background-color: $gray;
+}
+
+.post {
+	margin-bottom: 90px;
+}
+
+.post-template .post,
+.page-template .post {
+	margin-bottom: 60px;
+}
+
+.post-list .post {
+	position: relative;
+}
+
+.post-list .post:before {
+	background-color: $gray-lighter;
+	content: "";
+	height: 100%;
+	left: -30px;
+	position: absolute;
+	top: 0;
+	width: 1px;
+}
+
+.post-header {
+	margin-bottom: 30px;
+}
+
+.post-header-wrap {
+	position: relative;
+	padding-top: 10px;
+}
+
+.post-header-wrap:before {
+	background-color: #fff;
+	border: 1px solid $gray-light;
+	border-radius: 50%;
+	content: "";
+	height: 11px;
+	left: -36px;
+	position: absolute;
+	top: 27px;
+	width: 11px;
+}
+
+.tag-links {
+	color: $gray;
+	font-family: $font-secondary;
+	font-size: 14px;
+}
+
+.tag-links a {
+	color: $color-accent;
+	margin-right: 1%;
+}
+
+.tag-links a:before {
+    content: "\0023";
+}
+
+.tag-links a:hover {
+	color: $gray;
+}
+
+.post-title {
+	font-size: 36px;
+	margin-bottom: 15px;
+}
+
+.post-title a {
+	color: $black;
+}
+
+.post-title a:hover {
+	color: $gray;
+}
+
+.featured .post-title a:after {
+	content: "\00a0\002a";
+}
+
+.post-meta {
+	color: $gray-light;
+	font: italic 16px/1.5 $font-secondary;
+}
+
+.post-meta a {
+	color: $gray;
+}
+
+.post-meta a:hover {
+	color: $color-accent;
+}
+
+.post-meta .author-avatar {
+	border-radius: 50%;
+	float: left;
+	height: 30px;
+	margin-right: 10px;
+	margin-top: -3px;
+	width: 30px;
+}
+
+.post-meta .published,
+.post-meta .reading-time {
+	font: normal 12px/1.5 $font-primary;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.post-header-wrap .published {
+	left: -220px;
+	position: absolute;
+	text-align: right;
+	top: 25px;
+	width: 160px;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+	margin-top: 45px;
+}
+
+.post-content > h1:first-child,
+.post-content > h2:first-child,
+.post-content > h3:first-child,
+.post-content > h4:first-child,
+.post-content > h5:first-child,
+.post-content > h6:first-child {
+	margin-top: 0;
+}
+
+/* Single post */
+.post-template .post-header,
+.page-template .post-header {
+	margin-bottom: 60px;
+}
+
+.post-template .tag-links,
+.page-template .tag-links {
+	color: $gray-lighter;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.post-template .tag-links a:hover,
+.page-template .tag-links a:hover {
+	color: $gray-lighter;
+}
+
+.post-template .post-title,
+.page-template .post-title {
+	color: #fff;
+	font-size: 48px;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.post-template .post-title:after,
+.page-template .post-title:after {
+	background-color: $color-accent;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	left: 50%;
+	margin-left: -40px;
+	position: absolute;
+	width: 80px;
+}
+
+.post-template .post-meta,
+.page-template .post-meta {
+	color: $gray-lighter;
+}
+
+.post-template .post-meta a,
+.page-template .post-meta a {
+	border-color: $color-accent;
+	color: $color-accent;
+}
+
+.post-template .post-meta a:hover,
+.page-template .post-meta a:hover {
+	border-color: transparent;
+	color: $gray-lighter;
+}
+
+.post-meta-wrap {
+	bottom: 30px;
+	position: absolute;
+	right: 30px;
+	text-align: right;
+	width: 100%;
+}
+
+.post-meta-wrap .author-avatar {
+	border: 2px solid $gray-light;
+	float: right;
+	height: 76px;
+	margin: 0 0 0 30px;
+	width: 76px;
+}
+
+.post-meta-wrap .post-author {
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+
+.post-meta-wrap .published {
+	display: block;
+	font-size: 10px;
+}
+
+.share-post {
+	color: $gray-light;
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.share-post span,
+.share-post .circle {
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+
+.share-post .circle {
+	border-color: $gray-lighter;
+	color: $gray-light;
+}
+
+.share-post .circle:hover {
+	color: $gray;
+}
+
+.share-post .circle:after {
+	box-shadow: 0 0 0 1px rgba(173, 171, 172, 0.45);
+}
+
+.subscribe-box {
+	background-color: $black;
+	padding: 60px 0 90px;
+	text-align: center;
+}
+
+.subscribe-box + .post-navigation {
+	border-top: 1px solid rgba(90, 90, 90, 0.3);
+}
+
+.subscribe-box-title {
+	color: $gray-light;
+	font-size: 24px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+.subscribe-box p {
+	font-style: italic;
+}
+
+.subscribe-box form {
+	padding-right: 145px;
+	position: relative;
+}
+
+.subscribe-box input[type="email"] {
+	border: 0;
+	display: block;
+	height: 40px;
+	width: 100%;
+}
+
+.subscribe-box button[type="submit"] {
+	border-color: $gray-light;
+	height: 40px;
+	padding: 5px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 135px;
+}
+
+.subscribe-box button[type="submit"]:hover {
+	color: $gray-lighter;
+}
+
+/* Home page */
+.hero-title {
+	color: #fff;
+	font-size: 48px;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.hero-title:after {
+	background-color: $color-accent;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	left: 50%;
+	margin-left: -40px;
+	position: absolute;
+	width: 80px;
+}
+
+.hero-text {
+	color: $gray-lighter;
+	font-size: 14px;
+	letter-spacing: 2px;
+	margin-bottom: 45px;
+	text-transform: uppercase;
+}
+
+/* Tag, Author archives */
+.page-header {
+	color: $gray-lighter;
+}
+
+.post-count {
+	font-family: $font-secondary;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.page-title {
+	color: #fff;
+	font-size: 36px;
+	margin-bottom: 0;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.page-title .highlight {
+	color: $color-accent;
+}
+
+.page-title:after {
+	background-color: $color-accent;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	width: 80px;
+}
+
+.page-description {
+	font-size: 16px;
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+
+.page-header .author-info {
+	position: relative;
+}
+
+.page-header .author-avatar {
+	border: 2px solid $gray-light;
+	border-radius: 50%;
+	height: 76px;
+	left: -110px;
+	position: absolute;
+	top: 25px;
+	width: 76px;
+}
+
+.page-header .author-links {
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.page-header .author-links {
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.page-header .author-links a:hover {
+	color: $gray-lighter;
+}
+
+.page-header .author-links span {
+	margin-right: 15px;
+	white-space: nowrap;
+}
+
+/**
+ * 6.2 Comments
+ * ----------------------------------------------------------------------------
+ */
+
+.comments-area {
+	border: 1px solid $gray-lighter;
+	padding-bottom: 45px;
+	padding-top: 45px;
+	margin: 45px 0 60px;
+}
+
+.comments-title {
+	cursor: pointer;
+	font-size: 24px;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.comments-title.comments-loaded {
+	cursor: auto;
+}
+
+.comments-title.comments-loaded + #disqus_thread {
+	padding-bottom: 45px;
+	padding-top: 45px;
+}
+
+/**
+ * 6.3 Paging Navigation
+ * ----------------------------------------------------------------------------
+ */
+
+.pagination {
+	border-top: 1px solid $gray-lighter;
+	color: $gray-light;
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	padding: 60px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.pagination .inner {
+	position: relative;
+}
+
+.newer-posts,
+.older-posts {
+	height: 30px;
+	margin-top: -6px;
+	position: absolute;
+	top: 0;
+	width: 30px;
+}
+
+.newer-posts {
+	left: 30px;
+}
+
+.older-posts {
+	right: 30px;
+}
+
+.pagination a:before,
+.pagination a:after {
+	-webkit-transition: all .3s;
+	-moz-transition:	all .3s;
+	transition:			all .3s;
+}
+
+.pagination a:hover:before,
+.pagination a:hover:after {
+	background-color: $gray;
+}
+
+/**
+ * 6.4 Post Navigation
+ * ----------------------------------------------------------------------------
+ */
+
+.post-navigation {
+	background-color: $black;
+	overflow: hidden;
+}
+
+.nav-previous,
+.nav-next {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	color: #fff;
+	display: block;
+	overflow: hidden;
+	padding-bottom: 345px;
+	position: relative;
+	width: 50%;
+}
+
+.nav-previous {
+	float: right;
+	text-align: right;
+}
+
+.nav-next {
+	float: left;
+	text-align: left;
+}
+
+.nav-previous:first-child,
+.nav-next:last-child {
+	width: 100%;
+}
+
+.nav-next + .nav-previous {
+	border-left: 1px solid rgba(90, 90, 90, 0.3);
+}
+
+.nav-bg {
+	background-position: center;
+	background-size: cover;
+	bottom: 0;
+	left: 0;
+	opacity: 0.3;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transform: 	scale(1, 1);
+	-moz-transform: 	scale(1, 1);
+	transform: 			scale(1, 1);
+	-webkit-transition: all 1s;
+	-moz-transition: 	all 1s;
+	transition:			all 1s;
+}
+
+.post-navigation a:hover {
+	color: #fff;
+}
+
+.post-navigation a:hover .nav-bg {
+	-webkit-transform: 	scale(1.05, 1.05);
+	-moz-transform: 	scale(1.05, 1.05);
+	transform: 			scale(1.05, 1.05);
+}
+
+.nav-inside {
+	bottom: 30px;
+	left: 30px;
+	overflow: hidden;
+	position: absolute;
+	right: 30px;
+	top: 90px;
+}
+
+.nav-before {
+	color: $color-accent;
+	display: block;
+	font-family: $font-secondary;
+	font-size: 14px;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	position: relative;
+}
+
+.nav-before:after {
+	background-color: $color-accent;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	position: absolute;
+	width: 80px;
+}
+
+.nav-previous .nav-before:after {
+	right: 0;
+}
+
+.nav-next .nav-before:after {
+	left: 0;
+}
+
+.nav-title {
+	color: #fff;
+	display: block;
+	font-family: $font-secondary;
+	font-size: 24px;
+	line-height: 1.33333;
+	margin-bottom: 5px;
+}
+
+.nav-date {
+	color: $gray-light;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}

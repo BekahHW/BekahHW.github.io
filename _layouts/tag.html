@@ -1,0 +1,38 @@
+---
+layout: default
+current: tag
+title: Tag Page
+cover: /assets/images/covers/6.jpeg
+class: 'tag-template'
+---
+
+<main class="site-main">
+    {% include dynamic_tag_info.html %}
+    <div class="site-content">
+
+        <header class="cover page-header">
+        
+            <div class="cover-bg {% if cover or page.cover %}"
+                style="background-image: url({{ site.baseurl }}{% if cover %}{{ cover }}{% else %}{{ page.cover }}{% endif%}) {% else %}no-cover{% endif %}">
+            </div>
+        
+            <div class="cover-content">
+                <div class="inner">
+                    <div class="post-count">
+                        A collection of {{ paginator.total_posts }}{% if paginator.total_posts == 1 %} post{% else %} posts{% endif %}
+                    </div>
+                    <h1 class="page-title">{{ page.tag }}</h1>
+                    {% if tag_description %}
+                    <p class="page-description">{{ tag_description }}</p>
+                    {% endif %}
+                </div><!-- .inner -->
+            </div><!-- .cover-content -->
+        
+        </header>
+
+        <div class="post-list inner">
+            {% for post in paginator.posts %}{% include postbox.html %}{% endfor %}
+        </div>
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->

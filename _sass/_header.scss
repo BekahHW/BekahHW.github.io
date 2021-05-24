@@ -1,0 +1,37 @@
+/**
+ * 4. Site Header
+ * ----------------------------------------------------------------------------
+ */
+
+.site-header {
+	padding: 30px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 997;
+}
+
+.site-title {
+	font-size: 30px;
+	font-family: $font-secondary;
+	font-weight: normal;
+	line-height: 1.33333;
+	margin: 0 90px 0 30px;
+	text-rendering: optimizeLegibility;
+}
+
+.site-title a {
+	border-bottom: 2px solid $color-accent;
+	color: #fff;
+}
+
+.site-title a:hover {
+	border-color: transparent;
+}
+
+.site-logo {
+	margin: 0 90px 0 30px;
+}
+
+.site-logo img {
+	max-height: 60px;
+}

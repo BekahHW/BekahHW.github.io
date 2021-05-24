@@ -1,0 +1,111 @@
+/**
+ * 0. Icons
+ *
+ * Font Awesome by Dave Gandy | http://fontawesome.io
+ * ----------------------------------------------------------------------------
+ */
+
+@font-face {
+	font-family: 'fontawesome';
+	src:  url('../fonts/fontawesome.eot?rfts2e');
+	src:  url('../fonts/fontawesome.eot?rfts2e#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome.ttf?rfts2e') format('truetype'),
+		url('../fonts/fontawesome.woff?rfts2e') format('woff'),
+		url('../fonts/fontawesome.svg?rfts2e#fontawesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'fontawesome' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-map-marker:before {
+	content: "\f041";
+}
+.icon-twitter:before {
+	content: "\f099";
+}
+.icon-facebook:before {
+	content: "\f09a";
+}
+.icon-github:before {
+	content: "\f09b";
+}
+.icon-feed:before {
+	content: "\f09e";
+}
+.icon-rss:before {
+	content: "\f09e";
+}
+.icon-chain:before {
+	content: "\f0c1";
+}
+.icon-pinterest:before {
+	content: "\f0d2";
+}
+.icon-google:before {
+	content: "\f0d5";
+}
+.icon-envelope:before {
+	content: "\f0e0";
+}
+.icon-linkedin:before {
+	content: "\f0e1";
+}
+.icon-xing:before {
+	content: "\f168";
+}
+.icon-youtube:before {
+	content: "\f16a";
+}
+.icon-dropbox:before {
+	content: "\f16b";
+}
+.icon-instagram:before {
+	content: "\f16d";
+}
+.icon-flickr:before {
+	content: "\f16e";
+}
+.icon-tumblr:before {
+	content: "\f173";
+}
+.icon-dribbble:before {
+	content: "\f17d";
+}
+.icon-behance:before {
+	content: "\f1b4";
+}
+.icon-soundcloud:before {
+	content: "\f1be";
+}
+.icon-vine:before {
+	content: "\f1ca";
+}
+.icon-codepen:before {
+	content: "\f1cb";
+}
+.icon-medium:before {
+	content: "\f23a";
+}
+.icon-500px:before {
+	content: "\f26e";
+}
+.icon-vimeo:before {
+	content: "\f27d";
+}
+.icon-mixcloud:before {
+	content: "\f289";
+}

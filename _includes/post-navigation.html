@@ -1,0 +1,40 @@
+<nav class="post-navigation">
+
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+
+        {% if page.next.url %}
+        <a href="{{ site.baseurl }}{{page.next.url}}" class="nav-next">
+
+            {% if page.next.featured_image %}
+            <div class="nav-bg" style="background-image: url({{ page.next.featured_image }})"></div>
+            {% else %}
+            {% endif %}
+
+            <div class="nav-inside">
+                <span class="nav-before">Next</span><span class="nav-title">{{page.next.title}}</span><span
+                    class="nav-date">{{page.next.date | date: "%B %-d, %Y"}}</span>
+            </div>
+
+        </a>
+        {% endif %}
+
+        {% if page.previous.url %}
+        <a href="{{ site.baseurl }}{{page.previous.url}}" class="nav-previous">
+
+            {% if page.previous.featured_image %}
+            <div class="nav-bg" style="background-image: url({{ page.previous.featured_image }})"></div>
+            {% else %}
+            {% endif %}
+
+            <div class="nav-inside">
+                <span class="nav-before">Previous</span>
+                <span class="nav-title">{{page.previous.title}}</span>
+                <span class="nav-date">{{page.previous.date | date: "%B %-d, %Y"}}</span>
+            </div>
+
+        </a>
+        {% endif %}
+
+    </div><!-- .nav-links-->
+</nav><!-- .post-navigation -->
