@@ -7,7 +7,7 @@ logo:
 favicon: "assets/images/favicon.ico"
 baseurl:
 production_url: https://bekahhw.github.io
-disqus: "justgoodthemes"
+# disqus: "justgoodthemes"
 mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
 cover_image: covers/6.jpeg
 # Add your GA Tracking Id
