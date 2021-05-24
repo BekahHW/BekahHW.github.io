@@ -1,111 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {% if site.plugins_dir contains 'jekyll-seo-tag' %}
-        {% include head-seo.html %}
-    {% else %}
-        <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}</title>
-        <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-        <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}">
+    {% if site.plugins_dir contains 'jekyll-seo-tag' %} {% include head-seo.html
+    %} {% else %}
+    <title>
+      {% if page.title %}{{ page.title | escape }}{% else %}{{ site.name |
+      escape }}{% endif %}
+    </title>
+    <meta
+      name="description"
+      content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}"
+    />
+    <link
+      rel="canonical"
+      href="{{ page.url | replace:'index.html', '' | absolute_url }}"
+    />
     {% endif %}
 
     <!-- Site Favicon -->
-    <link rel="shortcut icon" href="{{ site.url }}/{{ site.baseurl }}{{ site.favicon }}" type="image/png" />
+    <link
+      rel="shortcut icon"
+      href="{{ site.url }}/{{ site.baseurl }}{{ site.favicon }}"
+      type="image/png"
+    />
 
     <!-- Font Embed Code -->
-    <link href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <link
+      href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- CSS Styles -->
-    <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body class="{% if paginator.page > 1 %}paged {% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
-
+  <body
+    class="{% if paginator.page > 1 %}paged {% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}"
+  >
     <div id="page" class="site">
-
-        {% if page.url == "/" %}
-        {% include header.html %}
-        <div class="cover hero">
-            {% if site.cover_image %}
-            <div class="cover-bg" style="background-image: url({{ site.baseurl }}/assets/images/{{ site.cover_image }})"></div>
-            {% endif %}
-            <div class="cover-content">
-                <div class="inner">
-                    <h2 class="hero-title">{{ site.greetings }}</h2>
-                    <p class="hero-text">{{ site.description }}</p>
-                    <a href="#" class="arrow-down">
-                        <span class="screen-reader-text">Scroll Down</span>
-                    </a>
-                    <a href="{{ site.mailchimp_url }}" class="subscribe button">Subscribe
-                        <span aria-hidden="true">
-                            <span class="line left"></span>
-                            <span class="line top"></span>
-                            <span class="line right"></span>
-                            <span class="line bottom"></span>
-                        </span>
-                    </a>
-                </div><!-- .inner -->
-            </div><!-- .cover-content -->
-
-        </div><!-- .cover -->
-
-        {% else %}
-        {% include header.html %}
-        {% if paginator.page > 1 and page.class == home-template %}
-        <div class="cover hero">
-            {% if site.cover_image %}
-            <div class="cover-bg"
-                style="background-image: url({{ site.baseurl }}/assets/images/{{ site.cover_image }})"></div>
-            {% endif %}
-
-            <div class="cover-content">
-                <div class="inner">
-                    <h2 class="hero-title">
-                        {{ site.greetings }}
-                    </h2>
-                    <a href="{{ site.mailchimp_url }}" class="subscribe button">Subscribe
-                        <span aria-hidden="true">
-                            <span class="line left"></span>
-                            <span class="line top"></span>
-                            <span class="line right"></span>
-                            <span class="line bottom"></span>
-                        </span>
-                    </a>
-                </div><!-- .inner -->
-            </div><!-- .cover-content -->
-
-        </div><!-- .cover -->
+      {% if page.url == "/" %} {% include header.html %}
+      <div class="cover hero">
+        {% if site.cover_image %}
+        <div
+          class="cover-bg"
+          style="background-image: url({{ site.baseurl }}/assets/images/{{ site.cover_image }})"
+        ></div>
         {% endif %}
+        <div class="cover-content">
+          <div class="inner">
+            <h2 class="hero-title">{{ site.greetings }}</h2>
+            <p class="hero-text">{{ site.description }}</p>
+            <a href="#" class="arrow-down">
+              <span class="screen-reader-text">Scroll Down</span>
+            </a>
+            <!-- <a href="{{ site.mailchimp_url }}" class="subscribe button"
+              >Subscribe
+              <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+              </span>
+            </a> -->
+          </div>
+          <!-- .inner -->
+        </div>
+        <!-- .cover-content -->
+      </div>
+      <!-- .cover -->
+
+      {% else %} {% include header.html %} {% if paginator.page > 1 and
+      page.class == home-template %}
+      <div class="cover hero">
+        {% if site.cover_image %}
+        <div
+          class="cover-bg"
+          style="background-image: url({{ site.baseurl }}/assets/images/{{ site.cover_image }})"
+        ></div>
         {% endif %}
 
-        {{ content }}
-
-        {% if paginator.total_posts > site.paginate %}
-        {% if page.class == 'tag-template' %}
-        {% include tag-pagination.html %}
-        {% endif %}
-        {% endif %}
-
-        {% if site.mailchimp_url %}
-        {% include newsletter-box.html %}
-        {% endif %}
-
-        {% include sidebar.html %}
-        {% include footer.html %}
-    </div><!-- .site -->
+        <div class="cover-content">
+          <div class="inner">
+            <h2 class="hero-title">{{ site.greetings }}</h2>
+            <a href="{{ site.mailchimp_url }}" class="subscribe button"
+              >Subscribe
+              <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+              </span>
+            </a>
+          </div>
+          <!-- .inner -->
+        </div>
+        <!-- .cover-content -->
+      </div>
+      <!-- .cover -->
+      {% endif %} {% endif %} {{ content }} {% if paginator.total_posts >
+      site.paginate %} {% if page.class == 'tag-template' %} {% include
+      tag-pagination.html %} {% endif %} {% endif %} {% include sidebar.html %}
+      {% include footer.html %}
+    </div>
+    <!-- .site -->
 
     {% include analytics.html %}
     <!-- Javascript Assets -->
     <script src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/plugins.js"></script>
     <script src="{{ site.baseurl }}/assets/js/custom.js"></script>
-
-</body>
-
+  </body>
 </html>
