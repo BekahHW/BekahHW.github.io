@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "I did something that scared me: I took a week off"
-date: 2021-04-26
+tags: [Tips]
+featured_image: assets/images/posts/2018/12.jpg
+author: Bekah
 ---
 
 A friend recently asked me if I am a results or a process person. I told her that I'm a momentum person. I like to move. I don't like breaks. But when we hit the one year mark of [Virtual Coffee](https://virtualcoffee.io/), and I realized that I hadn't had a week off in a year I didn't _want_ to take time off, but I thought I probably _should_. And it was the right call.

@@ -2,6 +2,7 @@
 layout: post
 title: "Coding is Pattern-Matching: a growth-mindset perspective"
 date: 2021-04-20
+author: Bekah
 ---
 
 A couple of years ago I was talking to a woman who was doing simultaneous Masters degrees from Carnegie Mellon University and running a brain study on chronic depression. When we were talking about her multiple degrees and her musical experience, all while she let me pick her brain about neurology, she said something that stuck with me, “All life is pattern-matching.” She explained the connections between her mathematical and scientific experience with her creative endeavors, and it made sense. Patterns are everywhere, and we learn through recognizing and seeing the patterns, internalizing them, applying them, and eventually understanding them.
