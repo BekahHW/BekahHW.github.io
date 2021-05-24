@@ -1,0 +1,2 @@
+I"‰<p>I like to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, how would they describe their relationship? The most common relationships are belongs_to, has_many, has_many, through:, and has_one. What do those even mean? I find the best way to understand relationships is through an example.</p>
+:ET

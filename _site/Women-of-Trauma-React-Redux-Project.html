@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+        <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Women of Trauma React Redux Project | BekahHW</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Women of Trauma React Redux Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I’ve stuck with the same project idea for the last three projects for a couple of reasons: I have a hard time coming up with ideas, I’m passionate about this idea, I wanted to clearly compare the processes of coding in different languages and that seemed easiest by carrying the idea across Ruby and into JS. Here I am again developing Women of Trauma with a Rails backend and a React frontend." />
+<meta property="og:description" content="I’ve stuck with the same project idea for the last three projects for a couple of reasons: I have a hard time coming up with ideas, I’m passionate about this idea, I wanted to clearly compare the processes of coding in different languages and that seemed easiest by carrying the idea across Ruby and into JS. Here I am again developing Women of Trauma with a Rails backend and a React frontend." />
+<link rel="canonical" href="http://localhost:4000/Women-of-Trauma-React-Redux-Project" />
+<meta property="og:url" content="http://localhost:4000/Women-of-Trauma-React-Redux-Project" />
+<meta property="og:site_name" content="BekahHW" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-05-18T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Women of Trauma React Redux Project" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Women-of-Trauma-React-Redux-Project"},"url":"http://localhost:4000/Women-of-Trauma-React-Redux-Project","description":"I’ve stuck with the same project idea for the last three projects for a couple of reasons: I have a hard time coming up with ideas, I’m passionate about this idea, I wanted to clearly compare the processes of coding in different languages and that seemed easiest by carrying the idea across Ruby and into JS. Here I am again developing Women of Trauma with a Rails backend and a React frontend.","dateModified":"2019-05-18T00:00:00-04:00","datePublished":"2019-05-18T00:00:00-04:00","headline":"Women of Trauma React Redux Project","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+
+    <!-- Site Favicon -->
+    <link rel="shortcut icon" href="http://localhost:4000/assets/images/favicon.ico" type="image/png" />
+
+    <!-- Font Embed Code -->
+    <link href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
+
+    <!-- CSS Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="home-template">
+
+    <div id="page" class="site">
+
+        
+        <header class="site-header">
+
+    
+    <h1 class="site-title"><a href="/" rel="home">BekahHW</a></h1>
+    
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->
+        
+        
+
+        <main class="site-main">
+    <div class="site-content">
+
+        <article class="post-template">
+
+            <header class="cover post-header">
+            
+                
+                <div class="cover-content">
+                    <div class="inner">
+                
+                        
+                
+                        <h1 class="post-title">Women of Trauma React Redux Project</h1>
+                
+                        <div class="post-meta">
+                            <span class="post-meta-wrap">
+                                
+                                
+                                
+                                
+
+                                <time class="published" datetime="2019-05-18">
+                                    May 18, 2019
+                                </time>
+                            </span>
+                        </div><!-- .post-meta -->
+                
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+
+            </header><!-- .cover -->
+
+
+            <div class="inner">
+            <div class="post-content">
+                <p>I’ve stuck with the same project idea for the last three projects for a couple of reasons: I have a hard time coming up with ideas, I’m passionate about this idea, I wanted to clearly compare the processes of coding in different languages and that seemed easiest by carrying the idea across Ruby and into JS. Here I am again developing Women of Trauma with a Rails backend and a React frontend.</p>
+
+<p>Starting off, I decided to do my project as two separate repos, <a href="https://github.com/BekahHW/Women-of-Trauma-Client">the client side</a> and <a href="https://github.com/BekahHW/women-of-trauma-api">the api side</a>. I really enjoy working with React, but I’d love to try out React Native this summer. So having a separate backend would allow me to experiment with different frontend languages. I used a number of different tutorials, but I found <a href="https://medium.com/@bruno_boehm/reactjs-ruby-on-rails-api-heroku-app-2645c93f0814">this one</a> particularly helpful.</p>
+
+<p>Setting up the Rails backend was pretty simple since I had worked through this project in Rails a couple of times already. This actually felt like a much simpler version of my Rails project since I didn’t create users or authentication, which were the biggest stumbling blocks in that project. What I do have are the basics, disorders (which are eight types of trauma with definitions seeded in the database) and narratives (which are stories created by the user with a title, tagline, selected disorder, and story).</p>
+
+<p>On the frontend, I think I could make components forever. Confession: prior to this project, I still couldn’t grasp how components worked together. My mind was still in MVC mode with Ruby. Those are nice, organized boxes for me. React felt like chaos for a while. But now that I can see how the pieces fit together, how my home page can have a banner and a carousel of statistics about trauma and informational boxes in the areas below, I can better see the potential of stateless functional components.</p>
+
+<p>My main containers–components that deal with the Redux state–were my NarrativeForm, Narrative component, and Disorder component. The Disorder component made a call to the Rails API to fetch the disorders that were in the seed file. The Narrative form allowed the user to create a narrative, that would post to the narrative route. I used thunk with the narratives and narrative form. Thunk is middleware that allows a function inside the action creator instead of a POJO. With Thunk, you can dispatch actions to loading state and to updating the store with returned data.</p>
+
+<p>As a MVP, this app allows the user to find immediate help through the /getHelp route, post their own story, decrease the sense of isolation by reading the other narratives in the /narratives route, and learn more about each type of trauma through the /disorders route.</p>
+
+            </div>
+
+            <footer class="post-footer share-post">
+            
+            
+                <span>Share:</span>
+                <a class="circle" target="_blank"
+                    href="https://twitter.com/share?text=Women+of+Trauma+React+Redux+Project&amp;url=https://bekahhw.github.ioWomen-of-Trauma-React-Redux-Project">
+                <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
+                </a>
+                <a class="circle" target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://bekahhw.github.ioWomen-of-Trauma-React-Redux-Project"><i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
+            
+            
+            </footer>
+
+            
+<section class="comments-area">
+    <div class="inner">
+        <h2 class="comments-title">Comments</h2>
+
+        <div id="disqus_thread"></div>
+    
+        <script type="text/javascript">
+            var disqus_shortname = 'justgoodthemes';
+            var disqus_developer = 0;
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+                Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </div><!-- .inner -->
+</section>
+
+
+            </div><!-- .inner -->
+        </article>
+
+        <nav class="post-navigation">
+
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+
+        
+        <a href="/You-Could-Be-a-Part-Time-Dev" class="nav-next">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Next</span><span class="nav-title">You Could Be a Part-Time Dev</span><span
+                    class="nav-date">July 10, 2019</span>
+            </div>
+
+        </a>
+        
+
+        
+        <a href="/Moms-Who-Code" class="nav-previous">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Previous</span>
+                <span class="nav-title">Moms Who Code</span>
+                <span class="nav-date">May 12, 2019</span>
+            </div>
+
+        </a>
+        
+
+    </div><!-- .nav-links-->
+</nav><!-- .post-navigation -->
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->
+
+        
+
+        
+        <section class="subscribe-box">
+    <div class="inner">
+        
+        <h2 class="subscribe-box-title">Subscribe to BekahHW newsletter</h2>
+        <p>Get the latest and greatest from BekahHW delivered straight to your inbox every week.</p>
+
+        <!-- Begin MailChimp Signup Form -->
+        <form action="//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117" method="post" id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form" class="validate gh-subscribe-form" target="_blank" novalidate>
+
+            <label for="mce-EMAIL" class="screen-reader-text">
+                Email Address
+            </label>
+
+            <input type="email" value="" name="EMAIL" class="required email subscribe-email confirm" id="mce-EMAIL"
+                placeholder="Your email address">
+
+            <button type="submit" value="Subscribe" name="subscribe"
+                id="mc-embedded-subscribe"><span>Subscribe</span></button>
+        </form>
+
+    </div><!-- .inner -->
+</section><!-- .subscribe-box -->
+        
+
+        <aside class="sidebar">
+  <div class="sidebar-scrollable">
+    <div class="inner">
+      <div class="widget-area">
+        <nav class="site-navigation">
+          <h2>Explore Website</h2>
+          <ul class="menu">
+            
+            <li class="menu-item">
+              <a href="/about">About</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/style-guide">Style Guide</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/code-and-community">Code & Community</a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        
+<section class="widget widget-text">
+    <h2 class="widget-title">About BekahHW</h2>
+    <p>Code. Community. Feelings. It's all here.</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+ 
+<section class="widget widget-tags">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        
+        <a class="button" href='https://bekahhw.github.iotag/tips/'>Tips
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+    </div>
+</section>
+
+      </div>
+      <!-- .widget-area -->
+      <a class="sidebar-toggle">
+        <span class="screen-reader-text">Close</span>
+        <span class="icon" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- .inner -->
+  </div>
+  <!-- .sidebar-scrollable -->
+</aside>
+<!-- .sidebar -->
+
+        <footer class="site-footer">
+    <div class="inner">
+
+        <div class="offsite-links">
+
+    
+    <a href="https://twitter.com/@BekahHW" class="circle" target="_blank">
+        <i class="icon-twitter" aria-hidden="true"></i>
+        <span class="screen-reader-text">Twitter</span>
+    </a>
+    
+
+    
+
+    
+    <a href="https://www.linkedin.com/in/bekah-hawrot-weigel" class="circle" target="_blank">
+        <i class="icon-linkedin" aria-hidden="true"></i>
+        <span class="screen-reader-text">Linkedin</span>
+    </a>
+    
+
+        
+    <a href="https://github.com/@BekahHW" class="circle" target="_blank">
+        <i class="icon-github" aria-hidden="true"></i>
+        <span class="screen-reader-text">GitHub</span>
+    </a>
+    
+
+    
+
+    
+
+    
+
+        
+    <a href="https://www.instagram.com/BekahHW" class="circle" target="_blank">
+        <i class="icon-instagram" aria-hidden="true"></i>
+        <span class="screen-reader-text">Instagram</span>
+    </a>
+    
+
+    
+    
+    <a href="https://www.vimeo.com/" class="circle" target="_blank">
+        <i class="icon-vimeo" aria-hidden="true"></i>
+        <span class="screen-reader-text">Vimeo</span>
+    </a>
+
+    <a href="https://www.youtube.com/user/" class="circle" target="_blank">
+        <i class="icon-youtube" aria-hidden="true"></i>
+        <span class="screen-reader-text">YouTube</span>
+    </a>
+
+    <a href="/rss/" class="circle" target="_blank">
+        <i class="icon-feed" aria-hidden="true"></i>
+        <span class="screen-reader-text">RSS</span>
+    </a>
+
+</div><!-- .offsite-links -->
+        <div class="site-info">
+            <a href="#">BekahHW</a> &copy; 2021 . Subtle theme by
+            <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>.
+            <br /> Powered by
+            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+    </div><!-- .site -->
+
+    
+    <!-- Javascript Assets -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+        <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Let’s do some chores: A Sinatra Project | BekahHW</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Let’s do some chores: A Sinatra Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="For years, when I was teaching college English, I would give students an assignment that had general guidelines and expectations, but they would need to come up with a topic. There were always tears. How could I expect them to come up with their own topic?! It wasn’t fair! Now that I was a student again, I was facing that blank screen, wondering how on earth I would come up with a topic. I was given the general guidelines to create a CRUD, MVC app using Sinatra, and it should track something that’s important to me." />
+<meta property="og:description" content="For years, when I was teaching college English, I would give students an assignment that had general guidelines and expectations, but they would need to come up with a topic. There were always tears. How could I expect them to come up with their own topic?! It wasn’t fair! Now that I was a student again, I was facing that blank screen, wondering how on earth I would come up with a topic. I was given the general guidelines to create a CRUD, MVC app using Sinatra, and it should track something that’s important to me." />
+<link rel="canonical" href="http://localhost:4000/Let's-do-some-chores-A-Sinatra-Project" />
+<meta property="og:url" content="http://localhost:4000/Let's-do-some-chores-A-Sinatra-Project" />
+<meta property="og:site_name" content="BekahHW" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-11-19T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Let’s do some chores: A Sinatra Project" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Let's-do-some-chores-A-Sinatra-Project"},"url":"http://localhost:4000/Let's-do-some-chores-A-Sinatra-Project","description":"For years, when I was teaching college English, I would give students an assignment that had general guidelines and expectations, but they would need to come up with a topic. There were always tears. How could I expect them to come up with their own topic?! It wasn’t fair! Now that I was a student again, I was facing that blank screen, wondering how on earth I would come up with a topic. I was given the general guidelines to create a CRUD, MVC app using Sinatra, and it should track something that’s important to me.","dateModified":"2018-11-19T00:00:00-05:00","datePublished":"2018-11-19T00:00:00-05:00","headline":"Let’s do some chores: A Sinatra Project","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+
+    <!-- Site Favicon -->
+    <link rel="shortcut icon" href="http://localhost:4000/assets/images/favicon.ico" type="image/png" />
+
+    <!-- Font Embed Code -->
+    <link href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
+
+    <!-- CSS Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="home-template">
+
+    <div id="page" class="site">
+
+        
+        <header class="site-header">
+
+    
+    <h1 class="site-title"><a href="/" rel="home">BekahHW</a></h1>
+    
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->
+        
+        
+
+        <main class="site-main">
+    <div class="site-content">
+
+        <article class="post-template">
+
+            <header class="cover post-header">
+            
+                
+                <div class="cover-content">
+                    <div class="inner">
+                
+                        
+                
+                        <h1 class="post-title">Let's do some chores: A Sinatra Project</h1>
+                
+                        <div class="post-meta">
+                            <span class="post-meta-wrap">
+                                
+                                
+                                
+                                
+
+                                <time class="published" datetime="2018-11-19">
+                                    November 19, 2018
+                                </time>
+                            </span>
+                        </div><!-- .post-meta -->
+                
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+
+            </header><!-- .cover -->
+
+
+            <div class="inner">
+            <div class="post-content">
+                <p>For years, when I was teaching college English, I would give students an assignment that had general guidelines and expectations, but they would need to come up with a topic. There were always tears. How could I expect them to come up with their own topic?! It wasn’t fair! Now that I was a student again, I was facing that blank screen, wondering how on earth I would come up with a topic. I was given the general guidelines to create a CRUD, MVC app using Sinatra, and it should track something that’s important to me.</p>
+
+<p>After some brainstorming (restaurants that accommodate food allergies, my books by genre, etc.), I decided the best idea would be to be able to assign my kids chores. I could make it an Alexa skill, and then they could just ask Alexa which chores they had today. Boom! Now my life is so much easier. (The Alexa skill is outside of the scope of the project, but the initial setup in Sinatra both fulfills the requirements and could be modified to become an Alexa skill.)</p>
+
+<p>It’s always a good idea to start with wireframing–get a good idea of what you want and the order of appearance. It’s ok if this changes during the course of the project, but go back to your wireframe to keep things straight. (Trust me, I learned the hard way.)</p>
+
+<p>Like my students, I had a hard time with the blank screen, but lucky for me, I watched a video on the corneal gem and started there. Corneal generates a template with built in basic CSS. One of the coolest parts, I’d later find out is that Corneal <a href="https://blog.yechiel.me/of-scaffolds-and-gems-140bdbe2e005">was created by fellow Flatiron School students</a>. So bam, I had a working structure for my project, and suddenly it felt less intimidating.</p>
+
+<p>The next step was to define my associations in my models:</p>
+<ul>
+  <li>The User would have_many :family_members</li>
+  <li>The Family_member would have_many :chores and belong_to a :user</li>
+  <li>The Chores would belong_to a :family_member</li>
+</ul>
+
+<p>After the associations are clear and the models are set up, it’s easy to get your databases set up as well. Here are a couple of important things to remember before you jump into it:</p>
+<ul>
+  <li>You can’t use the word “type” as one of your values. It’s a reserved word.</li>
+  <li>Foreign keys aren’t automatically inserted if you have your models set up.</li>
+</ul>
+
+<p>Once that was sorted out, I was ready for the views and controllers. I knew each would need a new, edit, and show file, and the user would need a login page as well. (And yes, the user does have the ability to delete family members. So in case you just need some catharsis…)</p>
+
+<p>To login, the user would need a username and a password. To protect the user, I used the bcrypt gem to protect the password, and I enabled sessions in the Application Controller to allow the user to login and logout and to store the information for each user.</p>
+
+<p>As I worked on my controller, I knew it was important that the only way someone should have access to the information was if they were logged in. I developed a helper method just for that.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  def redirect_if_not_logged_in
+      if !logged_in?
+        redirect "/users/login?error=Please log in first"
+      end
+    end
+</code></pre></div></div>
+
+<p>The program looks like this: A user logs in. Once the login has been validated, the user is taken to a new family member page, a simple form that asks for the family member’s name. Once a name is created, the user is taken to a show page that gives the option as three forms to delete, assign chores, or create a new family member. If the user clicks assign chore, the controller moves over to chores/new. This was the trickiest part. I wanted the user to be able to assign chores to the family members they created. However, I wanted one chore to be created and assigned to one family member. The best way to do this was using select, which was a little tricky, because I also needed the name to display on the next page. Here’s how I did it:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;p&gt;&lt;label&gt;Who does this chore belong to?&lt;/label&gt; &lt;/p&gt;
+
+  &lt;select name="chore[family_member_id]"&gt;
+
+    &lt;%  @family_member.each do |f| %&gt;
+    &lt;option  id="&lt;%= f.id%&gt;" value="&lt;%= f.id%&gt;"&gt;&lt;%= f.name %&gt;&lt;/option&gt;
+  &lt;% end %&gt;
+&lt;/select&gt;
+</code></pre></div></div>
+
+<p>The key was the select name. I had to connect the chore to the family_member_id, in order to be able to access the family_member’s name on the next page:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;%= @chore.family_member.name%&gt;
+</code></pre></div></div>
+
+<p>In this step, the family_member is displayed along with the chore, the room in which the chore is done, the day of the week the chore is assigned, and the description of the chore.</p>
+
+<p>The project went through three different iterations before the final path. Here are some tips on project building in Ruby that I learned along the way:</p>
+
+<ul>
+  <li>Make binding.pry your friend. Honestly, I learn the most when I’m in a pry session. It helps me to see exactly what’s happening.</li>
+  <li>Don’t panic when something isn’t working the way you intended it to. Take it back to the drawing board. Do some brainstorming to think things through before you jump into the problem. It’ll be easier in the long run.</li>
+  <li>It’s ok to ask someone else to look at your code. I never would’ve figured out select if I hadn’t.</li>
+  <li>If you think you’re done, DO NOT announce it on Twitter. You’ll only jinx it and have to go back and fix code three more times.</li>
+</ul>
+
+<p>Happy coding!</p>
+
+            </div>
+
+            <footer class="post-footer share-post">
+            
+            
+                <span>Share:</span>
+                <a class="circle" target="_blank"
+                    href="https://twitter.com/share?text=Let%27s+do+some+chores%3A+A+Sinatra+Project&amp;url=https://bekahhw.github.ioLet's-do-some-chores-A-Sinatra-Project">
+                <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
+                </a>
+                <a class="circle" target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://bekahhw.github.ioLet's-do-some-chores-A-Sinatra-Project"><i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
+            
+            
+            </footer>
+
+            
+<section class="comments-area">
+    <div class="inner">
+        <h2 class="comments-title">Comments</h2>
+
+        <div id="disqus_thread"></div>
+    
+        <script type="text/javascript">
+            var disqus_shortname = 'justgoodthemes';
+            var disqus_developer = 0;
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+                Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </div><!-- .inner -->
+</section>
+
+
+            </div><!-- .inner -->
+        </article>
+
+        <nav class="post-navigation">
+
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+
+        
+        <a href="/A-Year-in-Review" class="nav-next">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Next</span><span class="nav-title">A Year in Review</span><span
+                    class="nav-date">December 6, 2018</span>
+            </div>
+
+        </a>
+        
+
+        
+        <a href="/So-You-Want-to-Learn-to-Code" class="nav-previous">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Previous</span>
+                <span class="nav-title">So You Want to Learn to Code</span>
+                <span class="nav-date">October 8, 2018</span>
+            </div>
+
+        </a>
+        
+
+    </div><!-- .nav-links-->
+</nav><!-- .post-navigation -->
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->
+
+        
+
+        
+        <section class="subscribe-box">
+    <div class="inner">
+        
+        <h2 class="subscribe-box-title">Subscribe to BekahHW newsletter</h2>
+        <p>Get the latest and greatest from BekahHW delivered straight to your inbox every week.</p>
+
+        <!-- Begin MailChimp Signup Form -->
+        <form action="//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117" method="post" id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form" class="validate gh-subscribe-form" target="_blank" novalidate>
+
+            <label for="mce-EMAIL" class="screen-reader-text">
+                Email Address
+            </label>
+
+            <input type="email" value="" name="EMAIL" class="required email subscribe-email confirm" id="mce-EMAIL"
+                placeholder="Your email address">
+
+            <button type="submit" value="Subscribe" name="subscribe"
+                id="mc-embedded-subscribe"><span>Subscribe</span></button>
+        </form>
+
+    </div><!-- .inner -->
+</section><!-- .subscribe-box -->
+        
+
+        <aside class="sidebar">
+  <div class="sidebar-scrollable">
+    <div class="inner">
+      <div class="widget-area">
+        <nav class="site-navigation">
+          <h2>Explore Website</h2>
+          <ul class="menu">
+            
+            <li class="menu-item">
+              <a href="/about">About</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/style-guide">Style Guide</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/code-and-community">Code & Community</a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        
+<section class="widget widget-text">
+    <h2 class="widget-title">About BekahHW</h2>
+    <p>Code. Community. Feelings. It's all here.</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+ 
+<section class="widget widget-tags">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        
+        <a class="button" href='https://bekahhw.github.iotag/tips/'>Tips
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+    </div>
+</section>
+
+      </div>
+      <!-- .widget-area -->
+      <a class="sidebar-toggle">
+        <span class="screen-reader-text">Close</span>
+        <span class="icon" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- .inner -->
+  </div>
+  <!-- .sidebar-scrollable -->
+</aside>
+<!-- .sidebar -->
+
+        <footer class="site-footer">
+    <div class="inner">
+
+        <div class="offsite-links">
+
+    
+    <a href="https://twitter.com/@BekahHW" class="circle" target="_blank">
+        <i class="icon-twitter" aria-hidden="true"></i>
+        <span class="screen-reader-text">Twitter</span>
+    </a>
+    
+
+    
+
+    
+    <a href="https://www.linkedin.com/in/bekah-hawrot-weigel" class="circle" target="_blank">
+        <i class="icon-linkedin" aria-hidden="true"></i>
+        <span class="screen-reader-text">Linkedin</span>
+    </a>
+    
+
+        
+    <a href="https://github.com/@BekahHW" class="circle" target="_blank">
+        <i class="icon-github" aria-hidden="true"></i>
+        <span class="screen-reader-text">GitHub</span>
+    </a>
+    
+
+    
+
+    
+
+    
+
+        
+    <a href="https://www.instagram.com/BekahHW" class="circle" target="_blank">
+        <i class="icon-instagram" aria-hidden="true"></i>
+        <span class="screen-reader-text">Instagram</span>
+    </a>
+    
+
+    
+    
+    <a href="https://www.vimeo.com/" class="circle" target="_blank">
+        <i class="icon-vimeo" aria-hidden="true"></i>
+        <span class="screen-reader-text">Vimeo</span>
+    </a>
+
+    <a href="https://www.youtube.com/user/" class="circle" target="_blank">
+        <i class="icon-youtube" aria-hidden="true"></i>
+        <span class="screen-reader-text">YouTube</span>
+    </a>
+
+    <a href="/rss/" class="circle" target="_blank">
+        <i class="icon-feed" aria-hidden="true"></i>
+        <span class="screen-reader-text">RSS</span>
+    </a>
+
+</div><!-- .offsite-links -->
+        <div class="site-info">
+            <a href="#">BekahHW</a> &copy; 2021 . Subtle theme by
+            <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>.
+            <br /> Powered by
+            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+    </div><!-- .site -->
+
+    
+    <!-- Javascript Assets -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/custom.js"></script>
+
+</body>
+
+</html>

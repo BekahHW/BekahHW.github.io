@@ -1,0 +1,2 @@
+I"�<p>So we have our models and associations, but before we really start to code, we need to get a better idea of what information these models will hold. When we look at the schema, it gives us a picture of what the database looks like, what information it accepts and stores. First, we’ll create the attributes, and then we’ll look at how to use ActiveRecord to create migrations for our schema.</p>
+:ET

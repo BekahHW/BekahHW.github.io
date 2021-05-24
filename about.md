@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-featured_image: /assets/images/pages/about.jpg
+featured_image: /assets/images/pages/about.png
 ---
 
 Bekah graduated from the Flatiron School Software Engineering program in May of 2019 and since then she has started a consultancy specializing in front-end development, created the developer community <a href="virtualcoffee.io">Virtual Coffee</a>, spoke on podcasts and at conferences, and has continued to mom her four kids.

@@ -1,0 +1,43 @@
+I"�<p>When I was learning to code, testing was covered a little bit, but I didn’t grasp the full awesomeness of what we test and why we test it. But I have been lucky enough–yes, I said lucky–to learn more about testing and dive into Testing Library and Cypress, but I’m just going to talk about Cypress here. Not only did I learn how to test, and strategies behind testing, but I also learned a lot about the codebase I was working in, how the components work together, how the user interacts with the program.</p>
+
+<p>And this is a big win. These are things that new devs struggle with. Yes, I may have had a couple of nightmares about the tests I was writing. Yes, I may have been stuck in testing hell for a while. But learning these things helped me to gain confidence as a developer. Letting new devs write tests benefits everyone.</p>
+
+<p>And Cypress is a pretty good place to start for your frontend needs.</p>
+
+<p>And if you’re still not convinced that you should be writing E2E tests, let <a href="https://kentcdodds.com/blog/confidently-shipping-code">Kent C. Dodds</a> convince you: “I write tests because they allow me to accomplish more than I could otherwise. I now have thousands of Kents in the form of automated tests telling me whether changes are breaking use cases.”</p>
+
+<h2 id="what-is-cypress">What is Cypress</h2>
+
+<p>Cypress is An open source, JavaScript end-to-end (E2E) testing framework that bundles tools and libraries to get your tests up and running quickly. And one of the cool things about it is that it runs in the browser.</p>
+
+<h2 id="why-is-cypress-good-for-beginners">Why is Cypress good for beginners?</h2>
+
+<h3 id="its-readable">It’s readable.</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>context("Login", () =&gt; {
+  beforeEach(() =&gt; {
+    cy.visit("localhost:8080/login");
+  });
+  it("finds and types email", () =&gt; {
+    cy.get("#email")
+      .type("leslieKnope@pawnee.gov")
+      .should("have.value", "leslieKnope@pawnee.gov");
+  })
+</code></pre></div></div>
+
+<p>Just looking at the test above, you get an idea of what’s happening. Before each test is run in this section, the testrunner visits the url that’s specified. The “it” block tells what to expect and checks for the outcome. Also takes a callback (“verb”) and checks the assertion.</p>
+
+<p>As you keep reading, you see that it’s finding the input, typing, and checking that the value is there.</p>
+
+<p>(And if you’re familiar with Testing Library, you can also add Cypress Testing library to leverage those commands as well–highly recommend.)</p>
+
+<h3 id="the-testrunner-rocks">The testrunner rocks.</h3>
+
+<p>When you run cypress open, the testrunner opens in the browser. The testrunner allows you to see exactly where each part of the test is happening and where it fails. You can see each step in the browser. So if we’re looking at the example above, you would see the email address being typed in the input. When you test a button click, you see that as the test runs. You see what you wrote.</p>
+
+<p>And along with that, when your test fails, you see exactly where it fails and there are usually really great error messages that go along with the failure.</p>
+
+<p>With the ease of setup–getting it up and running only takes a couple of minutes–the readability of tests, and the testrunner giving a really clear picture of what the tests are doing and how you’re interacting with your software, using Cypress to test your frontend shouldn’t be a hard decision.</p>
+
+<p>And if you’re new to the devlife and you’re wondering what to learn next or to add to your project, this is a great place to start.</p>
+:ET
