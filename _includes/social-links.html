@@ -1,0 +1,81 @@
+<div class="offsite-links">
+
+    {% if site.twitter %}
+    <a href="https://twitter.com/{{ site.twitter }}" class="circle" target="_blank">
+        <i class="icon-twitter" aria-hidden="true"></i>
+        <span class="screen-reader-text">Twitter</span>
+    </a>
+    {% endif %}
+
+    {% if site.facebook %}
+    <a href="https://www.facebook.com/{{ site.facebook }}" class="circle" target="_blank">
+        <i class="icon-facebook" aria-hidden="true"></i>
+        <span class="screen-reader-text">Facebook</span>
+    </a>
+    {% endif %}
+
+    {% if site.linkedin %}
+    <a href="https://www.linkedin.com/in/{{ site.linkedin }}" class="circle" target="_blank">
+        <i class="icon-linkedin" aria-hidden="true"></i>
+        <span class="screen-reader-text">Linkedin</span>
+    </a>
+    {% endif %}
+
+    {% if site.github %}    
+    <a href="https://github.com/{{ site.github }}" class="circle" target="_blank">
+        <i class="icon-github" aria-hidden="true"></i>
+        <span class="screen-reader-text">GitHub</span>
+    </a>
+    {% endif %}
+
+    {% if site.codepen %}
+    <a href="https://codepen.io/{{ site.codepen }}" class="circle" target="_blank">
+        <i class="icon-codepen" aria-hidden="true"></i>
+        <span class="screen-reader-text">CodePen</span>
+    </a>
+    {% endif %}
+
+    {% if site.dribbble %}    
+    <a href="https://dribbble.com/{{ site.dribbble }}" class="circle" target="_blank">
+        <i class="icon-dribbble" aria-hidden="true"></i>
+        <span class="screen-reader-text">Dribbble</span>
+    </a>
+    {% endif %}
+
+    {% if site.medium %}    
+    <a href="https://medium.com/{{ site.medium }}" class="circle" target="_blank">
+        <i class="icon-medium" aria-hidden="true"></i>
+        <span class="screen-reader-text">Medium</span>
+    </a>
+    {% endif %}
+
+    {% if site.instagram %}    
+    <a href="https://www.instagram.com/{{ site.instagram }}" class="circle" target="_blank">
+        <i class="icon-instagram" aria-hidden="true"></i>
+        <span class="screen-reader-text">Instagram</span>
+    </a>
+    {% endif %}
+
+    {% if site.pinterest %}
+    <a href="https://www.pinterest.com/{{ site.pinterest }}" class="circle" target="_blank">
+        <i class="icon-pinterest" aria-hidden="true"></i>
+        <span class="screen-reader-text">Pinterest</span>
+    </a>
+    {% endif %}
+    
+    <a href="https://www.vimeo.com/{{! Add Vimeo handle }}" class="circle" target="_blank">
+        <i class="icon-vimeo" aria-hidden="true"></i>
+        <span class="screen-reader-text">Vimeo</span>
+    </a>
+
+    <a href="https://www.youtube.com/user/{{! Add YouTube handle }}" class="circle" target="_blank">
+        <i class="icon-youtube" aria-hidden="true"></i>
+        <span class="screen-reader-text">YouTube</span>
+    </a>
+
+    <a href="{{@blog.url}}/rss/" class="circle" target="_blank">
+        <i class="icon-feed" aria-hidden="true"></i>
+        <span class="screen-reader-text">RSS</span>
+    </a>
+
+</div><!-- .offsite-links -->

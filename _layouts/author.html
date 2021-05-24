@@ -1,0 +1,79 @@
+---
+layout: default
+current: author
+title: Author Page
+class: 'author-template'
+---
+
+<main class="site-main">
+    <div class="site-content">
+        {% for author in site.data.authors %}
+        {% if author[1].username == page.author %}
+        <header class="cover page-header">
+
+            <div class="cover-bg {% if author[1].cover or page.cover %}"
+                style="background-image: url({{ site.baseurl }}{% if author[1].cover %}{{ author[1].cover }}{% elsif page.cover %}{{ page.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+            </div>
+
+            <div class="cover-content">
+                <div class="inner">
+
+                    <div class="author-info">
+
+                    <div class="post-count">
+                        {% if paginator.total_posts == 0 %}No posts{% elsif paginator.total_posts == 1 %}1 post{%
+                        else %}{{ paginator.total_posts }} posts{% endif %}
+                    </div>
+                    <h1 class="page-title">{{ author[1].name }}</h1>
+
+                    {% if author[1].picture %}
+                    <p><img src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ page.author }}"
+                            class="author-avatar" /></p>
+                    {% endif %}
+
+                    {% if author[1].bio %}
+                    <p class="page-description">{{ author[1].bio }}</p>
+                    {% endif %}
+
+                    <p class="author-links">
+
+                        {% if author[1].url %}
+                        <span class="author-website">
+                            <i class="icon-chain" aria-hidden="true"></i>
+                            <a href="{{ author[1].url_full }}" target="_blank" rel="noopener">{{ author[1].url }}</a>
+                        </span>
+                        {% endif %}
+
+                        {% if author[1].facebook %}
+                        <span class="author-facebook">
+                            <i class="icon-facebook" aria-hidden="true"></i>
+                            <a href="https://facebook.com/{{ author[1].facebook }}" target="_blank"
+                                rel="noopener">Facebook</a>
+                        </span>
+                        {% endif %}
+
+                        {% if author[1].twitter %}
+                        <span class="author-twitter"><i class="icon-twitter" aria-hidden="true"></i>
+                            <a href="https://twitter.com/{{ author[1].twitter }}" target="_blank"
+                                rel="noopener">Twitter</a>
+                        </span>
+                        {% endif %}
+
+                    </p><!-- .author-links -->
+                    </div><!-- .author-info -->
+                </div><!-- .inner -->
+            </div><!-- .cover-content -->
+        </header><!-- .content -->
+        {% endif %}
+        {% endfor %}
+        <!-- /author -->
+        <div class="post-list inner">
+            
+            {% for post in paginator.posts %}
+            {% include postbox.html %}
+            {% endfor %}
+            
+        </div><!-- .inner -->
+        {% include author-pagination.html %}
+    </div><!-- .site-content -->
+</main><!-- .site-main -->

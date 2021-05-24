@@ -1,0 +1,204 @@
+/**
+ * 5. Sidebar
+ * ----------------------------------------------------------------------------
+ */
+
+.sidebar {
+	background-color: $black;
+	bottom: 0;
+	color: $gray-lighter;
+	-webkit-overflow-scrolling: touch;
+	position: absolute;
+	right: -100%;
+	text-align: center;
+	top: 0;
+	-webkit-transition:	right .3s;
+	-moz-transition: 	right .3s;
+	transition:			right .3s;
+	width: 100%;
+	z-index: 999;
+}
+
+.sidebar-scrollable {
+	height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	position: relative;
+}
+
+.sidebar .inner {
+	padding-bottom: 60px;
+	padding-top: 80px;
+}
+
+.sidebar .widget-area {
+	border-bottom: 1px solid $gray;
+	border-top: 1px solid $gray;
+	padding-top: 45px;
+}
+
+.sidebar a {
+	color: $color-accent;
+}
+
+.sidebar a:hover {
+	color: $gray;
+}
+
+.site-navigation,
+.widget {
+	margin-bottom: 45px;
+}
+
+.site-navigation h2,
+.widget-title {
+	color: $gray-light;
+	font-size: 20px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.site-navigation h2:before,
+.widget-title:before,
+.subscribe-box-title:before,
+.site-navigation h2:after,
+.widget-title:after,
+.subscribe-box-title:after {
+	content: "\00a0\2013\00a0";
+}
+
+.site-navigation .menu {
+	list-style: none;
+	padding-left: 0;
+}
+
+.site-navigation .menu-item {
+	font-size: 12px;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.site-navigation .menu-item a {
+	color: $gray-light;
+	padding: 0 5px;
+	position: relative;
+}
+
+.site-navigation .menu-item a:before {
+	background-color: rgba(205, 144, 35, 0.7);
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition:	all 0.3s;
+	-moz-transition: 	all 0.3s;
+	transition: 		all 0.3s;
+	width: 0;
+}
+
+.site-navigation .menu-item a:hover {
+	color: $color-accent;
+}
+
+.site-navigation .menu-item a:hover:before {
+	width: 100%;
+}
+
+.tagcloud a {
+	font-size: 10px;
+	margin: 0 7px 10px;
+}
+
+.widget-about .about-photo {
+	border-radius: 50%;
+	height: 135px;
+	width: 135px;
+}
+
+.sidebar-opened .site {
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
+.sidebar-opened .sidebar {
+	right: 0;
+}
+
+.sidebar-toggle {
+	cursor: pointer;
+	height: 30px;
+	position: absolute;
+	width: 30px;
+}
+
+.site-header .sidebar-toggle {
+	right: 30px;
+	top: 30px;
+}
+
+.sidebar .sidebar-toggle {
+	left: 50%;
+	margin-left: -15px;
+	top: 25px;
+}
+
+.sidebar-toggle .icon {
+	background-color: $gray-light;
+	height: 2px;
+	left: 0;
+	margin-top: -1px;
+	position: absolute;
+	top: 50%;
+	width: 30px;
+}
+
+.sidebar .sidebar-toggle .icon {
+	background-color: transparent;
+}
+
+.sidebar-toggle .icon:before,
+.sidebar-toggle .icon:after {
+	background-color: $gray-light;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	-webkit-transition:	all 0.2s;
+	-moz-transition: 	all 0.2s;
+	transition: 		all 0.2s;
+	width: 100%;
+}
+
+.sidebar .sidebar-toggle .icon:before,
+.sidebar .sidebar-toggle .icon:after {
+	background-color: $color-accent;
+}
+
+.sidebar-toggle .icon:before {
+	-webkit-transform: 	translateY(-10px);
+	-moz-transform: 	translateY(-10px);
+	transform: 			translateY(-10px);
+}
+
+.sidebar-toggle .icon:after {
+	-webkit-transform: 	translateY(10px);
+	-moz-transform: 	translateY(10px);
+	transform: 			translateY(10px);
+}
+
+.sidebar .sidebar-toggle .icon:before {
+	-webkit-transform:	rotate(45deg);
+	-moz-transform:		rotate(45deg);
+	transform: 			rotate(45deg);
+}
+
+.sidebar .sidebar-toggle .icon:after {
+	-webkit-transform:	rotate(-45deg);
+	-moz-transform:		rotate(-45deg);
+	transform: 			rotate(-45deg);
+}
