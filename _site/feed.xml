@@ -7,6 +7,40 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Code + Community: the highlight reel</title>
+        <description>&lt;p&gt;Last week, we wrapped up our second season of the Virtual Coffee (VC) Podcast with our &lt;a href=&quot;https://virtualcoffee.io/podcast/0209-season-two-wrapup/&quot;&gt;Code and Community episode&lt;/a&gt;. As VC’s been growing over the last year, I’ve been working on the Virtual Coffee model for communities, and &lt;a href=&quot;https://twitter.com/danieltott&quot;&gt;Dan&lt;/a&gt; and I have spent a lot of time talking through navigating the challenges and creating a direction for our unique community with the support and care of the community.&lt;/p&gt;
+
+&lt;p&gt;But I was especially inspired to write a highlight version of the episode when I saw Lucia’s tweet.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/BekahHW?ref_src=twsrc%5Etfw&quot;&gt;@BekahHW&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/danieltott?ref_src=twsrc%5Etfw&quot;&gt;@danieltott&lt;/a&gt; are leaders in effective, unconventional ways. Listen for their view on metrics, community building, and purpose. &lt;a href=&quot;https://t.co/4FyYJhafO7&quot;&gt;https://t.co/4FyYJhafO7&lt;/a&gt;&lt;/p&gt;&amp;mdash; Lucia Cerchie 🦎 (@CerchieLucia) &lt;a href=&quot;https://twitter.com/CerchieLucia/status/1400135495984709632?ref_src=twsrc%5Etfw&quot;&gt;June 2, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;These are my top takeaways from this episode:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;We have so many ideas for the community, but there aren’t enough hours in the day to work on them all. We’re doing our best to prioritize them.&lt;/li&gt;
+  &lt;li&gt;We’re more than a slack of people who do meetups, events, and more. We’re “an intimate community for all devs, optimized for you.”&lt;/li&gt;
+  &lt;li&gt;The face-to-face conversations are a key part of our identity. And it’s important to us that we keep our breakout rooms small to allow opportunities for everyone to join in the conversation.&lt;/li&gt;
+  &lt;li&gt;It’s easier to stretch and grow when you know you have the support of the community.&lt;/li&gt;
+  &lt;li&gt;We’re inspired by the book &lt;a href=&quot;https://www.radicalcandor.com/&quot;&gt;&lt;em&gt;Radical Candor&lt;/em&gt;&lt;/a&gt;! Clear and honest communication are important tools for trust and growth.&lt;/li&gt;
+  &lt;li&gt;We think of Virtual Coffee as an open source community.&lt;/li&gt;
+  &lt;li&gt;Building deliberately and creating structures and processes to empower members to help takes time.&lt;/li&gt;
+  &lt;li&gt;We’re never going to put content behind a paywall.&lt;/li&gt;
+  &lt;li&gt;Tooling with a team can be really expensive, and it’s challenging to find services that allow people to help when you have a small community and no funding .&lt;/li&gt;
+  &lt;li&gt;The goal of the Virtual Coffee Model is to have a lasting impact on your community, to create ripples that extend far beyond your community.&lt;/li&gt;
+  &lt;li&gt;So much of community tooling is based on making money off our your members. Since that’s not our goal, it’s been challenging to find a good fit.&lt;/li&gt;
+  &lt;li&gt;As community leadership, you can see each person individually and you can recognize them, but if you don’t have support in the tools, in the structures, you’re not going to get very far.&lt;/li&gt;
+  &lt;li&gt;Traditional community metrics leave a lot of people out. We value each member participating in the ways that are most comfortable for them.&lt;/li&gt;
+  &lt;li&gt;Our focus isn’t to grow &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt;, it’s to support our members.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 07 Jun 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Code-+-Community-the-highlight-reel</link>
+        <guid isPermaLink="true">http://localhost:4000/Code-+-Community-the-highlight-reel</guid>
+        
+      </item>
+    
+      <item>
         <title>I did something that scared me: I took a week off</title>
         <description>&lt;p&gt;A friend recently asked me if I am a results or a process person. I told her that I’m a momentum person. I like to move. I don’t like breaks. But when we hit the one year mark of &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt;, and I realized that I hadn’t had a week off in a year I didn’t &lt;em&gt;want&lt;/em&gt; to take time off, but I thought I probably &lt;em&gt;should&lt;/em&gt;. And it was the right call.&lt;/p&gt;
 
@@ -484,36 +518,6 @@ Did I meet those goals? Actually, kind of and more. I did build a &lt;a href=&qu
         <pubDate>Mon, 28 Dec 2020 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/2020-A-Year-in-Review</link>
         <guid isPermaLink="true">http://localhost:4000/2020-A-Year-in-Review</guid>
-        
-      </item>
-    
-      <item>
-        <title>I Came into Tech via Trauma</title>
-        <description>&lt;p&gt;I don’t have a traditional path into tech. I came into tech because my organs ruptured when I had my fourth kid. I came into tech because I had PTSD. I came into tech because I have &lt;a href=&quot;https://bekahhw.github.io/blog/2020/08/03/ADHD,-the-Quarantine,-and-Me&quot;&gt;ADHD&lt;/a&gt;. I came into tech because after I had surgery to remove one organ and restructure another, I overdosed on morphine and then spent the next six days teaching from a hospital bed because I didn’t have any rights as an adjunct instructor. I came into tech because I just wanted it to stop. I wanted my brain to stop. When I coded, it stopped.&lt;/p&gt;
-
-&lt;p&gt;My journey into tech isn’t typical. And depending on how honest I am, my story is shocking. I didn’t mean to make a career change. I just wanted to have something, to feel like I could succeed at anything at all. I came into tech because the last six years of being an adjunct instructor I fought to have rights, to get a pay increase, to create a community. And I left with nothing. I came into tech because I found support, a community that I was seeking for years.&lt;/p&gt;
-
-&lt;p&gt;Four days after having my fourth kid, I went into my OBGYNs office. It haunts me. I told her about the horrific symptoms I was experiencing, and she told me “it’s not my problem.” I’ve told this story a thousand times, and it still hurts to say it. And it hurts because she said it to me, but it hurts because I’m not the only one who has felt abandoned in the room.&lt;/p&gt;
-
-&lt;p&gt;I’m not the only one who has felt like there was no hope. I’m not the only one who’s felt like no one could ever understand. I’m not the only one who has been left alone in the corner to watch every other person go on living their life while I died a little bit more inside everyday.&lt;/p&gt;
-
-&lt;p&gt;It’s everybody’s problem.&lt;/p&gt;
-
-&lt;p&gt;There is not a moment in time that I don’t carry that with me. I carry it with me because I very much do not ever want any other person to feel that way. I carry it with me, because it drives a force inside of me to do what I can to change the systems that make people feel like they are nothing, like they are not worthy, like no one should help them. When I left that room that day, I thought that I was not worth anyone’s time. I wasn’t a person; I was a problem.&lt;/p&gt;
-
-&lt;p&gt;I have always been a passionate person. I have always been intense. It has both been a characteristic that drives me and one that has isolated me from people. Sometimes I’m too much for people. I am more than they can handle. But I can’t help being fully myself. I can’t help that I can’t stop myself when I see new paths for change or growth or whatever that are driven by this intense desire to make sure that no one feels alone.&lt;/p&gt;
-
-&lt;p&gt;I started a &lt;a href=&quot;https://beautyinthescar.com/&quot;&gt;blog&lt;/a&gt; to talk about my trauma and this is a crossover post. I learned to code because it stopped the trauma from repeating over and over in my head while I sat in front of the computer. I kept coding because I had community. I got excited about coding because I realized that code could’ve prevented what happened to me. But that’s women’s health, and not enough people care about women’s health.&lt;/p&gt;
-
-&lt;p&gt;If no one will do the thing that needs to be done, I will. But I also know that when we work in isolation, we will never be as effective as we can be with a community. Because with a community there is support. With a community there is meaning and purpose and growth.&lt;/p&gt;
-
-&lt;p&gt;A couple of years ago I was at JSConf Hawaii, and I told a woman that although my trauma was the worst thing that ever happened to me, I wouldn’t take it back. I’m a better person. Without that trauma, I don’t know the importance of community. WIthout that trauma, I don’t get into tech. Without trauma &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt; is never started. Without trauma I don’t understand the importance of vulnerability, of meeting people where they are at, of letting people &lt;em&gt;know&lt;/em&gt; me; I guard and protect myself. I don’t become the developer that I can be. I don’t find a way to push through those times when people tell me that I can’t do both; that I can’t create community and be a developer.&lt;/p&gt;
-
-&lt;p&gt;This post is very much about how I became a developer, but it’s very much more about how I became &lt;em&gt;me&lt;/em&gt;. And that’s the important part. Because I am a person first. And being human, recognizing the diverse experiences and challenges and talents and perspectives of the people around us matters.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 07 Dec 2020 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/I-Came-into-Tech-via-Trauma</link>
-        <guid isPermaLink="true">http://localhost:4000/I-Came-into-Tech-via-Trauma</guid>
         
       </item>
     
