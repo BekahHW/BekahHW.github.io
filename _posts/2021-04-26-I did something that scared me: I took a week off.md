@@ -2,7 +2,6 @@
 layout: post
 title: "I did something that scared me: I took a week off"
 tags: [Tips]
-featured_image: assets/images/posts/2018/12.jpg
 author: Bekah
 ---
 
