@@ -6,6 +6,8 @@ tags: [Interview Series]
 author: Bekah
 ---
 
+# Part I: Interview Them First
+
 I’ve heard people say they interview for practice or for fun. I am not one of those people. I am the opposite of those people. On top of being not one of those people, I am also a person who is incredibly satisfied with my job and life, except as an independent contractor my family and I pay out of pocket for medical insurance. And I have over $70,000 of medical bills sitting on my desk with more coming. So when someone from a notable company in tech reached out to me and encouraged me to apply to a DevRel position, and then when I talked to a friend in tech who encouraged me to apply for a senior DevRel position, I did. This is the first in a series of posts on what I’ve learned through this process.
 
 ## It’s Ok to say no or recommend someone else
