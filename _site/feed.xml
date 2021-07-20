@@ -7,6 +7,161 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>How I accidentally interviewed for two jobs</title>
+        <description>&lt;p&gt;I’ve heard people say they interview for practice or for fun. I am not one of those people. I am the opposite of those people. On top of being not one of those people, I am also a person who is incredibly satisfied with my job and life, except as an independent contractor my family and I pay out of pocket for medical insurance. And I have over $70,000 of medical bills sitting on my desk with more coming. So when someone from a notable company in tech reached out to me and encouraged me to apply to a DevRel position, and then when I talked to a friend in tech who encouraged me to apply for a senior DevRel position, I did. This is the first in a series of posts on what I’ve learned through this process.&lt;/p&gt;
+
+&lt;h2 id=&quot;its-ok-to-say-no-or-recommend-someone-else&quot;&gt;It’s Ok to say no or recommend someone else&lt;/h2&gt;
+
+&lt;p&gt;As an early-career developer who gets maybe more DMs than most early-career devs because of what I’ve done with &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt;, I’ve had a number of people reach out and ask me to apply for jobs. Usually, I decline and recommend someone else I know. If you look at the job, and it’s not something that’s interesting, within your desired salary, or you find out more about the team and you don’t think you’d be a good fit, it’s ok to pass or to recommend someone else you think would be a good fit.&lt;/p&gt;
+
+&lt;h2 id=&quot;do-your-research-and-reach-out-to-people-you-trust&quot;&gt;Do Your Research and Reach out to People you Trust&lt;/h2&gt;
+
+&lt;p&gt;Since coming into tech, I’ve always said that my dream job is working with good people. And that’s 100% true for me. I have been working with good–actually amazing–people. I’ve also seen so many devs fall into really toxic work environments. So if I’m going to leave a situation I’m happy with, I’m going to do my research. For me this means learning about the people on the teams, the companies, and DMing people who I know in tech and asking them about the teams, companies, and/or positions. Through these DMs, I learned:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Some tough questions to ask to gauge the strength of the teams and to avoid workplace toxicity;&lt;/li&gt;
+  &lt;li&gt;How to gauge the sincerity of responses;&lt;/li&gt;
+  &lt;li&gt;How current teams functioned within the organization and how that would impact the position;&lt;/li&gt;
+  &lt;li&gt;What the current team dynamics are;&lt;/li&gt;
+  &lt;li&gt;About the projects, processes, and structures the teams use.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ask-direct-questions&quot;&gt;Ask Direct Questions&lt;/h2&gt;
+
+&lt;p&gt;Because I wasn’t actively looking for work, I came to the process with a privileged position. I could afford to ask questions that some might be afraid to ask initially. Some of the questions I asked prior to the interviews were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What’s the salary range?&lt;/li&gt;
+  &lt;li&gt;Could I continue organizing Virtual Coffee as part of the job?&lt;/li&gt;
+  &lt;li&gt;What are your current pain points?&lt;/li&gt;
+  &lt;li&gt;Is the schedule flexible?&lt;/li&gt;
+  &lt;li&gt;What does the health insurance like?&lt;/li&gt;
+  &lt;li&gt;Can we talk about the title?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Remember, &lt;em&gt;you’re&lt;/em&gt; interviewing them as well. If you have values or standards that are important to you, it’s ok to be selective from the very beginning. In fact, it was the openness and honesty of the answers that made me feel comfortable going further in the process, which I’ll talk about in my next post, because these weren’t quick and simple processes.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Jul 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/How-I-Accidentally-Interviewed-for-Two-Jobs,-a-series</link>
+        <guid isPermaLink="true">http://localhost:4000/How-I-Accidentally-Interviewed-for-Two-Jobs,-a-series</guid>
+        
+      </item>
+    
+      <item>
+        <title>Notes from Twitter Spaces on Community and Remote Work</title>
+        <description>&lt;p&gt;My notes from the last two weeks of Twitter spaces I hosted. These are not all my ideas, and I might not agree with them all. But, I wanted to share what we talked about.&lt;/p&gt;
+
+&lt;h1 id=&quot;community--career&quot;&gt;Community + Career&lt;/h1&gt;
+
+&lt;h2 id=&quot;why-should-you-be-a-part-of-a-community&quot;&gt;Why should you be a part of a community?*&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Helps with career guidance&lt;/li&gt;
+  &lt;li&gt;Supports you as you grow&lt;/li&gt;
+  &lt;li&gt;Allows for networking opportunities&lt;/li&gt;
+  &lt;li&gt;Creates a safe space for exploring new ideas and industries&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Provides opportunities to help others&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;As always, this depends on the community you join. Not all experiences will be the same for all people.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;find-the-community-that-supports-its-members&quot;&gt;Find the community that supports its members&lt;/h2&gt;
+
+&lt;p&gt;When you’re looking to join a community, here are some signs that the community supports its members:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Authentic and vulnerable relationships and interactions,&lt;/li&gt;
+  &lt;li&gt;Investment in helping each other to grow -&amp;gt; look at how people are answering questions or if help and support posts are mostly answered,&lt;/li&gt;
+  &lt;li&gt;Openness to new ideas and experiences -&amp;gt; are members testing out new ideas or actions? Do you see people saying they’ve done something for the first time as part of that group?&lt;/li&gt;
+  &lt;li&gt;Supportive communities can provide a space for you to try new things. For example, maybe you’re interested in speaking at a conference, but you’re afraid. If you have a supportive community, it’s easier to try out the experience. Give your presentation to the community and ask for feedback. When you have a supportive community, it’s easier to be open to feedback, to learn from the experience, and to work towards your goal of giving a presentation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-find-the-right-communities&quot;&gt;How to find the right communities&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Make sure they have a code of conduct, esp if you’re part of an under-represented group&lt;/li&gt;
+  &lt;li&gt;They all you to be a passive member of a community -&amp;gt; soak up the knowledge and experience&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;signs-of-a-positive-community&quot;&gt;Signs of a positive community&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;There’s a Code of Conduct&lt;/li&gt;
+  &lt;li&gt;For non-discord platforms, when people use their real names&lt;/li&gt;
+  &lt;li&gt;Members of under-represented groups&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;remote-work&quot;&gt;Remote Work&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Some companies did even better when they were forced to go remote&lt;/li&gt;
+  &lt;li&gt;You can do the same thing from home that you can do in the office&lt;/li&gt;
+  &lt;li&gt;PPl are forming networks and relationships outside of the office as a result. There’s less glue, holding you to stick in the current position.&lt;/li&gt;
+  &lt;li&gt;You don’t have the opportunities to network outside of the office&lt;/li&gt;
+  &lt;li&gt;Remote and COVID-remote are two very different things. There are a lot of extra outside stressors. Remote was being thrust on ppl rather than a decision people made.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why-work-in-a-physical-office&quot;&gt;Why work in a physical office?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Some people prefer to work in the office&lt;/li&gt;
+  &lt;li&gt;Extrovert!&lt;/li&gt;
+  &lt;li&gt;Clear physical lines of communication: You can walk to the person’s office if you have a question.&lt;/li&gt;
+  &lt;li&gt;Sometimes a challenge of getting work done&lt;/li&gt;
+  &lt;li&gt;There’s a different type of productivity -&amp;gt; talking with the people around you allows you to develop relationships more quickly.&lt;/li&gt;
+  &lt;li&gt;You build teams much quicker in the office&lt;/li&gt;
+  &lt;li&gt;Community building is easier.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;positives-of-working-remotely&quot;&gt;Positives of working remotely&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Flexibility, especially for parents&lt;/li&gt;
+  &lt;li&gt;Allows parents to take breaks and spend time with their kids&lt;/li&gt;
+  &lt;li&gt;Don’t have to commute&lt;/li&gt;
+  &lt;li&gt;Allows for productive breaks -&amp;gt; You can start the laundry, dinner, do errands&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;navigating-challenges-of-working-remotely&quot;&gt;Navigating challenges of working remotely&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you don’t have a designated office space, it can be a challenge, but if you set boundaries&lt;/li&gt;
+  &lt;li&gt;Set rules for yourself: when to log off. Turn off the computer and don’t touch it&lt;/li&gt;
+  &lt;li&gt;Do a full shutdown every night&lt;/li&gt;
+  &lt;li&gt;Separate work and “home” computer, so there’s no drive to work after work hours&lt;/li&gt;
+  &lt;li&gt;Set a hard limit for work hours&lt;/li&gt;
+  &lt;li&gt;Dealing with stress and the easy access to food&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Normalize kid noises in the back of every meeting&lt;/li&gt;
+  &lt;li&gt;Productivity: there’s kind of no middle ground. There’s ppl who are super productive and not productive at all. This might speak to the type of office-environment that works best for you.&lt;/li&gt;
+  &lt;li&gt;We shouldn’t be micromanaging. Daily standup, project tracking, and milestones are enough to evaluated the productivity of the team.&lt;/li&gt;
+  &lt;li&gt;Forcing extra steps to force ppl to report progress, that’s toxic.&lt;/li&gt;
+  &lt;li&gt;If there’s an issue with a person, approach it as “How can we support you? Is there a challenge I can help you with?”&lt;/li&gt;
+  &lt;li&gt;Developers should have autonomy and support&lt;/li&gt;
+  &lt;li&gt;Over-communication &amp;gt; under-communication&lt;/li&gt;
+  &lt;li&gt;Don’t do remote work on vacation!!!&lt;/li&gt;
+  &lt;li&gt;Team-building remotely: Depending on the team, turn on the cameras, hear the voice of the other person&lt;/li&gt;
+  &lt;li&gt;Whole set of problems returning to office spaces now with mice, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;bonus&quot;&gt;Bonus&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;blog post idea: how to structure your team to be productive&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 28 Jun 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Notes-from-Twitter-Spaces-on-Community-and-Remote-Work</link>
+        <guid isPermaLink="true">http://localhost:4000/Notes-from-Twitter-Spaces-on-Community-and-Remote-Work</guid>
+        
+      </item>
+    
+      <item>
         <title>Code + Community: the highlight reel</title>
         <description>&lt;p&gt;Last week, we wrapped up our second season of the Virtual Coffee (VC) Podcast with our &lt;a href=&quot;https://virtualcoffee.io/podcast/0209-season-two-wrapup/&quot;&gt;Code and Community episode&lt;/a&gt;. As VC’s been growing over the last year, I’ve been working on the Virtual Coffee model for communities, and &lt;a href=&quot;https://twitter.com/danieltott&quot;&gt;Dan&lt;/a&gt; and I have spent a lot of time talking through navigating the challenges and creating a direction for our unique community with the support and care of the community.&lt;/p&gt;
 
@@ -404,120 +559,6 @@ There have been a number of times where I’ve felt &lt;em&gt;used&lt;/em&gt; as
         <pubDate>Thu, 28 Jan 2021 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/Five-Hot-Takes-for-the-New-Year</link>
         <guid isPermaLink="true">http://localhost:4000/Five-Hot-Takes-for-the-New-Year</guid>
-        
-      </item>
-    
-      <item>
-        <title>Let Them Write Tests: Writing Your First Cypress Test</title>
-        <description>&lt;p&gt;&lt;em&gt;This is a continuation of &lt;a href=&quot;https://dev.to/bekahhw/let-them-write-tests-an-argument-for-cypress-19o2&quot;&gt;this post&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I like writing tests. I like the structure. I like when they find bugs. I even like when they give me nightmares. But I think I like them most because they’re accessible and getting Cypress setup is quick and painless.&lt;/p&gt;
-
-&lt;p&gt;I’ve already made my case for why you should write tests. Now I’m going to take you through getting Cypress up and running and writing your first test.&lt;/p&gt;
-
-&lt;p&gt;In your terminal:
-Cd into your project path: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd /your_project/path&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;For example, I might have a project called coding-blog in my Project folder. So when I open my terminal, I put in: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd Project/coding-blog&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;(Capitalization doesn’t matter here, but spelling and order do.)&lt;/p&gt;
-
-&lt;p&gt;Now we’re ready to get it installed. (For more detailed instructions, &lt;a href=&quot;https://docs.cypress.io/guides/getting-started/installing-cypress.html#npm-install&quot;&gt;the docs&lt;/a&gt; are the place to be.) For less detailed instructions: In your terminal put &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install cypress&lt;/code&gt; (if you’re using npm). If you’re using yarn, type: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn add cypress&lt;/code&gt;. It shouldn’t take that long to install, but while you’re waiting I recommend checking out the &lt;a href=&quot;https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell&quot;&gt;Cypress docs&lt;/a&gt;, because I can guarantee you’ll be spending quality time there.&lt;/p&gt;
-
-&lt;p&gt;Once it’s all done installing, you’re ready to explore some folders. You’ll notice in your file directory that you now have a Cypress folder. In that folder, you’ll find fixtures, integration, plugins, and support. You’ll also notice that you have a cypress.json file in your file structure.&lt;/p&gt;
-
-&lt;p&gt;Let’s start there. You’ll see that you can customize this. For this go-round, we’re just going to use the localhost address for the baseUrl that you’ll be using to test.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{
-  &quot;baseUrl&quot;: &quot;http://localhost:3000/”
-}&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Ok. We’re getting closer. Now open your Cypress folder, and click on integration. This is where we’ll write our first tests.&lt;/p&gt;
-
-&lt;p&gt;Now we need to figure out how to write the tests. Let’s pretend we’re testing a new user form. The file we’re testing is called NewUser.js, so we’ll create our new file with the name newUser.js in the Cypress/integration folder.&lt;/p&gt;
-
-&lt;p&gt;There are two main pieces of a Cypress test. First, an example. Then the explanation.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;describe('new user form', () =&amp;gt; {
-  it('displays form validation', () =&amp;gt; {
-    cy.visit('/users/new')
-    cy.get('#first_name').type('Bekah')    
-    cy.get('#first_name').should('have.value', 'Bekah', 'be.visible')
-  })
-})
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;explanation&quot;&gt;Explanation&lt;/h3&gt;
-&lt;p&gt;The test is looking for an input with the id “first_name.” It finds the input, types in the name and then checks that the name is visible in the input. But what are these sections?&lt;/p&gt;
-
-&lt;h4 id=&quot;describe&quot;&gt;Describe&lt;/h4&gt;
-&lt;p&gt;Has two arguments: a string (“subject”)–in this case “new user form” and the callback (“it”) that the runs the code&lt;/p&gt;
-
-&lt;h4 id=&quot;it&quot;&gt;It&lt;/h4&gt;
-&lt;p&gt;This block tells what to expect and checks for the outcome. Also takes a callback (“verb”)–in this case “displays the form”–and checks the assertion-&amp;gt; should have a value and be visible.&lt;/p&gt;
-
-&lt;p&gt;Each “it” block is a test. You can include multiple it blocks in a describe. For example, you might want to test validation on the form. If the user tries to submit without entering their name, an error appears on the screen. That should have it’s own “it” block.&lt;/p&gt;
-
-&lt;p&gt;How do you know what to test? Well, that’s another post. But you want to be sure that users can use your software. So start there.
-To run the test, you can either open it in the testrunner, which runs in the browser and lets you actually see the action happening, or you can run it headlessly with the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cypress run&lt;/code&gt;.
-To run the command in your terminal, you’ll either start with yarn or npm, depending on which your project uses and then the appropriate command. So in this case, I would run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn cypress open&lt;/code&gt;. 
-The test runner would open, and then I would select the file I want to test and watch the tests run.&lt;/p&gt;
-
-&lt;p&gt;Cool, right? And the nice thing about tests is if something isn’t working or if it breaks, you know right away.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 17 Jan 2021 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/Let-Them-Write-Tests-Writing-Your-First-Cypress-Test</link>
-        <guid isPermaLink="true">http://localhost:4000/Let-Them-Write-Tests-Writing-Your-First-Cypress-Test</guid>
-        
-      </item>
-    
-      <item>
-        <title>2020: A Year in Review</title>
-        <description>&lt;p&gt;&lt;em&gt;It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair.&lt;/em&gt; - Charles Dickens&lt;/p&gt;
-
-&lt;p&gt;I mean, how could you expect me to start this post with anything else? 2020 was an entire lifetime, it was emotions that no one has ever felt before. It was &lt;em&gt;a&lt;/em&gt; thing.&lt;/p&gt;
-
-&lt;p&gt;I didn’t have huge goals coming into 2020, but I was ready for it:&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;2019 was my warmup year.&lt;/p&gt;&amp;mdash; Bekah Hawrot Weigel (@BekahHW) &lt;a href=&quot;https://twitter.com/BekahHW/status/1211954474706714625?ref_src=twsrc%5Etfw&quot;&gt;December 31, 2019&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;
-Well, you know, I thought I was ready for it. And I did make some small, but very meaningful goals:
-&lt;br /&gt;&lt;/p&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Make a site for my memoir with Gatsby, keep learning what I need at my job.&lt;/p&gt;&amp;mdash; Bekah Hawrot Weigel (@BekahHW) &lt;a href=&quot;https://twitter.com/BekahHW/status/1212511229123670018?ref_src=twsrc%5Etfw&quot;&gt;January 1, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;
-Did I meet those goals? Actually, kind of and more. I did build a &lt;a href=&quot;https://beautyinthescar.com/&quot;&gt;site&lt;/a&gt; for my memoir, and I did learn new things for my job.&lt;/p&gt;
-
-&lt;p&gt;But I wasn’t ready for 2020. And it took me a long time to get over that. I had this idea in my head that since &lt;a href=&quot;https://beautyinthescar.com/the-first-one/&quot;&gt;I had gone through trauma&lt;/a&gt;, I could navigate other traumas that came my way, that I could leverage that experience.&lt;/p&gt;
-
-&lt;p&gt;And then I found myself crying every single night after I lost my job because of COVID, after my children’s school closed and I was supervising four kids doing at home learning while I was trying to interview for jobs. When I learned that &lt;a href=&quot;https://dev.to/bekahhw/job-searching-in-the-time-of-covid-19-1jei&quot;&gt;tech interviews can be soul-crushing&lt;/a&gt;. And all I could think about was: why can’t I do &lt;em&gt;this&lt;/em&gt; trauma?&lt;/p&gt;
-
-&lt;p&gt;This trauma, this global trauma of a pandemic wasn’t just about me. It wasn’t a hurdle that I could navigate. It was my trauma, my kids trauma, my family’s trauma, and it was the trauma of every single person affected by the pandemic. You don’t navigate the trauma of the world by yourself. And that’s very much what made this year the year I found people I call my friends, the year that I felt like I belonged, the year that Virtual Coffee became a huge part of my story.&lt;/p&gt;
-
-&lt;p&gt;When I lost my job, I felt alone, empty. I knew that feeling. And I knew that I had to do something before it turned into despair. And so &lt;a href=&quot;https://dev.to/bekahhw/what-is-virtual-coffee-4omm&quot;&gt;Virtual Coffee&lt;/a&gt; was born. The highlight from that post is this line about what the point of Virtual Coffee is: &lt;em&gt;The point is to form community. To meet new devs. To learn from each other. To offer advice. The point is to not feel alone.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;And that’s what it did. I felt better about making my way through the job search because there were friends there to support me. I felt better about taking a contract using React Native for the first time, because there were people cheering me on. I felt understood when I was diagnosed with &lt;a href=&quot;https://dev.to/bekahhw/adhd-the-quarantine-and-me-4apa&quot;&gt;ADHD&lt;/a&gt;. I felt joy when my job opened back up and I had the mentorship to grow as a frontend developer, to learn new things, to have confidence in myself.&lt;/p&gt;
-
-&lt;p&gt;And so 2020 became the year where I had the support to do things that I didn’t dream of. 2020 became the year where I founded a community of developers, the year that I mentored when I didn’t think I knew enough to mentor, when I could finally call myself a developer.&lt;/p&gt;
-
-&lt;p&gt;It’s the year that I became an open-source maintainer for my &lt;a href=&quot;https://github.com/BekahHW/postpartum-wellness-app&quot;&gt;post-partum wellness app&lt;/a&gt; because my friends encouraged me to have faith in myself. It was the year that I organized three online events for our community, where I gave my first technical talk on end-to-end testing with Cypress the same week that I MCed my first lightning talk event. It’s the year I recorded my first podcasts as a co-host and not as a guest.&lt;/p&gt;
-
-&lt;p&gt;It’s the year where I was inspired by people around me. Where I learned that it’s ok to lean on other people when you need it. When sometimes the people I least expected to accept me–all of me–to encourage me, to push me, to support me, did.&lt;/p&gt;
-
-&lt;p&gt;It’s the year that I learned that sometimes progress is not what you think it looks like. That sometimes hard conversations are the ones that you need to have. That therapy is good. That sometimes all you need to do is ask for help or advice or guidance. That growth is painful.&lt;/p&gt;
-
-&lt;p&gt;This is the year that I cried and cried and cried. It was &lt;em&gt;hard&lt;/em&gt;. It &lt;em&gt;is&lt;/em&gt; hard. And complicated. And some days the anxiety keeps me up at night. And some weeks I can’t stop thinking about how awful some of the moments have been. But those beautiful moments, they’ve been so much more intensely beautiful because of the contrast.&lt;/p&gt;
-
-&lt;p&gt;In a lot of ways, my year of coding, my year of life, can best be described by this paragraph from my first post in my &lt;a href=&quot;https://beautyinthescar.com/the-first-one/&quot;&gt;trauma blog&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;And so this is my project. This is the space for vulnerability. This is the place for rawness and being allowed to be. This is the place where I show my scars. Where my body is mine. Where the scar that horrified and disgusted me has become a mark of pride. A reminder that I have survived. That I am a better person everyday for the ways I’ve changed. This is about the journey through trauma, the dirty and dark parts, the parts that I’m proud of, the parts where I say this was the worst experience of my life, but would never in a million years take it back. This is about finding beauty in the scar.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Mon, 28 Dec 2020 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2020-A-Year-in-Review</link>
-        <guid isPermaLink="true">http://localhost:4000/2020-A-Year-in-Review</guid>
         
       </item>
     
