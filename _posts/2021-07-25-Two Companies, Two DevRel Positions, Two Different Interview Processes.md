@@ -6,7 +6,6 @@ tags: [Interview Series]
 author: Bekah
 ---
 
-_This is the second in the series from "How I accidentally interviewed for two jobs"_
 In the [last post](https://bekahhw.github.io/How-I-Accidentally-Interviewed-for-Two-Jobs,-a-series), I talked about how I ended up interviewing for two positions without looking for a job. And what might seem like a process that should be fairly consistent since both were DevRel positions, there were still some pretty big differences that didn’t have to do with the fact that one was for a Senior position and the other a Junior. So here’s the breakdown of each process:
 
 **Total length, from initial DM to decision**
