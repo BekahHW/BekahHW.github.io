@@ -7,6 +7,100 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Preptember: Maintainer Powerups</title>
+        <description>&lt;p&gt;When we talk about open source repositories, there can be a lot of moving pieces, especially for maintainers. We’re juggling new issues, duplicate issues, discussions, pull requests, and many of us are volunteers. Although there will always be new challenges, between some simple things maintainers can do to make their repositories more contributor-friendly, and some tools that GitHub provides to help maintainers, we can reduce barriers to entry and reduce friction as we continue open-source projects. Here’s a list to help get you started.&lt;/p&gt;
+
+&lt;h2 id=&quot;maintainer-checklist&quot;&gt;Maintainer Checklist&lt;/h2&gt;
+
+&lt;p&gt;If you’re interested in some of the things maintainers can do to create a positive space for contributions, check out the &lt;a href=&quot;https://virtualcoffee.io/member-resources/oss-maintainer-checklist/&quot;&gt;OSS Maintainer Guide&lt;/a&gt; created at &lt;a href=&quot;https://virtualcoffee.io&quot;&gt;Virtual Coffee&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The guide covers important things like documentation, Code of Conduct, the Contributing Guide, and how to make your repository welcoming to new contributors.&lt;/p&gt;
+
+&lt;p&gt;One of the most important parts of any open source project is to have clear paths of communication. Detailed instructions of how to communicate with maintainers, instructions for creating or working on issues, and when to create a pull request, should be covered in your Contributors Guide. For an example, you can check out &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/blob/main/CONTRIBUTING.md&quot;&gt;our Contributors Guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;issues&quot;&gt;Issues&lt;/h2&gt;
+
+&lt;p&gt;One of the ways to help contributors and yourself as a maintainer is to utilize issue templates or forms. For a detailed guide on how to do this with your GithHub repository, you can check out their doc &lt;a href=&quot;https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository&quot;&gt;Configuring issue templates for your repository
+&lt;/a&gt;. (And a quick note to say that forms are in beta right now, so keep that in mind. Personally, I think they’re pretty awesome so I’d love to see them stick around.)&lt;/p&gt;
+
+&lt;p&gt;If you don’t have issues set up, and a contributor wants to add an issue, there’s really no guidance on how to do it. Not only is the contributor left staring at a blank box, but the likelihood of getting all of the information you need as a maintainer to make a decision about the issue isn’t great as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/blank_issue.png&quot; alt=&quot;a blank issue input&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But including forms or templates in your repository can eliminate some of those clarifying conversations. And one of the cool things is, you can create different templates/forms depending on your needs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/issue_forms.png&quot; alt=&quot;a issue form options&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can give a more detailed breakdown of what information you want to see when you read the issue.&lt;/p&gt;
+
+&lt;p&gt;If you want to take a look at how we breakdown our issues, you can check each of them out:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/issues/new?assignees=&amp;amp;labels=Type%3A+bug%2CStatus%3A+Needs+Triage&amp;amp;template=bug-report.yml&quot;&gt;Bug report&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/issues/new?assignees=&amp;amp;labels=Type%3A+documentation%2CStatus%3A+Needs+Triage&amp;amp;template=documentation-change.yml&quot;&gt;Documentation Change&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/issues/new?assignees=&amp;amp;labels=Type%3A+enhancement%2CStatus%3A+Needs+Triage&amp;amp;template=feature-request.yml&quot;&gt;Feature Request&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Within that list, we also have Questions/Ideas/Feedback, which takes our contributors to our discussion board where we like to start the conversation before converting it to an issue as we see fit–which I think deserves a post of its own.&lt;/p&gt;
+
+&lt;h3 id=&quot;labels&quot;&gt;Labels&lt;/h3&gt;
+
+&lt;p&gt;Make labels your friend. This makes it easy for contributors to quickly scan or to sort the issues on your repository and it makes it easier for you to separate and breakdown possible features, bug fixes, status of issues, etc.&lt;/p&gt;
+
+&lt;p&gt;Remember, let the labels work for you. Not only can you create the labels and choose the color of the label, but you can also add a description for what that label means. This makes it easier for your contributors to understand as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/label_ex.png&quot; alt=&quot;Reserved for Learners label&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The goal for everything you do for your repository is to create clear paths of communication.&lt;/p&gt;
+
+&lt;p&gt;And you might not get it right every time. In fact, you might try something that you think is great, only to discover that it’s made things more complicated. That’s fine! You tried it, and now you can remove it, edit it, update it, do what works for your project right now. And that’s a good mindset to have. We should always be evaluating and re-evaluating our processes, projects, and ourselves to make sure we’re updating things that need updated and growing.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Sep 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Preptember-Maintainer-Powerups</link>
+        <guid isPermaLink="true">http://localhost:4000/Preptember-Maintainer-Powerups</guid>
+        
+      </item>
+    
+      <item>
+        <title>Preptember: Getting ready for Hacktoberfest</title>
+        <description>&lt;p&gt;It’s Preptember!!!! What does that even mean? &lt;strong&gt;Story time.&lt;/strong&gt; Last year was the first year I had ever heard about Preptember. We, at &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt; were just starting to get ready to our first &lt;a href=&quot;https://hacktoberfest.digitalocean.com/&quot;&gt;Hacktoberfest&lt;/a&gt; together, and somewhere along the line, someone told us that September was coined Preptember as we prepared to go into Hacktoberfest. And in a lot of ways, for organizers, Preptember is even more work than Hacktoberfest. Because this is month that we prepare for all of our events, that we make sure we have support systems in place for our members, that we do the work to ensure that we’ve thought through every problem imaginable and we set everyone up for success.&lt;/p&gt;
+
+&lt;p&gt;As part of Preptember, this is what we’re doing at Virtual Coffee:&lt;/p&gt;
+
+&lt;h3 id=&quot;monthly-challenge&quot;&gt;Monthly Challenge&lt;/h3&gt;
+
+&lt;p&gt;Every month we do a challenge where we try to work on one focus for the month and produce something for the end of the month. This month, we’re asking our Maintainers to prep their repos by reviewing with our checklist and we’re preparing our contributors by asking them to write issues for our &lt;a href=&quot;https://virtualcoffee.io/monthlychallenges/sept-2021/&quot;&gt;Preptember Challenge&lt;/a&gt;. We have discussions going on in the channel and support for every member.&lt;/p&gt;
+
+&lt;h3 id=&quot;documentation&quot;&gt;Documentation&lt;/h3&gt;
+
+&lt;p&gt;We rely so heavily on documentation as part of all of our processes. As part of this, not only do we create documentation for our events, projects, and initiatives, but we also do our best to update them regularly. For example, we recently started using &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/discussions&quot;&gt;Github discussions for our VCIO repository&lt;/a&gt;. As a result, we needed to add instructions about using the discussion board to our &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/blob/main/CONTRIBUTING.md&quot;&gt;Contributing.md file&lt;/a&gt;. This file is the first step in clear communication with our contributors. It explains the process for opening issues, contributing, and submitting Pull Requests (PRs).&lt;/p&gt;
+
+&lt;h3 id=&quot;curated-list-of-open-source-repositories&quot;&gt;Curated List of Open Source Repositories&lt;/h3&gt;
+
+&lt;p&gt;We’re very focused on making sure members at all stages of the coding journey have the opportunity to participate in Hacktoberfest. This means that we need a wide variety of repositories that are welcoming, have clear documentation and communication, and are participating in Hacktoberfest. In an effort to create a well-rounded list that isn’t limited by our own experiences and backgrounds, we’ve opened a &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/discussions/321&quot;&gt;public discussion&lt;/a&gt; on our repository to gather suggestions that we’ll review before they are included on our Virtual Coffee list&lt;/p&gt;
+
+&lt;h3 id=&quot;call-for-maintainers-contributors-and-mentors&quot;&gt;Call for Maintainers, Contributors, and Mentors&lt;/h3&gt;
+
+&lt;p&gt;Back by popular demand, we’ll be asking our members to participate in Hacktoberfest with our support by signing up as Maintainers, Contributors, and/or Mentors. As part of this, we’ll ensure that contributors who want mentors will have support, and that maintainers have our support as well, as we support them as we review their repositories and by helping them to create issues for contributors.&lt;/p&gt;
+
+&lt;h3 id=&quot;lunch--learns&quot;&gt;Lunch &amp;amp; Learns&lt;/h3&gt;
+
+&lt;p&gt;We want to make sure that we educate and empower our members as they journey through Hacktoberfest. This month, we’ll be doing three Lunch &amp;amp; Learns on open source related content: An Open Source Project Walkthrough, How to create an Open Source Software Repository, and An Intro to Hacktoberfest and Open Source Contributions.&lt;/p&gt;
+
+&lt;h3 id=&quot;kick-off-hacktoberfest-event&quot;&gt;Kick-off Hacktoberfest Event&lt;/h3&gt;
+
+&lt;p&gt;Although we aren’t doing this in September, we’re preparing for it. We want to make sure we have an issue that everyone can participate in, that we can demonstrate, and that we can answer questions about together. This &lt;a href=&quot;https://meetingplace.io/virtual-coffee/events/7070&quot;&gt;event&lt;/a&gt; will give our members the confidence they need to get them started–and maybe even complete!–their first Hacktoberfest pull request.&lt;/p&gt;
+
+&lt;p&gt;This is a glimpse of what we’re doing to support our members and we’ll be revealing more details as the month goes on. If you want to support us, you can volunteer–form coming soon!–or &lt;a href=&quot;https://github.com/sponsors/Virtual-Coffee&quot;&gt;sponsor us&lt;/a&gt;.
+But if you couldn’t tell from our most recent &lt;a href=&quot;https://virtualcoffee.io/podcast/0309-season-three-wrap-up/&quot;&gt;podcast episode&lt;/a&gt;, we are super excited that we’re working on our second round of Hacktoberfest as a community, and we’re stoked to see how this year turns out.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 07 Sep 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Preptember-Getting-ready-for-Hacktoberfest</link>
+        <guid isPermaLink="true">http://localhost:4000/Preptember-Getting-ready-for-Hacktoberfest</guid>
+        
+      </item>
+    
+      <item>
         <title>Interview Series: Birthdays, job responses, and feedback</title>
         <description>&lt;p&gt;When I was a kid, I used to do Richard Simmons’ Sweatin’ to the Oldies–the VHS dance workout–with my mom. And I &lt;em&gt;loved&lt;/em&gt; the choreography for “It’s my party and I’ll cry if I want to.” Well, that was the foreshadowing to this moment. So just like we had a 2 for 1 deal for birthdays on July 21st–it was both mine and my son’s birthday–I would also get a kind of 2 for 1 deal on the interviews: two rejections in one day on my birthday. Not ideal. But also, I’m a believer that it’s better to know bad news than to be stuck in the limbo of not knowing news. And it’s in the moments after the news, in the process of feelings and feedback that we regroup and define who we are &lt;em&gt;next.&lt;/em&gt; And this post, it’s about all of those things.&lt;/p&gt;
 
@@ -656,79 +750,6 @@ I was still having a hard time imagining how I fit into their world. They seem l
         <pubDate>Sat, 03 Apr 2021 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/One-Year-of-Virtual-Coffee-lessons-from-an-accidental-community-creator</link>
         <guid isPermaLink="true">http://localhost:4000/One-Year-of-Virtual-Coffee-lessons-from-an-accidental-community-creator</guid>
-        
-      </item>
-    
-      <item>
-        <title>Lessons I've Learned from 100 Virtual Coffees</title>
-        <description>&lt;p&gt;It’s almost been a year since Virtual Coffee was born from my cry of desperation into the Twittersphere. From knowing that I couldn’t let myself be isolated during the time the world was calling for isolation. I knew from my experience with trauma four years ago that &lt;em&gt;I&lt;/em&gt; needed community to get me through this, even though I’m shy and an introvert and that reaching out into the Twitter void and opening myself up at this most vulnerable moment was terrifying. And now on this 100th Coffee, I’m going to talk about what I’ve learned just from those zoom sessions–I’ll save the rest of the things I’ve learned for the one-year Virtual Coffee post.&lt;/p&gt;
-
-&lt;p&gt;What those coffees started as were a place to talk during social isolation, a place to make friends, a place to laugh and to cry and to watch my 3 year old daughter pour all the leave-in conditioner she could find into my hair. It started as a place to be fully myself because the stress of looking for work during the pandemic, of having the kids home and doing school, of not knowing what tomorrow’s interview would bring was enough that I didn’t even have the emotional energy to spend trying to only show the parts of myself I thought were acceptable.&lt;/p&gt;
-
-&lt;p&gt;What it became was a beautiful community of people who I missed when they weren’t there, an event that people were putting in newsletters, a place where you are welcomed to participate in the ways that make you feel comfortable. A place where every person is met and welcomed as a person before anything else–developer, student, founder. A place where every person can be a mentor, a student, a friend.&lt;/p&gt;
-
-&lt;p&gt;And this is (a non-exhaustive) list of what I’ve learned from those Coffees:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Caring about other people, &lt;em&gt;really&lt;/em&gt; knowing and caring about them, can make a huge impact.&lt;/li&gt;
-  &lt;li&gt;Sometimes you won’t know what to say. That’s ok.&lt;/li&gt;
-  &lt;li&gt;Apologize when you need to.&lt;/li&gt;
-  &lt;li&gt;People you’ve never met in real life can be your closest friends.&lt;/li&gt;
-  &lt;li&gt;Like we say at the beginning of every coffee, “An awkward pause for one person, can be an opportunity for another person to join in.”&lt;/li&gt;
-  &lt;li&gt;Sometimes differences in opinions and life experiences can be really hard to navigate, but if you put in the time and effort, they can lead to some of the most important moments of growth.&lt;/li&gt;
-  &lt;li&gt;One person’s support can make all the difference.&lt;/li&gt;
-  &lt;li&gt;It is ok to ask questions, to ask for clarification, to disagree.&lt;/li&gt;
-  &lt;li&gt;Sometimes you’ll disappoint people.&lt;/li&gt;
-  &lt;li&gt;Sometimes people will disappoint you.&lt;/li&gt;
-  &lt;li&gt;Sometimes people won’t like you or won’t think you’re good enough, and it will hurt.&lt;/li&gt;
-  &lt;li&gt;Sometimes remembering the little things are the most meaningful.&lt;/li&gt;
-  &lt;li&gt;Everyone is motivated in different ways. Knowing them, understanding where they’re at in life, can go a long way in being a supportive friend.&lt;/li&gt;
-  &lt;li&gt;Kindness matters.&lt;/li&gt;
-  &lt;li&gt;Sometimes honesty hurts, even when it’s offered with kindness.&lt;/li&gt;
-  &lt;li&gt;Willingness to listen and openness to different opinions is important.&lt;/li&gt;
-  &lt;li&gt;Having a supportive community is one of the most important things for growth.&lt;/li&gt;
-  &lt;li&gt;Sometimes you’re the only one who shows up for that person on your screen.&lt;/li&gt;
-  &lt;li&gt;Psychological safety is incredibly important.&lt;/li&gt;
-  &lt;li&gt;Bidets are &lt;em&gt;not&lt;/em&gt; for snorkeling.&lt;/li&gt;
-  &lt;li&gt;Sometimes we underestimate people who are different than us.&lt;/li&gt;
-  &lt;li&gt;Vulnerability invites vulnerability.&lt;/li&gt;
-  &lt;li&gt;There is never a time when I don’t learn from someone else.&lt;/li&gt;
-  &lt;li&gt;Sometimes people just need a chance. Sometimes you have to be willing to offer that chance.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There is so much I’ve learned from these Tuesday/Thursday zoom coffees. Having the opportunity to see and hear from people all over the world, with all different experience levels has been an irreplaceable experience. When you’re in a place where you feel supported and safe, you’re ability to grow–in expected and unexpected ways–is unparalleled.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 23 Mar 2021 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/The-Lessons-I've-Learned-from-100-Virtual-Coffees</link>
-        <guid isPermaLink="true">http://localhost:4000/The-Lessons-I've-Learned-from-100-Virtual-Coffees</guid>
-        
-      </item>
-    
-      <item>
-        <title>Getting Out of My Comfort Zone</title>
-        <description>&lt;p&gt;I &lt;em&gt;like&lt;/em&gt; my comfort zone. A lot. It’s a familiar space. It’s a warm blanket, a cup of coffee, in front of a fire. It’s the crack of the bat against a baseball on a hot July day. It’s hearing that song from when I was eleven and still knowing all the words. I think comfort zones are good, but pushing ourselves out of them, pushing ourselves into unknown territories, those are the places we grow.&lt;/p&gt;
-
-&lt;p&gt;The last twelve months have been a lot of growing, and I didn’t even have to push myself to do it. The world did it for me. But there are times when I felt like I had been comfortable for too long, and I needed to push myself to do those things that scared me.&lt;/p&gt;
-
-&lt;p&gt;Sometimes that thing was asking for help instead of going deeper down the rabbit hole by myself. Sometimes it was accepting someone’s offer to help. Sometimes it was jumping into a new adventure without all the planning and discussions I would have done if I wanted to make sure the moment was just right. Taking my first dev job, almost two years ago, was pushing myself way out of my comfort zone. Sometimes it’s sharing these moments with others. Some of these things I talk about on this &lt;a href=&quot;https://virtualcoffee.io/podcast/0109-bekah-dan/&quot;&gt;Virtual Coffee podcast episode&lt;/a&gt;, which itself is one of the things that I did to force myself out of my comfort zone.&lt;/p&gt;
-
-&lt;p&gt;I recently decided I was going to livestream talking through and working on my postpartum wellness app, which was absolutely terrifying. But I was inspired by Drew Clements talking about how he livestreams working on &lt;a href=&quot;https://protege.dev/&quot;&gt;Protege.dev&lt;/a&gt; as an accountability tool. It’s not enough that I’m still very much new to React Native. I wanted to add to that the accountability that comes with livestreaming.I’ve only done it a couple of times, but I learned that it’s not about having all of the answers; it’s about communicating when you don’t.&lt;/p&gt;
-
-&lt;p&gt;It’s ok to have questions. It’s ok to look things up. It’s ok to forget how to do something you’ve done 100x before. It happens.&lt;/p&gt;
-
-&lt;p&gt;It’s about not getting frustrated when you don’t have those things. It’s about learning how to move forward, how to grow. And it’s remembering that process the next time you have that feeling of not being good enough.&lt;/p&gt;
-
-&lt;p&gt;There are so many times that I’m mad at myself for not knowing more or for feeling like I should be better at coding than I am. That I should have more done than I do. And that’s not productive; negative self talk does not help me grow. (I’m going to say it again, for the people who need to hear it; also, me. I need to hear it again.) Negative self talk does not help me grow.&lt;/p&gt;
-
-&lt;p&gt;Getting out of your comfort zone and growing is hard. And sometimes it means hearing things that are hard to hear. Sometimes, it’s having those hard conversations when you want to ignore the problem and hope it disappears.&lt;/p&gt;
-
-&lt;p&gt;A friend said to me the other day, “Bekah, there’s a reason they’re called growing pains. It doesn’t feel good.” I think it’s about embracing that pain by getting out of your comfort zone, but not being &lt;em&gt;stuck&lt;/em&gt; in the place you were last time, last week, last tutorial.&lt;/p&gt;
-
-&lt;p&gt;You don’t solve problems by ignoring them. You tackle the error in your console one piece at a time. And sometimes it’s minutes and sometimes it’s days, but damn it feels good when you finally have that project up on the screen. And that’s worth it.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 13 Mar 2021 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/Getting-Out-of-My-Comfort-Zone</link>
-        <guid isPermaLink="true">http://localhost:4000/Getting-Out-of-My-Comfort-Zone</guid>
         
       </item>
     

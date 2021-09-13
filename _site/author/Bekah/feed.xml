@@ -7,7 +7,7 @@ layout: null
   <generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator>
   <link href="http://localhost:4000/author/Bekah/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-08-02T11:02:31-04:00</updated>
+  <updated>2021-09-12T20:40:50-04:00</updated>
   <id>http://localhost:4000/author/Bekah/feed.xml</id>
 
   
@@ -33,6 +33,148 @@ layout: null
   
   
 
+  
+    <entry>
+      <title type="html">Preptember: Maintainer Powerups</title>
+      <link href="http://localhost:4000/Preptember-Maintainer-Powerups" rel="alternate" type="text/html" title="Preptember: Maintainer Powerups" />
+      <published>2021-09-12T00:00:00-04:00</published>
+      <updated>2021-09-12T00:00:00-04:00</updated>
+      <id>http://localhost:4000/Preptember:%20Maintainer%20Powerups</id>
+      <content type="html" xml:base="http://localhost:4000/Preptember-Maintainer-Powerups">&lt;p&gt;When we talk about open source repositories, there can be a lot of moving pieces, especially for maintainers. We’re juggling new issues, duplicate issues, discussions, pull requests, and many of us are volunteers. Although there will always be new challenges, between some simple things maintainers can do to make their repositories more contributor-friendly, and some tools that GitHub provides to help maintainers, we can reduce barriers to entry and reduce friction as we continue open-source projects. Here’s a list to help get you started.&lt;/p&gt;
+
+&lt;h2 id=&quot;maintainer-checklist&quot;&gt;Maintainer Checklist&lt;/h2&gt;
+
+&lt;p&gt;If you’re interested in some of the things maintainers can do to create a positive space for contributions, check out the &lt;a href=&quot;https://virtualcoffee.io/member-resources/oss-maintainer-checklist/&quot;&gt;OSS Maintainer Guide&lt;/a&gt; created at &lt;a href=&quot;https://virtualcoffee.io&quot;&gt;Virtual Coffee&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The guide covers important things like documentation, Code of Conduct, the Contributing Guide, and how to make your repository welcoming to new contributors.&lt;/p&gt;
+
+&lt;p&gt;One of the most important parts of any open source project is to have clear paths of communication. Detailed instructions of how to communicate with maintainers, instructions for creating or working on issues, and when to create a pull request, should be covered in your Contributors Guide. For an example, you can check out &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/blob/main/CONTRIBUTING.md&quot;&gt;our Contributors Guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;issues&quot;&gt;Issues&lt;/h2&gt;
+
+&lt;p&gt;One of the ways to help contributors and yourself as a maintainer is to utilize issue templates or forms. For a detailed guide on how to do this with your GithHub repository, you can check out their doc &lt;a href=&quot;https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository&quot;&gt;Configuring issue templates for your repository
+&lt;/a&gt;. (And a quick note to say that forms are in beta right now, so keep that in mind. Personally, I think they’re pretty awesome so I’d love to see them stick around.)&lt;/p&gt;
+
+&lt;p&gt;If you don’t have issues set up, and a contributor wants to add an issue, there’s really no guidance on how to do it. Not only is the contributor left staring at a blank box, but the likelihood of getting all of the information you need as a maintainer to make a decision about the issue isn’t great as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/blank_issue.png&quot; alt=&quot;a blank issue input&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But including forms or templates in your repository can eliminate some of those clarifying conversations. And one of the cool things is, you can create different templates/forms depending on your needs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/issue_forms.png&quot; alt=&quot;a issue form options&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can give a more detailed breakdown of what information you want to see when you read the issue.&lt;/p&gt;
+
+&lt;p&gt;If you want to take a look at how we breakdown our issues, you can check each of them out:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/issues/new?assignees=&amp;amp;labels=Type%3A+bug%2CStatus%3A+Needs+Triage&amp;amp;template=bug-report.yml&quot;&gt;Bug report&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/issues/new?assignees=&amp;amp;labels=Type%3A+documentation%2CStatus%3A+Needs+Triage&amp;amp;template=documentation-change.yml&quot;&gt;Documentation Change&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/issues/new?assignees=&amp;amp;labels=Type%3A+enhancement%2CStatus%3A+Needs+Triage&amp;amp;template=feature-request.yml&quot;&gt;Feature Request&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Within that list, we also have Questions/Ideas/Feedback, which takes our contributors to our discussion board where we like to start the conversation before converting it to an issue as we see fit–which I think deserves a post of its own.&lt;/p&gt;
+
+&lt;h3 id=&quot;labels&quot;&gt;Labels&lt;/h3&gt;
+
+&lt;p&gt;Make labels your friend. This makes it easy for contributors to quickly scan or to sort the issues on your repository and it makes it easier for you to separate and breakdown possible features, bug fixes, status of issues, etc.&lt;/p&gt;
+
+&lt;p&gt;Remember, let the labels work for you. Not only can you create the labels and choose the color of the label, but you can also add a description for what that label means. This makes it easier for your contributors to understand as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/label_ex.png&quot; alt=&quot;Reserved for Learners label&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The goal for everything you do for your repository is to create clear paths of communication.&lt;/p&gt;
+
+&lt;p&gt;And you might not get it right every time. In fact, you might try something that you think is great, only to discover that it’s made things more complicated. That’s fine! You tried it, and now you can remove it, edit it, update it, do what works for your project right now. And that’s a good mindset to have. We should always be evaluating and re-evaluating our processes, projects, and ourselves to make sure we’re updating things that need updated and growing.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Bekah Hawrot Weigel</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Open Source" />
+      
+
+      
+        <summary type="html">When we talk about open source repositories, there can be a lot of moving pieces, especially for maintainers. We’re juggling new issues, duplicate issues, discussions, pull requests, and many of us are volunteers. Although there will always be new challenges, between some simple things maintainers can do to make their repositories more contributor-friendly, and some tools that GitHub provides to help maintainers, we can reduce barriers to entry and reduce friction as we continue open-source projects. Here’s a list to help get you started.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Preptember: Getting ready for Hacktoberfest</title>
+      <link href="http://localhost:4000/Preptember-Getting-ready-for-Hacktoberfest" rel="alternate" type="text/html" title="Preptember: Getting ready for Hacktoberfest" />
+      <published>2021-09-07T00:00:00-04:00</published>
+      <updated>2021-09-07T00:00:00-04:00</updated>
+      <id>http://localhost:4000/Preptember:%20Getting%20ready%20for%20Hacktoberfest</id>
+      <content type="html" xml:base="http://localhost:4000/Preptember-Getting-ready-for-Hacktoberfest">&lt;p&gt;It’s Preptember!!!! What does that even mean? &lt;strong&gt;Story time.&lt;/strong&gt; Last year was the first year I had ever heard about Preptember. We, at &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt; were just starting to get ready to our first &lt;a href=&quot;https://hacktoberfest.digitalocean.com/&quot;&gt;Hacktoberfest&lt;/a&gt; together, and somewhere along the line, someone told us that September was coined Preptember as we prepared to go into Hacktoberfest. And in a lot of ways, for organizers, Preptember is even more work than Hacktoberfest. Because this is month that we prepare for all of our events, that we make sure we have support systems in place for our members, that we do the work to ensure that we’ve thought through every problem imaginable and we set everyone up for success.&lt;/p&gt;
+
+&lt;p&gt;As part of Preptember, this is what we’re doing at Virtual Coffee:&lt;/p&gt;
+
+&lt;h3 id=&quot;monthly-challenge&quot;&gt;Monthly Challenge&lt;/h3&gt;
+
+&lt;p&gt;Every month we do a challenge where we try to work on one focus for the month and produce something for the end of the month. This month, we’re asking our Maintainers to prep their repos by reviewing with our checklist and we’re preparing our contributors by asking them to write issues for our &lt;a href=&quot;https://virtualcoffee.io/monthlychallenges/sept-2021/&quot;&gt;Preptember Challenge&lt;/a&gt;. We have discussions going on in the channel and support for every member.&lt;/p&gt;
+
+&lt;h3 id=&quot;documentation&quot;&gt;Documentation&lt;/h3&gt;
+
+&lt;p&gt;We rely so heavily on documentation as part of all of our processes. As part of this, not only do we create documentation for our events, projects, and initiatives, but we also do our best to update them regularly. For example, we recently started using &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/discussions&quot;&gt;Github discussions for our VCIO repository&lt;/a&gt;. As a result, we needed to add instructions about using the discussion board to our &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/blob/main/CONTRIBUTING.md&quot;&gt;Contributing.md file&lt;/a&gt;. This file is the first step in clear communication with our contributors. It explains the process for opening issues, contributing, and submitting Pull Requests (PRs).&lt;/p&gt;
+
+&lt;h3 id=&quot;curated-list-of-open-source-repositories&quot;&gt;Curated List of Open Source Repositories&lt;/h3&gt;
+
+&lt;p&gt;We’re very focused on making sure members at all stages of the coding journey have the opportunity to participate in Hacktoberfest. This means that we need a wide variety of repositories that are welcoming, have clear documentation and communication, and are participating in Hacktoberfest. In an effort to create a well-rounded list that isn’t limited by our own experiences and backgrounds, we’ve opened a &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/discussions/321&quot;&gt;public discussion&lt;/a&gt; on our repository to gather suggestions that we’ll review before they are included on our Virtual Coffee list&lt;/p&gt;
+
+&lt;h3 id=&quot;call-for-maintainers-contributors-and-mentors&quot;&gt;Call for Maintainers, Contributors, and Mentors&lt;/h3&gt;
+
+&lt;p&gt;Back by popular demand, we’ll be asking our members to participate in Hacktoberfest with our support by signing up as Maintainers, Contributors, and/or Mentors. As part of this, we’ll ensure that contributors who want mentors will have support, and that maintainers have our support as well, as we support them as we review their repositories and by helping them to create issues for contributors.&lt;/p&gt;
+
+&lt;h3 id=&quot;lunch--learns&quot;&gt;Lunch &amp;amp; Learns&lt;/h3&gt;
+
+&lt;p&gt;We want to make sure that we educate and empower our members as they journey through Hacktoberfest. This month, we’ll be doing three Lunch &amp;amp; Learns on open source related content: An Open Source Project Walkthrough, How to create an Open Source Software Repository, and An Intro to Hacktoberfest and Open Source Contributions.&lt;/p&gt;
+
+&lt;h3 id=&quot;kick-off-hacktoberfest-event&quot;&gt;Kick-off Hacktoberfest Event&lt;/h3&gt;
+
+&lt;p&gt;Although we aren’t doing this in September, we’re preparing for it. We want to make sure we have an issue that everyone can participate in, that we can demonstrate, and that we can answer questions about together. This &lt;a href=&quot;https://meetingplace.io/virtual-coffee/events/7070&quot;&gt;event&lt;/a&gt; will give our members the confidence they need to get them started–and maybe even complete!–their first Hacktoberfest pull request.&lt;/p&gt;
+
+&lt;p&gt;This is a glimpse of what we’re doing to support our members and we’ll be revealing more details as the month goes on. If you want to support us, you can volunteer–form coming soon!–or &lt;a href=&quot;https://github.com/sponsors/Virtual-Coffee&quot;&gt;sponsor us&lt;/a&gt;.
+But if you couldn’t tell from our most recent &lt;a href=&quot;https://virtualcoffee.io/podcast/0309-season-three-wrap-up/&quot;&gt;podcast episode&lt;/a&gt;, we are super excited that we’re working on our second round of Hacktoberfest as a community, and we’re stoked to see how this year turns out.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Bekah Hawrot Weigel</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Open Source" />
+      
+
+      
+        <summary type="html">It’s Preptember!!!! What does that even mean? Story time. Last year was the first year I had ever heard about Preptember. We, at Virtual Coffee were just starting to get ready to our first Hacktoberfest together, and somewhere along the line, someone told us that September was coined Preptember as we prepared to go into Hacktoberfest. And in a lot of ways, for organizers, Preptember is even more work than Hacktoberfest. Because this is month that we prepare for all of our events, that we make sure we have support systems in place for our members, that we do the work to ensure that we’ve thought through every problem imaginable and we set everyone up for success.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Interview Series: Birthdays, job responses, and feedback</title>
