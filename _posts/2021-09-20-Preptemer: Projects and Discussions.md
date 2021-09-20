@@ -26,7 +26,7 @@ Here, maintainers can create labels that work for them, which allows for quicker
 
 Github discussions allow any possible contributor to watch the conversations on a public repo, understand the communication style, and to ask questions or provide feedback. You can also pin discussions that you want to highlight to potential contributors, add labels, and sort based on what you're looking for.
 
-![discussions](/assets/images/posts/2021/discussions_img.png)
+![discussions](/assets/images/posts/2021/discussion_img.png)
 
 Personally, I think discussions provide a safe space to hear ideas through and to think about their practicality.
 
