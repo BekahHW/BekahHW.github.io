@@ -7,7 +7,7 @@ layout: null
   <generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator>
   <link href="http://localhost:4000/author/Bekah/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-09-20T05:27:59-04:00</updated>
+  <updated>2021-09-26T19:31:18-04:00</updated>
   <id>http://localhost:4000/author/Bekah/feed.xml</id>
 
   
@@ -33,6 +33,80 @@ layout: null
   
   
 
+  
+    <entry>
+      <title type="html">Preptember: Projects and Discussions</title>
+      <link href="http://localhost:4000/Preptemer-Projects-and-Discussions" rel="alternate" type="text/html" title="Preptember: Projects and Discussions" />
+      <published>2021-09-20T00:00:00-04:00</published>
+      <updated>2021-09-20T00:00:00-04:00</updated>
+      <id>http://localhost:4000/Preptemer:%20Projects%20and%20Discussions</id>
+      <content type="html" xml:base="http://localhost:4000/Preptemer-Projects-and-Discussions">&lt;p&gt;We’re still talking maintainer power ups as we move into the last half of Preptember. We’ve talked about &lt;a href=&quot;https://dev.to/virtualcoffee/preptember-getting-ready-for-hacktoberfest-143j&quot;&gt;Getting Ready for Hacktoberfest&lt;/a&gt; and &lt;a href=&quot;https://dev.to/virtualcoffee/preptember-maintainer-powerups-4m1n&quot;&gt;maintainer guidelines, issues, and labels&lt;/a&gt;, and now we’re going to talk about some more ways to create clear paths of communication to enhance your open source project.&lt;/p&gt;
+
+&lt;p&gt;Since last year, we’ve seen GitHub make updates to discussions and project boards, and those are two of our favorite things. Not only do they support open source projects, but they also promote active communication between contributors and maintainers and we. are. here. for. that.&lt;/p&gt;
+
+&lt;h2 id=&quot;discussions&quot;&gt;Discussions&lt;/h2&gt;
+
+&lt;p&gt;This might not seem like a big deal, but having a step between a DM and an issue is huge for me. It’s kind of like dating. You’re not ready to make it “official” with an issue, but there’s some potential to talk through.&lt;/p&gt;
+
+&lt;p&gt;You can still provide discussions with labels and categories, but it doesn’t necessarily command the same consideration as an issue, which is implicitly a more “formal” relationship for consideration.&lt;/p&gt;
+
+&lt;p&gt;This allows for an intermediate space to discussion the potential, get feedback from other contributors and possibly maintainers.&lt;/p&gt;
+
+&lt;p&gt;A number of OSS projects use a chat app like slack or discord for discussing things, but that can be hard to follow, disorganized, or swallowed up by slack’s free plan or lost in fast-paced Discord discussions.&lt;/p&gt;
+
+&lt;p&gt;Here, maintainers can create labels that work for them, which allows for quicker time to identify, recognize, and prioritize discussions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/categories_img.png&quot; alt=&quot;categories&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Github discussions allow any possible contributor to watch the conversations on a public repo, understand the communication style, and to ask questions or provide feedback. You can also pin discussions that you want to highlight to potential contributors, add labels, and sort based on what you’re looking for.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/discussion_img.png&quot; alt=&quot;discussions&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Personally, I think discussions provide a safe space to hear ideas through and to think about their practicality.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-boards&quot;&gt;Project Boards&lt;/h2&gt;
+
+&lt;p&gt;I won’t lie here. Initially, I was &lt;em&gt;very&lt;/em&gt; resistant to multiple repositories with different project boards. I &lt;em&gt;may&lt;/em&gt; have even aggressively opposed them. But now, project boards are one of my favorite things. I would be lying if I said, I didn’t wish that everyone outside of tech learned on project boards as well.&lt;/p&gt;
+
+&lt;p&gt;Maybe it’s my ADHD, maybe it’s something else, but having tasks more clearly broken down into categories is incredibly useful for planning work, prioritizing communication and tasks, and for seeing overall progress towards and organization’s mission and vision.&lt;/p&gt;
+
+&lt;p&gt;And now there’s this awesome bonus where GitHub more closely resembles a Trello board.&lt;/p&gt;
+
+&lt;p&gt;We can assign users to tasks that make progress on an overall issue. And it’s much more readable than a repository full of issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/projects_img.png&quot; alt=&quot;projects&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the biggest challenges here—I think—is making sure that tasks are broken down in a way that’s useful to an organization. You can always revise or reorganize, but when you put deliberate time and effort into creating a dependable situation from the beginning, you’re more likely to have support from your contributors.&lt;/p&gt;
+
+&lt;p&gt;When it comes down to it, our contributors are all volunteers. And when we appreciate them, make space for them, and create processes and procedures that show we value their time and effort, we all benefit.&lt;/p&gt;
+
+&lt;p&gt;If you have a powerup that’s been really great for your project, let us know! Either drop it in the discussion or hit us up on &lt;a href=&quot;https://twitter.com/virtualcoffeeio&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Bekah Hawrot Weigel</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Open Source" />
+      
+
+      
+        <summary type="html">We’re still talking maintainer power ups as we move into the last half of Preptember. We’ve talked about Getting Ready for Hacktoberfest and maintainer guidelines, issues, and labels, and now we’re going to talk about some more ways to create clear paths of communication to enhance your open source project.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Preptember: Maintainer Powerups</title>
