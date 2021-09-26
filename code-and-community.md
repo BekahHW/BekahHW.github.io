@@ -37,11 +37,13 @@ title: Bekah Hawrot Weigel Coding & Community
           </ul>
      <h2 class="peach">Conferences</h2>
      <ul class="codingProjects">
-         <li> <a href="https://www.middevcon.com/speakers/bekah-weigel/">Mid-Atlantic Developers</a></li>
+         <li> <a href="https://www.middevcon.com/speakers/bekah-weigel/">Mid-Atlantic Developers</a>: The Coder's Journey: Community and Gatekeepers</li>
          <li>Cleveland React: End to End Testing in Cypress</li>
-         <li>Venture Cafe: From Trauma to Tech: a person-centered approach</li>
-       <li>The Joy of Dev Life: A Bob Ross Approach</li>
-        </ul>
+         <li><a href="https://www.kcdc.info/speakers">Kansas City Developer Conference</a></li>
+         <ul style="margin: 0px"><li>From Trauma to Tech: a person-centered approach</li>
+         <li>An Intro to Cypress: Testing your JavaScript</li></ul>
+       <li>The Joy of Dev Life: A Bob Ross Approach</li></ul>
+
 
     <h2 class="peach">Resource Repo</h2>
 
@@ -51,5 +53,10 @@ title: Bekah Hawrot Weigel Coding & Community
 
 
     </ul>
+    <h3>Livestream Appearances</h3>
+    <ul class="codingProjects">
+    <li>Virtual Coffee - <a href="https://www.youtube.com/watch?v=YA0To1gOwus&t=10s">An Intro to Hacktoberfest and Open Source</a></li>
+    <li>The Practical Dev - <a href="https://www.youtube.com/watch?v=WFp48oPBil0">Walkthrough Wednesday: Preptember with Virtual Coffee</a></li>
+    <li>Learn with Jason - <a href="https://www.learnwithjason.dev/let-s-learn-tensorflow-js">Let's Learn TensorFlow.js!</a></li></ul>
 
 </div>

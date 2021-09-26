@@ -7,6 +7,56 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Preptember: Projects and Discussions</title>
+        <description>&lt;p&gt;We’re still talking maintainer power ups as we move into the last half of Preptember. We’ve talked about &lt;a href=&quot;https://dev.to/virtualcoffee/preptember-getting-ready-for-hacktoberfest-143j&quot;&gt;Getting Ready for Hacktoberfest&lt;/a&gt; and &lt;a href=&quot;https://dev.to/virtualcoffee/preptember-maintainer-powerups-4m1n&quot;&gt;maintainer guidelines, issues, and labels&lt;/a&gt;, and now we’re going to talk about some more ways to create clear paths of communication to enhance your open source project.&lt;/p&gt;
+
+&lt;p&gt;Since last year, we’ve seen GitHub make updates to discussions and project boards, and those are two of our favorite things. Not only do they support open source projects, but they also promote active communication between contributors and maintainers and we. are. here. for. that.&lt;/p&gt;
+
+&lt;h2 id=&quot;discussions&quot;&gt;Discussions&lt;/h2&gt;
+
+&lt;p&gt;This might not seem like a big deal, but having a step between a DM and an issue is huge for me. It’s kind of like dating. You’re not ready to make it “official” with an issue, but there’s some potential to talk through.&lt;/p&gt;
+
+&lt;p&gt;You can still provide discussions with labels and categories, but it doesn’t necessarily command the same consideration as an issue, which is implicitly a more “formal” relationship for consideration.&lt;/p&gt;
+
+&lt;p&gt;This allows for an intermediate space to discussion the potential, get feedback from other contributors and possibly maintainers.&lt;/p&gt;
+
+&lt;p&gt;A number of OSS projects use a chat app like slack or discord for discussing things, but that can be hard to follow, disorganized, or swallowed up by slack’s free plan or lost in fast-paced Discord discussions.&lt;/p&gt;
+
+&lt;p&gt;Here, maintainers can create labels that work for them, which allows for quicker time to identify, recognize, and prioritize discussions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/categories_img.png&quot; alt=&quot;categories&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Github discussions allow any possible contributor to watch the conversations on a public repo, understand the communication style, and to ask questions or provide feedback. You can also pin discussions that you want to highlight to potential contributors, add labels, and sort based on what you’re looking for.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/discussion_img.png&quot; alt=&quot;discussions&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Personally, I think discussions provide a safe space to hear ideas through and to think about their practicality.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-boards&quot;&gt;Project Boards&lt;/h2&gt;
+
+&lt;p&gt;I won’t lie here. Initially, I was &lt;em&gt;very&lt;/em&gt; resistant to multiple repositories with different project boards. I &lt;em&gt;may&lt;/em&gt; have even aggressively opposed them. But now, project boards are one of my favorite things. I would be lying if I said, I didn’t wish that everyone outside of tech learned on project boards as well.&lt;/p&gt;
+
+&lt;p&gt;Maybe it’s my ADHD, maybe it’s something else, but having tasks more clearly broken down into categories is incredibly useful for planning work, prioritizing communication and tasks, and for seeing overall progress towards and organization’s mission and vision.&lt;/p&gt;
+
+&lt;p&gt;And now there’s this awesome bonus where GitHub more closely resembles a Trello board.&lt;/p&gt;
+
+&lt;p&gt;We can assign users to tasks that make progress on an overall issue. And it’s much more readable than a repository full of issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/projects_img.png&quot; alt=&quot;projects&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the biggest challenges here—I think—is making sure that tasks are broken down in a way that’s useful to an organization. You can always revise or reorganize, but when you put deliberate time and effort into creating a dependable situation from the beginning, you’re more likely to have support from your contributors.&lt;/p&gt;
+
+&lt;p&gt;When it comes down to it, our contributors are all volunteers. And when we appreciate them, make space for them, and create processes and procedures that show we value their time and effort, we all benefit.&lt;/p&gt;
+
+&lt;p&gt;If you have a powerup that’s been really great for your project, let us know! Either drop it in the discussion or hit us up on &lt;a href=&quot;https://twitter.com/virtualcoffeeio&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Sep 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Preptemer-Projects-and-Discussions</link>
+        <guid isPermaLink="true">http://localhost:4000/Preptemer-Projects-and-Discussions</guid>
+        
+      </item>
+    
+      <item>
         <title>Preptember: Maintainer Powerups</title>
         <description>&lt;p&gt;When we talk about open source repositories, there can be a lot of moving pieces, especially for maintainers. We’re juggling new issues, duplicate issues, discussions, pull requests, and many of us are volunteers. Although there will always be new challenges, between some simple things maintainers can do to make their repositories more contributor-friendly, and some tools that GitHub provides to help maintainers, we can reduce barriers to entry and reduce friction as we continue open-source projects. Here’s a list to help get you started.&lt;/p&gt;
 
@@ -622,134 +672,6 @@ I was still having a hard time imagining how I fit into their world. They seem l
         <pubDate>Tue, 20 Apr 2021 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/Coding-is-Pattern-Matching</link>
         <guid isPermaLink="true">http://localhost:4000/Coding-is-Pattern-Matching</guid>
-        
-      </item>
-    
-      <item>
-        <title>One Year of Community: The Three Ls of an Accidental Community Creator</title>
-        <description>&lt;p&gt;It started with a tweet.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Anyone interested in talking job search over virtual coffee tomorrow morning?&lt;/p&gt;&amp;mdash; Bekah Hawrot Weigel (@BekahHW) &lt;a href=&quot;https://twitter.com/BekahHW/status/1245829083025428481?ref_src=twsrc%5Etfw&quot;&gt;April 2, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;And a year later, we’re &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;here&lt;/a&gt;. We’re here with a community I couldn’t have dreamt up. We’re here talking about the future. Thinking about the next time we do a Hacktoberfest event, the third time we run &lt;a href=&quot;youtube.com/watch?v=UQl8q09BpiA&amp;amp;list=PLh9uT23TA65infGqUUaVibI0IssI0G6NY&quot;&gt;lightning talks&lt;/a&gt;, about the next set of &lt;a href=&quot;https://virtualcoffee.io/podcast/&quot;&gt;podcast episodes&lt;/a&gt; we record, about the amazing things our members are doing, about collaborations.&lt;/p&gt;
-
-&lt;p&gt;Virtual Coffee is a lot of different things, to a lot of different people, but, as it says on our &lt;a href=&quot;https://virtualcoffee.io/about/&quot;&gt;About page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Virtual Coffee is, and always will be, a genuine community of people who value and prioritize supporting one another. We know that growth comes at all levels and that no matter what stage of the developer journey you’re on, you can teach and learn.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I have lived through a lot of growth in the last year, because accidentally starting a community during a pandemic can force that on you. I learned a lot about myself, and a lot about community, and I’m sharing this because a lot of that time was incredibly fulfilling and a lot of that time was lonely; and I’ve had a hard time finding people who are talking about the three Ls: learning, loneliness, and loveliness.&lt;/p&gt;
-
-&lt;h2 id=&quot;learning&quot;&gt;Learning&lt;/h2&gt;
-&lt;h3 id=&quot;what-ive-learned&quot;&gt;What I’ve learned&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;I’ve learned that sometimes it is a joy to give and share with people.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That trusting the people you’re collaborating with is so important.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That you should be able to argue and disagree with the people you trust.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That I am energized by other people’s energy.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That sometimes things will work out like you anticipate and other times they most definitely do &lt;em&gt;not&lt;/em&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That a supported community will form their own subcommunities within your group and be amazing while doing it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That sometimes the members you think are confident are silently struggling.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That sometimes you have to trust your gut feeling. You know it’s not right, but you can’t explain why. And for me, most times my gut has been right.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That the best education you can get will happen when you reach out and ask for it.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I am either intensely shy or I go for it. Usually, the go-for-it-Bekah comes when I find value in what I’m doing; when I’m working with other people. But it especially comes when I see other people’s needs that aren’t being met. And if “cold DMing” other founders, devs, community managers can help me support my community, my friends, then I do it without thinking or worrying.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;That so many people will tell you that what you’re doing isn’t possible.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;Tangent time: In 7th grade I ran track. I wanted to run the hurdles. I could clear them fine with no training, and had the second fastest time on my team. When I asked the coach if I could run them, he told me no. “You’re too short.” That’s the moment in my life where I realized that when people told me I couldn’t, it became an instant challenge. I can be an early career developer. I can create community. I can find a way to keep us intimate and small and grow at the same time. I can do the things that I never thought I could. Four years ago, I never would’ve expected that I would be this person. I never would’ve guessed I’d even be a developer. I don’t believe in the impossible. I embrace it as a challenge.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;what-im-still-learning&quot;&gt;What I’m Still Learning&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;That a &lt;em&gt;yes&lt;/em&gt; can be a no to a hundred other things.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That sometimes honesty hurts, but the people around you deserve honesty.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That I don’t need to be an expert.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That asking for help is normal.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That sometimes your gut feeling will be wrong, and that’s ok. You learn from that experience and take it with you to the next. Sometimes it’s messy. Sometimes it puts you behind where you expect to be, but it puts you ahead for the next time it happens.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;loneliness&quot;&gt;loneliness&lt;/h2&gt;
-&lt;h3 id=&quot;on-getting-through-the-hard-times&quot;&gt;On Getting Through the Hard Times&lt;/h3&gt;
-
-&lt;p&gt;When you accidentally start a community, you accidentally become the leader, and then you give your time and sometimes your money to make sure the community keeps going.&lt;/p&gt;
-
-&lt;p&gt;And suddenly you find that you’ve been giving every ounce of yourself, and you’re tired. And you want to scream out for help, but it’s hard. You don’t want to let anyone down. You don’t want anyone to know that you’ve thought that other people would do a better job and that you should hand it over to those other people and walk away for the betterment of the community.&lt;/p&gt;
-
-&lt;p&gt;And at some point, you start to feel like you’re not part of the community.&lt;/p&gt;
-
-&lt;p&gt;And if you’re not supported, this leads straight to burnout. (And super shoutout to Dan and Kirk, who have brought me back more than once from that point.)&lt;/p&gt;
-
-&lt;p&gt;It is a lonely space to feel like you have no one to talk to. To feel like the decisions you’ve made were not the right ones, and you don’t know how to recover from that. To hear from people you respect, that you can’t do what you’re trying to do.&lt;/p&gt;
-
-&lt;p&gt;But here’s the thing, I hit a breaking point–well, probably a couple of times. But what allowed me to push through those times was knowing who supported me. And, for me, that happened when I was silently struggling, and my friends could read it on my face and came to help. I’m working at getting better at verbalizing this. But their support saved me, saved the community, and made beautiful experiences.&lt;/p&gt;
-
-&lt;p&gt;I’ve hit &lt;em&gt;a lot&lt;/em&gt; of personal life challenges in the last year. But I’ve known who I should message first in those situations, who had my back, who would carry me when I was down, who would support the community. And that’s psychological safety, but it’s also friendship. And knowing that &lt;em&gt;people&lt;/em&gt; are there for the community is so important to me in those times.&lt;/p&gt;
-
-&lt;h2 id=&quot;loveliness&quot;&gt;loveliness&lt;/h2&gt;
-
-&lt;p&gt;I’ve never been good with friendships. I’m shy. I’m an introvert–or maybe an ambivert, but that’s tbd. My ADHD dx in the last year has played a huge role in understanding this as well.&lt;/p&gt;
-
-&lt;p&gt;I’ve never felt so at home with a group of people.&lt;/p&gt;
-
-&lt;p&gt;Seeing their kindness, their excitement, their growth. Seeing their willingness to help each other and to be helped. To share and be vulnerable. To cheer each other on.&lt;/p&gt;
-
-&lt;p&gt;It’s special. There’s authenticity. No bravado. And I can’t tell you how many times I’ve had a DM or been a part of a thread, that’s given me what I needed to get me through a hard time. Or when members have shown up, because they are my friends–most of whom I have yet to meet.&lt;/p&gt;
-
-&lt;p&gt;And that’s it. Do your community leaders care about the community? Because it’s easy to spot many of the people who are &lt;em&gt;playing&lt;/em&gt; the role. Authenticity matters.&lt;/p&gt;
-
-&lt;p&gt;Last week three things happened that further solidified that this is one of my favorite places.&lt;/p&gt;
-
-&lt;p&gt;The first was a thread in the #neurodiverse channel. What started out as an ADHD discussion, went into a true and beautiful ADHD thread that was clever, random, and hilarious, and brought the energy I love about my neurodiversity and the community I’ve found through Virtual Coffee.&lt;/p&gt;
-
-&lt;p&gt;The second was when I realized that I’ve been doing Virtual Coffee for a year straight, and haven’t had a week off for a year. I messaged Dan–who is an Organization Maintainer with me–to ask if he thought it would be ok for me to take a week off. And I got nothing but support.&lt;/p&gt;
-
-&lt;p&gt;Taking time off is not an easy thing for me to do, but when we interviewed &lt;a href=&quot;https://twitter.com/tomcudd&quot;&gt;Tom Cudd&lt;/a&gt; for the Virtual Coffee podcast, he talked about how he set the example for his team with his work habits. And it was validation. Because I’ll tell members to practice self-care and to refuse to work more than 40 hours a week, but the truth is, I’m bad at setting that boundary for myself.&lt;/p&gt;
-
-&lt;p&gt;Virtual Coffee isn’t a job, and I haven’t made any money doing it, but I spend a lot of my time developing the community, meeting with people who can help me understand how to support our members, developing events and processes and docs and topics that encourage growth and mentorship at all stages.&lt;/p&gt;
-
-&lt;p&gt;And so I’m going to do it. I’m going to take a week off this month. And it will be hard, but I’ve already got ideas for what I’m going to do. (One will involve heavy weights.) But honestly, it’s important. I love this community with my whole heart, and they’ve seen my tears more than a handful of times because I give them the fullness of myself. But I also need to allow myself a time to focus on my personal growth as well.&lt;/p&gt;
-
-&lt;p&gt;I could spend hours talking about what I’ve learned in the last year, but I am very thankful that I’ve done it with Virtual Coffee. I am thankful for the DMs I get encouraging me. I am thankful for the kindness that everyone shares. I am thankful for the support of my fellow maintainers. I am thankful for the community members who support each other. I am thankful for those around me who realize that I’m struggling, but I don’t know how to verbalize it. And I am thankful for the subtle moments of acceptance. Because those have been the ones that’ve powered me through this intensely challenging year.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 03 Apr 2021 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/One-Year-of-Virtual-Coffee-lessons-from-an-accidental-community-creator</link>
-        <guid isPermaLink="true">http://localhost:4000/One-Year-of-Virtual-Coffee-lessons-from-an-accidental-community-creator</guid>
         
       </item>
     
