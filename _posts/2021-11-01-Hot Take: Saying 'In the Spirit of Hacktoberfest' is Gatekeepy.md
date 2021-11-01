@@ -16,13 +16,13 @@ So here's the thing, I get that some people try to grab the easiest PRs to get t
 
 Who defined the spirit of Hacktoberfest? Well, it is Digital Ocean's Event, so let's take a look at what they say:
 
-> Hacktoberfest, in its 8th year, is a month-long celebration of open source software run by DigitalOcean. During the month of October, we invite you to join open-source software enthusiasts, beginners, and the developer community by contributing to open-source projects. You can do this in a variety of ways:
+<em>Hacktoberfest, in its 8th year, is a month-long celebration of open source software run by DigitalOcean. During the month of October, we invite you to join open-source software enthusiasts, beginners, and the developer community by contributing to open-source projects. You can do this in a variety of ways:
 
-> - Prepare and share your project for collaboration
-> - Contribute to the betterment of a project via pull requests
-> - Organize an event
-> - Mentor others
-> - Donate directly to open source projects
+- Prepare and share your project for collaboration
+- Contribute to the betterment of a project via pull requests
+- Organize an event
+- Mentor others
+- Donate directly to open source projects</em>
 
 They also have their [quality standards](https://hacktoberfest.digitalocean.com/resources/qualitystandards) for more developed guidelines. And maybe this is the one that captures what many mean about the spirit of Hacktoberfest:
 
