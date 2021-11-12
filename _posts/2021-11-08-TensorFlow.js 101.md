@@ -2,7 +2,7 @@
 layout: post
 title: "TensorFlow.js 101"
 date: 2021-11-06
-tags: []
+tags: [TFJS]
 author: Bekah
 ---
 
