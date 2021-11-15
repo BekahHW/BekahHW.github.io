@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "You're Toxic: Using the Toxicity Model with TensorFlow.js"
-date: 2021-09-20
+date: 2021-11-15
 tags: [TFJS]
 author: Bekah
 ---
