@@ -56,7 +56,7 @@ You'll notice that the only thing we'll see is the message to check the console.
 
 Next, you're going to create a `src` folder, and within that folder, add `index.js`. This is where the magic will happen.
 
-First, we wat to set the threshold. If we don't set it, the default is 0.85. For this excercise, let's say that anything 0.5 and above is positive.
+First, we want to set the threshold. If we don't set it, the default is 0.85. For this exercise, let's say that anything 0.5 and above is positive.
 
 `const threshold = 0.5`
 
