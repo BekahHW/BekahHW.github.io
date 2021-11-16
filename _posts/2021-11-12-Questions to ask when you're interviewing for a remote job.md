@@ -10,7 +10,7 @@ It's been a while since I interviewed for a job, but I've had a bunch of convers
 
 1. Would you consider yourself an async first team?
 
-There's a difference between remote and async, but what is it? Remote means you're not in the same space together, but it doesn't mean there aren't expectations that mimic being in the physical space. Some companies try to replicate the in-person experience by having clear work hours, daily meetings, and even virtual spaces for water cooler chat. Other companies embrace a flexible schedule, focus on async check-ins as opposed to meetings, have clear documentation and workflows, and don't lean into immediate responses to communication efforts. Maybe add on to this question with: How do you feel about the concept 'this meaning should have been an email"?
+There's a difference between remote and async, but what is it? Remote means you're not in the same space together, but it doesn't mean there aren't expectations that mimic being in the physical space. Some companies try to replicate the in-person experience by having clear work hours, daily meetings, and even virtual spaces for water cooler chat. Other companies embrace a flexible schedule, focus on async check-ins as opposed to meetings, have clear documentation and workflows, and don't lean into immediate responses to communication efforts. Maybe add on to this question with: How do you feel about the concept 'this meeting should have been an email"?
 
 2. What tools do you use for communication and project management?
 
