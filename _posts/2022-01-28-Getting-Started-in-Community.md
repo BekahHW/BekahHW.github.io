@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Getting Started in Community"
+title: "So You Want to Get Started in Community?"
 date: 2022-01-28
 ---
-
-So You Want to Get Started in Community?
 
 I’ve seen a lot of tweets recently and been a part of a number of conversations with people in tech who are interested in joining a DevRel team or applying for a community position, but don’t know how to get the experience to do that. I’ve thought a lot about that, and I have some tips for getting experience that you can represent on a resume. I’ll be focusing specifically on community in this post, but feel free to drop some tips for DevRel experience in the comments.
 
