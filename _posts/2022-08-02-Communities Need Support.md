@@ -1,9 +1,9 @@
-
 ---
 layout: post
 title: "Communities Need Support"
 date: 2022-08-02
 ---
+
 
 I've been spending a lot of time engaging with different types of communities, taking to community builders, learning more about community building, and organically growing a couple of communities. And one of the takeaways I have from these experiences is that communities don’t scale if they only has one person supporting it. So what do communities need to grow?
   
