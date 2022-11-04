@@ -4,7 +4,7 @@ title: "This Week in DevRel: Life Moves Fast"
 date: 2022-11-04
 ---
 
-Well, my this week in DevRel series has turned into this “couple of months” in DevRel. In the words of Ferris Bueller, “'Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.” And I feel like a lot of the last two months, I’ve been moving fast and not taking the time to look around. I’m working on it. This post is more of a highlight reel and a reflection on how I plan on building time into looking around more than once in a while.
+Well, my "This Week in DevRel" series has turned into this “couple of months” in DevRel. In the words of Ferris Bueller, “Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.” And I feel like a lot of the last two months, I’ve been moving fast and not taking the time to look around. I’m working on it. This post is more of a highlight reel; I plan on writing a reflection on how I plan on building time into looking around more than once in a while later in the month.
 
 ## Highlights
 ### Conferences
@@ -20,7 +20,7 @@ I did THREE in October! I did some TypeScript on Virtual Coffee’s [TypeScript 
 
 ### Blogging
 Unfortunately, I haven’t been able to have the cadence I want with blogging, but I did get a couple of posts in, including this one on [Open Source Projects for Hacktoberfest]
-(https://dev.to/deepgram/open-source-projects-for-hacktoberfest-2022-4cia), yesterday’s [post on imposter syndrome](https://t.co/rkob8LcmsO)  and this new one on [5 Reasons to Contribute to Open Source Projects]( ). The good news is, our monthly challenge for Virtual Coffee is [Let’s Write 100k words together!](https://virtualcoffee.io/monthlychallenges/nov-2022), so you’ll be reading a lot more from me this month. 
+(https://dev.to/deepgram/open-source-projects-for-hacktoberfest-2022-4cia), yesterday’s [post on imposter syndrome](https://t.co/rkob8LcmsO)  and a new one on 5 Reasons to Contribute to Open Source Projects that will be up soon. The good news is, our monthly challenge for Virtual Coffee is [Let’s Write 100k words together!](https://virtualcoffee.io/monthlychallenges/nov-2022), so you’ll be reading a lot more from me this month. 
 
 ### Hackathon
 We ran a hackathon internally with the Learn Build Teach Community. We provided support, ran a couple of workshops, and are in the judging stages. This is the first time we ran an internal community hackathon, so this was a real learning experience. As part of the post-hackathon experience, we’re doing evaluation of what worked and what didn’t, and what our strategy will be going forward.
