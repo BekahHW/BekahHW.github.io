@@ -12,7 +12,7 @@ I go through phases of information consumption. At the beginning of the pandemic
 Community is the opposite of isolation; there's a need for community now more than ever as there's an increasing report of lonliness. This book describes seven principles of community. Among the key takeaways are creating boundaries to preserve your community, finding ways to onboard new members, creating unique rituals for belonging, connection through storytelling, community structure and organization, and defining what makes your community special and allowing for unique growth within your community. 
 
 
-#### [The Business of Belonging](https://www.goodreads.com/book/show/55180348-the-business-of-belonging) by David Spinks
+### [The Business of Belonging](https://www.goodreads.com/book/show/55180348-the-business-of-belonging) by David Spinks
 Focusing on brands and brand communities, Spinks dives into strategy, higher-order thinking, and measuring the activities that inform business decisions. As Spinks writes about community, he defines it in terms of the potential it has for the business, from evangelists to employees. What's important to remember when we talk about communities and business is that authenticity has to be at the center of it all. 
 
 
