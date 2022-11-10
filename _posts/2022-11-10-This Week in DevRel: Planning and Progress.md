@@ -7,13 +7,13 @@ date: 2022-11-10
 
 Some weeks, you’ll have a lot of tangible checkmarks on your to-do list. Other weeks, it feels like you haven’t done anything. Still, in reality, you’ve spent a lot of time planning for things in the future, thinking deliberately--rather than just reacting--about the people in your community, their needs, and how you can support them as the community builder for your own community. This is one of those weeks for me.
 
-##Blogging
+## Blogging
 I still got my blog posts in. We’re announcing the winners of the Deepgram + Learn Build Teach Hackathon, and I added to my Reading List series with a post on [Community Builders Resources](https://dev.to/bekahhw/reading-list-the-community-builder-edition-3d2h).
 
-##Live Events
-I went for two this week, with a Twitter Space with Julia Seidman, “Developer Growth: Writing to Learn” and a livestream working through adding Cypress to a React Application for a blog post that will come out later this month. I’ve been working on building a practice of creating content and repurposing it. And that’s been on my mind this week as I did these live events. I may write a post with the takeaways of the Twitter Space, but for now, you can see [my notes] (https://twitter.com/DeepgramAI/status/1590402513488203777?s=20&t=oiC2XyLeYyHboxBvGDo7yA ) in the Twitter thread from the space. (If you’ve seen any cool ways to reuse Twitter Space content, I’d love to know!)
+## Live Events
+I went for two this week, with a Twitter Space with Julia Seidman, “Developer Growth: Writing to Learn” and a livestream working through adding Cypress to a React Application for a blog post that will come out later this month. I’ve been working on building a practice of creating content and repurposing it. And that’s been on my mind this week as I did these live events. I may write a post with the takeaways of the Twitter Space, but for now, you can see [my notes](https://twitter.com/DeepgramAI/status/1590402513488203777?s=20&t=oiC2XyLeYyHboxBvGDo7yA ) in the Twitter thread from the space. (If you’ve seen any cool ways to reuse Twitter Space content, I’d love to know!)
 
-##Processes and Planning
+## Processes and Planning
 Over the last couple of years, I've talked about a content creation lifecyle. Here’s what I mean by that:
 
 Say you want to publish a tutorial. The end goal of the content creation lifecycle would be to end up with a video, written tutorial, code snippets, Twitter thread and maybe a Space, live demo, and a short-form video. The video might be a livestream of you implementing what you’ll be writing about for the tutorial--but it’s something you can definitely link to. From that video, you can clip for your short-form video (YouTube, Instagram Reels, tiktok, etc.). You can even transcribe the video to help write the blog post and the Twitter Thread. Finally, that code gets put into stackblitz or codepen so users can test it out live. 
@@ -33,4 +33,4 @@ I’m going to try to commit to one morning or afternoon a week outside of the h
 
 Another part of the planning process I worked on this week was community campaigns. It might seem like creating simple discussion posts doesn’t require that much time, but if you want to weave a story of information, listen to what the community wants and needs, and create plans to act on those wants and needs, you have to research and create space for meaningful conversations with consistency. A lot of times that means building out posts ahead of time and implementing them when the situation is right. 
 
-As I build out these processes and think more holistically about all the things that I’m creating, I want to find a way to make this a smooth and repeatable process. It’s not something I’ve thought deeply about, but I hope that as I build in time to think through these things, I’ll be able to share more about that here. And that we can maybe even have a conversation about it :wink:
+As I build out these processes and think more holistically about all the things that I’m creating, I want to find a way to make this a smooth and repeatable process. It’s not something I’ve thought deeply about, but I hope that as I build in time to think through these things, I’ll be able to share more about that here. And that we can maybe even have a conversation about it.
