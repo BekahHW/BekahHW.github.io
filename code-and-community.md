@@ -59,4 +59,3 @@ title: Bekah Hawrot Weigel Coding & Community
     <li>The Practical Dev - <a href="https://www.youtube.com/watch?v=WFp48oPBil0">Walkthrough Wednesday: Preptember with Virtual Coffee</a></li>
     <li>Learn with Jason - <a href="https://www.learnwithjason.dev/let-s-learn-tensorflow-js">Let's Learn TensorFlow.js!</a></li></ul>
 
-</div>
