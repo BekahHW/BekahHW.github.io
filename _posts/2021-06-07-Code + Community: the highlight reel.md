@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Code + Community: the highlight reel"
-tags: [Community]
+tags: Community
 featured_image: https://source.unsplash.com/R7PARg0vpAU/1920x1280
 author: Bekah
 ---
