@@ -37,7 +37,7 @@ title: Bekah Hawrot Weigel Coding & Community
           </ul>
      <h2 class="peach">Conferences</h2>
      <ul class="codingProjects">
-     <li><strong>Keynote Talk</strong><a href="https://www.youtube.com/live/Dcz0dOQmcaE?feature=share">The Power of Storytelling</a></li>
+     <li><strong>Keynote Talk: </strong><a href="https://www.youtube.com/live/Dcz0dOQmcaE?feature=share">The Power of Storytelling</a></li>
          <li> <a href="https://www.middevcon.com/speakers/bekah-weigel/">Mid-Atlantic Developers</a>: The Coder's Journey: Community and Gatekeepers</li>
          <li>From Trauma to Tech: a person-centered approach</li>
          <li><a href="https://www.youtube.com/live/WhqURueG6Ao?feature=share">Mission Impossible Prep: Testing with Cypress</a></li>
