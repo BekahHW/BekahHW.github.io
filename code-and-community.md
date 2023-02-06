@@ -12,7 +12,7 @@ title: Bekah Hawrot Weigel Coding & Community
           <h1>Community Building</h1>
 <h2><a href="https://virtualcoffee.io/">Virtual Coffee</a></h2>
 <h3>Creator and Maintainer</h3>
-<p>(Accidentally) created the tech community Virtual Coffee in April of 2020, and initiated the vision that supports 300+ developers at all levels with weekly events, slack, monthly challenges, a newsletter, podcast, and larger initiatives.</p>
+<p>I (accidentally) created the tech community <a href="https://virtualcoffee.io/">Virtual Coffee</a> in April of 2020, and initiated the vision that supports 700+ developers at all levels with weekly events, slack, monthly challenges, a newsletter, podcast, and larger initiatives.</p>
           
           <h2>Podcasts</h2>
 <h3><a href="https://virtualcoffee.io/podcast/">The Virtual Coffee Podcast</a></h3>
@@ -37,23 +37,23 @@ title: Bekah Hawrot Weigel Coding & Community
           </ul>
      <h2 class="peach">Conferences</h2>
      <ul class="codingProjects">
+     <li><strong>Keynote Talk</strong><a href="https://www.youtube.com/live/Dcz0dOQmcaE?feature=share">The Power of Storytelling</a></li>
          <li> <a href="https://www.middevcon.com/speakers/bekah-weigel/">Mid-Atlantic Developers</a>: The Coder's Journey: Community and Gatekeepers</li>
-         <li>Cleveland React: End to End Testing in Cypress</li>
-         <li><a href="https://www.kcdc.info/speakers">Kansas City Developer Conference</a></li>
-         <ul style="margin: 0px"><li>From Trauma to Tech: a person-centered approach</li>
-         <li>An Intro to Cypress: Testing your JavaScript</li></ul>
-       <li>The Joy of Dev Life: A Bob Ross Approach</li></ul>
+         <li>From Trauma to Tech: a person-centered approach</li>
+         <li><a href="https://www.youtube.com/live/WhqURueG6Ao?feature=share">Mission Impossible Prep: Testing with Cypress</a></li>
+       <li>The Joy of Dev Life: A Bob Ross Approach</li>
+       <li><a href="https://yougotthis.io/library/how-to-apologize/">How to Apologize</a></ul>
 
 
-    <h2 class="peach">Resource Repo</h2>
-
-    <ul class="codingProjects">
-      <li><a href="https://github.com/BekahHW/Moms-Learn-Tech">Moms Learn Tech Repo</a> - resources to help moms at all stages
-        of their tech learning journey.</li>
-
-
+    <h2 class="peach">Selected YouTube Videos</h2>
+    <ul>
+<li><a href="https://youtu.be/sU7-SfukPT8">Audience v. Community</a></li>
+<li><a href="https://youtu.be/K4vFE12QDxA">How to get started in Community</a></li>
+<li><a href="https://youtu.be/Ce6Bm2O7D58">Four Ways to Give Good Feedback</a></li>
+<li><a href="https://youtu.be/i-94sdTLqNA"> Open Source: 5 reasons to Contribute</a></li>
     </ul>
-    <h3>Livestream Appearances</h3>
+
+    <h3>Selected Livestream Appearances</h3>
     <ul class="codingProjects">
     <li>Virtual Coffee - <a href="https://www.youtube.com/watch?v=YA0To1gOwus&t=10s">An Intro to Hacktoberfest and Open Source</a></li>
     <li>The Practical Dev - <a href="https://www.youtube.com/watch?v=WFp48oPBil0">Walkthrough Wednesday: Preptember with Virtual Coffee</a></li>
