@@ -1,0 +1,2 @@
+I"Ç<p>So weâ€™ve learned about <a href="https://dev.to/bekahhw/hello-tensor-52ed">what a tensor is</a>, and we know a little bit about <a href="https://dev.to/bekahhw/youre-toxic-using-the-toxicity-model-with-tensorflowjs-5h27">what you can do with them</a>, but why the heck would we want to turn an image into a tensor? Well, if we want to use them with TensorFlow.js or for Deep Learning, then we change them to tensors to put them in a useable form.</p>
+:ET

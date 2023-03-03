@@ -5,10 +5,10 @@ layout: null
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator>
-  <link href="http://localhost:4000/author/Bekah/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-11-01T10:25:38-04:00</updated>
-  <id>http://localhost:4000/author/Bekah/feed.xml</id>
+  <link href="/author/Bekah/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="/" rel="alternate" type="text/html" />
+  <updated>2023-03-03T15:23:24-05:00</updated>
+  <id>/author/Bekah/feed.xml</id>
 
   
   
@@ -35,52 +35,165 @@ layout: null
 
   
     <entry>
-      <title type="html">Hot Take: Saying ‘In the Spirit of Hacktoberfest’ is Gatekeepy</title>
-      <link href="http://localhost:4000/Hot-Take-Saying-'In-the-Spirit-of-Hacktoberfest'-is-Gatekeepy" rel="alternate" type="text/html" title="Hot Take: Saying 'In the Spirit of Hacktoberfest' is Gatekeepy" />
-      <published>2021-11-01T00:00:00-04:00</published>
-      <updated>2021-11-01T00:00:00-04:00</updated>
-      <id>http://localhost:4000/Hot%20Take:%20Saying%20'In%20the%20Spirit%20of%20Hacktoberfest'%20is%20Gatekeepy</id>
-      <content type="html" xml:base="http://localhost:4000/Hot-Take-Saying-'In-the-Spirit-of-Hacktoberfest'-is-Gatekeepy">&lt;p&gt;The phrase “in the spirit of Hacktoberfest” is thrown around a lot during the month of Hacktober. It’s always rubbed me the wrong way, but I couldn’t pinpoint why. Then, when I was having a conversation with a friend, we talked about it. And what I discovered that &lt;em&gt;really&lt;/em&gt; bothered me about it, is that it’s a form of gatekeeping.&lt;/p&gt;
+      <title type="html">How to Create a Positive Community for Your Open Source Project</title>
+      <link href="/Building-a-Supportive-Open-Source-Community" rel="alternate" type="text/html" title="How to Create a Positive Community for Your Open Source Project" />
+      <published>2023-03-02T00:00:00-05:00</published>
+      <updated>2023-03-02T00:00:00-05:00</updated>
+      <id>/Building%20a%20Supportive%20Open%20Source%20Community</id>
+      <content type="html" xml:base="/Building-a-Supportive-Open-Source-Community">&lt;p&gt;Over the last couple of years, I’ve spent time maintaining open source projects and an open source community. In the projects I’ve maintained and worked on, creating a positive and safe space for community members is a priority-and one that I appreciate. The people who contribute and interact with your OSS can be the backbone of your project, and cultivating a welcoming space for them is incredibly important to the health and growth of your project and users. Here are some tips to make your open source project friendly to contributors.&lt;/p&gt;
 
-&lt;p&gt;When I’ve heard people talk about the spirit of Hacktoberfest, they’ve said it in the context of things like correcting typos or making small word changes aren’t &lt;em&gt;real&lt;/em&gt; contributions that should be counted.&lt;/p&gt;
+&lt;h2 id=&quot;create-a-solid-org-level-readme&quot;&gt;Create a Solid Org-level README&lt;/h2&gt;
+&lt;p&gt;Creating a solid README for your organization is kind of like the prologue in a novel. In your README, you can tell the story of your project(s) and provide context to people who are interested in being a part of the community. Your README can explain who you are, what your mission is, and how people can contribute and become a part of your community. This is your chance to onboard new community members and make them feel welcomed.&lt;/p&gt;
 
-&lt;p&gt;Now here’s that word that gets tossed around. &lt;em&gt;Real&lt;/em&gt;. When we use the word “real” to describe something like a pull request (PR), we’re implicitly saying that some contributions don’t deserve the “status” of other PRs. And when we do that, when we minimize contributions, we create a separation. We go down the same path that determines who the “real developers” are. And that’s not a tech space I want to be around.&lt;/p&gt;
+&lt;h2 id=&quot;onboard-new-contributors-with-individual-repo-readmes&quot;&gt;Onboard New Contributors with Individual Repo READMEs&lt;/h2&gt;
+&lt;p&gt;Onboarding new contributors-and doing it well-is important to your project’s success. To do this effectively, you should create a README for each individual repository. This is where you explain what the repository is all about, the technology being used, and how people can contribute. You should also provide clear guidelines for contributors of all levels, from first-time contributors to seasoned open-sourcerors. Be transparent about your level of support for new contributors, and make it clear how much support you’re able to give.&lt;/p&gt;
 
-&lt;p&gt;So here’s the thing, I get that some people try to grab the easiest PRs to get the t-shirt. I get that some people take beginner issues when they aren’t beginners. And it’s not acceptable to find ways to get in your PRs faster than everyone else, at the expense of other developers–especially beginners to OSS–&lt;em&gt;but&lt;/em&gt; words matter, intent matters, impact matters.&lt;/p&gt;
+&lt;h2 id=&quot;communication-is-key&quot;&gt;Communication is Key&lt;/h2&gt;
+&lt;p&gt;Clear communication is incredibly important when it comes to creating a positive experience for contributors. You should have clear paths of communication with your community members, and make sure that everyone is aware of how to get in touch with you. A couple of ways to do this include creating a contributing guide that details the process of contributing. For example, you might ask before someone raises a new issue, they start with a discussion post. If it’s determined to be a priority, the maintainers might convert it to an issue.&lt;/p&gt;
 
-&lt;p&gt;Who defined the spirit of Hacktoberfest? Well, it is Digital Ocean’s Event, so let’s take a look at what they say:&lt;/p&gt;
+&lt;p&gt;Another way to support positive communication includes adding issue templates to help guide contributors. You can also add Pull Request templates to make it easier for you-as a maintainer-to understand what work has been done on the repo.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Hacktoberfest, in its 8th year, is a month-long celebration of open source software run by DigitalOcean. During the month of October, we invite you to join open-source software enthusiasts, beginners, and the developer community by contributing to open-source projects. You can do this in a variety of ways:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In addition, it’s essential to have a clear code of conduct (COC). This creates a safe space for all of your community members to feel supported and empowered to grow. There are lots of templates available for creating a code of conduct, so you can browse through a variety of different ones to determine what works for your community. One note-if you’re using language or taking inspiration from another organization’s COC, you should provide some attribution in yours.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Prepare and share your project for collaboration&lt;/li&gt;
-  &lt;li&gt;Contribute to the betterment of a project via pull requests&lt;/li&gt;
-  &lt;li&gt;Organize an event&lt;/li&gt;
-  &lt;li&gt;Mentor others&lt;/li&gt;
-  &lt;li&gt;Donate directly to open source projects&amp;lt;/em&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;If you want to learn more about this, you can check out my YouTube Video &lt;a href=&quot;https://youtu.be/scE3jVz35oI&quot;&gt;Creating a Welcoming OSS Community&lt;/a&gt; or hit me up with any quesitons you have.&lt;/p&gt;</content>
 
-&lt;p&gt;They also have their &lt;a href=&quot;https://hacktoberfest.digitalocean.com/resources/qualitystandards&quot;&gt;quality standards&lt;/a&gt; for more developed guidelines. And maybe this is the one that captures what many mean about the spirit of Hacktoberfest:&lt;/p&gt;
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Bekah Hawrot Weigel</name>
+        
+        
+      </author>
+
+      
+
+      
+
+      
+        <summary type="html">Over the last couple of years, I’ve spent time maintaining open source projects and an open source community. In the projects I’ve maintained and worked on, creating a positive and safe space for community members is a priority-and one that I appreciate. The people who contribute and interact with your OSS can be the backbone of your project, and cultivating a welcoming space for them is incredibly important to the health and growth of your project and users. Here are some tips to make your open source project friendly to contributors.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">A Year in DevRel</title>
+      <link href="/A-Year-in-DevRel" rel="alternate" type="text/html" title="A Year in DevRel" />
+      <published>2023-01-23T00:00:00-05:00</published>
+      <updated>2023-01-23T00:00:00-05:00</updated>
+      <id>/A%20Year%20in%20DevRel</id>
+      <content type="html" xml:base="/A-Year-in-DevRel">&lt;p&gt;A year ago today, I started my first job in DevRel. Before I started, I was chatting with the CEO of a consultancy, and one of the things he told me was to document publicly the work I was doing in DevRel to be transparent and have a clear record of the things I was working on. That advice has proven to be really useful over the last year, and it was one of the reasons I started the &lt;a href=&quot;https://dev.to/bekahhw/series/19583&quot;&gt;Technical Community Building Series&lt;/a&gt; on Dev. It’s also helped me to think through the things I’ve learned over the last year, including the challenges I’ve faced, the successes and failures I’ve had, and my takeaways for the next year.&lt;/p&gt;
+
+&lt;h2 id=&quot;challenges&quot;&gt;Challenges&lt;/h2&gt;
+&lt;h3 id=&quot;metrics&quot;&gt;Metrics.&lt;/h3&gt;
+&lt;p&gt;Although I had been doing DevRel-y things the past couple of years, I hadn’t been doing the DevRel thing of tracking everything, spreadsheets, numbers, target goals, etc. Look, I &lt;em&gt;hate&lt;/em&gt; spreadsheets. Someone opens a spreadsheet and my eyes start to glaze over. However, it turns out that spreadsheets are super important in the DevRel world to help measure if things we’re doing are working, planning for the future, and breaking down projects.&lt;/p&gt;
+
+&lt;p&gt;Another part of this I found really challenging was figuring out the &lt;em&gt;right&lt;/em&gt; numbers to include. “What do you think we’ll get for participation for this event?” “I have no idea, I’ve never done this before.” I’ve had to dig a lot deeper into what I know and try to make my best guesses.&lt;/p&gt;
+
+&lt;h3 id=&quot;burnout&quot;&gt;Burnout&lt;/h3&gt;
+&lt;p&gt;At the end of the year, I took two weeks off. I hoped to do some light work with planning, drafting some blog posts, etc. What did I do instead? I got my second stomach virus in a month, and I was totally exhausted. I didn’t want to move off the couch exhausted–and that never happens to me. Strategy. Writing. Speaking. Event organizing. Twitter spaces. Social media. Planning. Meetings. Meetings. Meetings. I didn’t take breaks when I needed to during the year. I kept pushing through. And then I was so exhausting. I am happy to report that the two weeks were enough time to bring me back to life.&lt;/p&gt;
+
+&lt;h2 id=&quot;successes&quot;&gt;Successes&lt;/h2&gt;
+&lt;h3 id=&quot;technical-writing-blog-posts&quot;&gt;Technical Writing Blog Posts&lt;/h3&gt;
+&lt;p&gt;One of my favorite things I did during the year was write a series on Technical Writing for the Deepgram blog, starting with &lt;a href=&quot;https://blog.deepgram.com/technical-writing-a-beginners-guide/&quot;&gt;Technical Writing: A Beginners Guide&lt;/a&gt;. The series was well recieved and combined my background as an English teacher with my new life in DevRel.&lt;/p&gt;
+
+&lt;h3 id=&quot;internal-community-documentation&quot;&gt;Internal Community Documentation&lt;/h3&gt;
+&lt;p&gt;Over the last couple of years, I’ve learned a lot about the importance of internal documentation. As one co-founder said to me, “you always have to be prepared if someone is in a car crash”. I know, it’s morbid, but it’s a common expression used to demonstrate the idea that there should be clear paths of communication and documentation created in case something happens to a person, myself included. If I’m no longer at Deepgram, it’s important that the processes I’ve created still live their to support their DevRel team. This includes hackathons, Twitter Spaces, Small Group Meetups, Community Discovery, and more. It’s thorough and a pretty big time investment, but it’s also an investment in the future and part of the evaluation process. What went well with this event? How can we maximize that next time? Add it to the docs.&lt;/p&gt;
+
+&lt;h3 id=&quot;community-engagement&quot;&gt;Community Engagement&lt;/h3&gt;
+&lt;p&gt;Whether it’s been in our own Deepgram properties or in other communities or at conferences, I’ve talked to a lot of people about what we do at Deepgram and how we do a really great job. One of the phrases I’ve heard repeated quite a few times is, “I wouldn’t have known about Deepgram if you didn’t work there.” That reach is hard to quantify, but getting random DMs from folks I know asking about our product has helped me know that I’m on the right track with building trust and support in the tech community.&lt;/p&gt;
+
+&lt;h2 id=&quot;failures&quot;&gt;Failures&lt;/h2&gt;
+&lt;p&gt;Yes, I failed sometimes and I’m willing to admit it. This is how you grow. Look at the failures and examine &lt;em&gt;why&lt;/em&gt; they’re happening.&lt;/p&gt;
+
+&lt;h3 id=&quot;hackathons&quot;&gt;Hackathons&lt;/h3&gt;
+&lt;p&gt;We didn’t get the return we wanted with the hackathons we participated in while I was on the team. I don’t think it was due to lack of opportunities, as we provided guides, resources, and live events. I underestimated a couple of things: general interest, skill level, and product interest. It can be nerve wracking to participate in a hackathon, especially one that focuses on participants working alone or maybe in pairs. Whether it’s one week or a month, there needs to be clear interest in participating in a hackathon in general. I think there’s a sweet spot for a certain skill level. Often, folks who are newer to tech hesitate a little more when getting involved, and those who have been in tech for a while on the platforms we engaged with seem to have less interest in participating in a hackathon. Finding the right audience is key to success. Lastly, as a speech-to-text API, there are very specific or limited usecases for using DG. That’s not to say that you can’t do something interesting or creative. It’s just to say that there’s a more limited use, which leads to limited user interaction as well. The key to hackathons is finding an audience who wants to use the product first. Or, like the LEGO community, having an ongoing project submission that gets voted on.&lt;/p&gt;
+
+&lt;h3 id=&quot;small-group-conversations&quot;&gt;Small Group Conversations&lt;/h3&gt;
+&lt;p&gt;I’m not going to lie. I really thought the series of three small group conversations that were followed by a Twitter Space would be popular. There are a lot of people who are asking for 1:1 meetings to talk about breaking into tech, or want to explore different parts of tech. Hundreds of people expressed interest in the topics, sign-ups were lower than that but decent, and then only a handful showed up. I think part of the problem here is that over the pandemic, we’ve gotten used to signing up for everything and then going if we feel like it. It’s kind of a bummer as an organizer, because it becomes hard to predict what attendace will look like and make something a meaningful experience. Every Tuesday and Thursday we have small group conversations at Virtual Coffee, so it fulfills my need, but I’d love to find a way to extend that experience outside of our community.&lt;/p&gt;
+
+&lt;h2 id=&quot;takeaways&quot;&gt;Takeaways&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Find your community. I say this all the time about everything. But being able to talk to other DevRel folks really helped me get through the last year. To hear about their struggles, to learn from them, and to find more ways to grow has been invaluable to my experience.&lt;/li&gt;
+  &lt;li&gt;Set boundaries. That’s one of my goals for this year. Community and DevRel never stop. It’s always onto the next thing, which is one of the reasons I love it. But I frequently load up my plate a little too high and keep taking on more things. This is not good. I’ve created a Trello board to both track what I’m doing, and to give me a visual of the things I’ve taken on to decrease the chances of me overcommitting myself.&lt;/li&gt;
+  &lt;li&gt;Experiment. Sometimes you get it right, sometimes you get it wrong. But what ensures success is examining what experiments worked and why and what didn’t and why. Don’t just move on to the next thing. Understand what you’ve done and the outcomes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There were a lot of growing pains last year, but that means I grew a lot. I learned more about what it means to be in DevRel, what my strengths are and where my weaknesses are. I learned about working on a team, asking for help, and being more vocal about the things that I think matter. Because at the end of the day, it’s people that matter. And I’m here to make sure that we see everyone as the complex and beautiful person they are.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Bekah Hawrot Weigel</name>
+        
+        
+      </author>
+
+      
+
+      
+
+      
+        <summary type="html">A year ago today, I started my first job in DevRel. Before I started, I was chatting with the CEO of a consultancy, and one of the things he told me was to document publicly the work I was doing in DevRel to be transparent and have a clear record of the things I was working on. That advice has proven to be really useful over the last year, and it was one of the reasons I started the Technical Community Building Series on Dev. It’s also helped me to think through the things I’ve learned over the last year, including the challenges I’ve faced, the successes and failures I’ve had, and my takeaways for the next year.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Assume Best Intent</title>
+      <link href="/Assume-Best-Intent" rel="alternate" type="text/html" title="Assume Best Intent" />
+      <published>2023-01-20T00:00:00-05:00</published>
+      <updated>2023-01-20T00:00:00-05:00</updated>
+      <id>/Assume-Best-Intent</id>
+      <content type="html" xml:base="/Assume-Best-Intent">&lt;p&gt;Virtual Coffee has been through a progression of announcements about who we are and what we do. And we’re very thankful for the people who have shared when we get it wrong. One of the times we’ve gotten it wrong was when we included the phrase “assume best intent.” We wanted everyone to assume that we all supported each other, saw each other with an equal lens, and wanted the best for each other. And while that would be great, the truth is that it doesn’t always happen. I’m thankful that one of our members pointed it out to us, and I’m sorry if using that phrase negatively impacted any of our members without us knowing. We’ve since updated our language, and we ask that everyone “lead with kindness, and recognize that the impact of our words matters.” We share our Code of Conduct and our Code of Conduct violation form to ensure that there’s a clear space for folks to share their experiences where they didn’t feel safe.&lt;/p&gt;
+
+&lt;p&gt;This was a process. When we created this script, I thought that our members felt safe because of these words. And I’m so incredibly thankful that someone was willing to tell us that this often negatively impacted people who identified as part of a diverse group of people. In fact, &lt;a href=&quot;https://www.forbes.com/sites/rebekahbastian/2019/06/10/microaggressions-good-intent-is-not-good-enough/?sh=66bb3b357fb1&quot;&gt;according to Forbes&lt;/a&gt;, this language can often lead to microaggressions:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Last but not least, one pull request to fix a typo is fine, but 5 pull requests to remove a stray whitespace is not.&lt;/p&gt;
+  &lt;p&gt;brief queries, comments or actions in day-to-day life that target marginalized groups. They are often not intended to be malicious, but over time they can lead to a toxic work environment and can preclude feelings of belonging.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;But, especially as an early career developer, when I hear these conversations around the spirit of things, I also hear people keeping new developers out of open source. I hear people minimizing contributions that might be minimal in their eyes, but that contribution required a person to learn how to fork, clone, submit a PR, and do so many new things.&lt;/p&gt;
+&lt;p&gt;To assume positive intent often doesn’t take into consideration the lived experiences of people who are not like us. And when we assume positive intent, we often don’t take the time to consider the feelings of the person who is on the other side of the conversation. We may say something we believe in that (inadvertently) negatively impacts someone else on our team. We might not mean it that way, but that doesn’t mean that we shouldn’t take responsibility for our own actions.&lt;/p&gt;
 
-&lt;p&gt;What I hear are voices that create more barriers, more friction, more space for fear for new developers in a space that already doesn’t have a great reputation for being friendly to early career devs.&lt;/p&gt;
+&lt;p&gt;In fact, when we are made aware of our actions–and every community and company should provide a clear way to provide feedback–this is our own opportunity to make amends.&lt;/p&gt;
 
-&lt;p&gt;Let’s reframe the conversation. Let’s make it more nuanced. Let’s have conversations about how to prevent people from grabbing all of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;good first issue&lt;/code&gt; issues, how to prepare maintainers to support developers at all stages or to make it clear what level of understanding is involved in contributing from the beginning.&lt;/p&gt;
+&lt;p&gt;It starts with listening.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Listen to what others have to say without responding. 
+Acknowledge what they’re saying.&lt;/li&gt;
+  &lt;li&gt;Take time to consider how this impacts our lives, plans, and our beliefs.&lt;/li&gt;
+  &lt;li&gt;Apologize fully. Full stop here. If you’re interested in learning more about how to apologize, here are &lt;a href=&quot;https://www.canva.com/design/DAFURf8zW74/1tSJ0BleJFdhOdbWWAwYbg/edit?utm_content=DAFURf8zW74&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=link2&amp;amp;utm_source=sharebutton&quot;&gt;the slides from my How to Apologize Talk&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Because the fact is that sometimes, when you provide a first-time contributor with support, with affirmation, with gratitude when they fix that typo, they’ll be more likely to continue to contribute. They’ll know that they’re welcome. They’ll have an opportunity to be proud of themselves for seeing the typo that no else did or took the time to fix. They’ll be more likely to try something that seemed challenge.&lt;/p&gt;
+&lt;p&gt;We apologize to show that we’re willing to grow, accept responsibility, and do better next time.&lt;/p&gt;
 
-&lt;p&gt;I think it’s ok to have repos that don’t have issues for early career folks. Because having those issues also requires having a support system for them. And if you don’t have that set up first, they’re more likely to leave the repository and the experience frustrated. And what I think is the spirit of Hacktoberfest is being a welcoming community, supporting developers as best as the maintainers can, and giving back to open source software within your capacity–not at the expense of yourself.&lt;/p&gt;
+&lt;p&gt;Here are some resources, as aggregated by the Virtual Coffee Community, about the problems with using the phrase “assume positive intent”:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://forge.medium.com/the-problem-with-assuming-positive-intent-ea8385ce961d&quot;&gt;The Problem with Assuming Positive Intent&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mailchi.mp/82edd381b364/5-ally-actions-may-20-2022&quot;&gt;Ally Actions - May 2022&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.forbes.com/sites/rebekahbastian/2019/06/10/microaggressions-good-intent-is-not-good-enough/?sh=5e7ad817fb1d&quot;&gt;Microaggressions: good intent isn’t good enough&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;And that’s not possible for a lot of OSS repos. However, I do think that pairing organizations like &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt; can help to alleviate this stress, and it’s something I hope to try to do more next year.&lt;/p&gt;
+&lt;p&gt;At Virtual Coffee, we’ve put a lot of time and effort into making our Code of Conduct  a living representation of our community. That means it represents who we are and how we believe we should treat each other right now. But, as a commitment to the community, we believe in always learning and growing, and that means we might change in the future.&lt;/p&gt;
 
-&lt;p&gt;We had about 80 pull requests merged into Virtual Coffee, 85 members sign up for our Hacktoberfest Initiative, at least 8 of our members were active maintainers, 23 of our members were official mentors, and 2 of our members were team leads for our challenge. I don’t know how many different projects we supported yet, but I know that through our support, some members were able to take on issues that would have been beyond their skill level because they support. I know that our members had generally great experiences and will be more likely to contribute or to maintain next year, because they had support. And I know that you can’t create barriers and bad experiences for new folks without costing something to the future of OSS.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Virtual Coffee’s mission is to be a welcoming tech community that allows room for growth and mentorship at all levels and to create meaningful opportunities for learning, leadership, and contribution for everyone.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Did I make deeply impactful contributions through PRs this year? No, I didn’t. But I think I maintained the spirit of Hacktoberfest–along with our whole Hacktoberfest team–by making sure developers at all stages of the journey had positive experiences, avoided places where they would feel gatekeeping, and working together to show that tech and open source is for all people. And I can’t imagine a better experience than that.&lt;/p&gt;</content>
+&lt;p&gt;As part of this mission, we meet people where they are; we’re willing to listen and learn from their experiences, and we’re willing to admit when we’ve messed it up.&lt;/p&gt;
+
+&lt;p&gt;We’re not always going to get things right. And we’re willing to apologize when we get it wrong. Because what’s more important than what we’ve done in the past is the decisions we’re making right now to make those things right. We have a growth mindset, and we want to grow together.&lt;/p&gt;</content>
 
       
       
@@ -97,11 +210,9 @@ layout: null
       
 
       
-        <category term="Open Source" />
-      
 
       
-        <summary type="html">The phrase “in the spirit of Hacktoberfest” is thrown around a lot during the month of Hacktober. It’s always rubbed me the wrong way, but I couldn’t pinpoint why. Then, when I was having a conversation with a friend, we talked about it. And what I discovered that really bothered me about it, is that it’s a form of gatekeeping.</summary>
+        <summary type="html">Virtual Coffee has been through a progression of announcements about who we are and what we do. And we’re very thankful for the people who have shared when we get it wrong. One of the times we’ve gotten it wrong was when we included the phrase “assume best intent.” We wanted everyone to assume that we all supported each other, saw each other with an equal lens, and wanted the best for each other. And while that would be great, the truth is that it doesn’t always happen. I’m thankful that one of our members pointed it out to us, and I’m sorry if using that phrase negatively impacted any of our members without us knowing. We’ve since updated our language, and we ask that everyone “lead with kindness, and recognize that the impact of our words matters.” We share our Code of Conduct and our Code of Conduct violation form to ensure that there’s a clear space for folks to share their experiences where they didn’t feel safe.</summary>
       
 
       
@@ -109,52 +220,69 @@ layout: null
     </entry>
   
     <entry>
-      <title type="html">Preptember: Projects and Discussions</title>
-      <link href="http://localhost:4000/Preptemer-Projects-and-Discussions" rel="alternate" type="text/html" title="Preptember: Projects and Discussions" />
-      <published>2021-09-20T00:00:00-04:00</published>
-      <updated>2021-09-20T00:00:00-04:00</updated>
-      <id>http://localhost:4000/Preptemer:%20Projects%20and%20Discussions</id>
-      <content type="html" xml:base="http://localhost:4000/Preptemer-Projects-and-Discussions">&lt;p&gt;We’re still talking maintainer power ups as we move into the last half of Preptember. We’ve talked about &lt;a href=&quot;https://dev.to/virtualcoffee/preptember-getting-ready-for-hacktoberfest-143j&quot;&gt;Getting Ready for Hacktoberfest&lt;/a&gt; and &lt;a href=&quot;https://dev.to/virtualcoffee/preptember-maintainer-powerups-4m1n&quot;&gt;maintainer guidelines, issues, and labels&lt;/a&gt;, and now we’re going to talk about some more ways to create clear paths of communication to enhance your open source project.&lt;/p&gt;
+      <title type="html">We All Need Good Feedback</title>
+      <link href="/We-All-Need-Good-Feedback" rel="alternate" type="text/html" title="We All Need Good Feedback" />
+      <published>2022-11-27T00:00:00-05:00</published>
+      <updated>2022-11-27T00:00:00-05:00</updated>
+      <id>/We%20All%20Need%20Good%20Feedback</id>
+      <content type="html" xml:base="/We-All-Need-Good-Feedback">&lt;p&gt;When you touch a hot surface, you get feedback when your hand hurts. When you hug someone you care about and who cares about you, those warm feelings are feedback. When you get a like on your post, that’s a type of feedback. Feedback helps you to learn not to touch the burner, to connect you to other people who care about you too, and to decide who to write for. Feedback helps us all to grow, and that’s why it should be built into our processes.&lt;/p&gt;
 
-&lt;p&gt;Since last year, we’ve seen GitHub make updates to discussions and project boards, and those are two of our favorite things. Not only do they support open source projects, but they also promote active communication between contributors and maintainers and we. are. here. for. that.&lt;/p&gt;
+&lt;h2 id=&quot;what-is-feedback&quot;&gt;What is Feedback?&lt;/h2&gt;
+&lt;p&gt;Ok, so this isn’t a difficult question. But, I think many people think it’s getting advice on how to change or just about the mistakes they’ve made. And although that can be part of it, feedback encompasses more than that.&lt;/p&gt;
 
-&lt;h2 id=&quot;discussions&quot;&gt;Discussions&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Feedback is when you receive a response for something you’ve done or created. This can include positive feedback, ways to improve, and also negative responses.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;This might not seem like a big deal, but having a step between a DM and an issue is huge for me. It’s kind of like dating. You’re not ready to make it “official” with an issue, but there’s some potential to talk through.&lt;/p&gt;
+&lt;h2 id=&quot;what-teaching-taught-me-about-feedback&quot;&gt;What Teaching Taught me about Feedback&lt;/h2&gt;
+&lt;p&gt;One of the biggest parts of teaching is giving feedback. In graduate school, I wrote ten to thirty-page research papers and often received one to three pages of feedback.&lt;/p&gt;
 
-&lt;p&gt;You can still provide discussions with labels and categories, but it doesn’t necessarily command the same consideration as an issue, which is implicitly a more “formal” relationship for consideration.&lt;/p&gt;
+&lt;p&gt;As a teacher, I would provide feedback on students’ rough drafts throughout their papers and overall feedback at the end of their papers.&lt;/p&gt;
 
-&lt;p&gt;This allows for an intermediate space to discussion the potential, get feedback from other contributors and possibly maintainers.&lt;/p&gt;
+&lt;p&gt;The point of giving writers thorough feedback was to help them to learn more about their strengths so they could continue to lean into them, discover where they can improve, and to understand the steps they could take to improve on their weaknesses.&lt;/p&gt;
 
-&lt;p&gt;A number of OSS projects use a chat app like slack or discord for discussing things, but that can be hard to follow, disorganized, or swallowed up by slack’s free plan or lost in fast-paced Discord discussions.&lt;/p&gt;
+&lt;p&gt;At its core, feedback is given to help someone grow. And the problem with not getting feedback is that it becomes much harder to grow, gauge your progress, and improve. This is why it’s so essential to build feedback into your projects. Not only is it helpful to get feedback, but it’s also important to give feedback.&lt;/p&gt;
 
-&lt;p&gt;Here, maintainers can create labels that work for them, which allows for quicker time to identify, recognize, and prioritize discussions.&lt;/p&gt;
+&lt;h2 id=&quot;giving-good-feedback&quot;&gt;Giving Good Feedback&lt;/h2&gt;
+&lt;p&gt;Learning &lt;em&gt;how&lt;/em&gt; to give good feedback takes time, but here are some tips to get you started.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/categories_img.png&quot; alt=&quot;categories&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;give-honest-feedback&quot;&gt;Give Honest Feedback&lt;/h3&gt;
+&lt;p&gt;No one wins if you’re not honest. Remember, the purpose of feedback is to help the other person to grow and improve. If you’re not honest, you’re not giving the person receiving the feedback the opportunity they deserve.&lt;/p&gt;
 
-&lt;p&gt;Github discussions allow any possible contributor to watch the conversations on a public repo, understand the communication style, and to ask questions or provide feedback. You can also pin discussions that you want to highlight to potential contributors, add labels, and sort based on what you’re looking for.&lt;/p&gt;
+&lt;h3 id=&quot;give-feeback-in-a-way-its-best-received&quot;&gt;Give Feeback in a way it’s Best Received&lt;/h3&gt;
+&lt;p&gt;Not everyone accepts feedback in the same form. Find out the best way to provide feedback for each person you’re giving feedback to. It might be written, oral, synchronous conversation, or a combination of methods. Timing is also important. The person should expect feedback is coming. If they’re not expecting it, you’re creating a scenario where they may be resistant or even unable to accept feedback.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/discussion_img.png&quot; alt=&quot;discussions&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;be-specific&quot;&gt;Be Specific&lt;/h3&gt;
+&lt;h4 id=&quot;positive-feedback&quot;&gt;Positive Feedback&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Not This&lt;/strong&gt;: This is great!&lt;/p&gt;
 
-&lt;p&gt;Personally, I think discussions provide a safe space to hear ideas through and to think about their practicality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Do This&lt;/strong&gt;: This is great because you’ve clearly outlined what we should expect to learn by the end of this talk.&lt;/p&gt;
 
-&lt;h2 id=&quot;project-boards&quot;&gt;Project Boards&lt;/h2&gt;
+&lt;p&gt;The revision of feedback ensures the speaker realizes that a strength is that a clear purpose statement helps the audience to better follow and understand the talk.&lt;/p&gt;
 
-&lt;p&gt;I won’t lie here. Initially, I was &lt;em&gt;very&lt;/em&gt; resistant to multiple repositories with different project boards. I &lt;em&gt;may&lt;/em&gt; have even aggressively opposed them. But now, project boards are one of my favorite things. I would be lying if I said, I didn’t wish that everyone outside of tech learned on project boards as well.&lt;/p&gt;
+&lt;h4 id=&quot;negative-feedback&quot;&gt;Negative Feedback&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Not This&lt;/strong&gt;: “I don’t understand.”&lt;/p&gt;
 
-&lt;p&gt;Maybe it’s my ADHD, maybe it’s something else, but having tasks more clearly broken down into categories is incredibly useful for planning work, prioritizing communication and tasks, and for seeing overall progress towards and organization’s mission and vision.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Do This&lt;/strong&gt;: I don’t understand how this example demonstrates what you’re asserting above. Can you explain you X relates to Y?&lt;/p&gt;
 
-&lt;p&gt;And now there’s this awesome bonus where GitHub more closely resembles a Trello board.&lt;/p&gt;
+&lt;p&gt;This improved example gives the writer a clearer idea of what you don’t understand and where they need to clarify.&lt;/p&gt;
 
-&lt;p&gt;We can assign users to tasks that make progress on an overall issue. And it’s much more readable than a repository full of issues.&lt;/p&gt;
+&lt;h3 id=&quot;provide-an-opportunity-for-discussion&quot;&gt;Provide an Opportunity for Discussion&lt;/h3&gt;
+&lt;p&gt;Feedback shouldn’t be a one-way street. For the full benefits of feedback, discussion is essention because it gives the other person the opportunity to ask clarifying questions, to be able to go deeper into the feedback, and even to get support for developing a plan for improvement.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/projects_img.png&quot; alt=&quot;projects&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;how-to-prime-for-effective-feedback&quot;&gt;How to Prime for Effective Feedback&lt;/h2&gt;
+&lt;p&gt;If the situation and environment isn’t right, even the best feedback can become ineffective. In order to create the best situation for everyone, do your best to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;be empathetic;&lt;/li&gt;
+  &lt;li&gt;be honest;&lt;/li&gt;
+  &lt;li&gt;be trusted by the person;&lt;/li&gt;
+  &lt;li&gt;be consistent in your feedback and your expectations;&lt;/li&gt;
+  &lt;li&gt;be respectful;&lt;/li&gt;
+  &lt;li&gt;be private-public feedback can feel like a public shaming;&lt;/li&gt;
+  &lt;li&gt;give clear expectations at the onset of the project.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;One of the biggest challenges here—I think—is making sure that tasks are broken down in a way that’s useful to an organization. You can always revise or reorganize, but when you put deliberate time and effort into creating a dependable situation from the beginning, you’re more likely to have support from your contributors.&lt;/p&gt;
-
-&lt;p&gt;When it comes down to it, our contributors are all volunteers. And when we appreciate them, make space for them, and create processes and procedures that show we value their time and effort, we all benefit.&lt;/p&gt;
-
-&lt;p&gt;If you have a powerup that’s been really great for your project, let us know! Either drop it in the discussion or hit us up on &lt;a href=&quot;https://twitter.com/virtualcoffeeio&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;</content>
+&lt;p&gt;Giving feedback isn’t easy. It’s especially not easy if you’re working in a space that’s not psychologically safe, where there’s not a built-in process, and where most of the experience with feedback has revolved around negative responses. Giving good feedback takes time, empathy, and care. But ultimately, when we do make it a deliberate part of the process, and we take a person-first approach; we all benefit and are better able to grow together from the experience.&lt;/p&gt;</content>
 
       
       
@@ -171,11 +299,9 @@ layout: null
       
 
       
-        <category term="Open Source" />
-      
 
       
-        <summary type="html">We’re still talking maintainer power ups as we move into the last half of Preptember. We’ve talked about Getting Ready for Hacktoberfest and maintainer guidelines, issues, and labels, and now we’re going to talk about some more ways to create clear paths of communication to enhance your open source project.</summary>
+        <summary type="html">When you touch a hot surface, you get feedback when your hand hurts. When you hug someone you care about and who cares about you, those warm feelings are feedback. When you get a like on your post, that’s a type of feedback. Feedback helps you to learn not to touch the burner, to connect you to other people who care about you too, and to decide who to write for. Feedback helps us all to grow, and that’s why it should be built into our processes.</summary>
       
 
       
@@ -183,57 +309,72 @@ layout: null
     </entry>
   
     <entry>
-      <title type="html">Preptember: Maintainer Powerups</title>
-      <link href="http://localhost:4000/Preptember-Maintainer-Powerups" rel="alternate" type="text/html" title="Preptember: Maintainer Powerups" />
-      <published>2021-09-12T00:00:00-04:00</published>
-      <updated>2021-09-12T00:00:00-04:00</updated>
-      <id>http://localhost:4000/Preptember:%20Maintainer%20Powerups</id>
-      <content type="html" xml:base="http://localhost:4000/Preptember-Maintainer-Powerups">&lt;p&gt;When we talk about open source repositories, there can be a lot of moving pieces, especially for maintainers. We’re juggling new issues, duplicate issues, discussions, pull requests, and many of us are volunteers. Although there will always be new challenges, between some simple things maintainers can do to make their repositories more contributor-friendly, and some tools that GitHub provides to help maintainers, we can reduce barriers to entry and reduce friction as we continue open-source projects. Here’s a list to help get you started.&lt;/p&gt;
+      <title type="html">Career Goal Setting</title>
+      <link href="/Career-Goal-Setting" rel="alternate" type="text/html" title="Career Goal Setting" />
+      <published>2022-11-25T00:00:00-05:00</published>
+      <updated>2022-11-25T00:00:00-05:00</updated>
+      <id>/Career%20Goal%20Setting</id>
+      <content type="html" xml:base="/Career-Goal-Setting">&lt;p&gt;I’m close to completing my first year on a Developer Relations team. As I evaluate my own performance over the last year and set goals for my next year as a Technical Community Builder, I wanted to share how I’ve broken down my self-evaluation and goal setting. I don’t think you need to be on a DevRel team to find this useful. Based off of my responses to these questions, I’d like to work on creating self-evaluation points and put them in my calender during the next year.&lt;/p&gt;
 
-&lt;h2 id=&quot;maintainer-checklist&quot;&gt;Maintainer Checklist&lt;/h2&gt;
+&lt;h2 id=&quot;self-evaluation&quot;&gt;Self-evaluation&lt;/h2&gt;
+&lt;p&gt;Take some time to write down as much as you want for each of these questions. Remember, it’s important to be honest with yourself. You don’t have to show this to anyone. This is just for you.&lt;/p&gt;
 
-&lt;p&gt;If you’re interested in some of the things maintainers can do to create a positive space for contributions, check out the &lt;a href=&quot;https://virtualcoffee.io/member-resources/oss-maintainer-checklist/&quot;&gt;OSS Maintainer Guide&lt;/a&gt; created at &lt;a href=&quot;https://virtualcoffee.io&quot;&gt;Virtual Coffee&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;what-are-your-strengths&quot;&gt;What are your strengths?&lt;/h3&gt;
+&lt;p&gt;This can be measurable: I can get a blog post written really quickly, as demonstrated by my four published posts in the last four weeks. But don’t limit yourself to traditionally measurable things: My gut reaction is often right.  And in some cases, it might be something that you consider a strength that others might not: I take my time to make sure I’ve explored a variety of perspectives before jumping into a new initiative. Some people might think this process requires too much time and isn’t necessary. For this exercise, we don’t care about them.&lt;/p&gt;
 
-&lt;p&gt;The guide covers important things like documentation, Code of Conduct, the Contributing Guide, and how to make your repository welcoming to new contributors.&lt;/p&gt;
+&lt;h3 id=&quot;what-are-your-weaknesses&quot;&gt;What are your weaknesses?&lt;/h3&gt;
+&lt;p&gt;This might be the hard part for you. Think about what impacts your day-to-day work. I want to emphasize here that weakness doesn’t mean failure. Weakness is an opportunity to improve. For example, I think one of my weaknesses is creating technical blog posts really quickly. Maybe this is a part of my background in English education or years of writing screenplays or, maybe it’s a part of me being an introvert, but I really like taking time to think through the story I’m telling, to keep my audience engaged, and create something meaningful. It’s much easier for me to create something that I’m invested in because it’s meaningful. I’m not great at writing pieces that I’m not invested in. But realistically, this is part of devrel, so I have to find a way to get better at it.&lt;/p&gt;
 
-&lt;p&gt;One of the most important parts of any open source project is to have clear paths of communication. Detailed instructions of how to communicate with maintainers, instructions for creating or working on issues, and when to create a pull request, should be covered in your Contributors Guide. For an example, you can check out &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/blob/main/CONTRIBUTING.md&quot;&gt;our Contributors Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;where-do-you-thrive&quot;&gt;Where do you Thrive?&lt;/h2&gt;
+&lt;p&gt;Not only understanding where you thrive will be good for you, but it will also be good to share with your manager as well. It’s your manager’s job to figure out how to utilize your strengths as part of the job. It’s your job to share what you think those strengths are.&lt;/p&gt;
 
-&lt;h2 id=&quot;issues&quot;&gt;Issues&lt;/h2&gt;
+&lt;p&gt;To be honest, it’s easier for me to identify my weaknesses rather than my strengths. But I’m also super lucky to be part of a great community where I can ask people what they think my strengths are. I can say that I think communicating my ideas are a strength, thinking through ideas, identifying my/our target audience, writing about what I’m passionate about, and educating others are part of my strengths. I’ve been able to identify these as strengths based on past experiences where I’ve received feedback from my superiors in different job situations. Feedback is often a gift.&lt;/p&gt;
 
-&lt;p&gt;One of the ways to help contributors and yourself as a maintainer is to utilize issue templates or forms. For a detailed guide on how to do this with your GithHub repository, you can check out their doc &lt;a href=&quot;https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository&quot;&gt;Configuring issue templates for your repository
-&lt;/a&gt;. (And a quick note to say that forms are in beta right now, so keep that in mind. Personally, I think they’re pretty awesome so I’d love to see them stick around.)&lt;/p&gt;
+&lt;p&gt;I really thrive when there are clear expectations. Actually, I’d say a weakness is ambiguous situations where there are no clear goals or growth journeys.  I want to know where I can grow and think about how to break down the steps to that growth.&lt;/p&gt;
 
-&lt;p&gt;If you don’t have issues set up, and a contributor wants to add an issue, there’s really no guidance on how to do it. Not only is the contributor left staring at a blank box, but the likelihood of getting all of the information you need as a maintainer to make a decision about the issue isn’t great as well.&lt;/p&gt;
+&lt;h2 id=&quot;what-do-i-need-to-succeed&quot;&gt;What do I Need to Succeed?&lt;/h2&gt;
+&lt;p&gt;We all need something different. For me, I need feedback. Feedback allows me to better understand how to grow, improve, and be consistent. It’s hard to be motivated to improve if you don’t know how to improve.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/blank_issue.png&quot; alt=&quot;a blank issue input&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;what-do-i-want-to-be-doing-more-of&quot;&gt;What do I Want to be Doing More of?&lt;/h2&gt;
+&lt;p&gt;This often builds on your strengths and weaknesses, but it doesn’t have to. There might be something that hasn’t made it onto the list that you want to do more of. I spent tens years in teaching before moving over to tech. I’ve been here about 3.5 years. I didn’t realize it would happen, but I miss teaching right now. I miss the development of the course materials. I miss having discussions with students, and learning and growing with each other. I miss the sense of completion at the end of the semester. I’d love to feel the same reward I did when I was teaching.&lt;/p&gt;
 
-&lt;p&gt;But including forms or templates in your repository can eliminate some of those clarifying conversations. And one of the cool things is, you can create different templates/forms depending on your needs.&lt;/p&gt;
+&lt;h2 id=&quot;what-i-want-to-be-doing-less-of&quot;&gt;What I want to be doing less of?&lt;/h2&gt;
+&lt;p&gt;What sucks your energy? What makes you feel ineffective? What are the things in your calendar that make you feel like you’ve been wasting your time? Well, you may have read my [Making Better Meetings] (https://dev.to/bekahhw/making-better-meetings-469m) post and this is a big part of what I want to decrease in the next year. I want meaningful meetings with clear agendas, that are within my work hours.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/issue_forms.png&quot; alt=&quot;a issue form options&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I also spend a lot of times answering DMs with the same questions. I can’t do this next year. I have four kids who are growing so fast, and I don’t have extra time to take away from them. My goal is to blog about the most common questions I receive to share with those who DM me. I’d love to be able to DM everyone back, but at this stage of my life I don’t have the capacity. I have to draw boundaries if I want to be successful next year.&lt;/p&gt;
 
-&lt;p&gt;You can give a more detailed breakdown of what information you want to see when you read the issue.&lt;/p&gt;
+&lt;h2 id=&quot;what-are-three-areas-i-want-to-improve-in&quot;&gt;What are Three Areas I want to Improve in?&lt;/h2&gt;
+&lt;p&gt;Okay, now I’m getting into the goal setting aspect of this. Where do I want to improve?&lt;/p&gt;
 
-&lt;p&gt;If you want to take a look at how we breakdown our issues, you can check each of them out:&lt;/p&gt;
-
+&lt;p&gt;###Public Speaking
+I’m nervous every time I speak in public. Some talks I’m better than in others. This year I gave so many brand new talks and that’s not every something I want to repeat again. I think I’ve had 8 next talks in the last year. I don’t want to write a new talk in 2023. I want to improve my speaking ability, be authentic, and stay on topic. For me, it’s important to not over prepare. It’s important to me to deliver the talk with authentic emotion. I’ll continue to apply to conferences, but I think the four talks I’ll focus on in the next year:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/issues/new?assignees=&amp;amp;labels=Type%3A+bug%2CStatus%3A+Needs+Triage&amp;amp;template=bug-report.yml&quot;&gt;Bug report&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/issues/new?assignees=&amp;amp;labels=Type%3A+documentation%2CStatus%3A+Needs+Triage&amp;amp;template=documentation-change.yml&quot;&gt;Documentation Change&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/issues/new?assignees=&amp;amp;labels=Type%3A+enhancement%2CStatus%3A+Needs+Triage&amp;amp;template=feature-request.yml&quot;&gt;Feature Request&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;How to Apologize&lt;/li&gt;
+  &lt;li&gt;Do You Really Need a Community&lt;/li&gt;
+  &lt;li&gt;A Person-Centered Approach to Tech&lt;/li&gt;
+  &lt;li&gt;The Power of Storytelling
+To be honest, I’m in love with each of these topics. I think that makes me more effective. I can share what I’m passionate about  in a way that other people can learn from the experience.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Within that list, we also have Questions/Ideas/Feedback, which takes our contributors to our discussion board where we like to start the conversation before converting it to an issue as we see fit–which I think deserves a post of its own.&lt;/p&gt;
+&lt;h3 id=&quot;creating-boundaries&quot;&gt;Creating Boundaries&lt;/h3&gt;
+&lt;p&gt;I do a really bad job of turning off work. My husband suggested I limit the post-work times I talk about work and I think it’s a good idea. Work and community strategy shouldn’t consume my thoughts all the time. In fact, I think I’d be more effective if I didn’t think about it all the time. Allowing yourself to be deliberate with what you think about is incredibly important in working towards a peaceful life.&lt;/p&gt;
 
-&lt;h3 id=&quot;labels&quot;&gt;Labels&lt;/h3&gt;
+&lt;h3 id=&quot;balancing-time&quot;&gt;Balancing Time&lt;/h3&gt;
+&lt;p&gt;It seems like in DevRel, there’s never enough time. There’s the next thing and endeavor. So you don’t have time to improve, grow, reassess. Next year, I’ll be focused on how I can continue to grow, learn, and support others in a way that’s reasonable for me and my family. I can’t feel like I’m always working. And it’s not fair to them to feel like they come second to a slack message. But I have to be effective during working hours. This means that I want to allot a certain amount of time to each of my main tasks during the week and make sure that I don’t prevent myself from fulfilling those tasks.&lt;/p&gt;
 
-&lt;p&gt;Make labels your friend. This makes it easy for contributors to quickly scan or to sort the issues on your repository and it makes it easier for you to separate and breakdown possible features, bug fixes, status of issues, etc.&lt;/p&gt;
+&lt;h2 id=&quot;what-are-your-2022-highlights&quot;&gt;What are Your 2022 Highlights&lt;/h2&gt;
+&lt;p&gt;This builds off of your strengths, but it requires you to be more specific. Think about the things you did, that you feel made an impact in the last year. To be honest, this is really hard for me. What makes it worse it that the last quarter of the year, I’ve been struggling to feel like I’m helping, impacting, or supporting anyone. This is certainly an argument for building in retros for your projects. If you keep track of them as you work through them, it’s easier to remember them at the end of the year.&lt;/p&gt;
 
-&lt;p&gt;Remember, let the labels work for you. Not only can you create the labels and choose the color of the label, but you can also add a description for what that label means. This makes it easier for your contributors to understand as well.&lt;/p&gt;
+&lt;p&gt;I’m still working on this section, but I’d love to hear what your highlights are!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2021/label_ex.png&quot; alt=&quot;Reserved for Learners label&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;career-aspirations&quot;&gt;Career Aspirations&lt;/h2&gt;
+&lt;p&gt;So many of our goals are tied to what we see in our nearby future. At some point we need to look at the bigger future and our life outside of our job. What do we want our career to look like? How can we tie all the things we’ve worked on above to be a part of our career? How does our idea of our career differ from the job we have/want now?&lt;/p&gt;
 
-&lt;p&gt;The goal for everything you do for your repository is to create clear paths of communication.&lt;/p&gt;
+&lt;p&gt;For example, I would love to keynote a conference. This ties into my goals for what I want to do more of, but does’t exactly tie into what I’m doing now. If I don’t become a keynote speaker in the next year, my team isn’t going to negatively judge my progress, but I’ll realize that I haven’t put in the work to meet my personal goals. So right now, I need to create a list of steps that will help me to actualize those goals.&lt;/p&gt;
 
-&lt;p&gt;And you might not get it right every time. In fact, you might try something that you think is great, only to discover that it’s made things more complicated. That’s fine! You tried it, and now you can remove it, edit it, update it, do what works for your project right now. And that’s a good mindset to have. We should always be evaluating and re-evaluating our processes, projects, and ourselves to make sure we’re updating things that need updated and growing.&lt;/p&gt;</content>
+&lt;p&gt;And for this part of your growth plan, you should think about your goals and how you can break them down to meet your career aspirations. There’s nothing wrong with identifying your growth plan and following it as you move forward.&lt;/p&gt;
+
+&lt;p&gt;As you evaluate yourself, your progress, and your goals, consider what might be immediate to today and what might change. How will you adapt to change? What’s important to you as you work to make change a good experience? How will you take your needs into 2023 and break down those goals? How will you track those goals? Hopefully, after I’ve broken down my goals, I’ll post and do check-ins over the next year. If you want accountability for your own goals, let me know. My first DevRel planning and goal-setting session is this coming week, but I’m always down to do async sessions.&lt;/p&gt;</content>
 
       
       
@@ -250,11 +391,9 @@ layout: null
       
 
       
-        <category term="Open Source" />
-      
 
       
-        <summary type="html">When we talk about open source repositories, there can be a lot of moving pieces, especially for maintainers. We’re juggling new issues, duplicate issues, discussions, pull requests, and many of us are volunteers. Although there will always be new challenges, between some simple things maintainers can do to make their repositories more contributor-friendly, and some tools that GitHub provides to help maintainers, we can reduce barriers to entry and reduce friction as we continue open-source projects. Here’s a list to help get you started.</summary>
+        <summary type="html">I’m close to completing my first year on a Developer Relations team. As I evaluate my own performance over the last year and set goals for my next year as a Technical Community Builder, I wanted to share how I’ve broken down my self-evaluation and goal setting. I don’t think you need to be on a DevRel team to find this useful. Based off of my responses to these questions, I’d like to work on creating self-evaluation points and put them in my calender during the next year.</summary>
       
 
       
@@ -262,41 +401,36 @@ layout: null
     </entry>
   
     <entry>
-      <title type="html">Preptember: Getting ready for Hacktoberfest</title>
-      <link href="http://localhost:4000/Preptember-Getting-ready-for-Hacktoberfest" rel="alternate" type="text/html" title="Preptember: Getting ready for Hacktoberfest" />
-      <published>2021-09-07T00:00:00-04:00</published>
-      <updated>2021-09-07T00:00:00-04:00</updated>
-      <id>http://localhost:4000/Preptember:%20Getting%20ready%20for%20Hacktoberfest</id>
-      <content type="html" xml:base="http://localhost:4000/Preptember-Getting-ready-for-Hacktoberfest">&lt;p&gt;It’s Preptember!!!! What does that even mean? &lt;strong&gt;Story time.&lt;/strong&gt; Last year was the first year I had ever heard about Preptember. We, at &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt; were just starting to get ready to our first &lt;a href=&quot;https://hacktoberfest.digitalocean.com/&quot;&gt;Hacktoberfest&lt;/a&gt; together, and somewhere along the line, someone told us that September was coined Preptember as we prepared to go into Hacktoberfest. And in a lot of ways, for organizers, Preptember is even more work than Hacktoberfest. Because this is month that we prepare for all of our events, that we make sure we have support systems in place for our members, that we do the work to ensure that we’ve thought through every problem imaginable and we set everyone up for success.&lt;/p&gt;
+      <title type="html">Moms, you’re carrying a lot of plates</title>
+      <link href="/Moms,-you're-carrying-a-lot-of-plates" rel="alternate" type="text/html" title="Moms, you're carrying a lot of plates" />
+      <published>2021-11-30T00:00:00-05:00</published>
+      <updated>2021-11-30T00:00:00-05:00</updated>
+      <id>/Moms,%20you're%20carrying%20a%20lot%20of%20plates</id>
+      <content type="html" xml:base="/Moms,-you're-carrying-a-lot-of-plates">&lt;p&gt;I see you moms. You’re carrying a lot of plates. Your children. Your work. Your family. Your life. Everything. You are carrying more plates than anyone should expect to carry. I know it’s &lt;em&gt;hard&lt;/em&gt;. I know it feels like you aren’t doing a good job at any of those things. But the truth is you’re amazing.&lt;/p&gt;
 
-&lt;p&gt;As part of Preptember, this is what we’re doing at Virtual Coffee:&lt;/p&gt;
+&lt;p&gt;You’re carrying those plates and they are &lt;em&gt;heavy&lt;/em&gt;. And you’re still pushing forward. You’re tired. I know. It’s exhausting.&lt;/p&gt;
 
-&lt;h3 id=&quot;monthly-challenge&quot;&gt;Monthly Challenge&lt;/h3&gt;
+&lt;p&gt;You will get stronger.&lt;/p&gt;
 
-&lt;p&gt;Every month we do a challenge where we try to work on one focus for the month and produce something for the end of the month. This month, we’re asking our Maintainers to prep their repos by reviewing with our checklist and we’re preparing our contributors by asking them to write issues for our &lt;a href=&quot;https://virtualcoffee.io/monthlychallenges/sept-2021/&quot;&gt;Preptember Challenge&lt;/a&gt;. We have discussions going on in the channel and support for every member.&lt;/p&gt;
+&lt;p&gt;But you also have to learn how to hand off some of those plates. You have to know when you’ve tried too much weight and when adding one more will be the one that will strain you too much.&lt;/p&gt;
 
-&lt;h3 id=&quot;documentation&quot;&gt;Documentation&lt;/h3&gt;
+&lt;p&gt;As a mother, your identity shifts. You have another human or humans to care for. Your understanding of who you are will change. Your priorities will change. Your past self is a part of who you are, but it’s not &lt;em&gt;who&lt;/em&gt; you are anymore.&lt;/p&gt;
 
-&lt;p&gt;We rely so heavily on documentation as part of all of our processes. As part of this, not only do we create documentation for our events, projects, and initiatives, but we also do our best to update them regularly. For example, we recently started using &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/discussions&quot;&gt;Github discussions for our VCIO repository&lt;/a&gt;. As a result, we needed to add instructions about using the discussion board to our &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/blob/main/CONTRIBUTING.md&quot;&gt;Contributing.md file&lt;/a&gt;. This file is the first step in clear communication with our contributors. It explains the process for opening issues, contributing, and submitting Pull Requests (PRs).&lt;/p&gt;
+&lt;p&gt;And you’re awesome.&lt;/p&gt;
 
-&lt;h3 id=&quot;curated-list-of-open-source-repositories&quot;&gt;Curated List of Open Source Repositories&lt;/h3&gt;
+&lt;p&gt;And now I’m going to do my favorite thing and mix metaphors:&lt;/p&gt;
 
-&lt;p&gt;We’re very focused on making sure members at all stages of the coding journey have the opportunity to participate in Hacktoberfest. This means that we need a wide variety of repositories that are welcoming, have clear documentation and communication, and are participating in Hacktoberfest. In an effort to create a well-rounded list that isn’t limited by our own experiences and backgrounds, we’ve opened a &lt;a href=&quot;https://github.com/Virtual-Coffee/virtualcoffee.io/discussions/321&quot;&gt;public discussion&lt;/a&gt; on our repository to gather suggestions that we’ll review before they are included on our Virtual Coffee list&lt;/p&gt;
+&lt;p&gt;You have to learn how to weed your garden. The things that don’t enrich the soil? Gone. The things that strangle the fruit? Gone. The things that help the plants but only in small doses? Regulate. Protect your garden.&lt;/p&gt;
 
-&lt;h3 id=&quot;call-for-maintainers-contributors-and-mentors&quot;&gt;Call for Maintainers, Contributors, and Mentors&lt;/h3&gt;
+&lt;p&gt;Protect yourself. If you give and you give and you give all day long, you are depleting yourself. There will be nothing left to give at some point. You have to find the things that enrich your life so that you can give when you need to. It is ok to take a walk by yourself. It is ok to ask for alone time. It is ok to go to the gym. It is ok to do something that you–and only you–enjoy doing.&lt;/p&gt;
 
-&lt;p&gt;Back by popular demand, we’ll be asking our members to participate in Hacktoberfest with our support by signing up as Maintainers, Contributors, and/or Mentors. As part of this, we’ll ensure that contributors who want mentors will have support, and that maintainers have our support as well, as we support them as we review their repositories and by helping them to create issues for contributors.&lt;/p&gt;
+&lt;p&gt;Because that’s the thing, you have to care for yourself or eventually no one will be cared for. You can’t be empty and continue to give. When you do that, you move on the negative axis; you accumulate exhaustion, frustration, anxiety, resentment, anger.&lt;/p&gt;
 
-&lt;h3 id=&quot;lunch--learns&quot;&gt;Lunch &amp;amp; Learns&lt;/h3&gt;
+&lt;p&gt;Dear moms out there, I encourage you to find things that enrich your lives, to eliminate the things and people who deplete you, and to communicate your frustrations, your emptiness, loneliness, anxieties, to those close to you. To ask others to carry some of your plates. To find communities who can support you. To let yourself &lt;em&gt;feel&lt;/em&gt; your feelings.&lt;/p&gt;
 
-&lt;p&gt;We want to make sure that we educate and empower our members as they journey through Hacktoberfest. This month, we’ll be doing three Lunch &amp;amp; Learns on open source related content: An Open Source Project Walkthrough, How to create an Open Source Software Repository, and An Intro to Hacktoberfest and Open Source Contributions.&lt;/p&gt;
+&lt;p&gt;I don’t know if it’s ever &lt;em&gt;not&lt;/em&gt; hard to be a mom. But I do know that when we allow &lt;em&gt;our&lt;/em&gt; needs to go unmet, we’re heading down a dangerous path. Prioritize. Minimize. Optimize. Boundaries–ok, I just wanted to make that one fit. The point is, don’t try to do everything, master the art of “no,” and let people know when they’ve asked too much of you. Don’t let them minimize your feelings or persuade you that your feelings are wrong. Let that be your red flag.&lt;/p&gt;
 
-&lt;h3 id=&quot;kick-off-hacktoberfest-event&quot;&gt;Kick-off Hacktoberfest Event&lt;/h3&gt;
-
-&lt;p&gt;Although we aren’t doing this in September, we’re preparing for it. We want to make sure we have an issue that everyone can participate in, that we can demonstrate, and that we can answer questions about together. This &lt;a href=&quot;https://meetingplace.io/virtual-coffee/events/7070&quot;&gt;event&lt;/a&gt; will give our members the confidence they need to get them started–and maybe even complete!–their first Hacktoberfest pull request.&lt;/p&gt;
-
-&lt;p&gt;This is a glimpse of what we’re doing to support our members and we’ll be revealing more details as the month goes on. If you want to support us, you can volunteer–form coming soon!–or &lt;a href=&quot;https://github.com/sponsors/Virtual-Coffee&quot;&gt;sponsor us&lt;/a&gt;.
-But if you couldn’t tell from our most recent &lt;a href=&quot;https://virtualcoffee.io/podcast/0309-season-three-wrap-up/&quot;&gt;podcast episode&lt;/a&gt;, we are super excited that we’re working on our second round of Hacktoberfest as a community, and we’re stoked to see how this year turns out.&lt;/p&gt;</content>
+&lt;p&gt;I’ve got you, moms. Make sure you’re enriching yourself too.&lt;/p&gt;</content>
 
       
       
@@ -313,11 +447,9 @@ But if you couldn’t tell from our most recent &lt;a href=&quot;https://virtual
       
 
       
-        <category term="Open Source" />
-      
 
       
-        <summary type="html">It’s Preptember!!!! What does that even mean? Story time. Last year was the first year I had ever heard about Preptember. We, at Virtual Coffee were just starting to get ready to our first Hacktoberfest together, and somewhere along the line, someone told us that September was coined Preptember as we prepared to go into Hacktoberfest. And in a lot of ways, for organizers, Preptember is even more work than Hacktoberfest. Because this is month that we prepare for all of our events, that we make sure we have support systems in place for our members, that we do the work to ensure that we’ve thought through every problem imaginable and we set everyone up for success.</summary>
+        <summary type="html">I see you moms. You’re carrying a lot of plates. Your children. Your work. Your family. Your life. Everything. You are carrying more plates than anyone should expect to carry. I know it’s hard. I know it feels like you aren’t doing a good job at any of those things. But the truth is you’re amazing.</summary>
       
 
       
@@ -325,127 +457,36 @@ But if you couldn’t tell from our most recent &lt;a href=&quot;https://virtual
     </entry>
   
     <entry>
-      <title type="html">Interview Series: Birthdays, job responses, and feedback</title>
-      <link href="http://localhost:4000/The-Interview-Series-Birthdays,-job-responses,-and-feedback" rel="alternate" type="text/html" title="Interview Series: Birthdays, job responses, and feedback" />
-      <published>2021-08-02T00:00:00-04:00</published>
-      <updated>2021-08-02T00:00:00-04:00</updated>
-      <id>http://localhost:4000/The%20Interview%20Series:%20Birthdays,%20job%20responses,%20and%20feedback</id>
-      <content type="html" xml:base="http://localhost:4000/The-Interview-Series-Birthdays,-job-responses,-and-feedback">&lt;p&gt;When I was a kid, I used to do Richard Simmons’ Sweatin’ to the Oldies–the VHS dance workout–with my mom. And I &lt;em&gt;loved&lt;/em&gt; the choreography for “It’s my party and I’ll cry if I want to.” Well, that was the foreshadowing to this moment. So just like we had a 2 for 1 deal for birthdays on July 21st–it was both mine and my son’s birthday–I would also get a kind of 2 for 1 deal on the interviews: two rejections in one day on my birthday. Not ideal. But also, I’m a believer that it’s better to know bad news than to be stuck in the limbo of not knowing news. And it’s in the moments after the news, in the process of feelings and feedback that we regroup and define who we are &lt;em&gt;next.&lt;/em&gt; And this post, it’s about all of those things.&lt;/p&gt;
+      <title type="html">What the heck does it mean to make an image a tensor?</title>
+      <link href="/What-the-heck-does-it-mean-to-make-an-image-a-tensor" rel="alternate" type="text/html" title="What the heck does it mean to make an image a tensor?" />
+      <published>2021-11-29T00:00:00-05:00</published>
+      <updated>2021-11-29T00:00:00-05:00</updated>
+      <id>/What%20the%20heck%20does%20it%20mean%20to%20make%20an%20image%20a%20tensor</id>
+      <content type="html" xml:base="/What-the-heck-does-it-mean-to-make-an-image-a-tensor">&lt;p&gt;So we’ve learned about &lt;a href=&quot;https://dev.to/bekahhw/hello-tensor-52ed&quot;&gt;what a tensor is&lt;/a&gt;, and we know a little bit about &lt;a href=&quot;https://dev.to/bekahhw/youre-toxic-using-the-toxicity-model-with-tensorflowjs-5h27&quot;&gt;what you can do with them&lt;/a&gt;, but why the heck would we want to turn an image into a tensor? Well, if we want to use them with TensorFlow.js or for Deep Learning, then we change them to tensors to put them in a useable form.&lt;/p&gt;
 
-&lt;h2 id=&quot;how-i-found-out&quot;&gt;How I found out&lt;/h2&gt;
+&lt;p&gt;When we think about images, we know they’re made of pixels. Together, those small units create an image. Each of these pixels holds a position in the image, and each pixel can be represented by an array of three numbers that correspond with an &lt;a href=&quot;https://css-tricks.com/almanac/properties/c/color/&quot;&gt;RGB (red, green, blue) value&lt;/a&gt; that represents a color.&lt;/p&gt;
 
-&lt;h3 id=&quot;junior-role&quot;&gt;Junior Role&lt;/h3&gt;
+&lt;p&gt;So, for example, if we look at the rgb value (0, 255, 255), we’ll see aqua. Now, you might see a fourth value, and that stands for the transparency of the pixel. That fourth value–the alpha parameter–allows you to set a number between 0.0 (transparent) and 1.0 (opaque). Take that aqua color. If we add an alpha parameter of 0, it will be fully transparent and we won’t be able to see it. If we add .5, then it will be at a middle point for transparency.&lt;/p&gt;
 
-&lt;p&gt;I hadn’t heard from the team since the interview, but I had expected to hear something early in the week of July 12th.&lt;/p&gt;
+&lt;p&gt;When we transform an image into a tensor, each of those pixels in the position they hold in the image, get transformed into tensors. Once we transform these tensors, we can train our models with this data, among other things. We can mirror images, resize, crop, and manipulate in other ways that are useful to us.&lt;/p&gt;
 
-&lt;p&gt;But after the final interview, I offered to talk through the interview process with one of the interviewers.&lt;/p&gt;
+&lt;p&gt;Let’s say that we’re &lt;a href=&quot;https://www.airbnb.com/&quot;&gt;Air BnB&lt;/a&gt;. We want to be able to quickly look through the images our hosts have submitted but haven’t labeled, so we can provide labels for those images. We know that &lt;em&gt;most&lt;/em&gt; of the properties will have bathrooms. What’s the easiest way to identify a bathroom? If you said by toilets, I would say that you’re right. So we need our image classification to know what a toilet looks like. But not everyone has the same toilet, in the same position, and/or has taken the picture from the same angle. To increase accuracy, we need data taken from different angles, with different size images of toilets, etc.&lt;/p&gt;
 
-&lt;p&gt;So during that interview retro, my first question was “have you offered the position to someone?”&lt;/p&gt;
+&lt;p&gt;One way to augment your data is to take an image, like a toilet, and apply a method like &lt;a href=&quot;https://js.tensorflow.org/api/latest/#reverse&quot;&gt;.reverse( )&lt;/a&gt; to the image. By reversing the image to add to our dataset, we have doubled our dataset and made it more reliable.&lt;/p&gt;
 
-&lt;p&gt;“We have.”&lt;/p&gt;
+&lt;p&gt;Let’s simplify the steps you need to get there. Let’s imagine that we have an image of a toilet that we have stored in the variable toiletImg.&lt;/p&gt;
 
-&lt;p&gt;I never received a rejection notification, and that was the first time I heard the news.&lt;/p&gt;
+&lt;p&gt;First, we’ll convert that image into a tensor–for the example, we’ll grab it from the browser.&lt;/p&gt;
 
-&lt;p&gt;When I started Virtual Coffee, a number of women in tech told me it wasn’t a good idea to continue building the community. “People won’t see you as technical. They’ll see you as a project manager,” they said. Can you guess the feedback?&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const toiletTensor = tf.browser.fromPixels(toiletImg)&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;THE REASON&lt;/strong&gt;: “We’re looking for someone more technical. If we open up a Project Manager position, we hope you’ll apply!”&lt;/p&gt;
+&lt;p&gt;Now we have a tensor, but we want to reverse the image:&lt;/p&gt;
 
-&lt;h2 id=&quot;senior-role&quot;&gt;Senior role&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tf.reverse(toiletImg, 1)&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;I also expected to hear back from this job around the week of the 12th. On the 15th, I got a message saying they were still reviewing applications, but there would be a decision by Tuesday, July 20th. When the 20th came and went, I sent a message asking if I could assume someone else had been offered the position.&lt;/p&gt;
+&lt;p&gt;You’ll notice that I have a 1 there. What’s that for? That second parameter indicates that we want to flip the axis that holds the pixels for the &lt;em&gt;width&lt;/em&gt; of the image.&lt;/p&gt;
 
-&lt;p&gt;A quick reply let me know that they pushed back the decision, but I’d know by that afternoon. And I did. We had a quick phone call around 5:00.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;THE REASON&lt;/strong&gt;: Not enough experience. There would need to be some time to get me up to senior level.&lt;/p&gt;
-
-&lt;p&gt;“Would you say I’m not technical enough?”&lt;/p&gt;
-
-&lt;p&gt;“Absolutely not.”&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;I’m just going to take a second to let you think about this.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Pause…&lt;/p&gt;
-
-&lt;p&gt;Do you see it? The junior role didn’t think I was technical enough. The senior role quickly answered that wasn’t the case.&lt;/p&gt;
-
-&lt;p&gt;So here’s the thing; every team defines their wants and their needs differently. Every team interviews differently. You don’t get a drastic difference in opinion like that, without such a varied and unpredictable system.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;So, here’s your reminder if you’ve recently been rejected from a job or jobs: interviewing is a system with variables that you can’t control, that you can’t solve. And you *can’t&lt;/em&gt; possibly ever know all of the variables going into those interviews.*&lt;/p&gt;
-
-&lt;h2 id=&quot;what-went-wrong&quot;&gt;What Went Wrong?&lt;/h2&gt;
-
-&lt;h3 id=&quot;i-didnt-ask-them-what-they-wanted&quot;&gt;I didn’t ask them what they wanted.&lt;/h3&gt;
-
-&lt;p&gt;Interviews have a performative aspect. If you’re being evaluated by a team, you need to know what each of the team members is looking for.&lt;/p&gt;
-
-&lt;p&gt;You have to ask, as &lt;a href=&quot;https://twitter.com/GantLaborde&quot;&gt;Gant Laborde&lt;/a&gt; calls it, “the power question”: what’s a problem that currently exists that the ideal hire would solve?&lt;/p&gt;
-
-&lt;p&gt;When you get their answers, you’ve got a cheat sheet for your answers.&lt;/p&gt;
-
-&lt;p&gt;I only asked this question to one person, and so I didn’t have the cheat sheet for my interview. I &lt;em&gt;thought&lt;/em&gt; I knew what they wanted based on what problems they talked about, and I focused on that for my answers. But the thing is, sometimes you don’t know all the weaknesses they have or the pressures they’re feeling the most, even if you ask.&lt;/p&gt;
-
-&lt;p&gt;For the junior role, I leaned heavily into talking about Virtual Coffee and systems and processes because I knew I was originally brought in to interview because of my work with it.&lt;/p&gt;
-
-&lt;p&gt;Could I have talked about specific coding concepts? Yep.&lt;/p&gt;
-
-&lt;p&gt;Could I have talked about how my experience as an English teacher equipped me to break down complex concepts, communicate ideas to different audiences, speak in front of groups, create and organize content methodically and with structure? Yep.&lt;/p&gt;
-
-&lt;p&gt;Could I have been more confident when I wasn’t getting non-verbal feedback from my interviewers? Yep, again.&lt;/p&gt;
-
-&lt;p&gt;Should I have spent more time preparing? 100% no, but it doesn’t mean that I didn’t fall down into the self-destruction pit or that I was able to think this through unemotionally after I got the news.&lt;/p&gt;
-
-&lt;h2 id=&quot;my-response&quot;&gt;My Response&lt;/h2&gt;
-
-&lt;p&gt;This is where the “Dark Night of the Soul” moment comes in. The moment where you doubt yourself and your place in the world. The moment you wonder if you belong, if you have what it takes. The moment you think maybe you’ve been lying to yourself this whole time.&lt;/p&gt;
-
-&lt;p&gt;What they said was:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;You aren’t technical enough.&lt;/em&gt;
-&lt;em&gt;You aren’t experienced enough.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;But what I heard was:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;You aren’t enough.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;And I cried not because I didn’t get the offers, I cried because I doubted myself, because I felt like I had wasted my time and the time of others. Because maybe I was Icharus, and I was falling down to the ground because I was flying where I didn’t belong.&lt;/p&gt;
-
-&lt;p&gt;I messaged a friend who has become a mentor to me over the last year, and who I first told about the initial invitation to apply for the Junior Role. And in the course of the conversation, they asked two important questions that allowed me to refocus:&lt;/p&gt;
-
-&lt;p&gt;Where do you think your technical skills are? Self-evaluate.&lt;br /&gt;
-What are your next steps?&lt;/p&gt;
-
-&lt;h2 id=&quot;self-evaluation-of-my-technical-skills-a-brainstorm&quot;&gt;Self-evaluation of my Technical skills, a brainstorm&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I need to be more confident. I need to talk about technical concepts as confidently as I talk about community.&lt;/li&gt;
-  &lt;li&gt;I need to have a broader understanding of React and JS concepts, to be able to apply them outside of the codebase I primarily work on.&lt;/li&gt;
-  &lt;li&gt;I’m good at testing.&lt;/li&gt;
-  &lt;li&gt;I can build a component with a mock-up.&lt;/li&gt;
-  &lt;li&gt;I need work on optimizing and doing things like creating custom hooks.&lt;/li&gt;
-  &lt;li&gt;I understand key ideas and code, but I need to deepen my roots and learn how/when to use more advanced concepts.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A very deliberate self-evaluation is good. It allows for goals and growth plans. It creates a space for making progress. And this was a good time to do it.&lt;/p&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
-
-&lt;p&gt;When I was in 7th grade I wanted to run the hurdles on my track team. I could clear them pretty quickly and could consistently come in second place to an 8th grader. So I asked my coach if I could compete.&lt;/p&gt;
-
-&lt;p&gt;“You’re too short,” my coach told me.&lt;/p&gt;
-
-&lt;p&gt;This is one of those enough statements. You aren’t tall enough, is what he was saying.&lt;/p&gt;
-
-&lt;p&gt;And maybe it seems silly to remember that story, but this has been one of my greatest motivators. Being underestimated is an invitation to exceed expectations.&lt;/p&gt;
-
-&lt;p&gt;You don’t think I can clear these hurdles? Watch me break the record.&lt;/p&gt;
-
-&lt;p&gt;Watch me be technical.
-Watch me amplify the technical and community skills of the women in my network.
-Watch me do the things Senior DevRels do.&lt;/p&gt;
-
-&lt;p&gt;I have given references for people’s job searches. I have made connections that have led to hires. I have created programs that allowed for experiences that lead to new jobs.&lt;/p&gt;
-
-&lt;p&gt;I want to support good people. So that’s it. That’s the next stage. To find ways to help more people. Because, at the end of the day, people are what matter.&lt;/p&gt;</content>
+&lt;p&gt;This is one example of what you can do, &lt;em&gt;but&lt;/em&gt; I wasn’t making up the AirBnB example. They have &lt;a href=&quot;https://medium.com/airbnb-engineering/categorizing-listing-photos-at-airbnb-f9483f3ab7e3&quot;&gt;used image classification to help them identify images&lt;/a&gt;. Can you imagine how much time that saved them? There’s a lot of power in Machine Learning, image classification, and possibilities that have been explored and remain to be explored. But you always start with the basics. Let yourself be inspired and then take it one day at a time. And if you’re interested in learning more, check out my &lt;a href=&quot;https://www.twitch.tv/bekahhw/&quot;&gt;livestreams on TFJS on Tuesday afternoons at 1pm est&lt;/a&gt; or let me know if you want to join our study group on Friday afternoons at 1pm est!&lt;/p&gt;</content>
 
       
       
@@ -462,11 +503,9 @@ Watch me do the things Senior DevRels do.&lt;/p&gt;
       
 
       
-        <category term="Interview Series" />
-      
 
       
-        <summary type="html">When I was a kid, I used to do Richard Simmons’ Sweatin’ to the Oldies–the VHS dance workout–with my mom. And I loved the choreography for “It’s my party and I’ll cry if I want to.” Well, that was the foreshadowing to this moment. So just like we had a 2 for 1 deal for birthdays on July 21st–it was both mine and my son’s birthday–I would also get a kind of 2 for 1 deal on the interviews: two rejections in one day on my birthday. Not ideal. But also, I’m a believer that it’s better to know bad news than to be stuck in the limbo of not knowing news. And it’s in the moments after the news, in the process of feelings and feedback that we regroup and define who we are next. And this post, it’s about all of those things.</summary>
+        <summary type="html">So we’ve learned about what a tensor is, and we know a little bit about what you can do with them, but why the heck would we want to turn an image into a tensor? Well, if we want to use them with TensorFlow.js or for Deep Learning, then we change them to tensors to put them in a useable form.</summary>
       
 
       
@@ -474,102 +513,24 @@ Watch me do the things Senior DevRels do.&lt;/p&gt;
     </entry>
   
     <entry>
-      <title type="html">Two Companies, Two DevRel Positions, Two Different Interview Processes</title>
-      <link href="http://localhost:4000/Two-Companies,-Two-DevRel-Positions,-Two-Different-Interview-Processes" rel="alternate" type="text/html" title="Two Companies, Two DevRel Positions, Two Different Interview Processes" />
-      <published>2021-07-25T00:00:00-04:00</published>
-      <updated>2021-07-25T00:00:00-04:00</updated>
-      <id>http://localhost:4000/Two%20Companies,%20Two%20DevRel%20Positions,%20Two%20Different%20Interview%20Processes</id>
-      <content type="html" xml:base="http://localhost:4000/Two-Companies,-Two-DevRel-Positions,-Two-Different-Interview-Processes">&lt;p&gt;In the &lt;a href=&quot;https://bekahhw.github.io/How-I-Accidentally-Interviewed-for-Two-Jobs,-a-series&quot;&gt;last post&lt;/a&gt;, I talked about how I ended up interviewing for two positions without looking for a job. And what might seem like a process that should be fairly consistent since both were DevRel positions, there were still some pretty big differences that didn’t have to do with the fact that one was for a Senior position and the other a Junior. So here’s the breakdown of each process:&lt;/p&gt;
+      <title type="html">Dear Senior Devs, Use your privilege</title>
+      <link href="/Dear-Senior-Devs,-Use-your-privilege" rel="alternate" type="text/html" title="Dear Senior Devs, Use your privilege" />
+      <published>2021-11-28T00:00:00-05:00</published>
+      <updated>2021-11-28T00:00:00-05:00</updated>
+      <id>/Dear%20Senior%20Devs,%20Use%20your%20privilege</id>
+      <content type="html" xml:base="/Dear-Senior-Devs,-Use-your-privilege">&lt;p&gt;Dear Senior Devs,&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Total length, from initial DM to decision&lt;/strong&gt;
-Junior position: 71 days
-Senior position: 33 days&lt;/p&gt;
+&lt;p&gt;Use your privilege. As privileged tech community members, it’s your job to help fight the gatekeepers on your teams. It is your job to make space at the table for those who have been kept out. To hand the mic to those who are silenced. To allow for a pause in the conversation to ask if there anyone wants to add something to the conversation when you realize that the only people who have contributed to the conversation are the other people of privilege at the table. To recognize our own complicity and remember that unintentional gatekeeping is still gatekeeping.&lt;/p&gt;
 
-&lt;h2 id=&quot;interview-process&quot;&gt;Interview process&lt;/h2&gt;
+&lt;p&gt;Gatekeepers, at the very core, are people or organizations that prevent people from achieving their goals. There are a lot of ways gatekeeping happens–I have a talk that goes through a lot more than this post–but I’m going to focus on &lt;em&gt;how&lt;/em&gt; senior+ developers can work to prevent gatekeeping on their teams. As the saying goes, you’re as strong as your weakest link. If there is a person on your team who is not supported, who doesn’t have the opportunity to ask questions, who isn’t provided an environment with a growth-mindset, your team suffers in more ways than one. To be honest, I’m most concerned with the impact of that environment on the whole team. Because teams who don’t feel supported are less likely to grow, to innovate, to maintain strong mental health. I’m concerned about the impact on the individuals, especially those who don’t feel seen.&lt;/p&gt;
 
-&lt;h3 id=&quot;junior-position&quot;&gt;Junior position&lt;/h3&gt;
+&lt;p&gt;If someone is spoken to negatively on the team, use your privilege. There’s a difference between honest feedback and condescending feedback. When the latter happens, stand up for those people on your team. If you are silent, you set the tone: you’re not willing to stand up for someone when they’re being poorly treated. It’s still a sin if it’s a sin of omission.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Initial conversation with team lead&lt;/li&gt;
-  &lt;li&gt;Initial call with hiring manager&lt;/li&gt;
-  &lt;li&gt;30 minute presentation before a panel of 5-6 team members with 30 minutes of questions&lt;/li&gt;
-  &lt;li&gt;An hour leadership interview with two team members&lt;/li&gt;
-  &lt;li&gt;45 minute interview with the hiring manager&lt;/li&gt;
-  &lt;li&gt;45 minute diversity and inclusion interview&lt;/li&gt;
-  &lt;li&gt;15 minute wrap up interview with recruiter&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;If you’ve allowed gatekeeping behavior to happen and not taken action, apologize and don’t do it again. Unintentional gatekeeping happens. Realizing we’ve made a mistake happens. Apologize, but more importantly, take action and make changes so you don’t do it again.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Total active interview time&lt;/strong&gt;: 4 hours and 45 minutes&lt;/p&gt;
+&lt;p&gt;Listen. There will come a time for everyone where we start to forget what it’s like to be new. And for most new developers, it’s exhausting to try to break into tech, let alone do it while fighting off people who want to keep you out. And here’s the thing: for most of us, those encounters aren’t a one-time thing. We face them again and again and those experiences sometimes create a fear that doesn’t leave us. Ask about other’s experiences so you can broaden your vision of the world. Ask how they can better be supported. And do research yourself to see how you can support your team members.&lt;/p&gt;
 
-&lt;h3 id=&quot;senior-position&quot;&gt;Senior position&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Initial conversation with Director of DevRel&lt;/li&gt;
-  &lt;li&gt;Recorded pair programming with head of DevRel&lt;/li&gt;
-  &lt;li&gt;15 minute recorded lightning talk on the subject of my choosing&lt;/li&gt;
-  &lt;li&gt;hour-long behavioral interview with Director of DevRel&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Total active interview time&lt;/strong&gt;: 3 hours and 15 minutes&lt;/p&gt;
-
-&lt;h2 id=&quot;presentations&quot;&gt;Presentations&lt;/h2&gt;
-
-&lt;h3 id=&quot;junior-position-1&quot;&gt;Junior Position&lt;/h3&gt;
-
-&lt;p&gt;For the presentation, I was given six different options, ranging from talking about one of their products, to DevOps, to a deep dive into a technical topic, to open-source, and finally, what I chose: how they should approach Online Video Content, Hackathons, Meet-ups, Social media, and Community Management.&lt;/p&gt;
-
-&lt;h4 id=&quot;my-approach&quot;&gt;My Approach&lt;/h4&gt;
-
-&lt;p&gt;Although this seemed like the lengthiest subject to tackle, I immediately had ideas. I have worked on pretty much all of these and have learned a lot about systems and processes that empower volunteers to be a part of the process. The trouble with this was that the organization is really large, and I wanted to make sure I had a clear handle on what their approach had been so far, how have they done these things in the past, what had worked, and what could power them up in the future.
-Because there wasn’t a clear home base for these things on their site, this process took a long time. I learned a lot about the organization, found things that I didn’t know existed, and started to put together some notes and slides. In total, I ended up with 24 slides for a thirty minute presentation, and an additional walkthrough at the end.&lt;/p&gt;
-
-&lt;p&gt;One of the most challenging aspects was that I had to tackle an approach to five different topics, &lt;em&gt;and&lt;/em&gt; it was really important to me that they understood my philosophy behind my approach that tied all of these things together. So in addition to the deep dive into their organization, creating the presentation and slides, I had to cut down my very long presentation to get closer to a thirty minute presentation. &lt;em&gt;Listen&lt;/em&gt;, I could’ve spent at least an hour talking about each of these individual pieces. This was not an easy or quick job.&lt;/p&gt;
-
-&lt;p&gt;What happened was I had to take time off work to work on it. I made the (wrong) decision to skip one of my favorite local monthly events with my family to work on it. I worked and worked and worked on it. I’m proud of the final project I submitted.&lt;/p&gt;
-
-&lt;p&gt;But when I got to the interview, it turned out that there was a mistake in the email. It should have said to choose &lt;em&gt;one&lt;/em&gt; of these (Online video content, Hackathons, Meet-ups, Social media, and community management) and give your approach. So what I put sixty hours into, could’ve taken a fraction of the time.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Total time researching and creating presentation&lt;/strong&gt;: ~60 hours&lt;/p&gt;
-
-&lt;h3 id=&quot;senior-position-1&quot;&gt;Senior Position&lt;/h3&gt;
-
-&lt;p&gt;The presentation directions were less specific here: Create a 15 minute lightning talk on the subject of your choosing, record, and email a link.&lt;/p&gt;
-
-&lt;h4 id=&quot;my-approach-1&quot;&gt;My Approach&lt;/h4&gt;
-
-&lt;p&gt;This was a much shorter process because it wasn’t focused on an understanding of the company. I didn’t jump into the project either. I took some time to look at the current team members, listen and watch what they were currently doing, and tried to image how I could fit on the team. That was a little bit easier because I had already met a handful of them at some point in my coding journey, and I already enjoyed those experiences.
-I was still having a hard time imagining how I fit into their world. They seem like a really well-rounded team. So I brainstormed a number of topics and finally wrote really detailed outlines for both, and presented them to three developers I’m close to for their feedback. And from that came The Coder’s Journey: Meeting the mentor, a fifteen minute talk with 40 slides.&lt;/p&gt;
-
-&lt;p&gt;Now, here’s where the frustrating part came in. For those of you who’ve had the experience of speaking before a live audience versus recording yourself, you may have felt how hard it is to keep the same energy when there’s no feedback, no head nods, not acknowledgement. And for me, when I deliver a talk, I get super nervous. But, for whatever reason, it works because I can direct and exchange energy with the audience and it balances out.&lt;/p&gt;
-
-&lt;p&gt;When I’m talking to myself into a camera, the only place for that extra energy to go is back to myself. And to top that off were the technical difficulties I faced recording the talk. For me, it was important to get it all in one take to better replicate the live experience. Initially, I had some pacing issues, then some lighting issues, then some video issues.&lt;/p&gt;
-
-&lt;p&gt;Finally, I thought I nailed it.&lt;/p&gt;
-
-&lt;p&gt;And then I watched the video.&lt;/p&gt;
-
-&lt;p&gt;The audio didn’t sync with the video. And I couldn’t fix it.&lt;/p&gt;
-
-&lt;p&gt;At this point, I was frustrated and starting to get tired of delivering the same talk. So when I hit a point where I finally made it through the material and the sound worked, I was done. I couldn’t deliver that talk to myself, without an audience anymore. Not today, not tomorrow, maybe sometime in the far future. Was it my best performance? For sure no. But it was the best I could do in the moment.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Total time researching and creating presentation&lt;/strong&gt;: ~6 hours (If I hadn’t had the technical difficulties with recording, this would have been more like 4 hours)&lt;/p&gt;
-
-&lt;h2 id=&quot;interview-highlights&quot;&gt;Interview Highlights&lt;/h2&gt;
-
-&lt;h3 id=&quot;junior-position-2&quot;&gt;Junior Position&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;One of the questions I asked was about the pain points the team was currently facing. I felt like there was a lot of honesty from the team about the challenges they were facing. It helped me to have a better understanding of what I was potentially walking into.&lt;/li&gt;
-  &lt;li&gt;I loved the Diversity and Inclusion interview. The interviewer did a great job of making me feel heard in the interview, allowing me to talk openly and vulnerably, providing me with a response and conversation. She was also the only mom in tech that I had the chance to interview with 1:1. I think that made a huge difference in the report from the beginning.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;senior-position-2&quot;&gt;Senior Position&lt;/h3&gt;
-
-&lt;p&gt;The behavioral interview was simultaneously one of the worst and best experiences. We talked through my work history, strengths and weaknesses, and the interviewer provided me feedback on what &lt;em&gt;they&lt;/em&gt; saw as my strengths and weaknesses. It was one of the worst because it was emotionally exhausting talking through some of the challenges I’ve faced in the workplace and really digging in deep to the whys and hows of the situation. It was also the best because I learned a lot about myself in that session. There’s maybe been one or two other times in my life where someone has read me that well. It’s both a jarring and exciting experience. It’s exciting because there’s so much potential for growth in those situations. There are things that are understood that you don’t have to reveal. There’s less of an opportunity to hide. I came out of that interview feeling like I knew there was a person invested in &lt;em&gt;me&lt;/em&gt;, and I can’t think of any better outcome.&lt;/p&gt;
-
-&lt;h3 id=&quot;overall-highlights&quot;&gt;Overall highlights&lt;/h3&gt;
-
-&lt;p&gt;Interviewing can certainly be exhausting, but I’m super thankful for all I learned through these two processes. I learned more about the right questions to ask (there will be a post on that!), how to listen better, how to make the process meaningful for myself. I learned about DevRel. I learned about different approaches to DevRel and management and processes. I learned that even though I’ve never been paid as a DevRel, I am doing so many DevRel things and that my 10 years of teaching college English courses is certainly an asset that I can lean into way more than I have been. I learned that taking a more direct approach to asking questions is important to me. I learned that continued communication, whether through DMs or emails or some other mode, is really important for me to understand as much as I can. I learned that feedback is really important, and that’s what I’ll talk about in the next post.&lt;/p&gt;</content>
+&lt;p&gt;Whenever we make someone feel like they aren’t part of the group or that they’re not &lt;em&gt;as valuable&lt;/em&gt; as other members of the group, we’re being gatekeepers, whether or not it’s intentional. When you’re using acronyms or jargon, always define it first. And don’t precede it with the statement, “In case you didn’t know” or “For those of you who don’t know” because you’re creating a separation in the community, an us–the people who are in the inner circle–and them–the people who are outside of our circle. Don’t interrupt others or assume we know others’ questions or intentions. If you allow someone to feel unwelcome because you don’t want to feel uncomfortable, you’re a gatekeeper. So use your privilege to create a supportive and cohesive team.&lt;/p&gt;</content>
 
       
       
@@ -586,11 +547,9 @@ I was still having a hard time imagining how I fit into their world. They seem l
       
 
       
-        <category term="Interview Series" />
-      
 
       
-        <summary type="html">In the last post, I talked about how I ended up interviewing for two positions without looking for a job. And what might seem like a process that should be fairly consistent since both were DevRel positions, there were still some pretty big differences that didn’t have to do with the fact that one was for a Senior position and the other a Junior. So here’s the breakdown of each process:</summary>
+        <summary type="html">Dear Senior Devs,</summary>
       
 
       
@@ -598,45 +557,113 @@ I was still having a hard time imagining how I fit into their world. They seem l
     </entry>
   
     <entry>
-      <title type="html">How I accidentally interviewed for two jobs</title>
-      <link href="http://localhost:4000/How-I-Accidentally-Interviewed-for-Two-Jobs,-a-series" rel="alternate" type="text/html" title="How I accidentally interviewed for two jobs" />
-      <published>2021-07-20T00:00:00-04:00</published>
-      <updated>2021-07-20T00:00:00-04:00</updated>
-      <id>http://localhost:4000/How%20I%20Accidentally%20Interviewed%20for%20Two%20Jobs,%20a%20series</id>
-      <content type="html" xml:base="http://localhost:4000/How-I-Accidentally-Interviewed-for-Two-Jobs,-a-series">&lt;h1 id=&quot;part-i-interview-them-first&quot;&gt;Part I: Interview Them First&lt;/h1&gt;
+      <title type="html">Hello, Tensor!</title>
+      <link href="/Hello-Tensor!" rel="alternate" type="text/html" title="Hello, Tensor!" />
+      <published>2021-11-22T00:00:00-05:00</published>
+      <updated>2021-11-22T00:00:00-05:00</updated>
+      <id>/Hello%20Tensor!</id>
+      <content type="html" xml:base="/Hello-Tensor!">&lt;p&gt;So we’ve been using the word tensor, just throwing it around, but now we’re going to learn a little more about it. You don’t &lt;em&gt;have&lt;/em&gt; to understand everything. This isn’t an in depth exploration of what tensors are or a debate about whether the mathematical definition of tensors versus the computer science definition of tensors. Understanding enough to know &lt;em&gt;how&lt;/em&gt; you can use tensors should be the goal here, so a basic understanding can allow us to do a better job of using tensors in our development.&lt;/p&gt;
 
-&lt;p&gt;I’ve heard people say they interview for practice or for fun. I am not one of those people. I am the opposite of those people. On top of being not one of those people, I am also a person who is incredibly satisfied with my job and life, except as an independent contractor my family and I pay out of pocket for medical insurance. And I have over $70,000 of medical bills sitting on my desk with more coming. So when someone from a notable company in tech reached out to me and encouraged me to apply to a DevRel position, and then when I talked to a friend in tech who encouraged me to apply for a senior DevRel position, I did. This is the first in a series of posts on what I’ve learned through this process.&lt;/p&gt;
+&lt;h2 id=&quot;what-are-tensors&quot;&gt;What are tensors?&lt;/h2&gt;
 
-&lt;h2 id=&quot;its-ok-to-say-no-or-recommend-someone-else&quot;&gt;It’s Ok to say no or recommend someone else&lt;/h2&gt;
+&lt;p&gt;Tensors are collections of data in a structured type that are optimized as numbers to be ready for calculations. They’re similar to working with multidimensional arrays in JavaScript.&lt;/p&gt;
 
-&lt;p&gt;As an early-career developer who gets maybe more DMs than most early-career devs because of what I’ve done with &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt;, I’ve had a number of people reach out and ask me to apply for jobs. Usually, I decline and recommend someone else I know. If you look at the job, and it’s not something that’s interesting, within your desired salary, or you find out more about the team and you don’t think you’d be a good fit, it’s ok to pass or to recommend someone else you think would be a good fit.&lt;/p&gt;
+&lt;p&gt;We use tensors because they can do calculations quickly; they’re created to do many side by side calculations at once and can batch process at high speeds. They also provide us with direct access to data in a useable format. Outside of Machine Learning, there are libraries that use tensors for images, sound, 3d models, etc.&lt;/p&gt;
 
-&lt;h2 id=&quot;do-your-research-and-reach-out-to-people-you-trust&quot;&gt;Do Your Research and Reach out to People you Trust&lt;/h2&gt;
+&lt;p&gt;Tensors have a rank, shape, and datatype (dtype). According to &lt;a href=&quot;https://www.tensorflow.org/js/guide/tensors_operations&quot;&gt;TensorFlow.js Tensors and operations&lt;/a&gt;, these can be defined as:&lt;/p&gt;
 
-&lt;p&gt;Since coming into tech, I’ve always said that my dream job is working with good people. And that’s 100% true for me. I have been working with good–actually amazing–people. I’ve also seen so many devs fall into really toxic work environments. So if I’m going to leave a situation I’m happy with, I’m going to do my research. For me this means learning about the people on the teams, the companies, and DMing people who I know in tech and asking them about the teams, companies, and/or positions. Through these DMs, I learned:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;rank: defines how many dimensions the tensor contains&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Some tough questions to ask to gauge the strength of the teams and to avoid workplace toxicity;&lt;/li&gt;
-  &lt;li&gt;How to gauge the sincerity of responses;&lt;/li&gt;
-  &lt;li&gt;How current teams functioned within the organization and how that would impact the position;&lt;/li&gt;
-  &lt;li&gt;What the current team dynamics are;&lt;/li&gt;
-  &lt;li&gt;About the projects, processes, and structures the teams use.&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;p&gt;shape: which defines the size of each dimension of the data&lt;/p&gt;
 
-&lt;h2 id=&quot;ask-direct-questions&quot;&gt;Ask Direct Questions&lt;/h2&gt;
+  &lt;p&gt;dtype: which defines the data type of the tensor.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Because I wasn’t actively looking for work, I came to the process with a privileged position. I could afford to ask questions that some might be afraid to ask initially. Some of the questions I asked prior to the interviews were:&lt;/p&gt;
+&lt;p&gt;You can check what each tensor is by calling the tensor method. If you want to follow along and experiment with tensors, you can fork and use my &lt;a href=&quot;https://codesandbox.io/s/hello-tensor-tfjs-sandbox-dodb3&quot;&gt;Hello Tensor Sandbox&lt;/a&gt;. Inside the sandbox, the only changes you’ll need to make are in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src &amp;gt; index.js&lt;/code&gt;. Most of your changes will be to line 5, subbing in the data you’re experimenting with.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;What’s the salary range?&lt;/li&gt;
-  &lt;li&gt;Could I continue organizing Virtual Coffee as part of the job?&lt;/li&gt;
-  &lt;li&gt;What are your current pain points?&lt;/li&gt;
-  &lt;li&gt;Is the schedule flexible?&lt;/li&gt;
-  &lt;li&gt;What does the health insurance like?&lt;/li&gt;
-  &lt;li&gt;Can we talk about the title?&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;EXAMPLE&lt;/p&gt;
 
-&lt;p&gt;Remember, &lt;em&gt;you’re&lt;/em&gt; interviewing them as well. If you have values or standards that are important to you, it’s ok to be selective from the very beginning. In fact, it was the openness and honesty of the answers that made me feel comfortable going further in the process, which I’ll talk about in my next post, because these weren’t quick and simple processes.&lt;/p&gt;</content>
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Import * as tf from &quot;@tensorflow/tfjs&quot;;
+
+ const tensorExample =  [1, 2, 3]
+	console.log(tf.tensor(tensorExample))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When we check the console, we’ll see a lot of information there. For the purpose of this blog, we’ll go through the three properties defined above.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rankType: “1”
+Shape: Array(1) &amp;gt; 0:3
+dataType: “float32”
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So what does that mean?&lt;/p&gt;
+
+&lt;h3 id=&quot;ranktype&quot;&gt;RankType&lt;/h3&gt;
+
+&lt;p&gt;We know that the rank has one dimension. But what is a dimension? Each array has a dimension. Because we only have a single array, it’s a rank 1, a flat dataset. We need only a single index to access the data.&lt;/p&gt;
+
+&lt;p&gt;If we have a rankType of “2”, that means that we have an array of arrays, and we need two indexes to access this data. In other words, we have an x and y coordinate here, and also called a rank-2.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const twoDimensionArray = [ [2,3], [5,6], [7,8] ]
+console.log(twoDimensionArray([0,0])
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;What do you think the answer is here?&lt;/p&gt;
+
+&lt;p&gt;If you guessed [2,3], you’d be correct! Our first indexed array is the outer array. The second, or y-coordinate, refers to the inner arrays. In this case, it’s the [2,3] array.&lt;/p&gt;
+
+&lt;p&gt;So if we wanted to get [7,8], we would do that by twoDimensionArray([0,2]).&lt;/p&gt;
+
+&lt;h3 id=&quot;shape&quot;&gt;Shape&lt;/h3&gt;
+
+&lt;p&gt;We have a single array like in the original example ( const tensorExample = [1, 2, 3]), and if we check the array at the 0 index, we see that there are three items in the array.&lt;/p&gt;
+
+&lt;p&gt;Now, let’s look at a new example:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const = newArray
+[
+    [
+     [2, 3, 9, 0],
+     [5, 6, 9, 8]
+    ],
+    [
+      [7, 8, 4, 3],
+      [1, 2, 4, 9]
+    ],
+    [
+      [7, 8, 2,1],
+      [1, 2, 0,7]
+    ]
+  ];
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here we’d have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shape: Array(3)&lt;/code&gt;. And if we expand that, we see:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 : 3
+1 : 2
+2 : 4
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So the first index [0] in the array, is the outer array, which contains three arrays.&lt;/p&gt;
+
+&lt;p&gt;So the second index [1] in the array, is the middle set of arrays. Within that set, they contain two sets of arrays, hence the 2. So if we console.log(newArray[0,0]), we get [ 2, 3, 9, 0] and [5, 6, 9, 8].&lt;/p&gt;
+
+&lt;p&gt;And the last index [2] in the array, is the most inner and that’s the four numbers we see in the inner arrays. And that’s where we get [5, 6, 9, 8].&lt;/p&gt;
+
+&lt;p&gt;If we need to change the shape of a tensor, we can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reshape&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;h3 id=&quot;datatype&quot;&gt;DataType&lt;/h3&gt;
+
+&lt;p&gt;DataType, or as it’s printed in the console &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dType&lt;/code&gt; , is a “float32.” This is the default dataType for tensors. If we need to create our tensor in a different form, we can also use bool, int32, complex64, and string.&lt;/p&gt;
+
+&lt;p&gt;Depending on your goals, you might need to use a different form, and there’s a way to specify the type that you need.&lt;/p&gt;
+
+&lt;p&gt;This might seem like a lot, but remember these are the basics for understanding so you can use tensors to do some really magical things. And if you’ve walked through these examples and tried them out for yourself, you’ve created your very first tensor. Hello, Tensor!&lt;/p&gt;
+
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
+
+&lt;p&gt;-&lt;a href=&quot;https://www.tensorflow.org/js/guide/tensors_operations&quot;&gt;TensorFlowjs Guide&lt;/a&gt; -&lt;a href=&quot;https://infinite.red/learn-tensorflowjs&quot;&gt;Learn TensorFlow.js&lt;/a&gt;&lt;/p&gt;</content>
 
       
       
@@ -653,11 +680,11 @@ I was still having a hard time imagining how I fit into their world. They seem l
       
 
       
-        <category term="Interview Series" />
+        <category term="TFJS" />
       
 
       
-        <summary type="html">Part I: Interview Them First</summary>
+        <summary type="html">So we’ve been using the word tensor, just throwing it around, but now we’re going to learn a little more about it. You don’t have to understand everything. This isn’t an in depth exploration of what tensors are or a debate about whether the mathematical definition of tensors versus the computer science definition of tensors. Understanding enough to know how you can use tensors should be the goal here, so a basic understanding can allow us to do a better job of using tensors in our development.</summary>
       
 
       
@@ -665,116 +692,28 @@ I was still having a hard time imagining how I fit into their world. They seem l
     </entry>
   
     <entry>
-      <title type="html">Notes from Twitter Spaces on Community and Remote Work</title>
-      <link href="http://localhost:4000/Notes-from-Twitter-Spaces-on-Community-and-Remote-Work" rel="alternate" type="text/html" title="Notes from Twitter Spaces on Community and Remote Work" />
-      <published>2021-06-28T00:00:00-04:00</published>
-      <updated>2021-06-28T00:00:00-04:00</updated>
-      <id>http://localhost:4000/Notes%20from%20Twitter%20Spaces%20on%20Community%20and%20Remote%20Work</id>
-      <content type="html" xml:base="http://localhost:4000/Notes-from-Twitter-Spaces-on-Community-and-Remote-Work">&lt;p&gt;My notes from the last two weeks of Twitter spaces I hosted. These are not all my ideas, and I might not agree with them all. But, I wanted to share what we talked about.&lt;/p&gt;
+      <title type="html">A Note to Devs Looking for Their First Job</title>
+      <link href="/A-Note-to-Devs-Looking-for-Their-First-Job" rel="alternate" type="text/html" title="A Note to Devs Looking for Their First Job" />
+      <published>2021-11-19T00:00:00-05:00</published>
+      <updated>2021-11-19T00:00:00-05:00</updated>
+      <id>/A%20Note%20to%20Devs%20Looking%20for%20Their%20First%20Job</id>
+      <content type="html" xml:base="/A-Note-to-Devs-Looking-for-Their-First-Job">&lt;p&gt;It’s hard out there, new devs. I’m sorry. So many of you have been fed the fairy tale of an industry with jobs a plenty, bountiful pay, with a steep and rigorous climb that would be worth it when you hit the peak—finally ready to transition from learning to working. I’m sorry so many of you have been let down, have seen the reality of the plentiful jobs for those with 3+ years of experience, the rat race for the available entry-level jobs, and the toxic environments preying on new developers.&lt;/p&gt;
 
-&lt;h1 id=&quot;community--career&quot;&gt;Community + Career&lt;/h1&gt;
+&lt;p&gt;I’m sorry you’ve felt that pain.&lt;/p&gt;
 
-&lt;h2 id=&quot;why-should-you-be-a-part-of-a-community&quot;&gt;Why should you be a part of a community?*&lt;/h2&gt;
+&lt;p&gt;I know that for many it’s hard to land your first job. It can feel soul-crushing. The interview processes are worse than the standardized tests they made us take in high school. We’re back to impracticality, unnaturally pressurized situations, and a poor indication of how we’ll communicate with our teammates, how we’ll learn as we go, of our abilities to offer new and diverse opinions.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Helps with career guidance&lt;/li&gt;
-  &lt;li&gt;Supports you as you grow&lt;/li&gt;
-  &lt;li&gt;Allows for networking opportunities&lt;/li&gt;
-  &lt;li&gt;Creates a safe space for exploring new ideas and industries&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Provides opportunities to help others&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;As always, this depends on the community you join. Not all experiences will be the same for all people.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;And for those of you who land your first jobs in tech and find yourself unsupported, neglected, and feeling like you provide no value in your job, I am sorry. You deserve to have guidance, support, and mentorship. You deserve to be provided with the tools that will allow you to grow. You deserve to be acknowledged for your work, to be encouraged to grow.&lt;/p&gt;
 
-&lt;h2 id=&quot;find-the-community-that-supports-its-members&quot;&gt;Find the community that supports its members&lt;/h2&gt;
+&lt;p&gt;A team should work to cultivate talent, to create a safe space where you are willing to put yourself out there, to get out of your comfort zone. If you are afraid to share or to ask questions, then you have been let down.&lt;/p&gt;
 
-&lt;p&gt;When you’re looking to join a community, here are some signs that the community supports its members:&lt;/p&gt;
+&lt;p&gt;There are good people and teams and communities in tech that are invested in holding the door open for you, in making space for hard and honest conversations that will help you to grow, in creating pathways for you so you aren’t dropped into a new world with no map, no tools, no direction.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Authentic and vulnerable relationships and interactions,&lt;/li&gt;
-  &lt;li&gt;Investment in helping each other to grow -&amp;gt; look at how people are answering questions or if help and support posts are mostly answered,&lt;/li&gt;
-  &lt;li&gt;Openness to new ideas and experiences -&amp;gt; are members testing out new ideas or actions? Do you see people saying they’ve done something for the first time as part of that group?&lt;/li&gt;
-  &lt;li&gt;Supportive communities can provide a space for you to try new things. For example, maybe you’re interested in speaking at a conference, but you’re afraid. If you have a supportive community, it’s easier to try out the experience. Give your presentation to the community and ask for feedback. When you have a supportive community, it’s easier to be open to feedback, to learn from the experience, and to work towards your goal of giving a presentation.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;There are good companies and teams that realize they don’t have the capacity or structure to support early career developers and admit that.&lt;/p&gt;
 
-&lt;h2 id=&quot;how-to-find-the-right-communities&quot;&gt;How to find the right communities&lt;/h2&gt;
+&lt;p&gt;You deserve to know that you will be supported. Ask that question in the interview. Please ask how they’ll support you as an early career developer. Please ask them how they communicate as a team. Please ask them what their approach is to honest, but hard conversations.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Make sure they have a code of conduct, esp if you’re part of an under-represented group&lt;/li&gt;
-  &lt;li&gt;They all you to be a passive member of a community -&amp;gt; soak up the knowledge and experience&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;signs-of-a-positive-community&quot;&gt;Signs of a positive community&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;There’s a Code of Conduct&lt;/li&gt;
-  &lt;li&gt;For non-discord platforms, when people use their real names&lt;/li&gt;
-  &lt;li&gt;Members of under-represented groups&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;remote-work&quot;&gt;Remote Work&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Some companies did even better when they were forced to go remote&lt;/li&gt;
-  &lt;li&gt;You can do the same thing from home that you can do in the office&lt;/li&gt;
-  &lt;li&gt;PPl are forming networks and relationships outside of the office as a result. There’s less glue, holding you to stick in the current position.&lt;/li&gt;
-  &lt;li&gt;You don’t have the opportunities to network outside of the office&lt;/li&gt;
-  &lt;li&gt;Remote and COVID-remote are two very different things. There are a lot of extra outside stressors. Remote was being thrust on ppl rather than a decision people made.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;why-work-in-a-physical-office&quot;&gt;Why work in a physical office?&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Some people prefer to work in the office&lt;/li&gt;
-  &lt;li&gt;Extrovert!&lt;/li&gt;
-  &lt;li&gt;Clear physical lines of communication: You can walk to the person’s office if you have a question.&lt;/li&gt;
-  &lt;li&gt;Sometimes a challenge of getting work done&lt;/li&gt;
-  &lt;li&gt;There’s a different type of productivity -&amp;gt; talking with the people around you allows you to develop relationships more quickly.&lt;/li&gt;
-  &lt;li&gt;You build teams much quicker in the office&lt;/li&gt;
-  &lt;li&gt;Community building is easier.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;positives-of-working-remotely&quot;&gt;Positives of working remotely&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Flexibility, especially for parents&lt;/li&gt;
-  &lt;li&gt;Allows parents to take breaks and spend time with their kids&lt;/li&gt;
-  &lt;li&gt;Don’t have to commute&lt;/li&gt;
-  &lt;li&gt;Allows for productive breaks -&amp;gt; You can start the laundry, dinner, do errands&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;navigating-challenges-of-working-remotely&quot;&gt;Navigating challenges of working remotely&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;If you don’t have a designated office space, it can be a challenge, but if you set boundaries&lt;/li&gt;
-  &lt;li&gt;Set rules for yourself: when to log off. Turn off the computer and don’t touch it&lt;/li&gt;
-  &lt;li&gt;Do a full shutdown every night&lt;/li&gt;
-  &lt;li&gt;Separate work and “home” computer, so there’s no drive to work after work hours&lt;/li&gt;
-  &lt;li&gt;Set a hard limit for work hours&lt;/li&gt;
-  &lt;li&gt;Dealing with stress and the easy access to food&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Normalize kid noises in the back of every meeting&lt;/li&gt;
-  &lt;li&gt;Productivity: there’s kind of no middle ground. There’s ppl who are super productive and not productive at all. This might speak to the type of office-environment that works best for you.&lt;/li&gt;
-  &lt;li&gt;We shouldn’t be micromanaging. Daily standup, project tracking, and milestones are enough to evaluated the productivity of the team.&lt;/li&gt;
-  &lt;li&gt;Forcing extra steps to force ppl to report progress, that’s toxic.&lt;/li&gt;
-  &lt;li&gt;If there’s an issue with a person, approach it as “How can we support you? Is there a challenge I can help you with?”&lt;/li&gt;
-  &lt;li&gt;Developers should have autonomy and support&lt;/li&gt;
-  &lt;li&gt;Over-communication &amp;gt; under-communication&lt;/li&gt;
-  &lt;li&gt;Don’t do remote work on vacation!!!&lt;/li&gt;
-  &lt;li&gt;Team-building remotely: Depending on the team, turn on the cameras, hear the voice of the other person&lt;/li&gt;
-  &lt;li&gt;Whole set of problems returning to office spaces now with mice, etc.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;bonus&quot;&gt;Bonus&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;blog post idea: how to structure your team to be productive&lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;p&gt;Please open yourself up to honest, but hard-to-hear feedback. Please remember that you are not at the top of the mountain yet, you are just starting the climb and it’s going to feel hard no matter what. But there’s a difference between growing pains and the pain of neglect. You are the hero in your journey, but every hero needs a mentor. It might not be a Yoda, it might be a community, it might be the wisdom you catch in a podcast, it might be a blogpost you read. Most of us are not out there to slay dragons by ourselves. We’re there to combine our skills, our strengths, to level each other up, to be the team that does it together.&lt;/p&gt;</content>
 
       
       
@@ -791,156 +730,11 @@ I was still having a hard time imagining how I fit into their world. They seem l
       
 
       
-        <category term="Tips" />
+        <category term="TFJS" />
       
 
       
-        <summary type="html">My notes from the last two weeks of Twitter spaces I hosted. These are not all my ideas, and I might not agree with them all. But, I wanted to share what we talked about.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Code + Community: the highlight reel</title>
-      <link href="http://localhost:4000/Code-+-Community-the-highlight-reel" rel="alternate" type="text/html" title="Code + Community: the highlight reel" />
-      <published>2021-06-07T00:00:00-04:00</published>
-      <updated>2021-06-07T00:00:00-04:00</updated>
-      <id>http://localhost:4000/Code%20+%20Community:%20the%20highlight%20reel</id>
-      <content type="html" xml:base="http://localhost:4000/Code-+-Community-the-highlight-reel">&lt;p&gt;Last week, we wrapped up our second season of the Virtual Coffee (VC) Podcast with our &lt;a href=&quot;https://virtualcoffee.io/podcast/0209-season-two-wrapup/&quot;&gt;Code and Community episode&lt;/a&gt;. As VC’s been growing over the last year, I’ve been working on the Virtual Coffee model for communities, and &lt;a href=&quot;https://twitter.com/danieltott&quot;&gt;Dan&lt;/a&gt; and I have spent a lot of time talking through navigating the challenges and creating a direction for our unique community with the support and care of the community.&lt;/p&gt;
-
-&lt;p&gt;But I was especially inspired to write a highlight version of the episode when I saw Lucia’s tweet.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/BekahHW?ref_src=twsrc%5Etfw&quot;&gt;@BekahHW&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/danieltott?ref_src=twsrc%5Etfw&quot;&gt;@danieltott&lt;/a&gt; are leaders in effective, unconventional ways. Listen for their view on metrics, community building, and purpose. &lt;a href=&quot;https://t.co/4FyYJhafO7&quot;&gt;https://t.co/4FyYJhafO7&lt;/a&gt;&lt;/p&gt;&amp;mdash; Lucia Cerchie 🦎 (@CerchieLucia) &lt;a href=&quot;https://twitter.com/CerchieLucia/status/1400135495984709632?ref_src=twsrc%5Etfw&quot;&gt;June 2, 2021&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;These are my top takeaways from this episode:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;We have so many ideas for the community, but there aren’t enough hours in the day to work on them all. We’re doing our best to prioritize them.&lt;/li&gt;
-  &lt;li&gt;We’re more than a slack of people who do meetups, events, and more. We’re “an intimate community for all devs, optimized for you.”&lt;/li&gt;
-  &lt;li&gt;The face-to-face conversations are a key part of our identity. And it’s important to us that we keep our breakout rooms small to allow opportunities for everyone to join in the conversation.&lt;/li&gt;
-  &lt;li&gt;It’s easier to stretch and grow when you know you have the support of the community.&lt;/li&gt;
-  &lt;li&gt;We’re inspired by the book &lt;a href=&quot;https://www.radicalcandor.com/&quot;&gt;&lt;em&gt;Radical Candor&lt;/em&gt;&lt;/a&gt;! Clear and honest communication are important tools for trust and growth.&lt;/li&gt;
-  &lt;li&gt;We think of Virtual Coffee as an open source community.&lt;/li&gt;
-  &lt;li&gt;Building deliberately and creating structures and processes to empower members to help takes time.&lt;/li&gt;
-  &lt;li&gt;We’re never going to put content behind a paywall.&lt;/li&gt;
-  &lt;li&gt;Tooling with a team can be really expensive, and it’s challenging to find services that allow people to help when you have a small community and no funding .&lt;/li&gt;
-  &lt;li&gt;The goal of the Virtual Coffee Model is to have a lasting impact on your community, to create ripples that extend far beyond your community.&lt;/li&gt;
-  &lt;li&gt;So much of community tooling is based on making money off our your members. Since that’s not our goal, it’s been challenging to find a good fit.&lt;/li&gt;
-  &lt;li&gt;As community leadership, you can see each person individually and you can recognize them, but if you don’t have support in the tools, in the structures, you’re not going to get very far.&lt;/li&gt;
-  &lt;li&gt;Traditional community metrics leave a lot of people out. We value each member participating in the ways that are most comfortable for them.&lt;/li&gt;
-  &lt;li&gt;Our focus isn’t to grow &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt;, it’s to support our members.&lt;/li&gt;
-&lt;/ol&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Bekah Hawrot Weigel</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="Community" />
-      
-
-      
-        <summary type="html">Last week, we wrapped up our second season of the Virtual Coffee (VC) Podcast with our Code and Community episode. As VC’s been growing over the last year, I’ve been working on the Virtual Coffee model for communities, and Dan and I have spent a lot of time talking through navigating the challenges and creating a direction for our unique community with the support and care of the community.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">I did something that scared me: I took a week off</title>
-      <link href="http://localhost:4000/I-did-something-that-scared-me-I-took-a-week-off" rel="alternate" type="text/html" title="I did something that scared me: I took a week off" />
-      <published>2021-04-26T00:00:00-04:00</published>
-      <updated>2021-04-26T00:00:00-04:00</updated>
-      <id>http://localhost:4000/I%20did%20something%20that%20scared%20me:%20I%20took%20a%20week%20off</id>
-      <content type="html" xml:base="http://localhost:4000/I-did-something-that-scared-me-I-took-a-week-off">&lt;p&gt;A friend recently asked me if I am a results or a process person. I told her that I’m a momentum person. I like to move. I don’t like breaks. But when we hit the one year mark of &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt;, and I realized that I hadn’t had a week off in a year I didn’t &lt;em&gt;want&lt;/em&gt; to take time off, but I thought I probably &lt;em&gt;should&lt;/em&gt;. And it was the right call.&lt;/p&gt;
-
-&lt;p&gt;Here’s why:&lt;/p&gt;
-
-&lt;h3 id=&quot;i-had-time-to-work-on-things-i-missed&quot;&gt;I had time to work on things I missed&lt;/h3&gt;
-
-&lt;p&gt;Part of the problem of being momentum-driven is that you go with the flow and the things that excite you. And when you have a community of a couple hundred people, there are &lt;em&gt;a lot&lt;/em&gt; of cool ideas. And I’ve been full force on the Virtual Coffee train for a while.&lt;/p&gt;
-
-&lt;p&gt;Taking time off created time for me to revisit some of the things I love doing. I coded more. I worked on my postpartum wellness app. I spent less time on my phone. I spent time thinking about what I want and where I want to be. I created a new system for tasks and project for myself (it’s colored post-it notes that I stick on my wall, but it’s been great for brainstorming and prioritizing).&lt;/p&gt;
-
-&lt;p&gt;I got to do a personal training session for the first time in a very long time. I worked on three different kinds of box jumps, because when you’re as short as I am, you’ve gotta make up for that somewhere.&lt;/p&gt;
-
-&lt;p&gt;I had fun. I had energizing conversations. I laughed.&lt;/p&gt;
-
-&lt;h3 id=&quot;i-had-the-opportunity-to-do-some-tough-self-evaluation&quot;&gt;I had the opportunity to do some tough self-evaluation&lt;/h3&gt;
-
-&lt;p&gt;On Tuesday at 9:00am EDT–when I usually host Virtual Coffee–I worked with my &lt;a href=&quot;https://katiecmckenna.com/&quot;&gt;favorite career coach&lt;/a&gt;, who helped me to breakdown tasks, prioritize, and to think strategically and practically.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Just finished meeting with the amazing &lt;a href=&quot;https://twitter.com/katiecmckenna?ref_src=twsrc%5Etfw&quot;&gt;@katiecmckenna&lt;/a&gt; and it’s always a great use of my time. She asks the hard questions, says the things that are hard to hear, and helps me to believe in myself. (Also, she’s hilarious, kind, and a great author.) &lt;a href=&quot;https://t.co/TfQDUVAggz&quot;&gt;https://t.co/TfQDUVAggz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Bekah Hawrot Weigel (@BekahHW) &lt;a href=&quot;https://twitter.com/BekahHW/status/1384513366190866436?ref_src=twsrc%5Etfw&quot;&gt;April 20, 2021&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;She made me break down the hours I spend on work and Virtual Coffee, and helped me realize some hard truths about some bad habits I was forming. She helped me find action items and made plans to hold me accountable. (If she asks, yes I am working on them!)&lt;/p&gt;
-
-&lt;p&gt;I looked at how I’ve been doing things from an objective level, from the perspective of “what advice would you give someone else who told you this is what they’ve been doing?”&lt;/p&gt;
-
-&lt;p&gt;I learned that burnout happens in different ways and with different feelings.&lt;/p&gt;
-
-&lt;p&gt;I learned about the importance of boundaries and clearly setting them up. Because I’ve continually said that I have boundaries, but they’re easy to blur when you don’t have a clear guide to stop.&lt;/p&gt;
-
-&lt;p&gt;I learned that I probably wasn’t doing a good job of providing an example for the Virtual Coffee members.&lt;/p&gt;
-
-&lt;p&gt;I learned that I need to believe in myself, to acknowledge my strengths rather than devaluing them, and to recognize that what I’m doing–both as a developer and a community builder–is good and worthwhile work.&lt;/p&gt;
-
-&lt;h3 id=&quot;i-can-come-back-with-renewed-energy&quot;&gt;I can come back with renewed energy&lt;/h3&gt;
-
-&lt;p&gt;I thought I would be anxious the whole week. It was like leaving my kids for a weekend with my parents the first time. I was sad the first day, but then I inhaled deeply and felt renewed and refreshed and ready to jump back in after the break was over.&lt;/p&gt;
-
-&lt;p&gt;I needed it without knowing that I needed it. As an introvert, I’ve not done a great job of recognizing how impacted I’ve been by constantly being engaged. I’ve somehow developed the ability to get through the week, and then I hit the weekend and feel like I’ve been hit by a truck. I didn’t feel that this weekend.&lt;/p&gt;
-
-&lt;p&gt;And one of my “action items” from this break is to take a week off every quarter. Because I know it’s good for me, and it’s good for the community too.&lt;/p&gt;
-
-&lt;h3 id=&quot;i-could-see-the-virtual-coffee-pain-points-more-clearly&quot;&gt;I could see the Virtual Coffee pain points more clearly&lt;/h3&gt;
-
-&lt;p&gt;Creating space between myself and the community also allowed me to not be caught up in all the day-to-day organizing and responding and allowed me to see things from a new perspective.&lt;/p&gt;
-
-&lt;p&gt;I could walk through things without having to &lt;em&gt;do&lt;/em&gt; the things. And I could much better identify where the chaos happens, where processes can be improved, where things are working well, where the community has really done a great job of innovating and responding to the groups needs.&lt;/p&gt;
-
-&lt;h3 id=&quot;where-im-at-now&quot;&gt;Where I’m at now&lt;/h3&gt;
-
-&lt;p&gt;I’m three days into my first week back at Virtual Coffee, and I’m proud of myself for working on ways to set boundaries, to not let myself fall back into old habits.&lt;/p&gt;
-
-&lt;p&gt;I’m &lt;em&gt;really&lt;/em&gt; happy to see my friends. And that’s part of what makes this so hard. This community, these people, they’re my people. They’re the people I enjoy being around. They’re the people I want to share my wins and losses with. And maybe that’s how all community creators feel, or maybe that’s what happens when you accidentally start a community. I don’t know.&lt;/p&gt;
-
-&lt;p&gt;But I do know that providing the best support for the community means that I’ll need to take more time off, and that I need to prioritize creating clearer paths of communication and support. And it probably means that I need to tell myself that I can do this. Even though I’m afraid that I’m not the best person to be doing this, I can do it, and I can learn, and I can grow into the person I want to while doing this, with the support of the community.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Bekah Hawrot Weigel</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="Tips" />
-      
-
-      
-        <summary type="html">A friend recently asked me if I am a results or a process person. I told her that I’m a momentum person. I like to move. I don’t like breaks. But when we hit the one year mark of Virtual Coffee, and I realized that I hadn’t had a week off in a year I didn’t want to take time off, but I thought I probably should. And it was the right call.</summary>
+        <summary type="html">It’s hard out there, new devs. I’m sorry. So many of you have been fed the fairy tale of an industry with jobs a plenty, bountiful pay, with a steep and rigorous climb that would be worth it when you hit the peak—finally ready to transition from learning to working. I’m sorry so many of you have been let down, have seen the reality of the plentiful jobs for those with 3+ years of experience, the rat race for the available entry-level jobs, and the toxic environments preying on new developers.</summary>
       
 
       

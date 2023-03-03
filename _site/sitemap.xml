@@ -2,6 +2,118 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://BekahHW.github.io/Building-a-Supportive-Open-Source-Community</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/A-Year-in-DevRel</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Assume-Best-Intent</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/We-All-Need-Good-Feedback</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Career-Goal-Setting</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Making-Better-Meetings</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Writing-Your-First-Conference-Proposal</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/This-Week-in-DevRel-Planning-and-Progress</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Reading-List-The-Community-Builder-Edition</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/This-Week-in-DevRel-Life-Moves-Fast</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Overcoming-Imposter-Syndrome</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Communities-Need-Support</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Reading-List</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Virtual-Coffee-An-Update-Going-into-Year-3</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Getting-Started-in-Community</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Job-Announcement-A-Devs-Journey-into-Technical-Community-Building</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Gauging-Community-Health</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/2021-Recap</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/TensorFlow.js-101-Working-with-TFHub</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Moms,-you're-carrying-a-lot-of-plates</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/What-the-heck-does-it-mean-to-make-an-image-a-tensor</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Dear-Senior-Devs,-Use-your-privilege</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Hello-Tensor!</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/A-Note-to-Devs-Looking-for-Their-First-Job</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/You're-Toxic-Using-the-Toxicity-Model-with-TensorFlow.js</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/Questions-to-ask-when-you're-interviewing-for-a-remote-job</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/TensorFlow.js-101</loc>
+    </url>
+    
+    <url>
+        <loc>http://BekahHW.github.io/What-No-One-Can-Prepare-You-for-as-a-Community-Organizer</loc>
+    </url>
+    
+    <url>
         <loc>http://BekahHW.github.io/Hot-Take-Saying-'In-the-Spirit-of-Hacktoberfest'-is-Gatekeepy</loc>
     </url>
     
@@ -381,6 +493,14 @@
     
     
     
+    <url>
+        <loc>http://BekahHW.github.io/consulting</loc>
+    </url>
+    
+    
+    
+    
+    
     
     
     <url>
@@ -427,6 +547,22 @@
     
     
     
+    <url>
+        <loc>http://BekahHW.github.io/tag/tfjs/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://BekahHW.github.io/tag/interview-series/</loc>
+    </url>
+    
+    
+    
+    
+    
     
     
     <url>
@@ -439,6 +575,22 @@
     
     <url>
         <loc>http://BekahHW.github.io/author/Bekah/page2/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://BekahHW.github.io/author/Bekah/page3/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://BekahHW.github.io/author/Bekah/page4/</loc>
     </url>
     
     
@@ -535,6 +687,38 @@
     
     <url>
         <loc>http://BekahHW.github.io/page13/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://BekahHW.github.io/page14/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://BekahHW.github.io/page15/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://BekahHW.github.io/page16/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://BekahHW.github.io/page17/</loc>
     </url>
     
     
