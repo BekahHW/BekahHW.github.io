@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Consulting
-featured_image: /assets/images/pages/consulting.png
+featured_image: /assets/images/pages/consulting.svg
 ---
 
 After years as an educator and community builder, I'm bringing my experience as a consultant. 
