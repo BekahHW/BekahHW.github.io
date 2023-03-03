@@ -3,8 +3,8 @@
   <channel>
     <title>BekahHW</title>
     <description>Code. Community. Feelings. It's all here.</description>
-    <link></link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>How to Create a Positive Community for Your Open Source Project</title>
@@ -26,8 +26,8 @@
 &lt;p&gt;If you want to learn more about this, you can check out my YouTube Video &lt;a href=&quot;https://youtu.be/scE3jVz35oI&quot;&gt;Creating a Welcoming OSS Community&lt;/a&gt; or hit me up with any quesitons you have.&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Mar 2023 00:00:00 -0500</pubDate>
-        <link>/Building-a-Supportive-Open-Source-Community</link>
-        <guid isPermaLink="true">/Building-a-Supportive-Open-Source-Community</guid>
+        <link>http://localhost:4000/Building-a-Supportive-Open-Source-Community</link>
+        <guid isPermaLink="true">http://localhost:4000/Building-a-Supportive-Open-Source-Community</guid>
         
       </item>
     
@@ -73,8 +73,8 @@
 &lt;p&gt;There were a lot of growing pains last year, but that means I grew a lot. I learned more about what it means to be in DevRel, what my strengths are and where my weaknesses are. I learned about working on a team, asking for help, and being more vocal about the things that I think matter. Because at the end of the day, it’s people that matter. And I’m here to make sure that we see everyone as the complex and beautiful person they are.&lt;/p&gt;
 </description>
         <pubDate>Mon, 23 Jan 2023 00:00:00 -0500</pubDate>
-        <link>/A-Year-in-DevRel</link>
-        <guid isPermaLink="true">/A-Year-in-DevRel</guid>
+        <link>http://localhost:4000/A-Year-in-DevRel</link>
+        <guid isPermaLink="true">http://localhost:4000/A-Year-in-DevRel</guid>
         
       </item>
     
@@ -121,8 +121,8 @@ Acknowledge what they’re saying.&lt;/li&gt;
 
 </description>
         <pubDate>Fri, 20 Jan 2023 00:00:00 -0500</pubDate>
-        <link>/Assume-Best-Intent</link>
-        <guid isPermaLink="true">/Assume-Best-Intent</guid>
+        <link>http://localhost:4000/Assume-Best-Intent</link>
+        <guid isPermaLink="true">http://localhost:4000/Assume-Best-Intent</guid>
         
       </item>
     
@@ -189,8 +189,8 @@ Acknowledge what they’re saying.&lt;/li&gt;
 
 </description>
         <pubDate>Sun, 27 Nov 2022 00:00:00 -0500</pubDate>
-        <link>/We-All-Need-Good-Feedback</link>
-        <guid isPermaLink="true">/We-All-Need-Good-Feedback</guid>
+        <link>http://localhost:4000/We-All-Need-Good-Feedback</link>
+        <guid isPermaLink="true">http://localhost:4000/We-All-Need-Good-Feedback</guid>
         
       </item>
     
@@ -259,8 +259,8 @@ To be honest, I’m in love with each of these topics. I think that makes me mor
 &lt;p&gt;As you evaluate yourself, your progress, and your goals, consider what might be immediate to today and what might change. How will you adapt to change? What’s important to you as you work to make change a good experience? How will you take your needs into 2023 and break down those goals? How will you track those goals? Hopefully, after I’ve broken down my goals, I’ll post and do check-ins over the next year. If you want accountability for your own goals, let me know. My first DevRel planning and goal-setting session is this coming week, but I’m always down to do async sessions.&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 Nov 2022 00:00:00 -0500</pubDate>
-        <link>/Career-Goal-Setting</link>
-        <guid isPermaLink="true">/Career-Goal-Setting</guid>
+        <link>http://localhost:4000/Career-Goal-Setting</link>
+        <guid isPermaLink="true">http://localhost:4000/Career-Goal-Setting</guid>
         
       </item>
     
@@ -331,8 +331,8 @@ Leave time to answer questions and determine next steps at the end.&lt;/li&gt;
 
 </description>
         <pubDate>Mon, 21 Nov 2022 00:00:00 -0500</pubDate>
-        <link>/Making-Better-Meetings</link>
-        <guid isPermaLink="true">/Making-Better-Meetings</guid>
+        <link>http://localhost:4000/Making-Better-Meetings</link>
+        <guid isPermaLink="true">http://localhost:4000/Making-Better-Meetings</guid>
         
       </item>
     
@@ -396,8 +396,8 @@ Leave time to answer questions and determine next steps at the end.&lt;/li&gt;
 &lt;p&gt;Hopefully, this is enough to get you to submit. I have a lot more tips for actually preparing for and giving the talk. If you want to hear those, let me know!&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Nov 2022 00:00:00 -0500</pubDate>
-        <link>/Writing-Your-First-Conference-Proposal</link>
-        <guid isPermaLink="true">/Writing-Your-First-Conference-Proposal</guid>
+        <link>http://localhost:4000/Writing-Your-First-Conference-Proposal</link>
+        <guid isPermaLink="true">http://localhost:4000/Writing-Your-First-Conference-Proposal</guid>
         
       </item>
     
@@ -433,8 +433,8 @@ Leave time to answer questions and determine next steps at the end.&lt;/li&gt;
 &lt;p&gt;As I build out these processes and think more holistically about all the things that I’m creating, I want to find a way to make this a smooth and repeatable process. It’s not something I’ve thought deeply about, but I hope that as I build in time to think through these things, I’ll be able to share more about that here. And that we can maybe even have a conversation about it.&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Nov 2022 00:00:00 -0500</pubDate>
-        <link>/This-Week-in-DevRel-Planning-and-Progress</link>
-        <guid isPermaLink="true">/This-Week-in-DevRel-Planning-and-Progress</guid>
+        <link>http://localhost:4000/This-Week-in-DevRel-Planning-and-Progress</link>
+        <guid isPermaLink="true">http://localhost:4000/This-Week-in-DevRel-Planning-and-Progress</guid>
         
       </item>
     
@@ -466,8 +466,8 @@ Leave time to answer questions and determine next steps at the end.&lt;/li&gt;
 &lt;p&gt;This is my Community 101 reading and listening list. Each of these provides the basics of community building and then goes in depth to help community builders discover more about the community experience. I have another list of resources that isn’t a “traditional” take on community that I might write about in the future, but it’ll take a more thorough explanation of why I think it should be on your community builder reading list.&lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Nov 2022 00:00:00 -0500</pubDate>
-        <link>/Reading-List-The-Community-Builder-Edition</link>
-        <guid isPermaLink="true">/Reading-List-The-Community-Builder-Edition</guid>
+        <link>http://localhost:4000/Reading-List-The-Community-Builder-Edition</link>
+        <guid isPermaLink="true">http://localhost:4000/Reading-List-The-Community-Builder-Edition</guid>
         
       </item>
     
@@ -499,8 +499,8 @@ I did a lot of learning at these conferences. Some of it was when I was listenin
 &lt;p&gt;I think this is a pretty good overview of the things that I work on as a technical community builder. Oh, and one last achievement I want to share. I received one of the Twilio spotlight awards. If you want to know more about it and me, you can check out &lt;a href=&quot;https://www.businessinsider.com/sc/meet-the-inspirational-leaders-creating-a-better-future-for-developers?utm_campaign=devsearchlight2022_reveal&amp;amp;utm_source=twitter&amp;amp;utm_medium=twiliodevs&quot;&gt;the Business Insider article&lt;/a&gt; Being a Technical Community Builder requires a lot of pivoting, versatility, and getting outside of my comfort zone. But if I wasn’t spending time getting out of my comfort zone, then it wouldn’t be that fun, would it?&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Nov 2022 00:00:00 -0400</pubDate>
-        <link>/This-Week-in-DevRel-Life-Moves-Fast</link>
-        <guid isPermaLink="true">/This-Week-in-DevRel-Life-Moves-Fast</guid>
+        <link>http://localhost:4000/This-Week-in-DevRel-Life-Moves-Fast</link>
+        <guid isPermaLink="true">http://localhost:4000/This-Week-in-DevRel-Life-Moves-Fast</guid>
         
       </item>
     
