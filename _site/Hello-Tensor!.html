@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+     <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Hello, Tensor! | BekahHW</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Hello, Tensor!" />
+<meta name="author" content="Bekah Hawrot Weigel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="So we’ve been using the word tensor, just throwing it around, but now we’re going to learn a little more about it. You don’t have to understand everything. This isn’t an in depth exploration of what tensors are or a debate about whether the mathematical definition of tensors versus the computer science definition of tensors. Understanding enough to know how you can use tensors should be the goal here, so a basic understanding can allow us to do a better job of using tensors in our development." />
+<meta property="og:description" content="So we’ve been using the word tensor, just throwing it around, but now we’re going to learn a little more about it. You don’t have to understand everything. This isn’t an in depth exploration of what tensors are or a debate about whether the mathematical definition of tensors versus the computer science definition of tensors. Understanding enough to know how you can use tensors should be the goal here, so a basic understanding can allow us to do a better job of using tensors in our development." />
+<meta property="og:site_name" content="BekahHW" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-22T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Hello, Tensor!" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@BekahHW" />
+<script type="application/ld+json">
+{"dateModified":"2021-11-22T00:00:00-05:00","datePublished":"2021-11-22T00:00:00-05:00","url":"/Hello-Tensor!","mainEntityOfPage":{"@type":"WebPage","@id":"/Hello-Tensor!"},"author":{"@type":"Person","name":"Bekah Hawrot Weigel"},"description":"So we’ve been using the word tensor, just throwing it around, but now we’re going to learn a little more about it. You don’t have to understand everything. This isn’t an in depth exploration of what tensors are or a debate about whether the mathematical definition of tensors versus the computer science definition of tensors. Understanding enough to know how you can use tensors should be the goal here, so a basic understanding can allow us to do a better job of using tensors in our development.","@type":"BlogPosting","headline":"Hello, Tensor!","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+ 
+
+    <!-- Site Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.ico"
+      type="image/png"
+    />
+
+    <!-- Font Embed Code -->
+    <link
+      href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="home-template"
+  >
+    <div id="page" class="site">
+       <header class="site-header">
+
+    
+    <h1 class="site-title"><a href="/" rel="home">BekahHW</a></h1>
+    
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->   <main class="site-main">
+    <div class="site-content">
+
+        <article class="post-template">
+
+            <header class="cover post-header">
+            
+                
+                <div class="cover-content">
+                    <div class="inner">
+                
+                        
+                        <div class="tag-links">
+                             
+                            <a href='tag/tfjs/'>TFJS</a>
+                            
+                            
+                        </div><!-- .tag-links -->
+                        
+                
+                        <h1 class="post-title">Hello, Tensor!</h1>
+                
+                        <div class="post-meta">
+                            <span class="post-meta-wrap">
+                                
+                                
+                                
+                                
+
+                                <time class="published" datetime="2021-11-22">
+                                    November 22, 2021
+                                </time>
+                            </span>
+                        </div><!-- .post-meta -->
+                
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+
+            </header><!-- .cover -->
+
+
+            <div class="inner">
+            <div class="post-content">
+                <p>So we’ve been using the word tensor, just throwing it around, but now we’re going to learn a little more about it. You don’t <em>have</em> to understand everything. This isn’t an in depth exploration of what tensors are or a debate about whether the mathematical definition of tensors versus the computer science definition of tensors. Understanding enough to know <em>how</em> you can use tensors should be the goal here, so a basic understanding can allow us to do a better job of using tensors in our development.</p>
+
+<h2 id="what-are-tensors">What are tensors?</h2>
+
+<p>Tensors are collections of data in a structured type that are optimized as numbers to be ready for calculations. They’re similar to working with multidimensional arrays in JavaScript.</p>
+
+<p>We use tensors because they can do calculations quickly; they’re created to do many side by side calculations at once and can batch process at high speeds. They also provide us with direct access to data in a useable format. Outside of Machine Learning, there are libraries that use tensors for images, sound, 3d models, etc.</p>
+
+<p>Tensors have a rank, shape, and datatype (dtype). According to <a href="https://www.tensorflow.org/js/guide/tensors_operations">TensorFlow.js Tensors and operations</a>, these can be defined as:</p>
+
+<blockquote>
+  <p>rank: defines how many dimensions the tensor contains</p>
+
+  <p>shape: which defines the size of each dimension of the data</p>
+
+  <p>dtype: which defines the data type of the tensor.</p>
+</blockquote>
+
+<p>You can check what each tensor is by calling the tensor method. If you want to follow along and experiment with tensors, you can fork and use my <a href="https://codesandbox.io/s/hello-tensor-tfjs-sandbox-dodb3">Hello Tensor Sandbox</a>. Inside the sandbox, the only changes you’ll need to make are in <code class="language-plaintext highlighter-rouge">src &gt; index.js</code>. Most of your changes will be to line 5, subbing in the data you’re experimenting with.</p>
+
+<p>EXAMPLE</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Import * as tf from "@tensorflow/tfjs";
+
+ const tensorExample =  [1, 2, 3]
+	console.log(tf.tensor(tensorExample))
+</code></pre></div></div>
+
+<p>When we check the console, we’ll see a lot of information there. For the purpose of this blog, we’ll go through the three properties defined above.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rankType: “1”
+Shape: Array(1) &gt; 0:3
+dataType: “float32”
+</code></pre></div></div>
+
+<p>So what does that mean?</p>
+
+<h3 id="ranktype">RankType</h3>
+
+<p>We know that the rank has one dimension. But what is a dimension? Each array has a dimension. Because we only have a single array, it’s a rank 1, a flat dataset. We need only a single index to access the data.</p>
+
+<p>If we have a rankType of “2”, that means that we have an array of arrays, and we need two indexes to access this data. In other words, we have an x and y coordinate here, and also called a rank-2.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const twoDimensionArray = [ [2,3], [5,6], [7,8] ]
+console.log(twoDimensionArray([0,0])
+</code></pre></div></div>
+
+<p>What do you think the answer is here?</p>
+
+<p>If you guessed [2,3], you’d be correct! Our first indexed array is the outer array. The second, or y-coordinate, refers to the inner arrays. In this case, it’s the [2,3] array.</p>
+
+<p>So if we wanted to get [7,8], we would do that by twoDimensionArray([0,2]).</p>
+
+<h3 id="shape">Shape</h3>
+
+<p>We have a single array like in the original example ( const tensorExample = [1, 2, 3]), and if we check the array at the 0 index, we see that there are three items in the array.</p>
+
+<p>Now, let’s look at a new example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const = newArray
+[
+    [
+     [2, 3, 9, 0],
+     [5, 6, 9, 8]
+    ],
+    [
+      [7, 8, 4, 3],
+      [1, 2, 4, 9]
+    ],
+    [
+      [7, 8, 2,1],
+      [1, 2, 0,7]
+    ]
+  ];
+</code></pre></div></div>
+
+<p>Here we’d have a <code class="language-plaintext highlighter-rouge">shape: Array(3)</code>. And if we expand that, we see:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0 : 3
+1 : 2
+2 : 4
+</code></pre></div></div>
+
+<p>So the first index [0] in the array, is the outer array, which contains three arrays.</p>
+
+<p>So the second index [1] in the array, is the middle set of arrays. Within that set, they contain two sets of arrays, hence the 2. So if we console.log(newArray[0,0]), we get [ 2, 3, 9, 0] and [5, 6, 9, 8].</p>
+
+<p>And the last index [2] in the array, is the most inner and that’s the four numbers we see in the inner arrays. And that’s where we get [5, 6, 9, 8].</p>
+
+<p>If we need to change the shape of a tensor, we can use the <code class="language-plaintext highlighter-rouge">reshape</code> method.</p>
+
+<h3 id="datatype">DataType</h3>
+
+<p>DataType, or as it’s printed in the console <code class="language-plaintext highlighter-rouge">dType</code> , is a “float32.” This is the default dataType for tensors. If we need to create our tensor in a different form, we can also use bool, int32, complex64, and string.</p>
+
+<p>Depending on your goals, you might need to use a different form, and there’s a way to specify the type that you need.</p>
+
+<p>This might seem like a lot, but remember these are the basics for understanding so you can use tensors to do some really magical things. And if you’ve walked through these examples and tried them out for yourself, you’ve created your very first tensor. Hello, Tensor!</p>
+
+<h3 id="resources">Resources</h3>
+
+<p>-<a href="https://www.tensorflow.org/js/guide/tensors_operations">TensorFlowjs Guide</a> -<a href="https://infinite.red/learn-tensorflowjs">Learn TensorFlow.js</a></p>
+
+            </div>
+
+            <footer class="post-footer share-post">
+            
+            
+                <span>Share:</span>
+                <a class="circle" target="_blank"
+                    href="https://twitter.com/share?text=Hello%2C+Tensor%21&amp;url=https://bekahhw.github.io/Hello-Tensor!">
+                <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
+                </a>
+                <a class="circle" target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://bekahhw.github.io/Hello-Tensor!"><i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
+            
+            
+            </footer>
+
+            
+
+            </div><!-- .inner -->
+        </article>
+
+        <nav class="post-navigation">
+
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+
+        
+        <a href="/Dear-Senior-Devs,-Use-your-privilege" class="nav-next">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Next</span><span class="nav-title">Dear Senior Devs, Use your privilege</span><span
+                    class="nav-date">November 28, 2021</span>
+            </div>
+
+        </a>
+        
+
+        
+        <a href="/A-Note-to-Devs-Looking-for-Their-First-Job" class="nav-previous">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Previous</span>
+                <span class="nav-title">A Note to Devs Looking for Their First Job</span>
+                <span class="nav-date">November 19, 2021</span>
+            </div>
+
+        </a>
+        
+
+    </div><!-- .nav-links-->
+</nav><!-- .post-navigation -->
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->  <aside class="sidebar">
+  <div class="sidebar-scrollable">
+    <div class="inner">
+      <div class="widget-area">
+        <nav class="site-navigation">
+          <h2>Explore Website</h2>
+          <ul class="menu">
+            
+            <li class="menu-item">
+              <a href="/about">About</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/code-and-community">Code & Community</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/consulting">Consulting</a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        
+<section class="widget widget-text">
+    <h2 class="widget-title">About BekahHW</h2>
+    <p>Code. Community. Feelings. It's all here.</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+ 
+<section class="widget widget-tags">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        
+        <a class="button" href='https://bekahhw.github.io/tag/community/'>Community
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.github.io/tag/interview- series/'>Interview Series
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.github.io/tag/open- source/'>Open Source
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.github.io/tag/tfjs/'>TFJS
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.github.io/tag/tips/'>Tips
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.github.io/tag/interview- series/'>interview series
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+    </div>
+</section>
+
+      </div>
+      <!-- .widget-area -->
+      <a class="sidebar-toggle">
+        <span class="screen-reader-text">Close</span>
+        <span class="icon" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- .inner -->
+  </div>
+  <!-- .sidebar-scrollable -->
+</aside>
+<!-- .sidebar -->
+
+      <footer class="site-footer">
+    <div class="inner">
+
+        <div class="offsite-links">
+  
+  <a
+    href="https://twitter.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-twitter" aria-hidden="true"></i>
+    <span class="screen-reader-text">Twitter</span>
+  </a>
+   
+  <a
+    href="https://www.linkedin.com/in/bekah-hawrot-weigel"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-linkedin" aria-hidden="true"></i>
+    <span class="screen-reader-text">Linkedin</span>
+  </a>
+   
+  <a href="https://github.com/BekahHW" class="circle" target="_blank">
+    <i class="icon-github" aria-hidden="true"></i>
+    <span class="screen-reader-text">GitHub</span>
+  </a>
+    
+  <a
+    href="https://www.instagram.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-instagram" aria-hidden="true"></i>
+    <span class="screen-reader-text">Instagram</span>
+  </a>
+   
+
+  <a
+    href="https://www.youtube.com/@bekahhw"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-youtube" aria-hidden="true"></i>
+    <span class="screen-reader-text">YouTube</span>
+  </a>
+
+  <a href="https://bekahhw.github.io/feed.xml" class="circle" target="_blank">
+    <i class="icon-feed" aria-hidden="true"></i>
+    <span class="screen-reader-text">RSS</span>
+  </a>
+</div>
+<!-- .offsite-links -->
+
+        <div class="site-info">
+            <a href="#">BekahHW</a> &copy; 2023 . Subtle theme by
+            <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>.
+            <br /> Powered by
+            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+    </div>
+    <!-- .site -->
+
+    
+    <!-- Javascript Assets -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/custom.js"></script>
+  </body>
+</html>

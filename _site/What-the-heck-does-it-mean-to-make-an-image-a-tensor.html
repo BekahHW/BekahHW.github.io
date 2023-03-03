@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+     <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>What the heck does it mean to make an image a tensor? | BekahHW</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="What the heck does it mean to make an image a tensor?" />
+<meta name="author" content="Bekah Hawrot Weigel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="So we’ve learned about what a tensor is, and we know a little bit about what you can do with them, but why the heck would we want to turn an image into a tensor? Well, if we want to use them with TensorFlow.js or for Deep Learning, then we change them to tensors to put them in a useable form." />
+<meta property="og:description" content="So we’ve learned about what a tensor is, and we know a little bit about what you can do with them, but why the heck would we want to turn an image into a tensor? Well, if we want to use them with TensorFlow.js or for Deep Learning, then we change them to tensors to put them in a useable form." />
+<meta property="og:site_name" content="BekahHW" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-29T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="What the heck does it mean to make an image a tensor?" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@BekahHW" />
+<script type="application/ld+json">
+{"dateModified":"2021-11-29T00:00:00-05:00","datePublished":"2021-11-29T00:00:00-05:00","url":"/What-the-heck-does-it-mean-to-make-an-image-a-tensor","mainEntityOfPage":{"@type":"WebPage","@id":"/What-the-heck-does-it-mean-to-make-an-image-a-tensor"},"author":{"@type":"Person","name":"Bekah Hawrot Weigel"},"description":"So we’ve learned about what a tensor is, and we know a little bit about what you can do with them, but why the heck would we want to turn an image into a tensor? Well, if we want to use them with TensorFlow.js or for Deep Learning, then we change them to tensors to put them in a useable form.","@type":"BlogPosting","headline":"What the heck does it mean to make an image a tensor?","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+ 
+
+    <!-- Site Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.ico"
+      type="image/png"
+    />
+
+    <!-- Font Embed Code -->
+    <link
+      href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="home-template"
+  >
+    <div id="page" class="site">
+       <header class="site-header">
+
+    
+    <h1 class="site-title"><a href="/" rel="home">BekahHW</a></h1>
+    
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->   <main class="site-main">
+    <div class="site-content">
+
+        <article class="post-template">
+
+            <header class="cover post-header">
+            
+                
+                <div class="cover-content">
+                    <div class="inner">
+                
+                        
+                
+                        <h1 class="post-title">What the heck does it mean to make an image a tensor?</h1>
+                
+                        <div class="post-meta">
+                            <span class="post-meta-wrap">
+                                
+                                
+                                
+                                
+
+                                <time class="published" datetime="2021-11-29">
+                                    November 29, 2021
+                                </time>
+                            </span>
+                        </div><!-- .post-meta -->
+                
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+
+            </header><!-- .cover -->
+
+
+            <div class="inner">
+            <div class="post-content">
+                <p>So we’ve learned about <a href="https://dev.to/bekahhw/hello-tensor-52ed">what a tensor is</a>, and we know a little bit about <a href="https://dev.to/bekahhw/youre-toxic-using-the-toxicity-model-with-tensorflowjs-5h27">what you can do with them</a>, but why the heck would we want to turn an image into a tensor? Well, if we want to use them with TensorFlow.js or for Deep Learning, then we change them to tensors to put them in a useable form.</p>
+
+<p>When we think about images, we know they’re made of pixels. Together, those small units create an image. Each of these pixels holds a position in the image, and each pixel can be represented by an array of three numbers that correspond with an <a href="https://css-tricks.com/almanac/properties/c/color/">RGB (red, green, blue) value</a> that represents a color.</p>
+
+<p>So, for example, if we look at the rgb value (0, 255, 255), we’ll see aqua. Now, you might see a fourth value, and that stands for the transparency of the pixel. That fourth value–the alpha parameter–allows you to set a number between 0.0 (transparent) and 1.0 (opaque). Take that aqua color. If we add an alpha parameter of 0, it will be fully transparent and we won’t be able to see it. If we add .5, then it will be at a middle point for transparency.</p>
+
+<p>When we transform an image into a tensor, each of those pixels in the position they hold in the image, get transformed into tensors. Once we transform these tensors, we can train our models with this data, among other things. We can mirror images, resize, crop, and manipulate in other ways that are useful to us.</p>
+
+<p>Let’s say that we’re <a href="https://www.airbnb.com/">Air BnB</a>. We want to be able to quickly look through the images our hosts have submitted but haven’t labeled, so we can provide labels for those images. We know that <em>most</em> of the properties will have bathrooms. What’s the easiest way to identify a bathroom? If you said by toilets, I would say that you’re right. So we need our image classification to know what a toilet looks like. But not everyone has the same toilet, in the same position, and/or has taken the picture from the same angle. To increase accuracy, we need data taken from different angles, with different size images of toilets, etc.</p>
+
+<p>One way to augment your data is to take an image, like a toilet, and apply a method like <a href="https://js.tensorflow.org/api/latest/#reverse">.reverse( )</a> to the image. By reversing the image to add to our dataset, we have doubled our dataset and made it more reliable.</p>
+
+<p>Let’s simplify the steps you need to get there. Let’s imagine that we have an image of a toilet that we have stored in the variable toiletImg.</p>
+
+<p>First, we’ll convert that image into a tensor–for the example, we’ll grab it from the browser.</p>
+
+<p><code class="language-plaintext highlighter-rouge">const toiletTensor = tf.browser.fromPixels(toiletImg)</code></p>
+
+<p>Now we have a tensor, but we want to reverse the image:</p>
+
+<p><code class="language-plaintext highlighter-rouge">tf.reverse(toiletImg, 1)</code></p>
+
+<p>You’ll notice that I have a 1 there. What’s that for? That second parameter indicates that we want to flip the axis that holds the pixels for the <em>width</em> of the image.</p>
+
+<p>This is one example of what you can do, <em>but</em> I wasn’t making up the AirBnB example. They have <a href="https://medium.com/airbnb-engineering/categorizing-listing-photos-at-airbnb-f9483f3ab7e3">used image classification to help them identify images</a>. Can you imagine how much time that saved them? There’s a lot of power in Machine Learning, image classification, and possibilities that have been explored and remain to be explored. But you always start with the basics. Let yourself be inspired and then take it one day at a time. And if you’re interested in learning more, check out my <a href="https://www.twitch.tv/bekahhw/">livestreams on TFJS on Tuesday afternoons at 1pm est</a> or let me know if you want to join our study group on Friday afternoons at 1pm est!</p>
+
+            </div>
+
+            <footer class="post-footer share-post">
+            
+            
+                <span>Share:</span>
+                <a class="circle" target="_blank"
+                    href="https://twitter.com/share?text=What+the+heck+does+it+mean+to+make+an+image+a+tensor%3F&amp;url=https://bekahhw.github.io/What-the-heck-does-it-mean-to-make-an-image-a-tensor">
+                <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
+                </a>
+                <a class="circle" target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://bekahhw.github.io/What-the-heck-does-it-mean-to-make-an-image-a-tensor"><i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
+            
+            
+            </footer>
+
+            
+
+            </div><!-- .inner -->
+        </article>
+
+        <nav class="post-navigation">
+
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+
+        
+        <a href="/Moms,-you're-carrying-a-lot-of-plates" class="nav-next">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Next</span><span class="nav-title">Moms, you're carrying a lot of plates</span><span
+                    class="nav-date">November 30, 2021</span>
+            </div>
+
+        </a>
+        
+
+        
+        <a href="/Dear-Senior-Devs,-Use-your-privilege" class="nav-previous">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Previous</span>
+                <span class="nav-title">Dear Senior Devs, Use your privilege</span>
+                <span class="nav-date">November 28, 2021</span>
+            </div>
+
+        </a>
+        
+
+    </div><!-- .nav-links-->
+</nav><!-- .post-navigation -->
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->  <aside class="sidebar">
+  <div class="sidebar-scrollable">
+    <div class="inner">
+      <div class="widget-area">
+        <nav class="site-navigation">
+          <h2>Explore Website</h2>
+          <ul class="menu">
+            
+            <li class="menu-item">
+              <a href="/about">About</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/code-and-community">Code & Community</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/consulting">Consulting</a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        
+<section class="widget widget-text">
+    <h2 class="widget-title">About BekahHW</h2>
+    <p>Code. Community. Feelings. It's all here.</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+ 
+<section class="widget widget-tags">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        
+        <a class="button" href='https://bekahhw.github.io/tag/community/'>Community
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.github.io/tag/interview- series/'>Interview Series
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.github.io/tag/open- source/'>Open Source
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.github.io/tag/tfjs/'>TFJS
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.github.io/tag/tips/'>Tips
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.github.io/tag/interview- series/'>interview series
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+    </div>
+</section>
+
+      </div>
+      <!-- .widget-area -->
+      <a class="sidebar-toggle">
+        <span class="screen-reader-text">Close</span>
+        <span class="icon" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- .inner -->
+  </div>
+  <!-- .sidebar-scrollable -->
+</aside>
+<!-- .sidebar -->
+
+      <footer class="site-footer">
+    <div class="inner">
+
+        <div class="offsite-links">
+  
+  <a
+    href="https://twitter.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-twitter" aria-hidden="true"></i>
+    <span class="screen-reader-text">Twitter</span>
+  </a>
+   
+  <a
+    href="https://www.linkedin.com/in/bekah-hawrot-weigel"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-linkedin" aria-hidden="true"></i>
+    <span class="screen-reader-text">Linkedin</span>
+  </a>
+   
+  <a href="https://github.com/BekahHW" class="circle" target="_blank">
+    <i class="icon-github" aria-hidden="true"></i>
+    <span class="screen-reader-text">GitHub</span>
+  </a>
+    
+  <a
+    href="https://www.instagram.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-instagram" aria-hidden="true"></i>
+    <span class="screen-reader-text">Instagram</span>
+  </a>
+   
+
+  <a
+    href="https://www.youtube.com/@bekahhw"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-youtube" aria-hidden="true"></i>
+    <span class="screen-reader-text">YouTube</span>
+  </a>
+
+  <a href="https://bekahhw.github.io/feed.xml" class="circle" target="_blank">
+    <i class="icon-feed" aria-hidden="true"></i>
+    <span class="screen-reader-text">RSS</span>
+  </a>
+</div>
+<!-- .offsite-links -->
+
+        <div class="site-info">
+            <a href="#">BekahHW</a> &copy; 2023 . Subtle theme by
+            <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>.
+            <br /> Powered by
+            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+    </div>
+    <!-- .site -->
+
+    
+    <!-- Javascript Assets -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/custom.js"></script>
+  </body>
+</html>

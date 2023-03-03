@@ -3,7 +3,8 @@ layout: page
 title: Consulting
 featured_image: /assets/images/pages/consulting.svg
 ---
-
+## Team & Community Consulting
+### Creating the story that people remember and want to share
 After years as an educator and community builder, I'm bringing my experience as a consultant. 
 
 I specialize in creating clear paths of communication, telling the story of your team, company, or community, and creating strategies that allow for trust, respect, and growth. 

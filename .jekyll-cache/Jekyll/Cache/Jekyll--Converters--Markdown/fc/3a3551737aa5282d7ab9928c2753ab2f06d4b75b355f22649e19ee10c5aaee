@@ -1,0 +1,125 @@
+I"<p>One of the things I’ve really enjoyed about learning TensorFlow.js (TFJS) is how quickly you can get it up and running and how many existing projects you can use as well. As someone learning about models and datasets and things like neural networks that haven’t been a normal part of my vocabulary, I appreciate not having to be mentally exhausted with the costs of learning a new world of information as I explore this new technology.</p>
+
+<p>As Gant Laborde says in <a href="https://www.oreilly.com/library/view/learning-tensorflowjs/9781492090786/"><em>Learning Tensorflow.js</em></a></p>
+
+<blockquote>
+  <p>Solving simple problems you understand with machine learning helps you extrapolate the steps, logic, and trade-offs of solving advanced problems you could never code by hand.</p>
+</blockquote>
+
+<p>He goes on to say that (in the book), he tries to balance theory and practicality. Below, we’ll dive into a little bit of both, trying to understand the <a href="https://github.com/tensorflow/tfjs-models/tree/master/toxicity">Toxicity model</a> and what’s happening as we get some code up on the screen. (Side note: if you’re interested in exploring other TFJS models, you can check out the official <a href="https://github.com/tensorflow/tfjs-models/">TFJS model list</a>.)</p>
+
+<h2 id="key-terms">Key Terms</h2>
+
+<ul>
+  <li>Model: An expression of an algorithm that’s been trained with data to recognize patterns and can make predictions, transformations, or react.</li>
+  <li>Threshold: The minimum prediction confidence that we’ll allow.</li>
+  <li>Labels: An array of categories–in our case, insults.</li>
+  <li>Predictions: An array of objects that shows the raw probabilities for each input with <code class="language-plaintext highlighter-rouge">match</code> indicating true or false. However, if neither prediction exceeds the threshold, <code class="language-plaintext highlighter-rouge">match</code> will return <code class="language-plaintext highlighter-rouge">null</code>.</li>
+</ul>
+
+<p>Now who’s ready to see if you’re toxic?</p>
+
+<h2 id="the-toxicity-classifier">The Toxicity Classifier</h2>
+
+<p>The toxicity model determines if text falls into the following categories:
+threatening language, insults, obscenities, identity-based hate, or sexually explicit language. You can check out the <a href="https://figshare.com/articles/data_json/7376747">dataset the model was trained on</a> if you’re interested.</p>
+
+<p>So for our purposes, we’re going to give the model a sentence in the form of a string, and it will classify whether or not it violates one of the categories above.</p>
+
+<p>We’ll see that the predictions will use percentage-of-probability prediction for each string in the array. These percentages are represented as two Float32 values between 0 and 1. So, for example, my 5yo called my 7yo “a tiny, little baby poop” one day. If we run that string through the model and get an array that says something like [0.7630404233932495, 0.2369595468044281], it’s 76% not a violation and 24% likely a violation.</p>
+
+<h3 id="getting-started">Getting Started</h3>
+
+<p>In your terminal, cd into the folder you use for your projects. Create a new directory for this project and then hit enter:</p>
+
+<p><code class="language-plaintext highlighter-rouge">mkdir toxicity-classifier</code></p>
+
+<p>cd into that directory:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cd toxicity-classifier</code></p>
+
+<p>Now, you can open this up in the code editor of your choice and install the model we’re using:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ yarn add @tensorflow/tfjs @tensorflow-models/toxicity</code></p>
+
+<p>For this example, we’re going to keep it simple and use the script tag to load the model.</p>
+
+<p>In your project, create a file called <code class="language-plaintext highlighter-rouge">index.html</code>. In that file, we’ll use script tags to get our model up and running quickly.</p>
+
+<p><img src="../assets/toxicityhtml.svg" alt="toxicity model html code" /></p>
+
+<p>You’ll notice that the only thing we’ll see is the message to check the console. We’ll be console logging the predictions, though we could add more functionality to display the labels and probabilities on the screen.</p>
+
+<p>Next, you’re going to create a <code class="language-plaintext highlighter-rouge">src</code> folder, and within that folder, add <code class="language-plaintext highlighter-rouge">index.js</code>. This is where the magic will happen.</p>
+
+<p>First, we want to set the threshold. If we don’t set it, the default is 0.85. For this exercise, let’s say that anything 0.5 and above is positive.</p>
+
+<p><code class="language-plaintext highlighter-rouge">const threshold = 0.5</code></p>
+
+<p>Now, we need to load the model, give it data, and then console.log the predictions.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> toxicity.load(threshold).then((model) =&gt; {
+   const sentences = ["You are a tiny, little baby poop", "My favorite color is blue.", "Shut up!"];
+
+   model.classify(sentences).then((predictions) =&gt; {
+     console.log(JSON.stringify(predictions, null, 2));
+   });
+ });
+</code></pre></div></div>
+
+<hr />
+
+<p><strong>VSCode Tip: JSON.stringify</strong></p>
+
+<blockquote>
+  <p>Adds indentation, white space, and line break characters to the return-value JSON text to make it easier to read.</p>
+
+  <p>Converts a JavaScript value to a JavaScript Object Notation (JSON) string.</p>
+</blockquote>
+
+<hr />
+
+<p>So if we look at the results for our first string, we’d see this for the first two labels:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "label": "identity_attack",
+    "results": [
+      {
+        "probabilities": {
+          "0": 0.9983431100845337,
+          "1": 0.001656862674281001
+        },
+        "match": false
+      }
+    ]
+  },
+  {
+    "label": "insult",
+    "results": [
+      {
+        "probabilities": {
+          "0": 0.059056248515844345,
+          "1": 0.9409437775611877
+        },
+        "match": true
+      }
+    ]
+  }
+</code></pre></div></div>
+
+<p>What we see here tells us that “You are a tiny, little baby poop” is not classified as an identity attack, but it is 94% sure that it is, in fact, an insult.</p>
+
+<p>Let’s go back a little bit to our <code class="language-plaintext highlighter-rouge">index.js</code> file. We’re calling toxicity.load(), but where is the model coming from? That request is going to <a href="https://tfhub.dev/">TFHub</a>, a model hosting service set up by Google for popular community models.</p>
+
+<p>Although you can only load from TFHub, it is open source, which means we can fork and modify the model!</p>
+
+<p>Next up in our code, we run the classify method. This is where the input is passed through the model and we get the results. We give the model data, which is converted to tensors and then reconverted into normal JS primitives. Whoa. That sounds like a lot, and that’s something I hope to explore in a post down the line. But it’s worth noting here to start peeling back the layers of magic we get to dive into while playing with TFJS.</p>
+
+<p>And if you want to explore some more, here are some resources to check out:</p>
+
+<ul>
+  <li><a href="youtu.be/YB-kfeNIPCE">TF developer Summit</a>, where they trained a model to control a Pac-man game</li>
+  <li><a href="https://www.tensorflow.org/js/tutorials/setup">Directions for installing tfjs</a></li>
+  <li><a href="https://github.com/tensorflow/tfjs/tree/master/tfjs">Documentation</a></li>
+</ul>
+:ET
