@@ -34,7 +34,7 @@ navigation:
   - text: Code & Community
     url: /code-and-community
 
-    - text: Consulting
+  - text: Consulting
     url: /consulting
 
 # Required Plugins
