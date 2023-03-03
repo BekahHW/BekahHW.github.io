@@ -5,10 +5,10 @@ layout: null
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator>
-  <link href="/author/Bekah/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="/" rel="alternate" type="text/html" />
-  <updated>2023-03-03T15:23:24-05:00</updated>
-  <id>/author/Bekah/feed.xml</id>
+  <link href="http://localhost:4000/author/Bekah/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2023-03-03T16:34:01-05:00</updated>
+  <id>http://localhost:4000/author/Bekah/feed.xml</id>
 
   
   
@@ -36,11 +36,11 @@ layout: null
   
     <entry>
       <title type="html">How to Create a Positive Community for Your Open Source Project</title>
-      <link href="/Building-a-Supportive-Open-Source-Community" rel="alternate" type="text/html" title="How to Create a Positive Community for Your Open Source Project" />
+      <link href="http://localhost:4000/Building-a-Supportive-Open-Source-Community" rel="alternate" type="text/html" title="How to Create a Positive Community for Your Open Source Project" />
       <published>2023-03-02T00:00:00-05:00</published>
       <updated>2023-03-02T00:00:00-05:00</updated>
-      <id>/Building%20a%20Supportive%20Open%20Source%20Community</id>
-      <content type="html" xml:base="/Building-a-Supportive-Open-Source-Community">&lt;p&gt;Over the last couple of years, I’ve spent time maintaining open source projects and an open source community. In the projects I’ve maintained and worked on, creating a positive and safe space for community members is a priority-and one that I appreciate. The people who contribute and interact with your OSS can be the backbone of your project, and cultivating a welcoming space for them is incredibly important to the health and growth of your project and users. Here are some tips to make your open source project friendly to contributors.&lt;/p&gt;
+      <id>http://localhost:4000/Building%20a%20Supportive%20Open%20Source%20Community</id>
+      <content type="html" xml:base="http://localhost:4000/Building-a-Supportive-Open-Source-Community">&lt;p&gt;Over the last couple of years, I’ve spent time maintaining open source projects and an open source community. In the projects I’ve maintained and worked on, creating a positive and safe space for community members is a priority-and one that I appreciate. The people who contribute and interact with your OSS can be the backbone of your project, and cultivating a welcoming space for them is incredibly important to the health and growth of your project and users. Here are some tips to make your open source project friendly to contributors.&lt;/p&gt;
 
 &lt;h2 id=&quot;create-a-solid-org-level-readme&quot;&gt;Create a Solid Org-level README&lt;/h2&gt;
 &lt;p&gt;Creating a solid README for your organization is kind of like the prologue in a novel. In your README, you can tell the story of your project(s) and provide context to people who are interested in being a part of the community. Your README can explain who you are, what your mission is, and how people can contribute and become a part of your community. This is your chance to onboard new community members and make them feel welcomed.&lt;/p&gt;
@@ -83,11 +83,11 @@ layout: null
   
     <entry>
       <title type="html">A Year in DevRel</title>
-      <link href="/A-Year-in-DevRel" rel="alternate" type="text/html" title="A Year in DevRel" />
+      <link href="http://localhost:4000/A-Year-in-DevRel" rel="alternate" type="text/html" title="A Year in DevRel" />
       <published>2023-01-23T00:00:00-05:00</published>
       <updated>2023-01-23T00:00:00-05:00</updated>
-      <id>/A%20Year%20in%20DevRel</id>
-      <content type="html" xml:base="/A-Year-in-DevRel">&lt;p&gt;A year ago today, I started my first job in DevRel. Before I started, I was chatting with the CEO of a consultancy, and one of the things he told me was to document publicly the work I was doing in DevRel to be transparent and have a clear record of the things I was working on. That advice has proven to be really useful over the last year, and it was one of the reasons I started the &lt;a href=&quot;https://dev.to/bekahhw/series/19583&quot;&gt;Technical Community Building Series&lt;/a&gt; on Dev. It’s also helped me to think through the things I’ve learned over the last year, including the challenges I’ve faced, the successes and failures I’ve had, and my takeaways for the next year.&lt;/p&gt;
+      <id>http://localhost:4000/A%20Year%20in%20DevRel</id>
+      <content type="html" xml:base="http://localhost:4000/A-Year-in-DevRel">&lt;p&gt;A year ago today, I started my first job in DevRel. Before I started, I was chatting with the CEO of a consultancy, and one of the things he told me was to document publicly the work I was doing in DevRel to be transparent and have a clear record of the things I was working on. That advice has proven to be really useful over the last year, and it was one of the reasons I started the &lt;a href=&quot;https://dev.to/bekahhw/series/19583&quot;&gt;Technical Community Building Series&lt;/a&gt; on Dev. It’s also helped me to think through the things I’ve learned over the last year, including the challenges I’ve faced, the successes and failures I’ve had, and my takeaways for the next year.&lt;/p&gt;
 
 &lt;h2 id=&quot;challenges&quot;&gt;Challenges&lt;/h2&gt;
 &lt;h3 id=&quot;metrics&quot;&gt;Metrics.&lt;/h3&gt;
@@ -152,11 +152,11 @@ layout: null
   
     <entry>
       <title type="html">Assume Best Intent</title>
-      <link href="/Assume-Best-Intent" rel="alternate" type="text/html" title="Assume Best Intent" />
+      <link href="http://localhost:4000/Assume-Best-Intent" rel="alternate" type="text/html" title="Assume Best Intent" />
       <published>2023-01-20T00:00:00-05:00</published>
       <updated>2023-01-20T00:00:00-05:00</updated>
-      <id>/Assume-Best-Intent</id>
-      <content type="html" xml:base="/Assume-Best-Intent">&lt;p&gt;Virtual Coffee has been through a progression of announcements about who we are and what we do. And we’re very thankful for the people who have shared when we get it wrong. One of the times we’ve gotten it wrong was when we included the phrase “assume best intent.” We wanted everyone to assume that we all supported each other, saw each other with an equal lens, and wanted the best for each other. And while that would be great, the truth is that it doesn’t always happen. I’m thankful that one of our members pointed it out to us, and I’m sorry if using that phrase negatively impacted any of our members without us knowing. We’ve since updated our language, and we ask that everyone “lead with kindness, and recognize that the impact of our words matters.” We share our Code of Conduct and our Code of Conduct violation form to ensure that there’s a clear space for folks to share their experiences where they didn’t feel safe.&lt;/p&gt;
+      <id>http://localhost:4000/Assume-Best-Intent</id>
+      <content type="html" xml:base="http://localhost:4000/Assume-Best-Intent">&lt;p&gt;Virtual Coffee has been through a progression of announcements about who we are and what we do. And we’re very thankful for the people who have shared when we get it wrong. One of the times we’ve gotten it wrong was when we included the phrase “assume best intent.” We wanted everyone to assume that we all supported each other, saw each other with an equal lens, and wanted the best for each other. And while that would be great, the truth is that it doesn’t always happen. I’m thankful that one of our members pointed it out to us, and I’m sorry if using that phrase negatively impacted any of our members without us knowing. We’ve since updated our language, and we ask that everyone “lead with kindness, and recognize that the impact of our words matters.” We share our Code of Conduct and our Code of Conduct violation form to ensure that there’s a clear space for folks to share their experiences where they didn’t feel safe.&lt;/p&gt;
 
 &lt;p&gt;This was a process. When we created this script, I thought that our members felt safe because of these words. And I’m so incredibly thankful that someone was willing to tell us that this often negatively impacted people who identified as part of a diverse group of people. In fact, &lt;a href=&quot;https://www.forbes.com/sites/rebekahbastian/2019/06/10/microaggressions-good-intent-is-not-good-enough/?sh=66bb3b357fb1&quot;&gt;according to Forbes&lt;/a&gt;, this language can often lead to microaggressions:&lt;/p&gt;
 
@@ -221,11 +221,11 @@ Acknowledge what they’re saying.&lt;/li&gt;
   
     <entry>
       <title type="html">We All Need Good Feedback</title>
-      <link href="/We-All-Need-Good-Feedback" rel="alternate" type="text/html" title="We All Need Good Feedback" />
+      <link href="http://localhost:4000/We-All-Need-Good-Feedback" rel="alternate" type="text/html" title="We All Need Good Feedback" />
       <published>2022-11-27T00:00:00-05:00</published>
       <updated>2022-11-27T00:00:00-05:00</updated>
-      <id>/We%20All%20Need%20Good%20Feedback</id>
-      <content type="html" xml:base="/We-All-Need-Good-Feedback">&lt;p&gt;When you touch a hot surface, you get feedback when your hand hurts. When you hug someone you care about and who cares about you, those warm feelings are feedback. When you get a like on your post, that’s a type of feedback. Feedback helps you to learn not to touch the burner, to connect you to other people who care about you too, and to decide who to write for. Feedback helps us all to grow, and that’s why it should be built into our processes.&lt;/p&gt;
+      <id>http://localhost:4000/We%20All%20Need%20Good%20Feedback</id>
+      <content type="html" xml:base="http://localhost:4000/We-All-Need-Good-Feedback">&lt;p&gt;When you touch a hot surface, you get feedback when your hand hurts. When you hug someone you care about and who cares about you, those warm feelings are feedback. When you get a like on your post, that’s a type of feedback. Feedback helps you to learn not to touch the burner, to connect you to other people who care about you too, and to decide who to write for. Feedback helps us all to grow, and that’s why it should be built into our processes.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-feedback&quot;&gt;What is Feedback?&lt;/h2&gt;
 &lt;p&gt;Ok, so this isn’t a difficult question. But, I think many people think it’s getting advice on how to change or just about the mistakes they’ve made. And although that can be part of it, feedback encompasses more than that.&lt;/p&gt;
@@ -310,11 +310,11 @@ Acknowledge what they’re saying.&lt;/li&gt;
   
     <entry>
       <title type="html">Career Goal Setting</title>
-      <link href="/Career-Goal-Setting" rel="alternate" type="text/html" title="Career Goal Setting" />
+      <link href="http://localhost:4000/Career-Goal-Setting" rel="alternate" type="text/html" title="Career Goal Setting" />
       <published>2022-11-25T00:00:00-05:00</published>
       <updated>2022-11-25T00:00:00-05:00</updated>
-      <id>/Career%20Goal%20Setting</id>
-      <content type="html" xml:base="/Career-Goal-Setting">&lt;p&gt;I’m close to completing my first year on a Developer Relations team. As I evaluate my own performance over the last year and set goals for my next year as a Technical Community Builder, I wanted to share how I’ve broken down my self-evaluation and goal setting. I don’t think you need to be on a DevRel team to find this useful. Based off of my responses to these questions, I’d like to work on creating self-evaluation points and put them in my calender during the next year.&lt;/p&gt;
+      <id>http://localhost:4000/Career%20Goal%20Setting</id>
+      <content type="html" xml:base="http://localhost:4000/Career-Goal-Setting">&lt;p&gt;I’m close to completing my first year on a Developer Relations team. As I evaluate my own performance over the last year and set goals for my next year as a Technical Community Builder, I wanted to share how I’ve broken down my self-evaluation and goal setting. I don’t think you need to be on a DevRel team to find this useful. Based off of my responses to these questions, I’d like to work on creating self-evaluation points and put them in my calender during the next year.&lt;/p&gt;
 
 &lt;h2 id=&quot;self-evaluation&quot;&gt;Self-evaluation&lt;/h2&gt;
 &lt;p&gt;Take some time to write down as much as you want for each of these questions. Remember, it’s important to be honest with yourself. You don’t have to show this to anyone. This is just for you.&lt;/p&gt;
@@ -402,11 +402,11 @@ To be honest, I’m in love with each of these topics. I think that makes me mor
   
     <entry>
       <title type="html">Moms, you’re carrying a lot of plates</title>
-      <link href="/Moms,-you're-carrying-a-lot-of-plates" rel="alternate" type="text/html" title="Moms, you're carrying a lot of plates" />
+      <link href="http://localhost:4000/Moms,-you're-carrying-a-lot-of-plates" rel="alternate" type="text/html" title="Moms, you're carrying a lot of plates" />
       <published>2021-11-30T00:00:00-05:00</published>
       <updated>2021-11-30T00:00:00-05:00</updated>
-      <id>/Moms,%20you're%20carrying%20a%20lot%20of%20plates</id>
-      <content type="html" xml:base="/Moms,-you're-carrying-a-lot-of-plates">&lt;p&gt;I see you moms. You’re carrying a lot of plates. Your children. Your work. Your family. Your life. Everything. You are carrying more plates than anyone should expect to carry. I know it’s &lt;em&gt;hard&lt;/em&gt;. I know it feels like you aren’t doing a good job at any of those things. But the truth is you’re amazing.&lt;/p&gt;
+      <id>http://localhost:4000/Moms,%20you're%20carrying%20a%20lot%20of%20plates</id>
+      <content type="html" xml:base="http://localhost:4000/Moms,-you're-carrying-a-lot-of-plates">&lt;p&gt;I see you moms. You’re carrying a lot of plates. Your children. Your work. Your family. Your life. Everything. You are carrying more plates than anyone should expect to carry. I know it’s &lt;em&gt;hard&lt;/em&gt;. I know it feels like you aren’t doing a good job at any of those things. But the truth is you’re amazing.&lt;/p&gt;
 
 &lt;p&gt;You’re carrying those plates and they are &lt;em&gt;heavy&lt;/em&gt;. And you’re still pushing forward. You’re tired. I know. It’s exhausting.&lt;/p&gt;
 
@@ -458,11 +458,11 @@ To be honest, I’m in love with each of these topics. I think that makes me mor
   
     <entry>
       <title type="html">What the heck does it mean to make an image a tensor?</title>
-      <link href="/What-the-heck-does-it-mean-to-make-an-image-a-tensor" rel="alternate" type="text/html" title="What the heck does it mean to make an image a tensor?" />
+      <link href="http://localhost:4000/What-the-heck-does-it-mean-to-make-an-image-a-tensor" rel="alternate" type="text/html" title="What the heck does it mean to make an image a tensor?" />
       <published>2021-11-29T00:00:00-05:00</published>
       <updated>2021-11-29T00:00:00-05:00</updated>
-      <id>/What%20the%20heck%20does%20it%20mean%20to%20make%20an%20image%20a%20tensor</id>
-      <content type="html" xml:base="/What-the-heck-does-it-mean-to-make-an-image-a-tensor">&lt;p&gt;So we’ve learned about &lt;a href=&quot;https://dev.to/bekahhw/hello-tensor-52ed&quot;&gt;what a tensor is&lt;/a&gt;, and we know a little bit about &lt;a href=&quot;https://dev.to/bekahhw/youre-toxic-using-the-toxicity-model-with-tensorflowjs-5h27&quot;&gt;what you can do with them&lt;/a&gt;, but why the heck would we want to turn an image into a tensor? Well, if we want to use them with TensorFlow.js or for Deep Learning, then we change them to tensors to put them in a useable form.&lt;/p&gt;
+      <id>http://localhost:4000/What%20the%20heck%20does%20it%20mean%20to%20make%20an%20image%20a%20tensor</id>
+      <content type="html" xml:base="http://localhost:4000/What-the-heck-does-it-mean-to-make-an-image-a-tensor">&lt;p&gt;So we’ve learned about &lt;a href=&quot;https://dev.to/bekahhw/hello-tensor-52ed&quot;&gt;what a tensor is&lt;/a&gt;, and we know a little bit about &lt;a href=&quot;https://dev.to/bekahhw/youre-toxic-using-the-toxicity-model-with-tensorflowjs-5h27&quot;&gt;what you can do with them&lt;/a&gt;, but why the heck would we want to turn an image into a tensor? Well, if we want to use them with TensorFlow.js or for Deep Learning, then we change them to tensors to put them in a useable form.&lt;/p&gt;
 
 &lt;p&gt;When we think about images, we know they’re made of pixels. Together, those small units create an image. Each of these pixels holds a position in the image, and each pixel can be represented by an array of three numbers that correspond with an &lt;a href=&quot;https://css-tricks.com/almanac/properties/c/color/&quot;&gt;RGB (red, green, blue) value&lt;/a&gt; that represents a color.&lt;/p&gt;
 
@@ -514,11 +514,11 @@ To be honest, I’m in love with each of these topics. I think that makes me mor
   
     <entry>
       <title type="html">Dear Senior Devs, Use your privilege</title>
-      <link href="/Dear-Senior-Devs,-Use-your-privilege" rel="alternate" type="text/html" title="Dear Senior Devs, Use your privilege" />
+      <link href="http://localhost:4000/Dear-Senior-Devs,-Use-your-privilege" rel="alternate" type="text/html" title="Dear Senior Devs, Use your privilege" />
       <published>2021-11-28T00:00:00-05:00</published>
       <updated>2021-11-28T00:00:00-05:00</updated>
-      <id>/Dear%20Senior%20Devs,%20Use%20your%20privilege</id>
-      <content type="html" xml:base="/Dear-Senior-Devs,-Use-your-privilege">&lt;p&gt;Dear Senior Devs,&lt;/p&gt;
+      <id>http://localhost:4000/Dear%20Senior%20Devs,%20Use%20your%20privilege</id>
+      <content type="html" xml:base="http://localhost:4000/Dear-Senior-Devs,-Use-your-privilege">&lt;p&gt;Dear Senior Devs,&lt;/p&gt;
 
 &lt;p&gt;Use your privilege. As privileged tech community members, it’s your job to help fight the gatekeepers on your teams. It is your job to make space at the table for those who have been kept out. To hand the mic to those who are silenced. To allow for a pause in the conversation to ask if there anyone wants to add something to the conversation when you realize that the only people who have contributed to the conversation are the other people of privilege at the table. To recognize our own complicity and remember that unintentional gatekeeping is still gatekeeping.&lt;/p&gt;
 
@@ -558,11 +558,11 @@ To be honest, I’m in love with each of these topics. I think that makes me mor
   
     <entry>
       <title type="html">Hello, Tensor!</title>
-      <link href="/Hello-Tensor!" rel="alternate" type="text/html" title="Hello, Tensor!" />
+      <link href="http://localhost:4000/Hello-Tensor!" rel="alternate" type="text/html" title="Hello, Tensor!" />
       <published>2021-11-22T00:00:00-05:00</published>
       <updated>2021-11-22T00:00:00-05:00</updated>
-      <id>/Hello%20Tensor!</id>
-      <content type="html" xml:base="/Hello-Tensor!">&lt;p&gt;So we’ve been using the word tensor, just throwing it around, but now we’re going to learn a little more about it. You don’t &lt;em&gt;have&lt;/em&gt; to understand everything. This isn’t an in depth exploration of what tensors are or a debate about whether the mathematical definition of tensors versus the computer science definition of tensors. Understanding enough to know &lt;em&gt;how&lt;/em&gt; you can use tensors should be the goal here, so a basic understanding can allow us to do a better job of using tensors in our development.&lt;/p&gt;
+      <id>http://localhost:4000/Hello%20Tensor!</id>
+      <content type="html" xml:base="http://localhost:4000/Hello-Tensor!">&lt;p&gt;So we’ve been using the word tensor, just throwing it around, but now we’re going to learn a little more about it. You don’t &lt;em&gt;have&lt;/em&gt; to understand everything. This isn’t an in depth exploration of what tensors are or a debate about whether the mathematical definition of tensors versus the computer science definition of tensors. Understanding enough to know &lt;em&gt;how&lt;/em&gt; you can use tensors should be the goal here, so a basic understanding can allow us to do a better job of using tensors in our development.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-are-tensors&quot;&gt;What are tensors?&lt;/h2&gt;
 
@@ -693,11 +693,11 @@ console.log(twoDimensionArray([0,0])
   
     <entry>
       <title type="html">A Note to Devs Looking for Their First Job</title>
-      <link href="/A-Note-to-Devs-Looking-for-Their-First-Job" rel="alternate" type="text/html" title="A Note to Devs Looking for Their First Job" />
+      <link href="http://localhost:4000/A-Note-to-Devs-Looking-for-Their-First-Job" rel="alternate" type="text/html" title="A Note to Devs Looking for Their First Job" />
       <published>2021-11-19T00:00:00-05:00</published>
       <updated>2021-11-19T00:00:00-05:00</updated>
-      <id>/A%20Note%20to%20Devs%20Looking%20for%20Their%20First%20Job</id>
-      <content type="html" xml:base="/A-Note-to-Devs-Looking-for-Their-First-Job">&lt;p&gt;It’s hard out there, new devs. I’m sorry. So many of you have been fed the fairy tale of an industry with jobs a plenty, bountiful pay, with a steep and rigorous climb that would be worth it when you hit the peak—finally ready to transition from learning to working. I’m sorry so many of you have been let down, have seen the reality of the plentiful jobs for those with 3+ years of experience, the rat race for the available entry-level jobs, and the toxic environments preying on new developers.&lt;/p&gt;
+      <id>http://localhost:4000/A%20Note%20to%20Devs%20Looking%20for%20Their%20First%20Job</id>
+      <content type="html" xml:base="http://localhost:4000/A-Note-to-Devs-Looking-for-Their-First-Job">&lt;p&gt;It’s hard out there, new devs. I’m sorry. So many of you have been fed the fairy tale of an industry with jobs a plenty, bountiful pay, with a steep and rigorous climb that would be worth it when you hit the peak—finally ready to transition from learning to working. I’m sorry so many of you have been let down, have seen the reality of the plentiful jobs for those with 3+ years of experience, the rat race for the available entry-level jobs, and the toxic environments preying on new developers.&lt;/p&gt;
 
 &lt;p&gt;I’m sorry you’ve felt that pain.&lt;/p&gt;
 
