@@ -20,4 +20,4 @@ Another way to support positive communication includes adding issue templates to
 
 In addition, it's essential to have a clear code of conduct (COC). This creates a safe space for all of your community members to feel supported and empowered to grow. There are lots of templates available for creating a code of conduct, so you can browse through a variety of different ones to determine what works for your community. One note-if you're using language or taking inspiration from another organization's COC, you should provide some attribution in yours.
 
-If you want to learn more about this, you can check out my YouTube Video [Creating a Welcoming OSS Community](https://youtu.be/scE3jVz35oI) or hit me up with any quesitons you have.
+If you want to learn more about this, you can check out my YouTube Video [Creating a Welcoming OSS Community](https://youtu.be/scE3jVz35oI) or hit me up with any questions you have.
