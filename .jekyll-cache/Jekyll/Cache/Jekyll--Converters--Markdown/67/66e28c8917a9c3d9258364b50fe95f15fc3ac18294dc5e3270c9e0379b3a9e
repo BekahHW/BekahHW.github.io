@@ -1,17 +1,0 @@
-I"�<p>Over the last couple of years, I’ve spent time maintaining open source projects and an open source community. In the projects I’ve maintained and worked on, creating a positive and safe space for community members is a priority-and one that I appreciate. The people who contribute and interact with your OSS can be the backbone of your project, and cultivating a welcoming space for them is incredibly important to the health and growth of your project and users. Here are some tips to make your open source project friendly to contributors.</p>
-
-<h2 id="create-a-solid-org-level-readme">Create a Solid Org-level README</h2>
-<p>Creating a solid README for your organization is kind of like the prologue in a novel. In your README, you can tell the story of your project(s) and provide context to people who are interested in being a part of the community. Your README can explain who you are, what your mission is, and how people can contribute and become a part of your community. This is your chance to onboard new community members and make them feel welcomed.</p>
-
-<h2 id="onboard-new-contributors-with-individual-repo-readmes">Onboard New Contributors with Individual Repo READMEs</h2>
-<p>Onboarding new contributors-and doing it well-is important to your project’s success. To do this effectively, you should create a README for each individual repository. This is where you explain what the repository is all about, the technology being used, and how people can contribute. You should also provide clear guidelines for contributors of all levels, from first-time contributors to seasoned open-sourcerors. Be transparent about your level of support for new contributors, and make it clear how much support you’re able to give.</p>
-
-<h2 id="communication-is-key">Communication is Key</h2>
-<p>Clear communication is incredibly important when it comes to creating a positive experience for contributors. You should have clear paths of communication with your community members, and make sure that everyone is aware of how to get in touch with you. A couple of ways to do this include creating a contributing guide that details the process of contributing. For example, you might ask before someone raises a new issue, they start with a discussion post. If it’s determined to be a priority, the maintainers might convert it to an issue.</p>
-
-<p>Another way to support positive communication includes adding issue templates to help guide contributors. You can also add Pull Request templates to make it easier for you-as a maintainer-to understand what work has been done on the repo.</p>
-
-<p>In addition, it’s essential to have a clear code of conduct (COC). This creates a safe space for all of your community members to feel supported and empowered to grow. There are lots of templates available for creating a code of conduct, so you can browse through a variety of different ones to determine what works for your community. One note-if you’re using language or taking inspiration from another organization’s COC, you should provide some attribution in yours.</p>
-
-<p>If you want to learn more about this, you can check out my YouTube Video <a href="https://youtu.be/scE3jVz35oI">Creating a Welcoming OSS Community</a> or hit me up with any quesitons you have.</p>
-:ET

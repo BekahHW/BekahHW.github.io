@@ -2,7 +2,7 @@
 layout: post
 title: "Two Companies, Two DevRel Positions, Two Different Interview Processes"
 date: 2021-07-25
-tags: [Interview Series]
+tags: 
 author: Bekah
 ---
 
