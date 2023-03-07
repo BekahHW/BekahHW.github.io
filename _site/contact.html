@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
      <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page not found | BekahHW</title>
+<title>Contact Me | BekahHW</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Page not found" />
+<meta property="og:title" content="Contact Me" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Code. Community. Feelings. It’s all here." />
 <meta property="og:description" content="Code. Community. Feelings. It’s all here." />
-<link rel="canonical" href="http://localhost:4000/404.html" />
-<meta property="og:url" content="http://localhost:4000/404.html" />
+<link rel="canonical" href="http://localhost:4000/contact" />
+<meta property="og:url" content="http://localhost:4000/contact" />
 <meta property="og:site_name" content="BekahHW" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Page not found" />
+<meta property="twitter:title" content="Contact Me" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/404.html","description":"Code. Community. Feelings. It’s all here.","@type":"WebPage","headline":"Page not found","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/contact","description":"Code. Community. Feelings. It’s all here.","@type":"WebPage","headline":"Contact Me","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
  
 
@@ -56,38 +56,69 @@
         <span class="icon" aria-hidden="true"></span>
     </a>
 
-</header><!-- .site-header -->   <main class="site-main">
-    <div class="site-content">
-        <article class="page-template">
+</header><!-- .site-header -->   <!--
+  To make this form work you have to:
+  1. defined "email: youremail@email.com" in _config.yml file.
+  2. verify your form on formspree.io.
+-->
 
-            <header class="cover post-header">
-                
-                <div class="cover-content">
-                    <div class="inner">
-                        <h1 class="post-title">Page not found</h1>
-                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
-                    </div><!-- .inner -->
-                </div><!-- .cover-content -->
-            </header><!-- .post-header -->
+<main class="site-main">
+  <div class="site-content">
 
-            <div class="inner">
-                <div class="post-content">
-                    <div class="container">
-  <div class="row">
-    <div class="col col-12" style="text-align: center">
-      <h2>404</h2>
-      <p>The requested page could not be found.</p>
-      <p><a href="/">Back to the blog</a></p>
-    </div>
-  </div>
-</div>
+    <header class="cover page-header">
 
-                </div>
-            </div><!-- .inner -->
+      
+      <div class="cover-bg"
+        style="background-image: url(/assets/images/covers/3.jpg)">
+      </div>
+      
 
-        </article><!-- .page-template -->
+      <div class="cover-content">
+        <div class="inner">
+          <h1 class="page-title">Contact Me</h1>
 
-    </div><!-- .site-content -->
+        </div><!-- .inner -->
+      </div><!-- .cover-content -->
+    </header><!-- .post-header -->
+
+    <div class="inner">
+      <div class="post-content">
+        
+        <p>Hi! I'd love to be able to support you in your DevRel, team, or community building needs. Tell me a little bit about what you're looking for, and I'll be in contact soon!</p>
+        
+        
+        <section class="contact-form">
+          <form   
+          action="https://formspree.io/f/xrgvkwwz"
+          method="POST" id="contact-form">
+            <div class="form-item">
+              <label class="form-label">Your Email <span>(required)</span></label>
+              <input type="text" name="email" placeholder="Your email address..." class="form-input" />
+            </div>
+
+            <div class="form-item">
+              <label class="form-label">Your Name <span>(required)</span></label>
+              <input type="text" name="name" placeholder="Your name..." class="form-input" />
+            </div>
+
+            <div class="form-item">
+              <label class="form-label">Your Message <span>(required)</span></label>
+              <textarea name="message" placeholder="Your message..." class="form-textarea"></textarea>
+            </div>
+
+            <input type="hidden" name="_next" value="/thank-you" />
+            <input type="hidden" name="_subject" value="Contact form submission" />
+            <input type="text" name="_gotcha" style="display: none;" class="contact-form__gotcha" val="" />
+
+            <div class="form-item">
+              <button type="submit">Send Message</button> 
+            </div>
+          </form>
+        </section>
+      </div>
+    </div><!-- .inner-->
+
+  </div><!-- .site-content -->
 </main><!-- .site-main -->  <aside class="sidebar">
   <div class="sidebar-scrollable">
     <div class="inner">
