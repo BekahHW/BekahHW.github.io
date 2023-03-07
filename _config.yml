@@ -37,6 +37,10 @@ navigation:
   - text: Consulting
     url: /consulting
 
+  - text: Contact
+    url: /contact
+
+
 # Required Plugins
 plugins_dir:
   - jekyll-paginate
