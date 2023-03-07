@@ -2,7 +2,7 @@
 layout: post
 title: "How I accidentally interviewed for two jobs"
 subtitle: "Part I: Interview Them First"
-tags: [Interview Series]
+tags: 
 author: Bekah
 ---
 

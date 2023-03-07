@@ -2,7 +2,7 @@
 layout: post
 title: "Interview Series: Birthdays, job responses, and feedback"
 date: 2021-08-02
-tags: [Interview Series]
+tags: 
 author: Bekah
 ---
 
