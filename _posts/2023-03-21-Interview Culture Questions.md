@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Interview Culture Questions"
+title: "Top Interview Questions to Assess Company Culture Fit"
 author: Bekah
 date: 2023-03-21
 ---
