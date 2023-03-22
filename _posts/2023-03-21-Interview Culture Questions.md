@@ -1,25 +1,25 @@
 ---
 layout: post
-title: "Top Interview Questions to Assess Company Culture Fit"
+title: "Interview Questions to Assess Company Culture Fit"
 author: Bekah
 date: 2023-03-21
 ---
 
-Culture is hard to define. And we all like a different type of culture. We grow, learn, communicate in different ways. There’s not one culture that benefits everyone. Diverse cultures is a beautiful part of the industry because there’s a space for all of us. It might be hard to find sometimes; we might need to dig. But there’s the hope that we find the space that welcomes us, as ourselves. But how do we find that? It’s something I’ve thought about a lot recently. And something I’ve failed at in my career. I’m a trusting person. I was once in a behavioral interview where the hiring manager told me that it was both a strength and weakness that I was willing to have my heart broken. Maybe one day, I’d “toughen up,” but that wasn’t likely. I’d continue to give chances and let people break my heart. I’m not interested in toughening up. I spent a lot of my life being tough. I don’t particularly like my heart breaking, but I’d rather put myself into a situation where my heart is in it, than one where I don’t care; and company culture plays an important role in the interview process, my success, and the questions I ask. 
+Culture is hard to define. And we all like a different type of culture. We grow, learn, communicate in different ways; there’s not one culture that benefits everyone. Having diverse cultures is a beautiful part of the industry because there’s a space for all of us. It might be hard to find sometimes; we might need to dig. But there’s the hope that we find the space that welcomes us, as ourselves. But how do we find that? It’s something I’ve thought about a lot recently. And something I’ve failed at in my career. I’m a trusting person. I was once in a behavioral interview where the hiring manager told me that it was both a strength and weakness that I was willing to have my heart broken. I’m not interested in toughening up. I don’t particularly like my heart breaking, but I’d rather put myself into a situation where my heart is in it, than one where I don’t care; and company culture plays an important role in the interview process, my success, and the questions I ask. 
 
 ## Culture Questions
-Good culture is about communication, representation, and a willingness to learn and grow. A stagnant culture is defensive, prideful, and inflexible. Avoid those spaces if you’re hope is to learn and grow.
+Good culture is about communication, representation, and a willingness to learn and grow. A stagnant culture is defensive, prideful, and inflexible. Avoid those spaces if you’re hope is to learn and grow. Often indirect questions give us a better idea of what the culture is like. Below is a mix of both.
 
-## General Questions
-What makes a good culture?
-How do you provide feedback?
-How do you handle an employee leaving?
-How did you handle a situation in the last year where a teammate was laid off?
-How would you describe your senior leadership?
+### General Questions
+- What makes a good culture?
+- How do you provide feedback?
+- How do you handle an employee leaving?
+- How did you handle a situation in the last year where a teammate was laid off?
+- How would you describe your senior leadership?
 
 
-## Leadership Questions
-Your team is critical, but leadership is more important for long-term strategy. Understanding how leadership makes decisions, the culture they want to lead, their style of communication may not immediately impact you, but it’s very likely that your success and longevity will be most impacted by their culture. And by leadership, I never mean HR/People teams. They often want to “present” the most interesting culture to candidates. I mean top level people in the organization. Because if they don’t care about diversity, it doesn’t matter who does. If they don’t care about communication, it doesn’t matter who does. If they don’t care that the team is experts in their field, then it doesn’t matter if your team lead does. Ultimately, they make the decisions. It’s to your benefit to determine who makes the decisions that affect your potential team and then ask questions about that person or people.
+### Leadership Questions
+Your team is critical, but leadership is more important for long-term strategy. Understanding how leadership makes decisions, the culture they want to lead, their style of communication may not immediately impact you, but it’s very likely that your success and longevity will be most impacted by the culture they exemplify. And by leadership, I don't mean HR/People teams. They often want to “present” the most interesting culture to candidates. I mean top level people in the organization. Because if they don’t care about diversity, it doesn’t matter who does. If they don’t care about communication, it doesn’t matter who does. If they don’t care that the team is experts in their field, then it doesn’t matter if your team lead does. Ultimately, they make the decisions. It’s to your benefit to determine who makes the decisions that affect your potential team and then ask questions about that person or people.
 
 - How would you describe senior leadership?
 - Who makes decisions that impact this team?
@@ -43,4 +43,4 @@ Your team is critical, but leadership is more important for long-term strategy. 
 - What’s your mission? What are your core values (if they don’t know the answer, that tells you how seriously they’re taken)? 
 - Can I talk to someone in your organization that’s a part of {cultural initiative}?
 
-That’s a starter list. And I wish we didn’t have to go through this. But the reality is that as human beings, we all thrive in different environments. So finding the right environment for you, the environment that allows you to thrive, is one where you ask questions to decide if it works for you. I don’t think there’s a perfect work environment. There might be compromises, but each of us--individually--knows where we draw the line. So how close to the line do you want to compromise for company culture?
+That’s a starter list. As human beings, we all thrive in different environments. So finding the right environment for you, the environment that allows you to thrive, is one where you ask questions to decide if it works for you. I don’t think there’s a perfect work environment. There might be compromises, but each of us--individually--knows where we draw the line. So how close to the line do you want to compromise for company culture?
