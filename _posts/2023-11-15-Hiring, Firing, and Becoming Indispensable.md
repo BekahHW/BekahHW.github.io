@@ -1,4 +1,9 @@
-2050
+---
+layout: post
+title: "Hiring, Firing, and Becoming Indispensable"
+author: Bekah
+date: 2023-11-15
+---
 
 
 At the beginning of COVID, I lost my job. It was hard, but I navigated through it with what seemed like most people around me and then landed another job. At the beginning of 2023, I was laid off. The feelings I had when I lost my job the first time were different. Because soon after losing my job, when I recognized those feelings of hopelessness, I accidentally started Virtual Coffee. During the pandemic, it felt like we were all in this hopelessness together, which somehow brought hope. We were still able to push each other to grow, to regroup, and to affirm that, yes, indeed, it does suck. This time around, things felt different. I recently had a conversation with some people who have been in the industry far longer than I have, and we talked about hirings, firings, and being indispensable. You’ll get the highlights of that conversation.
