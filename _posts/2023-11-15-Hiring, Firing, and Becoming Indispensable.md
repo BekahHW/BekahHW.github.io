@@ -91,7 +91,7 @@ What you’ve done in previous jobs is both important and irrelevant. It’s imp
 Once you’re on the team, you have to prove yourself all over again. You have to prove that you can be a team player, that you’re willing to listen, willing to support your teammates, willing to understand the needs of the organization, and willing to do what’s necessary to advance the mission of the team and goals of the organization. Proving your worth in tech means showing not just that you can keep up, but that you can lead the way.
 
 
-## Be Indespensible
+## Be Indespensable
 The best way to keep your job is to be indispensable. That’s kind of been a theme of this blog post, but I want to specifically talk about it here. How do you become indispensable? Well, you work on a team that is clearly bringing in money for the company. I’ve heard this advice a lot recently, but I’ve also seen so much push-back from people. I’ve seen a lot of *I shouldn’t have to prove my value.* 
 
 I’m going to disagree here. If you want to keep your job, you need to prove your value. How can you expect to be paid if you’re not bringing in money? As a community builder, I understand that it can be hard to demonstrate the monetary gains brought in by some of your activities, but that means that you might need to reprioritize.
