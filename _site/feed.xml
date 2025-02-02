@@ -7,6 +7,445 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Being a Hybrid Friend is Hard</title>
+        <description>&lt;p&gt;Before coming into tech, I saw my friends weekly. I’ve never had a lot of friends, but I’ve had friends. You know, the kind that know you and understand you and you can break into random songs in front of one minute, shit-talk them in a board game the next minute, and then break down and cry when they ask, “Are you doing ok today?” We all had the same zipcode, and regional understanding - there’s something unique and interesting and beautiful about living in an Appalachian region. When I got my first job in tech this started to change. When the pandemic hit, this &lt;strong&gt;changed&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;No one felt close anymore because we were isolated in our homes. We were literally trying to stay far away from each other. There weren’t friendships of proximity anymore - you know the kind where your kids are the same age and you go to the same park playdates together. We played in our own backyards. And for a while, things were really hard.&lt;/p&gt;
+
+&lt;p&gt;But from the ashes, a light appeared and we were renewed because we all had each other everywhere. We found friendships online. We found ways to safely share the challenges, the despair, the heartache, and we started to laugh again. We found that we could deeply connect with people across timezones we didn’t even know existed prior to our interactions. We grew together because we were connected by a trauma that no one had ever anticipated. And we all had a baseline of understanding each other’s lives. It was an unprecedented event in history that brought us together, &lt;strong&gt;deeply&lt;/strong&gt; together.&lt;/p&gt;
+
+&lt;p&gt;But we also had to learn to experience sorrow together. And sometimes - the world was already so heavy - some people couldn’t be there anymore. It was hard, but we understood. There are depths of sorrow that none of us were prepared for. When we lost a friend who we had never met, but felt like we had known each other forever, there was a weird internal negotiation that happened.&lt;/p&gt;
+
+&lt;p&gt;What does it mean to lose a friend you’ve never hugged? What does it mean to support a group of friends online who have lost someone? How do you grieve together online? How do you survive when it’s your job to reach out to people and let them know over and over and over again that someone in your friend group has died? How do you survive being responsible for conversations about something that aches so deeply in your soul and that no one has prepared you for?&lt;/p&gt;
+
+&lt;p&gt;There’s a new sorrow now, the sorrow of being a hybrid friend. You feel torn between being friends with the people you see every day and the people who you see online every day. You feel like you’re not giving enough to the in person friends or the online friends. You’re being stretched, and the pain of being pulled in two directions is exhausting and excruciating. You feel like you have to make a choice.&lt;/p&gt;
+
+&lt;p&gt;It’s always easier to walk away from people you don’t run into in the milk aisle.&lt;/p&gt;
+
+&lt;p&gt;Being a hybrid friend is hard. A lot of us have met each other irl (in real life), and something about that solidifies the experience for a while. But being an online friend somehow defies object permanence. Kids might realize that the ball is hiding behind the couch, but when you’re an adult with a busy life and responsibilities, it’s &lt;strong&gt;hard&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m not judging anyone. In some ways, life is harder now than it was in 2020 because it’s full. My kids have activities, they want to go places, &lt;strong&gt;I&lt;/strong&gt; want to go places. It’s good, don’t get me wrong, but we had totally separate lives for a couple of years and that became the norm. And now we have a new norm and we’re trying to figure out how to merge and blend the two, but they’re just two different songs altogether.&lt;/p&gt;
+
+&lt;p&gt;I don’t know how to make a harmony out of this.  I know that it’s &lt;strong&gt;hard&lt;/strong&gt;. And I want you to know that it’s ok for it to be hard and to make hard decisions. I still think part of this is realizing that our lives will never be the same. We have all be changed because of our shared trauma, and that complicates things. We can’t go back to what things were before, because none of us are who we were before. We can’t deny the challenges and sorrows we faced in the last couple of years, because whether we like it or not, they have deeply impacted every single one of us. But we also can’t deny the beauty that we experienced when we found &lt;strong&gt;our people&lt;/strong&gt;, when there were no people around.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 14 May 2024 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Being-a-Hybrid-Friend-is-Hard</link>
+        <guid isPermaLink="true">http://localhost:4000/Being-a-Hybrid-Friend-is-Hard</guid>
+        
+      </item>
+    
+      <item>
+        <title>The Evolving Landscape of DevRel: Trends and Predictions for 2023</title>
+        <description>&lt;p&gt;A couple of weeks ago, I put out this tweet.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://x.com/BekahHW/status/1721565484103938373?s=20&quot;&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qlauo2lvar9t7do9mpgf.png&quot; alt=&quot;Tweet on the heyday of devrel&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Initially, this blog post was going to expand on that. But before writing, I wanted to do some research into the history of DevRel, look at some of the trends, before writing an essay to prove my assertion. What I ended up doing was writing this blog post as an exploration of the field, some of the changes and challenges we face, and where I think we’re headed.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-devrel&quot;&gt;What is DevRel?&lt;/h2&gt;
+
+&lt;p&gt;This is one of those questions that only some people agree on the definition. I suspect a lack of a clear definition of what DevRel is and what it does is part of the problem we’re seeing with DevRel today. If leadership can’t understand it, its value decreases. If leadership hears another successful DevRel team defined differently than how their organization defines it, scrutiny and distrust often follow.&lt;/p&gt;
+
+&lt;p&gt;Guy Kawasaki popularized the term Developer Evangelist at Apple in the 1980s. Developer Evangelists engaged directly with the developer community, especially around the Macintosh computer​​.&lt;/p&gt;
+
+&lt;p&gt;In the late 1990s and early 2000s,  the rise in open-source software changed how developers interacted with technology and each other. This shifted the approach to community-led development, paving the path toward what we know as modern DevRel, focusing on community engagement, open collaboration, and shared development.&lt;/p&gt;
+
+&lt;p&gt;As tech companies noticed the importance of developer ecosystems, DevRel roles became more formalized, focusing on both fostering community and contributing to product development feedback loops. As part of this, we saw more teams sourcing content from their communities, emphasizing collaboration and community-generated content​​.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;At its core, DevRel is a bridge between a company and its developer users. It focuses on mutual benefit: supporting developers in solving their problems and using feedback to improve products and services.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Within DevRel, we see specialties such as developer advocacy, technical writing, event management, and even product development.
+The focus and approach will depend on the needs of the organization, but I’ve always appreciated &lt;a href=&quot;https://www.swyx.io/measuring-devrel&quot;&gt;Swyx’s post on Measuring DevRel&lt;/a&gt; for the examination of the focus on content, community, or product.&lt;/p&gt;
+
+&lt;h3 id=&quot;devrel-data&quot;&gt;DevRel Data&lt;/h3&gt;
+
+&lt;p&gt;Common Room’s DevRel report from their survey provides some additional insights into the DevRel field, including information on compensation, department alignment, and primary responsibilities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Compensation&lt;/strong&gt;: The report indicates a median total gross compensation for DevRel professionals equivalent to $175,000 USD.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Department Alignment&lt;/strong&gt;: DevRel commonly report to marketing or Developer Relations/community departments.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Primary Responsibilities&lt;/strong&gt;: According to the report, 61.5% of respondents said that creating educational content and resources is their primary responsibility. Additionally, 58.6% is tasked with delivering on a primary business objective: product awareness.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;where-is-devrel-in-the-organization&quot;&gt;Where is DevRel in the Organization?&lt;/h2&gt;
+
+&lt;p&gt;According to &lt;a href=&quot;https://devrelcore.com/the-role-of-developer-relations-has-fundamentally-shifted-in-the-last-decade/&quot;&gt;The Role of Developer Relations Has Fundamentally Shifted in the Last Decade&lt;/a&gt;, DevRel was initially seen as an extension of marketing while also providing support for sales.  More recently, we’ve seen more focus on community-driven efforts. 
+According to the 10th Annual State of DevRel Report,  Developer Advocates make up 42.8% of DevRel roles. Still, we can also see the diverse roles within the field, including leadership and managerial roles, Dev Marketing, Dev Experience, Dev Education, and community-oriented roles, and DevRel engineers​​. Although C-Level DevRel roles weren’t typical, positions like Chief Developer Relations Officer exist.&lt;/p&gt;
+
+&lt;p&gt;DevRel’s responsibilities include digital marketing (e.g., SEO, PPC, online ads), outreach through developer newsletters, nurturing campaigns, attending events, providing product demos, generating content, technical writing, developer education, and support and success tasks. These roles require a combination of technical expertise, strong research and analytics skills, social and writing skills, and in-depth product knowledge. This may be one of the reasons we see so many career-changers gravitating towards DevRel.&lt;/p&gt;
+
+&lt;p&gt;The point is, because of the variety of skills required for DevRel, which often overlap with other departments like marketing, sales, and engineering, there’s more lack of clarity around what DevRel should be accomplishing, who they should be answering to, and who they should be supporting. There’s sometimes a tug of war over whose asks should be prioritized.&lt;/p&gt;
+
+&lt;h2 id=&quot;devrel-trends-and-changes&quot;&gt;DevRel Trends and Changes&lt;/h2&gt;
+
+&lt;p&gt;The pandemic had an incredible impact on DevRel, forcing those in the field to focus on virtual engagement. Although initially, it would’ve appeared that the pandemic could have decimated the DevRel industry, quick adaptations, a global audience, and isolation created opportunities to grow virtual communities and relationships. So we ended up seeing the adaptability and resilience of the DevRel community and a growth of tools and platforms targeting online developer engagement.&lt;/p&gt;
+
+&lt;p&gt;As the world recovered from the COVID-19 pandemic, we saw a gradual return to in-person developer events, including meetups and conferences. Now,  developer relations teams face the challenge of balancing the benefits of online engagement with in-person interactions. This left a lot of teams required to re-engage with the community in person and provide quality content online​​. In many circles, this led to additional tasks but not necessarily additional support.&lt;/p&gt;
+
+&lt;p&gt;Anecdotally, I saw the stress of increased responsibilities and the lack of the organization’s goals and focus lead to frustration, tension, and, ultimately, burnout. 
+We’ve also noticed in recent years that the DevRel field has been moving away from general developer advocate roles towards more specialized roles. The good news is that more people have realized that each advocate has their strengths and doesn’t need to be an expert in every type of DevRel.&lt;/p&gt;
+
+&lt;p&gt;Of course, there will continue to be general roles, but allowing specialization allows organizations to hire someone in DevRel who more perfectly fits the organization’s goals. However, this can get complicated because many organizations hire DevRel positions without fully understanding their goals.&lt;/p&gt;
+
+&lt;h2 id=&quot;when-companies-hire-but-dont-understand&quot;&gt;When companies hire but don’t understand&lt;/h2&gt;
+
+&lt;p&gt;Over the last couple of years, we’ve seen many more companies hiring their first DevRel person. Although this might seem like a positive trend, we’ve also seen a lack of understanding, which leads to tension, often micromanaging, and DevRel teams being some of the first layoffs. 
+&lt;a href=&quot;https://x.com/iandouglas736/status/1721602320302014971?s=20&quot;&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/31qvnwcinbxybufzpq1a.png&quot; alt=&quot;Ian Douglas when companies do not understand devrel tweet&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hiring a DevRel team before the product-market fit is established or without a clear strategy can result in wasted resources and potentially harm the company, mainly if the frustration of the lack of focus follows the DevRel hire to the developers they’re advocating for.&lt;/p&gt;
+
+&lt;p&gt;Developer advocates need to be able to connect with developers on a personal level and build trust. I’ve seen companies, especially startups, hire their first on a DevRel team or a whole team because advisors or a board has recommended it, but no one really knows why. They think that to succeed, there needs to be a DevRel team. If you want users or, feedback or fast growth, then they need a DevRel team. They hire someone who’s a great developer but has no experience in DevRel. They hire someone who has a lot of followers on X/Twitter or TikTok or wherever their target audience is. They hire a team and then set up meetings strategizing on “how to go viral” because they “just need to do that once.”
+Developer Relations is about building trust. Building trust takes time. If a team has a deadline for building trust, then that needs to be clear from the very beginning.&lt;/p&gt;
+
+&lt;p&gt;Let’s think about this in terms of relationships. How long does it take you to trust another person? How easy is it for that trust to be broken? Say you decide to go on a date with a new person. You want to get to know them a little before you decide to commit. What if that person tells you that they LOVE pineapple on pizza? And, hey, so do you! You have something in common with that person.&lt;/p&gt;
+
+&lt;p&gt;And then, a couple of weeks later, they decide they don’t like pineapple on pizza, and they don’t like pizza at all. You don’t just wake up and decide you don’t like pizza one day. Something else must be going on behind the scenes. It’s not a huge deal (maybe), but it will take you longer to build trust and find out if that person is being honest with you. You might always wonder, “Did they just say it in the first place because they knew that’s what I wanted to hear?”&lt;/p&gt;
+
+&lt;p&gt;Similarly, I’ve seen teams formed with a strategy in mind only to have that strategy constantly change because “it’s not working,” but there’s no clear definition of what it means to work. If you’re changing your favorite food constantly, you start losing credibility and trusting relationships.&lt;/p&gt;
+
+&lt;p&gt;That’s not to say you can’t change your strategy or target audience. But if you want to retain that trust, you can’t change your favorite food every couple of months. A better approach might be to say, “I love pineapple pizza, and I really love pierogies now, too!”&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hire someone who is passionate about developers and understands their challenges.
+​Developer Relations success takes time; if you don’t have that, you’re setting your team up for failure.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;creating-devrel-goals&quot;&gt;Creating DevRel Goals&lt;/h2&gt;
+
+&lt;p&gt;Another problem I’ve seen in the last year is that companies were throwing money at their DevRel team and saying, “Do your thing. We trust you.” And then suddenly, with the market shifting, they don’t trust DevRel anymore, and worse, they often blame them for the company’s lack of success. The problem didn’t start with the market shift. The problem began with a lack of understanding of what DevRel teams do and the company’s needs.&lt;/p&gt;
+
+&lt;p&gt;I’ve seen some DevRel teams succeed by being semi-siloed from the rest of the company, but I also think that leaves them as a target when things start to go back. “What do you all even do?” is never a good question. If those outside the team don’t understand what DevRel does, then it’s hard to tie success to your team, and that’s what needs to be done.&lt;/p&gt;
+
+&lt;p&gt;The times of companies just handing out money are over. You can’t just go to every conference because you’re on a DevRel team. You can’t sponsor every meetup or organization that asks you. You have to be able to justify being there. That justification means that you need to be able to show how you’re providing value to the company. That’s not an unreasonable ask. The justification can’t be, “I’m going to build relationships, but I can’t tell you how long that will take to pay off.”&lt;/p&gt;
+
+&lt;p&gt;Building relationships is great, but are you building relationships for your company and establishing their credibility, or are you making friends for yourself? There’s a difference. 
+If someone asked you for the elevator pitch for your company, could you give it? If someone asked you questions about the product, could you answer them or point them in the right direction? 
+I’ve spent more time than I would like identifying metrics and OKRs. But if you want to survive in DevRel, it’s something that you need to understand. Companies should not throw boatloads of money at someone without seeing a return on investment (ROI).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://x.com/JesseRWeigel/status/1721578794446729535?s=20&quot;&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pav87h3afohv3actetfl.png&quot; alt=&quot;Image description&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.advocu.com/post/trends-in-developer-relations-for-2023&quot;&gt;According to Trends in Developer Relations for 2023&lt;/a&gt;, the economic downturn has led to a reevaluation of DevRel’s role within organizations. &lt;strong&gt;Teams are being asked to focus on activities with the highest impact and justify their contributions in terms of measurable outcomes​​.&lt;/strong&gt; This is not an unreasonable ask.&lt;/p&gt;
+
+&lt;p&gt;There has been a growing need for DevRel teams to understand how their companies make money and to align their goals with broader business objectives, which also often means closely communicating with product, sales, and marketing teams​​.&lt;/p&gt;
+
+&lt;h2 id=&quot;identifying-metrics-and-aligning-them-with-devrel-and-company-goals&quot;&gt;Identifying Metrics and Aligning Them with DevRel and Company Goals&lt;/h2&gt;
+
+&lt;p&gt;The first step in measuring DevRel ROI is aligning DevRel goals with the company’s larger objectives. With this, it’s easier for other departments to see the value in DevRel activities. For example, suppose a company goal is to increase the fork rate of an open source project. In that case, DevRel strategies might include engaging with developers at relevant meetups, creating helpful content, or establishing community channels​​.&lt;/p&gt;
+
+&lt;p&gt;It’s going to look different for every team, but a general approach to aligning goals might look like this:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Understand Company Objectives&lt;/strong&gt;. This is the building block of the rest of this approach. DevRel teams should comprehensively understand the company’s broader objectives, such as revenue targets, customer acquisition, product development, or market expansion.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Identify DevRel’s Role&lt;/strong&gt;. How DevRel can contribute to these objectives? This could involve community building, developer advocacy, creating educational content, or fostering product adoption. Part of understanding the answer to this question is identifying the current painpoints of the organization. For example, maybe the product has tons of sign-ups but only a small percentage of those return to use the product. What’s happening between sign-ups and using the product? How can you re-engage those developers?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Set Specific DevRel Goals.&lt;/strong&gt; Create a bridge between the company objectives and the DevRel role. For example, if a company aims to retain more users, a DevRel goal might be to improve developer onboarding and user experience.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Develop Aligned Strategies&lt;/strong&gt;. How can DevRel support these goals? It’s important to be selective about activities and events, choosing those that align best with the team’s goals and capabilities​​. This could include creating content about how to use the product, improving documentation, creating technical tutorials, or gathering developer feedback.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Track and Measure Impact&lt;/strong&gt;. Find ways to measure the impact of DevRel activities on the goals. As part of that process, regular reviews and strategy adjustments help to ensure alignment with company objectives.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I think it’s worth noting that although this can be a tedious part of the process, it can help to understand the expectations of the DevRel team and of each teammate. It can also help team members grasp what success looks like for them. When we evaluate these goals regularly, we’re better able to pivot with changes in the company, adjust to market conditions, and prevent burnout.&lt;/p&gt;
+
+&lt;p&gt;One of the challenges of tracking is that DevRel activities often don’t necessarily directly correlate to revenue, but there’s a widely held belief that it can influence it positively. 
+So, for example, the goals won’t be directly related to X-increase in revenue but rather, to the creation of a strong community and product, which indirectly results in increased revenue​​.
+The tricky part is finding the right balance.&lt;/p&gt;
+
+&lt;p&gt;It’s hard to quantify relationship and community building, but it’s necessary to build them. We also sometimes see a fine line between marketing and relationship building coming as a top-down directive. There are things that will be easy to track: new users, returning users, and feedback submissions. But for the things that are more challenging to track, you have to learn how to tell the story and justify their importance, even if you didn’t yesterday or last month, or at the beginning of your career.&lt;/p&gt;
+
+&lt;h2 id=&quot;devrel-status-its-complicated&quot;&gt;DevRel Status: It’s Complicated&lt;/h2&gt;
+
+&lt;p&gt;I’ve been fortunate enough to know some amazing people in Developer Relations. Over the last couple of years, I’ve learned so much through my conversations with them, reading and watching their content, and asking questions. Their authenticity and depth of knowledge allow them to be approachable, encouraging, and helpful.&lt;/p&gt;
+
+&lt;p&gt;I’ve also seen a lot of bitter people in DevRel. I’m not sure if this impacts all of tech equally, but I’ve definitely seen it more than I expected in DevRel. I think some of this stems from layoffs, lack of clarity of direction, organizations blocking their teams from making progress, and burnout.&lt;/p&gt;
+
+&lt;p&gt;And somewhere in this mix of DevRel, we start to see a little bit of an echo chamber. This is a hard one to talk about. I really love the DevRel community, but sometimes we talk to each other instead of talking to developers. We write for each other, instead of writing for users.&lt;/p&gt;
+
+&lt;p&gt;Everyone knows the company that they’re representing, and we all like each other’s posts and go to each other’s talks because we (maybe subconsciously) know that our fellow Developer Advocate will appear to be successful with high numbers.&lt;/p&gt;
+
+&lt;p&gt;Another part of the problem of the echo chamber is the lack of growth in the field that comes with it. If you’re trapped in the echo chamber, you’re less likely to hear diverse ideas and which can impede the ability to understand and address the needs and challenges of a broader developer community.&lt;/p&gt;
+
+&lt;p&gt;It’s the job of Developer Relations teams to understand the needs of their developer community. When you don’t spend time understanding your community, there’s a disconnect and a lack of trust. You’re missing opportunities for meaningful engagement and collaboration.&lt;/p&gt;
+
+&lt;p&gt;One of the biggest problems caused by the DevRel echo chamber is a skewed definition of success and impact. If you’re only receiving feedback and defining (or &lt;em&gt;not&lt;/em&gt; defining) metrics based on your echo chamber, you’re not getting the full understanding to be able to do your job well and to create initiatives that align with your larger organizational goals.&lt;/p&gt;
+
+&lt;p&gt;Another problem of the echo chamber is your perspective can create a barrier to recognizing and responding to emerging trends, technologies, and market needs. If you’re stuck in the same conversations with the same people, there’s a higher potential for becoming outdated or irrelevant.&lt;/p&gt;
+
+&lt;p&gt;When we spend more time promoting each other’s work, and the primary growth we see is only in our DevRel audience, we’re not building authentic relationships with the audience we’ve been hired to engage with. I want to point out that this is different than forming collaborations with other DevRel teams. If you can both get value out of collaborating by expanding your audience because it makes sense for both of your audiences to use these products, then you’re doing your job.&lt;/p&gt;
+
+&lt;p&gt;Your goal should focus on advocating for developers who are using your product, understanding their needs, and supporting them through your content creation.&lt;/p&gt;
+
+&lt;h3 id=&quot;ai-and-devrel&quot;&gt;AI and DevRel&lt;/h3&gt;
+
+&lt;p&gt;On top of everything else, the recent boom of AI has further impacted the DevRel field in various ways. DevRel teams have been exploring how AI can be helpful in key areas of their work, including using GitHub CoPilot to help generate demos and code, to write documentation, and to brainstorm talks and blog posts.&lt;/p&gt;
+
+&lt;p&gt;We’ve seen this both improve the speed of people in DevRel and cause controversy, with some using it to write entire articles, talks, and more. There’s no consensus on the appropriate use of AI for content creation. One of the most critical elements of success is authenticity, and there’s a negative connotation associated with using AI as part of the creation process.&lt;/p&gt;
+
+&lt;p&gt;Complicating things further, companies have seen the capabilities of AI and imagined them as substitutes for Developer Relations roles. Why should we hire someone when we can just use AI to complete their tasks? The problem with that logic is you’re not developing relationships, which is the primary goal of DevRel. This substitution further exemplifies that there’s a lack of understanding of what DevRel is.&lt;/p&gt;
+
+&lt;h2 id=&quot;todays-devrel&quot;&gt;Today’s DevRel&lt;/h2&gt;
+&lt;p&gt;We’re in a space now where DevRel can’t be what it was before. We’ve crossed a line past the pandemic era of fully remote, but haven’t returned to the full power of in-person–although I don’t think we’ll ever see the return of in-person events like they were before, largely for the same reasons DevRel won’t be what it was before.&lt;/p&gt;
+
+&lt;p&gt;There’s been a shift to a more conservative approach to DevRel. Budgets are tighter, reporting is required. But it’s not all bad news. In fact, it’s good news for the people who are good at their job on DevRel teams. 
+&lt;a href=&quot;https://x.com/hummusonrails/status/1721565788581117970?s=20&quot;&gt;
+&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dcpq83k420sd7dxlr9zo.png&quot; alt=&quot;Hummus on Rails tweet&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The best people will continue to find jobs, and to avoid some of the common pitfalls or mistakes we’ve looked at in this post. And with that, you’re more likely to be on a stellar team of DevRel professionals. When we find ourselves in a place where we’re surrounded by the best, we’re more likely to grow and to push each other.&lt;/p&gt;
+
+&lt;h3 id=&quot;engineers-who-devrel&quot;&gt;Engineers who DevRel&lt;/h3&gt;
+
+&lt;p&gt;Another option I think that we’ll see increasingly more popular is engineers who do DevRel activities. What do I mean by that? Take for instance, my team at &lt;a href=&quot;https://opensauced.pizza/&quot;&gt;OpenSauced&lt;/a&gt;. I’m on the DevEx team. We have four engineers, all of whom have written blog posts for our community blog. Most of our engineers have given tech talks, or produced other forms of content, including livestreams, TikToks, and more. Their primary role is engineering, but they’re great at DevRel and community-building goals as well.&lt;/p&gt;
+
+&lt;p&gt;Engineers taking on DevRel responsibilities might bring deeper technical expertise to community engagement, and from that, we may see a shift in content that engages a broader audience of developer expertise level.&lt;/p&gt;
+
+&lt;p&gt;Blending engineering and DevRel roles could lead to more diverse career paths, allowing professionals to develop a unique combination of skills in both development and community engagement. It also helps to close the feedback loop when engineers engage with users and community members.&lt;/p&gt;
+
+&lt;p&gt;No matter what, as the role becomes more multifaceted, the best DevRel professionals will likely be those who can effectively balance technical expertise with community-building and communication skills.&lt;/p&gt;
+
+&lt;p&gt;The triple threat DevRel professional excels at technical excellence, strategic thinking, and content creation and community building.&lt;/p&gt;
+
+&lt;p&gt;What does this mean for the future of DevRel? It means that we make sure that strategy, feedback, and self-review are built into our progress. We should be looking at the strengths and weaknesses of the company, the team, and ourselves. Thinking about the future of DevRel and the instability of jobs, I see a tendency for those looking for a job to try to improve their weaknesses rather than improve their strengths. But &lt;a href=&quot;https://www.psychologytoday.com/us/blog/from-functioning-to-flourishing/201411/ten-reasons-to-focus-on-your-strengths&quot;&gt;studies&lt;/a&gt; have shown that it’s actually more efficient to improve on our strengths that our weaknesses. So maybe, when we think about what the future looks like for us, we should think about our strengths and how we can optimize them to achieve the goals that are in front of us.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Nov 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/The-Evolving-Landscape-of-DevRel</link>
+        <guid isPermaLink="true">http://localhost:4000/The-Evolving-Landscape-of-DevRel</guid>
+        
+      </item>
+    
+      <item>
+        <title>Hiring, Firing, and Becoming Indispensable</title>
+        <description>&lt;p&gt;At the beginning of COVID, I lost my job. It was hard, but I navigated through it with what seemed like most people around me and then landed another job. At the beginning of 2023, I was laid off. The feelings I had when I lost my job the first time were different. Because soon after losing my job, when I recognized those feelings of hopelessness, I accidentally started Virtual Coffee. During the pandemic, it felt like we were all in this hopelessness together, which somehow brought hope. We were still able to push each other to grow, to regroup, and to affirm that, yes, indeed, it does suck. This time around, things felt different. I recently had a conversation with some people who have been in the industry far longer than I have, and we talked about hirings, firings, and being indispensable. You’ll get the highlights of that conversation.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-evolution-of-tech-hiring&quot;&gt;The Evolution of Tech Hiring&lt;/h2&gt;
+&lt;p&gt;The hiring landscape is different than when I started in tech in 2019. There have been a lot of bootcampers and self-taught folks who were given promises of fortune and a better life only to find empty promises, rejections, and the question of whether or not they should even keep trying to find a job or to return back to their previous life. The influx of juniors, paired with not enough junior-level jobs has been more than frustrating; it’s been devastating. On top of that, we’ve seen a huge shift in tech with new trends dominating the conversation from web3 to ai, and it’s hard to figure out what basket you should put your eggs in. The tech landscape is as much about the art of adaptation as it is about innovation.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-current-job-market&quot;&gt;The Current Job Market&lt;/h2&gt;
+&lt;p&gt;There is a large supply of people looking for work in tech. There is a decreased demand for the jobs that we saw a couple of years ago. Two years ago, before I was laid off for a second time, we saw aggressive hiring. We were starting to see recovery from the pandemic, and teams were hiring tons of people at higher-than-normal salaries. If you expect hiring today to look like hiring two years ago, you’re going to be disappointed.&lt;/p&gt;
+
+&lt;h3 id=&quot;shifting-employment-dynamics&quot;&gt;Shifting Employment Dynamics&lt;/h3&gt;
+&lt;p&gt;Over-hiring has led to companies losing faith in existing employees. Ideas we had two years ago have become outdated more quickly than ever before. This also means that you won’t see the same perks we saw during that time. You can’t demand remote work, or signing bonuses, or educational budgets. You won’t get thousands of dollars to upgrade your home office.&lt;/p&gt;
+
+&lt;p&gt;Two years ago, you had the upper hand if you were applying for a job. It was a hiree’s market. Now, it’s the company’s market, and I don’t think that’s going to change anytime soon.&lt;/p&gt;
+
+&lt;p&gt;It’s complicated, as you’ll see below. There’s an increasing number of jobs, but there were vast layoffs last year. That’s all to say that it’s not impossible out there. You just have to be strategic in your approach.&lt;/p&gt;
+
+&lt;h3 id=&quot;2023-numbers&quot;&gt;2023 Numbers&lt;/h3&gt;
+&lt;h4 id=&quot;layoffs&quot;&gt;Layoffs:&lt;/h4&gt;
+&lt;p&gt;In 2023, over 240,000 jobs were lost in the tech industry, a 50% increase from the previous year, including companies like Google, Amazon, Microsoft, Yahoo, Meta, and Zoom. We saw startups in various sectors laying off employees or even shutting their doors. 
+Here’s the monthly breakdown for layoffs in tech last year:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;January: 89,554&lt;/li&gt;
+  &lt;li&gt;February: 40,021&lt;/li&gt;
+  &lt;li&gt;March: 37,823&lt;/li&gt;
+  &lt;li&gt;April: 20,014&lt;/li&gt;
+  &lt;li&gt;May: 14,928&lt;/li&gt;
+  &lt;li&gt;June: 10,958&lt;/li&gt;
+  &lt;li&gt;July: 10,589&lt;/li&gt;
+  &lt;li&gt;August: 9,545&lt;/li&gt;
+  &lt;li&gt;September: 4,632&lt;/li&gt;
+  &lt;li&gt;October: 7,331​​
+    &lt;h4 id=&quot;hiring-trends&quot;&gt;Hiring Trends&lt;/h4&gt;
+    &lt;p&gt;What seems like dire circumstances if we just look at the data above, might get a little more positive if we dig into the numbers a little more:&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Projected net tech employment in the U.S.: 9.4 million (CompTIA’s 2023 Cyberstates report).&lt;/li&gt;
+  &lt;li&gt;Projected net new tech jobs: 272,323.&lt;/li&gt;
+  &lt;li&gt;Number of postings by U.S. employers for tech job openings in 2022: 4.1 million.&lt;/li&gt;
+  &lt;li&gt;Estimated direct economic output of the U.S. tech industry: $1.97 trillion, representing 8.8% of the national economy.&lt;/li&gt;
+  &lt;li&gt;Median tech occupation wage is 103% higher than the median national wage in the U.S.&lt;/li&gt;
+  &lt;li&gt;Number of tech business establishments in the U.S.: 582,120, a 7.5% increase year-over-year.&lt;/li&gt;
+  &lt;li&gt;Projected growth rate for tech jobs over the next decade is nearly twice the national jobs rate​​​​​​​​​​​​.&lt;/li&gt;
+  &lt;li&gt;The Bureau of Labor Statistics (BLS) projects that employment in computer and information technology occupations will grow 15% from 2020 to 2030, much faster than the average for all occupations.&lt;/li&gt;
+  &lt;li&gt;Indeed currently has over 1.5 million tech jobs posted in the U.S. This suggests that there is a high demand for tech workers. LinkedIn currently has over 2.5 million tech jobs posted in the U.S.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We could dive further into the data and what it means, but I’m less interested in making predictions and understanding the data for this post than I am in talking through some of the things we can do today to improve our chances of getting hired and staying hired. What’s the most valuable code in tech? Adaptability.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-importance-of-adapting-in-tech&quot;&gt;The Importance of Adapting in Tech&lt;/h2&gt;
+&lt;p&gt;I’ve seen many well-meaning people out there giving terrible advice on finding a job. They’re giving advice based on what they know from when they tried to get hired. It’s outdated. And if there’s one thing I know about this industry, it moves fast. If you don’t stop and look around once in a while, you could miss it. People saying it’s a great time to get into tech should always follow that with, “but it’s going to be hard.” It’s hard to keep a job these days! Adapting to the tech industry’s evolution isn’t just a skill; it’s a survival strategy.&lt;/p&gt;
+
+&lt;h3 id=&quot;keeping-up-with-industry-demands&quot;&gt;Keeping Up with Industry Demands&lt;/h3&gt;
+&lt;p&gt;Last year, I was on a plane that was sitting on the runway. Something was wrong with the door. It had “slipped.” A maintenance person came to check it out, and they tried to pound it back to where it needed to be with a wrench. At the very least, this problem needed a hammer. As you might expect, we were de-planed and had to be moved to a plane on the other side of the airport.&lt;/p&gt;
+
+&lt;p&gt;You have a toolbox that you use to do your work well and be efficient. This advice isn’t just for new folks coming into tech; it’s for anyone who wants to keep their job. If you refuse to learn the tools that allow you to do your job well, you will become “outdated,” and it will be increasingly hard to find a job.&lt;/p&gt;
+
+&lt;p&gt;Think about it like this: Many or most of us in tech use Git and GitHub. For those who have been in the industry long enough, you can remember the time before those “tools” were in your “toolbox.” What if you refused to learn how to use them because you couldn’t see the value or you didn’t think they made you more efficient? You’d likely have a hard time finding a job right now. In fact, most companies assume that you know how to use these tools and don’t even list them on job descriptions.&lt;/p&gt;
+
+&lt;p&gt;One of the reasons people enjoy being in tech is because there’s always something new and shiny. It’s constantly changing, and growing, and challenging us to improve But if we’re stubborn and refuse to change and grow, we can’t expect companies to want to employ us. I know a lot of people out there believe that anyone can learn anything if given the right amount of time. Time is limited, though. You need to stand out in the same amount of time as many other applicants.&lt;/p&gt;
+
+&lt;p&gt;This is not a career where you can go to the office, do your time and clock out. This might not be the popular thing to say, but if you’re behind, you will have to put time in to catch up. The reality is that if you don’t, someone who is doing that will be there to take your job.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is an opportunity for juniors to take your job.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For juniors, it’s good news that some people refuse to adapt to change. You can focus on adding a new skillset to your toolbox and prove that you can do the job more effectively than someone who refuses to grow.&lt;/p&gt;
+
+&lt;p&gt;Along with that, there is an increasing number of jobs in the office. Because many people have become accustomed to working remotely, many job seekers aren’t prioritizing in-person locations. Juniors, working on location could be a great way to get your foot in the door.&lt;/p&gt;
+
+&lt;p&gt;No matter what, it’s important to remember that tech careers are less about walking a defined path and more about navigating a dynamic landscape.&lt;/p&gt;
+
+&lt;h2 id=&quot;entitlement&quot;&gt;Entitlement&lt;/h2&gt;
+&lt;p&gt;No one owes you a job. If you aren’t performing, if you’re not growing, if you’re not making the company money, you can’t expect to stay employed. Don’t get me wrong, I wish that everyone in tech could keep their jobs, and everyone transitioning to tech could find a job, but we are doing a disservice to everyone if we don’t provide realistic expectations. We have to be honest about the challenges facing people looking for a job and trying to keep a job in tech right now. And with so many people looking for jobs in tech right now, there’s definitely someone who is ready to replace and outperform you.&lt;/p&gt;
+
+&lt;p&gt;We cannot expect to have all the same things that we had a couple of years ago. And we might need to work harder to get the same things we used to have. Nobody said it doesn’t suck, but understanding the present situation can help decrease frustrations.&lt;/p&gt;
+
+&lt;h2 id=&quot;navigating-the-interview-process&quot;&gt;Navigating the Interview Process&lt;/h2&gt;
+&lt;p&gt;Hiring is a risk. You have to go on 4+ interviews not just to prove your abilities; it’s so they can decide if it’s worth it to trust you. They’re investing in not just your salary for the year, but for years to come. They’re determining whether or not you will make a good teammate. Do you fit with the current team? How long will it take you to be a productive team member? Will you be a positive influence or will you bring the whole team down with a negative–or worse yet, an entitled–attitude? This is your opportunity to build a relationship with the people who are interviewing you.&lt;/p&gt;
+
+&lt;p&gt;One of my favorite interviews was with a future teammate. We were chatting about building community, and we disagreed with the approach on to how to build community. We both shared our approach in a respectful way, asked questions, and responded to each other. My favorite interview was a disagreement. But with that disagreement, we learned that we could trust each other even when we disagreed.&lt;/p&gt;
+
+&lt;p&gt;Every interview is an opportunity to prove that you are the best person for that position. It is nearly impossible to prove that you’re the best person for the job if you’re applying to 70 jobs. Is it possible to get a job after cold applying to 70 jobs? Sure, but the odds are not in your favor. To prove that you’re the best for the job you often have to be your own marketing, sales, and engineering team. It’s a lot, but there are people out there who are willing to do all of those things and to do them well. So you can lament that you’re required to acquire new skills to get the job, or you can learn the new skills and market and sell yourself into an interview.&lt;/p&gt;
+
+&lt;p&gt;Each conversation builds trust and helps the interviewers understand if you’re a good fit for the job. Sure, interviews bring out anxiety in the best of us, and they certainly can be frustrating. But don’t forget they’re about building relationships with other people.&lt;/p&gt;
+
+&lt;h3 id=&quot;demonstrating-value-in-interviews&quot;&gt;Demonstrating Value in Interviews&lt;/h3&gt;
+&lt;p&gt;What you’ve done in previous jobs is both important and irrelevant. It’s important to prove you can tackle complex problems, that you can work with others, that you are able to grow and improve, that you can self-motivate.&lt;/p&gt;
+
+&lt;p&gt;Once you’re on the team, you have to prove yourself all over again. You have to prove that you can be a team player, that you’re willing to listen, willing to support your teammates, willing to understand the needs of the organization, and willing to do what’s necessary to advance the mission of the team and goals of the organization. Proving your worth in tech means showing not just that you can keep up, but that you can lead the way.&lt;/p&gt;
+
+&lt;h2 id=&quot;be-indespensable&quot;&gt;Be Indespensable&lt;/h2&gt;
+&lt;p&gt;The best way to keep your job is to be indispensable. That’s kind of been a theme of this blog post, but I want to specifically talk about it here. How do you become indispensable? Well, you work on a team that is clearly bringing in money for the company. I’ve heard this advice a lot recently, but I’ve also seen so much push-back from people. I’ve seen a lot of &lt;em&gt;I shouldn’t have to prove my value.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m going to disagree here. If you want to keep your job, you need to prove your value. How can you expect to be paid if you’re not bringing in money? As a community builder, I understand that it can be hard to demonstrate the monetary gains brought in by some of your activities, but that means that you might need to reprioritize.&lt;/p&gt;
+
+&lt;p&gt;What is the company’s focus right now? How can you work towards those goals? How can you work across teams to support the goals that lead to revenue?&lt;/p&gt;
+
+&lt;p&gt;Maybe you’re on a project that was making the company money and was a focus last year. Is that still the focus of the company this year? If not, find a way to get transferred to the team that is making money.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To be indispensable in tech, be the solution that everyone relies on, but nobody wants to replace.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Instead of asking yourself, what are the things that will get me fired, ask yourself how you can be indispensable? You need to be the linchpin on your team. To be clear here, you don’t want to be a bottleneck. You want to make your influence know at all levels. Understand what makes money and how you can contribute.&lt;/p&gt;
+
+&lt;p&gt;To be indispensable, you should be so expensive to replace because you:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;carry institutional knowledge,&lt;/li&gt;
+  &lt;li&gt;lead and mentor,&lt;/li&gt;
+  &lt;li&gt;impact the decisions made on your team,&lt;/li&gt;
+  &lt;li&gt;do your job well and ship features that affect the company’s bottom-line.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;build-your-reputation&quot;&gt;Build Your Reputation&lt;/h2&gt;
+&lt;p&gt;Your reputation is a huge part of getting hired. Yes, it’s hard out there, but if the majority of the content you’re putting out is negative, and you’re not sharing how you’re working to improve, then that’s what people know about you.&lt;/p&gt;
+
+&lt;p&gt;How are you demonstrating your credibility? How are you showcasing what you can and will do? How does what you’ve done in the past demonstrate that you’re the type of person someone would want to work with?&lt;/p&gt;
+
+&lt;p&gt;Joe Previte has had one of the best job-searching strategies I’ve seen out there. His documentation of the interview experience builds his credibility and reputation both with employers and anyone who’s reading about it. You can check out some of his posts here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/posts/jsjoeio_week-5-of-my-job-hunt-as-a-senior-full-stack-activity-7104852541586198530-6CY3?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;Week 5 Job Hunt Update&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://twitter.com/jsjoeio/status/1625599827823439873?s=61&amp;amp;t=Nf66owaOwtf64FhM4eF1_Q&quot;&gt;Top Lessons Learned&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;community-support&quot;&gt;Community Support&lt;/h2&gt;
+&lt;p&gt;One of the biggest piece of advice I hear is you should have built your network and engaged in communities so you can reach out when you’ve been laid off or fired. Although I agree with that, there’s a caveat there.&lt;/p&gt;
+
+&lt;p&gt;In the conversation I recently had, one of the people there said there are two types of friends. Friends that you want to empathize with you when you’re going through something hard-like a layoff-and friends who motivate you to get up, regroup, and to stop feeling sorry for yourself.&lt;/p&gt;
+
+&lt;p&gt;When we talk about communities, it’s similar. If you’re using your communities to be the first type of friend and they’re never pushing you to grow, then you might be building the wrong type of network for job searching. In the same vein, if you’re using a community to lament to-thinking it’s the first type of friend-and you’re not showing that you’re willing to put in the work, then you might inadvertently be building a negative reputation within that community.&lt;/p&gt;
+
+&lt;p&gt;Community members who see folks who only want to talk about the negative, constantly ask others to help with their takehome tests, and don’t show growth at all, are creating a reputation as being someone who will hold back the rest of the team, who will negatively impact the business, and would not be someone that they would recommend.&lt;/p&gt;
+
+&lt;p&gt;If you find that you might be in that category, it’s time to change the narrative. When I lost my job, I contacted someone in tech I consider a mentor. He said something to me that went something like this: self-assess. What are your strengths, what are your weaknesses, where can you improve? If you want something to change, you can change yourself.&lt;/p&gt;
+
+&lt;p&gt;Now, I know that there are caveats to all of this and it’s a very complex topic. There will be exceptions to everything I’ve said in here, but there’s also a lot of truth that impacts the majority of us. I saw some of the smartest people I know in the industry get laid off last year. That’s scary. The fact is that you can do everything right, and still get laid off. But you can reduce your chances by learning and growing, building your reputation, being a positive presence in your networks and communities, and becoming an indispensable team member. Just remember,  Although layoffs are  a professional setback, they can set the stage for personal comebacks. And everyone loves a good comeback story.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 Nov 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/Hiring,-Firing,-and-Becoming-Indispensable</link>
+        <guid isPermaLink="true">http://localhost:4000/Hiring,-Firing,-and-Becoming-Indispensable</guid>
+        
+      </item>
+    
+      <item>
+        <title>Interview Questions to Assess Company Culture Fit</title>
+        <description>&lt;p&gt;Culture is hard to define. And we all like a different type of culture. We grow, learn, communicate in different ways; there’s not one culture that benefits everyone. Having diverse cultures is a beautiful part of the industry because there’s a space for all of us. It might be hard to find sometimes; we might need to dig. But there’s the hope that we find the space that welcomes us, as ourselves. But how do we find that? It’s something I’ve thought about a lot recently. And something I’ve failed at in my career. I’m a trusting person. I was once in a behavioral interview where the hiring manager told me that it was both a strength and weakness that I was willing to have my heart broken. I’m not interested in toughening up. I don’t particularly like my heart breaking, but I’d rather put myself into a situation where my heart is in it, than one where I don’t care; and company culture plays an important role in the interview process, my success, and the questions I ask.&lt;/p&gt;
+
+&lt;h2 id=&quot;culture-questions&quot;&gt;Culture Questions&lt;/h2&gt;
+&lt;p&gt;Good culture is about communication, representation, and a willingness to learn and grow. A stagnant culture is defensive, prideful, and inflexible. Avoid those spaces if you’re hope is to learn and grow. Often indirect questions give us a better idea of what the culture is like. Below is a mix of both.&lt;/p&gt;
+
+&lt;h3 id=&quot;general-questions&quot;&gt;General Questions&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;What makes a good culture?&lt;/li&gt;
+  &lt;li&gt;How do you provide feedback?&lt;/li&gt;
+  &lt;li&gt;How do you handle an employee leaving?&lt;/li&gt;
+  &lt;li&gt;How did you handle a situation in the last year where a teammate was laid off?&lt;/li&gt;
+  &lt;li&gt;How would you describe your senior leadership?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;leadership-questions&quot;&gt;Leadership Questions&lt;/h3&gt;
+&lt;p&gt;Your team is critical, but leadership is more important for long-term strategy. Understanding how leadership makes decisions, the culture they want to lead, their style of communication may not immediately impact you, but it’s very likely that your success and longevity will be most impacted by the culture they exemplify. And by leadership, I don’t mean HR/People teams. They often want to “present” the most interesting culture to candidates. I mean top level people in the organization. Because if they don’t care about diversity, it doesn’t matter who does. If they don’t care about communication, it doesn’t matter who does. If they don’t care that the team is experts in their field, then it doesn’t matter if your team lead does. Ultimately, they make the decisions. It’s to your benefit to determine who makes the decisions that affect your potential team and then ask questions about that person or people.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;How would you describe senior leadership?&lt;/li&gt;
+  &lt;li&gt;Who makes decisions that impact this team?&lt;/li&gt;
+  &lt;li&gt;Have you ever disagreed with that person/persons? - What did that look like?&lt;/li&gt;
+  &lt;li&gt;What’s the long-term vision of senior leadership? - How does the impact the team? How long has that been the vision? How many times has that changed since you’ve been with the company?&lt;/li&gt;
+  &lt;li&gt;Who are the competitors of the company? How are we addressing competition?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;team-lead-questions&quot;&gt;Team Lead Questions&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;What are your team goals? How long have those been your goals?&lt;/li&gt;
+  &lt;li&gt;What were your team goals in the last three months? Did you hit those goals? Did you evaluate those goals? Did you have a team retro?&lt;/li&gt;
+  &lt;li&gt;How do you evaluate progress? What do your career ladders look like? When do we get evaluated for career advancement?&lt;/li&gt;
+  &lt;li&gt;Give an example of when your team failed. What did that look like? How did you respond? Did anyone from leadership respond?&lt;/li&gt;
+  &lt;li&gt;What does team disagreement look like for you? How do you negotiate that experience?&lt;/li&gt;
+  &lt;li&gt;How do you provide your team with feedback? Is that built into your process?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;culture-specific&quot;&gt;Culture-Specific&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Describe your culture. What has been done to create that culture?&lt;/li&gt;
+  &lt;li&gt;Who’s in charge of defining your culture?&lt;/li&gt;
+  &lt;li&gt;How important is it for you to have people who agree with you (IMO, if the answer is very, this is a warning sign that they don’t want disagreement)?&lt;/li&gt;
+  &lt;li&gt;What activities do you do as a company that shapes the organization’s culture?&lt;/li&gt;
+  &lt;li&gt;What’s your mission? What are your core values (if they don’t know the answer, that tells you how seriously they’re taken)?&lt;/li&gt;
+  &lt;li&gt;Can I talk to someone in your organization that’s a part of {cultural initiative}?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s a starter list. As human beings, we all thrive in different environments. So finding the right environment for you, the environment that allows you to thrive, is one where you ask questions to decide if it works for you. I don’t think there’s a perfect work environment. There might be compromises, but each of us–individually–knows where we draw the line. So how close to the line do you want to compromise for company culture?&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Mar 2023 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Interview-Culture-Questions</link>
+        <guid isPermaLink="true">http://localhost:4000/Interview-Culture-Questions</guid>
+        
+      </item>
+    
+      <item>
+        <title>A Nontraditional Education in the Tech Industry</title>
+        <description>&lt;p&gt;In April 2020, in the midst of the pandemic, I started having virtual coffees. It started as once-a-week sessions where we talked about the pandemic and our lives, and being laid off, and homebirths, and having kids at home, and terrible interview practices, and what our hearts were broken for. And then it went to two times a week. And then it became a slack. And eventually, we became &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt;. We’ve grown a lot. And I know that I certainly have, but it took me a while to realize that.&lt;/p&gt;
+
+&lt;p&gt;Recently, I was laid off. I had just finished my first year in DevRel-though I had been doing DevRel-y things since I started coding. It’s been a lot to process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/quote.svg&quot; alt=&quot;Tweet with text: &amp;quot;My last couple of weeks in tech have been such a roller coaster. I’ve been angry, sad, excited, disappointed, tired, pessimistic, and optimistic. I’m hoping to add *happy* next week.&amp;quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;During that time, I felt behind. “I’m not as good a coder as I was a year ago.” “I don’t technically have experience as a developer advocate since my title didn’t reflect that work.” “I should’ve done things differently.” “What am I going to do next?” And maybe I should’ve done things differently. And maybe I could be better at some things. But someone pointed out to me that no matter what my experience in my last role was, I still have everything I’ve learned from Virtual Coffee.&lt;/p&gt;
+
+&lt;p&gt;So I started going through the notes from this year, just from Virtual Coffee meetings on Tuesdays and Thursdays in 2023.&lt;/p&gt;
+
+&lt;p&gt;Just in this year, I’ve had conversations about interviewing, job hunt, career growth, salary negotiations, severance negotiations, layoffs, core skills, effective meetings, general technology, learning, hosting websites, unions, contracting and consulting, public speaking, finances, mental health, documentation, hardware, open source, mentoring, onboarding, scope creep, company culture, scope creep, kids &amp;amp; code, teaching code, listening effectively, coding best practices, effective communication, indie-hacking, adhd, effective feedback, management, AI, security, and debugging. &lt;em&gt;This year.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Friends, I have been doing this for three years and I almost forgot the value I get beyond making connections with some of the most amazing people I know. I forgot that I am learning with every conversation. And I’m learning in a way that most people don’t have the opportunity to learn. I have three years of education, learning from other people at all stages of the tech industry, at all levels, in roles that encompass &lt;em&gt;most&lt;/em&gt; of tech.&lt;/p&gt;
+
+&lt;p&gt;I am privileged to say that I have one of the best educations available to anyone in the tech industry because I have been lucky enough to listen to so many different people with so many different experiences. I don’t have experience in some roles in tech, but I have heard the pain points, the success stories, the complicated experiences, and I’ve learned from those situations.&lt;/p&gt;
+
+&lt;p&gt;When you’re in school and you’re studying a topic, you’re often three or more times removed. The author researches other people’s experiences and reports on them, and then the teacher facilitates the conversation about those experiences. I’ve had first-person conversations with the &lt;em&gt;people who have had the experiences.&lt;/em&gt; And beyond that, I’ve had them in a space where people often feel comfortable being open and vulnerable in their conversations. And we often miss that piece in higher education.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I am so lucky.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;My greatest strength in tech is that I have learned from all of the people around me. That I have had conversations with people when they were vulnerable, at the height of their career, making a career pivot, managing other people, being their authentic selves at Virtual Coffee. I have a Master’s Degree worth experience in the tech industry, and I’m just getting started.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 09 Mar 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/A-Nontraditional-Education-in-the-Tech-Industry</link>
+        <guid isPermaLink="true">http://localhost:4000/A-Nontraditional-Education-in-the-Tech-Industry</guid>
+        
+      </item>
+    
+      <item>
         <title>How to Create a Positive Community for Your Open Source Project</title>
         <description>&lt;p&gt;Over the last couple of years, I’ve spent time maintaining open source projects and an open source community. In the projects I’ve maintained and worked on, creating a positive and safe space for community members is a priority-and one that I appreciate. The people who contribute and interact with your OSS can be the backbone of your project, and cultivating a welcoming space for them is incredibly important to the health and growth of your project and users. Here are some tips to make your open source project friendly to contributors.&lt;/p&gt;
 
@@ -261,246 +700,6 @@ To be honest, I’m in love with each of these topics. I think that makes me mor
         <pubDate>Fri, 25 Nov 2022 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/Career-Goal-Setting</link>
         <guid isPermaLink="true">http://localhost:4000/Career-Goal-Setting</guid>
-        
-      </item>
-    
-      <item>
-        <title>Making Better Meetings</title>
-        <description>&lt;p&gt;We’ve all been there: a meeting that should’ve been an email or a slack message or really nothing at all. There are few things that frustrate me more than wasted time. I’ve said this before, moms are great employees because we don’t have any time to waste. Not every second of the day has to be “productive” but when you have an activity that has a primary purpose of being productive, you better make sure that it is.&lt;/p&gt;
-
-&lt;p&gt;And yet, here we are, many of us living in a remote-work world settling for meetings that decrease productivity, motivation, and increase frustration. Why have we let it get to this point? And why do we ignore the fact that we’re wasting company money by holding a bunch of bad meetings? Because it’s easy. Because planning a meeting should be just as important as the meeting itself. Let’s stop having bad meetings and dive into ways to make our meetings better.&lt;/p&gt;
-
-&lt;h2 id=&quot;this-meeting-shouldve-beennot-a-meeting&quot;&gt;This Meeting Should’ve Been…Not a Meeting&lt;/h2&gt;
-&lt;p&gt;Let’s think of meetings as speedbumps. When you intersperse them throughout people’s days, you slow down their momentum. If there’s a meeting every other hour, you can’t expect the same productivity from your employee as you should if they have a solid block of time to work on projects, research, etc.&lt;/p&gt;
-
-&lt;p&gt;I think it’s worth noting that meetings should not be a remote-first company’s first response to a question or issue that comes up, especially if you’re working with an international team. I don’t know if I’m ready to say they should be a last resort, but I’m close to making that assertion.&lt;/p&gt;
-
-&lt;p&gt;Sending a slack message or an email rather than having a meeting allows employees to choose when the read the message and builds flexibility into the schedule.&lt;/p&gt;
-
-&lt;p&gt;We should also recognize that meetings do not utilize the strengths of everyone. Extroverts and external processors are more likely to benefit from meetings, whereas introverts often benefit from having time to think through ideas, process, and return to a discussion–written or verbal–later. If you’re relying on meetings, you’re not taking into consideration the introverts in your group.&lt;/p&gt;
-
-&lt;h2 id=&quot;planning&quot;&gt;Planning&lt;/h2&gt;
-&lt;p&gt;What does it mean to plan a meeting? Don’t you just throw some calendar invites out to everyone that you think could or should be interested? This is what often happens and this is one of the reasons meetings are so wasteful. Planning meetings should take time, consideration, and more effort than spelling someone’s email correctly.&lt;/p&gt;
-
-&lt;h3 id=&quot;who-needs-to-be-there&quot;&gt;Who needs to be there?&lt;/h3&gt;
-&lt;p&gt;This is not a dump-it cake. We don’t need everyone who touches the topic to be there. I’ve always loved the idea of calculating the cost of every meeting as a deterrent for inviting everyone. You can do that by calculating the hourly wage of everyone there and adding it up based on the time the meeting takes. That doesn’t mean that you should get rid of all meetings or slash and burn the invite list. It means that you need to take the time to determine who should  be there. How do you do that?&lt;/p&gt;
-
-&lt;p&gt;Start with your long list of people and let’s narrow it down together by answering the following questions:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;What’s the purpose of the meeting?&lt;/li&gt;
-  &lt;li&gt;Who makes decisions about this topic?&lt;/li&gt;
-  &lt;li&gt;Is their input an essential part of the conversation? I want to note here that there’s conversational input and there’s input that can come as part of a slack message or email. Not everyone has to be part of the conversation.&lt;/li&gt;
-  &lt;li&gt;Who is a subject matter expert?&lt;/li&gt;
-  &lt;li&gt;Who has institutional knowledge that would benefit from being there to share or to listen?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You should not ask yourself “who will get upset if I don’t invite them?” Although this is a common part of the thought process, it shouldn’t influence the invite list. What it should influence is clear communication. Why do you think this person’s feelings will be hurt? How can you communicate to them that it’s not a good use of their time or part of their job?&lt;/p&gt;
-
-&lt;h2 id=&quot;scheduling-etiquette&quot;&gt;Scheduling Etiquette&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Don’t just throw meetings on someone’s calendar without context.&lt;/li&gt;
-  &lt;li&gt;Don’t move or cancel meetings on someone’s calendar without touching base with those invited.&lt;/li&gt;
-  &lt;li&gt;Provide an agenda.&lt;/li&gt;
-  &lt;li&gt;If you expect work to be done beforehand, put it in the invite.&lt;/li&gt;
-  &lt;li&gt;Don’t put an invite on someone’s calendar for a time outside of their work hours.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;meeting-etiquette&quot;&gt;Meeting Etiquette&lt;/h2&gt;
-&lt;h3 id=&quot;pre-meeting-best-practices&quot;&gt;Pre-meeting best practices&lt;/h3&gt;
-&lt;p&gt;To make the meeting most efficient and a good use of people’s time, it’s important to:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Establish a clear purpose. For example, to finalize strategy for a new campaign.&lt;/li&gt;
-  &lt;li&gt;Define expectations both of the meeting and of the participants. Do you want the participants to share what they think are important tasks that need to be completed before launching a campaign? Do you want to discuss strengths and weaknesses?&lt;/li&gt;
-  &lt;li&gt;Ask the participants what they want to include as part of the agenda.&lt;/li&gt;
-  &lt;li&gt;Clearly explain any pre-work that needs to be done as well as expectations for the day.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;meeting-best-practices&quot;&gt;Meeting best practices&lt;/h2&gt;
-&lt;p&gt;Please, please do not start a meeting with “I just thought we could chat about X” and then stare blankly at the zoom screen. What about X? Having an agenda is having an outline for a meeting. Use it. Other things that are important:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Stick to the agenda, but don’t be so rigid to not allow any other discussion.&lt;/li&gt;
-  &lt;li&gt;Be respectful of people’s time. If you say the meeting is going to be an hour, it shouldn’t end after two hours.&lt;/li&gt;
-  &lt;li&gt;Have an agenda enforcer. You might feel some scope creep in your meeting. It happens. Sometimes it’s productive. Most times it impedes the ability to have a productive meeting. Generally, the meeting leader should be the agenda enforcer who makes sure this doesn’t happen. “That’s a really great insight, Sam. This doesn’t quite fit into the scope of today’s meeting, but we should talk about this in slack after the meeting.”&lt;/li&gt;
-  &lt;li&gt;Have a time keeper. If you want to accomplish everything on your agenda, you need to have a sense of how long everything will take. This might mean limiting discussion time. If you’ve scheduled 5 minutes to talk about the strengths of the team, and one person has talked for the last four minutes, you’re not utilizing your time as you planned. Having a person who can say, “James, let’s give someone else time to share” or “We’re getting close to time on this. Let’s summarize the main points and determine if this part of the conversation needs to happen in slack afterward.”
-Leave time to answer questions and determine next steps at the end.&lt;/li&gt;
-  &lt;li&gt;Make space for everyone. Often the loudest people in the room are the ones who have the opportunity to share. To ensure everyone has an opportunity to be heard, utilize support features like the handraise function and the chat to allow people to participate in ways that work for them.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Running a good meeting is a lot like writing a good paper. You start with a purpose–a thesis if you’re a English nerd like me–and then you create an outline of the main points of the meeting. The meeting becomes the step of the process where you fill in the outline. You have the discussion, collect the evidence, make your arguments, and by the end you should have a conclusion. At the very least, you should be able to end a chapter that will lead into the next one. The reader/participant will feel satisfied at the end of the meeting if it’s a good use of their time. They’ll be motivated to work on the next chapter. They’ll feel appreciated for accomplishing their work and meeting expectations. And if you’re not sure if you’ve hit the mark, all you have to do is ask for feedback. If you’ve cultivated a culture of honesty and sharing, this shouldn’t be a problem. If you haven’t…well, that’s a different blog post.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 21 Nov 2022 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/Making-Better-Meetings</link>
-        <guid isPermaLink="true">http://localhost:4000/Making-Better-Meetings</guid>
-        
-      </item>
-    
-      <item>
-        <title>Writing Your First Conference Proposal</title>
-        <description>&lt;p&gt;Maybe you’ve been thinking about speaking at a conference, but you’re nervous. You’ve been to a conference or more than you can count, you’ve thought “I could’ve given a talk like that”, and you’ve even scrolled over some cfps trying to get up the courage to submit a talk. And then you don’t. Maybe it’s because your nerves or imposter syndrome got the best of you or maybe the deadline passed and you just couldn’t think up any ideas that you thought were worth talking about. Hopefully, this blog post will help you discover an idea and/or overcome the fear of submitting.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-to-consider-before-submitting&quot;&gt;What to Consider Before Submitting&lt;/h2&gt;
-&lt;p&gt;First things first, just because you submit, doesn’t mean you’ll get accepted. There are frequently way more applicants than accepted talks. Don’t let that discourage you, just know that you’re in good company 😀 If nerves are preventing you from submitting, I want you to know that I’ve been doing this for a couple of years now and I still get nervous when I submit and even more when I speak. But there’s always value in pushing yourself out of your comfort zone, leading to growth, innovation, and self-satisfaction.&lt;/p&gt;
-
-&lt;p&gt;As you’re researching the submission process, there are a couple of different ways you can get started.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Reach out to other speakers to ask them about their experience. If it’s your first talk, you want to make sure that the conference speaking experience is a good one.&lt;/li&gt;
-  &lt;li&gt;Think about the conferences you’ve most enjoyed. This might help decrease some of the nerves.&lt;/li&gt;
-  &lt;li&gt;Check out &lt;a href=&quot;https://sessionize.com/&quot;&gt;sessionize.com&lt;/a&gt; or &lt;a href=&quot;https://www.papercall.io/&quot;&gt;papercall.io&lt;/a&gt; to discover conferences with open calls for proposal.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;on-writing-the-proposal&quot;&gt;On Writing the Proposal&lt;/h2&gt;
-&lt;p&gt;When you speak for the first time, it’s helpful to speak on a topic that you know and understand well. That frees up some brain space that would’ve otherwise been devoted to worrying about whether or not you can handle answering questions.&lt;/p&gt;
-
-&lt;p&gt;Let’s get started by jotting down some ideas that you’re comfortable talking about. Depending on your technical level, this could vary. I prefer speaking on core skills topics most of the time, so I generally stay in that track. Some examples might be: “how to navigate the self-taught journey”, “Migrating your project to TypeScript”, “Which JS framework should you learn next?”, or “The Importance of  Community for Developer Growth.”&lt;/p&gt;
-
-&lt;p&gt;You might think, I’ve heard these talks though. That’s fine. That doesn’t mean that the talk you give should be the same. You have a unique voice. Use that to your advantage.&lt;/p&gt;
-
-&lt;p&gt;So now, jot down 3-5 subtopics under each of those topics. What could you talk about as you develop those ideas? For example, if I were brainstorming about “How to Navigate the Self-Taught Journey,” I would add bullet points for finding community, working on collaborative projects, and incorporating open-source contributions into my learning.&lt;/p&gt;
-
-&lt;p&gt;Now that you have some subtopics, you can write more about them. But before you dive right in, consider the purpose of the talk–this will determine how you develop the talk. Do you want it to inspire, teach, motivate the audience to do something, or inform the audience? Identifying the purpose might seem like a minor step, but it’s incredibly important to developing the content, proposal, and tone of the talk. And if you know why you’re giving the talk, you’ll better be able to get your audience on the same page. Note: I did not include promoting myself or my product in the purpose section. It’s possible to do that well in a talk, but it shouldn’t be the primary purpose or your audience will check out quickly.&lt;/p&gt;
-
-&lt;p&gt;The next step is to think about why this should be a talk and not a blog post or tiktok or some other form of media. Why is sharing as a talk important? Maybe you’re planning on live coding and taking questions live. Maybe there’s interactivity built in. Maybe the impact of sharing live in front of the audience is really important. How can you convey this in your cfp?&lt;/p&gt;
-
-&lt;p&gt;Lastly, what do you want the audience to take away from your talk? Are there next steps? Do you want them to take an action? Do you want them to put a new behavior into practice?&lt;/p&gt;
-
-&lt;h2 id=&quot;writing-your-proposal&quot;&gt;Writing Your Proposal&lt;/h2&gt;
-&lt;p&gt;You don’t have a lot of words to write your talk, so you have to get to the point. Find a way to grab the reader’s attention, convey your purpose, and highlight your main ideas.&lt;/p&gt;
-
-&lt;p&gt;Make sure your proposal has a logical order. You wouldn’t start with writing a test if your audience doesn’t know what testing is, right? Each part of your presentation–and by extension, your cfp, should flow logically. If the reader can’t follow what you’re saying or understand where you’re going in your presentation, you haven’t properly organized the proposal.&lt;/p&gt;
-
-&lt;p&gt;We each have a style or voice, just as each conference has its own style. This means you might need to revise the proposal as you submit to a different conference. Things to consider: Is this a formal situation or something more casual? Are jokes appropriate or problematic? Should they be included in your cfp? How important is style to the conference?&lt;/p&gt;
-
-&lt;p&gt;There’s a lot to consider when you write cfps, but don’t get hung up on it. Write it, and ask for feedback.&lt;/p&gt;
-
-&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
-&lt;p&gt;Here’s the description-what I used when I submitted my talk-for my first talk of the new year for &lt;a href=&quot;https://yougotthis.io/events/broadcasting-service/&quot;&gt;You Got This! Conf&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Sometimes apologies don’t quite &lt;em&gt;feel&lt;/em&gt; right, and it can be hard to figure out why. Often, it’s because they weren’t really apologies; they were performances made to deflect responsibility, excuse away behavior, and with the hopes of calming negative feelings. Whether you’ve received one of these types or given them yourself, this talk will allow you to recognize what makes a good and authentic apology and how to construct one yourself.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;My &lt;a href=&quot;https://cfe.dev/sessions/testing-with-cypress/&quot;&gt;Browser Testing with Cypress for CFE.dev&lt;/a&gt; talk:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;We write tests to give us confidence that things won’t break and to save time. But it takes time to write tests. How does that save time? When you use the JavaScript testing framework Cypress, you’ve got the Swiss Army Knife of end-to-end testing. Cypress has bundled together the tools you need to get up and testing fast. We’ll take a look at how to get started with Cypress, how to write reliable tests to give you confidence in your code, and how using Cypress enables you to get the mission accomplished.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;moving-forward&quot;&gt;Moving forward&lt;/h2&gt;
-&lt;p&gt;Once you’ve written your cfp, it’s great to get some feedback from others. Often, because we’re the ones writing the description, it can be hard to see what we’ve missed, whether or not we’re clear, or if we’ve accurately conveyed the topic.&lt;/p&gt;
-
-&lt;p&gt;Ask a person to read through your cfp. Then ask them to tell you what they think the talk will be about. Have they captured the main ideas of your talk? Did they convey what you want to talk about? Did they miss a key idea or misunderstand the purpose of the talk? Having that feedback can be a great way to improve your cfp and your writing.&lt;/p&gt;
-
-&lt;p&gt;Hopefully, this is enough to get you to submit. I have a lot more tips for actually preparing for and giving the talk. If you want to hear those, let me know!&lt;/p&gt;
-</description>
-        <pubDate>Sun, 20 Nov 2022 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/Writing-Your-First-Conference-Proposal</link>
-        <guid isPermaLink="true">http://localhost:4000/Writing-Your-First-Conference-Proposal</guid>
-        
-      </item>
-    
-      <item>
-        <title>This week in DevRel: Planning and Progress</title>
-        <description>&lt;p&gt;Some weeks, you’ll have a lot of tangible checkmarks on your to-do list. Other weeks, it feels like you haven’t done anything. Still, in reality, you’ve spent a lot of time planning for things in the future, thinking deliberately–rather than just reacting–about the people in your community, their needs, and how you can support them as the community builder for your own community. This is one of those weeks for me.&lt;/p&gt;
-
-&lt;h2 id=&quot;blogging&quot;&gt;Blogging&lt;/h2&gt;
-&lt;p&gt;I still got my blog posts in. We’re announcing the winners of the Deepgram + Learn Build Teach Hackathon, and I added to my Reading List series with a post on &lt;a href=&quot;https://dev.to/bekahhw/reading-list-the-community-builder-edition-3d2h&quot;&gt;Community Builders Resources&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;live-events&quot;&gt;Live Events&lt;/h2&gt;
-&lt;p&gt;I went for two this week, with a Twitter Space with Julia Seidman, “Developer Growth: Writing to Learn” and a livestream working through adding Cypress to a React Application for a blog post that will come out later this month. I’ve been working on building a practice of creating content and repurposing it. And that’s been on my mind this week as I did these live events. I may write a post with the takeaways of the Twitter Space, but for now, you can see &lt;a href=&quot;https://twitter.com/DeepgramAI/status/1590402513488203777?s=20&amp;amp;t=oiC2XyLeYyHboxBvGDo7yA&quot;&gt;my notes&lt;/a&gt; in the Twitter thread from the space. (If you’ve seen any cool ways to reuse Twitter Space content, I’d love to know!)&lt;/p&gt;
-
-&lt;h2 id=&quot;processes-and-planning&quot;&gt;Processes and Planning&lt;/h2&gt;
-&lt;p&gt;Over the last couple of years, I’ve talked about a content creation lifecyle. Here’s what I mean by that:&lt;/p&gt;
-
-&lt;p&gt;Say you want to publish a tutorial. The end goal of the content creation lifecycle would be to end up with a video, written tutorial, code snippets, Twitter thread and maybe a Space, live demo, and a short-form video. The video might be a livestream of you implementing what you’ll be writing about for the tutorial–but it’s something you can definitely link to. From that video, you can clip for your short-form video (YouTube, Instagram Reels, tiktok, etc.). You can even transcribe the video to help write the blog post and the Twitter Thread. Finally, that code gets put into stackblitz or codepen so users can test it out live.&lt;/p&gt;
-
-&lt;p&gt;I haven’t nailed that process quite yet because of the pace we’re going in other things, but I keep thinking, “What about the community?” For me, so much of the content that I create is to build community. I write for myself, but I love when it means that I get to engage with others and hear their thoughts on what I’m writing about. Where does the community fit into the content creation lifecycle? We have to find ways to make space for those in our community to be a part of this conversation. Because that’s the content I want to produce; the kind of content that creates conversation.&lt;/p&gt;
-
-&lt;p&gt;Part of my planning and thinking deliberately about this included using Twitter Spaces to extend the conversation. What have I started talking about? How can I continue this conversation with interested people? Can I repurpose Twitter Spaces to be a blog post? Sure. They can extend the conversation from both angles.&lt;/p&gt;
-
-&lt;p&gt;But how else can we extend the conversation? Well, we can do things the old-fashioned way and have a face-to-face conversation. Why not have a small group discussion about the topic or a workshop if it’s a tutorial? Interact with the community in ways that are meaningful to them.&lt;/p&gt;
-
-&lt;p&gt;I’m ideating on the best way to do this and ensuring I’m not building an echo chamber. I want to find more ways to listen to others and learn from each other. To do this properly, however, requires quite a bit of planning, and it always feels like there’s not enough time in the day to do that.&lt;/p&gt;
-
-&lt;p&gt;One way I’m ensuring my planning time happens is committing to time away from the computer and phone to think things through. Write them down on notebook paper, and remove the distractions of slack, email, Twitter, etc. And since I work from home, it’s also important to remove the distractions of laundry, kids, and the bills sitting on my desk.&lt;/p&gt;
-
-&lt;p&gt;I’m going to try to commit to one morning or afternoon a week outside of the home without device distractions. I’ve tried this before on Friday afternoons because I thought it would help me to disconnect from work for the weekend, but then I ended up feeling like there were too many loose ends to wrap up, and I couldn’t turn work off. For now, I’ll play it by ear and find a good two to three-hour time period where I can be afk.&lt;/p&gt;
-
-&lt;p&gt;Another part of the planning process I worked on this week was community campaigns. It might seem like creating simple discussion posts doesn’t require that much time, but if you want to weave a story of information, listen to what the community wants and needs, and create plans to act on those wants and needs, you have to research and create space for meaningful conversations with consistency. A lot of times that means building out posts ahead of time and implementing them when the situation is right.&lt;/p&gt;
-
-&lt;p&gt;As I build out these processes and think more holistically about all the things that I’m creating, I want to find a way to make this a smooth and repeatable process. It’s not something I’ve thought deeply about, but I hope that as I build in time to think through these things, I’ll be able to share more about that here. And that we can maybe even have a conversation about it.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 10 Nov 2022 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/This-Week-in-DevRel-Planning-and-Progress</link>
-        <guid isPermaLink="true">http://localhost:4000/This-Week-in-DevRel-Planning-and-Progress</guid>
-        
-      </item>
-    
-      <item>
-        <title>Reading List: The Community Builder Edition</title>
-        <description>&lt;p&gt;I go through phases of information consumption. At the beginning of the pandemic, it was tech podcasts all the time. Then it was audiobooks, mostly self-help kind of stuff. Now it’s a mix of audiobooks, podcasts, and YouTube videos of all different genres. But sprinkled in there has been a variety of Community Building books and Resources. I’m going to use the word “Reading List” loosely here in place of a resource list, as I give you some of my favorites over the past couple of years.&lt;/p&gt;
-
-&lt;h2 id=&quot;books-for-community-builders&quot;&gt;Books for Community Builders&lt;/h2&gt;
-&lt;h3 id=&quot;the-art-of-community-seven-principles-for-belonging-by-charles-h-vogl&quot;&gt;&lt;a href=&quot;https://www.charlesvogl.com/books&quot;&gt;The Art of Community: Seven Principles for Belonging&lt;/a&gt; by Charles H. Vogl&lt;/h3&gt;
-&lt;p&gt;Community is the opposite of isolation; there’s a need for community now more than ever as there’s an increasing report of lonliness. This book describes seven principles of community. Among the key takeaways are creating boundaries to preserve your community, finding ways to onboard new members, creating unique rituals for belonging, connection through storytelling, community structure and organization, and defining what makes your community special and allowing for unique growth within your community.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-business-of-belonging-by-david-spinks&quot;&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/55180348-the-business-of-belonging&quot;&gt;The Business of Belonging&lt;/a&gt; by David Spinks&lt;/h3&gt;
-&lt;p&gt;Focusing on brands and brand communities, Spinks dives into strategy, higher-order thinking, and measuring the activities that inform business decisions. As Spinks writes about community, he defines it in terms of the potential it has for the business, from evangelists to employees. What’s important to remember when we talk about communities and business is that authenticity has to be at the center of it all.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-art-of-gathering-by-priya-parker&quot;&gt;&lt;a href=&quot;https://www.priyaparker.com/book-art-of-gathering&quot;&gt;The Art of Gathering&lt;/a&gt; by Priya Parker&lt;/h3&gt;
-&lt;p&gt;One of the great things about this book was the examples. Learning through experiences makes the concepts come to life, and helps you to determine your role as part of the community, as the host, as the guest. Understanding our role, and the roles of those around us can empower us to create gathering spaces that address the needs and imagination of all those involved.&lt;/p&gt;
-
-&lt;h3 id=&quot;stories-that-stick-how-storytelling-can-captivate-customers-influence-audiences-and-transform-your-business-by-kindra-hall&quot;&gt;&lt;a href=&quot;https://www.amazon.com/Stories-That-Stick-Storytelling-Captivate-ebook/dp/B07KF2328Z&quot;&gt;Stories That Stick: How Storytelling Can Captivate Customers, Influence Audiences, and Transform Your Business&lt;/a&gt; by Kindra Hall&lt;/h3&gt;
-
-&lt;p&gt;This might not seem like it fits with the other books in this list, but you have to be able to share the story of your community, whether that’s with people who may become community members, current members, or potential funders. Knowing how to share the story of your community, its purpose, and why it matters helps us to connect to others. Humans weren’t meant to be alone; we’re meant to be together and have meaningful experiences. These experiences come through stories. But whether or not those stories impact the listener depends on how we tell them. This book helps you to share them in a meaningful way.&lt;/p&gt;
-
-&lt;h2 id=&quot;podcasts-about-community-building&quot;&gt;Podcasts about Community Building&lt;/h2&gt;
-&lt;h3 id=&quot;in-before-the-lock&quot;&gt;&lt;a href=&quot;https://ib4tl.fm/&quot;&gt;In Before the Lock&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;I love In Before the Lock, not only because the hosts Erica Kuhl and Brian Oblinger are incredibly knowledgeable, insightful, and report on industry news, but also because they’re fun to listen to and have quality audio. They don’t always agree–and those are some of the best episodes–but they bring examples and reasoning to their opinions. Another great part of the podcast is they aren’t shy about sharing their hot takes. If you want to listen to a podcast where the hosts aren’t afraid of pushing you to think about things from a different perspective, this is a great one.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-community-experience&quot;&gt;&lt;a href=&quot;https://www.smartpassiveincome.com/blog/introducing-the-community-experience-podcast/&quot;&gt;The Community Experience&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;This podcast follows the traditional path of a host interviewing an industry expert. The thing I like most about this podcast is the guests are from a variety of different industries. This diversity of industry brings new ideas, different perspectives, and allows me to learn about community experiences I may never consider as someone from outside of those communities.&lt;/p&gt;
-
-&lt;p&gt;This is my Community 101 reading and listening list. Each of these provides the basics of community building and then goes in depth to help community builders discover more about the community experience. I have another list of resources that isn’t a “traditional” take on community that I might write about in the future, but it’ll take a more thorough explanation of why I think it should be on your community builder reading list.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 09 Nov 2022 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/Reading-List-The-Community-Builder-Edition</link>
-        <guid isPermaLink="true">http://localhost:4000/Reading-List-The-Community-Builder-Edition</guid>
-        
-      </item>
-    
-      <item>
-        <title>This Week in DevRel: Life Moves Fast</title>
-        <description>&lt;p&gt;Well, my “This Week in DevRel” series has turned into this “couple of months” in DevRel. In the words of Ferris Bueller, “Life moves pretty fast. If you don’t stop and look around once in a while, you could miss it.” And I feel like a lot of the last two months, I’ve been moving fast and not taking the time to look around. I’m working on it. This post is more of a highlight reel; I plan on writing a reflection on how I plan on building time into looking around more than once in a while later in the month.&lt;/p&gt;
-
-&lt;h2 id=&quot;highlights&quot;&gt;Highlights&lt;/h2&gt;
-&lt;h3 id=&quot;conferences&quot;&gt;Conferences&lt;/h3&gt;
-&lt;p&gt;I was lucky enough to have the opportunity to give my talk &lt;a href=&quot;https://www.youtube.com/watch?v=zoo0B7GFvo8&quot;&gt;Does your Org Need a Community&lt;/a&gt; at &lt;a href=&quot;https://www.magnoliajs.com/&quot;&gt;MagnoliaJS&lt;/a&gt; this year and to attend &lt;a href=&quot;https://momentumdevcon.com/&quot;&gt;Momentum Conf&lt;/a&gt;.
-I did a lot of learning at these conferences. Some of it was when I was listening to talks, including one on community and one on burnout. Some of it was talking to other people in the field. I gravitate towards people who are doing some type of community building, whether or not that’s in their job description. Having this conversations helps me to get a pulse on the wider tech community, bounce ideas off of community professionals, and explore new ideas and initiatives.&lt;/p&gt;
-
-&lt;h3 id=&quot;hacktoberfest&quot;&gt;Hacktoberfest&lt;/h3&gt;
-&lt;p&gt;It’s my favorite time of the year! This year I participated as a mentor, contributor, and maintainer. I got to work on my postpartum wellness app with others and launch a new Deepgram project as a maintainer that I really enjoyed working on. It’s a chrome extension that allows the user to get transcripts in a browser tab, and we’re working on functionality to have translation available as well. I plan on keeping this going as long as the ideas are flowing and folks find it helpful. If you want to check it out, here’s the &lt;a href=&quot;https://github.com/deepgram-devs/dg-translation-chrome-ext&quot;&gt;GitHub repo&lt;/a&gt;. I also supported the &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt; Hacktoberfest Initiative. If you want to read more about that, check out &lt;a href=&quot;https://dev.to/virtualcoffee/virtual-coffee-hacktoberfest-2022-roundup-1c2k&quot;&gt;Dan Ott’s post&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;livestreams&quot;&gt;Livestreams&lt;/h3&gt;
-&lt;p&gt;I did THREE in October! I did some TypeScript on Virtual Coffee’s &lt;a href=&quot;https://www.twitch.tv/virtualcoffeeio&quot;&gt;TypeScript Tuesday Twitch Stream&lt;/a&gt;. I was also a guest on Mia Moore’s stream where we talked about all things open source, and I also did a &lt;a href=&quot;https://www.youtube.com/watch?v=PMQb5qN5ob8&quot;&gt;Project Showcase stream with Appwrite&lt;/a&gt;, where we walked through Deepgram open source projects and talked about some of the ways we try to make our repos contributor friendly.&lt;/p&gt;
-
-&lt;h3 id=&quot;blogging&quot;&gt;Blogging&lt;/h3&gt;
-&lt;p&gt;Unfortunately, I haven’t been able to have the cadence I want with blogging, but I did get a couple of posts in, including this one on [Open Source Projects for Hacktoberfest]
-(https://dev.to/deepgram/open-source-projects-for-hacktoberfest-2022-4cia), yesterday’s &lt;a href=&quot;https://t.co/rkob8LcmsO&quot;&gt;post on imposter syndrome&lt;/a&gt;  and a new one on 5 Reasons to Contribute to Open Source Projects that will be up soon. The good news is, our monthly challenge for Virtual Coffee is &lt;a href=&quot;https://virtualcoffee.io/monthlychallenges/nov-2022&quot;&gt;Let’s Write 100k words together!&lt;/a&gt;, so you’ll be reading a lot more from me this month.&lt;/p&gt;
-
-&lt;h3 id=&quot;hackathon&quot;&gt;Hackathon&lt;/h3&gt;
-&lt;p&gt;We ran a hackathon internally with the Learn Build Teach Community. We provided support, ran a couple of workshops, and are in the judging stages. This is the first time we ran an internal community hackathon, so this was a real learning experience. As part of the post-hackathon experience, we’re doing evaluation of what worked and what didn’t, and what our strategy will be going forward.&lt;/p&gt;
-
-&lt;h3 id=&quot;twitter-spaces&quot;&gt;Twitter Spaces&lt;/h3&gt;
-&lt;p&gt;I’m back on the Twitter Space game! I’m running them through the &lt;a href=&quot;https://twitter.com/DeepgramAI&quot;&gt;@DeepgramAI&lt;/a&gt; Twitter account. I’ve been doing them most Wednesdays at 1pm ET. So if you’re not following us, you might want to. Another option is to check out our &lt;a href=&quot;https://github.com/orgs/deepgram/discussions/categories/events&quot;&gt;Events discussion&lt;/a&gt; in our Community Forum where I’m posting our spaces at least a week in advance. If you have questions or comments before the space, feel free to drop them in there and we’ll talk about it on the space.&lt;/p&gt;
-
-&lt;p&gt;I think this is a pretty good overview of the things that I work on as a technical community builder. Oh, and one last achievement I want to share. I received one of the Twilio spotlight awards. If you want to know more about it and me, you can check out &lt;a href=&quot;https://www.businessinsider.com/sc/meet-the-inspirational-leaders-creating-a-better-future-for-developers?utm_campaign=devsearchlight2022_reveal&amp;amp;utm_source=twitter&amp;amp;utm_medium=twiliodevs&quot;&gt;the Business Insider article&lt;/a&gt; Being a Technical Community Builder requires a lot of pivoting, versatility, and getting outside of my comfort zone. But if I wasn’t spending time getting out of my comfort zone, then it wouldn’t be that fun, would it?&lt;/p&gt;
-</description>
-        <pubDate>Fri, 04 Nov 2022 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/This-Week-in-DevRel-Life-Moves-Fast</link>
-        <guid isPermaLink="true">http://localhost:4000/This-Week-in-DevRel-Life-Moves-Fast</guid>
         
       </item>
     
