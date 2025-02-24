@@ -8,7 +8,7 @@ Hey! I graduated from the Flatiron School Software Engineering program in May of
 
 Prior to tech, I spent 10 years teaching college English, three years organizing events and community, and I fully embrace being a writer of many genres: code, short fiction, non-fiction, screenplay, documentation, curriculum, and, of course, blog posts!
 
-> The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
+>To create is to bring light to the unknown.<cite>Albert Camus</cite>
 
 As a hobby, I like to lift heavy things and see how high I can jump.
 
