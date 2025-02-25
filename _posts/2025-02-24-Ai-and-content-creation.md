@@ -13,25 +13,25 @@ The humor isn't lost on me that same guy who spent his days philosophizing in an
 But let’s break this down in a way that is useable for content creators.
 
 ## What Is EEAT?
-
 In Google’s world, EEAT stands for:
-	•	**Experience** – Have you actually done the thing you’re writing about?
-	•	**Expertise** – Do you know your stuff?
-	•	**Authoritativeness** – Are you recognized as a legit source?
-	•	**Trustworthiness** – Can people rely on your content?
+- **Experience** – Have you actually done the thing you’re writing about?
+- **Expertise** – Do you know your stuff?
+- **Authoritativeness** – Are you recognized as a legit source?
+- **Trustworthiness** – Can people rely on your content?
 
 Basically, if you’re writing about deep-sea welding, Google wants to make sure you’re not my 10 year old who just watched a YouTube video about it and decided, “Yeah, I could generate a bunch words on this using ChatGPT.”
 
 ## Aristotle’s Rhetorical Triangle: The OG EEAT
 
 Long before Google existed (or the internet, or electricity, or deodorant), Aristotle defined the three pillars of persuasion:
-	•	**Ethos (Credibility)** – Are you a trustworthy source?
-	•	**Pathos (Emotion)** – Can you connect with people’s lived experiences?
-	•	**Logos (Logic)** – Do you have facts to back up what you’re saying?
+- **Ethos (Credibility)** – Are you a trustworthy source?
+- **Pathos (Emotion)** – Can you connect with people’s lived experiences?
+- **Logos (Logic)** – Do you have facts to back up what you’re saying?
 
-Sound familiar? That’s because it’s basically EEAT in a toga.
+Sound familiar? That’s because it’s basically EEAT in a different era.
 
 Here’s how they match up:
+
 | **E-E-A-T (Google)**                          | **Aristotle’s Triangle**                              |
 |-----------------------------------------------|------------------------------------------------------|
 | **Experience** (Have you actually done this?) | **Pathos** (Can you connect with real-life experiences?) |
@@ -45,17 +45,17 @@ If Aristotle were alive today, he’d probably have a wildly successful blog, ra
 The more you think about it, the more it makes sense. Google isn’t just rewarding well-researched content; it’s rewarding persuasive content.
 
 Just like Aristotle’s rhetoric, SEO is about:
-✔ Knowing your audience (Google calls this “search intent”)
-✔ Establishing credibility (Google calls this “authority”)
-✔ Making a strong case (Google calls this “quality content”)
+- Knowing your audience (Google calls this “search intent”)
+- Establishing credibility (Google calls this “authority”)
+- Making a strong case (Google calls this “quality content”)
 
 At the end of the day, writing for SEO is about being convincing, trustworthy, and valuable. Just like a good argument, or, a well-structured ancient Greek debate.
 
 ## What Does This Mean for You?
 
 If you’re trying to write content that actually ranks, take a page from Google and Aristotle:
-	•	Share real experiences. (People can smell fake authority from a mile away.)
-	•	Back up your claims with solid knowledge. (Google loves receipts.)
-	•	Build credibility over time. (Trust isn’t built in a day.)
+- Share real experiences. (People can smell fake authority from a mile away.)
+- Back up your claims with solid knowledge. (Google loves receipts.)
+- Build credibility over time. (Trust isn’t built in a day.)
 
 But what's most important, in my opinion? Write for people. Be engaging. Tell a story. Drop a joke now and then. Because at the end of the day, whether you’re Aristotle in 350 BCE or a content creator in 2025, the best way to win people over is to be real, be knowledgeable, and make it worth their time.
