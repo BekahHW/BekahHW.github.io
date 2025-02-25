@@ -32,7 +32,7 @@ Sound familiar? That’s because it’s basically EEAT in a different era.
 
 Here’s how they match up:
 
-| **E-E-A-T (Google)**                          | **Aristotle’s Triangle**                              |
+| **EEAT (Google)**                          | **Aristotle’s Triangle**                              |
 |-----------------------------------------------|------------------------------------------------------|
 | **Experience** (Have you actually done this?) | **Pathos** (Can you connect with real-life experiences?) |
 | **Expertise** (Do you understand the topic deeply?) | **Logos** (Do you have the knowledge and logic to back it up?) |
