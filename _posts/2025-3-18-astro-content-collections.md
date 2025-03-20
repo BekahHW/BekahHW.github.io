@@ -31,7 +31,7 @@ export const authors = {
   // ...another author
 };
 ```
-I connected this to my blog posts using dynamic routes. Everything worked, and I didn't think twice about it. And then a couple of days later, I was looking at Astro documentation, when I had my facepalm moment: the documentation clearly outlined a more structured, type-safe approach using collections that would make my content more maintainable and scalable. t's worth noting that I was also using an older version of Astro, and updating to 5.5.3 gave me more functionality.
+I connected this to my blog posts using dynamic routes. Everything worked, and I didn't think twice about it. And then a couple of days later, I was looking at Astro documentation, when I had my facepalm moment: the documentation clearly outlined a more structured, type-safe approach using collections that would make my content more maintainable and scalable. It's worth noting that I was also using an older version of Astro, and updating to 5.5.3 gave me more functionality.
 
 From their docs:
 
