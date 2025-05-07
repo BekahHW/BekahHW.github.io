@@ -4,13 +4,6 @@ title: DevRel Portfolio
 featured_image: /assets/images/pages/consulting.svg
 ---
 
-## Open Source Advocacy & Contributions
-
-- **OpenSauced DevEx Lead:** Led initiatives like [OSCR](https://opensauced.pizza/blog/introducing-OSCR), [Dev Cards](https://opensauced.pizza/docs/features/dev-card/), and [OpenSauced "Lunch" Week](https://opensauced.pizza/lunchweek?ref=news.opensauced.pizza) to celebrate contributors and build community.
-- [**#100DaysOfOSS:**](https://opensauced.pizza/docs/community-resources/100daysofoss-growing-skills-and-real-world-experience/) Designed a structured challenge supported by GitHub Education for open source newcomers.
-- **Beginner-Friendly Guides:** Authored accessible open source how-tos and guides for [OpenSauced docs](https://opensauced.pizza/docs/opensauced-guides/) and [OpenSauced Dev.to](https://dev.to/dashboard/organization/2498).
-- **Hacktoberfest & Community Events:** Organized [Virtual Coffee Hacktoberfest Initiative](https://hacktoberfest.virtualcoffee.io/) since 2021 and multiple [weekly events](https://virtualcoffee.io/events) since 2020.
-
 ## Developer Education & Content Creation
 
 - **Technical Writing:** Published 100+ articles on tech, OSS, and developer growth.
