@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+     <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Agents vs MCP: Is the AI Hype Shifting? | BekahHW</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Agents vs MCP: Is the AI Hype Shifting?" />
+<meta name="author" content="Bekah Hawrot Weigel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="If you’ve been following AI developments at all over the last year, I’m sure you heard about how autonomous AI agents were the next big thing that was going to change the landscape. You might have also heard names like AutoGPT, BabyAGI, and CAMEL AI. These agents could loop through tasks, reflect, plan, and even decide which tools to use. It felt a little like magic or sci fi to be able to give them a goal and watch them figure things out." />
+<meta property="og:description" content="If you’ve been following AI developments at all over the last year, I’m sure you heard about how autonomous AI agents were the next big thing that was going to change the landscape. You might have also heard names like AutoGPT, BabyAGI, and CAMEL AI. These agents could loop through tasks, reflect, plan, and even decide which tools to use. It felt a little like magic or sci fi to be able to give them a goal and watch them figure things out." />
+<link rel="canonical" href="http://localhost:4000/agents-v-mcp" />
+<meta property="og:url" content="http://localhost:4000/agents-v-mcp" />
+<meta property="og:site_name" content="BekahHW" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-07T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Agents vs MCP: Is the AI Hype Shifting?" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@BekahHW" />
+<script type="application/ld+json">
+{"dateModified":"2025-04-07T00:00:00-04:00","datePublished":"2025-04-07T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/agents-v-mcp"},"url":"http://localhost:4000/agents-v-mcp","author":{"@type":"Person","name":"Bekah Hawrot Weigel"},"description":"If you’ve been following AI developments at all over the last year, I’m sure you heard about how autonomous AI agents were the next big thing that was going to change the landscape. You might have also heard names like AutoGPT, BabyAGI, and CAMEL AI. These agents could loop through tasks, reflect, plan, and even decide which tools to use. It felt a little like magic or sci fi to be able to give them a goal and watch them figure things out.","headline":"Agents vs MCP: Is the AI Hype Shifting?","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+ 
+
+    <!-- Site Favicon -->
+    <link
+      rel="shortcut icon"
+      href="http://localhost:4000/assets/images/favicon.ico"
+      type="image/png"
+    />
+
+    <!-- Font Embed Code -->
+    <link
+      href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="home-template"
+  >
+    <div id="page" class="site">
+       <header class="site-header">
+
+    
+    <h1 class="site-title"><a href="/" rel="home">BekahHW</a></h1>
+    
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->   <main class="site-main">
+    <div class="site-content">
+
+        <article class="post-template">
+
+            <header class="cover post-header">
+            
+                
+                <div class="cover-content">
+                    <div class="inner">
+                
+                        
+                
+                        <h1 class="post-title">Agents vs MCP: Is the AI Hype Shifting?</h1>
+                
+                        <div class="post-meta">
+                            <span class="post-meta-wrap">
+                                
+                                
+                                
+                                
+
+                                <time class="published" datetime="2025-04-07">
+                                    April 7, 2025
+                                </time>
+                            </span>
+                        </div><!-- .post-meta -->
+                
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+
+            </header><!-- .cover -->
+
+
+            <div class="inner">
+            <div class="post-content">
+                <p>If you’ve been following AI developments at all over the last year, I’m sure you heard about how autonomous AI agents were the next big thing that was going to change the landscape. You might have also heard names like AutoGPT, BabyAGI, and CAMEL AI. These agents could loop through tasks, reflect, plan, and even decide which tools to use. It felt a little like magic or sci fi to be able to give them a goal and watch them figure things out.</p>
+
+<p>But if you’ve still been following along the AI train, you’ve probably started hearing about the next big thing called Model Context Protocol, or MCP.</p>
+
+<p>Is this going to overtake agents for the next big thing? How are they different than agents? This 101 post should give you a little more insight into agents and MCP and understand how they’ll continue to impact the AI landscape.</p>
+
+<h2 id="intern-vs-assembly-line-a-metaphor">Intern vs Assembly Line: A Metaphor</h2>
+
+<p>Since there are a lot of people talking about both of these, there’s no shortage of information, but let’s try to think of it in a practical way:</p>
+<ul>
+  <li>Agents are like highly capable assistants that can independently complete complex tasks when given clear roles, goals, and the right tools. Earlier versions felt like handing a vague task to a junior intern. Today’s agents like those built with CrewAI or LangGraph can function more like specialized team members in a workflow.</li>
+  <li>MCP are like giving a trained operator access to a tightly organized set of APIs and tools, with a clear understanding of how to use them. The system is grounded, predictable, and effective because it follows a well-defined communication protocol.</li>
+</ul>
+
+<h2 id="what-are-agents">What Are Agents?</h2>
+
+<p>Autonomous AI agents are systems that use AI to think, plan, and take actions on their own. They often use tools, remember what they’ve done, and reflect on their results to improve as they go. They typically use large language models (LLMs) to make decisions.</p>
+
+<h3 id="agent-strengths">Agent Strengths</h3>
+
+<ul>
+  <li>Great for exploration, ideation, and R&amp;D</li>
+  <li>Can autonomously coordinate multiple tools and tasks</li>
+  <li>Modern frameworks (e.g. CrewAI) support reliable, role-based behavior and collaboration</li>
+</ul>
+
+<h3 id="weaknesses">Weaknesses</h3>
+<ul>
+  <li>Still require clear prompts and setup to be effective</li>
+  <li>Debugging and transparency can be tricky</li>
+  <li>Costly when not tightly scoped</li>
+</ul>
+
+<h3 id="real-use-case-research-automation">Real Use Case: Research Automation</h3>
+
+<p>Some developers have used agents to research new topics by instructing them to search the web, summarize sources, and provide reports. If you’re like me, you’ve probably done this and found that although the agent is confident, they’re often unreliable and provide outdated or even hallucinated content.</p>
+
+<h4 id="agent-example-autogpt-for-seo-content-research">Agent Example: AutoGPT for SEO Content Research</h4>
+
+<p>Let’s say a starup wants to generate a blog content plan based on competitor analysis and trending keywords. Instead of using a single, looping agent like AutoGPT, they use CrewAI to assign specific roles to multiple agents in a structured workflow:</p>
+<ul>
+  <li>DataFetcher Agent: Crawls top competitor blogs and pulls content.</li>
+  <li>KeywordAnalyzer Agent: Extracts trending SEO keywords from the collected content.</li>
+  <li>ContentStrategist Agent: Generates 10 article ideas tailored to the startup’s niche.</li>
+</ul>
+
+<p>The system coordinates their work, uses APIs for data gathering, ensures reliable outputs, and assembles the results in a structured format—like a JSON file or database entry.</p>
+
+<p>Why does this still qualify as an agent-based approach?</p>
+<ul>
+  <li>Each agent has a defined role but operates autonomously within that scope.</li>
+  <li>Agents decide how to accomplish their task using available tools.</li>
+  <li>The system runs without step-by-step user intervention.</li>
+  <li>It’s modular, adaptable, and can evolve with more or fewer agents as needed.</li>
+</ul>
+
+<p>This structured take on agents is more reliable than early implementations like AutoGPT, but still retains the autonomy and flexibility that define agent-based systems.</p>
+
+<h2 id="what-are-mcp">What Are MCP?</h2>
+
+<p>Model Context Protocols (MCP) are standards that help AI models connect to real tools, data, and APIs in a reliable way. Instead of guessing, the model knows what tools it can use, what kind of data to expect, and how to respond with clean, structured output.</p>
+
+<p>MCP are all about giving the model clear rules for how to work with real-world systems and information.</p>
+
+<h3 id="strengths">Strengths</h3>
+
+<ul>
+  <li>Predictable and testable</li>
+  <li>Grounded in real-time or structured data</li>
+  <li>Designed for reliability in production</li>
+</ul>
+
+<h3 id="weaknesses-1">Weaknesses</h3>
+
+<ul>
+  <li>Less flexible in ambiguous scenarios</li>
+  <li>Relies on well-defined schemas and system design</li>
+</ul>
+
+<h3 id="real-use-case-connecting-models-to-live-apis">Real Use Case: Connecting Models to Live APIs</h3>
+
+<p>With MCP, a model can understand how to query an external weather API, get user-specific account info, or return a JSON object for further processing without the unpredictability of hallucinations.</p>
+
+<h4 id="mcp-example-anthropics-model-context-protocol-for-travel-booking">MCP Example: Anthropic’s Model Context Protocol for Travel Booking</h4>
+
+<p>Let’s say a travel app startup wants users to get real-time booking options through natural language without risking unreliable results. They use Claude with Model Context Protocol (MCP) to connect structured tools like a flight search API and hotel database.</p>
+
+<p>Here’s how it works:</p>
+<ul>
+  <li>The developer registers each tool with clear metadata: what it does, what input it expects, and what output it returns (FlightSearch, HotelAvailability, etc.).</li>
+  <li>Claude knows exactly how to interact with each tool without guesswork or hallucination.</li>
+</ul>
+
+<p>` User: “Find me a flight to Berlin next Friday and a hotel under $200 near Alexanderplatz.”`</p>
+
+<p>Claude parses the input, calls the right APIs, and responds with structured, programmatic output.</p>
+
+<p>Why is this an MCP approach?</p>
+<ul>
+  <li>The model operates within a predefined protocol and toolset.</li>
+  <li>It doesn’t choose its own path by following clear, reliable instructions.</li>
+  <li>The results are testable, repeatable, and safe for production environments.</li>
+  <li>It’s built for structure and reliability, not for exploring open-ended tasks.</li>
+</ul>
+
+<p>This makes MCP ideal for enterprise-scale use cases where accuracy, consistency, and control are more important than creative autonomy.</p>
+
+<h2 id="agents-vs-mcp-side-by-side">Agents vs MCP: Side-by-Side</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Agents</th>
+      <th>MCP (Model Context Protocols)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Autonomy</td>
+      <td>High</td>
+      <td>Low (Structured)</td>
+    </tr>
+    <tr>
+      <td>Predictability</td>
+      <td>Low</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Debuggability</td>
+      <td>Poor</td>
+      <td>Strong</td>
+    </tr>
+    <tr>
+      <td>Best Use Case</td>
+      <td>Exploration, ideation</td>
+      <td>Live data access, production workflows</td>
+    </tr>
+    <tr>
+      <td>Hallucination Risk</td>
+      <td>High</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Cost Efficiency</td>
+      <td>Low</td>
+      <td>High (due to fewer missteps)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Note: Agents today can use structured tools too—autonomy here refers to their ability to decide how and when to use them, versus MCP’s pre-defined pathways.</em></p>
+
+<h2 id="the-shift-from-agents-to-mcp">The Shift from Agents to MCP</h2>
+
+<p>There’s no doubt that agents have allowed us to do work faster and more efficiently, but most developers want tools that are reliable, testable, and scalable. MCP offer more of that structure by allowing models to function more like connected services. Because of this, they can access and return real information instead of improvising answers. MCP aren’t going to cause the death of agents, but we can think of it like maturing in the process of using language models in real-world applications.</p>
+
+<h2 id="bonus-should-i-use-an-agent-or-model-context-protocol-mcp">Bonus: Should I Use an Agent or Model Context Protocol (MCP)?</h2>
+
+<p>This is a very simiplified way to look at it, but hopefully if you’re still trying to figure this out, you might find some insight in the questions below.</p>
+
+<ul>
+  <li><strong>Is your goal quick experimentation or creative exploration?</strong>
+    <ul>
+      <li>✅ Yes → <strong>Use an Agent</strong></li>
+      <li>❌ No → Next question</li>
+    </ul>
+  </li>
+  <li><strong>Is this going into a production system?</strong>
+    <ul>
+      <li>✅ Yes → <strong>Use MCP</strong></li>
+      <li>❌ No → Next question</li>
+    </ul>
+  </li>
+  <li><strong>Do you need precise control over tool usage and structured output (like JSON or API calls)?</strong>
+    <ul>
+      <li>✅ Yes → <strong>Use MCP</strong></li>
+      <li>❌ No → <strong>Use an Agent</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="summary">Summary:</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Situation</th>
+      <th>Use Agent</th>
+      <th>Use MCP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Prototyping / R&amp;D</td>
+      <td>✅</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Needs structured, reliable output</td>
+      <td> </td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Calling multiple real-world APIs</td>
+      <td> </td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>You want fast, creative ideas</td>
+      <td>✅</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Building a user-facing feature</td>
+      <td> </td>
+      <td>✅</td>
+    </tr>
+  </tbody>
+</table>
+
+            </div>
+
+            <footer class="post-footer share-post">
+            
+            
+                <span>Share:</span>
+                <a class="circle" target="_blank"
+                    href="https://twitter.com/share?text=Agents+vs+MCP%3A+Is+the+AI+Hype+Shifting%3F&amp;url=https://bekahhw.com/agents-v-mcp">
+                <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
+                </a>
+                <a class="circle" target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://bekahhw.com/agents-v-mcp"><i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
+            
+            
+            </footer>
+
+            
+
+            </div><!-- .inner -->
+        </article>
+
+        <nav class="post-navigation">
+
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+
+        
+        <a href="/company-culture-of-reciprocity" class="nav-next">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Next</span><span class="nav-title">The Giving-Resilience Balance: Beyond Givers and Takers</span><span
+                    class="nav-date">April 8, 2025</span>
+            </div>
+
+        </a>
+        
+
+        
+        <a href="/developer-content-metrics" class="nav-previous">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Previous</span>
+                <span class="nav-title">Measuring the Impact of Developer Content: Metrics That Matter</span>
+                <span class="nav-date">March 31, 2025</span>
+            </div>
+
+        </a>
+        
+
+    </div><!-- .nav-links-->
+</nav><!-- .post-navigation -->
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->  <aside class="sidebar">
+  <div class="sidebar-scrollable">
+    <div class="inner">
+      <div class="widget-area">
+        <nav class="site-navigation">
+          <h2>Explore Website</h2>
+          <ul class="menu">
+            
+            <li class="menu-item">
+              <a href="/about">About</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/code-and-community">Code & Community</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/consulting">Consulting</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/contact">Contact</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/subscribe">Subscribe</a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        
+<section class="widget widget-text">
+    <h2 class="widget-title">About BekahHW's Site</h2>
+    <p>Code. Community. Feelings. It's all here.</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+<!--  
+<section class="widget widget-tags">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        
+        <a class="button" href='https://bekahhw.com/tag/community/'>Community
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/open- source/'>Open Source
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/tfjs/'>TFJS
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/tips/'>Tips
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+    </div>
+</section> -->
+
+      </div>
+      <!-- .widget-area -->
+      <a class="sidebar-toggle">
+        <span class="screen-reader-text">Close</span>
+        <span class="icon" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- .inner -->
+  </div>
+  <!-- .sidebar-scrollable -->
+</aside>
+<!-- .sidebar -->
+
+      <footer class="site-footer">
+    <div class="inner">
+
+        <div class="offsite-links">
+  
+  <a
+    href="https://twitter.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-twitter" aria-hidden="true"></i>
+    <span class="screen-reader-text">Twitter</span>
+  </a>
+   
+  <a
+    href="https://www.linkedin.com/in/bekah-hawrot-weigel"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-linkedin" aria-hidden="true"></i>
+    <span class="screen-reader-text">Linkedin</span>
+  </a>
+   
+  <a href="https://github.com/BekahHW" class="circle" target="_blank">
+    <i class="icon-github" aria-hidden="true"></i>
+    <span class="screen-reader-text">GitHub</span>
+  </a>
+    
+  <a
+    href="https://www.instagram.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-instagram" aria-hidden="true"></i>
+    <span class="screen-reader-text">Instagram</span>
+  </a>
+   
+
+  <a
+    href="https://www.youtube.com/@bekahhw"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-youtube" aria-hidden="true"></i>
+    <span class="screen-reader-text">YouTube</span>
+  </a>
+
+  <a href="https://bekahhw.github.io/feed.xml" class="circle" target="_blank">
+    <i class="icon-feed" aria-hidden="true"></i>
+    <span class="screen-reader-text">RSS</span>
+  </a>
+</div>
+<!-- .offsite-links -->
+
+        <div class="site-info">
+            <a href="#">BekahHW</a> &copy; 2025 . Subtle theme by
+            <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>.
+            <br /> Powered by
+            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+    </div>
+    <!-- .site -->
+
+    
+    <!-- Javascript Assets -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/custom.js"></script>
+  </body>
+</html>
