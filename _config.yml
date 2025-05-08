@@ -22,7 +22,7 @@ thankyou_page_description: "Your message has been successfully sent. I look forw
 twitter: "BekahHW"
 github: "BekahHW"
 instagram: "BekahHW"
-linkedin: "bekah-hawrot-weigel"
+linkedin: "bekahhw"
 youtube: "@bekahhw"
 # rss: "feed.xml"
 
@@ -30,6 +30,9 @@ youtube: "@bekahhw"
 navigation:
   - text: About
     url: /about
+
+  - text: My Work
+    url: /my-work
 
   - text: Code & Community
     url: /code-and-community
