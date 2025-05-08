@@ -668,30 +668,119 @@
 	text-transform: uppercase;
 }
 
-//DevRel Portfolio
-
 .card {
-	background: #fff;
-	border-left: 4px solid #ff5500;
-	padding: 1.25rem;
+	background: #f9f6f2;
+	border: 1px solid #e0d8c8; /* Full border */
+	border-left: 4px solid #141d80; /* Override for left border */
 	margin-bottom: 2rem;
 	border-radius: 8px;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-  }
-  
-  .highlight {
-	background: #fff3cd;
-	padding: 0.2rem 0.4rem;
-	border-radius: 4px;
-	font-weight: 600;
-  }
-  
-  details summary {
-	cursor: pointer;
-	font-weight: 600;
-	margin-top: 1rem;
-  }
-  
-  details[open] summary {
-	margin-bottom: 0.5rem;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	position: relative;
+	
+
+	.card-arrow {
+		width: 12px;
+		height: 12px;
+		margin: 0 auto;
+		display: block;
+		position: relative;
+		transform: rotate(45deg); // makes it look like a minimalist V
+		border-bottom: 2px solid #666;
+		border-right: 2px solid #666;
+		transition: transform 0.3s ease;
+
+	  }
+	  &:hover .card-arrow {
+		animation: blink 2s infinite;
+	  }
+
+	  &[open] .card-arrow {
+		transform: rotate(-135deg); // Upward V
+	  }
+	  
+	  @keyframes blink {
+		0%, 100% { opacity: 1; }
+		50%      { opacity: 0.3; }
+	  }
+	/* Title styling */
+	h2, h3 {
+	  margin-top: 0;
+	  margin-bottom: 0.75rem;
+	  font-size: 1.25rem;
+	}
+
+	h4 {
+		margin-top: 0;
+		margin-bottom: 0.75rem;
+		margin-left: 25px
+	}
+	
+	/* Basic styling for summary */
+	summary {
+	  list-style: none;
+	  cursor: pointer;
+	  padding: 1rem;
+	  background: transparent;
+	  outline: none;
+	  padding-bottom: 2rem;
+	  
+	  &::-webkit-details-marker {
+		display: none;
+	  }
+	  
+	  .summary-header {
+		font-size: 1.1rem;
+		margin-bottom: 0.5rem;
+		font-weight: normal;
+	  }
+	}
+	
+	/* Footer styling */
+	.summary-footer {
+	    position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		padding: 0.75rem;
+		background: linear-gradient(to bottom, rgba(255,255,255,0), #f3e2c0);
+		color: #222;
+		width: 100%;
+		box-sizing: border-box;
+		border-radius: 0 0 8px 8px;
+	  
+}
+	@keyframes bounce-loop {
+	  0%, 100%   { transform: translateY(0); }
+	  50%        { transform: translateY(8px); }
+	}
+
+	/* Hover effect */
+	&:hover .summary-footer {
+	  background: linear-gradient(to bottom, rgba(255,255,255,0.2), #efd3a5);
+	}
+	
+	/* When the card is open */
+	&[open] {
+	  
+	  /* Style the content */
+	  p, ul, ol {
+		padding: 0 1rem 1rem;
+		margin: 0;
+	  }
+	  
+	  ul, ol {
+		padding-left: 2.5rem;
+		padding-bottom: 2rem;
+		
+		li {
+		  margin-bottom: 0.5rem;
+		}
+	  }
+
+	}
   }
