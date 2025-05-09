@@ -4,28 +4,26 @@ title: "Connecting Devs, Docs, & DX: My Work"
 featured_image: /assets/images/pages/THAT_keynote.jpg
 ---
 
-
 <!-- Featured Content Section -->
-    
 <h2>FEATURED CONTENT</h2>
 
 <section class="featured-content-section">
   <div class="container">
-
-<!-- Static Content Cards Grid -->
-<div class="content-cards">
-  <!-- Card 1 -->
-  <div class="content-card">
-    <h3 class="card-title">Every GitHub Repository Should Be A Dataset</h3>
-    <p class="card-description">
-Learn how turning repositories into smart datasets could supercharge organizations    </p>
-    <div class="card-type">BLOG POST</div>
-    <a href="https://opensauced.pizza/blog/github-repos-as-datasets" target="_blank" class="card-link" aria-label="Read more about Developer Journey Mapping">
-      <span class="arrow-icon">→</span>
-    </a>
-  </div>
-  
-  <!-- Card 2 -->
+    <!-- Static Content Cards Grid -->
+    <div class="content-cards">
+      <!-- Card 1 -->
+      <div class="content-card">
+        <h3 class="card-title">Every GitHub Repository Should Be A Dataset</h3>
+        <p class="card-description">
+          Learn how turning repositories into smart datasets could supercharge organizations
+        </p>
+        <div class="card-type">BLOG POST</div>
+        <a href="https://opensauced.pizza/blog/github-repos-as-datasets" target="_blank" class="card-link" aria-label="Read more about GitHub repositories as datasets">
+          <span class="arrow-icon">→</span>
+        </a>
+      </div>
+      
+ <!-- Card 2 -->
   <div class="content-card">
     <h3 class="card-title">Content Strategy for Startups: Storytelling as a Growth Driver</h3>
     <p class="card-description">
@@ -36,14 +34,15 @@ Learn how turning repositories into smart datasets could supercharge organizatio
       <span class="arrow-icon">→</span>
     </a>
   </div>
+  
   <!-- Card 3 -->
   <div class="content-card">
     <h3 class="card-title">The Power of Storytelling</h3>
     <p class="card-description">
-     Human stories in a digital world.
+      Human stories in a digital world.
     </p>
     <div class="card-type">KEYNOTE</div>
-    <a href="https://www.youtube.com/live/Dcz0dOQmcaE?si=iy-cVE_51kBmrALF" target="_blank" class="card-link" aria-label="Watch the video">
+    <a href="https://www.youtube.com/live/Dcz0dOQmcaE?si=iy-cVE_51kBmrALF" target="_blank" class="card-link" aria-label="Watch the keynote on The Power of Storytelling">
       <span class="arrow-icon">→</span>
     </a>
   </div>
@@ -52,10 +51,10 @@ Learn how turning repositories into smart datasets could supercharge organizatio
   <div class="content-card">
     <h3 class="card-title">Open Source Education</h3>
     <p class="card-description">
-    Empowering Your Open Source Journey: From First Contribution to Project Leadership
+      Empowering Your Open Source Journey: From First Contribution to Project Leadership
     </p>
     <div class="card-type">COURSES</div>
-    <a href="https://opensauced.pizza/learn" target="_blank" class="card-link" aria-label="Take a course">
+    <a href="https://opensauced.pizza/learn" target="_blank" class="card-link" aria-label="Take a course on Open Source Education">
       <span class="arrow-icon">→</span>
     </a>
   </div>
@@ -64,7 +63,7 @@ Learn how turning repositories into smart datasets could supercharge organizatio
   <div class="content-card">
     <h3 class="card-title">"Lunch" Week</h3>
     <p class="card-description">
-     Drove campaign to increase awareness, drive engagement, and build community.
+      Drove campaign to increase awareness, drive engagement, and build community.
     </p>
     <div class="card-type">LAUNCH CAMPAIGN</div>
     <a href="https://opensauced.pizza/lunchweek" target="_blank" class="card-link" aria-label="See our launch week">
@@ -76,116 +75,201 @@ Learn how turning repositories into smart datasets could supercharge organizatio
   <div class="content-card">
     <h3 class="card-title">The Silent Crisis in Open Source: When Maintainers Walk Away</h3>
     <p class="card-description">
-The departure of a key maintainer can have far-reaching implications    </p>
+      The departure of a key maintainer can have far-reaching implications
+    </p>
     <div class="card-type">BLOG</div>
-    <a href="https://opensauced.pizza/blog/when-open-source-maintainers-leave" target="_blank" class="card-link" aria-label="Read more about when maintainers leave a project.">
+    <a href="https://opensauced.pizza/blog/when-open-source-maintainers-leave" target="_blank" class="card-link" aria-label="Read more about when maintainers leave a project">
       <span class="arrow-icon">→</span>
     </a>
   </div>
 </div>
-
   </div>
 </section>
-<!-- Developer Experience Card -->
+
+<!-- CTA Section -->
+<div class="contact-cta">
+  <h3>Let's Work Together!</h3>
+  <p>Want to collaborate, speak together, feature me on your podcast, or hire me? I'd love to connect and discuss how we can create something amazing.</p>
+  <a href="https://bekahhw.com/contact" class="cta-link">Get in Touch →</a>
+</div>
+
+<!-- Developer Strategy & Execution Card -->
 <details class="card">
   <summary>
-    <h3>Developer Relations Strategy & Leadership</h3>
+    <h3>Developer Strategy & Execution</h3>
     <div class="summary-header">
-    Enhance technical ecosystems through data-driven insights, engaging storytelling, and purpose-built community initiatives by combining strategic vision with practical execution. Design contributor journeys, implement targeted campaigns, and establish measurable frameworks that increase developer satisfaction, community participation, and product adoption.
+      Led DevRel and content strategies that increased engagement, educated devs, and drove product growth through contributor journeys, OSS campaigns, and SEO-driven content.
     </div>
     <div class="summary-footer">
-  <span class="card-arrow" aria-hidden="true"></span>
+      <span class="card-arrow" aria-hidden="true"></span>
     </div>
   </summary>
   <ul>
-    <li><strong>Strategy:</strong> Help shape contributor and user experience, onboarding, and storytelling-first marketing.</li>
-    <li><strong>Metrics-Driven Content:</strong> Advocated meaningful metrics and content evaluation frameworks.</li>
-    <li><strong>Campaign Leadership:</strong>Led successful launches and initiatives like 
-    <a href="https://opensauced.pizza/blog/introducing-OSCR">Open Source Contributor Rating (OSCR)</a>, 
-    <a href="https://opensauced.pizza/docs/features/dev-card/">Dev Cards</a>, and 
-    <a href="https://opensauced.pizza/lunchweek">OpenSauced "Lunch" Week</a> to increase product awareness, user engagement, and build community.
-  </li>
-  <li><strong>Audience-Specific Drip Campaigns:</strong> Wrote targeted email sequences for different developer audiences to support onboarding, nurture engagement, and guide contributors through their open source journey.</li>
-  <li><strong>Startup Consulting:</strong> Partnered with startups to audit DevEx touchpoints and craft developer-first content and community strategies that drive meaningful engagement.</li>
+    <li><strong>Growth Content:</strong> Authored a content strategy that led to a <strong>57% increase in pageviews</strong> and doubled click rates over 3 months <a href="https://opensauced.pizza/blog">[OpenSauced Blog]</a></li>
+    <li><strong>Courses & Learning:</strong> Launched <a href="https://opensauced.pizza/learn/intro-to-oss">Intro to Open Source</a> and <a href="https://opensauced.pizza/learn/becoming-a-maintainer">Becoming a Maintainer</a> courses — over 300 participants.</li>
+    <li><strong>Product Campaigns:</strong> Led messaging and execution for <a href="https://opensauced.pizza/blog/introducing-OSCR">OSCR</a>, <a href="https://opensauced.pizza/docs/features/dev-card/">Dev Cards</a>, and <a href="https://opensauced.pizza/lunchweek">Lunch Week</a> launches, resulting in record sign-ups.</li>
+    <li><strong>Developer Workflows:</strong> Created targeted email drip campaigns for contributors, maintainers, and orgs to support onboarding and adoption.</li>
+    <li><strong>Docs Infrastructure:</strong> Migrated docs to a Next.js subdirectory, improving accessibility and leading to a <strong>30% monthly view increase</strong>.</li>
+    <li><strong>Newsletter Strategy:</strong> Edited and revamped <a href="https://sauced.ghost.io/">OpenSauced newsletter</a>, increasing engagement and CTRs.</li>
   </ul>
 </details>
 
-
-
-<!-- Developer Education Card -->
+<!-- Community & OSS Advocacy Card -->
 <details class="card">
   <summary>
-    <h3>Developer Education, Documentation, & Content Creation</h3>
+    <h3>Community & Open Source Advocacy</h3>
     <div class="summary-header">
-    Create educational resources, technical and thought leadership content, workshops, courses, and programs to help developers grow and succeed. Develope clear, empathetic documentation that serves as a bridge between developer tools and users.
+      Built inclusive developer communities and contributor programs that scale — from founding Virtual Coffee to mentoring newcomers and creating cross-org partnerships.
     </div>
     <div class="summary-footer">
-        <span class="card-arrow" aria-hidden="true"></span>
+      <span class="card-arrow" aria-hidden="true"></span>
     </div>
   </summary>
   <ul>
-    <li><strong>Technical Writing:</strong> Published 100+ articles on tech, OSS, and developer growth - <a href="https://bekahhw.com/" target="_blank">Personal Site</a> | <a href="https://dev.to/bekahhw" target="_blank">Dev.to</a> | <a href="https://opensauced.pizza/blog" target="_blank">OpenSauced Blog</a></li>
-    <li><strong><a href="https://opensauced.pizza/learn" target="_blank">Courses & Workshops:</a></strong> Launched OpenSauced Learn with two free, self-paced courses and live workshops: <strong><a href="https://opensauced.pizza/learn/intro-to-oss" target="_blank">Intro to Open Source</a></strong> and <strong><a href="https://opensauced.pizza/learn/becoming-a-maintainer" target="_blank">Becoming a Maintainer</a></strong></li>
-     <li><strong>Docs Advocacy:</strong> Drove <a href="https://opensauced.pizza/docs/" target="_blank">OpenSauced</a> and <a href="https://vc-community-docs.netlify.app/docs/" target="_blank">Virtual Coffee</a> documentation with clear, empathetic updates.</li>
-    <li><strong>"User 0" Mindset:</strong> Writes and tests docs from a new contributor perspective.</li>
-    <li><strong>Popular Content:</strong> Wrote <a href="https://bekahhw.com/common-dev-content-pitfalls" target="_blank">"Common Pitfalls in Developer Content: The 7 Deadly Sins of Developer Documentation"</a> and other high-impact resources on <a href="https://bekahhw.com/" target="_blank">bekahhw.com</a>.</li>
-    <li>Revamped <a href="https://sauced.ghost.io/" target="_blank"> OpenSauced newsletter</a> increasing engagement and signups.</li>
+    <li><strong><a href="https://virtualcoffee.io/">Virtual Coffee:</a></strong> Founded a 1,000+ member developer community, hosted 250+ events, led mentorship, and created monthly challenges <a href="https://virtualcoffee.io/monthlychallenges">[Monthly Challenges]</a></li>
+    <li><strong>#100DaysOfOSS:</strong> Designed a GitHub Education-supported program to help early contributors build experience <a href="https://opensauced.pizza/docs/community-resources/100daysofoss-growing-skills-and-real-world-experience/">[Learn More]</a></li>
+    <li><strong>Docs & Guides:</strong> Wrote contributor onboarding and documentation for <a href="https://opensauced.pizza/docs/">OpenSauced</a> and <a href="https://vc-community-docs.netlify.app/docs/">Virtual Coffee</a></li>
+    <li><strong>Hacktoberfest:</strong> Created <a href="https://hacktoberfest.virtualcoffee.io/">Virtual Coffee’s OSS initiative</a> since 2021, guiding contributors through PRs and mentorship</li>
+    <li><strong>Livestreams & Podcasts:</strong> Hosted 50+ X Spaces and appeared on industry podcasts including <a href="https://www.youtube.com/live/Dcz0dOQmcaE?si=kaF2tAFuBX3P3yIs">SE Unlocked</a>, CodeNewbie, and The Undefined Podcast</li>
+    <li><strong>Conference Partnerships:</strong> Collaborated with GitHub Education, CFE.dev, and MagnoliaJS to grow OSS contributor impact and awareness <a href="https://www.youtube.com/live/EvDJpN-jJgo?si=XeUHuFpupgCTb1RK">[Code & Coffee]</a></li>
   </ul>
 </details>
+<!-- Developer Education & Enablement Section -->
+<div class="dev-education-section-row">
+<div class="icon-cards-row">
+<!-- Education & Docs Card -->
+<div class="icon-card">
+<div class="icon-bg" aria-hidden="true">
+<!-- Notebook Icon -->
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="15" width="70" height="90" rx="2" ry="2" fill="white" stroke="black" stroke-width="2"/>
+<path d="M20,25 h10 M20,35 h10 M20,45 h10 M20,55 h10 M20,65 h10 M20,75 h10" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M35,30 h30 M35,40 h30 M35,50 h30 M35,60 h30 M35,70 h30" stroke="#444" stroke-width="1"/>
+<g transform="rotate(-45, 65, 40)">
+  <rect x="60" y="20" width="10" height="40" rx="2" ry="2" fill="white" stroke="black" stroke-width="1.5"/>
+  <path d="M60,20 l5,-10 l5,10" fill="white" stroke="black" stroke-width="1.5"/>
+  <rect x="60" y="50" width="10" height="10" rx="1" ry="1" fill="black"/>
+</g>
+</svg>
+</div>
+<h3>Education & Docs</h3>
+<p>Create educational resources, improve documentation, and deliver engaging workshops</p>
+</div>
 
-<details class="card">
+<!-- Dev Advocacy Card -->
+<div class="icon-card">
+<div class="icon-bg" aria-hidden="true">
+<!-- Git Branch Icon -->
+<svg viewBox="0 0 24 24" width="24" height="24">
+<circle cx="7" cy="7" r="3" fill="white" />
+<circle cx="7" cy="17" r="3" fill="white" />
+<circle cx="17" cy="17" r="3" fill="white" />
+<line x1="7" y1="7" x2="7" y2="14" stroke="white" stroke-width="2" />
+<line x1="7" y1="14" x2="17" y2="14" stroke="white" stroke-width="2" />
+<line x1="17" y1="14" x2="17" y2="17" stroke="white" stroke-width="2" />
+</svg>
+</div>
+<h3>Developer Advocacy</h3>
+<p>Champion developers through content, mentorship, and connection. Build bridges between people, products, and purpose.</p>
+</div>
 
-  <summary>
-      <h3>Open Source Advocacy & Contributions</h3>
+<!-- Speaking & Hosting Card -->
+<div class="icon-card">
+<div class="icon-bg" aria-hidden="true">
+<!-- Star Icon -->
+<svg viewBox="0 0 24 24" width="24" height="24">
+<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="white" />
+</svg>
+</div>
+<h3>Speaking & Hosting</h3>
+<p>Host and speak at in-person and virtual conferences, podcasts, and tech events</p>
+</div>
 
- <div class="summary-header">
-
-Focus on building contributor ladders, improving onboarding, and identifying pain points that block participation. Create resources, recognition systems, and community programs that increase awareness, lower barriers to entry, and help open source projects grow and thrive.</div>
-    <div class="summary-footer">
-        <span class="card-arrow" aria-hidden="true"></span>
-    </div>
-  </summary>
-<ul>
-  <li>
-    <a href="https://opensauced.pizza/docs/community-resources/100daysofoss-growing-skills-and-real-world-experience/"><strong>#100DaysOfOSS:</strong></a> Designed a structured challenge supported by GitHub Education for open source newcomers.
-  </li>
-  <li>
-    <strong>Beginner-Friendly Guides:</strong> Authored accessible open source how-tos and guides for 
-    <a href="https://opensauced.pizza/docs/opensauced-guides/">OpenSauced docs</a> and 
-    <a href="https://dev.to/dashboard/organization/2498">OpenSauced Dev.to</a>.
-  </li>
-  <li>
-    <strong>Hacktoberfest & Community Events:</strong> Organized 
-    <a href="https://hacktoberfest.virtualcoffee.io/">Virtual Coffee Hacktoberfest Initiative</a> since 2021 and multiple 
-    <a href="https://virtualcoffee.io/events">weekly events</a> since 2020.
-  </li>
-</ul>
-</details>
+<!-- Learning Systems Card -->
+<div class="icon-card">
+  <div class="icon-bg" aria-hidden="true">
+    <!-- Bar Chart Icon -->
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <rect x="4" y="10" width="3" height="10" fill="white" stroke="black" stroke-width="1.5"/>
+      <rect x="10" y="6" width="3" height="14" fill="white" stroke="black" stroke-width="1.5"/>
+      <rect x="16" y="2" width="3" height="18" fill="white" stroke="black" stroke-width="1.5"/>
+    </svg>
+  </div>
+  <h3>Learning Systems & Metrics</h3>
+  <p>Build scalable content workflows with clear success metrics, automation, and developer-first feedback loops.</p>
+</div>
 
 
-<!-- Community Leadership Card -->
-<details class="card">
-  <summary>
-    <h3>Community Leadership & Initiatives</h3>
-    <div class="summary-header">
-      Build and nurture developer communities through events, mentorship programs, and collaborative learning opportunities that allow for genuine connection and growth. Partner with key organizations in the developer ecosystem to enhance community experience.
-    </div>
-    <div class="summary-footer">
-        <span class="card-arrow" aria-hidden="true"></span>
-    </div>
-  </summary>
-  <ul>
-    <li><strong><a href="http://virtualcoffee.io/" target="_blank">Virtual Coffee Creator:</a></strong> Created and scaled a tech community with events, mentorship, and learning challenges.</li>
-    <li><strong>Programs & Mentorship:</strong> Coordinates Lunch & Learns, <a href="https://virtualcoffee.io/monthlychallenges" target="_blank">monthly challenges</a>, and major event implementation.</li>
-    <li><strong>GitHub Campus Collaboration:</strong> Partnered with GitHub for <a href="https://www.youtube.com/watch?v=AlnrOGIIHy4" target="_blank">"Not-ternships"</a> and as an Education partner.</li>
-    <li><strong>Speaking Engagements:</strong> <a href="https://www.youtube.com/live/Dcz0dOQmcaE?si=Ikchi5wcTIMKfgWE" target="_blank">Keynoted</a>, <a href="https://www.youtube.com/live/EvDJpN-jJgo?si=7K106CQffBE_CxNk" target="_blank">emceed</a>, and spoke on topics including storytelling and developer journeys.</li>
-  </ul>
-  <strong><h4>Notable Collaborations</h4></strong>
-    <ul>
-    <li><strong>GitHub Education:</strong> Supported #100DaysOfOSS and livestreamed open source learning series.</li>
-    <li><strong>CFE.dev:</strong> Partnered to host <a href="https://www.youtube.com/live/EvDJpN-jJgo?si=XeUHuFpupgCTb1RK" target="_blank">Code & Coffee: A Virtual Coffee Conference</a></li>
-    <li><strong><a href="http://dev.to/bekahhw/" target="_blank">DEV Community:</a></strong> Top contributor, moderator, and strategic blog publisher.</li>
-    <li><strong>Hacktoberfest Partner:</strong> Mentored and represented Virtual Coffee in OSS education events.</li>
-  </ul>
-</details>
+<style>
+  .dev-education-section-row {
+  background-color: #11273c;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
 
+.dev-education-section-row h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+    margin-top: 0px;
+
+}
+
+.icon-cards-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.icon-card {
+  background-color: #f5f2e9;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  color: #0a1724;
+}
+
+.icon-bg {
+  background-color: #0a1724;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-bg svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.icon-card h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.icon-card p {
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .icon-cards-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-cards-row {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

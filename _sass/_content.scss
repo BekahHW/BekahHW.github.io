@@ -23,9 +23,8 @@
 }
 
 .cover-bg {
-	-webkit-animation: 	fadein 1s ease-in-out;
-	-moz-animation:		fadein 1s ease-in-out;
-	animation:			fadein 1s ease-in-out;
+	-webkit-animation: fadein 1s ease-in-out;
+	animation: fadein 1s ease-in-out;
 	background-position: center;
 	background-size: cover;
 	bottom: 0;
@@ -54,15 +53,12 @@
 }
 
 .cover .arrow-down {
-	-webkit-animation-duration:	2s;
-	-moz-animation-duration:	2s;
-	animation-duration:			2s;
-	-webkit-animation-name:	blink;
-	-moz-animation-name:	blink;
-	animation-name:			blink;
-	-webkit-animation-iteration-count:	infinite;
-	-moz-animation-iteration-count:		infinite;
-	animation-iteration-count:			infinite;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-name: blink;
+	animation-name: blink;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
 	bottom: 30px;
 	left: 50%;
 	margin-left: -15px;
@@ -130,7 +126,7 @@
 }
 
 .tag-links a:before {
-    content: "\0023";
+	content: "\0023";
 }
 
 .tag-links a:hover {
@@ -454,17 +450,6 @@
 	text-transform: uppercase;
 }
 
-.page-header .author-links {
-	font-size: 12px;
-	letter-spacing: 2px;
-	margin-top: 30px;
-	text-transform: uppercase;
-}
-
-.page-header .author-links a:hover {
-	color: $gray-lighter;
-}
-
 .page-header .author-links span {
 	margin-right: 15px;
 	white-space: nowrap;
@@ -538,8 +523,7 @@
 .pagination a:before,
 .pagination a:after {
 	-webkit-transition: all .3s;
-	-moz-transition:	all .3s;
-	transition:			all .3s;
+	transition: all .3s;
 }
 
 .pagination a:hover:before,
@@ -559,9 +543,7 @@
 
 .nav-previous,
 .nav-next {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
-	box-sizing:         border-box;
+	box-sizing: border-box;
 	color: #fff;
 	display: block;
 	overflow: hidden;
@@ -598,12 +580,10 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	-webkit-transform: 	scale(1, 1);
-	-moz-transform: 	scale(1, 1);
-	transform: 			scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
 	-webkit-transition: all 1s;
-	-moz-transition: 	all 1s;
-	transition:			all 1s;
+	transition: all 1s;
 }
 
 .post-navigation a:hover {
@@ -611,9 +591,8 @@
 }
 
 .post-navigation a:hover .nav-bg {
-	-webkit-transform: 	scale(1.05, 1.05);
-	-moz-transform: 	scale(1.05, 1.05);
-	transform: 			scale(1.05, 1.05);
+	-webkit-transform: scale(1.05, 1.05);
+	transform: scale(1.05, 1.05);
 }
 
 .nav-inside {
@@ -668,77 +647,82 @@
 	text-transform: uppercase;
 }
 
+/* Card styling */
 .card {
-	background: #f9f6f2;
-	border: 1px solid #e0d8c8; /* Full border */
-	border-left: 4px solid #141d80; /* Override for left border */
+	background: #fbfaf6;
+	border: 1px solid #e0d8c8;
+	border-left: 4px solid #141d80;
 	margin-bottom: 2rem;
 	border-radius: 8px;
 	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 	overflow: hidden;
 	position: relative;
 	
-
 	.card-arrow {
 		width: 12px;
 		height: 12px;
 		margin: 0 auto;
 		display: block;
 		position: relative;
-		transform: rotate(45deg); // makes it look like a minimalist V
+		transform: rotate(45deg);
 		border-bottom: 2px solid #666;
 		border-right: 2px solid #666;
 		transition: transform 0.3s ease;
-
-	  }
-	  &:hover .card-arrow {
+	}
+	
+	&:hover .card-arrow {
 		animation: blink 2s infinite;
-	  }
-
-	  &[open] .card-arrow {
-		transform: rotate(-135deg); // Upward V
-	  }
-	  
-	  @keyframes blink {
+	}
+	
+	&[open] .card-arrow {
+		transform: rotate(-135deg);
+	}
+	
+	@keyframes blink {
 		0%, 100% { opacity: 1; }
 		50%      { opacity: 0.3; }
-	  }
+	}
+	
 	/* Title styling */
 	h2, h3 {
-	  margin-top: 0;
-	  margin-bottom: 0.75rem;
-	  font-size: 1.25rem;
+		margin-top: 0;
+		margin-bottom: 0.75rem;
+		font-size: 1.25rem;
 	}
-
+	
 	h4 {
 		margin-top: 0;
 		margin-bottom: 0.75rem;
-		margin-left: 25px
+		margin-left: 25px;
 	}
 	
 	/* Basic styling for summary */
 	summary {
-	  list-style: none;
-	  cursor: pointer;
-	  padding: 1rem;
-	  background: transparent;
-	  outline: none;
-	  padding-bottom: 2rem;
-	  
-	  &::-webkit-details-marker {
-		display: none;
-	  }
-	  
-	  .summary-header {
-		font-size: 1.1rem;
-		margin-bottom: 0.5rem;
-		font-weight: normal;
-	  }
+		list-style: none;
+		cursor: pointer;
+		padding: 1rem;
+		background: transparent;
+		outline: none;
+		padding-bottom: 2rem;
+		
+		&::-webkit-details-marker {
+			display: none;
+		}
+		
+		.summary-header {
+			font-size: 1.1rem;
+			margin-bottom: 0.5rem;
+			font-weight: normal;
+			overflow-wrap: break-word;
+			word-wrap: break-word;
+			word-break: break-word;
+			hyphens: auto;
+		}
 	}
 	
 	/* Footer styling */
 	.summary-footer {
-	    position: absolute;
+		position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
@@ -747,151 +731,124 @@
 		justify-content: center;
 		gap: 0.5rem;
 		padding: 0.75rem;
-		background: linear-gradient(to bottom, rgba(255,255,255,0), #f3e2c0);
+		background: linear-gradient(to bottom, #fbfaf6, #f3e2c0);
 		color: #222;
 		width: 100%;
 		box-sizing: border-box;
 		border-radius: 0 0 8px 8px;
-	  
-}
-	@keyframes bounce-loop {
-	  0%, 100%   { transform: translateY(0); }
-	  50%        { transform: translateY(8px); }
 	}
-
+	
 	/* Hover effect */
 	&:hover .summary-footer {
-	  background: linear-gradient(to bottom, #0f105e33, #efd3a5);
+		background: linear-gradient(to bottom, #fbfaf6, #efd3a5);
 	}
 	
 	/* When the card is open */
 	&[open] {
-	  
-	  /* Style the content */
-	  p, ul, ol {
-		padding: 0 1rem 1rem;
-		margin: 0;
-	  }
-	  
-	  ul, ol {
-		padding-left: 2.5rem;
-		padding-bottom: 2rem;
-		
-		li {
-		  margin-bottom: 0.5rem;
+		/* Style the content */
+		p, ul, ol {
+			padding: 0 1rem 1rem;
+			margin: 0;
 		}
-	  }
-
+		
+		ul, ol {
+			padding-left: 2.5rem;
+			padding-bottom: 2rem;
+			
+			li {
+				margin-bottom: 0.5rem;
+			}
+		}
 	}
-  }
+}
 
-  /* Featured Content Section Styles */
+/* Featured Content Section Styles */
 .featured-content-section {
-	background-color: rgba(17, 45, 104, 0.25); 
-	padding: 60px 0;
+	background-color: rgba(17, 45, 104, 0.25);
+	padding: 40px 30px;
 	color: #f2f2f2;
 	border-radius: 16px;
-	margin-bottom:26px;
-  }
-  
-  .container {
-	max-width: 1140px;
+	margin-bottom: 26px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
 	margin: 0 auto;
-	padding: 0 20px;
-  }
-  
-  .section-title {
+	padding: 0;
+}
+
+.section-title {
 	font-size: 36px;
 	font-weight: bold;
 	color: #d0b88c;
 	margin: 0 0 15px 0;
-  }
-  
-  .section-description {
-	font-size: 16px;
-	line-height: 1.5;
-	margin: 0 0 40px 0;
-	max-width: 700px;
-  }
-  
-  /* Category Tabs */
-  .category-tabs {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
-	margin-bottom: 30px;
-  }
-  
-  .category-tab {
-	background: transparent;
-	border: 1px solid #d0b88c;
-	border-radius: 20px;
-	color: #d0b88c;
-	font-size: 14px;
-	font-weight: 500;
-	padding: 10px 20px;
-	cursor: pointer;
-	transition: all 0.3s ease;
-  }
-  
-  .category-tab.active {
-	background-color: #f2e9d8;
-	color: #0a1724;
-	border-color: #f2e9d8;
-	font-weight: bold;
-  }
-  
-  .category-tab:hover:not(.active) {
-	background-color: rgba(208, 184, 140, 0.1);
-  }
-  
-  /* Content Cards */
-  .content-cards {
+}
+
+/* Content Cards */
+.content-cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 30px;
-	margin-bottom: 40px;
-  }
-  
-  .content-card {
-	background-color: #f2e9d8;
+	margin-bottom: 30px;
+}
+
+.content-card {
+	background-color: #fbfaf6;
 	border-radius: 8px;
 	color: #333;
-	padding: 25px;
+	padding: 25px 20px;
 	position: relative;
 	height: 200px;
 	display: flex;
 	flex-direction: column;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .content-card:hover {
+	overflow: hidden;
+}
+
+.content-card:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-title {
+}
+
+.card-title {
 	font-size: 18px;
 	font-weight: bold;
 	color: #0a1724;
 	margin: 0 0 15px 0;
-  }
-  
-  .card-description {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.card-description {
 	font-size: 14px;
 	line-height: 1.5;
 	color: #444;
 	margin: 0 0 auto 0;
-  }
-  
-  .card-type {
-	font-size: 14px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.card-type {
+	font-size: 12px;
 	font-weight: bold;
 	color: #666;
-	margin-top: 20px;
-  }
-  
-  .card-link {
+	margin-top: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+.card-link {
 	position: absolute;
 	bottom: 15px;
 	right: 15px;
@@ -904,172 +861,147 @@
 	justify-content: center;
 	color: #f2e9d8;
 	text-decoration: none;
-  }
-  
-  .arrow-icon {
+}
+
+.arrow-icon {
 	font-size: 18px;
-  }
-  
-  /* Featured Card Styling */
-  .content-card.featured {
-	position: relative;
-  }
-  
-  .featured-tag {
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #d0b88c;
-	color: #0a1724;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 5px 10px;
-	border-radius: 0 0 8px 0;
-  }
-  
-  .card-badge {
-	position: absolute;
-	bottom: 15px;
-	left: 25px;
-	width: 36px;
-	height: 36px;
-	border-radius: 50%;
-	background-color: #d0b88c;
-	color: #0a1724;
-	font-weight: bold;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  }
-  
-  /* View All Button */
-  .view-all-container {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-  }
-  
-  .view-all-button {
-	display: inline-block;
-	padding: 12px 30px;
-	border: 1.5px solid #d0b88c;
-	border-radius: 25px;
-	color: #d0b88c;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 16px;
-	transition: all 0.3s ease;
-  }
-  
-  .view-all-button:hover {
-	background-color: rgba(208, 184, 140, 0.1);
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-	.content-cards {
-	  grid-template-columns: 1fr;
-	}
-	
-	.category-tabs {
-	  overflow-x: auto;
-	  padding-bottom: 10px;
-	}
-	
-	.section-title {
-	  font-size: 28px;
-	}
-  }
+}
+
+/* CTA Section */
+/* CTA Section - Quote-like style */
+.contact-cta {
+  position: relative;
+  margin: 40px 0 50px;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact-cta:before,
+.contact-cta:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80px;
+  background-color: #d0b88c; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-cta:before {
+  top: 0;
+}
+
+.contact-cta:after {
+  bottom: 0;
+}
+
+.contact-cta h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #0a1724;
+}
+
+.contact-cta p {
+  margin-bottom: 25px;
+  color: #444;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cta-link {
+  display: inline-block;
+  color: #141d80;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  padding-bottom: 3px;
+}
+
+.cta-link:hover {
+  color: #0a1255;
+  border-bottom-color: #141d80;
+}
 
 /* Target the specific DevRel page to override the default .inner constraints */
 .devrel-content {
-	max-width: 1140px !important;
+	max-width: 1140px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 30px;
-  }
-  
-  /* Make .inner inside devrel-content take full width */
-  .devrel-content .inner {
-	max-width: 100% !important;
+}
+
+/* Make .inner inside devrel-content take full width */
+.devrel-content .inner {
+	max-width: 100%;
 	width: 100%;
 	padding: 0;
-  }
+}
 
-  /* Center the content on mobile */
+/* Center the content on mobile */
 @media (max-width: 767px) {
 	/* Target the main content area */
 	.devrel-content {
-	  width: 100%;
-	  padding-left: 0 !important;
-	  padding-right: 0 !important;
-	  max-width: 100%;
-	  overflow-x: hidden;
+		width: 100%;
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+		max-width: 100%;
+		overflow-x: hidden;
 	}
 	
 	/* Center inner content */
 	.inner, 
 	.post-content {
-	  width: 100% !important;
-	  padding-left: 15px !important;
-	  padding-right: 15px !important;
-	  margin-left: auto !important;
-	  margin-right: auto !important;
-	  box-sizing: border-box !important;
+		width: 100% !important;
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		box-sizing: border-box !important;
 	}
 	
 	/* Fix cards to be centered */
 	.card {
-	  width: 100% !important;
-	  max-width: 100% !important;
-	  margin-left: 0 !important;
-	  margin-right: 0 !important;
-	  box-sizing: border-box !important;
-	  left: 0 !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		box-sizing: border-box !important;
+		left: 0 !important;
 	}
 	
 	/* Featured content section */
 	.featured-content-section {
-	  width: 100% !important;
-	  padding-left: 0 !important;
-	  padding-right: 0 !important;
-	  margin-left: 0 !important;
-	  margin-right: 0 !important;
-	  left: 0 !important;
+		width: 100% !important;
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		left: 0 !important;
 	}
 	
 	.featured-content-section .container {
-	  width: 100% !important;
-	  padding-left: 15px !important;
-	  padding-right: 15px !important;
-	  box-sizing: border-box !important;
+		width: 100% !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		box-sizing: border-box !important;
 	}
 	
-	/* Category tabs centering */
-	.category-tabs {
-	  justify-content: center;
-	  margin-left: auto;
-	  margin-right: auto;
+	/* Content cards on mobile */
+	.content-cards {
+		grid-template-columns: 1fr;
 	}
 	
-	/* Remove any negative margins */
-	* {
-	  margin-left: 0;
-	  margin-right: 0;
+	.content-card {
+		height: auto;
+		min-height: 180px;
 	}
-  }
-  
-  /* Override any specific theme positions */
-  .site-content,
-  .post-template,
-  .site-main {
+}
+
+/* Ensure the page uses the full width available */
+html, body {
 	overflow-x: hidden;
 	width: 100%;
-  }
-  
-  /* Force the page to use the full width available */
-  html, body {
-	overflow-x: hidden;
-	width: 100%;
-  }
-  
+}
