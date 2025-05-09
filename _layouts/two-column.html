@@ -14,17 +14,91 @@ layout: default
                 <div class="cover-content">
                     <div class="inner">
                         <h1 class="post-title">{{ page.title }}</h1>
-                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                        <a href="#content-section" class="arrow-down" aria-label="Scroll down to content">
+                            <span class="screen-reader-text">Scroll Down</span>
+                        </a>
                     </div><!-- .inner -->
                 </div><!-- .cover-content -->
             </header><!-- .post-header -->
 
-            <div class="inner">
+            <div class="inner" id="content-section">
                 <div class="post-content">
                     <!-- Two-Column Layout Container -->
                     <div class="two-column-layout">
                         <!-- Left Column - Fixed Content -->
                         <div class="left-column">
+
+<section class="stats-card">
+  <h2 class="stats-heading">Impact</h2>
+  
+
+  <div class="stats-grid">
+    <div class="stat-item" data-value="500000">
+      <div class="stat-counter">
+        <span class="stat-counter__value">0</span>
+        <span class="stat-counter__plus">+</span>
+      </div>
+      <p class="stat-item__label">Blog Readership</p>
+    </div>
+    
+    <div class="stat-item" data-value="300">
+      <div class="stat-counter stat-counter--with-avatars">
+        <span class="stat-counter__value">0</span>
+        <span class="stat-counter__plus">+</span>
+      </div>
+      <p class="stat-item__label">OSS Course Participants</p>
+    </div>
+    
+    <div class="stat-item" data-value="1000">
+      <div class="stat-counter">
+        <span class="stat-counter__value">0</span>
+        <span class="stat-counter__plus">+</span>
+      </div>
+      <p class="stat-item__label">Virtual Coffee Community Members All Time</p>
+    </div>
+  </div>
+     
+    <!-- New Events Hosted item -->
+    <div class="stat-item stat-item--detailed">
+      <div class="stat-counter">
+        <span class="animate-count">350</span>
+        <span class="stat-counter__plus">+</span>
+      </div>
+      <p class="stat-item__label">Events Hosted</p>
+      <div class="stat-details">
+        <span class="stat-detail-item"><strong>200+</strong> Live Sessions</span>
+        <span class="stat-detail-item"><strong>50+</strong> X Spaces</span>
+        <span class="stat-detail-item"><strong>100</strong> Podcasts</span>
+        <span class="stat-detail-item"><strong>2</strong> Conferences</span>
+      </div>
+    </div>
+        <!-- Pageview Growth with horizontal bar -->
+    <div class="stat-item">
+      <div class="stat-bar-container">
+        <div class="stat-value-display">
+          <span class="stat-value">57</span><span class="stat-symbol">%</span>
+        </div>
+        <div class="stat-bar-wrapper">
+          <div class="stat-bar stat-bar--growth" data-percentage="57"></div>
+        </div>
+      </div>
+      <p class="stat-item__label">Pageview Growth - 3 months</p>
+    </div>
+    <!-- Docs Engagement with horizontal bar -->
+    <div class="stat-item">
+      <div class="stat-bar-container">
+        <div class="stat-value-display">
+          <span class="stat-value">30</span><span class="stat-symbol">%</span>
+        </div>
+        <div class="stat-bar-wrapper">
+          <div class="stat-bar stat-bar--engagement" data-percentage="30"></div>
+        </div>
+      </div>
+      <p class="stat-item__label">Monthly increase docs views post-migration</p>
+    </div>
+
+</section>
+
                             <!-- Quote Section -->
                             <div class="quote-card">
                                 <blockquote>
@@ -32,51 +106,97 @@ layout: default
                                 </blockquote>
                             </div>
                             
-                            <!-- Developer Education & Enablement Section -->
-                            <div class="dev-education-section">
-                                <h2>DEVELOPER EDUCATION</h2>
-                                
-                                <div class="icon-cards-container">
-                                    <!-- Education & Docs Card -->
-                                    <div class="icon-card">
-                                        <div class="icon-bg">
-                                            MD
-                                        </div>
-                                        <h3>Education & Docs</h3>
-                                        <p>Create educational resources</p>
-                                    </div>
-                                    
-                                    <!-- Open Source Advocacy Card -->
-                                    <div class="icon-card">
-                                        <div class="icon-bg">
-                                            <!-- Git Branch Icon -->
-                                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <circle cx="7" cy="7" r="3" fill="white" />
-                                              <circle cx="7" cy="17" r="3" fill="white" />
-                                              <circle cx="17" cy="17" r="3" fill="white" />
-                                              <line x1="7" y1="7" x2="7" y2="14" stroke="white" stroke-width="2" />
-                                              <line x1="7" y1="14" x2="17" y2="14" stroke="white" stroke-width="2" />
-                                              <line x1="17" y1="14" x2="17" y2="17" stroke="white" stroke-width="2" />
-                                            </svg>
-                                        </div>
-                                        <h3>Open Source</h3>
-                                        <p>Support contributors</p>
-                                    </div>
-                                    
-                                    <!-- Event Highlights Card -->
-                                    <div class="icon-card">
-                                        <div class="icon-bg">
-                                            <!-- Star Icon -->
-                                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="white" />
-                                            </svg>
-                                        </div>
-                                        <h3>Event Highlights</h3>
-                                        <p>Host and speak</p>
-                                    </div>
-                                </div>
-                            </div>
+                          
+                           
+
+
+
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+  // Get all the counters
+  const counters = document.querySelectorAll('.stat-counter__value, .animate-count, .stat-value');
+  const statsSection = document.querySelector('.stats-card');
+  
+  // Simple function to animate a counter from 0 to target value
+  function animateCounter(counter, targetValue) {
+    let current = 0;
+    const increment = targetValue > 1000 ? Math.ceil(targetValue / 30) : Math.ceil(targetValue / 20);
+    
+    counter.textContent = '0';
+    
+    const timer = setInterval(function() {
+      current += increment;
+      if (current >= targetValue) {
+        counter.textContent = targetValue;
+        clearInterval(timer);
+      } else {
+        counter.textContent = current;
+      }
+    }, 50);
+  }
+  
+  // Function to start all animations with sequential delays
+  function startSequentialAnimations() {
+    counters.forEach((counter, index) => {
+      // Add 300ms delay between each counter animation
+      const delay = index * 300;
+      
+      setTimeout(() => {
+        // Determine target value based on counter type
+        let targetValue;
+        
+        if (counter.classList.contains('stat-counter__value')) {
+          // For counters in .stat-counter elements
+          const statItem = counter.closest('.stat-item');
+          targetValue = parseInt(statItem ? statItem.getAttribute('data-value') || '0' : '0', 10);
+        } else if (counter.classList.contains('animate-count')) {
+          // For elements with .animate-count class
+          targetValue = parseInt(counter.textContent.replace(/[^\d]/g, '') || '0', 10);
+        } else if (counter.classList.contains('stat-value')) {
+          // For percentage values
+          targetValue = parseInt(counter.textContent || '0', 10);
+        }
+        
+        // Only animate if we got a valid target value
+        if (!isNaN(targetValue) && targetValue > 0) {
+          console.log(`Animating counter ${index + 1} to ${targetValue} with delay ${delay}ms`);
+          animateCounter(counter, targetValue);
+        }
+      }, delay);
+    });
+  }
+  
+  // Use Intersection Observer to trigger animations when stats section is visible
+  if (statsSection && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          console.log('Stats section visible, starting sequential animations');
+          startSequentialAnimations();
+          observer.unobserve(statsSection);
+        }
+      });
+    }, { threshold: 0.1 }); // Start when 10% visible
+    
+    observer.observe(statsSection);
+    console.log('Intersection Observer set up, waiting for stats section to be visible');
+  } else {
+    // Fallback if IntersectionObserver not supported or stats section not found
+    console.log('Using fallback animation trigger');
+    window.addEventListener('scroll', function scrollHandler() {
+      const rect = statsSection ? statsSection.getBoundingClientRect() : { top: 0, bottom: 0 };
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+      
+      if (isVisible) {
+        startSequentialAnimations();
+        window.removeEventListener('scroll', scrollHandler);
+      }
+    });
+  }
+});
+</script>
                         </div>
+                        
                         
                         <!-- Right Column - Scrollable Content -->
                         <div class="right-column">
@@ -93,9 +213,258 @@ layout: default
 
 <!-- Include custom CSS for two-column layout and styling -->
 <style>
+
+    .stats-heading {
+        margin-top: 0px !important;
+    }
+ .stat-bar-container {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.stat-value-display {
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #212836;
+}
+
+.stat-symbol {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5c6b82;
+  margin-left: 2px;
+}
+/* Add these styles to ensure the bars display properly */
+.stat-bar-wrapper {
+    width: 100%;
+    height: 12px;
+    background-color: #e8e8e8;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 8px;
+    position: relative;
+  }
+  
+  .stat-bar {
+    height: 12px;
+    width: 1px; /* Start with 1px instead of 0 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+  }
+  
+  /* Separate classes for different colors */
+  .stat-bar--growth {
+    background-color: #5b9aa0;
+  }
+  
+  .stat-bar--engagement {
+    background-color: #c38d9e;
+  }
+.impact-stats {
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+
+.stat-item {
+  &--detailed {
+    .stat-item__label {
+      margin-bottom: 0.5rem; 
+    }
+  }
+}
+
+.stat-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  
+  @media (max-width: 576px) {
+    gap: 0.25rem;
+  }
+}
+
+.stat-detail-item {
+  background: rgba(91, 154, 160, 0.1);
+  border-radius: 12px;
+  padding: 0.25rem 0.5rem;
+  color: #5c6b82;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  
+  strong {
+    color: #212836;
+    font-weight: 600;
+  }
+  
+  opacity: 0;
+  transform: translateY(5px);
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: calc(var(--index) * 0.1s + 0.5s);
+  
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      --index: #{$i};
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stat-item--detailed .stat-counter {
+  font-size: 2.25rem; 
+  height: 50px;
+}
+
+.stat-item {
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+.stats-card {
+  background: #fcfaf7;
+  border-radius: 12px;
+  padding: 2rem 0;
+  margin: 3rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  
+  &__title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #212836;
+    margin-bottom: 1.5rem;
+    position: relative;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      width: 3rem;
+      height: 3px;
+      background: linear-gradient(90deg, #e8a87c, #c38d9e);
+    }
+  }
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stat-item {
+  text-align: center;
+  
+  &__label {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0.5rem 0 0.25rem;
+    color: #212836;
+  }
+  
+  &__sublabel {
+    font-size: 0.825rem;
+    color: #5c6b82;
+    margin: 0;
+  }
+}
+
+
+.stat-counter {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #212836;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &__plus {
+    font-size: 1.5rem;
+    color: #5b9aa0;
+    margin-left: 0.25rem;
+  }
+  
+  &--with-avatars {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.avatar-grid {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  
+  &__item {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #5b9aa0;
+    border: 2px solid #fff;
+    margin: 0 -4px;
+    position: relative;
+    
+    &:nth-child(1) { background-color: #5b9aa0; z-index: 4; }
+    &:nth-child(2) { background-color: #6a8caf; z-index: 3; }
+    &:nth-child(3) { background-color: #c38d9e; z-index: 2; }
+  }
+  
+  &__more {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    border: 2px solid #fff;
+    margin: 0 -4px;
+    position: relative;
+    z-index: 1;
+    font-size: 0.75rem;
+    line-height: 20px;
+    text-align: center;
+    color: #5c6b82;
+  }
+}
     /* Wide layout styles */
     .site-content .inner {
-        max-width: 1140px; /* Wider to accommodate two columns */
+        max-width: 1140px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -115,14 +484,13 @@ layout: default
         position: sticky;
         top: 30px;
         align-self: flex-start;
-        max-height: calc(100vh - 60px);
-        overflow-y: auto;
     }
     
     /* Right column - scrollable content */
     .right-column {
         flex: 1;
         min-width: 0; /* Prevents content from overflowing */
+        padding-top: 0;
     }
     
     /* Quote Card */
@@ -134,8 +502,6 @@ layout: default
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         position: relative;
     }
-    
-   
     
     .quote-card blockquote {
         font-family: Georgia, serif;
@@ -149,7 +515,7 @@ layout: default
     
     /* Developer Education Section */
     .dev-education-section {
-        background-color: #0a1724;
+        background-color: #11273c;
         color: white;
         border-radius: 12px;
         padding: 20px;
@@ -207,34 +573,12 @@ layout: default
         margin: 0;
     }
     
-    /* Fix mobile text overflow */
-    .summary-header {
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        word-break: break-word;
-        hyphens: auto;
+    /* Make sure the featured content section is properly positioned */
+    .right-column > h2:first-child {
+        margin-top: 0;
     }
     
-    /* Ensure card fits within viewport */
-    .card {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        overflow: hidden;
-    }
-    
-    /* Featured content section */
-    .featured-content-section {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 40px 30px;
-        overflow: hidden;
-        background-color:rgba(17,45,104,0.25);
-        border-radius: 12px;
-        margin-bottom: 40px;
-    }
-    
-    /* Content cards grid layout */
+    /* Content cards for featured section */
     .content-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -242,17 +586,16 @@ layout: default
         margin-bottom: 30px;
     }
     
-    /* Card styling */
     .content-card {
         background-color: #f2e9d8;
         border-radius: 12px;
-        color: #333;
         padding: 20px;
         position: relative;
         height: 200px;
         display: flex;
         flex-direction: column;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
     }
     
     .content-card:hover {
@@ -265,6 +608,11 @@ layout: default
         font-weight: bold;
         color: #0a1724;
         margin: 0 0 15px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .card-description {
@@ -272,6 +620,11 @@ layout: default
         line-height: 1.5;
         color: #444;
         margin: 0 0 auto 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .card-type {
@@ -281,6 +634,9 @@ layout: default
         text-transform: uppercase;
         letter-spacing: 1px;
         margin-top: 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
     }
     
     .card-link {
@@ -302,17 +658,43 @@ layout: default
         font-size: 18px;
     }
     
-    /* Featured tag */
-    .featured-tag {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #d0b88c;
-        color: #0a1724;
-        font-size: 12px;
+    /* CTA Section */
+    .cta-section {
+        background-color: #f9f6f2;
+        border: 1px solid #e0d8c8;
+        border-left: 4px solid #141d80;
+        padding: 25px;
+        border-radius: 8px;
+        margin: 40px 0;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        text-align: center;
+    }
+    
+    .cta-title {
+        font-size: 1.25rem;
+        margin-bottom: 15px;
         font-weight: bold;
-        padding: 5px 10px;
-        border-radius: 0 0 8px 0;
+        color: #0a1724;
+    }
+    
+    .cta-text {
+        margin-bottom: 20px;
+        color: #444;
+    }
+    
+    .cta-button {
+        display: inline-block;
+        background-color: #141d80;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    .cta-button:hover {
+        background-color: #0a1255;
     }
     
     /* Responsive adjustments */
@@ -326,6 +708,7 @@ layout: default
             position: relative;
             top: 0;
             margin-bottom: 30px;
+            max-height: none;
         }
         
         .icon-cards-container {
@@ -342,17 +725,9 @@ layout: default
             grid-template-columns: 1fr;
         }
         
-        .featured-content-section {
-            padding: 30px 15px;
-        }
-        
         .content-card {
             height: auto;
             min-height: 180px;
-        }
-        
-        .card-title {
-            font-size: 16px;
         }
         
         .site-content .inner {
@@ -367,10 +742,11 @@ layout: default
         }
     }
     
-    /* Ensure text doesn't overflow */
     p, h1, h2, h3, h4, h5, h6, li {
         overflow-wrap: break-word;
         word-wrap: break-word;
         word-break: break-word;
+        hyphens: auto;
     }
+
 </style>
