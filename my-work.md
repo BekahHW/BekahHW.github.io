@@ -1,11 +1,91 @@
 ---
-layout: page
+layout: two-column
 title: "Connecting Devs, Docs, & DX: My Work"
 featured_image: /assets/images/pages/THAT_keynote.jpg
 ---
 
->  “I believe every developer can teach and that every piece of content should make someone feel more confident.”
 
+<!-- Featured Content Section -->
+    
+<h2>FEATURED CONTENT</h2>
+
+<section class="featured-content-section">
+  <div class="container">
+
+<!-- Static Content Cards Grid -->
+<div class="content-cards">
+  <!-- Card 1 -->
+  <div class="content-card">
+    <h3 class="card-title">Every GitHub Repository Should Be A Dataset</h3>
+    <p class="card-description">
+Learn how turning repositories into smart datasets could supercharge organizations    </p>
+    <div class="card-type">BLOG POST</div>
+    <a href="https://opensauced.pizza/blog/github-repos-as-datasets" target="_blank" class="card-link" aria-label="Read more about Developer Journey Mapping">
+      <span class="arrow-icon">→</span>
+    </a>
+  </div>
+  
+  <!-- Card 2 -->
+  <div class="content-card">
+    <h3 class="card-title">Content Strategy for Startups: Storytelling as a Growth Driver</h3>
+    <p class="card-description">
+      Understand and optimize content for your team.
+    </p>
+    <div class="card-type">FRAMEWORK</div>
+    <a href="https://bekahhw.com/startup-content-strategy" target="_blank" class="card-link" aria-label="Read more about Storytelling-Driven Content">
+      <span class="arrow-icon">→</span>
+    </a>
+  </div>
+  <!-- Card 3 -->
+  <div class="content-card">
+    <h3 class="card-title">The Power of Storytelling</h3>
+    <p class="card-description">
+     Human stories in a digital world.
+    </p>
+    <div class="card-type">KEYNOTE</div>
+    <a href="https://www.youtube.com/live/Dcz0dOQmcaE?si=iy-cVE_51kBmrALF" target="_blank" class="card-link" aria-label="Watch the video">
+      <span class="arrow-icon">→</span>
+    </a>
+  </div>
+  
+  <!-- Card 4  -->
+  <div class="content-card">
+    <h3 class="card-title">Open Source Education</h3>
+    <p class="card-description">
+    Empowering Your Open Source Journey: From First Contribution to Project Leadership
+    </p>
+    <div class="card-type">COURSES</div>
+    <a href="https://opensauced.pizza/learn" target="_blank" class="card-link" aria-label="Take a course">
+      <span class="arrow-icon">→</span>
+    </a>
+  </div>
+  
+  <!-- Card 5 -->
+  <div class="content-card">
+    <h3 class="card-title">"Lunch" Week</h3>
+    <p class="card-description">
+     Drove campaign to increase awareness, drive engagement, and build community.
+    </p>
+    <div class="card-type">LAUNCH CAMPAIGN</div>
+    <a href="https://opensauced.pizza/lunchweek" target="_blank" class="card-link" aria-label="See our launch week">
+      <span class="arrow-icon">→</span>
+    </a>
+  </div>
+  
+  <!-- Card 6 -->
+  <div class="content-card">
+    <h3 class="card-title">The Silent Crisis in Open Source: When Maintainers Walk Away</h3>
+    <p class="card-description">
+The departure of a key maintainer can have far-reaching implications    </p>
+    <div class="card-type">BLOG</div>
+    <a href="https://opensauced.pizza/blog/when-open-source-maintainers-leave" target="_blank" class="card-link" aria-label="Read more about when maintainers leave a project.">
+      <span class="arrow-icon">→</span>
+    </a>
+  </div>
+</div>
+
+  </div>
+</section>
 <!-- Developer Experience Card -->
 <details class="card">
   <summary>
@@ -31,95 +111,6 @@ featured_image: /assets/images/pages/THAT_keynote.jpg
 </details>
 
 
-<!-- Featured Content Section -->
-<section class="featured-content-section">
-  <div class="container">
-    <h2 class="section-title">FEATURED CONTENT</h2>
-    <p class="section-description">
-      Curated resources, talks, and case studies that highlight my experience and approach to developer relations.
-    </p>
-    
-<!-- Category Tabs -->
-<div class="category-tabs">
-  <button class="category-tab active" data-category="strategy">STRATEGY</button>
-  <button class="category-tab" data-category="education">EDUCATION</button>
-  <button class="category-tab" data-category="open-source">OPEN SOURCE</button>
-  <button class="category-tab" data-category="community">COMMUNITY</button>
-</div>
-
-<!-- Content Cards -->
-<div class="content-cards">
-  <!-- Card 1 -->
-  <div class="content-card" data-category="strategy">
-    <h3 class="card-title">Developer Journey Mapping</h3>
-    <p class="card-description">
-      A framework for understanding and optimizing the complete developer experience.
-    </p>
-    <div class="card-type">CASE STUDY</div>
-    <a href="#" class="card-link" aria-label="Read more about Developer Journey Mapping">
-      <span class="arrow-icon">→</span>
-    </a>
-  </div>
-  
-  <!-- Card 2 -->
-  <div class="content-card" data-category="strategy">
-    <h3 class="card-title">Metrics-Driven Content</h3>
-    <p class="card-description">
-      Establishing frameworks to measure content effectiveness and developer satisfaction.
-    </p>
-    <div class="card-type">PRESENTATION</div>
-    <a href="#" class="card-link" aria-label="Read more about Metrics-Driven Content">
-      <span class="arrow-icon">→</span>
-    </a>
-  </div>
-  
-  <!-- Card 3 -->
-  <div class="content-card" data-category="strategy">
-    <h3 class="card-title">Campaign Leadership</h3>
-    <p class="card-description">
-      Launching successful initiatives like Open Source Contributor Rating and Dev Cards.
-    </p>
-    <div class="card-type">PROJECT</div>
-    <a href="#" class="card-link" aria-label="Read more about Campaign Leadership">
-      <span class="arrow-icon">→</span>
-    </a>
-  </div>
-  
-  <!-- Card 4 - Featured -->
-  <div class="content-card featured" data-category="strategy">
-    <div class="featured-tag">FEATURED</div>
-    <h3 class="card-title">Audience-Specific Drip Campaigns</h3>
-    <p class="card-description">
-      Creating targeted sequences for different developer personas and adoption stages.
-    </p>
-    <div class="card-badge">DR</div>
-    <a href="#" class="card-link" aria-label="Read more about Audience-Specific Drip Campaigns">
-      <span class="arrow-icon">→</span>
-    </a>
-  </div>
-  
-  <!-- Education Cards (hidden by default) -->
-  <div class="content-card" data-category="education" style="display: none;">
-    <h3 class="card-title">Technical Writing Workshops</h3>
-    <p class="card-description">
-      Teaching developers how to create clear, empathetic documentation and technical content.
-    </p>
-    <div class="card-type">WORKSHOP</div>
-    <a href="#" class="card-link" aria-label="Read more about Technical Writing Workshops">
-      <span class="arrow-icon">→</span>
-    </a>
-  </div>
-  
-  <!-- Add more cards for other categories... -->
-  
-</div>
-
-<!-- View All Button -->
-<div class="view-all-container">
-  <a href="#" class="view-all-button">VIEW ALL</a>
-</div>
-  </div>
-</section>
 
 <!-- Developer Education Card -->
 <details class="card">
@@ -198,51 +189,3 @@ Focus on building contributor ladders, improving onboarding, and identifying pai
   </ul>
 </details>
 
-
-<!-- Key Blog Posts Card -->
-<details class="card">
-  <summary>
-    <h3>Key Blog Posts & Talks</h3>
-    <div class="summary-header">
-      Articles, guides, and presentations that showcase expertise in open source, developer experience, documentation, and community building.
-    </div>
-    <div class="summary-footer">
-        <span class="card-arrow" aria-hidden="true"></span>
-    </div>
-  </summary>
-    <p><strong>Thought Leadership</strong></p>
-      <ul>
-    <li><a href="https://opensauced.pizza/blog/github-repos-as-datasets" target="_blank">"Every GitHub Repository Should Be A Dataset"</a></li>
-    <li><a href="https://opensauced.pizza/blog/when-open-source-maintainers-leave" target="_blank">"The Silent Crisis in Open Source: When Maintainers Walk Away"</a></li>
-    <li><a href="https://opensauced.pizza/blog/the-need-for-recognition-in-open-source" target="_blank">"The Need for Recognition in Open Source"</a></li>
-    <li><a href="https://opensauced.pizza/blog/security-and-SBOMs" target="_blank">"Maximizing Software Security: The Benefits of Tracking SBOMs in Your Projects"</a></li>
-    <li><a href="https://opensauced.pizza/blog/tech-knowledge-debt" target="_blank">"The Problem of Knowledge Debt in Tech"</a></li></ul>
-
-  <p><strong>Open Source Guides</strong></p>
-  <ul>
-    <li><a href="https://opensauced.pizza/docs/community-resources/how-to-find-open-source-projects-to-contribute-to/" target="_blank">"How to Find Open Source Projects to Contribute To"</a></li>
-    <li><a href="https://opensauced.pizza/docs/community-resources/how-to-assess-your-skill-level-before-contributing-to-open-source/" target="_blank">"Assessing Your Skill Level Before Contributing"</a></li>
-    <li><a href="https://opensauced.pizza/docs/community-resources/100-days-of-oss-challenge/" target="_blank">"The Unexpected Power of 100 Days in Open Source"</a></li>
-  </ul>
-  
-  <p><strong>DevRel Strategy & Storytelling</strong></p>
-  <ul>
-    <li><a href="https://bekahhw.com/Creating-Content-Developers-Love" target="_blank">"Creating Content Developers Love: A Guide to Developer Experience (DX) Content"</a></li>
-    <li><a href="https://bekahhw.com/startup-content-strategy" target="_blank">"Content Strategy for Startups: Storytelling as a Growth Driver"</a></li>
-    <li><a href="https://www.youtube.com/live/Dcz0dOQmcaE?si=iy-cVE_51kBmrALF" target="_blank">"The Power of Storytelling" (Keynote)</a></li>
-  </ul>
-  
-  <p><strong>Documentation & DX Content</strong></p>
-  <ul>
-    <li><a href="https://bekahhw.com/common-dev-content-pitfalls" target="_blank">"The 7 Deadly Sins of Developer Documentation"</a></li>
-    <li><a href="https://bekahhw.com/developer-content-metrics" target="_blank">"Measuring the Impact of Developer Content: Metrics That Matter"</a></li>
-    <li><a href="https://opensauced.pizza/docs/community-resources/role-of-documentation-in-oss/" target="_blank">"The Role of Documentation in Open Source Success"</a></li>
-  </ul>
-  
-  <p><strong>Community & Career</strong></p>
-  <ul>
-    <li><a href="https://opensauced.pizza/blog/you-don%E2%80%99t-need-a-mentor" target="_blank">"You Don't Need a Mentor: Embracing the Power of Community"</a></li>
-    <li><a href="https://virtualcoffee.io/podcast" target="_blank">Virtual Coffee Podcast</a></li>
-    <li><a href="https://opensauced.pizza/blog/open-source-community" target="_blank">"Cultivating Open Source Community"</a></li>
-  </ul>
-</details> 
