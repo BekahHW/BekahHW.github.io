@@ -54,8 +54,10 @@
         <div class="cover-content">
           <div class="inner">
             <h2 class="hero-title">{{ site.greetings }}</h2>
-            <p class="hero-text">{{ site.description }}</p>
-            
+            <!-- <p class="hero-text">{{ site.description }}</p> -->
+          <div class="hero-cta">
+  {{ site.hero_description_html }}
+</div>
             <a href="#" class="arrow-down">
               <span class="screen-reader-text">Scroll Down</span>
             </a>
@@ -103,7 +105,10 @@
         <!-- .cover-content -->
       </div>
       <!-- .cover -->
-      {% endif %} {% endif %} {{ content }} {% if paginator.total_posts >
+      {% endif %} {% endif %}
+     
+      
+      {{ content }} {% if paginator.total_posts >
       site.paginate %} {% if page.class == 'tag-template' %} {% include
       tag-pagination.html %} {% endif %} {% endif %} {% include sidebar.html %}
       {% include footer.html %}
