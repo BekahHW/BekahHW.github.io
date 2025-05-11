@@ -8,6 +8,8 @@
  * ----------------------------------------------------------------------------
  */
 
+ 
+
 .cover {
 	background-color: $black;
 	display: table;
@@ -381,13 +383,24 @@
 	position: absolute;
 	width: 80px;
 }
+.hero-cta {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 45px;
+  color: white;
+  font-family: $font-secondary;
 
-.hero-text {
-	color: $gray-lighter;
-	font-size: 14px;
-	letter-spacing: 2px;
-	margin-bottom: 45px;
-	text-transform: uppercase;
+
+  a {
+    color: #d39028;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: #d0b88c;
+    }
+  }
 }
 
 /* Tag, Author archives */

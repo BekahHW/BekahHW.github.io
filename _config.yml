@@ -1,15 +1,17 @@
 # Site setings
 name: "BekahHW"
-description: "Code. Community. Feelings. It's all here."
+description: "Code. Community. Content."
+hero_description_html: "<p>I help teams level up their developer experience, content strategy, and community.
+    <br /> <a href='/contact'>Let’s connect →</a></p>"
 # meta_description: "Jekyll template, minimal style, perfect for bloggers."
-greetings: "Hello! I'm BekahHW, a developer & community creator."
+greetings: "Hello! I'm BekahHW."
 logo:
 favicon: "assets/images/favicon.ico"
 baseurl: 
 production_url: https://bekahhw.com/
 # disqus: "justgoodthemes"
 mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
-cover_image: covers/cover.svg
+cover_image: pages/THAT_keynote.jpg
 # Add your GA Tracking Id
 ga_analytics:
 

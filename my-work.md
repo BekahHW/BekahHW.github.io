@@ -1,7 +1,7 @@
 ---
 layout: two-column
 title: "Connecting Devs, Docs, & DX: My Work"
-featured_image: /assets/images/pages/THAT_keynote.jpg
+featured_image: /assets/images/pages/BHW_speaker.jpeg
 ---
 
 <!-- Featured Content Section -->
