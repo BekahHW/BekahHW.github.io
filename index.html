@@ -5,6 +5,33 @@ title: Home
 
 <!-- Posts Index -->
 <main class="site-main">
+    <main class="site-main">
+  <div class="site-content">
+
+    <!-- CTA BLOCK -->
+    <section class="home-cta inner">
+      <h2 class="cta-title">Let’s Work Together</h2>
+      <p class="cta-text">
+        I help open source orgs and dev teams level up their developer experience, content strategy, and community engagement.
+        <br />
+        <a href="/contact" class="cta-button">Get in Touch →</a>
+      </p>
+    </section>
+    <!-- END CTA BLOCK -->
+<!-- Section Divider & Blog Heading -->
+<div class="blog-divider inner">
+  <hr class="gold-line" />
+  <h2 class="handwritten-heading">Latest Posts</h2>
+</div>
+    <div class="post-list inner">
+      {% for post in paginator.posts %}
+      {% include postbox.html %}
+      {% endfor %}
+    </div><!-- .post-list -->
+
+    {% include pagination.html %}
+  </div>
+</main>
     <div class="site-content">
         <div class="post-list inner">
             {% for post in paginator.posts %}
