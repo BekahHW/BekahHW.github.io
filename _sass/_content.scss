@@ -11,7 +11,7 @@
 .cover {
 	background-color: $black;
 	display: table;
-	height: 100vh;
+	height: 75vh;
 	margin-bottom: 90px;
 	position: relative;
 	width: 100%;
@@ -1000,8 +1000,13 @@
 	}
 }
 
-/* Ensure the page uses the full width available */
-html, body {
-	overflow-x: hidden;
-	width: 100%;
-}
+
+
+  .handwritten-heading {
+    font-family: 'Playfair Display', Georgia, serif; // Or a cursive font you prefer
+    font-size: 40px;
+    color: #141d80;
+    font-style: italic;
+    margin-bottom: 10px;
+	border-bottom: #0a1255;
+  }
