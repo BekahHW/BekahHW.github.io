@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Which Code Assistant Actually Helps Developers Grow? Part 2"
+title: "AI Code Assistants Fix Real Codebase Problems: Mobile Nav Edition"
 author: Bekah
 date: 2025-06-30
 ---
