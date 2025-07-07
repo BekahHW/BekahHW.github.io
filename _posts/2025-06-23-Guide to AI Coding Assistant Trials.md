@@ -2,6 +2,7 @@
 layout: post
 title: "Test Drive Before You Buy: Your Guide to AI Code Assistant Trials in 2025"
 author: Bekah
+description: "I'm exploring the trial options for five AI coding assistants to find the best fit for my development workflow."
 date: 2025-06-23
 ---
 
