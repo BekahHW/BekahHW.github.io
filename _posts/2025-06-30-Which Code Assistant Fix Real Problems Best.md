@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor"
+description: "I tested three AI coding assistants on debugging a mobile navigation issue in an Astro + Tailwind site. Continue provided the best explanations, Cursor was fast but made assumptions, and Copilot was quick but error-prone."
 author: Bekah
 date: 2025-06-30
 ---
