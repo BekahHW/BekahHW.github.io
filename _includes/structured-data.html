@@ -1,0 +1,68 @@
+{% if page.layout == 'post' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | escape }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.data.authors[page.author].name | default: page.author | default: 'BekahHW' }}",
+    "url": "{{ site.production_url }}/about"
+  },
+  "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
+  "dateModified": "{{ page.date | date: "%Y-%m-%d" }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | truncate: 160 | escape }}",
+  "url": "{{ site.production_url }}{{ page.url }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.production_url }}{{ page.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.production_url }}/assets/images/logo.png"
+    }
+  },
+  "keywords": "{{ page.tags | join: ', ' }}{% if page.categories %}, {{ page.categories | join: ', ' }}{% endif %}",
+  "articleSection": "{{ page.categories | first | default: 'Technology' }}",
+  "wordCount": "{{ page.content | number_of_words }}",
+  "about": [
+    {% if page.tags %}
+    {% for tag in page.tags %}
+    {
+      "@type": "Thing",
+      "name": "{{ tag }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    {% endif %}
+  ]
+}
+</script>
+{% endif %}
+
+{% if page.layout == 'page' or page.layout == 'default' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "{{ page.title | default: site.name }}",
+  "description": "{{ page.description | default: site.description | escape }}",
+  "url": "{{ site.production_url }}{{ page.url }}",
+  "author": {
+    "@type": "Person",
+    "name": "BekahHW",
+    "url": "{{ site.production_url }}/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.production_url }}/assets/images/logo.png"
+    }
+  }
+}
+</script>
+{% endif %}
