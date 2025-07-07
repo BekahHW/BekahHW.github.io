@@ -4,6 +4,8 @@ title: "Which Code Assistant Actually Helps Developers Grow?"
 author: Bekah
 description: "I tested three AI coding assistants on building a new feature in an Astro + Tailwind site. Continue provided the best explanations, Copilot was fast but passive, and Cursor was interactive but made assumptions."
 date: 2025-06-27
+tags: [AI]
+
 ---
 
 Over the past year, we’ve had a ton of conversations at [Virtual Coffee](http://virtualcoffee.io/) about AI. If you’ve opened up X or LinkedIn, you probably realize that people have very strong opinions about AI. At Virtual Coffee, we’re a pretty close-knit community, so there are a lot of concerns about the impacts of AI, how junior developers grow (or stay stagnant) with AI, whether or not to adopt it as a team, and whether to use it without telling your boss. At the heart of a lot of these conversations is the feeling that you’re somehow “cheating” if you use AI, and that you won’t learn or grow if you’re using it. I think the sentiment comes from the right place, caring about people, but I think there are a lot of options and approaches you can take to prevent that. I believe that when we consider the evolving landscape in tech, we also need to think about the changing landscape of tech education. Most of us will end up using AI in our workflow, either out of necessity or because our team mandates it. That’s why I also think that AI coding assistants actually have the ability to help everyone grow in ways they couldn’t before.
