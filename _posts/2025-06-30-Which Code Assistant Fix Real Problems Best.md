@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI Code Assistants Fix Real Codebase Problems: Mobile Nav Edition"
+title: "Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor"
 author: Bekah
 date: 2025-06-30
 ---
@@ -9,7 +9,7 @@ date: 2025-06-30
 
 Last week, I [tested three AI coding assistants on building a new feature](https://bekahhw.com/Which-Code-Assistant-Helps-Developers-Grow). This time, I wanted to see how they handle something most developers deal with daily: debugging existing code problems.
 
-I inherited a mobile navigation issue on my writing site. The navbar wasn't responsive, leaving a ton of white space on mobile screens and making it a less-than-desirable experience. Instead of a full navigation bar cramming into mobile view, I needed a proper hamburger menu.
+I was debugging a mobile responsiveness issue on my Astro + Tailwind site (see the [GitHub Project here](https://github.com/BekahHW/siblings-write/)). The navbar wasn’t collapsing on mobile, causing layout issues. Instead of a full navigation bar cramming into mobile view, I needed a proper hamburger menu. Instead of manually rewriting it, I tested how three AI code assistants—Continue, Copilot, and Cursor—would solve it.
 
 
 ![gif showing the responsive layout issue on mobile is fixed when deleting the nav bar](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/240b8dcxjht9ly0hg9v1.gif)
@@ -19,13 +19,13 @@ Here's what I told each assistant:
 
 > "There's an issue with mobile view on the site. I think the main problem is with the navbar. But I don't think it makes sense to have a nav bar for a mobile site. We should make the site responsive and add a sticky nav bar with a hamburger menu instead of the full navigation bar once the site hits mobile-sized screens."
 
-Here's how Continue, GitHub Copilot, and Cursor handled this real-world debugging scenario.
+**TL;DR**: I tested Continue, GitHub Copilot, and Cursor to debug a broken mobile navbar in an Astro-based site. Continue offered the best explanations and teaching moments, Cursor was fast but made extra assumptions, and Copilot was fast but error-prone. If you’re debugging UI bugs, Continue’s Chat mode helps you understand why things break, not just how to fix them.
 
-## Continue: Permission-Driven and Educational 
+## Can Continue Debug a Responsive Nav Issue in Astro? 
 
 I used [Continue](https://continue.dev/) in [Agent mode](https://docs.continue.dev/agent/how-to-use-it), giving it context from `Header.astro`, `Nav.astro`, and `BaseLayout.astro`.
 
-![Overview and initial response from Continue outlining what needs to be done](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bg21110n6vfs19es00l5.png)
+![Continue.dev suggesting hamburger menu fixes in Astro project](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bg21110n6vfs19es00l5.png)
 
 ### The Good
 
@@ -43,9 +43,9 @@ When I tested the same fix using Continue's [Chat mode](https://docs.continue.de
 
 Continue balances efficiency with learning. Agent mode got me working code fast, while Chat mode taught me the "why" behind the solutions.
  
-![summary of the changes it made](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9ss3rdoqhm59mkjjqxbl.png)
+![Copilot output showing approach to fixing broken layout with overlapping nav menu](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9ss3rdoqhm59mkjjqxbl.png)
 
-## GitHub Copilot: Fast & (a bit) Frustrating
+## How Copilot Handles Responsive Navbar Bugs
 
 Copilot started by unnecessarily converting a Svelte component, then immediately threw a TypeScript error:
 `Argument of type 'EventTarget' is not assignable to parameter of type 'Node'`
@@ -72,7 +72,7 @@ It was to the point where I definitely could fix this faster than having a back-
 
 **Learning Value**: Minimal. Copilot told me what it was doing, but didn't really explain its approach or help me understand the underlying problem.
 
-## Cursor: Comprehensive but Presumptuous
+## Cursor Fixes More Than You Ask—Helpful or Harmful?
 
 Cursor's response was immediate and organized:
 
