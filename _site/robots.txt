@@ -1,0 +1,15 @@
+# Robots.txt file for the BekahHW website
+
+# Directives
+User-agent: *
+
+# Allow crawling of all content
+Allow: /
+
+# Disallow crawling of admin pages or system files if required
+# Example:
+# Disallow: /admin/
+# Disallow: /login/
+
+# Sitemap location
+Sitemap: http://localhost:4000/sitemap.xml
