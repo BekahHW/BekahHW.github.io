@@ -7,6 +7,651 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor</title>
+        <description>&lt;p&gt;&lt;em&gt;A follow-up to “Which Code Assistant Actually Helps Developers Grow?” This time, testing how AI assistants handle debugging existing code problems.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Last week, I &lt;a href=&quot;https://bekahhw.com/Which-Code-Assistant-Helps-Developers-Grow&quot;&gt;tested three AI coding assistants on building a new feature&lt;/a&gt;. This time, I wanted to see how they handle something most developers deal with daily: debugging existing code problems.&lt;/p&gt;
+
+&lt;p&gt;I was debugging a mobile responsiveness issue on my Astro + Tailwind site (see the &lt;a href=&quot;https://github.com/BekahHW/siblings-write/&quot;&gt;GitHub Project here&lt;/a&gt;). The navbar wasn’t collapsing on mobile, causing layout issues. Instead of a full navigation bar cramming into mobile view, I needed a proper hamburger menu. Instead of manually rewriting it, I tested how three AI code assistants—Continue, Copilot, and Cursor—would solve it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/240b8dcxjht9ly0hg9v1.gif&quot; alt=&quot;gif showing the responsive layout issue on mobile is fixed when deleting the nav bar&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s what I told each assistant:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“There’s an issue with mobile view on the site. I think the main problem is with the navbar. But I don’t think it makes sense to have a nav bar for a mobile site. We should make the site responsive and add a sticky nav bar with a hamburger menu instead of the full navigation bar once the site hits mobile-sized screens.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: I tested Continue, GitHub Copilot, and Cursor to debug a broken mobile navbar in an Astro-based site. Continue offered the best explanations and teaching moments, Cursor was fast but made extra assumptions, and Copilot was fast but error-prone. If you’re debugging UI bugs, Continue’s Chat mode helps you understand why things break, not just how to fix them.&lt;/p&gt;
+
+&lt;h2 id=&quot;can-continue-debug-a-responsive-nav-issue-in-astro&quot;&gt;Can Continue Debug a Responsive Nav Issue in Astro?&lt;/h2&gt;
+
+&lt;p&gt;I used &lt;a href=&quot;https://continue.dev/&quot;&gt;Continue&lt;/a&gt; in &lt;a href=&quot;https://docs.continue.dev/agent/how-to-use-it&quot;&gt;Agent mode&lt;/a&gt;, giving it context from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Header.astro&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Nav.astro&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BaseLayout.astro&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bg21110n6vfs19es00l5.png&quot; alt=&quot;Continue.dev suggesting hamburger menu fixes in Astro project&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-good&quot;&gt;The Good&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Created a dedicated hamburger menu component&lt;/li&gt;
+  &lt;li&gt;Asked for permission between file changes&lt;/li&gt;
+  &lt;li&gt;When I got a transparency issue with the menu panel, it fixed it in one go&lt;/li&gt;
+  &lt;li&gt;It added comments to understand the steps it was taking in the code and debug logs in the code to help me see what was working and when&lt;/li&gt;
+  &lt;li&gt;Everything worked within 12 minutes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;the-learning-experience&quot;&gt;The Learning Experience&lt;/h3&gt;
+
+&lt;p&gt;When I tested the same fix using Continue’s &lt;a href=&quot;https://docs.continue.dev/chat/how-to-use-it&quot;&gt;Chat mode&lt;/a&gt; instead of Agent mode, it took longer but provided much more thorough explanations. The conversation was more educational, walking me through the reasoning behind each change.&lt;/p&gt;
+
+&lt;h3 id=&quot;verdict&quot;&gt;Verdict&lt;/h3&gt;
+
+&lt;p&gt;Continue balances efficiency with learning. Agent mode got me working code fast, while Chat mode taught me the “why” behind the solutions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9ss3rdoqhm59mkjjqxbl.png&quot; alt=&quot;Copilot output showing approach to fixing broken layout with overlapping nav menu&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-copilot-handles-responsive-navbar-bugs&quot;&gt;How Copilot Handles Responsive Navbar Bugs&lt;/h2&gt;
+
+&lt;p&gt;Copilot started by unnecessarily converting a Svelte component, then immediately threw a TypeScript error:
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Argument of type 'EventTarget' is not assignable to parameter of type 'Node'&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m not sure why it decided that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ThemeToggleButton&lt;/code&gt; needed to be converted. At the very least, that’s outside of the scope of this PR, in my opinion.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fi883ls0s34e83ux1zra.png&quot; alt=&quot;Image description&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It was able to solve the problem pretty quickly when I used the “Fix with Copilot” function, explaining, “You should cast e.target to Node when passing it to .contains() to resolve the type error.”&lt;/p&gt;
+
+&lt;h3 id=&quot;the-real-problem&quot;&gt;The Real Problem&lt;/h3&gt;
+
+&lt;p&gt;The hamburger menu initially didn’t appear at all. The responsiveness was “fixed” because the navigation disappeared, but users couldn’t access any menu items.&lt;/p&gt;
+
+&lt;p&gt;After back-and-forth debugging, Copilot resorted to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!important&lt;/code&gt; declarations (not ideal) and the old “turn the background red” debugging trick. Even when the menu became visible, clicking it did nothing.&lt;/p&gt;
+
+&lt;p&gt;Eventually, we identified JavaScript as the culprit. Copilot fixed it, but then the menu links appeared directly over the page content without any background container. More back-and-forth with questionable styling decisions followed.&lt;/p&gt;
+
+&lt;p&gt;It was to the point where I definitely could fix this faster than having a back-and-forth with Copilot, so I called it. After that, I also realized there was a bug where, after expanding the hamburger menu on mobile and then switching to desktop view, the mobile menu remained open on top of the restored navigation bar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tvvd7pmfl9gm2usc0k1w.png&quot; alt=&quot;nav panel on top of page text&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time&lt;/strong&gt;: About 20 minutes, with me ultimately fixing the styles myself.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Learning Value&lt;/strong&gt;: Minimal. Copilot told me what it was doing, but didn’t really explain its approach or help me understand the underlying problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;cursor-fixes-more-than-you-askhelpful-or-harmful&quot;&gt;Cursor Fixes More Than You Ask—Helpful or Harmful?&lt;/h2&gt;
+
+&lt;p&gt;Cursor’s response was immediate and organized:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7vx5vt6fdw9b2utz4gre.png&quot; alt=&quot;Cursor's initial message detailing what needed to be done to implement the hamburger menu&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-process&quot;&gt;The Process&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Automatically read the global CSS&lt;/li&gt;
+  &lt;li&gt;Outlined exactly what needed to change and why&lt;/li&gt;
+  &lt;li&gt;Provided all necessary file updates&lt;/li&gt;
+  &lt;li&gt;Hit the same cross-page JavaScript issue as Copilot&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;the-interesting-part&quot;&gt;The Interesting Part&lt;/h3&gt;
+
+&lt;p&gt;Cursor went beyond my request, automatically improving mobile styles across the site that I hadn’t asked for. This raises an interesting question: should AI assistants make assumptions about what you “really” need?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time&lt;/strong&gt;: About 15 minutes to complete.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Learning Value&lt;/strong&gt;: Good explanations of changes. I appreciate that it gives more information on why errors were happening in the context of using Astro.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vsk81fkbeau7jkmdtafh.png&quot; alt=&quot;showing the issue and how it understands and corrects it&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;context-switching-costs&quot;&gt;Context Switching Costs&lt;/h2&gt;
+
+&lt;p&gt;Here’s something I noticed that none of the assistants addressed: familiarity bias. Cursor and GitHub Copilot felt nearly identical to use, so I moved faster with them. Continue required slightly more of a learning curve, which actually slowed me down initially but provided better educational value.&lt;/p&gt;
+
+&lt;p&gt;This isn’t a knock against Continue. It’s a reminder that switching tools comes with costs, even when the new tool might be better in the long term.&lt;/p&gt;
+
+&lt;h2 id=&quot;debugging-vs-building-different-skills-required&quot;&gt;Debugging vs. Building: Different Skills Required&lt;/h2&gt;
+
+&lt;p&gt;This debugging scenario revealed something my first test missed, that building new features and fixing existing problems require different AI assistance approaches.&lt;/p&gt;
+
+&lt;h3 id=&quot;building-new-features&quot;&gt;Building New Features&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Clear requirements&lt;/li&gt;
+  &lt;li&gt;Blank slate approach&lt;/li&gt;
+  &lt;li&gt;Focus on “what should this do?”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;debugging-existing-code&quot;&gt;Debugging Existing Code&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understanding legacy decisions&lt;/li&gt;
+  &lt;li&gt;Identifying root causes&lt;/li&gt;
+  &lt;li&gt;Focusing on “why isn’t this working?”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Continue did well with the debugging mindset, asking permission before changes and explaining the reasoning. Copilot and Cursor were more aggressive about “fixing” things, sometimes creating new problems in the process.&lt;/p&gt;
+
+&lt;h3 id=&quot;which-ai-coding-assistant-wins-for-debugging&quot;&gt;Which AI Coding Assistant Wins for Debugging?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;For Learning&lt;/strong&gt;: Continue, especially in Chat mode. It helped me understand not just what was broken, but why the original approach failed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For Speed&lt;/strong&gt;: Cursor, if you don’t mind AI making assumptions about improvements you didn’t request.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-bigger-picture&quot;&gt;The Bigger Picture&lt;/h2&gt;
+
+&lt;p&gt;This comparison reinforced something I mentioned in my first post: the tool is only part of the equation. Each assistant performed differently not just because of their capabilities, but because of how they approached the problem-solving process.&lt;/p&gt;
+
+&lt;p&gt;Continue treated debugging as a learning opportunity. Copilot treated it as a code completion task. Cursor treated it as a comprehensive redesign project.&lt;/p&gt;
+
+&lt;p&gt;If you want to know which coding assistant helps developers grow when you’re debugging, try this: Before asking for a fix, ask the AI to help you understand why the original code failed. The debugging skills you develop will be more valuable than any individual fix.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 30 Jun 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Which-Code-Assistant-Fix-Real-Problems-Best</link>
+        <guid isPermaLink="true">http://localhost:4000/Which-Code-Assistant-Fix-Real-Problems-Best</guid>
+        
+      </item>
+    
+      <item>
+        <title>Which Code Assistant Actually Helps Developers Grow?</title>
+        <description>&lt;p&gt;Over the past year, we’ve had a ton of conversations at &lt;a href=&quot;http://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt; about AI. If you’ve opened up X or LinkedIn, you probably realize that people have very strong opinions about AI. At Virtual Coffee, we’re a pretty close-knit community, so there are a lot of concerns about the impacts of AI, how junior developers grow (or stay stagnant) with AI, whether or not to adopt it as a team, and whether to use it without telling your boss. At the heart of a lot of these conversations is the feeling that you’re somehow “cheating” if you use AI, and that you won’t learn or grow if you’re using it. I think the sentiment comes from the right place, caring about people, but I think there are a lot of options and approaches you can take to prevent that. I believe that when we consider the evolving landscape in tech, we also need to think about the changing landscape of tech education. Most of us will end up using AI in our workflow, either out of necessity or because our team mandates it. That’s why I also think that AI coding assistants actually have the ability to help everyone grow in ways they couldn’t before.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://x.com/ykdojo/status/1932149031196856738&quot;&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6unkesc921s6jw892qz6.png&quot; alt=&quot;ykdogo tweet&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;learning-vs-speed-trap&quot;&gt;Learning vs. Speed Trap&lt;/h2&gt;
+
+&lt;p&gt;Your approach to learning with AI assistants definitely matters. And not all AI coding assistants will help increase developers’ coding skills. Learning about the code you’re writing, how your team approaches problems, and how to utilize AI as part of your workflow is necessary to grow in tech. Teams don’t need someone who can prompt their way to a working solution but can’t debug it when it breaks. Most AI coding assistants are optimized for speed and not for learning. They’re designed to get you from problem to solution as quickly as possible. If your goal is skill development, you should think of AI adoption more like onboarding a mentor, rather than replacing you.&lt;/p&gt;
+
+&lt;h2 id=&quot;context-aware-guidance&quot;&gt;Context-Aware Guidance&lt;/h2&gt;
+
+&lt;p&gt;The most effective learning-focused assistants should understand what you’re trying to do and what you should learn from doing it. They highlight patterns, point out potential issues, and suggest alternative approaches that might teach you something new.&lt;/p&gt;
+
+&lt;p&gt;Today, I’m testing out a couple of AI coding assistants on a new feature. (I’m interested in doing a follow-up post that uses it on an existing file. Let me know if that’s something you’d like to see!)  I tested out each coding assistant on a new feature I’m adding to my &lt;a href=&quot;https://www.siblingswrite.com/&quot;&gt;writing site&lt;/a&gt;, with this simple prompt:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I want to create a game for this site, where people (not logged in) can add a word to a story. Once the story hits 300 words, it locks the submission. No one should be able to submit more than 3 words in a row.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here are my takeaways for Continue, GitHub Copilot, and Cursor. I gave the same initial prompt for each of them.&lt;/p&gt;
+
+&lt;h3 id=&quot;continue&quot;&gt;Continue&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://continue.dev/&quot;&gt;Continue&lt;/a&gt; stands out here because their philosophy explicitly addresses the learning problem. Their documentation talks about “amplifying intent” rather than replacing it, and they specifically warn against becoming a “human clipboard.” You can explore ideas through “vibe coding” during creative phases, but when it comes to production work, they emphasize that developers need to stay in control. It’s open source, model-flexible (bring your own LLM), and encourages creating custom assistants that reinforce your team’s coding standards. For teams focused on growth and increasing their developers’ coding skills, Continue offers both transparency and control.&lt;/p&gt;
+
+&lt;p&gt;Before giving me any kind of code, it gave me an initial planning response, outlining a step-by-step approach to the user story. Seeing the plan helps the user to walk through the task with Continue.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uuws98nat1n8qrflz4nn.png&quot; alt=&quot;Overview of the approach Continue takes to implement feature&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After this, it provided commented code along with a reusable template. The inline comments break down some of the logic, and helps the user understand the process it went through to generate the code. After the code, it summarized all the changes it had made. 
+You might notice it mentions Flask, but this is actually an Astro app. That was my mistake. When I initially set up the assistant, I had configured it with Python-focused instructions and directed it to Python documentation, since my rules were originally written for a Python assistant. Once I updated those settings and specifically shared my repository with the assistant, Continue was able to properly follow my project’s styling conventions and leverage the existing components.&lt;/p&gt;
+
+&lt;p&gt;Lastly, it gave both an overview of what was implemented and ideas for improvement. I appreciate that it provided more context about its approach, commented code throughout the new file, and offered inspiration for my next iteration.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3iwg6njdy7a2fk8plmf8.png&quot; alt=&quot;Overview of the approach it took and the improvements I could make&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Without having to ask further questions about the decisions it made and the approach it took, I think it provided a good amount of context for the developer to understand the process.&lt;/p&gt;
+
+&lt;h3 id=&quot;copilot&quot;&gt;Copilot&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/features/copilot/&quot;&gt;GitHub Copilot&lt;/a&gt; is known for excelling at code completion and includes agent-based features. It can speed up repetitive tasks, but the learning tends to happen through osmosis. You need to recognize the patterns in suggestions and might pick them up over time. You have to be more active with your learning by asking Copilot about the decisions it made.&lt;/p&gt;
+
+&lt;p&gt;Copilot’s approach was a lot different from Continue’s. It jumps straight into code generation without context-setting or explanation of its approach.&lt;/p&gt;
+
+&lt;p&gt;It did provide a “wrap up” after the code, but it wasn’t as thorough or complete as what I got from Continue.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3wmwmu4lse15u873zasm.png&quot; alt=&quot;Wrap up of the implementation&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For what it’s worth, Copilot also told me that creating a Svelte component was the best option, and then, when I questioned it, Copilot told me that Astro was actually the best path. It was flexible with the approach once I questioned it, but it definitely required me to go down the rabbit hole with it. Learning is definitely passive with Copilot.&lt;/p&gt;
+
+&lt;h3 id=&quot;cursor&quot;&gt;Cursor&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.cursor.com/&quot;&gt;Cursor&lt;/a&gt; offers an AI-first editor experience with agent modes, but their emphasis on “AI that builds with you” raises questions about how much actual building the developer is doing during complex tasks. Although I’m just doing a basic test for this post with a brand new feature, I did experiment a bit with its interactive, AI-native IDE experience by highlighting some of the code it generated and asking, “What does this do?” I plan on doing more of that in a follow-up post for comparison.&lt;/p&gt;
+
+&lt;p&gt;After being given the same prompt as Continue and Copilot, Cursor walked me through the approach it was taking and included what files it looked at to get there. However, it automatically created a Svelte file for the game (I did have Svelte installed in the project), and I had to do a lot of back and forth with it to understand the decisions it made and why. I’ve actually never used Svelte, so this was something I had to dig into deeper to understand.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/g2kk5qu91tqrqk2ewtc3.png&quot; alt=&quot;initial overview of the approach&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the things I appreciated about Cursor’s experience was that it explained piece by piece and required me to accept changes. That forces the user to think about what’s being implemented. It also auto-corrected some of its own errors, which is a good learning opportunity to see how it debugs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/317dusccwjklrckjxf0s.png&quot; alt=&quot;explaining where the issues lies in the error&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I wish it would have automatically added code comments throughout, but the explanations were valuable. The takeaways at the end walked through what the user could do and the functionality. It was more thorough than Copilot, but I liked the improvements suggestion that Continue had.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ailxygg7jc0uprc177n0.png&quot; alt=&quot;wrap up of features and how it works&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;building-a-learning-first-ai-strategy&quot;&gt;Building a Learning-First AI Strategy&lt;/h2&gt;
+
+&lt;p&gt;I think this exploration is important for new folks coming into tech, and for teams serious about using AI to help their team grow and not just ship faster. The path here should:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Start with Intent&lt;/strong&gt;: Before adding any AI tool to your workflow or your team’s, clearly define your goals. Are you trying to help yourself or junior developers on the team understand architectural patterns? Learn a new framework? Improve code review skills?
+Different learning goals might call for different AI approaches.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Choose Tools with Teaching DNA&lt;/strong&gt;: Look for AI assistants that were designed with education in mind, not just productivity. Continue’s emphasis on amplifying developer intent rather than replacing it is a good example of this thinking.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Implement Learning Safeguards&lt;/strong&gt;: Whatever tool you choose, build processes that encourage learning by requiring explanations for AI-generated solutions, having regular code review focused on understanding, not just correctness, adding pair programming sessions where AI suggestions become discussion points, documenting decisions and trade-offs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Measure Learning, Not Just Output&lt;/strong&gt;: Track whether your developers are asking better questions over time, not just whether they’re closing tickets faster. Are they suggesting alternatives during code review? Can they debug issues in AI-generated code? Are they learning patterns they can apply without AI assistance?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We want developers who are using AI to understand problems. That’s the difference between an AI assistant and an AI mentor.&lt;/p&gt;
+
+&lt;h2 id=&quot;wrapping-up&quot;&gt;Wrapping Up&lt;/h2&gt;
+
+&lt;p&gt;I think the best AI coding assistant for individuals and teams focuses on developer skill growth. Based on philosophy, approach, and explicit focus on learning, Continue seems to understand this distinction better than most. But the tool is only part of the equation. The bigger part is approaching AI adoption with learning as the primary goal, not just productivity.
+The most productive teams and developers understand what they’re building, whether with or without AI help.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 27 Jun 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Which-Code-Assistant-Helps-Developers-Grow</link>
+        <guid isPermaLink="true">http://localhost:4000/Which-Code-Assistant-Helps-Developers-Grow</guid>
+        
+      </item>
+    
+      <item>
+        <title>Comparing 5 AI Coding Assistants: Which One's Right for You?</title>
+        <description>&lt;p&gt;A couple of days ago, I saw &lt;a href=&quot;https://www.linkedin.com/posts/jeromehardaway_microsoft-ceo-admits-that-ai-is-generating-activity-7340817881154134016-Ld9Q&quot;&gt;Jerome Hardaway’s LinkedIn post&lt;/a&gt;, and it really resonated with me. I like the idea of thinking of AI coding tools as “really great intern[s]. Fast, helpful, capable in the right hands – but still needs supervision, clear direction, and someone to clean up afterward.” There are a couple of projects that I’m working on this summer: the author site that I share with my brothers that uses Astro, a new project I’m launching for &lt;a href=&quot;https://oss-communities.netlify.app/&quot;&gt;osscommunities.com&lt;/a&gt;. This seems like the perfect opportunity to find the right tool that’s worth adding tool to my workflow.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ah6h6875jlzj6p5oknx4.png&quot; alt=&quot;Jerome Hardaway's full post&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;my-ai-assistant-philosophy&quot;&gt;My AI Assistant Philosophy&lt;/h2&gt;
+
+&lt;p&gt;I’ve always been a proponent of using AI just like any other tool in your toolbox. It’s there to help you level up, work more effectively, and move faster. If I were a carpenter who was too afraid or skeptical to try a hammer, I wouldn’t be as effective as other carpenters. And honestly, as a mom of four, I’ve been looking for ways to be more efficient for years.&lt;/p&gt;
+
+&lt;p&gt;As we all know, your coding assistant is only as good as you guide it to be. You have to make sure to correct it when it hallucinates, to double-check its work, to help it understand what you actually need. For me, it’s all about finding the best partner for the work I’m doing.&lt;/p&gt;
+
+&lt;h2 id=&quot;ai-assistant-tools--their-promises&quot;&gt;AI Assistant Tools &amp;amp; Their Promises&lt;/h2&gt;
+
+&lt;p&gt;I chose these five AI coding assistants based on different approaches to the same problem: Continue.dev for its open source flexibility and developer-first philosophy, Cursor for its AI-native editor approach, GitHub Copilot as the established market leader, Tabnine for its enterprise angle, and Windsurf as the rebranded dark horse. In my opinion, these represent the current landscape of AI code completion tools, from open source flexibility to enterprise privacy to AI-first design philosophies. Here’s a little more on each:&lt;/p&gt;
+
+&lt;h3 id=&quot;1-continuedev&quot;&gt;1. &lt;a href=&quot;https://continue.dev/&quot;&gt;Continue.dev&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Their Promise&lt;/em&gt;:  Amplify developers, don’t replace them.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;My Expectation&lt;/em&gt;:  I think Continue.dev’s chat, autocomplete, edit, and agent modes in one tool sounds interesting and comprehensive. I’m hoping this flexibility translates to better suggestions for my workflow.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-github-copilot&quot;&gt;2. &lt;a href=&quot;https://github.com/features/copilot/&quot;&gt;GitHub CoPilot&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Their Promise&lt;/em&gt;:  AI that builds with you&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;My Expectation&lt;/em&gt;:  I’ve used CoPilot before, so this is the obvious choice since I already have experience with it. But I’m really curious to compare it to other tools out there to see how it stacks up.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-cursor&quot;&gt;3. &lt;a href=&quot;https://www.cursor.com&quot;&gt;Cursor&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Their Promise&lt;/em&gt;:  Cursor is a powerful AI-first code editor that enhances your development workflow.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;My Expectation&lt;/em&gt;:  The real test for me is whether building the editor around AI from day one actually feels different than VS Code with AI-extensions and whether or not the experience feels disjointed.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-tabnine&quot;&gt;4. &lt;a href=&quot;https://www.tabnine.com/&quot;&gt;Tabnine&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Their Promise&lt;/em&gt;:  Tabnine claims that it is the world’s most contextually aware AI software development platform, helping mature engineering teams speed up and simplify
+their entire development process.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;My Expectation&lt;/em&gt;:  They seem to be targeting enterprise developers, but I’m curious if their focus on “mature engineering teams” translates to better suggestions for solo projects like mine.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-windsurf&quot;&gt;5. &lt;a href=&quot;https://windsurf.com/about&quot;&gt;Windsurf&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Their Promise&lt;/em&gt;:  Windsurf is a next-generation AI IDE built to keep you in the flow.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;My Expectation&lt;/em&gt;: The “dream bigger” messaging is heavy on inspiration, but there’s not a lot of specifics. I want to see how well that translates to the user experience.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-next&quot;&gt;What’s Next?&lt;/h2&gt;
+
+&lt;p&gt;I’m not looking for the tool that writes the most code for me.  I’m looking for the best AI coding assistant that makes me a better developer while helping me ship faster. The goal isn’t just to find another autocomplete tool. My goal is to discover which AI code assistant deserves a permanent spot in my development workflow. Whether that ends up being Continue.dev’s customizable approach, Cursor’s seamless integration, or one of the other contenders, I’ll share what I’ve learned in the coming weeks. Stay tuned for the full AI coding assistant comparison and see which tool actually lives up to the productivity promises.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Comparing-AI-Coding-Assistants</link>
+        <guid isPermaLink="true">http://localhost:4000/Comparing-AI-Coding-Assistants</guid>
+        
+      </item>
+    
+      <item>
+        <title>Test Drive Before You Buy: Your Guide to AI Code Assistant Trials in 2025</title>
+        <description>&lt;p&gt;In &lt;a href=&quot;https://bekahhw.com/Taking-Time-to-Breathe-A-New-Chapter-Begins&quot;&gt;my last post&lt;/a&gt;, I talked about spending time this summer looking at different AI tools. I want to get hands-on, figure out what I want to integrate into my workflow. But before I spend time (and money) testing things out, I wanted to start with the free/trial periods. So you’re starting at the beginning of this journey with me. The question that I started with is: Which AI code assistants will actually let me take them for a proper test drive? In this post, I’ll share what I found across five top AI Coding Assistants—Continue, Windsurf, Cursor, GitHub Copilot, and Tabnine—and what I’m interested in learning as I put them to the test.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-trial-landscape-whats-actually-available-with-ai-assistants&quot;&gt;The Trial Landscape: What’s Actually Available with AI Assistants&lt;/h2&gt;
+
+&lt;p&gt;After digging through pricing pages, here’s what you can try without putting in your credit card:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://continue.dev/&quot;&gt;Continue.dev&lt;/a&gt; is one of the most flexible and accessible AI Coding Assistants out there.  It’s open source, which means you can literally use it forever for free if you just bring your own API keys, and it supports any model you choose, including Claude 4 Sonnet, 4o, llama3.1 8b. Continue’s IDE extension has gained a lot of recent attention (20K+ GitHub stars), and integrates into tools that you might already use (VS Code and JetBrains). You can also create public assistants and invite your entire team.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://windsurf.com/&quot;&gt;Windsurf&lt;/a&gt; surprised me here. Their free tier includes 25 prompt credits per month, all premium models, unlimited Fast Tab completions, and even a 2-week Pro trial to test the advanced features. Built by the Codeium team, it’s essentially giving you a full-featured AI IDE for nothing. The supercomplete feature claims to understand your entire workspace to give intelligent suggestions across files.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;tabnine.com&quot;&gt;Tabnine&lt;/a&gt; offers a “Dev Preview” that’s completely free for qualified users, giving you AI code completions for current line and multiple lines, plus AI-powered chat. There’s also a paid Dev plan at $9/month with more advanced features. The Dev plan includes their foundational AI agents that can autonomously generate code, tests, docs, and fixes.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;cursor.com&quot;&gt;Cursor&lt;/a&gt; gives you a Pro two-week trial as part of their free Hobby plan, plus 2,000 completions to play with. After that, their Pro plan is $20/month. It’s a significant jump but with unlimited agent requests and tab completions, two weeks is enough time to test their agent mode on a real project and see if the autonomous coding capabilities live up to the hype.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/features/copilot&quot;&gt;GitHub Copilot&lt;/a&gt; offers a solid 30-day free trial on their Pro plan before charging $10/month. Thirty days is actually enough time to see if it clicks with your workflow or just generates more bugs than it fixes. Since it’s deeply integrated in the GitHub ecosystem, you’ll be able to see how well it understands project context.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;what-to-actually-test-during-your-trial&quot;&gt;What to Actually Test During Your Trial&lt;/h2&gt;
+&lt;p&gt;I want to avoid some of the common problems I hear developers talk about when they sign up for AI Coding Assistants. I want to do more than test drive a car and park it in a lot. Here’s the approach I’m trying to take:&lt;/p&gt;
+
+&lt;h3 id=&quot;the-real-world-gauntlet&quot;&gt;The Real-World Gauntlet&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Test it on your actual codebase.&lt;/strong&gt; I have some existing projects that I’ve created over the years. My blog is a Jekyll site that I have done only enough updating to keep things running over the past couple of years. It definitely has some “why did past me write this” code in the codebase. I want to make sure that AI can handle past me. (I’m actually interested in creating a Continue assistant to help update my Jekyll site.)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Try it on unfamiliar territory.&lt;/strong&gt; I need my AI Coding Assistant to be a force multiplier. When I’m working in my strengths, it doesn’t take me as long. But when I use it with code that I’m not super familiar with, I need it to be good. I don’t want it to help me write bad code faster. Test both scenarios. I have a new project I’ve been wanting to work on, and this seems like a good use case.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;See how it handles context.&lt;/strong&gt; Can it understand your team’s coding conventions? Does it remember what you were working on five files ago? Context awareness separates the good from the great. This is not applicable for what I’m working on right now, but this is super important if you’re working with a team.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;the-stress-test&quot;&gt;The Stress Test&lt;/h3&gt;
+
+&lt;p&gt;You should try to push these tools to their breaking point. (Semi-related, &lt;a href=&quot;https://www.reddit.com/r/AIMemory/comments/1lg6axl/so_our_smartest_llms_kind_of_give_up_when_we_need/&quot;&gt;I posted about LLMs giving up when we need them the most. Feel free to add to the conversation!&lt;/a&gt; Ask them to refactor a complex function. Have them write tests for edge cases you know are problematic. See if they can debug that one weird issue that’s been haunting your team for weeks.&lt;/p&gt;
+
+&lt;p&gt;The goal is to find the AI Assistant that fails gracefully and teaches you something useful in the process.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-hidden-costs&quot;&gt;The Hidden Costs&lt;/h2&gt;
+
+&lt;p&gt;This is where the trial period becomes really important. Most AI assistants have usage-based pricing that can get out of hand really quick. You can eat through your budget if you’re not careful. During your trial, pay attention to those usage meters since they’re previewing your future bills.&lt;/p&gt;
+
+&lt;p&gt;Start with the free tiers. Continue if you want maximum control, Windsurf if you want simplicity, Tabnine if you just want better autocomplete.&lt;/p&gt;
+
+&lt;p&gt;Use the trial period to answer this question: Does this tool make you a better developer, or just a faster typist? At the end of the day, you’re responsible for all production code you ship. If you don’t understand your code, AI is a temporary solution to your problem, and that approach can end badly.&lt;/p&gt;
+
+&lt;p&gt;Here’s your homework (and we can do it together, just comment which one you’re testing below!):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Pick one tool from the list above&lt;/li&gt;
+  &lt;li&gt;Set it up on your current project&lt;/li&gt;
+  &lt;li&gt;Use it for a week on real work (not tutorials)&lt;/li&gt;
+  &lt;li&gt;Ask yourself: “Am I learning, or just copying?”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I plan on starting with Continue and working my way through the list.&lt;/p&gt;
+
+&lt;p&gt;The right AI assistant will enhance and amplify your skills, not replace them.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Guide-to-AI-Coding-Assistant-Trials</link>
+        <guid isPermaLink="true">http://localhost:4000/Guide-to-AI-Coding-Assistant-Trials</guid>
+        
+      </item>
+    
+      <item>
+        <title>Taking Time to Breathe: A New Chapter Begins</title>
+        <description>&lt;p&gt;As of June 1st, I’m no longer with the Linux Foundation. While I’ll share more details about this transition in a future post, I wanted to take a moment to reflect on what comes next.&lt;/p&gt;
+
+&lt;p&gt;Going through an acquisition is intense, especially when you’re leaving what was truly your favorite job. The experience has been both professionally enriching and personally challenging, and I’ve realized how important it is to give yourself permission to pause and process major changes rather than immediately jumping into the next thing.&lt;/p&gt;
+
+&lt;p&gt;So that’s exactly what I’m doing this summer: taking a pragmatic approach to my career and family life. I’m giving myself time to breathe, to explore opportunities I didn’t have bandwidth for before, and to be intentional about my next steps.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-coming-this-summer&quot;&gt;What’s Coming This Summer&lt;/h2&gt;
+
+&lt;p&gt;My primary focus for the coming months will be diving deep into AI tools and their practical applications. I’ve been wanting to explore more AI tools, but I haven’t had the time to until now. As someone who’s spent considerable time thinking about content strategy and audience development, I’m fascinated by how AI is reshaping not just what we create, but how we create it.&lt;/p&gt;
+
+&lt;p&gt;You can expect a lot of AI-related content from me in the weeks ahead. I don’t have an exact plan mapped out, so it might be everything from tool reviews and practical use cases to my thoughts on how these technologies are changing the content landscape.&lt;/p&gt;
+
+&lt;h2 id=&quot;looking-forward&quot;&gt;Looking Forward&lt;/h2&gt;
+
+&lt;p&gt;I’ll have more to share about my long-term plans soon, but for now, I’m embracing this period of exploration. Thanks for following along on this journey. The next few months should be interesting.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Taking-Time-to-Breathe-A-New-Chapter-Begins</link>
+        <guid isPermaLink="true">http://localhost:4000/Taking-Time-to-Breathe-A-New-Chapter-Begins</guid>
+        
+      </item>
+    
+      <item>
+        <title>Beyond Stars and Forks: Why Open Source Needs Better Collaboration Metrics</title>
+        <description>&lt;p&gt;When we were working on the &lt;a href=&quot;https://opensauced.pizza/learn/intro-to-oss&quot;&gt;Intro to Open Source&lt;/a&gt; course, one of the biggest painpoints we noted with new contributors was the frustration they felt when their PRs weren’t merged in in what they felt was a reasonable amount of time. They had done their research, found an issue, gotten assigned, and then…nothing. No feedback. No merge. Just silence.&lt;/p&gt;
+
+&lt;p&gt;It’s a familiar story. I’ve had contributors tell me, “My PR has been sitting there for two weeks and I haven’t heard a thing.” And I get it. There are so many reasons this happens, including burnout, abandoned projects, the lottery factor, and it’s rarely about bad intentions. That’s why I always tell contributors to join the community before contributing. It helps you understand the project’s rhythms, how to communicate with maintainers, and whether it’s a space that supports new members.&lt;/p&gt;
+
+&lt;p&gt;If you’ve read anything I’ve written in the last five years, you know I care deeply about the open source community. But how we have traditionally evaluated projects and metrics doesn’t give enough insight into the most meaningful parts. A lot of times, these metrics—stars, forks, downloads, and DORA metrics—miss the most important part of the story: how people collaborate.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-different-approach-to-open-source-metrics&quot;&gt;A Different Approach to Open Source Metrics&lt;/h2&gt;
+
+&lt;p&gt;Since &lt;a href=&quot;https://x.com/saucedopen/status/1900339926832734635&quot;&gt;OpenSauced shut down&lt;/a&gt;, I’ve been exploring different options for understanding the collaboration problem. 
+&lt;a href=&quot;https://collab.dev/&quot;&gt;Collab.dev&lt;/a&gt; isn’t a replacement for OpenSauced, but it’s telling a different (and important) part of the story and capturing how people collaborate. It surfaces the human patterns behind the code, like review responsiveness, contributor distribution, and merge dynamics. Industry-accepted metrics like DORA are valuable for understanding software delivery performance, but not so much in the human department. They can tell you how fast code gets deployed, but not whether contributors feel supported, welcomed, or left in the dark. Open source is as much about relationships as releases, and we need metrics that reflect that.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-collaboration-visibility-gap&quot;&gt;The Collaboration Visibility Gap&lt;/h2&gt;
+
+&lt;p&gt;The problem isn’t just that our current metrics are incomplete. Vanity metrics have been touted as meaningful indications of the project’s health, and, to be direct, they’re just not that important.&lt;/p&gt;
+
+&lt;p&gt;If we consider the challenges maintainers face every day, we’ll see that it’s often difficult to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Identify which contributors are most likely to become long-term participants.&lt;/li&gt;
+  &lt;li&gt;Pinpoint exactly where the review process stalls or breaks down.&lt;/li&gt;
+  &lt;li&gt;Understand if the community environment genuinely feels welcoming to newcomers.&lt;/li&gt;
+  &lt;li&gt;Distinguish between sustainable growth and problematic scaling.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The path isn’t clearer for potential contributors either. They often struggle to determine:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Whether the project actively reviews and merges community contributions.&lt;/li&gt;
+  &lt;li&gt;How long it typically takes for contributions to be reviewed.&lt;/li&gt;
+  &lt;li&gt;Which maintainers are most responsive in the contributor’s area of interest.&lt;/li&gt;
+  &lt;li&gt;If there’s a healthy balance between contributions from the core team and the wider community.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For many of us, we have to make a decision about where to invest our time and energy. It can be a real letdown if we’ve invested time and realized we made the wrong decision, coming out of it with nothing to really show for the work we’ve done. For instance, I wanted to learn more about &lt;a href=&quot;https://dub.sh/cognee&quot;&gt;cognee&lt;/a&gt;, an AI Memory management framework, recently, so I created a &lt;a href=&quot;https://dub.sh/cognee-collab&quot;&gt;collab.dev cognee page&lt;/a&gt; to learn more about the collaboration happening. When you first look at &lt;a href=&quot;https://dub.sh/cognee-gh&quot;&gt;cognee on GitHub&lt;/a&gt;, it looks like a growing open source project with a decent star count, active issues, and regular commits. But looking at Collab.dev’s dashboard, I get a richer story.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-story-cognees-data-tells-through-collabdev&quot;&gt;The Story Cognee’s Data Tells through Collab.dev&lt;/h2&gt;
+&lt;h3 id=&quot;contributor-distribution&quot;&gt;Contributor Distribution&lt;/h3&gt;
+
+&lt;p&gt;When we think about good contributor distribution in an open source project, that usually means responsibilities, activity, and knowledge aren’t tied to a few people. Distribution allows for decreased burnout, project resilience, and creates a more welcoming environment. What we see with cognee is a genuinely balanced project. With 51% of contributions coming from the core team and 49% from the community, cognee has built real community ownership without abandoning maintainer responsibility, and we can make a connection with a collaborative environment and higher motivation to support the project from the community.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/neq300a2e09po9wobend.png&quot; alt=&quot;Contributor distribution graph&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;pr-lifecycle-metrics&quot;&gt;PR Lifecycle Metrics&lt;/h3&gt;
+
+&lt;p&gt;It continues to get interesting. The review funnel shows that 88% of PRs receive reviews and 85.2% get approved. That approval rate tells a story about quality control and contributor experience. It suggests that either the project has excellent contribution guidelines that help people submit good PRs, or the maintainers are actively helping contributors improve their work rather than just rejecting it. On top of this, there’s a quick turnaround with a median response time of 1.9 hours and 42% of reviews happening within an hour. They’re not waiting three weeks for a review. The maintainers are cultivating a positive contributor experience through their responsiveness.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iv2x52ng29yysttfl1e9.jpg&quot; alt=&quot;cognee lifecycle metrics&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-this-tells-us-about-the-human-story&quot;&gt;What this tells us about the Human Story&lt;/h3&gt;
+
+&lt;p&gt;As a maintainer, I’ve been in the situation where I don’t have the capacity to immediately respond to contributors, and sometimes they even have to wait weeks for my response. Obviously, this isn’t ideal. Usually, what happens is that the person has moved on, they may not respond at all, or they’re less likely to contribute again. What we see from cognee’s numbers is that they don’t have that same problem.&lt;/p&gt;
+
+&lt;p&gt;When someone contributes to cognee, they aren’t left wondering whether or not their efforts are valued. They get fast enough feedback to stay engaged and iterate quickly. Their turnaround time for a review (1.6hrs) is a good way to encourage repeat contributors. Additionally, with a median merge time of 19.5 hours signals to contributors that their work has real and immediate impact. And they’re able to see their contributions available to users.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-collaboration-pattern&quot;&gt;The Collaboration Pattern&lt;/h3&gt;
+
+&lt;p&gt;When you look at these metrics together, they’re telling a story of intentional collaboration design, a story that thinks about the contributor and maintainer experience. They’ve created systems and habits that make collaboration feel responsive and worthwhile. What’s telling about this data is also what’s &lt;em&gt;not&lt;/em&gt; happening. We don’t see any pile-ups of unreviewed PRs. There are no huge gaps between approval and merge. There are no signs of contributor frustration or maintainer overwhelm.&lt;/p&gt;
+
+&lt;p&gt;This collaboration story matters, not just to show that cognee looks like a good place to contribute, but because this can become a replicable story. Other projects can learn how to make collaboration feel good for the contributors involved. We can look at the data and the project and better understand what systems and practices created these patterns, and we can reach out to maintainers of projects we admire to ask: How do you build review workflows that are both thorough and fast? How do you maintain quality while staying responsive to community contributions?&lt;/p&gt;
+
+&lt;p&gt;Collaboration quality doesn’t have to be something we guess at. We can learn more through the data and find projects that have the capacity to take contributions from community members. (And if you’re interested, collab.dev also has a nifty comparison tool. You can check out my &lt;a href=&quot;https://dub.sh/cognee-mem0&quot;&gt;mem0 v. cognee comparison&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;h2 id=&quot;the-bigger-picture-measuring-what-matters&quot;&gt;The Bigger Picture: Measuring What Matters&lt;/h2&gt;
+
+&lt;p&gt;We’re in a stage of open source where complex human dynamics determine whether open source projects succeed or fail. Collaboration metrics can help lead to better outcomes. When we measure collaboration effectively, we can:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Reduce contributor burnout by identifying overwhelmed maintainers&lt;/li&gt;
+  &lt;li&gt;Increase successful first contributions by directing early contributors to responsive projects&lt;/li&gt;
+  &lt;li&gt;Build more sustainable projects by understanding what healthy collaboration looks like&lt;/li&gt;
+  &lt;li&gt;Create feedback loops that help projects improve their community practices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In open source, we’ve proven that collaborative development can create incredible value, but we can’t ignore the sustainability challenges, maintainer burnout, and the difficulty of scaling human collaboration.&lt;/p&gt;
+
+&lt;p&gt;Better visibility into collaboration patterns can help us to understand the future health of open source. We need tools that help us understand not just what code exists, but how effectively people work together to create and maintain it.&lt;/p&gt;
+
+&lt;p&gt;Open source has always been about people working together. Our metrics should reflect that meaningful work.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/Beyond-Stars-and-Forks</link>
+        <guid isPermaLink="true">http://localhost:4000/Beyond-Stars-and-Forks</guid>
+        
+      </item>
+    
+      <item>
+        <title>Breaking Bottlenecks: How Organizations Build Systems of Balanced Reciprocity</title>
+        <description>&lt;p&gt;&lt;em&gt;In this third post of my series on giving and taking, we explore how to design systems that prevent burnout, distribute contributions, and transform individual reciprocity intelligence into organizational strength.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In 2020, when I lost my first developer job due to the pandemic, I was taking every interview I could get. One of them happened to be for a DevOps role at a well-known company. I didn’t even know what DevOps was at the time, but the hiring manager had reached out and asked me to interview.&lt;/p&gt;
+
+&lt;p&gt;The first interview went well, and she invited me back for a second. The catch was that the second interview would only happen after I read &lt;em&gt;The Unicorn Project&lt;/em&gt; by Gene Kim.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The Unicorn Project&lt;/em&gt; follows Maxine, a senior developer reassigned to a troubled initiative called the Phoenix Project. Through Maxine’s journey, we see how siloed knowledge, approval bottlenecks, and rigid processes destroy productivity.&lt;/p&gt;
+
+&lt;p&gt;Five years later, as I think about reciprocity, I started thinking about this book again. It wasn’t just about technical problems. It was also about reciprocity. When knowledge, permissions, or capabilities concentrate in one person, that person becomes a constraint.
+Here’s the paradox: The most generous givers often become the biggest bottlenecks.&lt;/p&gt;
+
+&lt;p&gt;To be honest, I’ve been a bottleneck as the founder of the tech community, &lt;a href=&quot;https://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt;. I was the one who knew how everything worked. I was the one who could answer questions. I was the one everyone came to when they needed help.
+My desire to make sure I could take care of everyone’s needs created a system-wide constraint, and it was holding back the community.&lt;/p&gt;
+
+&lt;p&gt;Research confirms this: teams with concentrated expertise are less resilient and adaptive than those with distributed knowledge systems. If your team depends on a few generous people to keep everything running, you’re building risk. The good news is that you can turn individual reciprocity into a scalable system for trust, flow, and contribution.&lt;/p&gt;
+
+&lt;h2 id=&quot;from-diminisher-to-multiplier&quot;&gt;From Diminisher to Multiplier&lt;/h2&gt;
+
+&lt;p&gt;Before looking at specific design principles, we need to shift our mental model. In &lt;em&gt;Multipliers: How the Best Leaders Make Everyone Smarter&lt;/em&gt;, Liz Wiseman contrasts two leadership approaches:&lt;/p&gt;
+
+&lt;h3 id=&quot;diminishers-who-drain-capability&quot;&gt;Diminishers (who drain capability):&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Hoard knowledge and decision-making&lt;/li&gt;
+  &lt;li&gt;Solve problems for others&lt;/li&gt;
+  &lt;li&gt;Create dependency through “helping”&lt;/li&gt;
+  &lt;li&gt;Become bottlenecks despite good intentions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;multipliers-who-amplify-capability&quot;&gt;Multipliers (who amplify capability):&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Distribute knowledge and authority&lt;/li&gt;
+  &lt;li&gt;Create challenges that build capability&lt;/li&gt;
+  &lt;li&gt;Establish systems that enable independence&lt;/li&gt;
+  &lt;li&gt;Remove themselves as bottlenecks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You might be thinking, “Wow, I know some really well-intentioned givers who fall into the category of diminisher.” Or maybe you’re that well-intentioned giver. When you solve problems for others instead of building their capability, you’re not giving sustainably. You’re creating an unhealthy reciprocity system where people remain dependent on your giving.&lt;/p&gt;
+
+&lt;h3 id=&quot;building-trust-through-multiplier-principles&quot;&gt;Building Trust Through Multiplier Principles&lt;/h3&gt;
+
+&lt;p&gt;With the multiplier mindset as our foundation, we can see how sustainable reciprocity depends on trust. In &lt;em&gt;The Infinite Game&lt;/em&gt;, Simon Sinek emphasizes that trusting teams are a hallmark of enduring organizations. But trust is something that needs to be developed through measurable signals of care, consistency, and safety.&lt;/p&gt;
+
+&lt;p&gt;In reciprocity systems, that means not just measuring outcomes, but tracking patterns of help-giving, shared responsibility, and psychological safety. If your contributors know that support flows in multiple directions and that they won’t be punished for asking questions, they’re more likely to give back in ways that strengthen the system.&lt;/p&gt;
+
+&lt;p&gt;Trust becomes the infrastructure for reciprocity. Without it, your systems fall into suspicion, gatekeeping, and imbalance.&lt;/p&gt;
+
+&lt;p&gt;With trust and this multiplier mindset as our foundation, let’s explore five design principles for balanced reciprocity systems.&lt;/p&gt;
+
+&lt;h2 id=&quot;five-design-principles-for-balanced-reciprocity&quot;&gt;Five Design Principles for Balanced Reciprocity&lt;/h2&gt;
+
+&lt;h3 id=&quot;design-principle-1-documentation-as-scaled-giving&quot;&gt;Design Principle #1: Documentation as Scaled Giving&lt;/h3&gt;
+
+&lt;p&gt;For a lot of givers, documentation can be a way to continue giving without requiring the emotional energy and time of 1:1 mentorship. This realization made a huge impact on empowering volunteers to take leadership roles at Virtual Coffee.&lt;/p&gt;
+
+&lt;p&gt;Documentation transforms individual expertise into organizational capability. Amazon’s documentation culture ensures that knowledge is accessible and decisions are transparent. Their “six-pager” narratives and strict documentation protocols mean that information doesn’t bottleneck with individuals, and that teammates are thinking deeply about the information that’s being presented.&lt;/p&gt;
+
+&lt;h4 id=&quot;documentation-culture-implementation&quot;&gt;Documentation Culture Implementation:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create decision logs that explain not just what was decided, but why&lt;/li&gt;
+  &lt;li&gt;Record short video walkthroughs of common processes&lt;/li&gt;
+  &lt;li&gt;Establish a “document first, then assist” culture where documentation is updated before individual help is given&lt;/li&gt;
+  &lt;li&gt;Build knowledge bases with practical how-to guides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;design-principle-2-progressive-responsibility-frameworks&quot;&gt;Design Principle #2: Progressive Responsibility Frameworks&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;The Unicorn Project&lt;/em&gt; describes how Maxine creates a “dojo” environment where people learn by doing, gradually taking on more responsibility. Progressive responsibility creates clear pathways from dependence to contribution. Google’s “Googler to Googler” and “Globetrotters” programs rotate employees through different teams, giving them the opportunity to learn new skills and understand perspectives.&lt;/p&gt;
+
+&lt;p&gt;Progressive responsibility allows for knowledge transfer at a manageable pace, and creates a culture of continuous learning and adaptability.&lt;/p&gt;
+
+&lt;p&gt;Progressive responsibility frameworks create clear pathways from dependence to contribution:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Supported Phase&lt;/strong&gt; - High guidance, low autonomy&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Collaborative Phase&lt;/strong&gt; - Shared responsibility&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Independent Phase&lt;/strong&gt; - Minimal guidance, high autonomy&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Contributory Phase&lt;/strong&gt; - Becoming a giver within the system&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In a lot of ways, good open source contributor ladders do the same thing. At OpenSauced, one of our indicators of success was contributors moving through our repos, from their first contribution in our Learn track to working on our app. As they progressed, they learned more about our projects, our approach to open source, and our codebase, and, as a result, were more likely to support or mentor new contributors.&lt;/p&gt;
+
+&lt;h4 id=&quot;implementation-ideas&quot;&gt;Implementation Ideas:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create explicit onboarding levels with clear graduation criteria&lt;/li&gt;
+  &lt;li&gt;Establish “participation ladders” showing pathways to greater responsibility&lt;/li&gt;
+  &lt;li&gt;Design contribution opportunities with varying levels of commitment&lt;/li&gt;
+  &lt;li&gt;Build “help tokens” systems where people earn the right to ask for help by helping others&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;design-principle-3-flow-optimized-boundaries&quot;&gt;Design Principle #3: Flow-Optimized Boundaries&lt;/h3&gt;
+
+&lt;p&gt;Constant interruptions destroy flow and can lead to burnout. Spotify’s model of autonomous squads, organized into tribes and guilds, helps teams set boundaries while still cross-pollinating knowledge. Teams choose their own frameworks and manage their own workflows, reducing unnecessary interruptions and approval bottlenecks.&lt;/p&gt;
+
+&lt;h4 id=&quot;flow-optimized-boundaries-implementation-ideas&quot;&gt;Flow-optimized Boundaries Implementation Ideas:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Establish “office hours” for help-giving rather than allowing constant interruption&lt;/li&gt;
+  &lt;li&gt;Create asynchronous help systems (like dedicated Slack channels)&lt;/li&gt;
+  &lt;li&gt;Implement “focus time” protocols where helping is intentionally paused&lt;/li&gt;
+  &lt;li&gt;Build request queues rather than allowing direct interruptions
+&lt;em&gt;The Unicorn Project&lt;/em&gt;’s second ideal—Focus, Flow, and Joy—applies directly to reciprocity systems. Constant interruptions to help others destroy flow, creating resentment even among the most generous givers. Creating flow-optimized boundaries guards against this.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;design-principle-4-expertise-distribution-systems&quot;&gt;Design Principle #4: Expertise Distribution Systems&lt;/h3&gt;
+
+&lt;p&gt;Expertise needs to be distributed, not centralized, to maximize impact. Employee rotation programs at Google, General Electric, and the Mayo Clinic intentionally move people across roles and teams, making sure that no single person becomes a bottleneck.&lt;/p&gt;
+
+&lt;h4 id=&quot;expert-distribution-systems-implementation-ideas&quot;&gt;Expert Distribution Systems Implementation Ideas:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rotate responsibility for answering common questions&lt;/li&gt;
+  &lt;li&gt;Implement peer learning sessions where everyone teaches something&lt;/li&gt;
+  &lt;li&gt;Create expertise directories so people know who knows what
+Establish skill-sharing programs where people exchange knowledge&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In &lt;em&gt;The Unicorn Project&lt;/em&gt;, the breakthrough comes when the team creates systems to share knowledge rather than centralizing it. When giving becomes part of the infrastructure rather than depending on specific individuals, reciprocity becomes sustainable.&lt;/p&gt;
+
+&lt;h3 id=&quot;design-principle-5-balancing-feedback-mechanisms&quot;&gt;Design Principle #5: Balancing Feedback Mechanisms&lt;/h3&gt;
+&lt;p&gt;Without feedback loops, reciprocity systems drift toward imbalance. Regular retrospectives, community health surveys, and visualization of help patterns help organizations spot overburdened givers and chronic takers.&lt;/p&gt;
+
+&lt;h4 id=&quot;balancing-feedback-mechanisms-implementation-ideas&quot;&gt;Balancing Feedback Mechanisms Implementation Ideas:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Conduct regular “reciprocity retrospectives” examining giving and taking patterns&lt;/li&gt;
+  &lt;li&gt;Create visualization tools showing help requests and contributions&lt;/li&gt;
+  &lt;li&gt;Implement periodic capacity check-ins to identify overburdened givers&lt;/li&gt;
+  &lt;li&gt;Design gentle interventions for chronic taking patterns&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Balanced systems build trust through transparency. When contributors see that their feedback leads to visible changes, and that overburdened givers are protected, it signals that the organization is worthy of their continued investment.&lt;/p&gt;
+
+&lt;p&gt;Sinek’s perspective underscores this: “The true value of a leader is not measured by the work they do. A leader’s value is measured by the work they inspire others to do.” Feedback systems signal to your people: We see you. We’re listening. We’re building something together.&lt;/p&gt;
+
+&lt;h2 id=&quot;from-principles-to-practice-overcoming-common-challenges&quot;&gt;From Principles to Practice: Overcoming Common Challenges&lt;/h2&gt;
+
+&lt;p&gt;Even with these five principles in place, organizations often encounter obstacles when transforming their reciprocity systems:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Knowledge that resists documentation:&lt;/strong&gt; Some expertise is difficult to capture in writing or videos. When Maxine left her previous team in &lt;em&gt;The Unicorn Project&lt;/em&gt;, they struggled because her understanding of the system lived mostly in her head.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;The “this is how we’ve always done it” syndrome:&lt;/strong&gt; New systems often face resistance, especially from those who’ve benefited from the old ways of working.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Territorial thinking:&lt;/strong&gt;Teams and individuals sometimes protect their knowledge as a form of job security or status preservation.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;small-experiments-with-big-impact&quot;&gt;Small Experiments with Big Impact&lt;/h2&gt;
+&lt;p&gt;You don’t have to overhaul your entire organization overnight. Consider starting with these manageable experiments:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Document your most-asked question.&lt;/strong&gt; What’s the one thing people constantly interrupt you to learn? Create a guide, record a walkthrough, or build a decision tree.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Establish dedicated help hours.&lt;/strong&gt; Protect your focus time while still being available by setting clear boundaries for when you’re available to give assistance.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Design one progressive challenge.&lt;/strong&gt; Identify someone who regularly asks for help, and create a graduated challenge that builds their capability instead of solving their problem.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Run a simple reciprocity retrospective.&lt;/strong&gt; In your next team meeting, discuss: “Where are we seeing bottlenecks? Who seems overwhelmed with requests? How can we distribute knowledge better?”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These small shifts can create ripple effects throughout your organization’s reciprocity culture.&lt;/p&gt;
+
+&lt;h2 id=&quot;reciprocity-culture-is-designed&quot;&gt;Reciprocity Culture is Designed&lt;/h2&gt;
+
+&lt;p&gt;Healthy reciprocity doesn’t happen by hoping the right people show up. It happens when organizations intentionally design feedback loops, distribute ownership, and normalize trust. That’s what I build,  whether it’s in open source, startups, or developer communities.&lt;/p&gt;
+
+&lt;p&gt;The goal isn’t equal giving at all times, but resilient systems that handle the natural ebb and flow of contribution.&lt;/p&gt;
+
+&lt;p&gt;As Wiseman says, “The goal isn’t to be the smartest person in the room-it’s to make everyone in the room smarter.” The same is true for giving: build systems where giving and receiving flow naturally.&lt;/p&gt;
+
+&lt;p&gt;Organizations that design for reciprocity unlock scale. If you’re trying to build those systems—or recover from being the bottleneck—I’d love to hear how you’re approaching it.  How does your organization distribute knowledge and responsibility? What small experiment can you start this week?&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/reciprocity-systems</link>
+        <guid isPermaLink="true">http://localhost:4000/reciprocity-systems</guid>
+        
+      </item>
+    
+      <item>
         <title>Reciprocity Intelligence: A Core Skill for Modern Work</title>
         <description>&lt;p&gt;&lt;em&gt;In this second post of my series on giving and taking, I explore why reciprocity intelligence—the ability to navigate giving and receiving effectively—isn’t just nice to have anymore. If you missed the first post, &lt;a href=&quot;https://bekahhw.com/company-culture-of-reciprocity&quot;&gt;start here&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -458,900 +1103,6 @@ effectiveness&lt;/a&gt; and &lt;a href=&quot;https://www.vantagecircle.com/en/bl
         <pubDate>Mon, 07 Apr 2025 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/agents-v-mcp</link>
         <guid isPermaLink="true">http://localhost:4000/agents-v-mcp</guid>
-        
-      </item>
-    
-      <item>
-        <title>Measuring the Impact of Developer Content: Metrics That Matter</title>
-        <description>&lt;p&gt;Last week, I was chatting with a Developer Advocate at Gitbook, and he asked me what metrics we looked at for docs at OpenSauced. The honest answer is that we didn’t have KPIs or OKRs or metrics that determined our success. Ultimately, our success was based on users being able to use the software and understand the value in the data we were exposing. Now, that doesn’t mean that I didn’t measure anything. It just means that we weren’t building dashboards to track progress. Ultimately, the metrics will depend on your team’s goals, but here are some of the things I think are valuable in identifying whether or not the docs I’m working on are successful.&lt;/p&gt;
-
-&lt;h2 id=&quot;beyond-vanity-metrics-the-true-impact-of-developer-content&quot;&gt;Beyond Vanity Metrics: The True Impact of Developer Content&lt;/h2&gt;
-
-&lt;p&gt;Traditional content metrics like page views and social shares can be useful, but they tell an incomplete story. There are three dimensions to Developer Content Value that I like to think of as we connect documentation to business outcomes:&lt;/p&gt;
-
-&lt;h3 id=&quot;1-engagement-quality-of-interaction&quot;&gt;1. Engagement: Quality of Interaction&lt;/h3&gt;
-
-&lt;p&gt;Surface-level engagement metrics tell you if developers are finding your content, but deeper metrics will show you if they’re actually succeeding with it.&lt;/p&gt;
-
-&lt;h4 id=&quot;basic-metrics&quot;&gt;Basic Metrics:&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;Page views&lt;/li&gt;
-  &lt;li&gt;Average time on page&lt;/li&gt;
-  &lt;li&gt;Bounce rates&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;advanced-metrics&quot;&gt;Advanced Metrics:&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;Content completion rates: What percentage of developers complete multi-step tutorials?&lt;/li&gt;
-  &lt;li&gt;Code example copy events: How often do developers copy sample code (indicates intent to implement)?&lt;/li&gt;
-  &lt;li&gt;Documentation-to-implementation time: How quickly do developers move from reading docs to successful implementation?&lt;/li&gt;
-  &lt;li&gt;Return visit patterns: How frequently do developers reference the same documentation (may indicate confusion or high value)?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;2-support-deflection-reducing-operational-costs&quot;&gt;2. Support Deflection: Reducing Operational Costs&lt;/h3&gt;
-
-&lt;p&gt;Well-crafted developer content should impact support volume and complexity.&lt;/p&gt;
-
-&lt;h4 id=&quot;key-metrics&quot;&gt;Key Metrics:&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;Support ticket reduction: Decrease in tickets related to documented topics&lt;/li&gt;
-  &lt;li&gt;Question sophistication: Shift from basic “how to” questions to more advanced inquiries&lt;/li&gt;
-  &lt;li&gt;Self-service resolution rates: Percentage of developers who resolve issues through documentation rather than support channels&lt;/li&gt;
-  &lt;li&gt;Documentation referrals: How often support agents can resolve issues by linking to existing documentation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;3-product-adoption-driving-business-outcomes&quot;&gt;3. Product Adoption: Driving Business Outcomes&lt;/h3&gt;
-
-&lt;p&gt;Ultimately, developer content should allow for successful product adoption and usage.&lt;/p&gt;
-
-&lt;h4 id=&quot;key-metrics-1&quot;&gt;Key Metrics:&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;Documentation-influenced conversion: Conversion rates for users who engage with documentation vs. those who don’t&lt;/li&gt;
-  &lt;li&gt;Feature adoption correlation: Relationship between documentation engagement and feature usage&lt;/li&gt;
-  &lt;li&gt;Time-to-value: How quickly new developers reach their first success milestone&lt;/li&gt;
-  &lt;li&gt;Retention impact: Differences in retention between developers who use documentation vs. those who don’t&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Documentation Instrumentation
-To gather meaningful data, your documentation needs appropriate tracking:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Event-based analytics: Track specific interactions beyond page views (code copying, example expansion, etc.)&lt;/li&gt;
-  &lt;li&gt;Documentation-to-product pathing: Follow user journeys from documentation to product implementation&lt;/li&gt;
-  &lt;li&gt;Feedback mechanisms: Implement contextual feedback options ( “Was this helpful?” with follow-up options)&lt;/li&gt;
-  &lt;li&gt;Search analytics: Track what developers search for, what they find, and what they do next&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;connecting-data-sources&quot;&gt;Connecting Data Sources&lt;/h3&gt;
-
-&lt;p&gt;To understand whether or not your documentation is successful, you should consider how to connect it to other systems you’re tracking. For instance:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Support ticket integration: Tag tickets with related documentation to identify gaps&lt;/li&gt;
-  &lt;li&gt;Product usage correlation: Connect documentation engagement with feature adoption&lt;/li&gt;
-  &lt;li&gt;Developer journey mapping: Track developer progression from documentation to implementation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Not every team has the resources for comprehensive analytics, but you can start with minimal investment:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Implement basic document instrumentation
-    &lt;ul&gt;
-      &lt;li&gt;Add “Was this helpful?” widgets to key pages&lt;/li&gt;
-      &lt;li&gt;Track code copying events&lt;/li&gt;
-      &lt;li&gt;Monitor documentation search queries&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Sample qualitative data
-    &lt;ul&gt;
-      &lt;li&gt;Review a subset of support tickets weekly to identify documentation gaps&lt;/li&gt;
-      &lt;li&gt;Conduct monthly documentation interviews with developers&lt;/li&gt;
-      &lt;li&gt;Add optional exit surveys when developers leave documentation&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Use proxy metrics
-    &lt;ul&gt;
-      &lt;li&gt;Monitor support volume for topics with new/updated documentation&lt;/li&gt;
-      &lt;li&gt;Track time spent in documentation vs. successful API calls&lt;/li&gt;
-      &lt;li&gt;Compare onboarding completion rates before and after documentation changes&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;the-contributor-journey-metrics&quot;&gt;The Contributor Journey Metrics&lt;/h2&gt;
-
-&lt;p&gt;For open source projects, documentation is both an onboarding tool and a contributor pipeline. At OpenSauced, we partially looked at our documentation effectiveness through the “contribution ladder” metrics:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;First-time contributor conversion: Percentage of documentation readers who make their first contribution&lt;/li&gt;
-  &lt;li&gt;Contributor retention: Rate at which contributors return to make additional contributions&lt;/li&gt;
-  &lt;li&gt;Contribution progression: Movement of contributors through increasingly complex contribution types&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;At OpenSauced, we structured our documentation to create a clear progression path for contributors. New community members typically followed this journey:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Education path: Learning about open source and its purpose&lt;/li&gt;
-  &lt;li&gt;Documentation contributions: Making their first contributions by improving our docs&lt;/li&gt;
-  &lt;li&gt;App contributions: Eventually contributing to the core application&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When we look at this ladder, we can also see it from this perspective:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Awareness → Interest: How many people who discovered the project engaged with documentation&lt;/li&gt;
-  &lt;li&gt;Interest → First Contribution: Conversion rate from students to first-time contributors&lt;/li&gt;
-  &lt;li&gt;First Contribution → Repeat Contribution: Retention rate of contributors&lt;/li&gt;
-  &lt;li&gt;Repeat → Core Contributor: Progression rate to becoming regular contributors&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;last-thoughts&quot;&gt;Last Thoughts&lt;/h2&gt;
-
-&lt;p&gt;Effective measurement isn’t about proving documentation’s worth in the abstract. You have to try to connect content directly to the metrics that matter to your organization. Whether that’s reducing support costs, accelerating adoption, or improving developer satisfaction, the right metrics framework can change the perception and value of your documentation.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 31 Mar 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/developer-content-metrics</link>
-        <guid isPermaLink="true">http://localhost:4000/developer-content-metrics</guid>
-        
-      </item>
-    
-      <item>
-        <title>Common Pitfalls in Developer Content: The 7 Deadly Sins of Developer Documentation</title>
-        <description>&lt;p&gt;Last week, I wrote about &lt;a href=&quot;https://bekahhw.com/Creating-Content-Developers-Love&quot;&gt;Content Developers Love&lt;/a&gt;, and it’s natural to follow that with some of the places where developer content goes wrong. It’s usually not one thing that causes documentation to go wrong; it can be death by a thousand papercuts. Learning how to recognize some of the common problems can keep your writing on track or help you catch it before the problem becomes too big.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-outdated-information-the-trust-killer&quot;&gt;1. Outdated Information: The Trust Killer&lt;/h2&gt;
-
-&lt;p&gt;There’s only one path that outdated documentation leads to: frustration. Maintaining a large documentation base can be challenging to keep up, especially if there isn’t clear communication with engineering teams, but every effort should be made to keep documentation up to date with the current version of your product. Outdated documentation will decrease trust with your users, and that’s hard to rebuild.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; Implement a systematic content review process tied to your release cycle. As part of this, you can:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Version tag all code examples&lt;/li&gt;
-  &lt;li&gt;Automate testing of any documentation code samples&lt;/li&gt;
-  &lt;li&gt;Perform quarterly technical reviews of developer-facing content&lt;/li&gt;
-  &lt;li&gt;Add Changelog links embedded within documentation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2-missing-prerequisites-the-silent-blocker&quot;&gt;2. Missing Prerequisites: The Silent Blocker&lt;/h2&gt;
-
-&lt;p&gt;Any content that assumes knowledge or setup that developers don’t have creates immediate friction. What’s obvious to you may be a complete mystery to someone new to your ecosystem.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Create a “Before You Begin” checklist at the start of each tutorial&lt;/li&gt;
-  &lt;li&gt;Clearly state prerequisites at the beginning of each piece of content&lt;/li&gt;
-  &lt;li&gt;Provide links to resources that help developers meet these prerequisites&lt;/li&gt;
-  &lt;li&gt;Test your content with developers who are new to your product&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;One of the ways I like to think about approaching documentation is as “User 0”, meaning I’m the first person to go through the process, encounter the pitfalls, and document not just what works, but what didn’t, so that others don’t have to. You have to think like a user who’s engaging with the documentation for the first time, making sure the experience is intuitive, clear, and kind to anyone coming in fresh.&lt;/p&gt;
-
-&lt;h2 id=&quot;3-undisclosed-limitations-the-hidden-trap&quot;&gt;3. Undisclosed Limitations: The Hidden Trap&lt;/h2&gt;
-
-&lt;p&gt;Developers appreciate honesty about what your solution can’t do as much as clarity about what it can do. Nobody wants to feel “tricked” into thinking they can do something with your product only to find out that it can’t do that, takes substantial investment to implement a workaround, or it’s somewhere down the roadmap.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Create dedicated “Limitations” or “Considerations” sections&lt;/li&gt;
-  &lt;li&gt;Be transparent about edge cases and known issues&lt;/li&gt;
-  &lt;li&gt;Offer workarounds when possible&lt;/li&gt;
-  &lt;li&gt;Update limitation documentation as your product evolves&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-neglecting-the-why-the-context-gap&quot;&gt;4. Neglecting the “Why”: The Context Gap&lt;/h2&gt;
-
-&lt;p&gt;Developers aren’t just implementing solutions, they’re making architectural decisions. They need to understand the reasoning behind recommendations to adapt them appropriately.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Explain the rationale behind design patterns or recommended approaches&lt;/li&gt;
-  &lt;li&gt;Provide context for best practices rather than just stating them&lt;/li&gt;
-  &lt;li&gt;Share trade-offs considered when making architectural recommendations&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;5-tutorial-cliffs-the-abandonment-point&quot;&gt;5. Tutorial Cliffs: The Abandonment Point&lt;/h2&gt;
-
-&lt;p&gt;One of the biggest gaps I’ve seen is that there’s a lot of great beginner (101-level) content and then a sharp jump to advanced (400-level) documentation. That creates a “tutorial cliff,” or a sudden drop in learning support.  Part of creating a good content library means filling in those gaps, including 100, 200, 300, &lt;em&gt;and&lt;/em&gt; 400 level content to support a variety of users.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Map your content to a complete developer journey&lt;/li&gt;
-  &lt;li&gt;Create explicit “next steps” at the end of introductory content&lt;/li&gt;
-  &lt;li&gt;Build “intermediate” content that bridges tutorials and reference&lt;/li&gt;
-  &lt;li&gt;Provide “recipe” style content for common implementation patterns&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;6-poor-organization-the-structure-problem&quot;&gt;6. Poor Organization: The Structure Problem&lt;/h2&gt;
-
-&lt;p&gt;You can have the best, most comprehensive documentation, but if it’s poorly organized, developers won’t be able to use it effectively and are more likely to choose an alternative due to frustration.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Organize content by both task and concept (dual navigation)&lt;/li&gt;
-  &lt;li&gt;Create clear hierarchies with consistent depth and breadth&lt;/li&gt;
-  &lt;li&gt;Use progressive disclosure (show users only the most essential information, but allow them to access more complex or detailed information through deliberate interaction like clicking, expanding, etc.) to prevent overwhelming users&lt;/li&gt;
-  &lt;li&gt;Implement topic relationships and “see also” sections&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;7-missing-troubleshooting-guidance-the-dead-end-dilemma&quot;&gt;7. Missing Troubleshooting Guidance: The Dead-End Dilemma&lt;/h2&gt;
-
-&lt;p&gt;When documentation only covers the happy path and doesn’t address common errors or problems, developers hit roadblocks.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Incorporate error message explanations directly in documentation&lt;/li&gt;
-  &lt;li&gt;Create dedicated troubleshooting sections for common failure points&lt;/li&gt;
-  &lt;li&gt;Document known edge cases and their workarounds&lt;/li&gt;
-  &lt;li&gt;Include debugging strategies specific to your platform&lt;/li&gt;
-  &lt;li&gt;Analyze support tickets to identify and document recurring issues&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;turning-pitfalls-into-opportunities&quot;&gt;Turning Pitfalls into Opportunities&lt;/h2&gt;
-
-&lt;p&gt;Each of these mistakes represents an opportunity to improve the developer experience. The good news? Most companies are making at least some of these errors, creating a competitive advantage for those who address them.&lt;/p&gt;
-
-&lt;h2 id=&quot;an-actionable-approach-to-improvement&quot;&gt;An Actionable Approach to Improvement&lt;/h2&gt;
-
-&lt;p&gt;If you’re looking to improve your developer content, start with this simple process:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Audit:&lt;/strong&gt; Evaluate your current content against the pitfalls outlined above&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Prioritize:&lt;/strong&gt; Identify the top 2-3 issues causing the most friction&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Implement:&lt;/strong&gt; Make targeted improvements to address these specific pitfalls&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Measure:&lt;/strong&gt; Track the impact of your changes on developer satisfaction and product adoption&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Iterate:&lt;/strong&gt; Continuously refine based on feedback and changing needs&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;excellence-through-empathy&quot;&gt;Excellence Through Empathy&lt;/h2&gt;
-
-&lt;p&gt;At its core, avoiding these pitfalls requires genuine empathy for your developer audience. By understanding their needs, frustrations, and workflows, you can create content that not only avoids common problems but also empowers developers to succeed with your product.&lt;/p&gt;
-
-&lt;p&gt;Great developer documentation is both about technical accuracy and creating an experience that respects developers’ time, intelligence, and goals.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 24 Mar 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/common-dev-content-pitfalls</link>
-        <guid isPermaLink="true">http://localhost:4000/common-dev-content-pitfalls</guid>
-        
-      </item>
-    
-      <item>
-        <title>Adding Multiple Authors to my Astro Writing Blog: A Technical Walkthrough</title>
-        <description>&lt;p&gt;At the end of last year, my brothers and I wrote our first novel together (&lt;a href=&quot;https://dub.sh/b4c-astro&quot;&gt;The Battle for Christmas: Reign of the Nutcrackers&lt;/a&gt;). That experience inspired us to continue writing together, starting with a monthly newsletter with short stories. At this point, we decided we wanted a website. We had been using &lt;a href=&quot;https://kit.com/&quot;&gt;Kit&lt;/a&gt; to send emails, and we liked that functionality, but as our writing resumes grow, we also wanted to have a place where people could see all of our work, and this is where our Astro site came in.&lt;/p&gt;
-
-&lt;p&gt;Now, I’ve been interested in checking out Astro for a while, but when I saw &lt;a href=&quot;https://luciacerchie.dev/&quot;&gt;Lucia Cerchie’s blog&lt;/a&gt; I fell in love with the Astro template (by &lt;a href=&quot;https://www.twitter.com/Charca&quot;&gt;Maxi Ferreira&lt;/a&gt;) she used. I decided to start there, but since this was a blog for me and both of my brothers, I would need to add functionality for multiple authors. Here’s how I did that.&lt;/p&gt;
-
-&lt;h2 id=&quot;learning-the-hard-way-my-journey-to-astro-content-collections&quot;&gt;Learning the Hard Way: My Journey to Astro Content Collections&lt;/h2&gt;
-
-&lt;p&gt;Before we get into it, I need to acknowledge that I started with a mistake. I did the thing I say not to do and I started without fully reading the documentation.&lt;/p&gt;
-
-&lt;p&gt;When I first added multiple author functionality, I created a simple JavaScript file to manage author data:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;BekahHW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;BekahHW&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Bekah grew up in a storytelling-rich environment with her brothers...&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/assets/bhw_headshot.jpg&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Josh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Josh&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Josh Hawrot is married to his inspiring wife Cruz...&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/assets/josh.jpg&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...another author&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;I connected this to my blog posts using dynamic routes. Everything worked, and I didn’t think twice about it. And then a couple of days later, I was looking at Astro documentation, when I had my facepalm moment: the documentation clearly outlined a more structured, type-safe approach using collections that would make my content more maintainable and scalable. It’s worth noting that I was also using an older version of Astro, and updating to 5.5.3 gave me more functionality.&lt;/p&gt;
-
-&lt;p&gt;From their docs:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Content collections are the best way to manage sets of content in any Astro project. Collections help to organize and query your documents, enable Intellisense and type checking in your editor, and provide automatic TypeScript type-safety for all of your content.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This was exactly what I had needed, and I missed it because I hadn’t spent enough time in the docs. Let’s just say this is one of those lessons you remember.&lt;/p&gt;
-
-&lt;p&gt;What I had &lt;em&gt;was&lt;/em&gt; working though, so why did I need to change?&lt;/p&gt;
-
-&lt;h2 id=&quot;why-i-needed-to-change&quot;&gt;Why I Needed to Change&lt;/h2&gt;
-
-&lt;p&gt;My original approach worked, but switching to Astro’s Content Collections API provided significant benefits:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Schema validation&lt;/strong&gt;: Content collections automatically validate my data structure, preventing errors before they happen&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;TypeScript integration&lt;/strong&gt;: I get autocompletion and type checking when working with author and blog data&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Structured content&lt;/strong&gt;: All data follows a consistent format, making it easier to maintain and extend&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Simplified queries&lt;/strong&gt;: The Collections API provides built-in methods for accessing content, eliminating custom filtering code&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Performance improvements&lt;/strong&gt;: Astro 5’s Content Layer API is specifically optimized for efficiency and scalability&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Additionally, with Astro 5’s reference system, I can establish proper relationships between content types. For example, I can directly reference an author from a blog post using reference(“authors”) in the schema, which creates a clean, maintainable connection between content.&lt;/p&gt;
-
-&lt;h2 id=&quot;migrating-to-astro-content-collections&quot;&gt;Migrating to Astro Content Collections&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Setting Up the Content Directory
-First, I created the proper content directory structure:
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;src/
-├── content/
-│   ├── config.ts  &amp;lt;- Configuration for all collections
-│   ├── authors/
-│   │   ├── Bekah.md
-│   │   ├── Josh.md
-│   │   └── Zach.md
-│   └── blog/
-│       └── my-blog-posts.md
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Defining Content Schemas&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The heart of content collections is the schema definition, which makes sure all your content follows a consistent structure:&lt;/p&gt;
-
-&lt;div class=&quot;language-ts highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// src/content/config.ts&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defineCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;astro:content&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;astro/loaders&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Define the schema for the authors collection&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defineCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;**/*.md&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./src/content/authors&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Define the schema for the blog collection&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;blog&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defineCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;**/*.md&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./src/content/blog&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;publishDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;authors&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Export the collections&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;collections&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;blog&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;Converting Author Data to Individual Files
-I converted each author from my JS object to individual Markdown files:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bekah&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bekah&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;grew&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;up&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;storytelling-rich&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;environment&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;her&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;brothers,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;books&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;imagination&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;were&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;central&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;daily&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;life...&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/assets/bhw_headshot.jpg&quot;&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Fixing Author Name Capitalization in the Blog List View&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;One issue I ran into was that the author name was appearing in all lowercase in the blog list view (/blog/). This happened because I was using the author ID (which is derived from filenames and always lowercase) instead of their actual name from the frontmatter. Here’s how I updated that in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src/pages/index.astro&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-ts highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Fetch all author entries&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorEntries&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;authors&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getAuthorName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorEntries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Fallback to ID if author not found&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
-
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;BaseLayout&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;blog&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Stories&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h1&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sortedPosts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;post-item&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`/blog/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;post-item-author&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;By&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`/authors/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getAuthorName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/span&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;
-              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;post-item-date&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;—&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;publishDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/span&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;})}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/BaseLayout&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Updating Templates to Use Content Collections
-Next, I refactored my blog and author pages to use the Content Collections API:
-```js
-—
-// src/pages/blog/[slug].astro
-import BaseLayout from ‘../../layouts/BaseLayout.astro’;
-import Bio from ‘../../components/Bio.astro’;
-import { getCollection, getEntry, render } from ‘astro:content’;
-import ShareButtons from ‘../../components/ShareButtons.astro’;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;export async function getStaticPaths() {
-try {
-    const blogEntries = await getCollection(‘blog’);&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Create routes using entry ID
-return blogEntries.map(post =&amp;gt; {
-  console.log(`Creating route for ${post.id}`);
-  return {
-    params: { slug: post.id },
-    props: { entryId: post.id },  // Just pass the ID
-  };
-});   } catch (error) {
-console.error(&quot;Error in getStaticPaths:&quot;, error);
-return [];   } }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;// Get blog post data from props
-const { entryId } = Astro.props;
-const entry = await getEntry(‘blog’, entryId);&lt;/p&gt;
-
-&lt;p&gt;if (!entry) {
-  return Astro.redirect(‘/404’);
-}&lt;/p&gt;
-
-&lt;p&gt;// Render the content
-const { Content } = await render(entry);
-const allAuthors = await getCollection(‘authors’);
-let author;
-if (entry.data.author?.id) {
-  try {
-    author = await getEntry(‘authors’, entry.data.author.id);
-    if (author) {
-      console.log(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Found author for ${entry.data.author.id}&lt;/code&gt;);
-    } else {
-      console.error(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Author not found: ${entry.data.author.id}&lt;/code&gt;);
-    }
-  } catch (error) {
-    console.error(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Error fetching author: ${error.message}&lt;/code&gt;);
-  }
-}&lt;/p&gt;
-
-&lt;h2 id=&quot;const-permalink--astrositehrefblogentryid&quot;&gt;const permalink = &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;${Astro.site.href}blog/${entry.id}&lt;/code&gt;;&lt;/h2&gt;
-
-&lt;p&gt;&amp;lt;BaseLayout title={entry.data.title} description={entry.data.description} permalink={permalink} current=”blog”&amp;gt;&lt;/p&gt;
-&lt;header&gt;
-    &lt;p&gt;{entry.data.publishDate} ~ {entry.data.readingTime}&lt;/p&gt;
-    &lt;h1&gt;{entry.data.title}&lt;/h1&gt;
-    &lt;hr /&gt;
-  &lt;/header&gt;
-&lt;div class=&quot;container&quot;&gt;
-    &lt;article class=&quot;content&quot;&gt;
-      &lt;Content /&gt;
-    &lt;/article&gt;
-    &lt;hr /&gt;
-    
-    {author &amp;amp;&amp;amp; (
-      &lt;div class=&quot;author-bio&quot;&gt;
-        &lt;h3&gt;About the Author&lt;/h3&gt;
-        &amp;lt;Bio 
-          name={author.data.name}
-          bio={author.data.bio}
-          avatar={author.data.avatar}
-        /&amp;gt;
-      &lt;/div&gt;
-    )}
-    
-    &amp;lt;ShareButtons title={entry.data.title} permalink={permalink} /&amp;gt;
-  &lt;/div&gt;
-&lt;p&gt;&amp;lt;/BaseLayout&amp;gt;
-```
-There are two things that I wanted to implement while working on this:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;At the bottom of every short story, you see the author and their bio&lt;/li&gt;
-  &lt;li&gt;When you click an author from the list view, you are taken to their page with links to all of their works.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Both of those are fully functional on the site now.&lt;/p&gt;
-
-&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
-
-&lt;p&gt;The good news is that I learned a lot during this project, including:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Read the documentation first: So much time and effort could have been saved&lt;/li&gt;
-  &lt;li&gt;Use the platform’s built-in features: Modern frameworks like Astro provide powerful tools&lt;/li&gt;
-  &lt;li&gt;Be willing to refactor: Sometimes you need to accept you’ve taken the wrong approach&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There are still things that I need to work on for the site. The next priority is to improve the mobile view and responsiveness, but I’m happy to have it working. We already have two of our short stories up there attributed to the correct authors, and in a couple of weeks mine will be there too. You can check out our &lt;a href=&quot;https://dub.sh/siblings-write&quot;&gt;site&lt;/a&gt; now!&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 18 Mar 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/astro-content-collections</link>
-        <guid isPermaLink="true">http://localhost:4000/astro-content-collections</guid>
-        
-      </item>
-    
-      <item>
-        <title>Creating Content Developers Love: A Guide to Developer Experience (DX) Content</title>
-        <description>&lt;p&gt;Over the past couple of years, I’ve been in the middle of conversations about whether or not DevRel belongs in marketing. At the end of the day, I don’t know that it matters if you understand developers. One of the biggest pain points I’ve seen from marketing teams is understanding how to talk to developers, because, as we all know, developers are highly sensitive to feeling like they’ve been “marketed to.” What that really means is that they have high standards for the content they consume. Developers want to know that you understand the information. They want precision, depth, and utility.&lt;/p&gt;
-
-&lt;p&gt;Last year, I saw a tweet from a team lead at a large company who said that they were working on choosing a new package for a feature they were working on. The number one reason they passed on some packages? Poor documentation and resources. Developers need to be able to understand how to use software so they can be effective as they create theirs. As I dive deeper into content creation targeting developers, I’m trying to find more ways to distill effective ways of presenting that content. In this post, I’m sharing how to present technical content to a technical audience.&lt;/p&gt;
-
-&lt;h2 id=&quot;understanding-the-developer-mindset&quot;&gt;Understanding the Developer Mindset&lt;/h2&gt;
-
-&lt;p&gt;Maybe the main skill a developer has is problem-solving. That’s because that’s what they do. Most of them aren’t asking the question, “What does your product do?” They’re asking, “How can this product help me to solve my current challenge?” When you create content that recognizes that ask,  you’re building credibility.&lt;/p&gt;
-
-&lt;p&gt;There is never an end to the challenges developers have to solve. That’s why it’s important to value their time. You need to get to the point, create a scannable and well-structured hierarchy, and provide complete solutions without unnecessary stops. As part of that, you need to understand that they’re likely also looking for technical depth. They want the authors to understand not just how to implement something, but also why it needs to be implemented. If there are limitations, admit them. Don’t try to hide them.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-clear-framework-for-developer-content&quot;&gt;The CLEAR framework for Developer Content&lt;/h2&gt;
-
-&lt;p&gt;There are a lot of ways that you can structure effective content, but sometimes it’s nice to have a framework to maintain consistency. Here are some takeaways from my experiences:&lt;/p&gt;
-
-&lt;h3 id=&quot;c---code-first-examples&quot;&gt;C - Code-First Examples&lt;/h3&gt;
-
-&lt;p&gt;Working code clearly communicates credibility to your audience. Ways to incorporate this could be:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Functional code examples that could be copied and pasted&lt;/li&gt;
-  &lt;li&gt;Explanations that followed the code, not preceded it&lt;/li&gt;
-  &lt;li&gt;Real-world scenarios rather than contrived examples&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Stripe is one of those companies that people point to as the standard for documentation. Their documentation leads with code examples, demonstrating both how the API works and how it responds to different inputs as well as common use cases.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Practical Tip&lt;/strong&gt;: Always test your code examples in an isolated environment before publishing. Nothing undermines credibility faster than sample code that doesn’t work as described.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;l---layered-complexity&quot;&gt;L - Layered Complexity&lt;/h3&gt;
-
-&lt;p&gt;Great developer content acknowledges different knowledge levels by layering information:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Entry points for new users and learners&lt;/li&gt;
-  &lt;li&gt;Deeper technical details for experienced users&lt;/li&gt;
-  &lt;li&gt;Advanced use cases and optimizations for experts&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Twilio’s documentation does this exceptionally well, offering quick starts for beginners alongside detailed API references and more advanced tutorials for complex implementation scenarios.&lt;/p&gt;
-
-&lt;h3 id=&quot;e---ecosystem-awareness&quot;&gt;E - Ecosystem Awareness&lt;/h3&gt;
-
-&lt;p&gt;Great Developer Experience content acknowledges the broader ecosystem in which your product operates.&lt;/p&gt;
-
-&lt;p&gt;Vercel’s Next.js documentation excels here, providing guidance on how Next.js interacts with various styling solutions, deployment platforms, and state management libraries.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Practical Tip&lt;/strong&gt;: Create integration guides for popular tools in your ecosystem. These high-value resources address real workflow challenges and demonstrate your understanding of the developer’s complete environment.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;a---accessible-terminology&quot;&gt;A - Accessible Terminology&lt;/h3&gt;
-
-&lt;p&gt;While technical depth is important, you should avoid unnecessary jargon or marketing speak.&lt;/p&gt;
-
-&lt;p&gt;Good developer content:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Defines terms clearly upon first use&lt;/li&gt;
-  &lt;li&gt;Avoids acronyms without explanation&lt;/li&gt;
-  &lt;li&gt;Uses consistent terminology throughout&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When documenting complex concepts, I’ve found that starting with an analogy that relates to widely understood programming concepts can be useful. From there, you can transition to more specific terms.&lt;/p&gt;
-
-&lt;h3 id=&quot;r---reproducible-workflows&quot;&gt;R - Reproducible Workflows&lt;/h3&gt;
-
-&lt;p&gt;Developers need to understand not just isolated features but complete workflows. Content that connects the dots and shows how components work together in a reproducible process is invaluable.&lt;/p&gt;
-
-&lt;p&gt;GitHub’s documentation on GitHub Actions demonstrates this principle well, walking developers through complete CI/CD workflows rather than just explaining individual actions in isolation.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Practical Tip&lt;/strong&gt;: Structure tutorials as complete journeys with clear starting conditions and defined outcomes. Make sure developers can reproduce your examples with minimal setup.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;developer-content-as-a-product&quot;&gt;Developer Content as a Product&lt;/h2&gt;
-
-&lt;p&gt;The most successful companies treat developer content not as a marketing afterthought but as a product in itself that’s designed with specific user needs in mind, measured by meaningful metrics, and continuously improved based on feedback.&lt;/p&gt;
-
-&lt;p&gt;Developers are among the most demanding content consumers, but also the most loyal when their needs are genuinely met. Great developer content doesn’t just support your product, it becomes one of your most valuable assets.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 17 Mar 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/Creating-Content-Developers-Love</link>
-        <guid isPermaLink="true">http://localhost:4000/Creating-Content-Developers-Love</guid>
-        
-      </item>
-    
-      <item>
-        <title>Content Strategy for Startups: Storytelling as a Growth Driver</title>
-        <description>&lt;p&gt;It started with an air mattress on the floor of a San Francisco apartment.&lt;/p&gt;
-
-&lt;p&gt;When Brian Chesky and Joe Gebbia couldn’t afford their rent in 2007, they purchased three air mattresses and created a simple WordPress website called “Air Bed &amp;amp; Breakfast,” renting the mattresses during a design conference when the hotels were sold out. That isn’t just the origin story of a company that would eventually be valued at over $100 billion. It’s a perfect example of how a compelling origin story can become a powerful asset.&lt;/p&gt;
-
-&lt;p&gt;The most successful startups aren’t just building products; they’re telling stories that resonate, inspire, and drive growth.&lt;/p&gt;
-
-&lt;h2 id=&quot;beyond-features-why-stories-drive-startup-growth&quot;&gt;Beyond Features: Why Stories Drive Startup Growth&lt;/h2&gt;
-
-&lt;p&gt;I taught college English for ten years before coming into tech. And what I’ve learned about academic writing and tech content is that people and companies who tell the best stories often win the market.&lt;/p&gt;
-
-&lt;p&gt;Think about how Figma moved from a niche design tool to an industry standard. Their storytelling centered around designers collaborating in real-time. By sharing stories of design teams achieving breakthrough moments together, they created emotional connections with their audience while showcasing product capabilities. Their collaboration and community narrative helped turn Figma into a $20 billion acquisition target and the go-to tool for design teams.&lt;/p&gt;
-
-&lt;p&gt;Earlier today, I spoke with a startup founder who asked how people changed their minds on trying out a new technology. I told them that the strongest predictor of change I’ve noticed is when trusted individuals share how they’ve successfully used new technology. We’re naturally more inclined to trust those we know. That might be people we “know” online from their social media posts or people we know personally. When we have their recommendation or hear their story of how they’ve used the product, we’re more likely to trust the product.&lt;/p&gt;
-
-&lt;p&gt;This little mantra captures the concept: features inform, but stories transform.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-idea-framework-a-strategic-approach-to-startup-content&quot;&gt;The IDEA Framework: A Strategic Approach to Startup Content&lt;/h2&gt;
-
-&lt;p&gt;There are a lot of different frameworks out there, but I’ve combined a couple in a way that’s informed by my own experience bringing users to OpenSauced and years of content development. The IDEA framework connects storytelling to content as a growth-driver:&lt;/p&gt;
-
-&lt;h3 id=&quot;i---inspire&quot;&gt;I - Inspire&lt;/h3&gt;
-
-&lt;p&gt;Content needs to sparks curiosity and emotional connection. For startups, this might mean:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Origin stories that highlight your founding journey and the problem you’re solving&lt;/li&gt;
-  &lt;li&gt;Vision stories that paint a picture of the world you’re helping create&lt;/li&gt;
-  &lt;li&gt;Customer success narratives that let your users be the heroes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Take the Spanx origin story from their &lt;a href=&quot;https://spanx.com/pages/about-us&quot;&gt;About Us page&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;SPANX founder Sara Blakely was getting ready for a party when she realized she didn’t have the right undergarment to provide a smooth look under white pants. Armed with scissors and sheer genius, she cut the feet off her control top pantyhose and the SPANX revolution began! With a focus on solving wardrobe woes, the SPANX brand has grown to offer bras, underwear, leggings, active and more. SPANX has secured its place in women’s hearts and in pop-culture with daily mentions everywhere from CNN to SNL.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The story captures the moment of inception and the expansion of the brand while demonstrating creativity.&lt;/p&gt;
-
-&lt;p&gt;At OpenSauced, we saw continuous engagement when sharing stories of developers who found community through open source contribution. These narratives didn’t just showcase our platform, they inspired others to see what was possible.&lt;/p&gt;
-
-&lt;h3 id=&quot;d---demonstrate&quot;&gt;D - Demonstrate&lt;/h3&gt;
-
-&lt;p&gt;Inspiration catches your audience’s attention, but to keep them around you need to draw them deeper. This is where demonstration comes in. In this context, demonstration is showing your solution in action. Here are some ways you can do that:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Case studies that walk through specific problems and solutions&lt;/li&gt;
-  &lt;li&gt;Interactive tutorials that give users immediate wins&lt;/li&gt;
-  &lt;li&gt;Comparative analyses that honestly position your offering&lt;/li&gt;
-  &lt;li&gt;Community showcase that shows how real users have successfully used your product&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Notion has perfected this approach by leveraging user stories to show the flexibility of their product. Instead of explaining features, they show real users from a variety of backgrounds and usecases and how they’ve built unique workflows. Authenticity is key here. Having examples that people trust from real users has helped pave the way for Notion’s explosive growth. Potential users can see themselves in the product through the stories of others.&lt;/p&gt;
-
-&lt;p&gt;This content doesn’t just tell. It shows.&lt;/p&gt;
-
-&lt;h3 id=&quot;e---educate&quot;&gt;E - Educate&lt;/h3&gt;
-
-&lt;p&gt;Following my previous response to the startup founder, I told them how important it is to educate your audience. Education hugely impacts adoption, builds trust, and positions you as an authority. Here are some ways to effectively educate your audience:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Clear, well-organized, and up-to-date documentation&lt;/li&gt;
-  &lt;li&gt;Resources that solve common pain points and show why your product is useful&lt;/li&gt;
-  &lt;li&gt;Industry reports that share valuable insights&lt;/li&gt;
-  &lt;li&gt;How-to content, quickstart guides, and tutorials that create immediate value&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;PostHog does an excellent job of educating users through their resources and their feature onboarding. Their comprehensive resources don’t just sell the product, they educate users to maximize their benefits.&lt;/p&gt;
-
-&lt;p&gt;Educational content also creates a reciprocity loop: you give knowledge freely, and users return the favor with their attention and trust.&lt;/p&gt;
-
-&lt;h3 id=&quot;a---activate&quot;&gt;A - Activate&lt;/h3&gt;
-
-&lt;p&gt;All of this process builds to what most companies want: activating the audience to take meaningful action. Additional ways to activate the audience include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Community-building initiatives that encourage participation (hackathons, meetups, etc.)&lt;/li&gt;
-  &lt;li&gt;Product adoption pathways that reduce friction (onboarding content)&lt;/li&gt;
-  &lt;li&gt;Opportunities for your users to share with others (share button, downloadable assets, collaboration requests, etc.)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Our most successful campaigns at OpenSauced weren’t just about sharing what new features we were shipping. They were about empowering our community to become advocates.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-storytelling-multiplier&quot;&gt;The Storytelling Multiplier&lt;/h2&gt;
-
-&lt;p&gt;When you weave storytelling through each stage of the IDEA framework, your content gains what I like to call the “storytelling multiplier effect.” I wrote about how to incorporate good storytelling last week in, &lt;a href=&quot;https://bekahhw.com/Storytelling-in-Tech&quot;&gt;The Power of Storytelling in Tech Content&lt;/a&gt;. Ideally, you’re not just communicating a feature. You’re creating an emotional connection and demonstrating real-world impact. That’s when the storytelling multiplier works.&lt;/p&gt;
-
-&lt;p&gt;Because humans are built for storytelling, we see clear ROIs:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Reduced education costs: Stories make complex concepts more accessible and memorable&lt;/li&gt;
-  &lt;li&gt;Increased retention: Emotional connections encourage loyalty and reduce churn&lt;/li&gt;
-  &lt;li&gt;Enhanced conversion: Narratives drive action more effectively than features and specifications&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;implementing-storytelling-in-your-startups-content-strategy&quot;&gt;Implementing Storytelling in Your Startup’s Content Strategy&lt;/h2&gt;
-
-&lt;p&gt;If you’re wondering where to start, here are a couple of things you can do:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Audit your current content&lt;/strong&gt;: Identify pieces that could be transformed with storytelling.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Collect narratives&lt;/strong&gt;: Systematically gather stories from customers, team members, and your founding journey.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Create story templates&lt;/strong&gt;: Develop frameworks that help your team consistently incorporate narrative elements.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Measure narrative engagement&lt;/strong&gt;: Look beyond standard metrics to measure how stories resonate (comment sentiment, sharing behavior, story recall).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;your-story-starts-now&quot;&gt;Your Story Starts Now&lt;/h2&gt;
-
-&lt;p&gt;Every startup has stories worth telling. Stories of problems solved, of excited customers, of visions realized. These stories aren’t marketing assets; they’re growth drivers that can transform your content strategy from a cost center to a competitive advantage.&lt;/p&gt;
-
-&lt;p&gt;Storytelling’s transforms transactional relationships into emotional connections.
-In a world of information overload (especially AI-generated information), storytelling isn’t optional. It’s essential. The startups that understand this will not only capture attention but also build the emotional connections that drive sustainable growth.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 10 Mar 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/startup-content-strategy</link>
-        <guid isPermaLink="true">http://localhost:4000/startup-content-strategy</guid>
-        
-      </item>
-    
-      <item>
-        <title>The Power of Storytelling in Tech Content</title>
-        <description>&lt;p&gt;I’ve been thinking a lot about how storytelling sometimes gets lost or becomes an afterthought when we’re consumed by data, specifications, or writing content with AI. But in reality, it’s one of the most powerful tools we have, especially now. It creates emotional connections, makes complex ideas memorable, and establishes trust with our audience.&lt;/p&gt;
-
-&lt;p&gt;If we want to engage our audience, influence decision-makers, or strengthen our brands, storytelling should play a key role.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-storytelling-works&quot;&gt;Why Storytelling Works&lt;/h2&gt;
-
-&lt;h3 id=&quot;the-neuroscience-behind-stories&quot;&gt;The Neuroscience Behind Stories&lt;/h3&gt;
-
-&lt;p&gt;Our brains are wired for storytelling. Neuroscience research shows that when we hear stories, multiple parts of our brain light up—not just the language-processing centers, but also areas responsible for emotions and memory. Paul J. Zak, a professor of neuroscience, found that stories that generate emotional connections trigger the release of oxytocin, a neurochemical that enhances trust and cooperation.&lt;/p&gt;
-
-&lt;p&gt;In other words, when you tell a compelling story, your audience is more likely to trust you, remember your message, and take action.&lt;/p&gt;
-
-&lt;h3 id=&quot;stories-make-tech-more-human&quot;&gt;Stories Make Tech More Human&lt;/h3&gt;
-
-&lt;p&gt;People don’t connect with features; they connect with experiences. Take Warby Parker, for example. Their brand wasn’t built on just selling eyewear. It was built on a story of accessibility and innovation. It was built on the story of the struggle of a student who couldn’t afford glasses, the industry’s monopolization, and the company’s mission to create affordable, stylish eyewear.&lt;/p&gt;
-
-&lt;p&gt;Similarly, think about how companies like OpenAI or GitHub frame their innovations. They don’t just talk about algorithms and infrastructure; they tell stories of empowerment, stories about how AI helps developers be more productive or how open source fosters collaboration.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-turn-dry-tech-content-into-a-compelling-story&quot;&gt;How to Turn Dry Tech Content into a Compelling Story&lt;/h2&gt;
-
-&lt;p&gt;If you want to leverage storytelling in your tech content, here’s a three-step framework to help you get started:&lt;/p&gt;
-
-&lt;h3 id=&quot;1-start-with-a-struggle-or-problem&quot;&gt;1. Start with a Struggle or Problem&lt;/h3&gt;
-
-&lt;p&gt;Great stories begin with a problem or challenge. This could be the difficulty of managing distributed systems, the frustration of inefficient workflows, or the struggle of navigating an open source contribution for the first time.&lt;/p&gt;
-
-&lt;p&gt;Example: Instead of saying, “Our new cloud solution optimizes deployment times,” start with a story:&lt;/p&gt;
-
-&lt;p&gt;“It’s 2 AM. You get a call, jolting you awake and now you find yourself frantically debugging a failed deployment. This isn’t the first time this has happened, and you’re tired of another sleepless night. There has to be a better way…”&lt;/p&gt;
-
-&lt;h3 id=&quot;2-show-the-transformation&quot;&gt;2. Show the Transformation&lt;/h3&gt;
-
-&lt;p&gt;Introduce your solution as a turning point in the narrative. How does it solve the problem? How does it change the experience for the user?&lt;/p&gt;
-
-&lt;p&gt;Example: Continuing the story:&lt;/p&gt;
-
-&lt;p&gt;“After implementing our automated deployment tool, you finally got a full night’s sleep when you were on call. The next time an update went live, it was seamless, no more late-night firefighting.”&lt;/p&gt;
-
-&lt;h3 id=&quot;3-end-with-a-resolution-and-impact&quot;&gt;3. End with a Resolution and Impact&lt;/h3&gt;
-
-&lt;p&gt;Show the bigger picture. How does this solution contribute to success, productivity, or innovation?&lt;/p&gt;
-
-&lt;p&gt;Example:&lt;/p&gt;
-
-&lt;p&gt;“Today, your team ships code faster and with fewer errors. They focus on innovation rather than crisis management, because the best engineers aren’t the ones pulling all-nighters; they’re the ones solving real problems.”&lt;/p&gt;
-
-&lt;h2 id=&quot;actionable-takeaway-apply-storytelling-to-your-tech-content&quot;&gt;Actionable Takeaway: Apply Storytelling to Your Tech Content&lt;/h2&gt;
-
-&lt;p&gt;Here’s how you can start incorporating storytelling into your content:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Identify Your Audience’s Pain Points&lt;/strong&gt;: What struggles do they face? Talk to real users or analyze common complaints in your industry. (That’s right, you should actually talk to people who use your products.)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Craft Narratives Around Those Challenges&lt;/strong&gt;: Frame your content like a journey, with real-world scenarios.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Use Emotion and Relatable Examples&lt;/strong&gt;: Whether it’s a developer, a manager, or an open source contributor, make your audience see themselves in the story.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
-
-&lt;p&gt;Tech content shouldn’t just about features and data. It should be about making people feel something. When you tell a compelling story, you don’t just inform, you inspire.&lt;/p&gt;
-
-&lt;p&gt;So the next time you’re drafting a case study, writing a blog, or presenting a product update, ask yourself: What’s the story here? Because the best tech writers aren’t just sharing information, they’re telling stories that people remember.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 05 Mar 2025 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/Storytelling-in-Tech</link>
-        <guid isPermaLink="true">http://localhost:4000/Storytelling-in-Tech</guid>
-        
-      </item>
-    
-      <item>
-        <title>Google’s EEAT vs. Aristotle’s Rhetorical Triangle: SEO Is Just Ancient Rhetoric in Disguise</title>
-        <description>&lt;p&gt;Recently, I learned about Google’s EEAT (Experience, Expertise, Authoritativeness, Trustworthiness) framework. That’s the one that determines whether your content is worthy of showing up on search results or if it gets yeeted into the void of page two or beyond.&lt;/p&gt;
-
-&lt;p&gt;The more I thought about it, the more I realized that EEAT is just Aristotle’s rhetorical triangle with an SEO-friendly name.&lt;/p&gt;
-
-&lt;p&gt;The humor isn’t lost on me that same guy who spent his days philosophizing in ancient Greece (who I learned about in my Freshman Philosophy class) basically laid the groundwork for Google’s ranking algorithm. And if that doesn’t prove that everything in life is a remix, I don’t know what does.&lt;/p&gt;
-
-&lt;p&gt;But let’s break this down in a way that is useable for content creators.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-eeat&quot;&gt;What Is EEAT?&lt;/h2&gt;
-&lt;p&gt;In Google’s world, EEAT stands for:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Experience&lt;/strong&gt; – Have you actually done the thing you’re writing about?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Expertise&lt;/strong&gt; – Do you know your stuff?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Authoritativeness&lt;/strong&gt; – Are you recognized as a legit source?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Trustworthiness&lt;/strong&gt; – Can people rely on your content?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Basically, if you’re writing about deep-sea welding, Google wants to make sure you’re not my 10 year old who just watched a YouTube video about it and decided, “Yeah, I could generate a bunch words on this using ChatGPT.”&lt;/p&gt;
-
-&lt;h2 id=&quot;aristotles-rhetorical-triangle-the-og-eeat&quot;&gt;Aristotle’s Rhetorical Triangle: The OG EEAT&lt;/h2&gt;
-
-&lt;p&gt;Long before Google existed (or the internet, or electricity, or deodorant), Aristotle defined the three pillars of persuasion:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Ethos (Credibility)&lt;/strong&gt; – Are you a trustworthy source?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Pathos (Emotion)&lt;/strong&gt; – Can you connect with people’s lived experiences?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Logos (Logic)&lt;/strong&gt; – Do you have facts to back up what you’re saying?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sound familiar? That’s because it’s basically EEAT in a different era.&lt;/p&gt;
-
-&lt;p&gt;Here’s how they match up:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;EEAT (Google)&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;strong&gt;Aristotle’s Triangle&lt;/strong&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Experience&lt;/strong&gt; (Have you actually done this?)&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Pathos&lt;/strong&gt; (Can you connect with real-life experiences?)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Expertise&lt;/strong&gt; (Do you understand the topic deeply?)&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Logos&lt;/strong&gt; (Do you have the knowledge and logic to back it up?)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Authoritativeness &amp;amp; Trustworthiness&lt;/strong&gt; (Are you credible and reliable?)&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Ethos&lt;/strong&gt; (Are you a respected and believable source?)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;If Aristotle were alive today, he’d probably have a wildly successful blog, rank #1 on Google for How to Win an Argument, and be giving TED Talks about persuasion.&lt;/p&gt;
-
-&lt;h2 id=&quot;seo-is-just-rhetoric-for-the-internet-age&quot;&gt;SEO Is Just Rhetoric for the Internet Age&lt;/h2&gt;
-
-&lt;p&gt;The more you think about it, the more it makes sense. Google isn’t just rewarding well-researched content; it’s rewarding persuasive content.&lt;/p&gt;
-
-&lt;p&gt;Just like Aristotle’s rhetoric, SEO is about:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Knowing your audience (Google calls this “search intent”)&lt;/li&gt;
-  &lt;li&gt;Establishing credibility (Google calls this “authority”)&lt;/li&gt;
-  &lt;li&gt;Making a strong case (Google calls this “quality content”)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;At the end of the day, writing for SEO is about being convincing, trustworthy, and valuable. Just like a good argument, or, a well-structured ancient Greek debate.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-does-this-mean-for-you&quot;&gt;What Does This Mean for You?&lt;/h2&gt;
-
-&lt;p&gt;If you’re trying to write content that actually ranks, take a page from Google and Aristotle:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Share real experiences. (People can smell fake authority from a mile away.)&lt;/li&gt;
-  &lt;li&gt;Back up your claims with solid knowledge. (Google loves receipts.)&lt;/li&gt;
-  &lt;li&gt;Build credibility over time. (Trust isn’t built in a day.)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But what’s most important, in my opinion? Write for people. Be engaging. Tell a story. Drop a joke now and then. Because at the end of the day, whether you’re Aristotle in 350 BCE or a content creator in 2025, the best way to win people over is to be real, be knowledgeable, and make it worth their time.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 24 Feb 2025 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/Ai-and-content-creation</link>
-        <guid isPermaLink="true">http://localhost:4000/Ai-and-content-creation</guid>
         
       </item>
     
