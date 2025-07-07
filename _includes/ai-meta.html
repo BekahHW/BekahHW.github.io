@@ -1,0 +1,45 @@
+<!-- AI-specific meta tags -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+<!-- OpenAI/ChatGPT specific -->
+<meta name="chatgpt:crawl" content="allow">
+<meta name="chatgpt:index" content="allow">
+
+<!-- Perplexity AI -->
+<meta name="perplexity:crawl" content="allow">
+
+<!-- Claude/Anthropic -->
+<meta name="claude:crawl" content="allow">
+
+<!-- Content categorization for AI -->
+{% if page.layout == 'post' %}
+<meta name="content-type" content="blog-post">
+<meta name="content-category" content="{{ page.categories | first | default: 'technology' }}">
+<meta name="content-topics" content="{{ page.tags | join: ', ' }}">
+<meta name="content-audience" content="developers, tech professionals, community builders">
+<meta name="content-intent" content="educational, informational">
+{% endif %}
+
+<!-- Rich content hints -->
+<meta name="content-format" content="article">
+<meta name="content-style" content="technical, personal experience, tutorial">
+<meta name="expertise-level" content="beginner to advanced">
+
+<!-- Author expertise indicators -->
+<meta name="author-expertise" content="developer relations, community building, technical writing, mental health in tech">
+<meta name="author-experience" content="5+ years in tech, bootcamp graduate, mother in tech">
+
+<!-- Content freshness -->
+{% if page.date %}
+<meta name="content-date" content="{{ page.date | date: "%Y-%m-%d" }}">
+{% endif %}
+
+<!-- Enhanced description for AI understanding -->
+{% if page.description %}
+<meta name="ai-description" content="{{ page.description | escape }}">
+{% elsif page.excerpt %}
+<meta name="ai-description" content="{{ page.excerpt | strip_html | truncate: 300 | escape }}">
+{% else %}
+<meta name="ai-description" content="{{ site.description | escape }}">
+{% endif %}
