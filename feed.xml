@@ -12,10 +12,6 @@ layout: null
     <managingEditor>{{ site.email }} (BekahHW)</managingEditor>
     <webMaster>{{ site.email }} (BekahHW)</webMaster>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
-    <category>Technology</category>
-    <category>Developer Relations</category>
-    <category>Community Building</category>
-    <category>Programming</category>
     {% for post in site.posts limit:20 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
