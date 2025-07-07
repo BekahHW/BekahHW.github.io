@@ -10,3 +10,19 @@ tips:
   name: tips
   description: false
   cover: /assets/images/covers/4.jpg
+ai:
+  name: ai
+  description: "Posts about artificial intelligence, AI tools, and AI in development workflows"
+  cover: /assets/images/covers/7.jpg
+leadership:
+  name: leadership
+  description: "Leadership insights, management tips, and team building strategies"
+  cover: /assets/images/covers/2.jpg
+developer-relations:
+  name: developer-relations
+  description: "Developer relations strategies, DevRel insights, and developer experience"
+  cover: /assets/images/covers/4.jpg
+community-building:
+  name: community-building
+  description: "Community building strategies, engagement tips, and fostering developer communities"
+  cover: /assets/images/covers/7.jpg
