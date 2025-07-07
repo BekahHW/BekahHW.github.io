@@ -3,8 +3,16 @@
   <channel>
     <title>BekahHW</title>
     <description>Code. Community. Content.</description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://bekahhw.com/</link>
+    <atom:link href="https://bekahhw.com//feed.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <managingEditor>rhawrot@gmail.com (BekahHW)</managingEditor>
+    <webMaster>rhawrot@gmail.com (BekahHW)</webMaster>
+    <lastBuildDate>Mon, 07 Jul 2025 11:33:25 -0400</lastBuildDate>
+    <category>Technology</category>
+    <category>Developer Relations</category>
+    <category>Community Building</category>
+    <category>Programming</category>
     
       <item>
         <title>Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor</title>
@@ -146,8 +154,16 @@
 
 </description>
         <pubDate>Mon, 30 Jun 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/Which-Code-Assistant-Fix-Real-Problems-Best</link>
-        <guid isPermaLink="true">http://localhost:4000/Which-Code-Assistant-Fix-Real-Problems-Best</guid>
+        <link>https://bekahhw.com//Which-Code-Assistant-Fix-Real-Problems-Best</link>
+        <guid isPermaLink="true">https://bekahhw.com//Which-Code-Assistant-Fix-Real-Problems-Best</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
         
       </item>
     
@@ -238,8 +254,16 @@ Different learning goals might call for different AI approaches.&lt;/li&gt;
 The most productive teams and developers understand what they’re building, whether with or without AI help.&lt;/p&gt;
 </description>
         <pubDate>Fri, 27 Jun 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/Which-Code-Assistant-Helps-Developers-Grow</link>
-        <guid isPermaLink="true">http://localhost:4000/Which-Code-Assistant-Helps-Developers-Grow</guid>
+        <link>https://bekahhw.com//Which-Code-Assistant-Helps-Developers-Grow</link>
+        <guid isPermaLink="true">https://bekahhw.com//Which-Code-Assistant-Helps-Developers-Grow</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
         
       </item>
     
@@ -296,8 +320,16 @@ their entire development process.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/Comparing-AI-Coding-Assistants</link>
-        <guid isPermaLink="true">http://localhost:4000/Comparing-AI-Coding-Assistants</guid>
+        <link>https://bekahhw.com//Comparing-AI-Coding-Assistants</link>
+        <guid isPermaLink="true">https://bekahhw.com//Comparing-AI-Coding-Assistants</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
         
       </item>
     
@@ -355,8 +387,16 @@ their entire development process.&lt;/p&gt;
 &lt;p&gt;The right AI assistant will enhance and amplify your skills, not replace them.&lt;/p&gt;
 </description>
         <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/Guide-to-AI-Coding-Assistant-Trials</link>
-        <guid isPermaLink="true">http://localhost:4000/Guide-to-AI-Coding-Assistant-Trials</guid>
+        <link>https://bekahhw.com//Guide-to-AI-Coding-Assistant-Trials</link>
+        <guid isPermaLink="true">https://bekahhw.com//Guide-to-AI-Coding-Assistant-Trials</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
         
       </item>
     
@@ -380,8 +420,16 @@ their entire development process.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/Taking-Time-to-Breathe-A-New-Chapter-Begins</link>
-        <guid isPermaLink="true">http://localhost:4000/Taking-Time-to-Breathe-A-New-Chapter-Begins</guid>
+        <link>https://bekahhw.com//Taking-Time-to-Breathe-A-New-Chapter-Begins</link>
+        <guid isPermaLink="true">https://bekahhw.com//Taking-Time-to-Breathe-A-New-Chapter-Begins</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
         
       </item>
     
@@ -466,8 +514,16 @@ their entire development process.&lt;/p&gt;
 &lt;p&gt;Open source has always been about people working together. Our metrics should reflect that meaningful work.&lt;/p&gt;
 </description>
         <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/Beyond-Stars-and-Forks</link>
-        <guid isPermaLink="true">http://localhost:4000/Beyond-Stars-and-Forks</guid>
+        <link>https://bekahhw.com//Beyond-Stars-and-Forks</link>
+        <guid isPermaLink="true">https://bekahhw.com//Beyond-Stars-and-Forks</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
         
       </item>
     
@@ -646,8 +702,16 @@ Establish skill-sharing programs where people exchange knowledge&lt;/li&gt;
 &lt;p&gt;Organizations that design for reciprocity unlock scale. If you’re trying to build those systems—or recover from being the bottleneck—I’d love to hear how you’re approaching it.  How does your organization distribute knowledge and responsibility? What small experiment can you start this week?&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/reciprocity-systems</link>
-        <guid isPermaLink="true">http://localhost:4000/reciprocity-systems</guid>
+        <link>https://bekahhw.com//reciprocity-systems</link>
+        <guid isPermaLink="true">https://bekahhw.com//reciprocity-systems</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
         
       </item>
     
@@ -767,8 +831,16 @@ effectiveness&lt;/a&gt; and &lt;a href=&quot;https://www.vantagecircle.com/en/bl
 
 </description>
         <pubDate>Tue, 15 Apr 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/reciprocity-intelligence</link>
-        <guid isPermaLink="true">http://localhost:4000/reciprocity-intelligence</guid>
+        <link>https://bekahhw.com//reciprocity-intelligence</link>
+        <guid isPermaLink="true">https://bekahhw.com//reciprocity-intelligence</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
         
       </item>
     
@@ -872,8 +944,16 @@ effectiveness&lt;/a&gt; and &lt;a href=&quot;https://www.vantagecircle.com/en/bl
 &lt;p&gt;&lt;em&gt;This is the first in a series exploring the balance between support and resilience in modern professional environments. Next week, I’ll dive deeper into practical strategies for developing “reciprocity intelligence” in yourself and your team.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Apr 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/company-culture-of-reciprocity</link>
-        <guid isPermaLink="true">http://localhost:4000/company-culture-of-reciprocity</guid>
+        <link>https://bekahhw.com//company-culture-of-reciprocity</link>
+        <guid isPermaLink="true">https://bekahhw.com//company-culture-of-reciprocity</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
         
       </item>
     
@@ -1101,8 +1181,1242 @@ effectiveness&lt;/a&gt; and &lt;a href=&quot;https://www.vantagecircle.com/en/bl
 &lt;/table&gt;
 </description>
         <pubDate>Mon, 07 Apr 2025 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/agents-v-mcp</link>
-        <guid isPermaLink="true">http://localhost:4000/agents-v-mcp</guid>
+        <link>https://bekahhw.com//agents-v-mcp</link>
+        <guid isPermaLink="true">https://bekahhw.com//agents-v-mcp</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>Measuring the Impact of Developer Content: Metrics That Matter</title>
+        <description>&lt;p&gt;Last week, I was chatting with a Developer Advocate at Gitbook, and he asked me what metrics we looked at for docs at OpenSauced. The honest answer is that we didn’t have KPIs or OKRs or metrics that determined our success. Ultimately, our success was based on users being able to use the software and understand the value in the data we were exposing. Now, that doesn’t mean that I didn’t measure anything. It just means that we weren’t building dashboards to track progress. Ultimately, the metrics will depend on your team’s goals, but here are some of the things I think are valuable in identifying whether or not the docs I’m working on are successful.&lt;/p&gt;
+
+&lt;h2 id=&quot;beyond-vanity-metrics-the-true-impact-of-developer-content&quot;&gt;Beyond Vanity Metrics: The True Impact of Developer Content&lt;/h2&gt;
+
+&lt;p&gt;Traditional content metrics like page views and social shares can be useful, but they tell an incomplete story. There are three dimensions to Developer Content Value that I like to think of as we connect documentation to business outcomes:&lt;/p&gt;
+
+&lt;h3 id=&quot;1-engagement-quality-of-interaction&quot;&gt;1. Engagement: Quality of Interaction&lt;/h3&gt;
+
+&lt;p&gt;Surface-level engagement metrics tell you if developers are finding your content, but deeper metrics will show you if they’re actually succeeding with it.&lt;/p&gt;
+
+&lt;h4 id=&quot;basic-metrics&quot;&gt;Basic Metrics:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Page views&lt;/li&gt;
+  &lt;li&gt;Average time on page&lt;/li&gt;
+  &lt;li&gt;Bounce rates&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;advanced-metrics&quot;&gt;Advanced Metrics:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Content completion rates: What percentage of developers complete multi-step tutorials?&lt;/li&gt;
+  &lt;li&gt;Code example copy events: How often do developers copy sample code (indicates intent to implement)?&lt;/li&gt;
+  &lt;li&gt;Documentation-to-implementation time: How quickly do developers move from reading docs to successful implementation?&lt;/li&gt;
+  &lt;li&gt;Return visit patterns: How frequently do developers reference the same documentation (may indicate confusion or high value)?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-support-deflection-reducing-operational-costs&quot;&gt;2. Support Deflection: Reducing Operational Costs&lt;/h3&gt;
+
+&lt;p&gt;Well-crafted developer content should impact support volume and complexity.&lt;/p&gt;
+
+&lt;h4 id=&quot;key-metrics&quot;&gt;Key Metrics:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support ticket reduction: Decrease in tickets related to documented topics&lt;/li&gt;
+  &lt;li&gt;Question sophistication: Shift from basic “how to” questions to more advanced inquiries&lt;/li&gt;
+  &lt;li&gt;Self-service resolution rates: Percentage of developers who resolve issues through documentation rather than support channels&lt;/li&gt;
+  &lt;li&gt;Documentation referrals: How often support agents can resolve issues by linking to existing documentation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-product-adoption-driving-business-outcomes&quot;&gt;3. Product Adoption: Driving Business Outcomes&lt;/h3&gt;
+
+&lt;p&gt;Ultimately, developer content should allow for successful product adoption and usage.&lt;/p&gt;
+
+&lt;h4 id=&quot;key-metrics-1&quot;&gt;Key Metrics:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Documentation-influenced conversion: Conversion rates for users who engage with documentation vs. those who don’t&lt;/li&gt;
+  &lt;li&gt;Feature adoption correlation: Relationship between documentation engagement and feature usage&lt;/li&gt;
+  &lt;li&gt;Time-to-value: How quickly new developers reach their first success milestone&lt;/li&gt;
+  &lt;li&gt;Retention impact: Differences in retention between developers who use documentation vs. those who don’t&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Documentation Instrumentation
+To gather meaningful data, your documentation needs appropriate tracking:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Event-based analytics: Track specific interactions beyond page views (code copying, example expansion, etc.)&lt;/li&gt;
+  &lt;li&gt;Documentation-to-product pathing: Follow user journeys from documentation to product implementation&lt;/li&gt;
+  &lt;li&gt;Feedback mechanisms: Implement contextual feedback options ( “Was this helpful?” with follow-up options)&lt;/li&gt;
+  &lt;li&gt;Search analytics: Track what developers search for, what they find, and what they do next&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;connecting-data-sources&quot;&gt;Connecting Data Sources&lt;/h3&gt;
+
+&lt;p&gt;To understand whether or not your documentation is successful, you should consider how to connect it to other systems you’re tracking. For instance:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support ticket integration: Tag tickets with related documentation to identify gaps&lt;/li&gt;
+  &lt;li&gt;Product usage correlation: Connect documentation engagement with feature adoption&lt;/li&gt;
+  &lt;li&gt;Developer journey mapping: Track developer progression from documentation to implementation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Not every team has the resources for comprehensive analytics, but you can start with minimal investment:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Implement basic document instrumentation
+    &lt;ul&gt;
+      &lt;li&gt;Add “Was this helpful?” widgets to key pages&lt;/li&gt;
+      &lt;li&gt;Track code copying events&lt;/li&gt;
+      &lt;li&gt;Monitor documentation search queries&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Sample qualitative data
+    &lt;ul&gt;
+      &lt;li&gt;Review a subset of support tickets weekly to identify documentation gaps&lt;/li&gt;
+      &lt;li&gt;Conduct monthly documentation interviews with developers&lt;/li&gt;
+      &lt;li&gt;Add optional exit surveys when developers leave documentation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Use proxy metrics
+    &lt;ul&gt;
+      &lt;li&gt;Monitor support volume for topics with new/updated documentation&lt;/li&gt;
+      &lt;li&gt;Track time spent in documentation vs. successful API calls&lt;/li&gt;
+      &lt;li&gt;Compare onboarding completion rates before and after documentation changes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;the-contributor-journey-metrics&quot;&gt;The Contributor Journey Metrics&lt;/h2&gt;
+
+&lt;p&gt;For open source projects, documentation is both an onboarding tool and a contributor pipeline. At OpenSauced, we partially looked at our documentation effectiveness through the “contribution ladder” metrics:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First-time contributor conversion: Percentage of documentation readers who make their first contribution&lt;/li&gt;
+  &lt;li&gt;Contributor retention: Rate at which contributors return to make additional contributions&lt;/li&gt;
+  &lt;li&gt;Contribution progression: Movement of contributors through increasingly complex contribution types&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At OpenSauced, we structured our documentation to create a clear progression path for contributors. New community members typically followed this journey:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Education path: Learning about open source and its purpose&lt;/li&gt;
+  &lt;li&gt;Documentation contributions: Making their first contributions by improving our docs&lt;/li&gt;
+  &lt;li&gt;App contributions: Eventually contributing to the core application&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When we look at this ladder, we can also see it from this perspective:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Awareness → Interest: How many people who discovered the project engaged with documentation&lt;/li&gt;
+  &lt;li&gt;Interest → First Contribution: Conversion rate from students to first-time contributors&lt;/li&gt;
+  &lt;li&gt;First Contribution → Repeat Contribution: Retention rate of contributors&lt;/li&gt;
+  &lt;li&gt;Repeat → Core Contributor: Progression rate to becoming regular contributors&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;last-thoughts&quot;&gt;Last Thoughts&lt;/h2&gt;
+
+&lt;p&gt;Effective measurement isn’t about proving documentation’s worth in the abstract. You have to try to connect content directly to the metrics that matter to your organization. Whether that’s reducing support costs, accelerating adoption, or improving developer satisfaction, the right metrics framework can change the perception and value of your documentation.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 31 Mar 2025 00:00:00 -0400</pubDate>
+        <link>https://bekahhw.com//developer-content-metrics</link>
+        <guid isPermaLink="true">https://bekahhw.com//developer-content-metrics</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>Common Pitfalls in Developer Content: The 7 Deadly Sins of Developer Documentation</title>
+        <description>&lt;p&gt;Last week, I wrote about &lt;a href=&quot;https://bekahhw.com/Creating-Content-Developers-Love&quot;&gt;Content Developers Love&lt;/a&gt;, and it’s natural to follow that with some of the places where developer content goes wrong. It’s usually not one thing that causes documentation to go wrong; it can be death by a thousand papercuts. Learning how to recognize some of the common problems can keep your writing on track or help you catch it before the problem becomes too big.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-outdated-information-the-trust-killer&quot;&gt;1. Outdated Information: The Trust Killer&lt;/h2&gt;
+
+&lt;p&gt;There’s only one path that outdated documentation leads to: frustration. Maintaining a large documentation base can be challenging to keep up, especially if there isn’t clear communication with engineering teams, but every effort should be made to keep documentation up to date with the current version of your product. Outdated documentation will decrease trust with your users, and that’s hard to rebuild.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; Implement a systematic content review process tied to your release cycle. As part of this, you can:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Version tag all code examples&lt;/li&gt;
+  &lt;li&gt;Automate testing of any documentation code samples&lt;/li&gt;
+  &lt;li&gt;Perform quarterly technical reviews of developer-facing content&lt;/li&gt;
+  &lt;li&gt;Add Changelog links embedded within documentation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-missing-prerequisites-the-silent-blocker&quot;&gt;2. Missing Prerequisites: The Silent Blocker&lt;/h2&gt;
+
+&lt;p&gt;Any content that assumes knowledge or setup that developers don’t have creates immediate friction. What’s obvious to you may be a complete mystery to someone new to your ecosystem.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a “Before You Begin” checklist at the start of each tutorial&lt;/li&gt;
+  &lt;li&gt;Clearly state prerequisites at the beginning of each piece of content&lt;/li&gt;
+  &lt;li&gt;Provide links to resources that help developers meet these prerequisites&lt;/li&gt;
+  &lt;li&gt;Test your content with developers who are new to your product&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One of the ways I like to think about approaching documentation is as “User 0”, meaning I’m the first person to go through the process, encounter the pitfalls, and document not just what works, but what didn’t, so that others don’t have to. You have to think like a user who’s engaging with the documentation for the first time, making sure the experience is intuitive, clear, and kind to anyone coming in fresh.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-undisclosed-limitations-the-hidden-trap&quot;&gt;3. Undisclosed Limitations: The Hidden Trap&lt;/h2&gt;
+
+&lt;p&gt;Developers appreciate honesty about what your solution can’t do as much as clarity about what it can do. Nobody wants to feel “tricked” into thinking they can do something with your product only to find out that it can’t do that, takes substantial investment to implement a workaround, or it’s somewhere down the roadmap.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create dedicated “Limitations” or “Considerations” sections&lt;/li&gt;
+  &lt;li&gt;Be transparent about edge cases and known issues&lt;/li&gt;
+  &lt;li&gt;Offer workarounds when possible&lt;/li&gt;
+  &lt;li&gt;Update limitation documentation as your product evolves&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-neglecting-the-why-the-context-gap&quot;&gt;4. Neglecting the “Why”: The Context Gap&lt;/h2&gt;
+
+&lt;p&gt;Developers aren’t just implementing solutions, they’re making architectural decisions. They need to understand the reasoning behind recommendations to adapt them appropriately.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Explain the rationale behind design patterns or recommended approaches&lt;/li&gt;
+  &lt;li&gt;Provide context for best practices rather than just stating them&lt;/li&gt;
+  &lt;li&gt;Share trade-offs considered when making architectural recommendations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5-tutorial-cliffs-the-abandonment-point&quot;&gt;5. Tutorial Cliffs: The Abandonment Point&lt;/h2&gt;
+
+&lt;p&gt;One of the biggest gaps I’ve seen is that there’s a lot of great beginner (101-level) content and then a sharp jump to advanced (400-level) documentation. That creates a “tutorial cliff,” or a sudden drop in learning support.  Part of creating a good content library means filling in those gaps, including 100, 200, 300, &lt;em&gt;and&lt;/em&gt; 400 level content to support a variety of users.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Map your content to a complete developer journey&lt;/li&gt;
+  &lt;li&gt;Create explicit “next steps” at the end of introductory content&lt;/li&gt;
+  &lt;li&gt;Build “intermediate” content that bridges tutorials and reference&lt;/li&gt;
+  &lt;li&gt;Provide “recipe” style content for common implementation patterns&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;6-poor-organization-the-structure-problem&quot;&gt;6. Poor Organization: The Structure Problem&lt;/h2&gt;
+
+&lt;p&gt;You can have the best, most comprehensive documentation, but if it’s poorly organized, developers won’t be able to use it effectively and are more likely to choose an alternative due to frustration.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Organize content by both task and concept (dual navigation)&lt;/li&gt;
+  &lt;li&gt;Create clear hierarchies with consistent depth and breadth&lt;/li&gt;
+  &lt;li&gt;Use progressive disclosure (show users only the most essential information, but allow them to access more complex or detailed information through deliberate interaction like clicking, expanding, etc.) to prevent overwhelming users&lt;/li&gt;
+  &lt;li&gt;Implement topic relationships and “see also” sections&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;7-missing-troubleshooting-guidance-the-dead-end-dilemma&quot;&gt;7. Missing Troubleshooting Guidance: The Dead-End Dilemma&lt;/h2&gt;
+
+&lt;p&gt;When documentation only covers the happy path and doesn’t address common errors or problems, developers hit roadblocks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Incorporate error message explanations directly in documentation&lt;/li&gt;
+  &lt;li&gt;Create dedicated troubleshooting sections for common failure points&lt;/li&gt;
+  &lt;li&gt;Document known edge cases and their workarounds&lt;/li&gt;
+  &lt;li&gt;Include debugging strategies specific to your platform&lt;/li&gt;
+  &lt;li&gt;Analyze support tickets to identify and document recurring issues&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;turning-pitfalls-into-opportunities&quot;&gt;Turning Pitfalls into Opportunities&lt;/h2&gt;
+
+&lt;p&gt;Each of these mistakes represents an opportunity to improve the developer experience. The good news? Most companies are making at least some of these errors, creating a competitive advantage for those who address them.&lt;/p&gt;
+
+&lt;h2 id=&quot;an-actionable-approach-to-improvement&quot;&gt;An Actionable Approach to Improvement&lt;/h2&gt;
+
+&lt;p&gt;If you’re looking to improve your developer content, start with this simple process:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Audit:&lt;/strong&gt; Evaluate your current content against the pitfalls outlined above&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Prioritize:&lt;/strong&gt; Identify the top 2-3 issues causing the most friction&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Implement:&lt;/strong&gt; Make targeted improvements to address these specific pitfalls&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Measure:&lt;/strong&gt; Track the impact of your changes on developer satisfaction and product adoption&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Iterate:&lt;/strong&gt; Continuously refine based on feedback and changing needs&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;excellence-through-empathy&quot;&gt;Excellence Through Empathy&lt;/h2&gt;
+
+&lt;p&gt;At its core, avoiding these pitfalls requires genuine empathy for your developer audience. By understanding their needs, frustrations, and workflows, you can create content that not only avoids common problems but also empowers developers to succeed with your product.&lt;/p&gt;
+
+&lt;p&gt;Great developer documentation is both about technical accuracy and creating an experience that respects developers’ time, intelligence, and goals.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 24 Mar 2025 00:00:00 -0400</pubDate>
+        <link>https://bekahhw.com//common-dev-content-pitfalls</link>
+        <guid isPermaLink="true">https://bekahhw.com//common-dev-content-pitfalls</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>Adding Multiple Authors to my Astro Writing Blog: A Technical Walkthrough</title>
+        <description>&lt;p&gt;At the end of last year, my brothers and I wrote our first novel together (&lt;a href=&quot;https://dub.sh/b4c-astro&quot;&gt;The Battle for Christmas: Reign of the Nutcrackers&lt;/a&gt;). That experience inspired us to continue writing together, starting with a monthly newsletter with short stories. At this point, we decided we wanted a website. We had been using &lt;a href=&quot;https://kit.com/&quot;&gt;Kit&lt;/a&gt; to send emails, and we liked that functionality, but as our writing resumes grow, we also wanted to have a place where people could see all of our work, and this is where our Astro site came in.&lt;/p&gt;
+
+&lt;p&gt;Now, I’ve been interested in checking out Astro for a while, but when I saw &lt;a href=&quot;https://luciacerchie.dev/&quot;&gt;Lucia Cerchie’s blog&lt;/a&gt; I fell in love with the Astro template (by &lt;a href=&quot;https://www.twitter.com/Charca&quot;&gt;Maxi Ferreira&lt;/a&gt;) she used. I decided to start there, but since this was a blog for me and both of my brothers, I would need to add functionality for multiple authors. Here’s how I did that.&lt;/p&gt;
+
+&lt;h2 id=&quot;learning-the-hard-way-my-journey-to-astro-content-collections&quot;&gt;Learning the Hard Way: My Journey to Astro Content Collections&lt;/h2&gt;
+
+&lt;p&gt;Before we get into it, I need to acknowledge that I started with a mistake. I did the thing I say not to do and I started without fully reading the documentation.&lt;/p&gt;
+
+&lt;p&gt;When I first added multiple author functionality, I created a simple JavaScript file to manage author data:&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;BekahHW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;BekahHW&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Bekah grew up in a storytelling-rich environment with her brothers...&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/assets/bhw_headshot.jpg&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Josh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Josh&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Josh Hawrot is married to his inspiring wife Cruz...&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/assets/josh.jpg&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...another author&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;I connected this to my blog posts using dynamic routes. Everything worked, and I didn’t think twice about it. And then a couple of days later, I was looking at Astro documentation, when I had my facepalm moment: the documentation clearly outlined a more structured, type-safe approach using collections that would make my content more maintainable and scalable. It’s worth noting that I was also using an older version of Astro, and updating to 5.5.3 gave me more functionality.&lt;/p&gt;
+
+&lt;p&gt;From their docs:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Content collections are the best way to manage sets of content in any Astro project. Collections help to organize and query your documents, enable Intellisense and type checking in your editor, and provide automatic TypeScript type-safety for all of your content.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This was exactly what I had needed, and I missed it because I hadn’t spent enough time in the docs. Let’s just say this is one of those lessons you remember.&lt;/p&gt;
+
+&lt;p&gt;What I had &lt;em&gt;was&lt;/em&gt; working though, so why did I need to change?&lt;/p&gt;
+
+&lt;h2 id=&quot;why-i-needed-to-change&quot;&gt;Why I Needed to Change&lt;/h2&gt;
+
+&lt;p&gt;My original approach worked, but switching to Astro’s Content Collections API provided significant benefits:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Schema validation&lt;/strong&gt;: Content collections automatically validate my data structure, preventing errors before they happen&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;TypeScript integration&lt;/strong&gt;: I get autocompletion and type checking when working with author and blog data&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Structured content&lt;/strong&gt;: All data follows a consistent format, making it easier to maintain and extend&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Simplified queries&lt;/strong&gt;: The Collections API provides built-in methods for accessing content, eliminating custom filtering code&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Performance improvements&lt;/strong&gt;: Astro 5’s Content Layer API is specifically optimized for efficiency and scalability&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Additionally, with Astro 5’s reference system, I can establish proper relationships between content types. For example, I can directly reference an author from a blog post using reference(“authors”) in the schema, which creates a clean, maintainable connection between content.&lt;/p&gt;
+
+&lt;h2 id=&quot;migrating-to-astro-content-collections&quot;&gt;Migrating to Astro Content Collections&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Setting Up the Content Directory
+First, I created the proper content directory structure:
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;src/
+├── content/
+│   ├── config.ts  &amp;lt;- Configuration for all collections
+│   ├── authors/
+│   │   ├── Bekah.md
+│   │   ├── Josh.md
+│   │   └── Zach.md
+│   └── blog/
+│       └── my-blog-posts.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Defining Content Schemas&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The heart of content collections is the schema definition, which makes sure all your content follows a consistent structure:&lt;/p&gt;
+
+&lt;div class=&quot;language-ts highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// src/content/config.ts&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defineCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;astro:content&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;astro/loaders&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Define the schema for the authors collection&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defineCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;**/*.md&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./src/content/authors&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Define the schema for the blog collection&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;blog&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defineCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;**/*.md&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./src/content/blog&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;publishDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;authors&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Export the collections&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;collections&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;blog&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;Converting Author Data to Individual Files
+I converted each author from my JS object to individual Markdown files:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bekah&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bekah&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;grew&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;up&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;storytelling-rich&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;environment&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;her&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;brothers,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;books&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;imagination&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;were&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;central&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;daily&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;life...&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/assets/bhw_headshot.jpg&quot;&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Fixing Author Name Capitalization in the Blog List View&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;One issue I ran into was that the author name was appearing in all lowercase in the blog list view (/blog/). This happened because I was using the author ID (which is derived from filenames and always lowercase) instead of their actual name from the frontmatter. Here’s how I updated that in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src/pages/index.astro&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-ts highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Fetch all author entries&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorEntries&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;authors&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getAuthorName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorEntries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Fallback to ID if author not found&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;BaseLayout&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;blog&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Stories&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h1&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sortedPosts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;post-item&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`/blog/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;post-item-author&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;By&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`/authors/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getAuthorName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/span&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;post-item-date&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;—&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;publishDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/span&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/BaseLayout&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Updating Templates to Use Content Collections
+Next, I refactored my blog and author pages to use the Content Collections API:
+```js
+—
+// src/pages/blog/[slug].astro
+import BaseLayout from ‘../../layouts/BaseLayout.astro’;
+import Bio from ‘../../components/Bio.astro’;
+import { getCollection, getEntry, render } from ‘astro:content’;
+import ShareButtons from ‘../../components/ShareButtons.astro’;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;export async function getStaticPaths() {
+try {
+    const blogEntries = await getCollection(‘blog’);&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Create routes using entry ID
+return blogEntries.map(post =&amp;gt; {
+  console.log(`Creating route for ${post.id}`);
+  return {
+    params: { slug: post.id },
+    props: { entryId: post.id },  // Just pass the ID
+  };
+});   } catch (error) {
+console.error(&quot;Error in getStaticPaths:&quot;, error);
+return [];   } }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;// Get blog post data from props
+const { entryId } = Astro.props;
+const entry = await getEntry(‘blog’, entryId);&lt;/p&gt;
+
+&lt;p&gt;if (!entry) {
+  return Astro.redirect(‘/404’);
+}&lt;/p&gt;
+
+&lt;p&gt;// Render the content
+const { Content } = await render(entry);
+const allAuthors = await getCollection(‘authors’);
+let author;
+if (entry.data.author?.id) {
+  try {
+    author = await getEntry(‘authors’, entry.data.author.id);
+    if (author) {
+      console.log(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Found author for ${entry.data.author.id}&lt;/code&gt;);
+    } else {
+      console.error(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Author not found: ${entry.data.author.id}&lt;/code&gt;);
+    }
+  } catch (error) {
+    console.error(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Error fetching author: ${error.message}&lt;/code&gt;);
+  }
+}&lt;/p&gt;
+
+&lt;h2 id=&quot;const-permalink--astrositehrefblogentryid&quot;&gt;const permalink = &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;${Astro.site.href}blog/${entry.id}&lt;/code&gt;;&lt;/h2&gt;
+
+&lt;p&gt;&amp;lt;BaseLayout title={entry.data.title} description={entry.data.description} permalink={permalink} current=”blog”&amp;gt;&lt;/p&gt;
+&lt;header&gt;
+    &lt;p&gt;{entry.data.publishDate} ~ {entry.data.readingTime}&lt;/p&gt;
+    &lt;h1&gt;{entry.data.title}&lt;/h1&gt;
+    &lt;hr /&gt;
+  &lt;/header&gt;
+&lt;div class=&quot;container&quot;&gt;
+    &lt;article class=&quot;content&quot;&gt;
+      &lt;Content /&gt;
+    &lt;/article&gt;
+    &lt;hr /&gt;
+    
+    {author &amp;amp;&amp;amp; (
+      &lt;div class=&quot;author-bio&quot;&gt;
+        &lt;h3&gt;About the Author&lt;/h3&gt;
+        &amp;lt;Bio 
+          name={author.data.name}
+          bio={author.data.bio}
+          avatar={author.data.avatar}
+        /&amp;gt;
+      &lt;/div&gt;
+    )}
+    
+    &amp;lt;ShareButtons title={entry.data.title} permalink={permalink} /&amp;gt;
+  &lt;/div&gt;
+&lt;p&gt;&amp;lt;/BaseLayout&amp;gt;
+```
+There are two things that I wanted to implement while working on this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;At the bottom of every short story, you see the author and their bio&lt;/li&gt;
+  &lt;li&gt;When you click an author from the list view, you are taken to their page with links to all of their works.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Both of those are fully functional on the site now.&lt;/p&gt;
+
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
+
+&lt;p&gt;The good news is that I learned a lot during this project, including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Read the documentation first: So much time and effort could have been saved&lt;/li&gt;
+  &lt;li&gt;Use the platform’s built-in features: Modern frameworks like Astro provide powerful tools&lt;/li&gt;
+  &lt;li&gt;Be willing to refactor: Sometimes you need to accept you’ve taken the wrong approach&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are still things that I need to work on for the site. The next priority is to improve the mobile view and responsiveness, but I’m happy to have it working. We already have two of our short stories up there attributed to the correct authors, and in a couple of weeks mine will be there too. You can check out our &lt;a href=&quot;https://dub.sh/siblings-write&quot;&gt;site&lt;/a&gt; now!&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 18 Mar 2025 00:00:00 -0400</pubDate>
+        <link>https://bekahhw.com//astro-content-collections</link>
+        <guid isPermaLink="true">https://bekahhw.com//astro-content-collections</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>Creating Content Developers Love: A Guide to Developer Experience (DX) Content</title>
+        <description>&lt;p&gt;Over the past couple of years, I’ve been in the middle of conversations about whether or not DevRel belongs in marketing. At the end of the day, I don’t know that it matters if you understand developers. One of the biggest pain points I’ve seen from marketing teams is understanding how to talk to developers, because, as we all know, developers are highly sensitive to feeling like they’ve been “marketed to.” What that really means is that they have high standards for the content they consume. Developers want to know that you understand the information. They want precision, depth, and utility.&lt;/p&gt;
+
+&lt;p&gt;Last year, I saw a tweet from a team lead at a large company who said that they were working on choosing a new package for a feature they were working on. The number one reason they passed on some packages? Poor documentation and resources. Developers need to be able to understand how to use software so they can be effective as they create theirs. As I dive deeper into content creation targeting developers, I’m trying to find more ways to distill effective ways of presenting that content. In this post, I’m sharing how to present technical content to a technical audience.&lt;/p&gt;
+
+&lt;h2 id=&quot;understanding-the-developer-mindset&quot;&gt;Understanding the Developer Mindset&lt;/h2&gt;
+
+&lt;p&gt;Maybe the main skill a developer has is problem-solving. That’s because that’s what they do. Most of them aren’t asking the question, “What does your product do?” They’re asking, “How can this product help me to solve my current challenge?” When you create content that recognizes that ask,  you’re building credibility.&lt;/p&gt;
+
+&lt;p&gt;There is never an end to the challenges developers have to solve. That’s why it’s important to value their time. You need to get to the point, create a scannable and well-structured hierarchy, and provide complete solutions without unnecessary stops. As part of that, you need to understand that they’re likely also looking for technical depth. They want the authors to understand not just how to implement something, but also why it needs to be implemented. If there are limitations, admit them. Don’t try to hide them.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-clear-framework-for-developer-content&quot;&gt;The CLEAR framework for Developer Content&lt;/h2&gt;
+
+&lt;p&gt;There are a lot of ways that you can structure effective content, but sometimes it’s nice to have a framework to maintain consistency. Here are some takeaways from my experiences:&lt;/p&gt;
+
+&lt;h3 id=&quot;c---code-first-examples&quot;&gt;C - Code-First Examples&lt;/h3&gt;
+
+&lt;p&gt;Working code clearly communicates credibility to your audience. Ways to incorporate this could be:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Functional code examples that could be copied and pasted&lt;/li&gt;
+  &lt;li&gt;Explanations that followed the code, not preceded it&lt;/li&gt;
+  &lt;li&gt;Real-world scenarios rather than contrived examples&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Stripe is one of those companies that people point to as the standard for documentation. Their documentation leads with code examples, demonstrating both how the API works and how it responds to different inputs as well as common use cases.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Practical Tip&lt;/strong&gt;: Always test your code examples in an isolated environment before publishing. Nothing undermines credibility faster than sample code that doesn’t work as described.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;l---layered-complexity&quot;&gt;L - Layered Complexity&lt;/h3&gt;
+
+&lt;p&gt;Great developer content acknowledges different knowledge levels by layering information:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Entry points for new users and learners&lt;/li&gt;
+  &lt;li&gt;Deeper technical details for experienced users&lt;/li&gt;
+  &lt;li&gt;Advanced use cases and optimizations for experts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Twilio’s documentation does this exceptionally well, offering quick starts for beginners alongside detailed API references and more advanced tutorials for complex implementation scenarios.&lt;/p&gt;
+
+&lt;h3 id=&quot;e---ecosystem-awareness&quot;&gt;E - Ecosystem Awareness&lt;/h3&gt;
+
+&lt;p&gt;Great Developer Experience content acknowledges the broader ecosystem in which your product operates.&lt;/p&gt;
+
+&lt;p&gt;Vercel’s Next.js documentation excels here, providing guidance on how Next.js interacts with various styling solutions, deployment platforms, and state management libraries.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Practical Tip&lt;/strong&gt;: Create integration guides for popular tools in your ecosystem. These high-value resources address real workflow challenges and demonstrate your understanding of the developer’s complete environment.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;a---accessible-terminology&quot;&gt;A - Accessible Terminology&lt;/h3&gt;
+
+&lt;p&gt;While technical depth is important, you should avoid unnecessary jargon or marketing speak.&lt;/p&gt;
+
+&lt;p&gt;Good developer content:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Defines terms clearly upon first use&lt;/li&gt;
+  &lt;li&gt;Avoids acronyms without explanation&lt;/li&gt;
+  &lt;li&gt;Uses consistent terminology throughout&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When documenting complex concepts, I’ve found that starting with an analogy that relates to widely understood programming concepts can be useful. From there, you can transition to more specific terms.&lt;/p&gt;
+
+&lt;h3 id=&quot;r---reproducible-workflows&quot;&gt;R - Reproducible Workflows&lt;/h3&gt;
+
+&lt;p&gt;Developers need to understand not just isolated features but complete workflows. Content that connects the dots and shows how components work together in a reproducible process is invaluable.&lt;/p&gt;
+
+&lt;p&gt;GitHub’s documentation on GitHub Actions demonstrates this principle well, walking developers through complete CI/CD workflows rather than just explaining individual actions in isolation.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Practical Tip&lt;/strong&gt;: Structure tutorials as complete journeys with clear starting conditions and defined outcomes. Make sure developers can reproduce your examples with minimal setup.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;developer-content-as-a-product&quot;&gt;Developer Content as a Product&lt;/h2&gt;
+
+&lt;p&gt;The most successful companies treat developer content not as a marketing afterthought but as a product in itself that’s designed with specific user needs in mind, measured by meaningful metrics, and continuously improved based on feedback.&lt;/p&gt;
+
+&lt;p&gt;Developers are among the most demanding content consumers, but also the most loyal when their needs are genuinely met. Great developer content doesn’t just support your product, it becomes one of your most valuable assets.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Mar 2025 00:00:00 -0400</pubDate>
+        <link>https://bekahhw.com//Creating-Content-Developers-Love</link>
+        <guid isPermaLink="true">https://bekahhw.com//Creating-Content-Developers-Love</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>Content Strategy for Startups: Storytelling as a Growth Driver</title>
+        <description>&lt;p&gt;It started with an air mattress on the floor of a San Francisco apartment.&lt;/p&gt;
+
+&lt;p&gt;When Brian Chesky and Joe Gebbia couldn’t afford their rent in 2007, they purchased three air mattresses and created a simple WordPress website called “Air Bed &amp;amp; Breakfast,” renting the mattresses during a design conference when the hotels were sold out. That isn’t just the origin story of a company that would eventually be valued at over $100 billion. It’s a perfect example of how a compelling origin story can become a powerful asset.&lt;/p&gt;
+
+&lt;p&gt;The most successful startups aren’t just building products; they’re telling stories that resonate, inspire, and drive growth.&lt;/p&gt;
+
+&lt;h2 id=&quot;beyond-features-why-stories-drive-startup-growth&quot;&gt;Beyond Features: Why Stories Drive Startup Growth&lt;/h2&gt;
+
+&lt;p&gt;I taught college English for ten years before coming into tech. And what I’ve learned about academic writing and tech content is that people and companies who tell the best stories often win the market.&lt;/p&gt;
+
+&lt;p&gt;Think about how Figma moved from a niche design tool to an industry standard. Their storytelling centered around designers collaborating in real-time. By sharing stories of design teams achieving breakthrough moments together, they created emotional connections with their audience while showcasing product capabilities. Their collaboration and community narrative helped turn Figma into a $20 billion acquisition target and the go-to tool for design teams.&lt;/p&gt;
+
+&lt;p&gt;Earlier today, I spoke with a startup founder who asked how people changed their minds on trying out a new technology. I told them that the strongest predictor of change I’ve noticed is when trusted individuals share how they’ve successfully used new technology. We’re naturally more inclined to trust those we know. That might be people we “know” online from their social media posts or people we know personally. When we have their recommendation or hear their story of how they’ve used the product, we’re more likely to trust the product.&lt;/p&gt;
+
+&lt;p&gt;This little mantra captures the concept: features inform, but stories transform.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-idea-framework-a-strategic-approach-to-startup-content&quot;&gt;The IDEA Framework: A Strategic Approach to Startup Content&lt;/h2&gt;
+
+&lt;p&gt;There are a lot of different frameworks out there, but I’ve combined a couple in a way that’s informed by my own experience bringing users to OpenSauced and years of content development. The IDEA framework connects storytelling to content as a growth-driver:&lt;/p&gt;
+
+&lt;h3 id=&quot;i---inspire&quot;&gt;I - Inspire&lt;/h3&gt;
+
+&lt;p&gt;Content needs to sparks curiosity and emotional connection. For startups, this might mean:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Origin stories that highlight your founding journey and the problem you’re solving&lt;/li&gt;
+  &lt;li&gt;Vision stories that paint a picture of the world you’re helping create&lt;/li&gt;
+  &lt;li&gt;Customer success narratives that let your users be the heroes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Take the Spanx origin story from their &lt;a href=&quot;https://spanx.com/pages/about-us&quot;&gt;About Us page&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;SPANX founder Sara Blakely was getting ready for a party when she realized she didn’t have the right undergarment to provide a smooth look under white pants. Armed with scissors and sheer genius, she cut the feet off her control top pantyhose and the SPANX revolution began! With a focus on solving wardrobe woes, the SPANX brand has grown to offer bras, underwear, leggings, active and more. SPANX has secured its place in women’s hearts and in pop-culture with daily mentions everywhere from CNN to SNL.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The story captures the moment of inception and the expansion of the brand while demonstrating creativity.&lt;/p&gt;
+
+&lt;p&gt;At OpenSauced, we saw continuous engagement when sharing stories of developers who found community through open source contribution. These narratives didn’t just showcase our platform, they inspired others to see what was possible.&lt;/p&gt;
+
+&lt;h3 id=&quot;d---demonstrate&quot;&gt;D - Demonstrate&lt;/h3&gt;
+
+&lt;p&gt;Inspiration catches your audience’s attention, but to keep them around you need to draw them deeper. This is where demonstration comes in. In this context, demonstration is showing your solution in action. Here are some ways you can do that:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Case studies that walk through specific problems and solutions&lt;/li&gt;
+  &lt;li&gt;Interactive tutorials that give users immediate wins&lt;/li&gt;
+  &lt;li&gt;Comparative analyses that honestly position your offering&lt;/li&gt;
+  &lt;li&gt;Community showcase that shows how real users have successfully used your product&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Notion has perfected this approach by leveraging user stories to show the flexibility of their product. Instead of explaining features, they show real users from a variety of backgrounds and usecases and how they’ve built unique workflows. Authenticity is key here. Having examples that people trust from real users has helped pave the way for Notion’s explosive growth. Potential users can see themselves in the product through the stories of others.&lt;/p&gt;
+
+&lt;p&gt;This content doesn’t just tell. It shows.&lt;/p&gt;
+
+&lt;h3 id=&quot;e---educate&quot;&gt;E - Educate&lt;/h3&gt;
+
+&lt;p&gt;Following my previous response to the startup founder, I told them how important it is to educate your audience. Education hugely impacts adoption, builds trust, and positions you as an authority. Here are some ways to effectively educate your audience:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Clear, well-organized, and up-to-date documentation&lt;/li&gt;
+  &lt;li&gt;Resources that solve common pain points and show why your product is useful&lt;/li&gt;
+  &lt;li&gt;Industry reports that share valuable insights&lt;/li&gt;
+  &lt;li&gt;How-to content, quickstart guides, and tutorials that create immediate value&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PostHog does an excellent job of educating users through their resources and their feature onboarding. Their comprehensive resources don’t just sell the product, they educate users to maximize their benefits.&lt;/p&gt;
+
+&lt;p&gt;Educational content also creates a reciprocity loop: you give knowledge freely, and users return the favor with their attention and trust.&lt;/p&gt;
+
+&lt;h3 id=&quot;a---activate&quot;&gt;A - Activate&lt;/h3&gt;
+
+&lt;p&gt;All of this process builds to what most companies want: activating the audience to take meaningful action. Additional ways to activate the audience include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Community-building initiatives that encourage participation (hackathons, meetups, etc.)&lt;/li&gt;
+  &lt;li&gt;Product adoption pathways that reduce friction (onboarding content)&lt;/li&gt;
+  &lt;li&gt;Opportunities for your users to share with others (share button, downloadable assets, collaboration requests, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Our most successful campaigns at OpenSauced weren’t just about sharing what new features we were shipping. They were about empowering our community to become advocates.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-storytelling-multiplier&quot;&gt;The Storytelling Multiplier&lt;/h2&gt;
+
+&lt;p&gt;When you weave storytelling through each stage of the IDEA framework, your content gains what I like to call the “storytelling multiplier effect.” I wrote about how to incorporate good storytelling last week in, &lt;a href=&quot;https://bekahhw.com/Storytelling-in-Tech&quot;&gt;The Power of Storytelling in Tech Content&lt;/a&gt;. Ideally, you’re not just communicating a feature. You’re creating an emotional connection and demonstrating real-world impact. That’s when the storytelling multiplier works.&lt;/p&gt;
+
+&lt;p&gt;Because humans are built for storytelling, we see clear ROIs:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reduced education costs: Stories make complex concepts more accessible and memorable&lt;/li&gt;
+  &lt;li&gt;Increased retention: Emotional connections encourage loyalty and reduce churn&lt;/li&gt;
+  &lt;li&gt;Enhanced conversion: Narratives drive action more effectively than features and specifications&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;implementing-storytelling-in-your-startups-content-strategy&quot;&gt;Implementing Storytelling in Your Startup’s Content Strategy&lt;/h2&gt;
+
+&lt;p&gt;If you’re wondering where to start, here are a couple of things you can do:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Audit your current content&lt;/strong&gt;: Identify pieces that could be transformed with storytelling.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Collect narratives&lt;/strong&gt;: Systematically gather stories from customers, team members, and your founding journey.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Create story templates&lt;/strong&gt;: Develop frameworks that help your team consistently incorporate narrative elements.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Measure narrative engagement&lt;/strong&gt;: Look beyond standard metrics to measure how stories resonate (comment sentiment, sharing behavior, story recall).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;your-story-starts-now&quot;&gt;Your Story Starts Now&lt;/h2&gt;
+
+&lt;p&gt;Every startup has stories worth telling. Stories of problems solved, of excited customers, of visions realized. These stories aren’t marketing assets; they’re growth drivers that can transform your content strategy from a cost center to a competitive advantage.&lt;/p&gt;
+
+&lt;p&gt;Storytelling’s transforms transactional relationships into emotional connections.
+In a world of information overload (especially AI-generated information), storytelling isn’t optional. It’s essential. The startups that understand this will not only capture attention but also build the emotional connections that drive sustainable growth.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Mar 2025 00:00:00 -0400</pubDate>
+        <link>https://bekahhw.com//startup-content-strategy</link>
+        <guid isPermaLink="true">https://bekahhw.com//startup-content-strategy</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>The Power of Storytelling in Tech Content</title>
+        <description>&lt;p&gt;I’ve been thinking a lot about how storytelling sometimes gets lost or becomes an afterthought when we’re consumed by data, specifications, or writing content with AI. But in reality, it’s one of the most powerful tools we have, especially now. It creates emotional connections, makes complex ideas memorable, and establishes trust with our audience.&lt;/p&gt;
+
+&lt;p&gt;If we want to engage our audience, influence decision-makers, or strengthen our brands, storytelling should play a key role.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-storytelling-works&quot;&gt;Why Storytelling Works&lt;/h2&gt;
+
+&lt;h3 id=&quot;the-neuroscience-behind-stories&quot;&gt;The Neuroscience Behind Stories&lt;/h3&gt;
+
+&lt;p&gt;Our brains are wired for storytelling. Neuroscience research shows that when we hear stories, multiple parts of our brain light up—not just the language-processing centers, but also areas responsible for emotions and memory. Paul J. Zak, a professor of neuroscience, found that stories that generate emotional connections trigger the release of oxytocin, a neurochemical that enhances trust and cooperation.&lt;/p&gt;
+
+&lt;p&gt;In other words, when you tell a compelling story, your audience is more likely to trust you, remember your message, and take action.&lt;/p&gt;
+
+&lt;h3 id=&quot;stories-make-tech-more-human&quot;&gt;Stories Make Tech More Human&lt;/h3&gt;
+
+&lt;p&gt;People don’t connect with features; they connect with experiences. Take Warby Parker, for example. Their brand wasn’t built on just selling eyewear. It was built on a story of accessibility and innovation. It was built on the story of the struggle of a student who couldn’t afford glasses, the industry’s monopolization, and the company’s mission to create affordable, stylish eyewear.&lt;/p&gt;
+
+&lt;p&gt;Similarly, think about how companies like OpenAI or GitHub frame their innovations. They don’t just talk about algorithms and infrastructure; they tell stories of empowerment, stories about how AI helps developers be more productive or how open source fosters collaboration.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-turn-dry-tech-content-into-a-compelling-story&quot;&gt;How to Turn Dry Tech Content into a Compelling Story&lt;/h2&gt;
+
+&lt;p&gt;If you want to leverage storytelling in your tech content, here’s a three-step framework to help you get started:&lt;/p&gt;
+
+&lt;h3 id=&quot;1-start-with-a-struggle-or-problem&quot;&gt;1. Start with a Struggle or Problem&lt;/h3&gt;
+
+&lt;p&gt;Great stories begin with a problem or challenge. This could be the difficulty of managing distributed systems, the frustration of inefficient workflows, or the struggle of navigating an open source contribution for the first time.&lt;/p&gt;
+
+&lt;p&gt;Example: Instead of saying, “Our new cloud solution optimizes deployment times,” start with a story:&lt;/p&gt;
+
+&lt;p&gt;“It’s 2 AM. You get a call, jolting you awake and now you find yourself frantically debugging a failed deployment. This isn’t the first time this has happened, and you’re tired of another sleepless night. There has to be a better way…”&lt;/p&gt;
+
+&lt;h3 id=&quot;2-show-the-transformation&quot;&gt;2. Show the Transformation&lt;/h3&gt;
+
+&lt;p&gt;Introduce your solution as a turning point in the narrative. How does it solve the problem? How does it change the experience for the user?&lt;/p&gt;
+
+&lt;p&gt;Example: Continuing the story:&lt;/p&gt;
+
+&lt;p&gt;“After implementing our automated deployment tool, you finally got a full night’s sleep when you were on call. The next time an update went live, it was seamless, no more late-night firefighting.”&lt;/p&gt;
+
+&lt;h3 id=&quot;3-end-with-a-resolution-and-impact&quot;&gt;3. End with a Resolution and Impact&lt;/h3&gt;
+
+&lt;p&gt;Show the bigger picture. How does this solution contribute to success, productivity, or innovation?&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;p&gt;“Today, your team ships code faster and with fewer errors. They focus on innovation rather than crisis management, because the best engineers aren’t the ones pulling all-nighters; they’re the ones solving real problems.”&lt;/p&gt;
+
+&lt;h2 id=&quot;actionable-takeaway-apply-storytelling-to-your-tech-content&quot;&gt;Actionable Takeaway: Apply Storytelling to Your Tech Content&lt;/h2&gt;
+
+&lt;p&gt;Here’s how you can start incorporating storytelling into your content:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Identify Your Audience’s Pain Points&lt;/strong&gt;: What struggles do they face? Talk to real users or analyze common complaints in your industry. (That’s right, you should actually talk to people who use your products.)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Craft Narratives Around Those Challenges&lt;/strong&gt;: Frame your content like a journey, with real-world scenarios.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Use Emotion and Relatable Examples&lt;/strong&gt;: Whether it’s a developer, a manager, or an open source contributor, make your audience see themselves in the story.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+
+&lt;p&gt;Tech content shouldn’t just about features and data. It should be about making people feel something. When you tell a compelling story, you don’t just inform, you inspire.&lt;/p&gt;
+
+&lt;p&gt;So the next time you’re drafting a case study, writing a blog, or presenting a product update, ask yourself: What’s the story here? Because the best tech writers aren’t just sharing information, they’re telling stories that people remember.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 05 Mar 2025 00:00:00 -0500</pubDate>
+        <link>https://bekahhw.com//Storytelling-in-Tech</link>
+        <guid isPermaLink="true">https://bekahhw.com//Storytelling-in-Tech</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>Google’s EEAT vs. Aristotle’s Rhetorical Triangle: SEO Is Just Ancient Rhetoric in Disguise</title>
+        <description>&lt;p&gt;Recently, I learned about Google’s EEAT (Experience, Expertise, Authoritativeness, Trustworthiness) framework. That’s the one that determines whether your content is worthy of showing up on search results or if it gets yeeted into the void of page two or beyond.&lt;/p&gt;
+
+&lt;p&gt;The more I thought about it, the more I realized that EEAT is just Aristotle’s rhetorical triangle with an SEO-friendly name.&lt;/p&gt;
+
+&lt;p&gt;The humor isn’t lost on me that same guy who spent his days philosophizing in ancient Greece (who I learned about in my Freshman Philosophy class) basically laid the groundwork for Google’s ranking algorithm. And if that doesn’t prove that everything in life is a remix, I don’t know what does.&lt;/p&gt;
+
+&lt;p&gt;But let’s break this down in a way that is useable for content creators.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-eeat&quot;&gt;What Is EEAT?&lt;/h2&gt;
+&lt;p&gt;In Google’s world, EEAT stands for:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Experience&lt;/strong&gt; – Have you actually done the thing you’re writing about?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Expertise&lt;/strong&gt; – Do you know your stuff?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Authoritativeness&lt;/strong&gt; – Are you recognized as a legit source?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Trustworthiness&lt;/strong&gt; – Can people rely on your content?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Basically, if you’re writing about deep-sea welding, Google wants to make sure you’re not my 10 year old who just watched a YouTube video about it and decided, “Yeah, I could generate a bunch words on this using ChatGPT.”&lt;/p&gt;
+
+&lt;h2 id=&quot;aristotles-rhetorical-triangle-the-og-eeat&quot;&gt;Aristotle’s Rhetorical Triangle: The OG EEAT&lt;/h2&gt;
+
+&lt;p&gt;Long before Google existed (or the internet, or electricity, or deodorant), Aristotle defined the three pillars of persuasion:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Ethos (Credibility)&lt;/strong&gt; – Are you a trustworthy source?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pathos (Emotion)&lt;/strong&gt; – Can you connect with people’s lived experiences?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Logos (Logic)&lt;/strong&gt; – Do you have facts to back up what you’re saying?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sound familiar? That’s because it’s basically EEAT in a different era.&lt;/p&gt;
+
+&lt;p&gt;Here’s how they match up:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;EEAT (Google)&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Aristotle’s Triangle&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Experience&lt;/strong&gt; (Have you actually done this?)&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;Pathos&lt;/strong&gt; (Can you connect with real-life experiences?)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Expertise&lt;/strong&gt; (Do you understand the topic deeply?)&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;Logos&lt;/strong&gt; (Do you have the knowledge and logic to back it up?)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Authoritativeness &amp;amp; Trustworthiness&lt;/strong&gt; (Are you credible and reliable?)&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;Ethos&lt;/strong&gt; (Are you a respected and believable source?)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;If Aristotle were alive today, he’d probably have a wildly successful blog, rank #1 on Google for How to Win an Argument, and be giving TED Talks about persuasion.&lt;/p&gt;
+
+&lt;h2 id=&quot;seo-is-just-rhetoric-for-the-internet-age&quot;&gt;SEO Is Just Rhetoric for the Internet Age&lt;/h2&gt;
+
+&lt;p&gt;The more you think about it, the more it makes sense. Google isn’t just rewarding well-researched content; it’s rewarding persuasive content.&lt;/p&gt;
+
+&lt;p&gt;Just like Aristotle’s rhetoric, SEO is about:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Knowing your audience (Google calls this “search intent”)&lt;/li&gt;
+  &lt;li&gt;Establishing credibility (Google calls this “authority”)&lt;/li&gt;
+  &lt;li&gt;Making a strong case (Google calls this “quality content”)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At the end of the day, writing for SEO is about being convincing, trustworthy, and valuable. Just like a good argument, or, a well-structured ancient Greek debate.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-does-this-mean-for-you&quot;&gt;What Does This Mean for You?&lt;/h2&gt;
+
+&lt;p&gt;If you’re trying to write content that actually ranks, take a page from Google and Aristotle:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Share real experiences. (People can smell fake authority from a mile away.)&lt;/li&gt;
+  &lt;li&gt;Back up your claims with solid knowledge. (Google loves receipts.)&lt;/li&gt;
+  &lt;li&gt;Build credibility over time. (Trust isn’t built in a day.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But what’s most important, in my opinion? Write for people. Be engaging. Tell a story. Drop a joke now and then. Because at the end of the day, whether you’re Aristotle in 350 BCE or a content creator in 2025, the best way to win people over is to be real, be knowledgeable, and make it worth their time.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 24 Feb 2025 00:00:00 -0500</pubDate>
+        <link>https://bekahhw.com//Ai-and-content-creation</link>
+        <guid isPermaLink="true">https://bekahhw.com//Ai-and-content-creation</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>Five Lessons for Five Years in Tech</title>
+        <description>&lt;p&gt;July marked my fifth year in tech.That’s half a decade in a career I never imagined myself in. &lt;a href=&quot;https://bekahhw.com/I-Came-into-Tech-via-Trauma&quot;&gt;I came into tech via trauma&lt;/a&gt;, so it’s always hard to answer the question about where I want to go next. But I’ve been getting that question a lot more lately. I think to understand where I want to go next (that post is coming soon), I need to reflect on where I’ve already been and what I’ve learned. With all of the time I’ve spent in tech, I’ve accumulated a toolbox of lessons – some through hard conversations, others through pushing myself beyond what I thought I was capable – that I know are useful to more than just me. Every year has added a new layer, a new ring in a tree, a new depth that shaped my understanding of tech.&lt;/p&gt;
+
+&lt;p&gt;There are some years where I felt stuck. There are other years — like this past one — where I’ve grown more than I could’ve imagined. Growing doesn’t happen in isolation. It happens when you listen to the people around you and you learn from them, and that extends through all of these lessons I’m sharing below:&lt;/p&gt;
+
+&lt;h2 id=&quot;embrace-change&quot;&gt;Embrace Change&lt;/h2&gt;
+
+&lt;p&gt;Working in tech is like standing in a river that’s constantly moving. No developer gets to work with the same stack forever, and that’s part of the excitement (and challenge). As Heraclitus put it, “No one steps in the same river twice.” That flow can be really intense – I’ve heard people commonly refer to it as drinking from a fire hose. More and more reports show that the half-life of tech-related skills is five or fewer years. That means that none of us can expect to learn something today and it will still be relevant five years from now. We have to keep learning. Embracing this flow means recognizing that your learning curve never really ends, so focus on adaptability over mastery. Small steps each day, like 10 minutes with a new framework or revisiting foundational knowledge, can keep you from feeling overwhelmed.&lt;/p&gt;
+
+&lt;p&gt;Personally, my role has shifted over the last five years out of circumstance and necessity. I started as a front-end developer, but I’ve also done mobile development, community building, developer experience and more. Part of this change means that you need to do frequent self-evaluations to understand the best fit for your skillset and be willing to either invest in learning something new and putting in the extra time to master it, or lean into your strengths and let it take you down that path.&lt;/p&gt;
+
+&lt;h2 id=&quot;people-first-always&quot;&gt;People First, Always&lt;/h2&gt;
+
+&lt;p&gt;In tech, it’s easy to get lost in code and strong opinions. The most successful people know that building relationships is just as important as building products. A study by MIT’s Human Dynamics Lab shows that top teams excel because of social connections, not individual IQs.&lt;/p&gt;
+
+&lt;p&gt;Let’s keep going with the nature analogies and think of your career as a garden: while your code/ability to understand a technology is the seasonal bloom, relationships are the perennials, coming back stronger year after year. &lt;a href=&quot;https://hbr.org/2021/10/get-better-at-networking-our-favorite-reads&quot;&gt;The Harvard Business Review reports that 85% of job opportunities come through networking&lt;/a&gt;. Furthermore, Arthur Brooks, in Build the Life You Want, emphasizes the importance of building and maintaining a supportive social network for both happiness and personal growth. He argues that cultivating relationships is essential because social connections play a critical role in emotional resilience, personal fulfillment, and overall well-being.&lt;/p&gt;
+
+&lt;p&gt;Make it a habit to connect with people across roles – reach out, share coffee (virtual or real), and invest time in understanding their work. These connections often open doors that technical skills alone can’t. Being proactive means nurturing relationships, and that requires effort. Building a strong network isn’t just about socializing; it’s about creating genuine, mutually beneficial connections that enrich everyone’s lives.&lt;/p&gt;
+
+&lt;h2 id=&quot;resilience-is-your-secret-weapon&quot;&gt;Resilience is Your Secret Weapon&lt;/h2&gt;
+
+&lt;p&gt;The tech industry can feel like bamboo – it spends years growing underground before it shoots up. There will be times when your career feels stuck, but that should be when roots are forming. Data from the Bureau of Labor Statistics shows that tech professionals experience 3-4 major transitions throughout their careers.&lt;/p&gt;
+
+&lt;p&gt;I’ve seen projects collapse and experienced layoffs myself. When I was laid off a couple of years ago, I immediately turned to my network, had conversations with people that I trusted, and invested in moving forward. Sure, it was hard and there were days that I didn’t want to get off the couch, but those conversations are what landed me my next role, and the one that I consider to be the most pivotal in my career. I’ve learned that resilience isn’t just about “bouncing back”; it’s about growing stronger through each setback. Think of resilience as a muscle you can train – each challenge strengthens it, so reflect on setbacks and see them as part of your career’s growth story.&lt;/p&gt;
+
+&lt;h2 id=&quot;storytelling-makes-you-stand-out&quot;&gt;Storytelling Makes You Stand Out&lt;/h2&gt;
+
+&lt;p&gt;Data might be king, but storytelling is the kingdom. Think about the last time a story moved you – it probably wasn’t about numbers alone. When we hear a story that we connect to, neurons fire and happy hormones are released in our body, connecting us to the storyteller. (If you want to learn more about why storytelling is important, check out &lt;a href=&quot;https://www.youtube.com/live/Dcz0dOQmcaE?si=krmf_qQm4PnjS4DL&quot;&gt;my keynote for THAT conf in 2023&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;Whether you’re pitching a project or explaining a complex concept, try to weave a narrative. The narrative also helps to provide context for your work. You’re not just coding features; you’re solving problems for real people. What are the problems? Why are you solving them? I’ve said this a bunch of times, but you could build the best product in the world, but if no one knows about it or understands what it is and why it’s valuable, it won’t matter. Frame your work as a journey, sharing the challenges and triumphs. You’ll make your work memorable and help your audience, technical or not, connect with your ideas.&lt;/p&gt;
+
+&lt;h2 id=&quot;embrace-creative-destruction&quot;&gt;Embrace “Creative Destruction”&lt;/h2&gt;
+
+&lt;p&gt;Treat your work like a bonsai tree: prune to grow. In tech, we often need to cut away pieces of what we thought were “masterpieces” as projects evolve. This isn’t failure; it’s creative destruction. In writing, we sometimes say, “don’t be afraid to kill your darlings” or “don’t be precious about your work.” It’s about the total story that you’re trying to tell. You might create something masterful, but if it doesn’t fit with the rest of the story, it’s taking away from that story. Embrace this! It’s about refining, adapting, and learning. Remember, your work isn’t a reflection of your worth. So, if your code or design doesn’t make it to production, don’t mourn it. Each iteration sharpens your skills and builds a foundation for future success.&lt;/p&gt;
+
+&lt;p&gt;I have a couple of running docs of things I’ve had to cut from projects. They live there in case I’ll need to use them again. Sometimes it’s helpful to write about it. Maybe you cut some “clever code.” It didn’t fit into the project but you might want to remember how you approached that problem solving. Almost everything we do can be a learning moment. Creative destruction allows us an opportunity for growth and self-refinement.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+
+&lt;p&gt;The last five years in tech have taught me a lot about myself. Sometimes it’s important to lean into strengths. Sometimes it’s important to improve our weaknesses. But when it comes down to it, it’s about nurturing resilience, cultivating connections, telling your story, and knowing when to let go. Every experience, from small wins to major setbacks to turning down that unexpected road, adds to the soil that your career grows in.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 08 Nov 2024 00:00:00 -0500</pubDate>
+        <link>https://bekahhw.com//Five-Lessons-for-Five-Years-in-Tech</link>
+        <guid isPermaLink="true">https://bekahhw.com//Five-Lessons-for-Five-Years-in-Tech</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>Being a Hybrid Friend is Hard</title>
+        <description>&lt;p&gt;Before coming into tech, I saw my friends weekly. I’ve never had a lot of friends, but I’ve had friends. You know, the kind that know you and understand you and you can break into random songs in front of one minute, shit-talk them in a board game the next minute, and then break down and cry when they ask, “Are you doing ok today?” We all had the same zipcode, and regional understanding - there’s something unique and interesting and beautiful about living in an Appalachian region. When I got my first job in tech this started to change. When the pandemic hit, this &lt;strong&gt;changed&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;No one felt close anymore because we were isolated in our homes. We were literally trying to stay far away from each other. There weren’t friendships of proximity anymore - you know the kind where your kids are the same age and you go to the same park playdates together. We played in our own backyards. And for a while, things were really hard.&lt;/p&gt;
+
+&lt;p&gt;But from the ashes, a light appeared and we were renewed because we all had each other everywhere. We found friendships online. We found ways to safely share the challenges, the despair, the heartache, and we started to laugh again. We found that we could deeply connect with people across timezones we didn’t even know existed prior to our interactions. We grew together because we were connected by a trauma that no one had ever anticipated. And we all had a baseline of understanding each other’s lives. It was an unprecedented event in history that brought us together, &lt;strong&gt;deeply&lt;/strong&gt; together.&lt;/p&gt;
+
+&lt;p&gt;But we also had to learn to experience sorrow together. And sometimes - the world was already so heavy - some people couldn’t be there anymore. It was hard, but we understood. There are depths of sorrow that none of us were prepared for. When we lost a friend who we had never met, but felt like we had known each other forever, there was a weird internal negotiation that happened.&lt;/p&gt;
+
+&lt;p&gt;What does it mean to lose a friend you’ve never hugged? What does it mean to support a group of friends online who have lost someone? How do you grieve together online? How do you survive when it’s your job to reach out to people and let them know over and over and over again that someone in your friend group has died? How do you survive being responsible for conversations about something that aches so deeply in your soul and that no one has prepared you for?&lt;/p&gt;
+
+&lt;p&gt;There’s a new sorrow now, the sorrow of being a hybrid friend. You feel torn between being friends with the people you see every day and the people who you see online every day. You feel like you’re not giving enough to the in person friends or the online friends. You’re being stretched, and the pain of being pulled in two directions is exhausting and excruciating. You feel like you have to make a choice.&lt;/p&gt;
+
+&lt;p&gt;It’s always easier to walk away from people you don’t run into in the milk aisle.&lt;/p&gt;
+
+&lt;p&gt;Being a hybrid friend is hard. A lot of us have met each other irl (in real life), and something about that solidifies the experience for a while. But being an online friend somehow defies object permanence. Kids might realize that the ball is hiding behind the couch, but when you’re an adult with a busy life and responsibilities, it’s &lt;strong&gt;hard&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m not judging anyone. In some ways, life is harder now than it was in 2020 because it’s full. My kids have activities, they want to go places, &lt;strong&gt;I&lt;/strong&gt; want to go places. It’s good, don’t get me wrong, but we had totally separate lives for a couple of years and that became the norm. And now we have a new norm and we’re trying to figure out how to merge and blend the two, but they’re just two different songs altogether.&lt;/p&gt;
+
+&lt;p&gt;I don’t know how to make a harmony out of this.  I know that it’s &lt;strong&gt;hard&lt;/strong&gt;. And I want you to know that it’s ok for it to be hard and to make hard decisions. I still think part of this is realizing that our lives will never be the same. We have all be changed because of our shared trauma, and that complicates things. We can’t go back to what things were before, because none of us are who we were before. We can’t deny the challenges and sorrows we faced in the last couple of years, because whether we like it or not, they have deeply impacted every single one of us. But we also can’t deny the beauty that we experienced when we found &lt;strong&gt;our people&lt;/strong&gt;, when there were no people around.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 14 May 2024 00:00:00 -0400</pubDate>
+        <link>https://bekahhw.com//Being-a-Hybrid-Friend-is-Hard</link>
+        <guid isPermaLink="true">https://bekahhw.com//Being-a-Hybrid-Friend-is-Hard</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>The Evolving Landscape of DevRel: Trends and Predictions for 2023</title>
+        <description>&lt;p&gt;A couple of weeks ago, I put out this tweet.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://x.com/BekahHW/status/1721565484103938373?s=20&quot;&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qlauo2lvar9t7do9mpgf.png&quot; alt=&quot;Tweet on the heyday of devrel&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Initially, this blog post was going to expand on that. But before writing, I wanted to do some research into the history of DevRel, look at some of the trends, before writing an essay to prove my assertion. What I ended up doing was writing this blog post as an exploration of the field, some of the changes and challenges we face, and where I think we’re headed.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-devrel&quot;&gt;What is DevRel?&lt;/h2&gt;
+
+&lt;p&gt;This is one of those questions that only some people agree on the definition. I suspect a lack of a clear definition of what DevRel is and what it does is part of the problem we’re seeing with DevRel today. If leadership can’t understand it, its value decreases. If leadership hears another successful DevRel team defined differently than how their organization defines it, scrutiny and distrust often follow.&lt;/p&gt;
+
+&lt;p&gt;Guy Kawasaki popularized the term Developer Evangelist at Apple in the 1980s. Developer Evangelists engaged directly with the developer community, especially around the Macintosh computer​​.&lt;/p&gt;
+
+&lt;p&gt;In the late 1990s and early 2000s,  the rise in open-source software changed how developers interacted with technology and each other. This shifted the approach to community-led development, paving the path toward what we know as modern DevRel, focusing on community engagement, open collaboration, and shared development.&lt;/p&gt;
+
+&lt;p&gt;As tech companies noticed the importance of developer ecosystems, DevRel roles became more formalized, focusing on both fostering community and contributing to product development feedback loops. As part of this, we saw more teams sourcing content from their communities, emphasizing collaboration and community-generated content​​.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;At its core, DevRel is a bridge between a company and its developer users. It focuses on mutual benefit: supporting developers in solving their problems and using feedback to improve products and services.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Within DevRel, we see specialties such as developer advocacy, technical writing, event management, and even product development.
+The focus and approach will depend on the needs of the organization, but I’ve always appreciated &lt;a href=&quot;https://www.swyx.io/measuring-devrel&quot;&gt;Swyx’s post on Measuring DevRel&lt;/a&gt; for the examination of the focus on content, community, or product.&lt;/p&gt;
+
+&lt;h3 id=&quot;devrel-data&quot;&gt;DevRel Data&lt;/h3&gt;
+
+&lt;p&gt;Common Room’s DevRel report from their survey provides some additional insights into the DevRel field, including information on compensation, department alignment, and primary responsibilities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Compensation&lt;/strong&gt;: The report indicates a median total gross compensation for DevRel professionals equivalent to $175,000 USD.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Department Alignment&lt;/strong&gt;: DevRel commonly report to marketing or Developer Relations/community departments.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Primary Responsibilities&lt;/strong&gt;: According to the report, 61.5% of respondents said that creating educational content and resources is their primary responsibility. Additionally, 58.6% is tasked with delivering on a primary business objective: product awareness.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;where-is-devrel-in-the-organization&quot;&gt;Where is DevRel in the Organization?&lt;/h2&gt;
+
+&lt;p&gt;According to &lt;a href=&quot;https://devrelcore.com/the-role-of-developer-relations-has-fundamentally-shifted-in-the-last-decade/&quot;&gt;The Role of Developer Relations Has Fundamentally Shifted in the Last Decade&lt;/a&gt;, DevRel was initially seen as an extension of marketing while also providing support for sales.  More recently, we’ve seen more focus on community-driven efforts. 
+According to the 10th Annual State of DevRel Report,  Developer Advocates make up 42.8% of DevRel roles. Still, we can also see the diverse roles within the field, including leadership and managerial roles, Dev Marketing, Dev Experience, Dev Education, and community-oriented roles, and DevRel engineers​​. Although C-Level DevRel roles weren’t typical, positions like Chief Developer Relations Officer exist.&lt;/p&gt;
+
+&lt;p&gt;DevRel’s responsibilities include digital marketing (e.g., SEO, PPC, online ads), outreach through developer newsletters, nurturing campaigns, attending events, providing product demos, generating content, technical writing, developer education, and support and success tasks. These roles require a combination of technical expertise, strong research and analytics skills, social and writing skills, and in-depth product knowledge. This may be one of the reasons we see so many career-changers gravitating towards DevRel.&lt;/p&gt;
+
+&lt;p&gt;The point is, because of the variety of skills required for DevRel, which often overlap with other departments like marketing, sales, and engineering, there’s more lack of clarity around what DevRel should be accomplishing, who they should be answering to, and who they should be supporting. There’s sometimes a tug of war over whose asks should be prioritized.&lt;/p&gt;
+
+&lt;h2 id=&quot;devrel-trends-and-changes&quot;&gt;DevRel Trends and Changes&lt;/h2&gt;
+
+&lt;p&gt;The pandemic had an incredible impact on DevRel, forcing those in the field to focus on virtual engagement. Although initially, it would’ve appeared that the pandemic could have decimated the DevRel industry, quick adaptations, a global audience, and isolation created opportunities to grow virtual communities and relationships. So we ended up seeing the adaptability and resilience of the DevRel community and a growth of tools and platforms targeting online developer engagement.&lt;/p&gt;
+
+&lt;p&gt;As the world recovered from the COVID-19 pandemic, we saw a gradual return to in-person developer events, including meetups and conferences. Now,  developer relations teams face the challenge of balancing the benefits of online engagement with in-person interactions. This left a lot of teams required to re-engage with the community in person and provide quality content online​​. In many circles, this led to additional tasks but not necessarily additional support.&lt;/p&gt;
+
+&lt;p&gt;Anecdotally, I saw the stress of increased responsibilities and the lack of the organization’s goals and focus lead to frustration, tension, and, ultimately, burnout. 
+We’ve also noticed in recent years that the DevRel field has been moving away from general developer advocate roles towards more specialized roles. The good news is that more people have realized that each advocate has their strengths and doesn’t need to be an expert in every type of DevRel.&lt;/p&gt;
+
+&lt;p&gt;Of course, there will continue to be general roles, but allowing specialization allows organizations to hire someone in DevRel who more perfectly fits the organization’s goals. However, this can get complicated because many organizations hire DevRel positions without fully understanding their goals.&lt;/p&gt;
+
+&lt;h2 id=&quot;when-companies-hire-but-dont-understand&quot;&gt;When companies hire but don’t understand&lt;/h2&gt;
+
+&lt;p&gt;Over the last couple of years, we’ve seen many more companies hiring their first DevRel person. Although this might seem like a positive trend, we’ve also seen a lack of understanding, which leads to tension, often micromanaging, and DevRel teams being some of the first layoffs. 
+&lt;a href=&quot;https://x.com/iandouglas736/status/1721602320302014971?s=20&quot;&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/31qvnwcinbxybufzpq1a.png&quot; alt=&quot;Ian Douglas when companies do not understand devrel tweet&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hiring a DevRel team before the product-market fit is established or without a clear strategy can result in wasted resources and potentially harm the company, mainly if the frustration of the lack of focus follows the DevRel hire to the developers they’re advocating for.&lt;/p&gt;
+
+&lt;p&gt;Developer advocates need to be able to connect with developers on a personal level and build trust. I’ve seen companies, especially startups, hire their first on a DevRel team or a whole team because advisors or a board has recommended it, but no one really knows why. They think that to succeed, there needs to be a DevRel team. If you want users or, feedback or fast growth, then they need a DevRel team. They hire someone who’s a great developer but has no experience in DevRel. They hire someone who has a lot of followers on X/Twitter or TikTok or wherever their target audience is. They hire a team and then set up meetings strategizing on “how to go viral” because they “just need to do that once.”
+Developer Relations is about building trust. Building trust takes time. If a team has a deadline for building trust, then that needs to be clear from the very beginning.&lt;/p&gt;
+
+&lt;p&gt;Let’s think about this in terms of relationships. How long does it take you to trust another person? How easy is it for that trust to be broken? Say you decide to go on a date with a new person. You want to get to know them a little before you decide to commit. What if that person tells you that they LOVE pineapple on pizza? And, hey, so do you! You have something in common with that person.&lt;/p&gt;
+
+&lt;p&gt;And then, a couple of weeks later, they decide they don’t like pineapple on pizza, and they don’t like pizza at all. You don’t just wake up and decide you don’t like pizza one day. Something else must be going on behind the scenes. It’s not a huge deal (maybe), but it will take you longer to build trust and find out if that person is being honest with you. You might always wonder, “Did they just say it in the first place because they knew that’s what I wanted to hear?”&lt;/p&gt;
+
+&lt;p&gt;Similarly, I’ve seen teams formed with a strategy in mind only to have that strategy constantly change because “it’s not working,” but there’s no clear definition of what it means to work. If you’re changing your favorite food constantly, you start losing credibility and trusting relationships.&lt;/p&gt;
+
+&lt;p&gt;That’s not to say you can’t change your strategy or target audience. But if you want to retain that trust, you can’t change your favorite food every couple of months. A better approach might be to say, “I love pineapple pizza, and I really love pierogies now, too!”&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hire someone who is passionate about developers and understands their challenges.
+​Developer Relations success takes time; if you don’t have that, you’re setting your team up for failure.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;creating-devrel-goals&quot;&gt;Creating DevRel Goals&lt;/h2&gt;
+
+&lt;p&gt;Another problem I’ve seen in the last year is that companies were throwing money at their DevRel team and saying, “Do your thing. We trust you.” And then suddenly, with the market shifting, they don’t trust DevRel anymore, and worse, they often blame them for the company’s lack of success. The problem didn’t start with the market shift. The problem began with a lack of understanding of what DevRel teams do and the company’s needs.&lt;/p&gt;
+
+&lt;p&gt;I’ve seen some DevRel teams succeed by being semi-siloed from the rest of the company, but I also think that leaves them as a target when things start to go back. “What do you all even do?” is never a good question. If those outside the team don’t understand what DevRel does, then it’s hard to tie success to your team, and that’s what needs to be done.&lt;/p&gt;
+
+&lt;p&gt;The times of companies just handing out money are over. You can’t just go to every conference because you’re on a DevRel team. You can’t sponsor every meetup or organization that asks you. You have to be able to justify being there. That justification means that you need to be able to show how you’re providing value to the company. That’s not an unreasonable ask. The justification can’t be, “I’m going to build relationships, but I can’t tell you how long that will take to pay off.”&lt;/p&gt;
+
+&lt;p&gt;Building relationships is great, but are you building relationships for your company and establishing their credibility, or are you making friends for yourself? There’s a difference. 
+If someone asked you for the elevator pitch for your company, could you give it? If someone asked you questions about the product, could you answer them or point them in the right direction? 
+I’ve spent more time than I would like identifying metrics and OKRs. But if you want to survive in DevRel, it’s something that you need to understand. Companies should not throw boatloads of money at someone without seeing a return on investment (ROI).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://x.com/JesseRWeigel/status/1721578794446729535?s=20&quot;&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pav87h3afohv3actetfl.png&quot; alt=&quot;Image description&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.advocu.com/post/trends-in-developer-relations-for-2023&quot;&gt;According to Trends in Developer Relations for 2023&lt;/a&gt;, the economic downturn has led to a reevaluation of DevRel’s role within organizations. &lt;strong&gt;Teams are being asked to focus on activities with the highest impact and justify their contributions in terms of measurable outcomes​​.&lt;/strong&gt; This is not an unreasonable ask.&lt;/p&gt;
+
+&lt;p&gt;There has been a growing need for DevRel teams to understand how their companies make money and to align their goals with broader business objectives, which also often means closely communicating with product, sales, and marketing teams​​.&lt;/p&gt;
+
+&lt;h2 id=&quot;identifying-metrics-and-aligning-them-with-devrel-and-company-goals&quot;&gt;Identifying Metrics and Aligning Them with DevRel and Company Goals&lt;/h2&gt;
+
+&lt;p&gt;The first step in measuring DevRel ROI is aligning DevRel goals with the company’s larger objectives. With this, it’s easier for other departments to see the value in DevRel activities. For example, suppose a company goal is to increase the fork rate of an open source project. In that case, DevRel strategies might include engaging with developers at relevant meetups, creating helpful content, or establishing community channels​​.&lt;/p&gt;
+
+&lt;p&gt;It’s going to look different for every team, but a general approach to aligning goals might look like this:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Understand Company Objectives&lt;/strong&gt;. This is the building block of the rest of this approach. DevRel teams should comprehensively understand the company’s broader objectives, such as revenue targets, customer acquisition, product development, or market expansion.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Identify DevRel’s Role&lt;/strong&gt;. How DevRel can contribute to these objectives? This could involve community building, developer advocacy, creating educational content, or fostering product adoption. Part of understanding the answer to this question is identifying the current painpoints of the organization. For example, maybe the product has tons of sign-ups but only a small percentage of those return to use the product. What’s happening between sign-ups and using the product? How can you re-engage those developers?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Set Specific DevRel Goals.&lt;/strong&gt; Create a bridge between the company objectives and the DevRel role. For example, if a company aims to retain more users, a DevRel goal might be to improve developer onboarding and user experience.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Develop Aligned Strategies&lt;/strong&gt;. How can DevRel support these goals? It’s important to be selective about activities and events, choosing those that align best with the team’s goals and capabilities​​. This could include creating content about how to use the product, improving documentation, creating technical tutorials, or gathering developer feedback.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Track and Measure Impact&lt;/strong&gt;. Find ways to measure the impact of DevRel activities on the goals. As part of that process, regular reviews and strategy adjustments help to ensure alignment with company objectives.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I think it’s worth noting that although this can be a tedious part of the process, it can help to understand the expectations of the DevRel team and of each teammate. It can also help team members grasp what success looks like for them. When we evaluate these goals regularly, we’re better able to pivot with changes in the company, adjust to market conditions, and prevent burnout.&lt;/p&gt;
+
+&lt;p&gt;One of the challenges of tracking is that DevRel activities often don’t necessarily directly correlate to revenue, but there’s a widely held belief that it can influence it positively. 
+So, for example, the goals won’t be directly related to X-increase in revenue but rather, to the creation of a strong community and product, which indirectly results in increased revenue​​.
+The tricky part is finding the right balance.&lt;/p&gt;
+
+&lt;p&gt;It’s hard to quantify relationship and community building, but it’s necessary to build them. We also sometimes see a fine line between marketing and relationship building coming as a top-down directive. There are things that will be easy to track: new users, returning users, and feedback submissions. But for the things that are more challenging to track, you have to learn how to tell the story and justify their importance, even if you didn’t yesterday or last month, or at the beginning of your career.&lt;/p&gt;
+
+&lt;h2 id=&quot;devrel-status-its-complicated&quot;&gt;DevRel Status: It’s Complicated&lt;/h2&gt;
+
+&lt;p&gt;I’ve been fortunate enough to know some amazing people in Developer Relations. Over the last couple of years, I’ve learned so much through my conversations with them, reading and watching their content, and asking questions. Their authenticity and depth of knowledge allow them to be approachable, encouraging, and helpful.&lt;/p&gt;
+
+&lt;p&gt;I’ve also seen a lot of bitter people in DevRel. I’m not sure if this impacts all of tech equally, but I’ve definitely seen it more than I expected in DevRel. I think some of this stems from layoffs, lack of clarity of direction, organizations blocking their teams from making progress, and burnout.&lt;/p&gt;
+
+&lt;p&gt;And somewhere in this mix of DevRel, we start to see a little bit of an echo chamber. This is a hard one to talk about. I really love the DevRel community, but sometimes we talk to each other instead of talking to developers. We write for each other, instead of writing for users.&lt;/p&gt;
+
+&lt;p&gt;Everyone knows the company that they’re representing, and we all like each other’s posts and go to each other’s talks because we (maybe subconsciously) know that our fellow Developer Advocate will appear to be successful with high numbers.&lt;/p&gt;
+
+&lt;p&gt;Another part of the problem of the echo chamber is the lack of growth in the field that comes with it. If you’re trapped in the echo chamber, you’re less likely to hear diverse ideas and which can impede the ability to understand and address the needs and challenges of a broader developer community.&lt;/p&gt;
+
+&lt;p&gt;It’s the job of Developer Relations teams to understand the needs of their developer community. When you don’t spend time understanding your community, there’s a disconnect and a lack of trust. You’re missing opportunities for meaningful engagement and collaboration.&lt;/p&gt;
+
+&lt;p&gt;One of the biggest problems caused by the DevRel echo chamber is a skewed definition of success and impact. If you’re only receiving feedback and defining (or &lt;em&gt;not&lt;/em&gt; defining) metrics based on your echo chamber, you’re not getting the full understanding to be able to do your job well and to create initiatives that align with your larger organizational goals.&lt;/p&gt;
+
+&lt;p&gt;Another problem of the echo chamber is your perspective can create a barrier to recognizing and responding to emerging trends, technologies, and market needs. If you’re stuck in the same conversations with the same people, there’s a higher potential for becoming outdated or irrelevant.&lt;/p&gt;
+
+&lt;p&gt;When we spend more time promoting each other’s work, and the primary growth we see is only in our DevRel audience, we’re not building authentic relationships with the audience we’ve been hired to engage with. I want to point out that this is different than forming collaborations with other DevRel teams. If you can both get value out of collaborating by expanding your audience because it makes sense for both of your audiences to use these products, then you’re doing your job.&lt;/p&gt;
+
+&lt;p&gt;Your goal should focus on advocating for developers who are using your product, understanding their needs, and supporting them through your content creation.&lt;/p&gt;
+
+&lt;h3 id=&quot;ai-and-devrel&quot;&gt;AI and DevRel&lt;/h3&gt;
+
+&lt;p&gt;On top of everything else, the recent boom of AI has further impacted the DevRel field in various ways. DevRel teams have been exploring how AI can be helpful in key areas of their work, including using GitHub CoPilot to help generate demos and code, to write documentation, and to brainstorm talks and blog posts.&lt;/p&gt;
+
+&lt;p&gt;We’ve seen this both improve the speed of people in DevRel and cause controversy, with some using it to write entire articles, talks, and more. There’s no consensus on the appropriate use of AI for content creation. One of the most critical elements of success is authenticity, and there’s a negative connotation associated with using AI as part of the creation process.&lt;/p&gt;
+
+&lt;p&gt;Complicating things further, companies have seen the capabilities of AI and imagined them as substitutes for Developer Relations roles. Why should we hire someone when we can just use AI to complete their tasks? The problem with that logic is you’re not developing relationships, which is the primary goal of DevRel. This substitution further exemplifies that there’s a lack of understanding of what DevRel is.&lt;/p&gt;
+
+&lt;h2 id=&quot;todays-devrel&quot;&gt;Today’s DevRel&lt;/h2&gt;
+&lt;p&gt;We’re in a space now where DevRel can’t be what it was before. We’ve crossed a line past the pandemic era of fully remote, but haven’t returned to the full power of in-person–although I don’t think we’ll ever see the return of in-person events like they were before, largely for the same reasons DevRel won’t be what it was before.&lt;/p&gt;
+
+&lt;p&gt;There’s been a shift to a more conservative approach to DevRel. Budgets are tighter, reporting is required. But it’s not all bad news. In fact, it’s good news for the people who are good at their job on DevRel teams. 
+&lt;a href=&quot;https://x.com/hummusonrails/status/1721565788581117970?s=20&quot;&gt;
+&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dcpq83k420sd7dxlr9zo.png&quot; alt=&quot;Hummus on Rails tweet&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The best people will continue to find jobs, and to avoid some of the common pitfalls or mistakes we’ve looked at in this post. And with that, you’re more likely to be on a stellar team of DevRel professionals. When we find ourselves in a place where we’re surrounded by the best, we’re more likely to grow and to push each other.&lt;/p&gt;
+
+&lt;h3 id=&quot;engineers-who-devrel&quot;&gt;Engineers who DevRel&lt;/h3&gt;
+
+&lt;p&gt;Another option I think that we’ll see increasingly more popular is engineers who do DevRel activities. What do I mean by that? Take for instance, my team at &lt;a href=&quot;https://opensauced.pizza/&quot;&gt;OpenSauced&lt;/a&gt;. I’m on the DevEx team. We have four engineers, all of whom have written blog posts for our community blog. Most of our engineers have given tech talks, or produced other forms of content, including livestreams, TikToks, and more. Their primary role is engineering, but they’re great at DevRel and community-building goals as well.&lt;/p&gt;
+
+&lt;p&gt;Engineers taking on DevRel responsibilities might bring deeper technical expertise to community engagement, and from that, we may see a shift in content that engages a broader audience of developer expertise level.&lt;/p&gt;
+
+&lt;p&gt;Blending engineering and DevRel roles could lead to more diverse career paths, allowing professionals to develop a unique combination of skills in both development and community engagement. It also helps to close the feedback loop when engineers engage with users and community members.&lt;/p&gt;
+
+&lt;p&gt;No matter what, as the role becomes more multifaceted, the best DevRel professionals will likely be those who can effectively balance technical expertise with community-building and communication skills.&lt;/p&gt;
+
+&lt;p&gt;The triple threat DevRel professional excels at technical excellence, strategic thinking, and content creation and community building.&lt;/p&gt;
+
+&lt;p&gt;What does this mean for the future of DevRel? It means that we make sure that strategy, feedback, and self-review are built into our progress. We should be looking at the strengths and weaknesses of the company, the team, and ourselves. Thinking about the future of DevRel and the instability of jobs, I see a tendency for those looking for a job to try to improve their weaknesses rather than improve their strengths. But &lt;a href=&quot;https://www.psychologytoday.com/us/blog/from-functioning-to-flourishing/201411/ten-reasons-to-focus-on-your-strengths&quot;&gt;studies&lt;/a&gt; have shown that it’s actually more efficient to improve on our strengths that our weaknesses. So maybe, when we think about what the future looks like for us, we should think about our strengths and how we can optimize them to achieve the goals that are in front of us.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Nov 2023 00:00:00 -0500</pubDate>
+        <link>https://bekahhw.com//The-Evolving-Landscape-of-DevRel</link>
+        <guid isPermaLink="true">https://bekahhw.com//The-Evolving-Landscape-of-DevRel</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
         
       </item>
     
