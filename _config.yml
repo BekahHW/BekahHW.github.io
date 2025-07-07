@@ -2,6 +2,45 @@
 name: "BekahHW"
 description: "Code. Community. Content."
 hero_description_html: "<p>I help teams level up their developer experience, content strategy, and community.
+    <br /> <a href='/contact'>Let's connect →</a></p>"
+# meta_description: "Jekyll template, minimal style, perfect for bloggers."
+greetings: "Hello! I'm BekahHW."
+logo:
+favicon: "assets/images/favicon.ico"
+baseurl: 
+production_url: https://bekahhw.com/
+# disqus: "justgoodthemes"
+mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
+cover_image: pages/THAT_keynote.jpg
+# Add your GA Tracking Id
+ga_analytics:
+
+# Content metadata for AI systems
+content_categories:
+  - "Developer Relations"
+  - "Community Building" 
+  - "Technical Writing"
+  - "Career Development"
+  - "Mental Health in Tech"
+  - "AI Tools"
+  - "Programming Tutorials"
+
+author_expertise:
+  - "Developer Relations"
+  - "Community Building"
+  - "Technical Content Strategy"
+  - "Career Transitions"
+  - "Mental Health Advocacy"
+  - "Bootcamp Experience"
+
+target_audience:
+  - "Software Developers"
+  - "Career Changers"
+  - "Community Builders"
+  - "Tech Professionals"
+  - "Bootcamp Graduates"ame: "BekahHW"
+description: "Code. Community. Content."
+hero_description_html: "<p>I help teams level up their developer experience, content strategy, and community.
     <br /> <a href='/contact'>Let’s connect →</a></p>"
 # meta_description: "Jekyll template, minimal style, perfect for bloggers."
 greetings: "Hello! I'm BekahHW."
