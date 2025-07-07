@@ -4,6 +4,8 @@ title: "Test Drive Before You Buy: Your Guide to AI Code Assistant Trials in 202
 author: Bekah
 description: "I'm exploring the trial options for five AI coding assistants to find the best fit for my development workflow."
 date: 2025-06-23
+tags: [AI]
+
 ---
 
 In [my last post](https://bekahhw.com/Taking-Time-to-Breathe-A-New-Chapter-Begins), I talked about spending time this summer looking at different AI tools. I want to get hands-on, figure out what I want to integrate into my workflow. But before I spend time (and money) testing things out, I wanted to start with the free/trial periods. So you’re starting at the beginning of this journey with me. The question that I started with is: Which AI code assistants will actually let me take them for a proper test drive? In this post, I’ll share what I found across five top AI Coding Assistants—Continue, Windsurf, Cursor, GitHub Copilot, and Tabnine—and what I’m interested in learning as I put them to the test.

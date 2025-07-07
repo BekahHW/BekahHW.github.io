@@ -4,6 +4,8 @@ title: "Comparing 5 AI Coding Assistants: Which One's Right for You?"
 author: Bekah
 description: "I'm testing five AI coding assistants this summer to find the best fit for my development workflow. Here's my initial take on Continue.dev, GitHub Copilot, Cursor, Tabnine, and Windsurf."
 date: 2025-06-24
+tags: [AI]
+
 ---
 
 A couple of days ago, I saw [Jerome Hardaway’s LinkedIn post](https://www.linkedin.com/posts/jeromehardaway_microsoft-ceo-admits-that-ai-is-generating-activity-7340817881154134016-Ld9Q), and it really resonated with me. I like the idea of thinking of AI coding tools as “really great intern[s]. Fast, helpful, capable in the right hands -- but still needs supervision, clear direction, and someone to clean up afterward.” There are a couple of projects that I’m working on this summer: the author site that I share with my brothers that uses Astro, a new project I’m launching for [osscommunities.com](https://oss-communities.netlify.app/). This seems like the perfect opportunity to find the right tool that’s worth adding tool to my workflow.

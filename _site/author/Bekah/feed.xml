@@ -7,7 +7,7 @@ layout: null
   <generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator>
   <link href="http://localhost:4000/author/Bekah/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2025-07-07T11:55:02-04:00</updated>
+  <updated>2025-07-07T11:56:42-04:00</updated>
   <id>http://localhost:4000/author/Bekah/feed.xml</id>
 
   
@@ -191,6 +191,8 @@ layout: null
       
 
       
+        <category term="AI" />
+      
 
       
         <summary type="html">A follow-up to “Which Code Assistant Actually Helps Developers Grow?” This time, testing how AI assistants handle debugging existing code problems.</summary>
@@ -305,6 +307,8 @@ The most productive teams and developers understand what they’re building, whe
       
 
       
+        <category term="AI" />
+      
 
       
         <summary type="html">Over the past year, we’ve had a ton of conversations at Virtual Coffee about AI. If you’ve opened up X or LinkedIn, you probably realize that people have very strong opinions about AI. At Virtual Coffee, we’re a pretty close-knit community, so there are a lot of concerns about the impacts of AI, how junior developers grow (or stay stagnant) with AI, whether or not to adopt it as a team, and whether to use it without telling your boss. At the heart of a lot of these conversations is the feeling that you’re somehow “cheating” if you use AI, and that you won’t learn or grow if you’re using it. I think the sentiment comes from the right place, caring about people, but I think there are a lot of options and approaches you can take to prevent that. I believe that when we consider the evolving landscape in tech, we also need to think about the changing landscape of tech education. Most of us will end up using AI in our workflow, either out of necessity or because our team mandates it. That’s why I also think that AI coding assistants actually have the ability to help everyone grow in ways they couldn’t before.</summary>
@@ -383,6 +387,8 @@ their entire development process.&lt;/p&gt;
 
       
 
+      
+        <category term="AI" />
       
 
       
@@ -464,6 +470,8 @@ their entire development process.&lt;/p&gt;
 
       
 
+      
+        <category term="AI" />
       
 
       
