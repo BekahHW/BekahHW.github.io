@@ -2,6 +2,7 @@
 layout: post
 title: "Which Code Assistant Actually Helps Developers Grow?"
 author: Bekah
+description: "I tested three AI coding assistants on building a new feature in an Astro + Tailwind site. Continue provided the best explanations, Copilot was fast but passive, and Cursor was interactive but made assumptions."
 date: 2025-06-27
 ---
 

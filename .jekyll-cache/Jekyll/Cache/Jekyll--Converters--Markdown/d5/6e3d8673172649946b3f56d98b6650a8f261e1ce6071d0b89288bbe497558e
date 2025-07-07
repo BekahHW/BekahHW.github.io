@@ -1,0 +1,50 @@
+I"�<p>A couple of days ago, I saw <a href="https://www.linkedin.com/posts/jeromehardaway_microsoft-ceo-admits-that-ai-is-generating-activity-7340817881154134016-Ld9Q">Jerome Hardaway’s LinkedIn post</a>, and it really resonated with me. I like the idea of thinking of AI coding tools as “really great intern[s]. Fast, helpful, capable in the right hands – but still needs supervision, clear direction, and someone to clean up afterward.” There are a couple of projects that I’m working on this summer: the author site that I share with my brothers that uses Astro, a new project I’m launching for <a href="https://oss-communities.netlify.app/">osscommunities.com</a>. This seems like the perfect opportunity to find the right tool that’s worth adding tool to my workflow.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ah6h6875jlzj6p5oknx4.png" alt="Jerome Hardaway's full post" /></p>
+
+<h2 id="my-ai-assistant-philosophy">My AI Assistant Philosophy</h2>
+
+<p>I’ve always been a proponent of using AI just like any other tool in your toolbox. It’s there to help you level up, work more effectively, and move faster. If I were a carpenter who was too afraid or skeptical to try a hammer, I wouldn’t be as effective as other carpenters. And honestly, as a mom of four, I’ve been looking for ways to be more efficient for years.</p>
+
+<p>As we all know, your coding assistant is only as good as you guide it to be. You have to make sure to correct it when it hallucinates, to double-check its work, to help it understand what you actually need. For me, it’s all about finding the best partner for the work I’m doing.</p>
+
+<h2 id="ai-assistant-tools--their-promises">AI Assistant Tools &amp; Their Promises</h2>
+
+<p>I chose these five AI coding assistants based on different approaches to the same problem: Continue.dev for its open source flexibility and developer-first philosophy, Cursor for its AI-native editor approach, GitHub Copilot as the established market leader, Tabnine for its enterprise angle, and Windsurf as the rebranded dark horse. In my opinion, these represent the current landscape of AI code completion tools, from open source flexibility to enterprise privacy to AI-first design philosophies. Here’s a little more on each:</p>
+
+<h3 id="1-continuedev">1. <a href="https://continue.dev/">Continue.dev</a></h3>
+
+<p><em>Their Promise</em>:  Amplify developers, don’t replace them.</p>
+
+<p><em>My Expectation</em>:  I think Continue.dev’s chat, autocomplete, edit, and agent modes in one tool sounds interesting and comprehensive. I’m hoping this flexibility translates to better suggestions for my workflow.</p>
+
+<h3 id="2-github-copilot">2. <a href="https://github.com/features/copilot/">GitHub CoPilot</a></h3>
+
+<p><em>Their Promise</em>:  AI that builds with you</p>
+
+<p><em>My Expectation</em>:  I’ve used CoPilot before, so this is the obvious choice since I already have experience with it. But I’m really curious to compare it to other tools out there to see how it stacks up.</p>
+
+<h3 id="3-cursor">3. <a href="https://www.cursor.com">Cursor</a></h3>
+
+<p><em>Their Promise</em>:  Cursor is a powerful AI-first code editor that enhances your development workflow.</p>
+
+<p><em>My Expectation</em>:  The real test for me is whether building the editor around AI from day one actually feels different than VS Code with AI-extensions and whether or not the experience feels disjointed.</p>
+
+<h3 id="4-tabnine">4. <a href="https://www.tabnine.com/">Tabnine</a></h3>
+
+<p><em>Their Promise</em>:  Tabnine claims that it is the world’s most contextually aware AI software development platform, helping mature engineering teams speed up and simplify
+their entire development process.</p>
+
+<p><em>My Expectation</em>:  They seem to be targeting enterprise developers, but I’m curious if their focus on “mature engineering teams” translates to better suggestions for solo projects like mine.</p>
+
+<h3 id="5-windsurf">5. <a href="https://windsurf.com/about">Windsurf</a></h3>
+
+<p><em>Their Promise</em>:  Windsurf is a next-generation AI IDE built to keep you in the flow.</p>
+
+<p><em>My Expectation</em>: The “dream bigger” messaging is heavy on inspiration, but there’s not a lot of specifics. I want to see how well that translates to the user experience.</p>
+
+<h2 id="whats-next">What’s Next?</h2>
+
+<p>I’m not looking for the tool that writes the most code for me.  I’m looking for the best AI coding assistant that makes me a better developer while helping me ship faster. The goal isn’t just to find another autocomplete tool. My goal is to discover which AI code assistant deserves a permanent spot in my development workflow. Whether that ends up being Continue.dev’s customizable approach, Cursor’s seamless integration, or one of the other contenders, I’ll share what I’ve learned in the coming weeks. Stay tuned for the full AI coding assistant comparison and see which tool actually lives up to the productivity promises.</p>
+
+:ET

@@ -2,6 +2,7 @@
 layout: post
 title: "Comparing 5 AI Coding Assistants: Which One's Right for You?"
 author: Bekah
+description: "I'm testing five AI coding assistants this summer to find the best fit for my development workflow. Here's my initial take on Continue.dev, GitHub Copilot, Cursor, Tabnine, and Windsurf."
 date: 2025-06-24
 ---
 
