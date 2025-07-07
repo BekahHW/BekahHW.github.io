@@ -1,0 +1,137 @@
+I"#%<p><em>A follow-up to “Which Code Assistant Actually Helps Developers Grow?” This time, testing how AI assistants handle debugging existing code problems.</em></p>
+
+<p>Last week, I <a href="https://bekahhw.com/Which-Code-Assistant-Helps-Developers-Grow">tested three AI coding assistants on building a new feature</a>. This time, I wanted to see how they handle something most developers deal with daily: debugging existing code problems.</p>
+
+<p>I inherited a mobile navigation issue on my writing site. The navbar wasn’t responsive, leaving a ton of white space on mobile screens and making it a less-than-desirable experience. Instead of a full navigation bar cramming into mobile view, I needed a proper hamburger menu.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/240b8dcxjht9ly0hg9v1.gif" alt="gif showing the responsive layout issue on mobile is fixed when deleting the nav bar" /></p>
+
+<p>Here’s what I told each assistant:</p>
+
+<blockquote>
+  <p>“There’s an issue with mobile view on the site. I think the main problem is with the navbar. But I don’t think it makes sense to have a nav bar for a mobile site. We should make the site responsive and add a sticky nav bar with a hamburger menu instead of the full navigation bar once the site hits mobile-sized screens.”</p>
+</blockquote>
+
+<p>Here’s how Continue, GitHub Copilot, and Cursor handled this real-world debugging scenario.</p>
+
+<h2 id="continue-permission-driven-and-educational">Continue: Permission-Driven and Educational</h2>
+
+<p>I used <a href="https://continue.dev/">Continue</a> in <a href="https://docs.continue.dev/agent/how-to-use-it">Agent mode</a>, giving it context from <code class="language-plaintext highlighter-rouge">Header.astro</code>, <code class="language-plaintext highlighter-rouge">Nav.astro</code>, and <code class="language-plaintext highlighter-rouge">BaseLayout.astro</code>.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bg21110n6vfs19es00l5.png" alt="Overview and initial response from Continue outlining what needs to be done" /></p>
+
+<h3 id="the-good">The Good</h3>
+
+<ul>
+  <li>Created a dedicated hamburger menu component</li>
+  <li>Asked for permission between file changes</li>
+  <li>When I got a transparency issue with the menu panel, it fixed it in one go</li>
+  <li>It added comments to understand the steps it was taking in the code and debug logs in the code to help me see what was working and when</li>
+  <li>Everything worked within 12 minutes</li>
+</ul>
+
+<h3 id="the-learning-experience">The Learning Experience</h3>
+
+<p>When I tested the same fix using Continue’s <a href="https://docs.continue.dev/chat/how-to-use-it">Chat mode</a> instead of Agent mode, it took longer but provided much more thorough explanations. The conversation was more educational, walking me through the reasoning behind each change.</p>
+
+<h3 id="verdict">Verdict</h3>
+
+<p>Continue balances efficiency with learning. Agent mode got me working code fast, while Chat mode taught me the “why” behind the solutions.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9ss3rdoqhm59mkjjqxbl.png" alt="summary of the changes it made" /></p>
+
+<h2 id="github-copilot-fast--a-bit-frustrating">GitHub Copilot: Fast &amp; (a bit) Frustrating</h2>
+
+<p>Copilot started by unnecessarily converting a Svelte component, then immediately threw a TypeScript error:
+<code class="language-plaintext highlighter-rouge">Argument of type 'EventTarget' is not assignable to parameter of type 'Node'</code></p>
+
+<p>I’m not sure why it decided that the <code class="language-plaintext highlighter-rouge">ThemeToggleButton</code> needed to be converted. At the very least, that’s outside of the scope of this PR, in my opinion.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fi883ls0s34e83ux1zra.png" alt="Image description" /></p>
+
+<p>It was able to solve the problem pretty quickly when I used the “Fix with Copilot” function, explaining, “You should cast e.target to Node when passing it to .contains() to resolve the type error.”</p>
+
+<h3 id="the-real-problem">The Real Problem</h3>
+
+<p>The hamburger menu initially didn’t appear at all. The responsiveness was “fixed” because the navigation disappeared, but users couldn’t access any menu items.</p>
+
+<p>After back-and-forth debugging, Copilot resorted to <code class="language-plaintext highlighter-rouge">!important</code> declarations (not ideal) and the old “turn the background red” debugging trick. Even when the menu became visible, clicking it did nothing.</p>
+
+<p>Eventually, we identified JavaScript as the culprit. Copilot fixed it, but then the menu links appeared directly over the page content without any background container. More back-and-forth with questionable styling decisions followed.</p>
+
+<p>It was to the point where I definitely could fix this faster than having a back-and-forth with Copilot, so I called it. After that, I also realized there was a bug where, after expanding the hamburger menu on mobile and then switching to desktop view, the mobile menu remained open on top of the restored navigation bar.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tvvd7pmfl9gm2usc0k1w.png" alt="nav panel on top of page text" /></p>
+
+<p><strong>Time</strong>: About 20 minutes, with me ultimately fixing the styles myself.</p>
+
+<p><strong>Learning Value</strong>: Minimal. Copilot told me what it was doing, but didn’t really explain its approach or help me understand the underlying problem.</p>
+
+<h2 id="cursor-comprehensive-but-presumptuous">Cursor: Comprehensive but Presumptuous</h2>
+
+<p>Cursor’s response was immediate and organized:</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7vx5vt6fdw9b2utz4gre.png" alt="Cursor's initial message detailing what needed to be done to implement the hamburger menu" /></p>
+
+<h3 id="the-process">The Process</h3>
+
+<ol>
+  <li>Automatically read the global CSS</li>
+  <li>Outlined exactly what needed to change and why</li>
+  <li>Provided all necessary file updates</li>
+  <li>Hit the same cross-page JavaScript issue as Copilot</li>
+</ol>
+
+<h3 id="the-interesting-part">The Interesting Part</h3>
+
+<p>Cursor went beyond my request, automatically improving mobile styles across the site that I hadn’t asked for. This raises an interesting question: should AI assistants make assumptions about what you “really” need?</p>
+
+<p><strong>Time</strong>: About 15 minutes to complete.</p>
+
+<p><strong>Learning Value</strong>: Good explanations of changes. I appreciate that it gives more information on why errors were happening in the context of using Astro.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vsk81fkbeau7jkmdtafh.png" alt="showing the issue and how it understands and corrects it" /></p>
+
+<h2 id="context-switching-costs">Context Switching Costs</h2>
+
+<p>Here’s something I noticed that none of the assistants addressed: familiarity bias. Cursor and GitHub Copilot felt nearly identical to use, so I moved faster with them. Continue required slightly more of a learning curve, which actually slowed me down initially but provided better educational value.</p>
+
+<p>This isn’t a knock against Continue. It’s a reminder that switching tools comes with costs, even when the new tool might be better in the long term.</p>
+
+<h2 id="debugging-vs-building-different-skills-required">Debugging vs. Building: Different Skills Required</h2>
+
+<p>This debugging scenario revealed something my first test missed, that building new features and fixing existing problems require different AI assistance approaches.</p>
+
+<h3 id="building-new-features">Building New Features</h3>
+
+<ul>
+  <li>Clear requirements</li>
+  <li>Blank slate approach</li>
+  <li>Focus on “what should this do?”</li>
+</ul>
+
+<h3 id="debugging-existing-code">Debugging Existing Code</h3>
+
+<ul>
+  <li>Understanding legacy decisions</li>
+  <li>Identifying root causes</li>
+  <li>Focusing on “why isn’t this working?”</li>
+</ul>
+
+<p>Continue did well with the debugging mindset, asking permission before changes and explaining the reasoning. Copilot and Cursor were more aggressive about “fixing” things, sometimes creating new problems in the process.</p>
+
+<h3 id="which-ai-coding-assistant-wins-for-debugging">Which AI Coding Assistant Wins for Debugging?</h3>
+
+<p><strong>For Learning</strong>: Continue, especially in Chat mode. It helped me understand not just what was broken, but why the original approach failed.</p>
+
+<p><strong>For Speed</strong>: Cursor, if you don’t mind AI making assumptions about improvements you didn’t request.</p>
+
+<h2 id="the-bigger-picture">The Bigger Picture</h2>
+
+<p>This comparison reinforced something I mentioned in my first post: the tool is only part of the equation. Each assistant performed differently not just because of their capabilities, but because of how they approached the problem-solving process.</p>
+
+<p>Continue treated debugging as a learning opportunity. Copilot treated it as a code completion task. Cursor treated it as a comprehensive redesign project.</p>
+
+<p>If you want to know which coding assistant helps developers grow when you’re debugging, try this: Before asking for a fix, ask the AI to help you understand why the original code failed. The debugging skills you develop will be more valuable than any individual fix.</p>
+
+:ET
