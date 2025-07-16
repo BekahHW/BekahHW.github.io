@@ -53,7 +53,7 @@ production_url: https://bekahhw.com/
 mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
 cover_image: pages/THAT_keynote.jpg
 # Add your GA Tracking Id
-ga_analytics:
+ga_analytics: G-PM8BZL871Y
 
 # Contact form setings
 email: rhawrot@gmail.com
