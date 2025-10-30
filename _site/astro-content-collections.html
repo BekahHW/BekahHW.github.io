@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PM8BZL871Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PM8BZL871Y');
+</script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+     <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Adding Multiple Authors to my Astro Writing Blog: A Technical Walkthrough | BekahHW</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Adding Multiple Authors to my Astro Writing Blog: A Technical Walkthrough" />
+<meta name="author" content="Bekah Hawrot Weigel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="At the end of last year, my brothers and I wrote our first novel together (The Battle for Christmas: Reign of the Nutcrackers). That experience inspired us to continue writing together, starting with a monthly newsletter with short stories. At this point, we decided we wanted a website. We had been using Kit to send emails, and we liked that functionality, but as our writing resumes grow, we also wanted to have a place where people could see all of our work, and this is where our Astro site came in." />
+<meta property="og:description" content="At the end of last year, my brothers and I wrote our first novel together (The Battle for Christmas: Reign of the Nutcrackers). That experience inspired us to continue writing together, starting with a monthly newsletter with short stories. At this point, we decided we wanted a website. We had been using Kit to send emails, and we liked that functionality, but as our writing resumes grow, we also wanted to have a place where people could see all of our work, and this is where our Astro site came in." />
+<link rel="canonical" href="http://localhost:4000/astro-content-collections" />
+<meta property="og:url" content="http://localhost:4000/astro-content-collections" />
+<meta property="og:site_name" content="BekahHW" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-18T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Adding Multiple Authors to my Astro Writing Blog: A Technical Walkthrough" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@BekahHW" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/astro-content-collections","headline":"Adding Multiple Authors to my Astro Writing Blog: A Technical Walkthrough","dateModified":"2025-03-18T00:00:00-04:00","datePublished":"2025-03-18T00:00:00-04:00","author":{"@type":"Person","name":"Bekah Hawrot Weigel"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/astro-content-collections"},"description":"At the end of last year, my brothers and I wrote our first novel together (The Battle for Christmas: Reign of the Nutcrackers). That experience inspired us to continue writing together, starting with a monthly newsletter with short stories. At this point, we decided we wanted a website. We had been using Kit to send emails, and we liked that functionality, but as our writing resumes grow, we also wanted to have a place where people could see all of our work, and this is where our Astro site came in.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+ 
+
+    <!-- AI and SEO optimizations -->
+    <!-- AI-specific meta tags -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+<!-- OpenAI/ChatGPT specific -->
+<meta name="chatgpt:crawl" content="allow">
+<meta name="chatgpt:index" content="allow">
+
+<!-- Perplexity AI -->
+<meta name="perplexity:crawl" content="allow">
+
+<!-- Claude/Anthropic -->
+<meta name="claude:crawl" content="allow">
+
+<!-- Content categorization for AI -->
+
+<meta name="content-type" content="blog-post">
+<meta name="content-category" content="technology">
+<meta name="content-topics" content="">
+<meta name="content-audience" content="developers, tech professionals, community builders">
+<meta name="content-intent" content="educational, informational">
+
+
+<!-- Rich content hints -->
+<meta name="content-format" content="article">
+<meta name="content-style" content="technical, personal experience, tutorial">
+<meta name="expertise-level" content="beginner to advanced">
+
+<!-- Author expertise indicators -->
+<meta name="author-expertise" content="developer relations, community building, technical writing, mental health in tech">
+<meta name="author-experience" content="5+ years in tech, bootcamp graduate, mother in tech">
+
+<!-- Content freshness -->
+
+<meta name="content-date" content="2025-03-18">
+
+
+<!-- Enhanced description for AI understanding -->
+
+<meta name="ai-description" content="At the end of last year, my brothers and I wrote our first novel together (The Battle for Christmas: Reign of the Nutcrackers). That experience inspired us to continue writing together, starting with a monthly newsletter with short stories. At this point, we decided we wanted a website. We had be...">
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Adding Multiple Authors to my Astro Writing Blog: A Technical Walkthrough",
+  "author": {
+    "@type": "Person",
+    "name": "Bekah Hawrot Weigel",
+    "url": "https://bekahhw.com//about"
+  },
+  "datePublished": "2025-03-18",
+  "dateModified": "2025-03-18",
+  "description": "At the end of last year, my brothers and I wrote our first novel together (The Battle for Christmas: Reign of the Nutcrackers). That experience inspired us t...",
+  "url": "https://bekahhw.com//astro-content-collections",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bekahhw.com//astro-content-collections"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BekahHW",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bekahhw.com//assets/images/logo.png"
+    }
+  },
+  "keywords": ", ",
+  "articleSection": "Technology",
+  "wordCount": "1866",
+  "about": [
+    
+    
+    
+  ]
+}
+</script>
+
+
+
+
+
+    <!-- Site Favicon -->
+    <link
+      rel="shortcut icon"
+      href="http://localhost:4000/assets/images/favicon.ico"
+      type="image/png"
+    />
+
+    <!-- Font Embed Code -->
+    <link
+      href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="home-template"
+  >
+    <div id="page" class="site">
+       <header class="site-header">
+
+    
+    <h1 class="site-title"><a href="/" rel="home">BekahHW</a></h1>
+    
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->  
+     
+      
+      <main class="site-main">
+    <div class="site-content">
+
+        <article class="post-template">
+
+            <header class="cover post-header">
+            
+                
+                <div class="cover-content">
+                    <div class="inner">
+                
+                        
+                
+                        <h1 class="post-title">Adding Multiple Authors to my Astro Writing Blog: A Technical Walkthrough</h1>
+                
+                        <div class="post-meta">
+                            <span class="post-meta-wrap">
+                                
+                                
+                                
+                                
+
+                                <time class="published" datetime="2025-03-18">
+                                    March 18, 2025
+                                </time>
+                            </span>
+                        </div><!-- .post-meta -->
+                
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+
+            </header><!-- .cover -->
+
+
+            <div class="inner">
+            <div class="post-content">
+                <p>At the end of last year, my brothers and I wrote our first novel together (<a href="https://dub.sh/b4c-astro">The Battle for Christmas: Reign of the Nutcrackers</a>). That experience inspired us to continue writing together, starting with a monthly newsletter with short stories. At this point, we decided we wanted a website. We had been using <a href="https://kit.com/">Kit</a> to send emails, and we liked that functionality, but as our writing resumes grow, we also wanted to have a place where people could see all of our work, and this is where our Astro site came in.</p>
+
+<p>Now, I’ve been interested in checking out Astro for a while, but when I saw <a href="https://luciacerchie.dev/">Lucia Cerchie’s blog</a> I fell in love with the Astro template (by <a href="https://www.twitter.com/Charca">Maxi Ferreira</a>) she used. I decided to start there, but since this was a blog for me and both of my brothers, I would need to add functionality for multiple authors. Here’s how I did that.</p>
+
+<h2 id="learning-the-hard-way-my-journey-to-astro-content-collections">Learning the Hard Way: My Journey to Astro Content Collections</h2>
+
+<p>Before we get into it, I need to acknowledge that I started with a mistake. I did the thing I say not to do and I started without fully reading the documentation.</p>
+
+<p>When I first added multiple author functionality, I created a simple JavaScript file to manage author data:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">const</span> <span class="nx">authors</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">BekahHW</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">BekahHW</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">bio</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Bekah grew up in a storytelling-rich environment with her brothers...</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">avatar</span><span class="p">:</span> <span class="dl">"</span><span class="s2">/assets/bhw_headshot.jpg</span><span class="dl">"</span><span class="p">,</span>
+  <span class="p">},</span>
+  <span class="na">Josh</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Josh</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">bio</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Josh Hawrot is married to his inspiring wife Cruz...</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">avatar</span><span class="p">:</span> <span class="dl">"</span><span class="s2">/assets/josh.jpg</span><span class="dl">"</span><span class="p">,</span>
+  <span class="p">},</span>
+  <span class="c1">// ...another author</span>
+<span class="p">};</span>
+</code></pre></div></div>
+<p>I connected this to my blog posts using dynamic routes. Everything worked, and I didn’t think twice about it. And then a couple of days later, I was looking at Astro documentation, when I had my facepalm moment: the documentation clearly outlined a more structured, type-safe approach using collections that would make my content more maintainable and scalable. It’s worth noting that I was also using an older version of Astro, and updating to 5.5.3 gave me more functionality.</p>
+
+<p>From their docs:</p>
+
+<blockquote>
+  <p>Content collections are the best way to manage sets of content in any Astro project. Collections help to organize and query your documents, enable Intellisense and type checking in your editor, and provide automatic TypeScript type-safety for all of your content.</p>
+</blockquote>
+
+<p>This was exactly what I had needed, and I missed it because I hadn’t spent enough time in the docs. Let’s just say this is one of those lessons you remember.</p>
+
+<p>What I had <em>was</em> working though, so why did I need to change?</p>
+
+<h2 id="why-i-needed-to-change">Why I Needed to Change</h2>
+
+<p>My original approach worked, but switching to Astro’s Content Collections API provided significant benefits:</p>
+
+<ul>
+  <li><strong>Schema validation</strong>: Content collections automatically validate my data structure, preventing errors before they happen</li>
+  <li><strong>TypeScript integration</strong>: I get autocompletion and type checking when working with author and blog data</li>
+  <li><strong>Structured content</strong>: All data follows a consistent format, making it easier to maintain and extend</li>
+  <li><strong>Simplified queries</strong>: The Collections API provides built-in methods for accessing content, eliminating custom filtering code</li>
+  <li><strong>Performance improvements</strong>: Astro 5’s Content Layer API is specifically optimized for efficiency and scalability</li>
+</ul>
+
+<p>Additionally, with Astro 5’s reference system, I can establish proper relationships between content types. For example, I can directly reference an author from a blog post using reference(“authors”) in the schema, which creates a clean, maintainable connection between content.</p>
+
+<h2 id="migrating-to-astro-content-collections">Migrating to Astro Content Collections</h2>
+
+<ol>
+  <li>Setting Up the Content Directory
+First, I created the proper content directory structure:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>src/
+├── content/
+│   ├── config.ts  &lt;- Configuration for all collections
+│   ├── authors/
+│   │   ├── Bekah.md
+│   │   ├── Josh.md
+│   │   └── Zach.md
+│   └── blog/
+│       └── my-blog-posts.md
+</code></pre></div>    </div>
+  </li>
+  <li>Defining Content Schemas</li>
+</ol>
+
+<p>The heart of content collections is the schema definition, which makes sure all your content follows a consistent structure:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// src/content/config.ts</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">defineCollection</span><span class="p">,</span> <span class="nx">reference</span><span class="p">,</span> <span class="nx">z</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">astro:content</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">glob</span><span class="p">,</span> <span class="nx">file</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">astro/loaders</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">// Define the schema for the authors collection</span>
+<span class="kd">const</span> <span class="nx">authors</span> <span class="o">=</span> <span class="nx">defineCollection</span><span class="p">({</span>
+  <span class="na">loader</span><span class="p">:</span> <span class="nx">glob</span><span class="p">({</span> <span class="na">pattern</span><span class="p">:</span> <span class="dl">"</span><span class="s2">**/*.md</span><span class="dl">"</span><span class="p">,</span> <span class="na">base</span><span class="p">:</span> <span class="dl">"</span><span class="s2">./src/content/authors</span><span class="dl">"</span> <span class="p">}),</span>
+  <span class="na">schema</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="nx">object</span><span class="p">({</span>
+    <span class="na">name</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="kr">string</span><span class="p">(),</span>
+    <span class="na">bio</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="kr">string</span><span class="p">(),</span>
+    <span class="na">avatar</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="kr">string</span><span class="p">(),</span>
+  <span class="p">}),</span>
+<span class="p">});</span>
+
+<span class="c1">// Define the schema for the blog collection</span>
+<span class="kd">const</span> <span class="nx">blog</span> <span class="o">=</span> <span class="nx">defineCollection</span><span class="p">({</span>
+  <span class="na">loader</span><span class="p">:</span> <span class="nx">glob</span><span class="p">({</span> <span class="na">pattern</span><span class="p">:</span> <span class="dl">"</span><span class="s2">**/*.md</span><span class="dl">"</span><span class="p">,</span> <span class="na">base</span><span class="p">:</span> <span class="dl">"</span><span class="s2">./src/content/blog</span><span class="dl">"</span> <span class="p">}),</span>
+  <span class="na">schema</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="nx">object</span><span class="p">({</span>
+    <span class="na">title</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="kr">string</span><span class="p">(),</span>
+    <span class="na">description</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="kr">string</span><span class="p">(),</span>
+    <span class="na">publishDate</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="kr">string</span><span class="p">(),</span>
+    <span class="na">author</span><span class="p">:</span> <span class="nx">reference</span><span class="p">(</span><span class="dl">"</span><span class="s2">authors</span><span class="dl">"</span><span class="p">),</span>
+  <span class="p">}),</span>
+<span class="p">});</span>
+
+<span class="c1">// Export the collections</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">collections</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">authors</span><span class="p">,</span> <span class="nx">blog</span> <span class="p">};</span>
+
+</code></pre></div></div>
+<ol>
+  <li>Converting Author Data to Individual Files
+I converted each author from my JS object to individual Markdown files:</li>
+</ol>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Bekah"</span>
+<span class="na">bio</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Bekah</span><span class="nv"> </span><span class="s">grew</span><span class="nv"> </span><span class="s">up</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">storytelling-rich</span><span class="nv"> </span><span class="s">environment</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">her</span><span class="nv"> </span><span class="s">brothers,</span><span class="nv"> </span><span class="s">where</span><span class="nv"> </span><span class="s">books</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">imagination</span><span class="nv"> </span><span class="s">were</span><span class="nv"> </span><span class="s">central</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">daily</span><span class="nv"> </span><span class="s">life..."</span>
+<span class="na">avatar</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/assets/bhw_headshot.jpg"</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Fixing Author Name Capitalization in the Blog List View</li>
+</ol>
+
+<p>One issue I ran into was that the author name was appearing in all lowercase in the blog list view (/blog/). This happened because I was using the author ID (which is derived from filenames and always lowercase) instead of their actual name from the frontmatter. Here’s how I updated that in <code class="language-plaintext highlighter-rouge">src/pages/index.astro</code>:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Fetch all author entries</span>
+<span class="kd">const</span> <span class="nx">authorEntries</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">getCollection</span><span class="p">(</span><span class="dl">'</span><span class="s1">authors</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">getAuthorName</span> <span class="o">=</span> <span class="p">(</span><span class="nx">authorId</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">author</span> <span class="o">=</span> <span class="nx">authorEntries</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">a</span> <span class="o">=&gt;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="nx">authorId</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">author</span> <span class="p">?</span> <span class="nx">author</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">name</span> <span class="p">:</span> <span class="nx">authorId</span><span class="p">;</span> <span class="c1">// Fallback to ID if author not found</span>
+<span class="p">};</span>
+<span class="o">---</span>
+
+<span class="o">&lt;</span><span class="nx">BaseLayout</span> <span class="nx">title</span><span class="o">=</span><span class="p">{</span><span class="nx">title</span><span class="p">}</span> <span class="nx">description</span><span class="o">=</span><span class="p">{</span><span class="nx">description</span><span class="p">}</span> <span class="nx">permalink</span><span class="o">=</span><span class="p">{</span><span class="nx">permalink</span><span class="p">}</span> <span class="nx">current</span><span class="o">=</span><span class="dl">"</span><span class="s2">blog</span><span class="dl">"</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="dl">"</span><span class="s2">container</span><span class="dl">"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Stories</span><span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span>    <span class="p">{</span><span class="nx">sortedPosts</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">post</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="p">(</span>
+        <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+          <span class="p">{</span> <span class="nx">index</span> <span class="o">!==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="o">&lt;</span><span class="nx">hr</span> <span class="o">/&gt;</span> <span class="p">}</span>
+          <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="dl">"</span><span class="s2">post-item</span><span class="dl">"</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span>
+              <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="p">{</span><span class="s2">`/blog/</span><span class="p">${</span><span class="nx">post</span><span class="p">.</span><span class="nx">id</span><span class="p">}</span><span class="s2">`</span><span class="p">}</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">post</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">title</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/a</span><span class="err">&gt;
+</span>            <span class="o">&lt;</span><span class="sr">/h2</span><span class="err">&gt;
+</span>            <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">post</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">description</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/p</span><span class="err">&gt;
+</span>              <span class="o">&lt;</span><span class="nx">span</span> <span class="kd">class</span><span class="o">=</span><span class="dl">"</span><span class="s2">post-item-author</span><span class="dl">"</span><span class="o">&gt;</span>
+  <span class="nx">By</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="p">{</span><span class="s2">`/authors/</span><span class="p">${</span><span class="nx">post</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">author</span><span class="p">.</span><span class="nx">id</span><span class="p">}</span><span class="s2">`</span><span class="p">}</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">getAuthorName</span><span class="p">(</span><span class="nx">post</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">author</span><span class="p">.</span><span class="nx">id</span><span class="p">)}</span><span class="o">&lt;</span><span class="sr">/a</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/span</span><span class="err">&gt;
+</span>
+              <span class="o">&lt;</span><span class="nx">span</span> <span class="kd">class</span><span class="o">=</span><span class="dl">"</span><span class="s2">post-item-date</span><span class="dl">"</span><span class="o">&gt;</span><span class="err">—</span> <span class="p">{</span><span class="nx">post</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">publishDate</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/span</span><span class="err">&gt;
+</span>            <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>          <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>      <span class="p">)</span>
+    <span class="p">})}</span>
+  <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/BaseLayout</span><span class="err">&gt;
+</span></code></pre></div></div>
+
+<ol>
+  <li>Updating Templates to Use Content Collections
+Next, I refactored my blog and author pages to use the Content Collections API:
+```js
+—
+// src/pages/blog/[slug].astro
+import BaseLayout from ‘../../layouts/BaseLayout.astro’;
+import Bio from ‘../../components/Bio.astro’;
+import { getCollection, getEntry, render } from ‘astro:content’;
+import ShareButtons from ‘../../components/ShareButtons.astro’;</li>
+</ol>
+
+<p>export async function getStaticPaths() {
+try {
+    const blogEntries = await getCollection(‘blog’);</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Create routes using entry ID
+return blogEntries.map(post =&gt; {
+  console.log(`Creating route for ${post.id}`);
+  return {
+    params: { slug: post.id },
+    props: { entryId: post.id },  // Just pass the ID
+  };
+});   } catch (error) {
+console.error("Error in getStaticPaths:", error);
+return [];   } }
+</code></pre></div></div>
+
+<p>// Get blog post data from props
+const { entryId } = Astro.props;
+const entry = await getEntry(‘blog’, entryId);</p>
+
+<p>if (!entry) {
+  return Astro.redirect(‘/404’);
+}</p>
+
+<p>// Render the content
+const { Content } = await render(entry);
+const allAuthors = await getCollection(‘authors’);
+let author;
+if (entry.data.author?.id) {
+  try {
+    author = await getEntry(‘authors’, entry.data.author.id);
+    if (author) {
+      console.log(<code class="language-plaintext highlighter-rouge">Found author for ${entry.data.author.id}</code>);
+    } else {
+      console.error(<code class="language-plaintext highlighter-rouge">Author not found: ${entry.data.author.id}</code>);
+    }
+  } catch (error) {
+    console.error(<code class="language-plaintext highlighter-rouge">Error fetching author: ${error.message}</code>);
+  }
+}</p>
+
+<h2 id="const-permalink--astrositehrefblogentryid">const permalink = <code class="language-plaintext highlighter-rouge">${Astro.site.href}blog/${entry.id}</code>;</h2>
+
+<p>&lt;BaseLayout title={entry.data.title} description={entry.data.description} permalink={permalink} current=”blog”&gt;</p>
+<header>
+    <p>{entry.data.publishDate} ~ {entry.data.readingTime}</p>
+    <h1>{entry.data.title}</h1>
+    <hr />
+  </header>
+<div class="container">
+    <article class="content">
+      <Content />
+    </article>
+    <hr />
+    
+    {author &amp;&amp; (
+      <div class="author-bio">
+        <h3>About the Author</h3>
+        &lt;Bio 
+          name={author.data.name}
+          bio={author.data.bio}
+          avatar={author.data.avatar}
+        /&gt;
+      </div>
+    )}
+    
+    &lt;ShareButtons title={entry.data.title} permalink={permalink} /&gt;
+  </div>
+<p>&lt;/BaseLayout&gt;
+```
+There are two things that I wanted to implement while working on this:</p>
+
+<ol>
+  <li>At the bottom of every short story, you see the author and their bio</li>
+  <li>When you click an author from the list view, you are taken to their page with links to all of their works.</li>
+</ol>
+
+<p>Both of those are fully functional on the site now.</p>
+
+<h2 id="lessons-learned">Lessons Learned</h2>
+
+<p>The good news is that I learned a lot during this project, including:</p>
+
+<ul>
+  <li>Read the documentation first: So much time and effort could have been saved</li>
+  <li>Use the platform’s built-in features: Modern frameworks like Astro provide powerful tools</li>
+  <li>Be willing to refactor: Sometimes you need to accept you’ve taken the wrong approach</li>
+</ul>
+
+<p>There are still things that I need to work on for the site. The next priority is to improve the mobile view and responsiveness, but I’m happy to have it working. We already have two of our short stories up there attributed to the correct authors, and in a couple of weeks mine will be there too. You can check out our <a href="https://dub.sh/siblings-write">site</a> now!</p>
+
+
+            </div>
+
+            <footer class="post-footer share-post">
+            
+            
+                <span>Share:</span>
+                <a class="circle" target="_blank"
+                    href="https://twitter.com/share?text=Adding+Multiple+Authors+to+my+Astro+Writing+Blog%3A+A+Technical+Walkthrough&amp;url=https://bekahhw.com/astro-content-collections">
+                <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
+                </a>
+                <a class="circle" target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://bekahhw.com/astro-content-collections"><i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
+            
+            
+            </footer>
+
+            
+
+            </div><!-- .inner -->
+        </article>
+
+        <nav class="post-navigation">
+
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+
+        
+        <a href="/common-dev-content-pitfalls" class="nav-next">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Next</span><span class="nav-title">Common Pitfalls in Developer Content: The 7 Deadly Sins of Developer Documentation</span><span
+                    class="nav-date">March 24, 2025</span>
+            </div>
+
+        </a>
+        
+
+        
+        <a href="/Creating-Content-Developers-Love" class="nav-previous">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Previous</span>
+                <span class="nav-title">Creating Content Developers Love: A Guide to Developer Experience (DX) Content</span>
+                <span class="nav-date">March 17, 2025</span>
+            </div>
+
+        </a>
+        
+
+    </div><!-- .nav-links-->
+</nav><!-- .post-navigation -->
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->  <aside class="sidebar">
+  <div class="sidebar-scrollable">
+    <div class="inner">
+      <div class="widget-area">
+        <nav class="site-navigation">
+          <h2>Explore Website</h2>
+          <ul class="menu">
+            
+            <li class="menu-item">
+              <a href="/about">About</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/my-work">My Work</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/code-and-community">Code & Community</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/consulting">Consulting</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/contact">Contact</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/subscribe">Subscribe</a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        
+<section class="widget widget-text">
+    <h2 class="widget-title">About BekahHW's Site</h2>
+    <p>Code. Community. Content.</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+<!--  
+<section class="widget widget-tags">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        
+        <a class="button" href='https://bekahhw.com/tag/ai/'>AI
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/community/'>Community
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/open- source/'>Open Source
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/tfjs/'>TFJS
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/tips/'>Tips
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+    </div>
+</section> -->
+
+      </div>
+      <!-- .widget-area -->
+      <a class="sidebar-toggle">
+        <span class="screen-reader-text">Close</span>
+        <span class="icon" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- .inner -->
+  </div>
+  <!-- .sidebar-scrollable -->
+</aside>
+<!-- .sidebar -->
+
+      <footer class="site-footer">
+    <div class="inner">
+
+        <div class="offsite-links">
+  
+  <a
+    href="https://twitter.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-twitter" aria-hidden="true"></i>
+    <span class="screen-reader-text">Twitter</span>
+  </a>
+   
+  <a
+    href="https://www.linkedin.com/in/bekahhw"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-linkedin" aria-hidden="true"></i>
+    <span class="screen-reader-text">Linkedin</span>
+  </a>
+   
+  <a href="https://github.com/BekahHW" class="circle" target="_blank">
+    <i class="icon-github" aria-hidden="true"></i>
+    <span class="screen-reader-text">GitHub</span>
+  </a>
+    
+  <a
+    href="https://www.instagram.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-instagram" aria-hidden="true"></i>
+    <span class="screen-reader-text">Instagram</span>
+  </a>
+   
+
+  <a
+    href="https://www.youtube.com/@bekahhw"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-youtube" aria-hidden="true"></i>
+    <span class="screen-reader-text">YouTube</span>
+  </a>
+
+  <a href="https://bekahhw.github.io/feed.xml" class="circle" target="_blank">
+    <i class="icon-feed" aria-hidden="true"></i>
+    <span class="screen-reader-text">RSS</span>
+  </a>
+</div>
+<!-- .offsite-links -->
+
+        <div class="site-info">
+            <a href="#">BekahHW</a> &copy; 2025 . Subtle theme by
+            <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>.
+            <br /> Powered by
+            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+    </div>
+    <!-- .site -->
+
+    <!-- Javascript Assets -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/custom.js"></script>
+  </body>
+</html>

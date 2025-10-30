@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PM8BZL871Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PM8BZL871Y');
+</script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+     <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor | BekahHW</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor" />
+<meta name="author" content="Bekah Hawrot Weigel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I tested three AI coding assistants on debugging a mobile navigation issue in an Astro + Tailwind site. Continue provided the best explanations, Cursor was fast but made assumptions, and Copilot was quick but error-prone." />
+<meta property="og:description" content="I tested three AI coding assistants on debugging a mobile navigation issue in an Astro + Tailwind site. Continue provided the best explanations, Cursor was fast but made assumptions, and Copilot was quick but error-prone." />
+<link rel="canonical" href="http://localhost:4000/Which-Code-Assistant-Fix-Real-Problems-Best" />
+<meta property="og:url" content="http://localhost:4000/Which-Code-Assistant-Fix-Real-Problems-Best" />
+<meta property="og:site_name" content="BekahHW" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-30T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@BekahHW" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/Which-Code-Assistant-Fix-Real-Problems-Best","headline":"Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor","dateModified":"2025-06-30T00:00:00-04:00","datePublished":"2025-06-30T00:00:00-04:00","author":{"@type":"Person","name":"Bekah Hawrot Weigel"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Which-Code-Assistant-Fix-Real-Problems-Best"},"description":"I tested three AI coding assistants on debugging a mobile navigation issue in an Astro + Tailwind site. Continue provided the best explanations, Cursor was fast but made assumptions, and Copilot was quick but error-prone.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+ 
+
+    <!-- AI and SEO optimizations -->
+    <!-- AI-specific meta tags -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+<!-- OpenAI/ChatGPT specific -->
+<meta name="chatgpt:crawl" content="allow">
+<meta name="chatgpt:index" content="allow">
+
+<!-- Perplexity AI -->
+<meta name="perplexity:crawl" content="allow">
+
+<!-- Claude/Anthropic -->
+<meta name="claude:crawl" content="allow">
+
+<!-- Content categorization for AI -->
+
+<meta name="content-type" content="blog-post">
+<meta name="content-category" content="technology">
+<meta name="content-topics" content="AI">
+<meta name="content-audience" content="developers, tech professionals, community builders">
+<meta name="content-intent" content="educational, informational">
+
+
+<!-- Rich content hints -->
+<meta name="content-format" content="article">
+<meta name="content-style" content="technical, personal experience, tutorial">
+<meta name="expertise-level" content="beginner to advanced">
+
+<!-- Author expertise indicators -->
+<meta name="author-expertise" content="developer relations, community building, technical writing, mental health in tech">
+<meta name="author-experience" content="5+ years in tech, bootcamp graduate, mother in tech">
+
+<!-- Content freshness -->
+
+<meta name="content-date" content="2025-06-30">
+
+
+<!-- Enhanced description for AI understanding -->
+
+<meta name="ai-description" content="I tested three AI coding assistants on debugging a mobile navigation issue in an Astro + Tailwind site. Continue provided the best explanations, Cursor was fast but made assumptions, and Copilot was quick but error-prone.">
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor",
+  "author": {
+    "@type": "Person",
+    "name": "Bekah Hawrot Weigel",
+    "url": "https://bekahhw.com//about"
+  },
+  "datePublished": "2025-06-30",
+  "dateModified": "2025-06-30",
+  "description": "I tested three AI coding assistants on debugging a mobile navigation issue in an Astro + Tailwind site. Continue provided the best explanations, Cursor was f...",
+  "url": "https://bekahhw.com//Which-Code-Assistant-Fix-Real-Problems-Best",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bekahhw.com//Which-Code-Assistant-Fix-Real-Problems-Best"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BekahHW",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bekahhw.com//assets/images/logo.png"
+    }
+  },
+  "keywords": "AI, ",
+  "articleSection": "Technology",
+  "wordCount": "1215",
+  "about": [
+    
+    
+    {
+      "@type": "Thing",
+      "name": "AI"
+    }
+    
+    
+  ]
+}
+</script>
+
+
+
+
+
+    <!-- Site Favicon -->
+    <link
+      rel="shortcut icon"
+      href="http://localhost:4000/assets/images/favicon.ico"
+      type="image/png"
+    />
+
+    <!-- Font Embed Code -->
+    <link
+      href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="home-template"
+  >
+    <div id="page" class="site">
+       <header class="site-header">
+
+    
+    <h1 class="site-title"><a href="/" rel="home">BekahHW</a></h1>
+    
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->  
+     
+      
+      <main class="site-main">
+    <div class="site-content">
+
+        <article class="post-template">
+
+            <header class="cover post-header">
+            
+                
+                <div class="cover-content">
+                    <div class="inner">
+                
+                        
+                        <div class="tag-links">
+                             
+                            <a href='tag/ai/'>AI</a>
+                            
+                            
+                        </div><!-- .tag-links -->
+                        
+                
+                        <h1 class="post-title">Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor</h1>
+                
+                        <div class="post-meta">
+                            <span class="post-meta-wrap">
+                                
+                                
+                                
+                                
+
+                                <time class="published" datetime="2025-06-30">
+                                    June 30, 2025
+                                </time>
+                            </span>
+                        </div><!-- .post-meta -->
+                
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+
+            </header><!-- .cover -->
+
+
+            <div class="inner">
+            <div class="post-content">
+                <p><em>A follow-up to “Which Code Assistant Actually Helps Developers Grow?” This time, testing how AI assistants handle debugging existing code problems.</em></p>
+
+<p>Last week, I <a href="https://bekahhw.com/Which-Code-Assistant-Helps-Developers-Grow">tested three AI coding assistants on building a new feature</a>. This time, I wanted to see how they handle something most developers deal with daily: debugging existing code problems.</p>
+
+<p>I was debugging a mobile responsiveness issue on my Astro + Tailwind site (see the <a href="https://github.com/BekahHW/siblings-write/">GitHub Project here</a>). The navbar wasn’t collapsing on mobile, causing layout issues. Instead of a full navigation bar cramming into mobile view, I needed a proper hamburger menu. Instead of manually rewriting it, I tested how three AI code assistants—Continue, Copilot, and Cursor—would solve it.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/240b8dcxjht9ly0hg9v1.gif" alt="gif showing the responsive layout issue on mobile is fixed when deleting the nav bar" /></p>
+
+<p>Here’s what I told each assistant:</p>
+
+<blockquote>
+  <p>“There’s an issue with mobile view on the site. I think the main problem is with the navbar. But I don’t think it makes sense to have a nav bar for a mobile site. We should make the site responsive and add a sticky nav bar with a hamburger menu instead of the full navigation bar once the site hits mobile-sized screens.”</p>
+</blockquote>
+
+<p><strong>TL;DR</strong>: I tested Continue, GitHub Copilot, and Cursor to debug a broken mobile navbar in an Astro-based site. Continue offered the best explanations and teaching moments, Cursor was fast but made extra assumptions, and Copilot was fast but error-prone. If you’re debugging UI bugs, Continue’s Chat mode helps you understand why things break, not just how to fix them.</p>
+
+<h2 id="can-continue-debug-a-responsive-nav-issue-in-astro">Can Continue Debug a Responsive Nav Issue in Astro?</h2>
+
+<p>I used <a href="https://continue.dev/">Continue</a> in <a href="https://docs.continue.dev/agent/how-to-use-it">Agent mode</a>, giving it context from <code class="language-plaintext highlighter-rouge">Header.astro</code>, <code class="language-plaintext highlighter-rouge">Nav.astro</code>, and <code class="language-plaintext highlighter-rouge">BaseLayout.astro</code>.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bg21110n6vfs19es00l5.png" alt="Continue.dev suggesting hamburger menu fixes in Astro project" /></p>
+
+<h3 id="the-good">The Good</h3>
+
+<ul>
+  <li>Created a dedicated hamburger menu component</li>
+  <li>Asked for permission between file changes</li>
+  <li>When I got a transparency issue with the menu panel, it fixed it in one go</li>
+  <li>It added comments to understand the steps it was taking in the code and debug logs in the code to help me see what was working and when</li>
+  <li>Everything worked within 12 minutes</li>
+</ul>
+
+<h3 id="the-learning-experience">The Learning Experience</h3>
+
+<p>When I tested the same fix using Continue’s <a href="https://docs.continue.dev/chat/how-to-use-it">Chat mode</a> instead of Agent mode, it took longer but provided much more thorough explanations. The conversation was more educational, walking me through the reasoning behind each change.</p>
+
+<h3 id="verdict">Verdict</h3>
+
+<p>Continue balances efficiency with learning. Agent mode got me working code fast, while Chat mode taught me the “why” behind the solutions.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9ss3rdoqhm59mkjjqxbl.png" alt="Copilot output showing approach to fixing broken layout with overlapping nav menu" /></p>
+
+<h2 id="how-copilot-handles-responsive-navbar-bugs">How Copilot Handles Responsive Navbar Bugs</h2>
+
+<p>Copilot started by unnecessarily converting a Svelte component, then immediately threw a TypeScript error:
+<code class="language-plaintext highlighter-rouge">Argument of type 'EventTarget' is not assignable to parameter of type 'Node'</code></p>
+
+<p>I’m not sure why it decided that the <code class="language-plaintext highlighter-rouge">ThemeToggleButton</code> needed to be converted. At the very least, that’s outside of the scope of this PR, in my opinion.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fi883ls0s34e83ux1zra.png" alt="Image description" /></p>
+
+<p>It was able to solve the problem pretty quickly when I used the “Fix with Copilot” function, explaining, “You should cast e.target to Node when passing it to .contains() to resolve the type error.”</p>
+
+<h3 id="the-real-problem">The Real Problem</h3>
+
+<p>The hamburger menu initially didn’t appear at all. The responsiveness was “fixed” because the navigation disappeared, but users couldn’t access any menu items.</p>
+
+<p>After back-and-forth debugging, Copilot resorted to <code class="language-plaintext highlighter-rouge">!important</code> declarations (not ideal) and the old “turn the background red” debugging trick. Even when the menu became visible, clicking it did nothing.</p>
+
+<p>Eventually, we identified JavaScript as the culprit. Copilot fixed it, but then the menu links appeared directly over the page content without any background container. More back-and-forth with questionable styling decisions followed.</p>
+
+<p>It was to the point where I definitely could fix this faster than having a back-and-forth with Copilot, so I called it. After that, I also realized there was a bug where, after expanding the hamburger menu on mobile and then switching to desktop view, the mobile menu remained open on top of the restored navigation bar.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tvvd7pmfl9gm2usc0k1w.png" alt="nav panel on top of page text" /></p>
+
+<p><strong>Time</strong>: About 20 minutes, with me ultimately fixing the styles myself.</p>
+
+<p><strong>Learning Value</strong>: Minimal. Copilot told me what it was doing, but didn’t really explain its approach or help me understand the underlying problem.</p>
+
+<h2 id="cursor-fixes-more-than-you-askhelpful-or-harmful">Cursor Fixes More Than You Ask—Helpful or Harmful?</h2>
+
+<p>Cursor’s response was immediate and organized:</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7vx5vt6fdw9b2utz4gre.png" alt="Cursor's initial message detailing what needed to be done to implement the hamburger menu" /></p>
+
+<h3 id="the-process">The Process</h3>
+
+<ol>
+  <li>Automatically read the global CSS</li>
+  <li>Outlined exactly what needed to change and why</li>
+  <li>Provided all necessary file updates</li>
+  <li>Hit the same cross-page JavaScript issue as Copilot</li>
+</ol>
+
+<h3 id="the-interesting-part">The Interesting Part</h3>
+
+<p>Cursor went beyond my request, automatically improving mobile styles across the site that I hadn’t asked for. This raises an interesting question: should AI assistants make assumptions about what you “really” need?</p>
+
+<p><strong>Time</strong>: About 15 minutes to complete.</p>
+
+<p><strong>Learning Value</strong>: Good explanations of changes. I appreciate that it gives more information on why errors were happening in the context of using Astro.</p>
+
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vsk81fkbeau7jkmdtafh.png" alt="showing the issue and how it understands and corrects it" /></p>
+
+<h2 id="context-switching-costs">Context Switching Costs</h2>
+
+<p>Here’s something I noticed that none of the assistants addressed: familiarity bias. Cursor and GitHub Copilot felt nearly identical to use, so I moved faster with them. Continue required slightly more of a learning curve, which actually slowed me down initially but provided better educational value.</p>
+
+<p>This isn’t a knock against Continue. It’s a reminder that switching tools comes with costs, even when the new tool might be better in the long term.</p>
+
+<h2 id="debugging-vs-building-different-skills-required">Debugging vs. Building: Different Skills Required</h2>
+
+<p>This debugging scenario revealed something my first test missed, that building new features and fixing existing problems require different AI assistance approaches.</p>
+
+<h3 id="building-new-features">Building New Features</h3>
+
+<ul>
+  <li>Clear requirements</li>
+  <li>Blank slate approach</li>
+  <li>Focus on “what should this do?”</li>
+</ul>
+
+<h3 id="debugging-existing-code">Debugging Existing Code</h3>
+
+<ul>
+  <li>Understanding legacy decisions</li>
+  <li>Identifying root causes</li>
+  <li>Focusing on “why isn’t this working?”</li>
+</ul>
+
+<p>Continue did well with the debugging mindset, asking permission before changes and explaining the reasoning. Copilot and Cursor were more aggressive about “fixing” things, sometimes creating new problems in the process.</p>
+
+<h3 id="which-ai-coding-assistant-wins-for-debugging">Which AI Coding Assistant Wins for Debugging?</h3>
+
+<p><strong>For Learning</strong>: Continue, especially in Chat mode. It helped me understand not just what was broken, but why the original approach failed.</p>
+
+<p><strong>For Speed</strong>: Cursor, if you don’t mind AI making assumptions about improvements you didn’t request.</p>
+
+<h2 id="the-bigger-picture">The Bigger Picture</h2>
+
+<p>This comparison reinforced something I mentioned in my first post: the tool is only part of the equation. Each assistant performed differently not just because of their capabilities, but because of how they approached the problem-solving process.</p>
+
+<p>Continue treated debugging as a learning opportunity. Copilot treated it as a code completion task. Cursor treated it as a comprehensive redesign project.</p>
+
+<p>If you want to know which coding assistant helps developers grow when you’re debugging, try this: Before asking for a fix, ask the AI to help you understand why the original code failed. The debugging skills you develop will be more valuable than any individual fix.</p>
+
+
+            </div>
+
+            <footer class="post-footer share-post">
+            
+            
+                <span>Share:</span>
+                <a class="circle" target="_blank"
+                    href="https://twitter.com/share?text=Debugging+Mobile+Navigation+Bugs+with+AI+Code+Assistants%3A+Continue+vs+Copilot+vs+Cursor&amp;url=https://bekahhw.com/Which-Code-Assistant-Fix-Real-Problems-Best">
+                <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
+                </a>
+                <a class="circle" target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://bekahhw.com/Which-Code-Assistant-Fix-Real-Problems-Best"><i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
+            
+            
+            </footer>
+
+            
+
+            </div><!-- .inner -->
+        </article>
+
+        <nav class="post-navigation">
+
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+
+        
+        <a href="/Pros-and-Cons-of-AI-Code-Assistants" class="nav-next">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Next</span><span class="nav-title">Pros and Cons of the Top AI Code Assistants: Continue.dev, GitHub Copilot, and Cursor (With a Hero’s Twist)</span><span
+                    class="nav-date">July 7, 2025</span>
+            </div>
+
+        </a>
+        
+
+        
+        <a href="/Which-Code-Assistant-Helps-Developers-Grow" class="nav-previous">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Previous</span>
+                <span class="nav-title">Which Code Assistant Actually Helps Developers Grow?</span>
+                <span class="nav-date">June 27, 2025</span>
+            </div>
+
+        </a>
+        
+
+    </div><!-- .nav-links-->
+</nav><!-- .post-navigation -->
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->  <aside class="sidebar">
+  <div class="sidebar-scrollable">
+    <div class="inner">
+      <div class="widget-area">
+        <nav class="site-navigation">
+          <h2>Explore Website</h2>
+          <ul class="menu">
+            
+            <li class="menu-item">
+              <a href="/about">About</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/my-work">My Work</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/code-and-community">Code & Community</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/consulting">Consulting</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/contact">Contact</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/subscribe">Subscribe</a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        
+<section class="widget widget-text">
+    <h2 class="widget-title">About BekahHW's Site</h2>
+    <p>Code. Community. Content.</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+<!--  
+<section class="widget widget-tags">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        
+        <a class="button" href='https://bekahhw.com/tag/ai/'>AI
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/community/'>Community
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/open- source/'>Open Source
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/tfjs/'>TFJS
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/tips/'>Tips
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+    </div>
+</section> -->
+
+      </div>
+      <!-- .widget-area -->
+      <a class="sidebar-toggle">
+        <span class="screen-reader-text">Close</span>
+        <span class="icon" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- .inner -->
+  </div>
+  <!-- .sidebar-scrollable -->
+</aside>
+<!-- .sidebar -->
+
+      <footer class="site-footer">
+    <div class="inner">
+
+        <div class="offsite-links">
+  
+  <a
+    href="https://twitter.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-twitter" aria-hidden="true"></i>
+    <span class="screen-reader-text">Twitter</span>
+  </a>
+   
+  <a
+    href="https://www.linkedin.com/in/bekahhw"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-linkedin" aria-hidden="true"></i>
+    <span class="screen-reader-text">Linkedin</span>
+  </a>
+   
+  <a href="https://github.com/BekahHW" class="circle" target="_blank">
+    <i class="icon-github" aria-hidden="true"></i>
+    <span class="screen-reader-text">GitHub</span>
+  </a>
+    
+  <a
+    href="https://www.instagram.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-instagram" aria-hidden="true"></i>
+    <span class="screen-reader-text">Instagram</span>
+  </a>
+   
+
+  <a
+    href="https://www.youtube.com/@bekahhw"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-youtube" aria-hidden="true"></i>
+    <span class="screen-reader-text">YouTube</span>
+  </a>
+
+  <a href="https://bekahhw.github.io/feed.xml" class="circle" target="_blank">
+    <i class="icon-feed" aria-hidden="true"></i>
+    <span class="screen-reader-text">RSS</span>
+  </a>
+</div>
+<!-- .offsite-links -->
+
+        <div class="site-info">
+            <a href="#">BekahHW</a> &copy; 2025 . Subtle theme by
+            <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>.
+            <br /> Powered by
+            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+    </div>
+    <!-- .site -->
+
+    <!-- Javascript Assets -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/custom.js"></script>
+  </body>
+</html>

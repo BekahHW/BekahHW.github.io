@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PM8BZL871Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PM8BZL871Y');
+</script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+     <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Making Associations: The Basics | BekahHW</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Making Associations: The Basics" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I like to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, how would they describe their relationship? The most common relationships are belongs_to, has_many, has_many, through:, and has_one. What do those even mean? I find the best way to understand relationships is through an example." />
+<meta property="og:description" content="I like to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, how would they describe their relationship? The most common relationships are belongs_to, has_many, has_many, through:, and has_one. What do those even mean? I find the best way to understand relationships is through an example." />
+<link rel="canonical" href="http://localhost:4000/Making-Associations-The-Basics" />
+<meta property="og:url" content="http://localhost:4000/Making-Associations-The-Basics" />
+<meta property="og:site_name" content="BekahHW" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-17T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Making Associations: The Basics" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/Making-Associations-The-Basics","headline":"Making Associations: The Basics","dateModified":"2019-02-17T00:00:00-05:00","datePublished":"2019-02-17T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Making-Associations-The-Basics"},"description":"I like to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, how would they describe their relationship? The most common relationships are belongs_to, has_many, has_many, through:, and has_one. What do those even mean? I find the best way to understand relationships is through an example.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+ 
+
+    <!-- AI and SEO optimizations -->
+    <!-- AI-specific meta tags -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+<!-- OpenAI/ChatGPT specific -->
+<meta name="chatgpt:crawl" content="allow">
+<meta name="chatgpt:index" content="allow">
+
+<!-- Perplexity AI -->
+<meta name="perplexity:crawl" content="allow">
+
+<!-- Claude/Anthropic -->
+<meta name="claude:crawl" content="allow">
+
+<!-- Content categorization for AI -->
+
+<meta name="content-type" content="blog-post">
+<meta name="content-category" content="technology">
+<meta name="content-topics" content="">
+<meta name="content-audience" content="developers, tech professionals, community builders">
+<meta name="content-intent" content="educational, informational">
+
+
+<!-- Rich content hints -->
+<meta name="content-format" content="article">
+<meta name="content-style" content="technical, personal experience, tutorial">
+<meta name="expertise-level" content="beginner to advanced">
+
+<!-- Author expertise indicators -->
+<meta name="author-expertise" content="developer relations, community building, technical writing, mental health in tech">
+<meta name="author-experience" content="5+ years in tech, bootcamp graduate, mother in tech">
+
+<!-- Content freshness -->
+
+<meta name="content-date" content="2019-02-17">
+
+
+<!-- Enhanced description for AI understanding -->
+
+<meta name="ai-description" content="I like to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, how would they describe their relationship? The most common relationships are belongs_to, has_many, has_many, through:, and has_one. What do...">
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Making Associations: The Basics",
+  "author": {
+    "@type": "Person",
+    "name": "BekahHW",
+    "url": "https://bekahhw.com//about"
+  },
+  "datePublished": "2019-02-17",
+  "dateModified": "2019-02-17",
+  "description": "I like to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, ...",
+  "url": "https://bekahhw.com//Making-Associations-The-Basics",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bekahhw.com//Making-Associations-The-Basics"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BekahHW",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bekahhw.com//assets/images/logo.png"
+    }
+  },
+  "keywords": ", ",
+  "articleSection": "Technology",
+  "wordCount": "620",
+  "about": [
+    
+    
+    
+  ]
+}
+</script>
+
+
+
+
+
+    <!-- Site Favicon -->
+    <link
+      rel="shortcut icon"
+      href="http://localhost:4000/assets/images/favicon.ico"
+      type="image/png"
+    />
+
+    <!-- Font Embed Code -->
+    <link
+      href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="home-template"
+  >
+    <div id="page" class="site">
+       <header class="site-header">
+
+    
+    <h1 class="site-title"><a href="/" rel="home">BekahHW</a></h1>
+    
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->  
+     
+      
+      <main class="site-main">
+    <div class="site-content">
+
+        <article class="post-template">
+
+            <header class="cover post-header">
+            
+                
+                <div class="cover-content">
+                    <div class="inner">
+                
+                        
+                
+                        <h1 class="post-title">Making Associations: The Basics</h1>
+                
+                        <div class="post-meta">
+                            <span class="post-meta-wrap">
+                                
+                                
+                                
+                                
+
+                                <time class="published" datetime="2019-02-17">
+                                    February 17, 2019
+                                </time>
+                            </span>
+                        </div><!-- .post-meta -->
+                
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+
+            </header><!-- .cover -->
+
+
+            <div class="inner">
+            <div class="post-content">
+                <p>I like to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, how would they describe their relationship? The most common relationships are belongs_to, has_many, has_many, through:, and has_one. What do those even mean? I find the best way to understand relationships is through an example.</p>
+
+<p>Right now, I’m working on a project for screenwriters. The purpose of the project is to allow the screenwriter to enter their project and to track query letters sent to agents. So first, I start with my models. I know I’ll need a user, but in this case, I’ll call that a screenwriter. Next, I want to make a screenplay model. That screenplay should have at least one genre, so I’ll create a genre model. Last, I’ll create an agent model.</p>
+
+<p>Each of these models will have attributes, but I’m going to put that on hold for right now. Now, we want to determine what the associations are. We’ll tackle the easy ones first. A screenwriter doesn’t want to have just one screenplay. They want to make a career out of it, so we know that a screenwriter has_many screenplays, or at least the potential to have many screenplays. But a screenplay belongs_to a screenwriter. (Now, of course, a screenplay can have more than one screenwriter, but in this case, we’re going to consider a writing team as one unit.) A screenplay has_many genres, in the case of something that’s a drama and a comedy, or a romance and a comedy. A genre has_many: screenplays, since one screenplay can’t just declare itself the owner of the action-adventure genre. And last, the screenplay has_one: agent. So these are the basic relationships, but we have to go a little deeper.</p>
+
+<p>If a screenplay has a genre, and a screenplay belongs to a screenwriter, then there’s another relationship we have to add, right? Right. A screenwriter has_many: genres, through: :screenplay. See how that works? I’ve found that it can be very helpful to map this out on paper or using google draw or a similar tool. You start to naturally see the flow of information. So, if that’s the case, what else do we need to connect here? A genre has_many screenwriters, through: :screenplays. An agent does have_many genres, through: :screenplays as well, but I don’t see that association necessarily being useful for what we’re trying to accomplish unless we want to sort the screenplay genres that belong to an agent to see if there’s a particular genre the agent represents. The interesting thing about associations is that they aren’t always straight forward. You have to think about the practicality of the situation, and what works for the user.</p>
+
+<p>I want to point out that we have a natural join table here. This is where the two people meet and sit down so they can talk to each other. Our screenwriters have an association with an agent through a screenplay (screenwriter has_one agent, through: :screenplay; agent has_many screenwriters, through: :screenplays). The agent and the screenwriter meet at the screenplay table. So this is where they are joined together. This means that the screenplay table needs to have ids for both of these models on the table.</p>
+
+<p>It won’t always be really clear what the associations are, and that’s ok. Take some time to map out some of the relationships until you get a feel for it. At the beginning of my Rails project, I had a hard time imagining what the relationships looked like, but by the end of the project I couldn’t understand what I didn’t understand about it. The more you do it, the more natural it becomes.</p>
+
+            </div>
+
+            <footer class="post-footer share-post">
+            
+            
+                <span>Share:</span>
+                <a class="circle" target="_blank"
+                    href="https://twitter.com/share?text=Making+Associations%3A+The+Basics&amp;url=https://bekahhw.com/Making-Associations-The-Basics">
+                <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
+                </a>
+                <a class="circle" target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://bekahhw.com/Making-Associations-The-Basics"><i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
+            
+            
+            </footer>
+
+            
+
+            </div><!-- .inner -->
+        </article>
+
+        <nav class="post-navigation">
+
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+
+        
+        <a href="/Building-Out-Our-Schema-Screenwriting-Project-Continued" class="nav-next">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Next</span><span class="nav-title">Building Out Our Schema: Screenwriting Project Continued</span><span
+                    class="nav-date">February 23, 2019</span>
+            </div>
+
+        </a>
+        
+
+        
+        <a href="/For-All-My-Parents-Learning-to-Code" class="nav-previous">
+
+            
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Previous</span>
+                <span class="nav-title">For All My Parents Learning to Code</span>
+                <span class="nav-date">February 1, 2019</span>
+            </div>
+
+        </a>
+        
+
+    </div><!-- .nav-links-->
+</nav><!-- .post-navigation -->
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->  <aside class="sidebar">
+  <div class="sidebar-scrollable">
+    <div class="inner">
+      <div class="widget-area">
+        <nav class="site-navigation">
+          <h2>Explore Website</h2>
+          <ul class="menu">
+            
+            <li class="menu-item">
+              <a href="/about">About</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/my-work">My Work</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/code-and-community">Code & Community</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/consulting">Consulting</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/contact">Contact</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/subscribe">Subscribe</a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        
+<section class="widget widget-text">
+    <h2 class="widget-title">About BekahHW's Site</h2>
+    <p>Code. Community. Content.</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+<!--  
+<section class="widget widget-tags">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        
+        <a class="button" href='https://bekahhw.com/tag/ai/'>AI
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/community/'>Community
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/open- source/'>Open Source
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/tfjs/'>TFJS
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/tips/'>Tips
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+    </div>
+</section> -->
+
+      </div>
+      <!-- .widget-area -->
+      <a class="sidebar-toggle">
+        <span class="screen-reader-text">Close</span>
+        <span class="icon" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- .inner -->
+  </div>
+  <!-- .sidebar-scrollable -->
+</aside>
+<!-- .sidebar -->
+
+      <footer class="site-footer">
+    <div class="inner">
+
+        <div class="offsite-links">
+  
+  <a
+    href="https://twitter.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-twitter" aria-hidden="true"></i>
+    <span class="screen-reader-text">Twitter</span>
+  </a>
+   
+  <a
+    href="https://www.linkedin.com/in/bekahhw"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-linkedin" aria-hidden="true"></i>
+    <span class="screen-reader-text">Linkedin</span>
+  </a>
+   
+  <a href="https://github.com/BekahHW" class="circle" target="_blank">
+    <i class="icon-github" aria-hidden="true"></i>
+    <span class="screen-reader-text">GitHub</span>
+  </a>
+    
+  <a
+    href="https://www.instagram.com/BekahHW"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-instagram" aria-hidden="true"></i>
+    <span class="screen-reader-text">Instagram</span>
+  </a>
+   
+
+  <a
+    href="https://www.youtube.com/@bekahhw"
+    class="circle"
+    target="_blank"
+  >
+    <i class="icon-youtube" aria-hidden="true"></i>
+    <span class="screen-reader-text">YouTube</span>
+  </a>
+
+  <a href="https://bekahhw.github.io/feed.xml" class="circle" target="_blank">
+    <i class="icon-feed" aria-hidden="true"></i>
+    <span class="screen-reader-text">RSS</span>
+  </a>
+</div>
+<!-- .offsite-links -->
+
+        <div class="site-info">
+            <a href="#">BekahHW</a> &copy; 2025 . Subtle theme by
+            <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>.
+            <br /> Powered by
+            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+    </div>
+    <!-- .site -->
+
+    <!-- Javascript Assets -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/custom.js"></script>
+  </body>
+</html>
