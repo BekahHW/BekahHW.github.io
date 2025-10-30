@@ -1,0 +1,167 @@
+I"�<p><em>Finding the assistant that fits just right.</em></p>
+
+<p>At <a href="http://virtualcoffee.io/">Virtual Coffee</a> over the last year, we’ve been talking about our experiences with different AI Coding Assistants.  Some of the things I’ve heard include, “It felt like I was constantly being interrupted,” “I barely notice it’s there until I need it,” “Sometimes it feels like it’s micromanaging me, so I turn it off.” A lot of times, it’s the same tool with different experiences.</p>
+
+<p><a href="https://dev.to/bekahhw/series/32242">Over the last couple of weeks, I’ve been writing about my journey to find the <em>right</em> coding assistant</a>, but I thought it would be useful to distill what I’ve learned so far into a simple guide.</p>
+
+<p>This is what I’m calling this “The Goldilocks Problem.” Some AI coding assistants are too intrusive, some are too passive, and some are just right. But that sweet spot depends entirely on you.</p>
+
+<p>This guide is designed to help you find an AI assistant that enhances your workflow without hijacking it.</p>
+
+<h2 id="step-1-understand-the-types-of-ai-assistant-behavior">Step 1: Understand the Types of AI Assistant Behavior</h2>
+
+<p>AI tools fall along a spectrum based on how actively they interact with you:</p>
+
+<h3 id="1-the-background-helper-minimal-intrusion">1. The Background Helper (Minimal Intrusion)</h3>
+<ul>
+  <li>Quiet until called upon</li>
+  <li>Great for deep-focus devs</li>
+  <li>Acts like autocomplete on demand</li>
+</ul>
+
+<h3 id="2-the-proactive-partner-moderate-intrusion">2. The Proactive Partner (Moderate Intrusion)</h3>
+<ul>
+  <li>Offers smart suggestions as you type</li>
+  <li>Balances guidance with control</li>
+  <li>Ideal for those who like nudges but not noise</li>
+</ul>
+
+<h3 id="3-the-active-collaborator-high-intrusion">3. The Active Collaborator (High Intrusion)</h3>
+<ul>
+  <li>Suggests proactively, refactors on its own</li>
+  <li>Sometimes takes initiative beyond what you asked</li>
+  <li>Best for devs who want maximum AI assistance.</li>
+  <li>Can be fun for vibe coding.</li>
+</ul>
+
+<h3 id="step-2-audit-your-workflow-style">Step 2: Audit Your Workflow Style</h3>
+
+<p>The right assistant depends on how you work.</p>
+
+<h4 id="what-kind-of-coder-are-you">What kind of coder are you?</h4>
+
+<ol>
+  <li><strong>Flow-state coder</strong>: You need focus and minimal interruptions</li>
+  <li><strong>Burst coder</strong>: You are energized by context-switching and quick input</li>
+</ol>
+
+<h4 id="what-breaks-your-concentration">What breaks your concentration?</h4>
+
+<ul>
+  <li>Are popups or suggestions distracting?</li>
+  <li>Do you lose focus without a prompt?</li>
+</ul>
+
+<h4 id="how-do-you-prefer-to-learn">How do you prefer to learn?</h4>
+
+<ul>
+  <li><strong>Learn-by-doing</strong>: Prefer code patterns and examples</li>
+  <li><strong>Learn-by-understanding</strong>: Need deep explanations</li>
+</ul>
+
+<h2 id="step-3-match-assistant-style-to-your-workflow">Step 3: Match Assistant Style to Your Workflow</h2>
+
+<p>Once you know how you work, you can align that with the assistant type.</p>
+
+<h3 id="option-1-invisible-until-needed">Option 1: Invisible Until Needed</h3>
+
+<ul>
+  <li><strong>Best for</strong>: Experienced devs who want help with boilerplate, syntax, and docs</li>
+</ul>
+
+<h4 id="what-assistant-features-to-look-for">What Assistant Features to Look for</h4>
+
+<ul>
+  <li>Autocomplete only for common patterns</li>
+  <li>Context-aware suggestions that activate on pause</li>
+  <li>On-demand doc lookup</li>
+</ul>
+
+<h4 id="tools-to-try">Tools to try</h4>
+<ul>
+  <li><a href="https://continue.dev/">Continue.dev</a></li>
+  <li><a href="https://github.com/features/copilot">GitHub Copilot</a> (with conservative settings)</li>
+</ul>
+
+<h3 id="option-2-gentle-guidance">Option 2: Gentle Guidance</h3>
+
+<ul>
+  <li><strong>Best for</strong>: Developers who want AI help while staying in control</li>
+</ul>
+
+<h4 id="what-assistant-features-to-look-for-1">What Assistant Features to Look for</h4>
+<p>Inline suggestions that feel natural
+Code completion that adapts to your style
+Suggestions that teach, not just do</p>
+
+<h4 id="tools-to-try-1">Tools to try</h4>
+
+<ul>
+  <li>Most assistants with moderate config</li>
+  <li>Continue’s philosophy is to put the developer in control</li>
+  <li>Copilot with smart prompt tuning</li>
+</ul>
+
+<h3 id="option-3-active-partnership">Option 3: Active Partnership</h3>
+
+<ul>
+  <li><strong>Best for</strong>: Complex projects and devs ready to shift their workflow</li>
+</ul>
+
+<h4 id="what-assistant-features-to-look-for-2">What Assistant Features to Look for</h4>
+
+<ul>
+  <li>Full-project understanding</li>
+  <li>Multi-file suggestions</li>
+  <li>Proactive refactors and implementations</li>
+</ul>
+
+<h4 id="tools-to-try-2">Tools to Try</h4>
+
+<ul>
+  <li><a href="https://www.cursor.com/">Cursor</a></li>
+  <li>Continue.dev (advanced mode)</li>
+  <li>GithHub Copilot</li>
+</ul>
+
+<h2 id="step-4-run-a-workflow-integration-test">Step 4: Run a Workflow Integration Test</h2>
+
+<p>Before committing, test tools with these 5 workflow scenarios:</p>
+
+<ol>
+  <li>The Morning Startup Test
+Does the AI help you pick up where you left off, or get in the way?</li>
+  <li>The Deep Focus Test
+Can you stay in flow, or does it interrupt too much?</li>
+  <li>The Context Switch Test
+Does it keep up when jumping between files and tasks?</li>
+  <li>The Learning Moment Test
+When you hit something unfamiliar, does it help you understand?</li>
+  <li>The Cleanup Test
+Can you read and modify the AI’s code later?</li>
+</ol>
+
+<h2 id="step-5-signs-an-ai-assistant-is-helping-or-hurting-your-workflow">Step 5: Signs an AI Assistant Is Helping Or Hurting Your Workflow</h2>
+
+<h3 id="red-flags-its-disrupting-your-workflow">Red Flags (It’s disrupting your workflow)</h3>
+
+<ul>
+  <li>Constantly fighting the suggestions</li>
+  <li>Code quality or clarity drops</li>
+  <li>You rely on it so much that you can’t code solo</li>
+  <li>You feel anxious when it’s off. (Maybe it’s time to see a therapist too :joy: )</li>
+</ul>
+
+<h3 id="green-flags-its-enhancing-your-workflow">Green Flags (It’s enhancing your workflow)</h3>
+<ul>
+  <li>You forget it’s there until you need it</li>
+  <li>You’re learning new patterns</li>
+  <li>You feel more confident and productive</li>
+</ul>
+
+<h2 id="tldr-finding-the-right-fit-ai-coding-assistant">TL;DR: Finding the Right-Fit AI Coding Assistant</h2>
+
+<p>If you’re looking for an AI assistant that boosts productivity without overwhelming your workflow try GitHub Copilot or Continue.dev if you prefer minimal interruption.</p>
+
+<p>Choose tools with gentle, context-aware prompts if you want help but not takeover. Explore Cursor or advanced Continue setups for high-involvement AI assistance.</p>
+:ET
