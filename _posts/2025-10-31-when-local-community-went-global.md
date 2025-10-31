@@ -21,7 +21,7 @@ Then proximity disappeared.
 
 When lockdowns began, the familiar networks evaporated overnight. 
 
-The impact was immediate and profound. [Two-thirds of adults reported experiencing social isolation during the pandemic](https://connect2affect.org/wp-content/uploads/2020/10/The-Pandemic-Effect-A-Social-Isolation-Report-AARP-Foundation.pdf). For younger adults, [61% of youngfelt "serious loneliness" during this period](https://mcc.gse.harvard.edu/reports/loneliness-in-america).
+The impact was immediate and profound. [Two-thirds of adults reported experiencing social isolation during the pandemic](https://connect2affect.org/wp-content/uploads/2020/10/The-Pandemic-Effect-A-Social-Isolation-Report-AARP-Foundation.pdf). For younger adults, [61% of young felt "serious loneliness" during this period](https://mcc.gse.harvard.edu/reports/loneliness-in-america).
 
 We didn't lose our desire for community. We lost the infrastructure that had been quietly supporting it all along.
 
