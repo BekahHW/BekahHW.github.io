@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Developer’s Guide to Choosing an AI Coding Assistant That Boosts Productivity Without Overwhelming Your Workflow)"
+title: "A Developer’s Guide to Choosing an AI Coding Assistant That Boosts Productivity Without Overwhelming Your Workflow"
 date: 2025-07-09
 tags: [AI]
 author: Bekah
