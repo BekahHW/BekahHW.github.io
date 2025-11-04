@@ -110,3 +110,23 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+
+# Performance optimizations
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: all
+  blanklines: false
+  profile: false
+
+# Asset optimization
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - CNAME
+  - "*.code-workspace"
+  - node_modules
+  - vendor

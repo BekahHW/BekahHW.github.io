@@ -1,0 +1,32 @@
+# Netlify headers file (if you migrate from GitHub Pages)
+# For GitHub Pages, these are handled automatically
+
+/*
+  Cache-Control: public, max-age=3600
+  
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+  
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+  
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable
+  
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.html
+  Cache-Control: public, max-age=3600
+
+/*.jpg
+  Cache-Control: public, max-age=31536000
+  
+/*.jpeg
+  Cache-Control: public, max-age=31536000
+  
+/*.png
+  Cache-Control: public, max-age=31536000
+  
+/*.webp
+  Cache-Control: public, max-age=31536000
