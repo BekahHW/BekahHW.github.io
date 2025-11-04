@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    {% if site.cover_image %}
+    <link rel="preload" href="{{ site.baseurl }}/assets/images/{{ site.cover_image }}" as="image">
+    {% endif %}
+
     {% if site.plugins_dir contains 'jekyll-seo-tag' %} {% include head-seo.html
     %} {% else %}
     <title>
@@ -33,14 +40,14 @@
       type="image/png"
     />
 
-    <!-- Font Embed Code -->
+    <!-- Font Embed Code - Optimized loading -->
     <link
-      href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700%7CPlayfair+Display:400,700&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
 
-    <!-- CSS Styles -->
+    <!-- CSS Styles - Optimized loading -->
+    <link rel="preload" href="{{ site.baseurl }}/assets/css/style.css" as="style">
     <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet" />
   </head>
 
@@ -54,6 +61,7 @@
         <div
           class="cover-bg"
           style="background-image: url({{ site.baseurl }}/assets/images/{{ site.cover_image }})"
+          loading="eager"
         ></div>
         {% endif %}
         <div class="cover-content">
@@ -89,6 +97,7 @@
         <div
           class="cover-bg"
           style="background-image: url({{ site.baseurl }}/assets/images/{{ site.cover_image }})"
+          loading="eager"
         ></div>
         {% endif %}
 
@@ -120,9 +129,9 @@
     </div>
     <!-- .site -->
 
-    <!-- Javascript Assets -->
-    <script src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/plugins.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/custom.js"></script>
+    <!-- Javascript Assets - Deferred loading -->
+    <script defer src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js"></script>
+    <script defer src="{{ site.baseurl }}/assets/js/plugins.js"></script>
+    <script defer src="{{ site.baseurl }}/assets/js/custom.js"></script>
   </body>
 </html>

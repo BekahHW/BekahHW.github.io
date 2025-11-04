@@ -1,0 +1,18 @@
+{% comment %}
+  Lazy loading image include
+  Usage: {% include lazy-image.html src="path/to/image.jpg" alt="Description" %}
+{% endcomment %}
+
+<img 
+  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+  data-src="{{ include.src }}"
+  alt="{{ include.alt }}"
+  loading="lazy"
+  class="lazy-image {{ include.class }}"
+  {% if include.width %}width="{{ include.width }}"{% endif %}
+  {% if include.height %}height="{{ include.height }}"{% endif %}
+/>
+
+<noscript>
+  <img src="{{ include.src }}" alt="{{ include.alt }}" class="{{ include.class }}">
+</noscript>
