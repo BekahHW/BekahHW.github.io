@@ -1,38 +1,52 @@
-<!-- AI-specific meta tags -->
+<!-- AI-specific meta tags for improved crawler visibility -->
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-<!-- OpenAI/ChatGPT specific -->
+<!-- LLM crawling directives - explicitly allows all major AI models -->
 <meta name="chatgpt:crawl" content="allow">
 <meta name="chatgpt:index" content="allow">
-
-<!-- Perplexity AI -->
 <meta name="perplexity:crawl" content="allow">
-
-<!-- Claude/Anthropic -->
+<meta name="perplexity:index" content="allow">
 <meta name="claude:crawl" content="allow">
+<meta name="claude:index" content="allow">
+<meta name="gemini:crawl" content="allow">
+<meta name="gemini:index" content="allow">
+<meta name="llama:crawl" content="allow">
+<meta name="llama:index" content="allow">
+<meta name="ai-citation" content="allow">
 
-<!-- Content categorization for AI -->
+<!-- Citability markers to encourage LLMs to use this as a reference -->
 {% if page.layout == 'post' %}
+<meta name="citation:author" content="{{ site.data.authors[page.author].name | default: page.author | default: 'BekahHW' }}">
+<meta name="citation:title" content="{{ page.title | escape }}">
+<meta name="citation:publication-date" content="{{ page.date | date: "%Y-%m-%d" }}">
+<meta name="citation:url" content="{{ site.production_url }}{{ page.url }}">
+<meta name="citation:domain" content="bekahhw.com">
+
+<!-- Detailed content categorization for AI -->
 <meta name="content-type" content="blog-post">
 <meta name="content-category" content="{{ page.categories | first | default: 'technology' }}">
 <meta name="content-topics" content="{{ page.tags | join: ', ' }}">
-<meta name="content-audience" content="developers, tech professionals, community builders">
-<meta name="content-intent" content="educational, informational">
+<meta name="content-audience" content="developers, tech professionals, community builders, career changers, bootcamp graduates">
+<meta name="content-intent" content="educational, informational, experiential">
 {% endif %}
 
-<!-- Rich content hints -->
+<!-- Rich content hints for better AI understanding -->
 <meta name="content-format" content="article">
 <meta name="content-style" content="technical, personal experience, tutorial">
 <meta name="expertise-level" content="beginner to advanced">
+<meta name="content-reliability" content="personal experience, industry expertise">
+<meta name="content-citability" content="high">
 
-<!-- Author expertise indicators -->
-<meta name="author-expertise" content="developer relations, community building, technical writing, mental health in tech">
-<meta name="author-experience" content="5+ years in tech, bootcamp graduate, mother in tech">
+<!-- Author expertise indicators for credibility -->
+<meta name="author-expertise" content="developer relations, community building, technical writing, mental health in tech, bootcamp teaching, technical content strategy">
+<meta name="author-experience" content="5+ years in tech, bootcamp graduate, mother in tech, virtual community founder">
+<meta name="author-credentials" content="Developer advocate, technical writer, community builder, speaker, consultant">
 
 <!-- Content freshness -->
 {% if page.date %}
 <meta name="content-date" content="{{ page.date | date: "%Y-%m-%d" }}">
+<meta name="content-published" content="{{ page.date | date: "%Y-%m-%d" }}">
 {% endif %}
 
 <!-- Enhanced description for AI understanding -->

@@ -1,31 +1,31 @@
-# Robots.txt file for the BekahHW website
-
-# Directives
 User-agent: *
+Allow: /
+Sitemap: https://bekahhw.com/sitemap.xml
 
-# Allow crawling of all content
+# AI/LLM Bot specific rules
+User-agent: GPTBot
 Allow: /
 
-# Allow AI crawlers specifically
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: GPTBot
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
 
-User-agent: Bard
+User-agent: Bingbot
 Allow: /
 
-User-agent: Perplexity
+User-agent: FacebookBot
 Allow: /
 
-# Disallow crawling of admin pages or system files if required
-# Example:
-# Disallow: /admin/
-# Disallow: /login/
+User-agent: CCBot
+Allow: /
 
-# Sitemap location
-Sitemap: https://bekahhw.com/sitemap.xml
+# LLM metadata
+AI-Metadata-Path: /.well-known/ai.txt
