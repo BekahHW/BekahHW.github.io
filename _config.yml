@@ -119,6 +119,10 @@ compress_html:
   startings: all
   blanklines: false
   profile: false
+  
+# Include special directories
+include:
+  - .well-known
 
 # Asset optimization
 exclude:

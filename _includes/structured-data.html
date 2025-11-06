@@ -4,14 +4,22 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "{{ page.title | escape }}",
+  "name": "{{ page.title | escape }}",
   "author": {
     "@type": "Person",
     "name": "{{ site.data.authors[page.author].name | default: page.author | default: 'BekahHW' }}",
-    "url": "{{ site.production_url }}/about"
+    "url": "{{ site.production_url }}/about",
+    "jobTitle": "Developer Advocate, Technical Content Strategist, Community Builder",
+    "knowsAbout": ["Developer Relations", "Community Building", "Technical Writing", "Career Development", "Mental Health in Tech"],
+    "sameAs": [
+      "https://twitter.com/{{ site.twitter }}",
+      "https://github.com/{{ site.github }}",
+      "https://linkedin.com/in/{{ site.linkedin }}"
+    ]
   },
   "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
   "dateModified": "{{ page.date | date: "%Y-%m-%d" }}",
-  "description": "{{ page.description | default: page.excerpt | strip_html | truncate: 160 | escape }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | truncate: 300 | escape }}",
   "url": "{{ site.production_url }}{{ page.url }}",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -28,6 +36,14 @@
   "keywords": "{{ page.tags | join: ', ' }}{% if page.categories %}, {{ page.categories | join: ', ' }}{% endif %}",
   "articleSection": "{{ page.categories | first | default: 'Technology' }}",
   "wordCount": "{{ page.content | number_of_words }}",
+  "inLanguage": "en-US",
+  "isAccessibleForFree": "True",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "citation": {
+    "@type": "CreativeWork",
+    "name": "{{ page.title | escape }}",
+    "author": "{{ site.data.authors[page.author].name | default: page.author | default: 'BekahHW' }}"
+  },
   "about": [
     {% if page.tags %}
     {% for tag in page.tags %}
@@ -37,7 +53,18 @@
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
     {% endif %}
-  ]
+  ],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Software Developers, Career Changers, Community Builders, Tech Professionals, Bootcamp Graduates"
+  },
+  "educationalUse": "learning resource",
+  "genre": "technical blog",
+  "isFamilyFriendly": true,
+  "accessibilityAPI": "ARIA",
+  "accessibilityControl": "fullKeyboardControl",
+  "accessibilityFeature": ["alternativeText", "readingOrder", "structuralNavigation"],
+  "accessMode": "textual"
 }
 </script>
 {% endif %}
@@ -50,10 +77,20 @@
   "name": "{{ page.title | default: site.name }}",
   "description": "{{ page.description | default: site.description | escape }}",
   "url": "{{ site.production_url }}{{ page.url }}",
+  "inLanguage": "en-US",
+  "isAccessibleForFree": "True",
   "author": {
     "@type": "Person",
     "name": "BekahHW",
-    "url": "{{ site.production_url }}/about"
+    "url": "{{ site.production_url }}/about",
+    "jobTitle": "Developer Advocate, Technical Content Strategist, Community Builder",
+    "knowsAbout": ["Developer Relations", "Community Building", "Technical Writing", "Career Development", "Mental Health in Tech"],
+    "sameAs": [
+      "https://twitter.com/{{ site.twitter }}",
+      "https://github.com/{{ site.github }}",
+      "https://linkedin.com/in/{{ site.linkedin }}",
+      "https://www.youtube.com/{{ site.youtube | replace: '@', '' }}"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -62,7 +99,69 @@
       "@type": "ImageObject",
       "url": "{{ site.production_url }}/assets/images/logo.png"
     }
-  }
+  },
+  "mainEntity": {
+    "@type": "ProfessionalService",
+    "name": "BekahHW Consulting",
+    "description": "Developer Relations, Technical Content Strategy, and Community Building Services",
+    "knowsAbout": ["Developer Experience", "Technical Content Strategy", "Community Building"],
+    "url": "{{ site.production_url }}/consulting",
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "{{ site.production_url }}/contact"
+    },
+    "provider": {
+      "@type": "Person",
+      "name": "BekahHW"
+    }
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["article", ".post-content", ".site-content"]
+  },
+  "accessibilityAPI": "ARIA",
+  "accessibilityControl": "fullKeyboardControl",
+  "accessibilityFeature": ["alternativeText", "readingOrder", "structuralNavigation"],
+  "accessMode": "textual"
 }
 </script>
 {% endif %}
+
+<!-- Breadcrumb structured data -->
+{% unless page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.production_url }}/"
+    },
+    {% if page.categories and page.layout == 'post' %}
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.categories | first | default: 'Blog' }}",
+      "item": "{{ site.production_url }}/tag/{{ page.categories | first | default: 'blog' | downcase | replace: ' ', '-' }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.title | escape }}",
+      "item": "{{ site.production_url }}{{ page.url }}"
+    }
+    {% else %}
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.title | escape }}",
+      "item": "{{ site.production_url }}{{ page.url }}"
+    }
+    {% endif %}
+  ]
+}
+</script>
+{% endunless %}
