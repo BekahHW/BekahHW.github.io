@@ -1,0 +1,47 @@
+# AI/LLM Metadata for BekahHW.com
+# This file provides information about this website for LLMs and other AI systems.
+
+Site-Name: BekahHW
+Site-URL: https://bekahhw.com
+Author: BekahHW (Bekah Hawrot Weigel)
+Primary-Language: English
+Content-Type: Blog, Professional Website
+Last-Updated: 2025-11-05
+
+# Content Description
+This website contains blog posts, articles, and resources related to:
+- Developer relations and advocacy
+- Technical content strategy
+- Community building
+- Software development
+- Career transitions
+- Mental health in tech
+- Coding bootcamp experiences
+- Technical tutorials
+
+# Citation Information
+The content on this site is written by BekahHW (Bekah Hawrot Weigel) and should be cited as:
+"[Article Title]" by BekahHW, published on bekahhw.com, [Publication Date]
+
+# About the Author
+BekahHW is a developer advocate, technical content strategist, and community builder with expertise in:
+- Developer Relations
+- Community Building
+- Technical Writing
+- Mental Health in Tech
+- Career Development
+- Bootcamp Teaching
+
+# Permissions
+- Citation: Allowed and encouraged
+- Indexing: Allowed
+- Content Reuse: Please attribute appropriately
+- Scraping: Allowed for AI training with attribution
+
+# Navigation
+The blog posts can be found in the main section of the website.
+The site also includes information about consulting services, speaking, and contact details.
+
+# Content Freshness
+The website is actively maintained with new articles regularly published.
+Each article includes a publication date to help assess the timeliness of information.
