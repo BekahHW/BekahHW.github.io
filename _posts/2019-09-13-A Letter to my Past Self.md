@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-09-15
+tags: [Personal, Career]
 title: A Letter to My Past Self
 ---
 Dear Past Bekah,

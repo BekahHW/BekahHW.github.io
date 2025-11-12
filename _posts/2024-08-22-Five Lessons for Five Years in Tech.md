@@ -3,6 +3,7 @@ layout: post
 title: "Five Lessons for Five Years in Tech"
 author: Bekah
 date: 2024-11-08
+tags: [Career, Personal, Tips]
 ---
 July marked my fifth year in tech.That’s half a decade in a career I never imagined myself in. [I came into tech via trauma](https://bekahhw.com/I-Came-into-Tech-via-Trauma), so it’s always hard to answer the question about where I want to go next. But I’ve been getting that question a lot more lately. I think to understand where I want to go next (that post is coming soon), I need to reflect on where I’ve already been and what I’ve learned. With all of the time I’ve spent in tech, I’ve accumulated a toolbox of lessons – some through hard conversations, others through pushing myself beyond what I thought I was capable – that I know are useful to more than just me. Every year has added a new layer, a new ring in a tree, a new depth that shaped my understanding of tech.
 

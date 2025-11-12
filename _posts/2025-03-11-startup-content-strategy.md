@@ -3,6 +3,7 @@ layout: post
 title: "Content Strategy for Startups: Storytelling as a Growth Driver"
 author: Bekah
 date: 2025-03-10
+tags: [Content Creation, Tips]
 ---
 
 It started with an air mattress on the floor of a San Francisco apartment.

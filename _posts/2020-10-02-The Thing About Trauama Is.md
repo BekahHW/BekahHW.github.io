@@ -1,6 +1,7 @@
 ---
 title: The Thing About Trauma Is...
 date: 2020-10-02
+tags: [Mental Health, Personal]
 type: post
 ---
 

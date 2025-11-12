@@ -2,6 +2,7 @@
 layout: post
 title: "We need to talk: More on the problems juniors are facing"
 date: 2020-11-30
+tags: [Career, Opinion]
 ---
 
 I spend a lot of time talking about the challenges junior developers face when they are trying to break into tech. And honestly, there’s probably a whole book to write about this, a whole chapter on how most education (university, bootcamp, and online paths) doesn’t prepare new devs in the ways that they need to, how junior devs cost companies money, about how some companies let others mentor junior devs just so they can poach them with huge salary increases, about how creating a system of training and transition from support roles to developer roles could be a better way to approach the issue, about how talking more openly about it and about how trying to think about how to flip the hiring process on its head is a good place to start.

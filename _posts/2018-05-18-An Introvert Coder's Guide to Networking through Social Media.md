@@ -2,6 +2,7 @@
 layout: post
 title: "An Introvert Coder's Guide to Networking through Social Media"
 date: 2018-05-18
+tags: [Tips, Career, Community]
 ---
 
 I’m an awkward INTJ. If you don't know what that means, I love this description from [16 Personalities](https://www.16personalities.com/intj-personality):

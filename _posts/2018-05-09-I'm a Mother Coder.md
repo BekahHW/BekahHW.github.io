@@ -2,6 +2,7 @@
 layout: post
 title: "I'm a Mother Coder"
 date: 2018-05-09
+tags: [Personal, Career]
 ---
 _This is for all my moms out there learning to code. Happy Mothers Day!_
 - - - -

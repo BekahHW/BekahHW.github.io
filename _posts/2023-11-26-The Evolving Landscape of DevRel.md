@@ -3,6 +3,7 @@ layout: post
 title: "The Evolving Landscape of DevRel: Trends and Predictions for 2023"
 author: Bekah
 date: 2023-11-26
+tags: [DevRel, Opinion]
 ---
 
 A couple of weeks ago, I put out this tweet.

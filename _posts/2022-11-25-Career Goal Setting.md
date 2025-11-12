@@ -3,6 +3,7 @@ layout: post
 title: "Career Goal Setting"
 author: Bekah
 date: 2022-11-25
+tags: [Career, Tips]
 ---
 
 I’m close to completing my first year on a Developer Relations team. As I evaluate my own performance over the last year and set goals for my next year as a Technical Community Builder, I wanted to share how I’ve broken down my self-evaluation and goal setting. I don’t think you need to be on a DevRel team to find this useful. Based off of my responses to these questions, I’d like to work on creating self-evaluation points and put them in my calender during the next year.

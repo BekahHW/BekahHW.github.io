@@ -2,6 +2,7 @@
 layout: post
 title: "Gauging Community Health"
 date: 2022-01-06
+tags: [Community, Opinion]
 ---
 
 Over the last almost two years, as [Virtual Coffee](https://virtualcoffee.io/) has formed, evolved, and solidified, I've spent time writing down the approach I've taken to community and my thoughts on what makes a community. There's a lot of talk about metrics around communities, but we often forget that metrics don't equate to community health. How is your community, as a whole doing? How are your members doing? Ideally, your first concern is with the people and that's not easily wrapped up into numbers because communities are living, changing, complex. And to have a thriving community, you need a healthy community.

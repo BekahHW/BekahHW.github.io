@@ -2,6 +2,7 @@
 layout: post
 title: "Learning How to Learn"
 date: 2019-04-30
+tags: [Learning, Tips]
 ---
 
 I’ve been committed to this coding thing for about a year now. I’m about to finish Flatiron School, spread my wings and fly through into the tech universe. There are a lot of things I’ve learned over the last year (Rails, Redux, communicating code, etc.), but one of the most important is how to learn. I’ve spent the last ten years dedicated to the humanities, and although I think there are some amazing similarities, the learning process has been a lot different for me. Here are some tips and tricks I used to help me to learn how to code.
