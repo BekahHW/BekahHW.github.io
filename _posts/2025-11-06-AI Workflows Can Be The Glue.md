@@ -3,6 +3,7 @@ layout: post
 title: "The Invisible Load: How AI Workflows Can Replace Your Team's 'Glue Person'"
 date: 2025-11-06
 author: Bekah
+tags: [AI, Career]
 description: "Every team has someone doing invisible coordination work, updating changelogs, following up on blockers, bridging communication gaps. This 'glue work' often falls on women and rarely shows up in performance reviews. Composed AI workflows can automate mechanical coordination tasks, freeing talented teammates to focus on strategic and meaningful work."
 ---
 
