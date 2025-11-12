@@ -79,10 +79,6 @@ navigation:
   - text: Consulting
     url: /consulting
 
-  - text: Search & Browse
-    url: /search
-
-
   - text: Contact
     url: /contact
 
