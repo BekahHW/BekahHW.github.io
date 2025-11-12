@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-01-24
+tags: [Personal, Career]
 title: "Ask Me How I Do it All: A Story of #MomGuilt"
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: "I am a Woman in Tech"
 date: 2020-11-27
+tags: [Personal, Career]
 ---
 
 ## I am a Woman in Tech.\*

@@ -2,6 +2,7 @@
 layout: post
 title: "The Coder's Journey: The Ordinary World"
 date: 2018-06-07
+tags: [Learning, Personal]
 ---
 Last night, it hit me. Learning to code is the same thing as  what Joseph Campbell famously called the monomyth. Like the heroes of our favorite myths or action movies, we start with a call to adventure and dream about making it to the end. The next couple of posts will break done the Coder's Journey, a take on the monomyth:
 

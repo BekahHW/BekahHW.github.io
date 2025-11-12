@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-01-02
+tags: [Career, Personal]
 title: "Developer Toddlerhood: I've Been a Dev for Six Months"
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-04-26
+tags: [Career, Tips, Learning]
 title: "Leveling Up: how to tell if you're getting better when you're on the coding treadmill"
 ---
 

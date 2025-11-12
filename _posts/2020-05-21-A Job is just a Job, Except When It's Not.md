@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-05-21
+tags: [Career, Personal]
 title: "A Job is just a Job, Except When It's Not"
 ---
 

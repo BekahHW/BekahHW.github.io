@@ -3,6 +3,7 @@ layout: post
 title: "Reciprocity Intelligence: A Core Skill for Modern Work"
 author: Bekah
 date: 2025-04-15
+tags: [Career, Opinion]
 ---
 
 *In this second post of my series on giving and taking, I explore why reciprocity intelligence—the ability to navigate giving and receiving effectively—isn’t just nice to have anymore. If you missed the first post, [start here](https://bekahhw.com/company-culture-of-reciprocity)*.

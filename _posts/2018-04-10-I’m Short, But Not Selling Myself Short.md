@@ -2,6 +2,7 @@
 layout: post
 title: "I'm Short, but Not Selling Myself Short"
 date: 2018-04-10
+tags: [Career, Opinion]
 ---
 I’m only 5’1 and ¾.  That’s right, when you’re short, you count that ¾. Nothing’s going to change the fact that I’ve been this height since I was 11.  Apparently, though, some people think my height isn’t the only “short” thing about me.  
 

@@ -1,6 +1,7 @@
 ---
 type: post
 date: 2020-03-31
+tags: [Career, Personal]
 title: "Job Searching in the Time of Covid-19"
 ---
 

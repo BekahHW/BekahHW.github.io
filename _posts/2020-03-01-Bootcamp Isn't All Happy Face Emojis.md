@@ -1,6 +1,7 @@
 ---
 title: "Bootcamp Isn't All Happy Face Emojis"
 date: 2020-02-28
+tags: [Bootcamp, Mental Health]
 type: post
 categories: Bootcamp
 ---

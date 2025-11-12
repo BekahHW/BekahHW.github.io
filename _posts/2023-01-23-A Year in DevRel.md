@@ -3,6 +3,7 @@ layout: post
 title: "A Year in DevRel"
 author: Bekah
 date: 2023-01-23
+tags: [DevRel, Career, Personal]
 ---
 
 A year ago today, I started my first job in DevRel. Before I started, I was chatting with the CEO of a consultancy, and one of the things he told me was to document publicly the work I was doing in DevRel to be transparent and have a clear record of the things I was working on. That advice has proven to be really useful over the last year, and it was one of the reasons I started the [Technical Community Building Series](https://dev.to/bekahhw/series/19583) on Dev. It’s also helped me to think through the things I’ve learned over the last year, including the challenges I’ve faced, the successes and failures I’ve had, and my takeaways for the next year. 

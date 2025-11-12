@@ -5,23 +5,47 @@ title: Home
 
 <!-- Posts Index -->
 <main class="site-main">
-    <main class="site-main">
   <div class="site-content">
+    <div class="post-list inner">
+      {% for post in paginator.posts %}
+      {% include postbox.html %}
+      {% endfor %}
+    </div><!-- .post-list -->
 
- 
-<!-- Section Divider & Blog Heading -->
-  </div>
-</main>
-    <div class="site-content">
-        <div class="post-list inner">
-            {% for post in paginator.posts %}
-            {% include postbox.html %}
-            {% endfor %}
-        </div><!-- .post-list -->
+    <!-- Pagination-->
+    {% include pagination.html %}
 
-        <!-- Pagination-->
-        {% include pagination.html %}
+    <!-- Search & Browse Link -->
+    <div class="search-browse-link">
+      <p>Can't find what you're looking for? Try the <a href="{{ site.baseurl }}/search/">Search & Browse</a> page.</p>
+    </div>
 
-    </div><!-- .site-content -->
+  </div><!-- .site-content -->
 </main><!-- .site-main -->
 
+<style>
+.search-browse-link {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.search-browse-link p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.search-browse-link a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.search-browse-link a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+</style>

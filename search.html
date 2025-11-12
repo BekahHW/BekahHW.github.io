@@ -1,0 +1,764 @@
+---
+layout: page
+title: Search & Browse
+permalink: /search/
+description: "Search through all blog posts or browse by date and topic"
+---
+
+<div class="search-browse-container">
+  <!-- Search Section -->
+  <section class="search-section">
+    <h2>Search Posts</h2>
+    <div class="search-box">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by title, content, or tags..."
+        autocomplete="off"
+        aria-label="Search posts"
+      />
+      <button id="clear-search" aria-label="Clear search" style="display: none;">✕</button>
+    </div>
+
+    <div id="search-stats" class="search-stats"></div>
+
+    <div id="popular-tags" class="popular-tags-section" style="display: none;">
+      <h3>Filter by topic:</h3>
+      <div id="popular-tags-list" class="popular-tags-list"></div>
+    </div>
+
+    <div id="search-results" class="search-results">
+      <p class="search-prompt">Start typing to search through {{ site.posts.size }} blog posts, or browse by year below...</p>
+    </div>
+  </section>
+
+  <!-- Browse by Topic Section -->
+  <section class="topics-section">
+    <h2>Browse by Topic</h2>
+    <p class="topics-intro">Click any topic to see all related posts.</p>
+
+    {% assign all_tags = site.tags | sort %}
+    <div class="topics-grid">
+      {% for tag in all_tags %}
+        {% assign tag_name = tag | first %}
+        {% assign tag_posts = tag | last %}
+        {% assign post_count = tag_posts | size %}
+
+        <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/"
+           class="topic-card"
+           title="{{ post_count }} post{% if post_count != 1 %}s{% endif %}">
+          <span class="topic-name">{{ tag_name }}</span>
+          <span class="topic-count">{{ post_count }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Archive Section -->
+  <section class="archive-section">
+    <h2>Browse by Date</h2>
+    <div class="archive-stats">
+      <div class="stat-item">
+        <span class="stat-number">{{ site.posts.size }}</span>
+        <span class="stat-label">Total Posts</span>
+      </div>
+    </div>
+
+    <div class="archive-list">
+      {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+      {% for year in postsByYear %}
+        <div class="archive-year">
+          <h3 class="year-heading" data-year="{{ year.name }}">
+            <button class="year-toggle" aria-expanded="false" aria-label="Toggle {{ year.name }}">
+              <span class="toggle-icon">▶</span>
+              {{ year.name }}
+              <span class="year-count">({{ year.items | size }} posts)</span>
+            </button>
+          </h3>
+
+          <div class="year-content" style="display: none;">
+            {% assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%B'" %}
+
+            {% for month in postsByMonth %}
+              <div class="archive-month">
+                <h4 class="month-heading">{{ month.name }}</h4>
+
+                <ul class="archive-posts">
+                  {% for post in month.items %}
+                    <li class="archive-post-item">
+                      <span class="archive-date">{{ post.date | date: "%b %d" }}</span>
+                      <a href="{{ site.baseurl }}{{ post.url }}" class="archive-post-link">
+                        {{ post.title }}
+                      </a>
+                      {% if post.tags.size > 0 %}
+                        <span class="archive-tags">
+                          {% for tag in post.tags limit:3 %}
+                            <span class="archive-tag" onclick="filterByTag('{{ tag }}')">{{ tag }}</span>
+                          {% endfor %}
+                        </span>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+
+<style>
+.search-browse-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #333;
+}
+
+/* Search Styles */
+.search-box {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#search-input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+#search-input:focus {
+  border-color: #333;
+}
+
+#clear-search {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+#clear-search:hover {
+  color: #333;
+}
+
+.search-stats {
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.popular-tags-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #333;
+}
+
+.popular-tags-section h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.popular-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.popular-tag {
+  display: inline-block;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: 2px solid #e0e0e0;
+  font-weight: 500;
+}
+
+.popular-tag:hover,
+.popular-tag.active {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.search-results {
+  min-height: 200px;
+}
+
+.search-prompt {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 2rem 0;
+}
+
+.search-result-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.5rem 0;
+}
+
+.search-result-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.search-result-item h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.search-result-item h3 a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.search-result-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.search-result-meta span {
+  margin-right: 1rem;
+}
+
+.search-result-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.search-tag {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  color: #555;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.search-tag:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+  transform: translateY(-1px);
+}
+
+.search-result-excerpt {
+  color: #555;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.highlight {
+  background-color: #fff3cd;
+  padding: 0 0.2rem;
+  border-radius: 2px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 0;
+  color: #666;
+}
+
+/* Topics Section Styles */
+.topics-section {
+  margin-bottom: 4rem;
+}
+
+.topics-intro {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  background: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s;
+  min-height: 100px;
+}
+
+.topic-card:hover {
+  background: #333;
+  border-color: #333;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.topic-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  transition: color 0.3s;
+  margin-bottom: 0.5rem;
+}
+
+.topic-card:hover .topic-name {
+  color: #fff;
+}
+
+.topic-count {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.topic-card:hover .topic-count {
+  color: #fff;
+}
+
+/* Archive Styles */
+.archive-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.archive-year {
+  margin-bottom: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.year-heading {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.year-toggle {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: #f9f9f9;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.year-toggle:hover {
+  background: #f0f0f0;
+}
+
+.toggle-icon {
+  font-size: 0.875rem;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.year-toggle[aria-expanded="true"] .toggle-icon {
+  transform: rotate(90deg);
+}
+
+.year-count {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: normal;
+  margin-left: auto;
+}
+
+.year-content {
+  padding: 1rem 1.5rem;
+}
+
+.archive-month {
+  margin-bottom: 1.5rem;
+}
+
+.month-heading {
+  font-size: 1.125rem;
+  color: #555;
+  margin: 0 0 0.75rem 0;
+  font-weight: 600;
+}
+
+.archive-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.archive-post-item {
+  display: flex;
+  align-items: baseline;
+  padding: 0.5rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.archive-post-item:last-child {
+  border-bottom: none;
+}
+
+.archive-date {
+  font-size: 0.875rem;
+  color: #999;
+  min-width: 50px;
+  font-family: monospace;
+}
+
+.archive-post-link {
+  flex: 1;
+  color: #333;
+  text-decoration: none;
+  min-width: 200px;
+  transition: color 0.2s;
+}
+
+.archive-post-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.archive-tags {
+  display: inline-flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.archive-tag {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.archive-tag:hover {
+  background: #333;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .search-browse-container {
+    padding: 1rem;
+  }
+
+  #search-input {
+    font-size: 1rem;
+    padding: 0.875rem 2.5rem 0.875rem 0.875rem;
+  }
+
+  .topics-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .topic-card {
+    padding: 1rem 0.75rem;
+    min-height: 80px;
+  }
+
+  .topic-name {
+    font-size: 0.9rem;
+  }
+
+  .topic-count {
+    font-size: 1.25rem;
+  }
+
+  .archive-post-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+</style>
+
+<script>
+(function() {
+  let searchData = [];
+  let searchInput = document.getElementById('search-input');
+  let searchResults = document.getElementById('search-results');
+  let searchStats = document.getElementById('search-stats');
+  let clearButton = document.getElementById('clear-search');
+  let popularTagsSection = document.getElementById('popular-tags');
+  let popularTagsList = document.getElementById('popular-tags-list');
+  let activeTagFilter = null;
+
+  // Load search data
+  fetch('{{ site.baseurl }}/search.json')
+    .then(response => response.json())
+    .then(data => {
+      searchData = data;
+      buildPopularTags();
+    })
+    .catch(error => {
+      console.error('Error loading search data:', error);
+    });
+
+  // Build popular tags section
+  function buildPopularTags() {
+    const tagCounts = {};
+
+    searchData.forEach(post => {
+      if (post.tags) {
+        const tags = post.tags.split(',').map(t => t.trim()).filter(t => t);
+        tags.forEach(tag => {
+          tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+        });
+      }
+    });
+
+    const sortedTags = Object.entries(tagCounts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 15);
+
+    if (sortedTags.length > 0) {
+      popularTagsList.innerHTML = sortedTags.map(([tag, count]) =>
+        `<a href="#" class="popular-tag" data-tag="${tag}">${tag} (${count})</a>`
+      ).join('');
+
+      popularTagsList.querySelectorAll('.popular-tag').forEach(tagEl => {
+        tagEl.addEventListener('click', function(e) {
+          e.preventDefault();
+          const tag = this.getAttribute('data-tag');
+          filterByTag(tag);
+        });
+      });
+    }
+  }
+
+  // Filter by tag
+  window.filterByTag = function(tag) {
+    // Scroll to search section
+    document.querySelector('.search-section').scrollIntoView({ behavior: 'smooth' });
+
+    if (activeTagFilter === tag) {
+      activeTagFilter = null;
+      searchInput.value = '';
+      performSearch('');
+      document.querySelectorAll('.popular-tag').forEach(el => el.classList.remove('active'));
+    } else {
+      activeTagFilter = tag;
+      searchInput.value = tag;
+      performSearch(tag);
+
+      document.querySelectorAll('.popular-tag').forEach(el => {
+        if (el.getAttribute('data-tag') === tag) {
+          el.classList.add('active');
+        } else {
+          el.classList.remove('active');
+        }
+      });
+    }
+  };
+
+  // Search function
+  function performSearch(query) {
+    if (!query || query.trim().length === 0) {
+      searchResults.innerHTML = '<p class="search-prompt">Start typing to search through {{ site.posts.size }} blog posts, or browse by year below...</p>';
+      searchStats.textContent = '';
+      clearButton.style.display = 'none';
+      popularTagsSection.style.display = 'none';
+      return;
+    }
+
+    clearButton.style.display = 'block';
+    popularTagsSection.style.display = 'block';
+    const searchTerms = query.toLowerCase().trim().split(/\s+/);
+
+    const results = searchData.map(post => {
+      let score = 0;
+      const titleLower = post.title.toLowerCase();
+      const contentLower = post.content.toLowerCase();
+      const tagsLower = post.tags.toLowerCase();
+      const categoriesLower = post.categories.toLowerCase();
+      const excerptLower = post.excerpt.toLowerCase();
+
+      searchTerms.forEach(term => {
+        if (titleLower.includes(term)) score += 10;
+        if (tagsLower.includes(term)) score += 8;
+        if (categoriesLower.includes(term)) score += 8;
+        if (excerptLower.includes(term)) score += 5;
+        if (contentLower.includes(term)) score += 2;
+      });
+
+      return { post, score };
+    })
+    .filter(result => result.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+    displayResults(results, query);
+  }
+
+  function displayResults(results, query) {
+    if (results.length === 0) {
+      searchResults.innerHTML = '<div class="no-results"><h3>No results found</h3><p>Try different keywords or browse by year below</p></div>';
+      searchStats.textContent = '';
+      return;
+    }
+
+    searchStats.textContent = `Found ${results.length} result${results.length !== 1 ? 's' : ''}`;
+
+    const html = results.map(({ post }) => {
+      const tags = post.tags ? post.tags.split(',').map(tag => {
+        const trimmedTag = tag.trim();
+        return `<a href="#" class="search-tag" data-tag="${trimmedTag}" onclick="event.preventDefault(); filterByTag('${trimmedTag}')">${trimmedTag}</a>`;
+      }).join('') : '';
+
+      return `
+        <article class="search-result-item">
+          <h3><a href="${post.url}">${highlightText(post.title, query)}</a></h3>
+          <div class="search-result-meta">
+            <span class="date">${post.date}</span>
+            ${post.categories ? `<span class="category">${post.categories}</span>` : ''}
+          </div>
+          ${tags ? `<div class="search-result-tags">${tags}</div>` : ''}
+          ${post.excerpt ? `<p class="search-result-excerpt">${highlightText(post.excerpt, query)}</p>` : ''}
+        </article>
+      `;
+    }).join('');
+
+    searchResults.innerHTML = html;
+  }
+
+  function highlightText(text, query) {
+    if (!query) return text;
+    const terms = query.trim().split(/\s+/);
+    let highlighted = text;
+    terms.forEach(term => {
+      const regex = new RegExp(`(${term})`, 'gi');
+      highlighted = highlighted.replace(regex, '<mark class="highlight">$1</mark>');
+    });
+    return highlighted;
+  }
+
+  let searchTimeout;
+  searchInput.addEventListener('input', function() {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      performSearch(this.value);
+    }, 300);
+  });
+
+  clearButton.addEventListener('click', function() {
+    searchInput.value = '';
+    activeTagFilter = null;
+    document.querySelectorAll('.popular-tag').forEach(el => el.classList.remove('active'));
+    performSearch('');
+    searchInput.focus();
+  });
+
+  // URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const queryParam = urlParams.get('q');
+
+  if (queryParam) {
+    searchInput.value = queryParam;
+    performSearch(queryParam);
+  } else {
+    searchInput.focus();
+  }
+
+  searchInput.addEventListener('input', function() {
+    const query = this.value.trim();
+    const newUrl = query
+      ? `${window.location.pathname}?q=${encodeURIComponent(query)}`
+      : window.location.pathname;
+    window.history.replaceState({}, '', newUrl);
+  });
+
+  // Year toggle functionality
+  document.querySelectorAll('.year-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      const content = this.closest('.archive-year').querySelector('.year-content');
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      this.setAttribute('aria-expanded', !isExpanded);
+      content.style.display = isExpanded ? 'none' : 'block';
+    });
+  });
+})();
+</script>

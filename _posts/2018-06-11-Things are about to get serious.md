@@ -2,6 +2,7 @@
 layout: post
 title: "Things are about to get serious"
 date: 2018-06-11
+tags: [Bootcamp, Personal]
 ---
 
 If you look back at my [second blog post](https://bekahhw.github.io/blog/2018/03/30/The-Dating-Game-Learning-to-Code,-part-II), you’ll see that [Flatiron School](https://flatironschool.com/) was my first love that I hoped I might come back to someday. And I’m so happy to write that I’m the recipient of the of a Facebook + Flatiron School Breakthrough Scholarship, and I’ll be coming back to my first love. But there’s more to this story. Flatiron School has been an incredible part of my healing journey, and with this scholarship, I feel like I’m at the highest point in my recovery because they said yes.

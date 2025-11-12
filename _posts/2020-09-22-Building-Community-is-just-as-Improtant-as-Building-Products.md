@@ -2,6 +2,7 @@
 layout: post
 title: "Building Community is just as Important as Building Products"
 date: 2020-09-22
+tags: [Community, Opinion]
 categories: life and code
 ---
 

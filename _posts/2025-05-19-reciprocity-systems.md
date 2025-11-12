@@ -3,6 +3,7 @@ layout: post
 title: "Breaking Bottlenecks: How Organizations Build Systems of Balanced Reciprocity"
 author: Bekah
 date: 2025-05-19
+tags: [Career, Opinion]
 ---
 
 

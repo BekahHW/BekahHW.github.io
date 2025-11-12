@@ -2,6 +2,7 @@
 layout: post
 title: "Reading List: The Early Career Edition"
 date: 2022-05-13
+tags: [Career, Learning, Tips]
 ---
 
 I spent the majority of my career teaching college English. I read so, so much fiction, poetry, plays, and screenplays. And when I moved into tech, I kind of stopped reading for a while. I was dealing with trauma. I was leaving a profession that didn't support me. And I was a mom of 4, and I was _tired_. I used to think I was a visual learner. But I couldn't sit and read anymore. I hated listening to audiobooks. _But_ when I got my first job in tech, I bought myself a pair of airpods to celebrate. And I discovered that I _loved_ listening to podcasts and audiobooks, but only with headphones. And I've intensely consumed them since then. But my taste has shifted. I've moved into a new industry--actually kind of two: tech and community--so my reading list has reflected that. I'm grateful that our public library has enabled me to seek a path of exploration, an education that suits me and my needs and that enabled this post. Today, I'm going to break down my top five reading resources for new and early career developers.
