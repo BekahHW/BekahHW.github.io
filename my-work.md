@@ -135,12 +135,31 @@ featured_image: /assets/images/pages/BHW_speaker.jpeg
   </ul>
 </details>
 
-<!-- Code & Open Source Projects Card -->
+<!-- Speaking & Conference Talks -->
 <details class="card">
   <summary>
-    <h3>Code & Open Source Projects</h3>
+    <h3>Speaking & Conference Talks</h3>
     <div class="summary-header">
-      Active contributor and maintainer in the open source community, sharing code, experiments, and learning resources.
+      Keynotes, conference talks, and workshops on storytelling, community building, testing, and developer experience.
+    </div>
+    <div class="summary-footer">
+      <span class="card-arrow" aria-hidden="true"></span>
+    </div>
+  </summary>
+  <ul>
+    <li><strong><a href="https://www.youtube.com/live/Dcz0dOQmcaE?feature=share">The Power of Storytelling</a></strong> — Keynote on human stories in a digital world</li>
+    <li><strong><a href="https://www.youtube.com/live/WhqURueG6Ao?feature=share">Testing with Cypress</a></strong> — Mission Impossible Prep: A practical testing workshop</li>
+    <li><strong><a href="https://www.youtube.com/watch?v=MVxvH54uLrE">How to Apologize</a></strong> — Communication skills for better relationships</li>
+    <li><strong><a href="https://www.middevcon.com/speakers/bekah-weigel/">The Coder's Journey</a></strong> — Community and Gatekeepers talk at Mid-Atlantic Developers Conference</li>
+  </ul>
+</details>
+
+<!-- Code & Open Source -->
+<details class="card">
+  <summary>
+    <h3>Code & Open Source</h3>
+    <div class="summary-header">
+      Active contributor and maintainer, creating educational content and sharing learning in public.
     </div>
     <div class="summary-footer">
       <span class="card-arrow" aria-hidden="true"></span>
@@ -148,94 +167,10 @@ featured_image: /assets/images/pages/BHW_speaker.jpeg
   </summary>
   <ul>
     <li><strong><a href="https://github.com/BekahHW">GitHub:</a></strong> Open source contributions, projects, and collaborative work</li>
-    <li><strong><a href="https://expo.io/@bekahhw/snacks">Expo Snacks:</a></strong> Mobile development experiments and demos</li>
-    <li><strong>Educational Content:</strong> Created <a href="https://youtu.be/sU7-SfukPT8">Audience v. Community</a>, <a href="https://youtu.be/K4vFE12QDxA">How to get started in Community</a>, and <a href="https://youtu.be/i-94sdTLqNA">Open Source: 5 reasons to Contribute</a></li>
+    <li><strong>Educational Videos:</strong> Created <a href="https://youtu.be/sU7-SfukPT8">Audience v. Community</a>, <a href="https://youtu.be/K4vFE12QDxA">How to get started in Community</a>, and <a href="https://youtu.be/i-94sdTLqNA">Open Source: 5 Reasons to Contribute</a></li>
     <li><strong>Live Learning:</strong> Featured on <a href="https://www.learnwithjason.dev/let-s-learn-tensorflow-js">Learn with Jason (TensorFlow.js)</a> and <a href="https://www.youtube.com/watch?v=YA0To1gOwus&t=10s">Virtual Coffee Hacktoberfest stream</a></li>
   </ul>
 </details>
-
-<!-- Speaking & Media Appearances -->
-<h2 style="margin-top: 40px; text-align: center;">SPEAKING & MEDIA</h2>
-
-<section class="speaking-section">
-  <div class="container">
-    <div class="content-cards">
-
-      <!-- Keynote Card -->
-      <div class="content-card">
-        <h3 class="card-title">The Power of Storytelling</h3>
-        <p class="card-description">
-          Keynote on human stories in a digital world
-        </p>
-        <div class="card-type">KEYNOTE</div>
-        <a href="https://www.youtube.com/live/Dcz0dOQmcaE?feature=share" target="_blank" class="card-link" aria-label="Watch The Power of Storytelling keynote">
-          <span class="arrow-icon">→</span>
-        </a>
-      </div>
-
-      <!-- Cypress Testing Talk -->
-      <div class="content-card">
-        <h3 class="card-title">Testing with Cypress</h3>
-        <p class="card-description">
-          Mission Impossible Prep: A practical testing workshop
-        </p>
-        <div class="card-type">CONFERENCE TALK</div>
-        <a href="https://www.youtube.com/live/WhqURueG6Ao?feature=share" target="_blank" class="card-link" aria-label="Watch Mission Impossible Prep talk">
-          <span class="arrow-icon">→</span>
-        </a>
-      </div>
-
-      <!-- How to Apologize -->
-      <div class="content-card">
-        <h3 class="card-title">How to Apologize</h3>
-        <p class="card-description">
-          Communication skills for better relationships
-        </p>
-        <div class="card-type">TALK</div>
-        <a href="https://yougotthis.io/library/how-to-apologize/" target="_blank" class="card-link" aria-label="Watch How to Apologize talk">
-          <span class="arrow-icon">→</span>
-        </a>
-      </div>
-
-      <!-- Virtual Coffee Podcast -->
-      <div class="content-card">
-        <h3 class="card-title">Virtual Coffee Podcast</h3>
-        <p class="card-description">
-          Co-host featuring developer stories and learnings
-        </p>
-        <div class="card-type">PODCAST</div>
-        <a href="https://virtualcoffee.io/podcast/" target="_blank" class="card-link" aria-label="Listen to Virtual Coffee Podcast">
-          <span class="arrow-icon">→</span>
-        </a>
-      </div>
-
-      <!-- CodeNewbie Appearance -->
-      <div class="content-card">
-        <h3 class="card-title">Moms Who Code</h3>
-        <p class="card-description">
-          CodeNewbie podcast on career transitions and parenting
-        </p>
-        <div class="card-type">PODCAST GUEST</div>
-        <a href="https://www.codenewbie.org/podcast/moms-who-code" target="_blank" class="card-link" aria-label="Listen to CodeNewbie episode">
-          <span class="arrow-icon">→</span>
-        </a>
-      </div>
-
-      <!-- Feedback Video -->
-      <div class="content-card">
-        <h3 class="card-title">Four Ways to Give Good Feedback</h3>
-        <p class="card-description">
-          Practical tips for constructive feedback
-        </p>
-        <div class="card-type">YOUTUBE</div>
-        <a href="https://youtu.be/Ce6Bm2O7D58" target="_blank" class="card-link" aria-label="Watch feedback video">
-          <span class="arrow-icon">→</span>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
 <!-- Developer Education & Enablement Section -->
 <div class="dev-education-section-row">
 <div class="icon-cards-row">
