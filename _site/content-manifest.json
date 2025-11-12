@@ -7,12 +7,46 @@
     "topics": ["Developer Relations", "Community Building", "Programming", "AI", "Mental Health in Tech", "Career Development"],
     "content_types": ["blog_posts", "technical_tutorials", "career_advice", "personal_experiences"],
     "target_audience": ["developers", "tech professionals", "community builders", "career changers", "bootcamp graduates"],
-    "last_updated": "2025-07-16"
+    "last_updated": "2025-11-12"
   },
   "posts": [
     
     {
-      "title": "A Developer’s Guide to Choosing an AI Coding Assistant That Boosts Productivity Without Overwhelming Your Workflow)",
+      "title": "The Invisible Load: How AI Workflows Can Replace Your Team&#39;s &#39;Glue Person&#39;",
+      "url": "https://bekahhw.com//AI-Workflows-Can-Be-The-Glue",
+      "date": "2025-11-06",
+      "excerpt": "Every team has one, and, tbh, a lot of relationships have one. The person who remembers. For teams, it might be the person who remembers to update the changelog. Who posts the weekly standup summar...",
+      "tags": [],
+      "categories": [],
+      "word_count": 1757,
+      "content_type": "blog_post"
+    },
+    
+    {
+      "title": "When We Became What We Do: The Identity Crisis That Companies Mistook for Opportunity",
+      "url": "https://bekahhw.com//The-Community-Identity-Crisis",
+      "date": "2025-11-02",
+      "excerpt": "In March 2020, a weird thing happened to how we answered the question “Who are you?”
+",
+      "tags": ["Community","Opinion"],
+      "categories": [],
+      "word_count": 2363,
+      "content_type": "blog_post"
+    },
+    
+    {
+      "title": "When &#39;Local&#39; Went Global: The Pandemic Era of International Communities",
+      "url": "https://bekahhw.com//when-local-community-went-global",
+      "date": "2025-10-30",
+      "excerpt": "During the pandemic, I occupied the same space—a Zoom room-with members of the Virtual Coffee community from all over the world. We’ve had members across the US, Canada, South America, Europe, Aust...",
+      "tags": [],
+      "categories": [],
+      "word_count": 1565,
+      "content_type": "blog_post"
+    },
+    
+    {
+      "title": "A Developer’s Guide to Choosing an AI Coding Assistant That Boosts Productivity Without Overwhelming Your Workflow",
       "url": "https://bekahhw.com//Boost-Productivity-with-AI",
       "date": "2025-07-09",
       "excerpt": "Finding the assistant that fits just right.
@@ -86,7 +120,7 @@
       "date": "2025-06-10",
       "excerpt": "As of June 1st, I’m no longer with the Linux Foundation. While I’ll share more details about this transition in a future post, I wanted to take a moment to reflect on what comes next.
 ",
-      "tags": [],
+      "tags": ["Personal","Career"],
       "categories": [],
       "word_count": 279,
       "content_type": "blog_post"
@@ -97,7 +131,7 @@
       "url": "https://bekahhw.com//Beyond-Stars-and-Forks",
       "date": "2025-05-29",
       "excerpt": "When we were working on the Intro to Open Source course, one of the biggest painpoints we noted with new contributors was the frustration they felt when their PRs weren’t merged in in what they fel...",
-      "tags": [],
+      "tags": ["Open Source","Opinion"],
       "categories": [],
       "word_count": 1352,
       "content_type": "blog_post"
@@ -108,7 +142,7 @@
       "url": "https://bekahhw.com//reciprocity-systems",
       "date": "2025-05-19",
       "excerpt": "In this third post of my series on giving and taking, we explore how to design systems that prevent burnout, distribute contributions, and transform individual reciprocity intelligence into organiz...",
-      "tags": [],
+      "tags": ["Career","Opinion"],
       "categories": [],
       "word_count": 1756,
       "content_type": "blog_post"
@@ -119,7 +153,7 @@
       "url": "https://bekahhw.com//reciprocity-intelligence",
       "date": "2025-04-15",
       "excerpt": "In this second post of my series on giving and taking, I explore why reciprocity intelligence—the ability to navigate giving and receiving effectively—isn’t just nice to have anymore. If you missed...",
-      "tags": [],
+      "tags": ["Career","Opinion"],
       "categories": [],
       "word_count": 1621,
       "content_type": "blog_post"
@@ -131,7 +165,7 @@
       "date": "2025-04-08",
       "excerpt": "In today’s workplace, we need both a culture of contribution and the personal strength to thrive independently.
 ",
-      "tags": [],
+      "tags": ["Career","Opinion"],
       "categories": [],
       "word_count": 865,
       "content_type": "blog_post"
@@ -142,7 +176,7 @@
       "url": "https://bekahhw.com//agents-v-mcp",
       "date": "2025-04-07",
       "excerpt": "If you’ve been following AI developments at all over the last year, I’m sure you heard about how autonomous AI agents were the next big thing that was going to change the landscape. You might have ...",
-      "tags": [],
+      "tags": ["AI","Opinion"],
       "categories": [],
       "word_count": 1296,
       "content_type": "blog_post"
@@ -153,7 +187,7 @@
       "url": "https://bekahhw.com//developer-content-metrics",
       "date": "2025-03-31",
       "excerpt": "Last week, I was chatting with a Developer Advocate at Gitbook, and he asked me what metrics we looked at for docs at OpenSauced. The honest answer is that we didn’t have KPIs or OKRs or metrics th...",
-      "tags": [],
+      "tags": ["Content Creation","Tips"],
       "categories": [],
       "word_count": 867,
       "content_type": "blog_post"
@@ -164,7 +198,7 @@
       "url": "https://bekahhw.com//common-dev-content-pitfalls",
       "date": "2025-03-24",
       "excerpt": "Last week, I wrote about Content Developers Love, and it’s natural to follow that with some of the places where developer content goes wrong. It’s usually not one thing that causes documentation to...",
-      "tags": [],
+      "tags": ["Content Creation","Tips"],
       "categories": [],
       "word_count": 931,
       "content_type": "blog_post"
@@ -175,7 +209,7 @@
       "url": "https://bekahhw.com//astro-content-collections",
       "date": "2025-03-18",
       "excerpt": "At the end of last year, my brothers and I wrote our first novel together (The Battle for Christmas: Reign of the Nutcrackers). That experience inspired us to continue writing together, starting wi...",
-      "tags": [],
+      "tags": ["Technical","Content Creation"],
       "categories": [],
       "word_count": 1866,
       "content_type": "blog_post"
@@ -186,7 +220,7 @@
       "url": "https://bekahhw.com//Creating-Content-Developers-Love",
       "date": "2025-03-17",
       "excerpt": "Over the past couple of years, I’ve been in the middle of conversations about whether or not DevRel belongs in marketing. At the end of the day, I don’t know that it matters if you understand devel...",
-      "tags": [],
+      "tags": ["Content Creation","Tips"],
       "categories": [],
       "word_count": 848,
       "content_type": "blog_post"
@@ -198,7 +232,7 @@
       "date": "2025-03-10",
       "excerpt": "It started with an air mattress on the floor of a San Francisco apartment.
 ",
-      "tags": [],
+      "tags": ["Content Creation","Tips"],
       "categories": [],
       "word_count": 1219,
       "content_type": "blog_post"
@@ -209,7 +243,7 @@
       "url": "https://bekahhw.com//Storytelling-in-Tech",
       "date": "2025-03-05",
       "excerpt": "I’ve been thinking a lot about how storytelling sometimes gets lost or becomes an afterthought when we’re consumed by data, specifications, or writing content with AI. But in reality, it’s one of t...",
-      "tags": [],
+      "tags": ["Content Creation","Opinion"],
       "categories": [],
       "word_count": 689,
       "content_type": "blog_post"
@@ -220,7 +254,7 @@
       "url": "https://bekahhw.com//Ai-and-content-creation",
       "date": "2025-02-24",
       "excerpt": "Recently, I learned about Google’s EEAT (Experience, Expertise, Authoritativeness, Trustworthiness) framework. That’s the one that determines whether your content is worthy of showing up on search ...",
-      "tags": [],
+      "tags": ["Content Creation","Opinion"],
       "categories": [],
       "word_count": 586,
       "content_type": "blog_post"
@@ -231,7 +265,7 @@
       "url": "https://bekahhw.com//Five-Lessons-for-Five-Years-in-Tech",
       "date": "2024-11-08",
       "excerpt": "July marked my fifth year in tech.That’s half a decade in a career I never imagined myself in. I came into tech via trauma, so it’s always hard to answer the question about where I want to go next....",
-      "tags": [],
+      "tags": ["Career","Personal","Tips"],
       "categories": [],
       "word_count": 1288,
       "content_type": "blog_post"
@@ -242,7 +276,7 @@
       "url": "https://bekahhw.com//Being-a-Hybrid-Friend-is-Hard",
       "date": "2024-05-14",
       "excerpt": "Before coming into tech, I saw my friends weekly. I’ve never had a lot of friends, but I’ve had friends. You know, the kind that know you and understand you and you can break into random songs in f...",
-      "tags": [],
+      "tags": ["Personal","Community"],
       "categories": [],
       "word_count": 798,
       "content_type": "blog_post"
@@ -254,7 +288,7 @@
       "date": "2023-11-26",
       "excerpt": "A couple of weeks ago, I put out this tweet.
 ",
-      "tags": [],
+      "tags": ["DevRel","Opinion"],
       "categories": [],
       "word_count": 3675,
       "content_type": "blog_post"
@@ -265,7 +299,7 @@
       "url": "https://bekahhw.com//Hiring,-Firing,-and-Becoming-Indispensable",
       "date": "2023-11-15",
       "excerpt": "At the beginning of COVID, I lost my job. It was hard, but I navigated through it with what seemed like most people around me and then landed another job. At the beginning of 2023, I was laid off. ...",
-      "tags": [],
+      "tags": ["Career","Opinion"],
       "categories": [],
       "word_count": 2988,
       "content_type": "blog_post"
@@ -276,7 +310,7 @@
       "url": "https://bekahhw.com//Interview-Culture-Questions",
       "date": "2023-03-21",
       "excerpt": "Culture is hard to define. And we all like a different type of culture. We grow, learn, communicate in different ways; there’s not one culture that benefits everyone. Having diverse cultures is a b...",
-      "tags": [],
+      "tags": ["Career","Interview","Tips"],
       "categories": [],
       "word_count": 793,
       "content_type": "blog_post"
@@ -287,7 +321,7 @@
       "url": "https://bekahhw.com//A-Nontraditional-Education-in-the-Tech-Industry",
       "date": "2023-03-09",
       "excerpt": "In April 2020, in the midst of the pandemic, I started having virtual coffees. It started as once-a-week sessions where we talked about the pandemic and our lives, and being laid off, and homebirth...",
-      "tags": [],
+      "tags": ["Career","Opinion","Learning"],
       "categories": [],
       "word_count": 630,
       "content_type": "blog_post"
@@ -298,7 +332,7 @@
       "url": "https://bekahhw.com//Building-a-Supportive-Open-Source-Community",
       "date": "2023-03-02",
       "excerpt": "Over the last couple of years, I’ve spent time maintaining open source projects and an open source community. In the projects I’ve maintained and worked on, creating a positive and safe space for c...",
-      "tags": [],
+      "tags": ["Open Source","Community","Tips"],
       "categories": [],
       "word_count": 507,
       "content_type": "blog_post"
@@ -309,7 +343,7 @@
       "url": "https://bekahhw.com//A-Year-in-DevRel",
       "date": "2023-01-23",
       "excerpt": "A year ago today, I started my first job in DevRel. Before I started, I was chatting with the CEO of a consultancy, and one of the things he told me was to document publicly the work I was doing in...",
-      "tags": [],
+      "tags": ["DevRel","Career","Personal"],
       "categories": [],
       "word_count": 1340,
       "content_type": "blog_post"
@@ -320,7 +354,7 @@
       "url": "https://bekahhw.com//Assume-Best-Intent",
       "date": "2023-01-20",
       "excerpt": "Virtual Coffee has been through a progression of announcements about who we are and what we do. And we’re very thankful for the people who have shared when we get it wrong. One of the times we’ve g...",
-      "tags": [],
+      "tags": ["Community","Tips","Opinion"],
       "categories": [],
       "word_count": 678,
       "content_type": "blog_post"
@@ -331,7 +365,7 @@
       "url": "https://bekahhw.com//We-All-Need-Good-Feedback",
       "date": "2022-11-27",
       "excerpt": "When you touch a hot surface, you get feedback when your hand hurts. When you hug someone you care about and who cares about you, those warm feelings are feedback. When you get a like on your post,...",
-      "tags": [],
+      "tags": ["Career","Tips"],
       "categories": [],
       "word_count": 766,
       "content_type": "blog_post"
@@ -342,7 +376,7 @@
       "url": "https://bekahhw.com//Career-Goal-Setting",
       "date": "2022-11-25",
       "excerpt": "I’m close to completing my first year on a Developer Relations team. As I evaluate my own performance over the last year and set goals for my next year as a Technical Community Builder, I wanted to...",
-      "tags": [],
+      "tags": ["Career","Tips"],
       "categories": [],
       "word_count": 1713,
       "content_type": "blog_post"
@@ -353,7 +387,7 @@
       "url": "https://bekahhw.com//Making-Better-Meetings",
       "date": "2022-11-21",
       "excerpt": "We’ve all been there: a meeting that should’ve been an email or a slack message or really nothing at all. There are few things that frustrate me more than wasted time. I’ve said this before, moms a...",
-      "tags": [],
+      "tags": ["Tips","Career"],
       "categories": [],
       "word_count": 1332,
       "content_type": "blog_post"
@@ -364,7 +398,7 @@
       "url": "https://bekahhw.com//Writing-Your-First-Conference-Proposal",
       "date": "2022-11-20",
       "excerpt": "Maybe you’ve been thinking about speaking at a conference, but you’re nervous. You’ve been to a conference or more than you can count, you’ve thought “I could’ve given a talk like that”, and you’ve...",
-      "tags": [],
+      "tags": ["Career","Tips","Speaking"],
       "categories": [],
       "word_count": 1239,
       "content_type": "blog_post"
@@ -375,7 +409,7 @@
       "url": "https://bekahhw.com//This-Week-in-DevRel-Planning-and-Progress",
       "date": "2022-11-10",
       "excerpt": "Some weeks, you’ll have a lot of tangible checkmarks on your to-do list. Other weeks, it feels like you haven’t done anything. Still, in reality, you’ve spent a lot of time planning for things in t...",
-      "tags": [],
+      "tags": ["DevRel","Personal"],
       "categories": [],
       "word_count": 924,
       "content_type": "blog_post"
@@ -386,7 +420,7 @@
       "url": "https://bekahhw.com//Reading-List-The-Community-Builder-Edition",
       "date": "2022-11-09",
       "excerpt": "I go through phases of information consumption. At the beginning of the pandemic, it was tech podcasts all the time. Then it was audiobooks, mostly self-help kind of stuff. Now it’s a mix of audiob...",
-      "tags": [],
+      "tags": ["Community","Learning"],
       "categories": [],
       "word_count": 703,
       "content_type": "blog_post"
@@ -397,7 +431,7 @@
       "url": "https://bekahhw.com//This-Week-in-DevRel-Life-Moves-Fast",
       "date": "2022-11-04",
       "excerpt": "Well, my “This Week in DevRel” series has turned into this “couple of months” in DevRel. In the words of Ferris Bueller, “Life moves pretty fast. If you don’t stop and look around once in a while, ...",
-      "tags": [],
+      "tags": ["DevRel","Personal"],
       "categories": [],
       "word_count": 749,
       "content_type": "blog_post"
@@ -408,7 +442,7 @@
       "url": "https://bekahhw.com//Overcoming-Imposter-Syndrome",
       "date": "2022-11-03",
       "excerpt": "Yesterday at Virtual Coffee, we talked about imposter syndrome, and I want to share some key takeaways. Imposter syndrome is the feeling of not belonging and thinking that you don’t deserve opportu...",
-      "tags": [],
+      "tags": ["Career","Mental Health","Tips"],
       "categories": [],
       "word_count": 769,
       "content_type": "blog_post"
@@ -419,7 +453,7 @@
       "url": "https://bekahhw.com//Communities-Need-Support",
       "date": "2022-08-02",
       "excerpt": "I’ve been spending a lot of time engaging with different types of communities, taking to community builders, learning more about community building, and organically growing a couple of communities....",
-      "tags": [],
+      "tags": ["Community","Opinion"],
       "categories": [],
       "word_count": 383,
       "content_type": "blog_post"
@@ -430,7 +464,7 @@
       "url": "https://bekahhw.com//Reading-List",
       "date": "2022-05-13",
       "excerpt": "I spent the majority of my career teaching college English. I read so, so much fiction, poetry, plays, and screenplays. And when I moved into tech, I kind of stopped reading for a while. I was deal...",
-      "tags": [],
+      "tags": ["Career","Learning","Tips"],
       "categories": [],
       "word_count": 836,
       "content_type": "blog_post"
@@ -441,7 +475,7 @@
       "url": "https://bekahhw.com//Virtual-Coffee-An-Update-Going-into-Year-3",
       "date": "2022-03-16",
       "excerpt": "We’re going into our third year of Virtual Coffee, and what a whirlwind it’s been! Virtual Coffee wasn’t a pre-planned community, something we spent careers trying to develop. It was a natural conn...",
-      "tags": [],
+      "tags": ["Community","Personal"],
       "categories": [],
       "word_count": 828,
       "content_type": "blog_post"
@@ -452,7 +486,7 @@
       "url": "https://bekahhw.com//Getting-Started-in-Community",
       "date": "2022-01-28",
       "excerpt": "I’ve seen a lot of tweets recently and been a part of a number of conversations with people in tech who are interested in joining a DevRel team or applying for a community position, but don’t know ...",
-      "tags": [],
+      "tags": ["Career","Tips","Community"],
       "categories": [],
       "word_count": 1138,
       "content_type": "blog_post"
@@ -463,7 +497,7 @@
       "url": "https://bekahhw.com//Job-Announcement-A-Devs-Journey-into-Technical-Community-Building",
       "date": "2022-01-26",
       "excerpt": "I’ve been a developer for two and a half years. And for that entire time I’ve worked as a freelancer and consultant. I’ve loved that work. One of my biggest pieces of advice to new developers has b...",
-      "tags": [],
+      "tags": ["Career","Community"],
       "categories": [],
       "word_count": 907,
       "content_type": "blog_post"
@@ -474,7 +508,7 @@
       "url": "https://bekahhw.com//Gauging-Community-Health",
       "date": "2022-01-06",
       "excerpt": "Over the last almost two years, as Virtual Coffee has formed, evolved, and solidified, I’ve spent time writing down the approach I’ve taken to community and my thoughts on what makes a community. T...",
-      "tags": [],
+      "tags": ["Community","Opinion"],
       "categories": [],
       "word_count": 774,
       "content_type": "blog_post"
@@ -485,7 +519,7 @@
       "url": "https://bekahhw.com//2021-Recap",
       "date": "2021-12-22",
       "excerpt": "I have this thing where I balance the logical part of me with the creative part of me. I’m never a better creative writer than when I’m at a tech conference. Because I dive so, so deep into the tec...",
-      "tags": [],
+      "tags": ["Personal"],
       "categories": [],
       "word_count": 1329,
       "content_type": "blog_post"
@@ -496,7 +530,7 @@
       "url": "https://bekahhw.com//TensorFlow.js-101-Working-with-TFHub",
       "date": "2021-12-08",
       "excerpt": "Models allow us to take data and make predictions, reactions, transformations, etc. There are models that work with images, audio, and other forms of data. We can do things like identify objects in...",
-      "tags": [],
+      "tags": ["TFJS","Technical"],
       "categories": [],
       "word_count": 1089,
       "content_type": "blog_post"
@@ -719,7 +753,7 @@
       "url": "https://bekahhw.com//Coding-is-Pattern-Matching",
       "date": "2021-04-20",
       "excerpt": "A couple of years ago I was talking to a woman who was doing simultaneous Masters degrees from Carnegie Mellon University and running a brain study on chronic depression. When we were talking about...",
-      "tags": [],
+      "tags": ["Learning","Opinion"],
       "categories": [],
       "word_count": 634,
       "content_type": "blog_post"
@@ -731,7 +765,7 @@
       "date": "2021-04-03",
       "excerpt": "It started with a tweet.
 ",
-      "tags": [],
+      "tags": ["Community","Personal"],
       "categories": [],
       "word_count": 1660,
       "content_type": "blog_post"
@@ -742,7 +776,7 @@
       "url": "https://bekahhw.com//The-Lessons-I've-Learned-from-100-Virtual-Coffees",
       "date": "2021-03-23",
       "excerpt": "It’s almost been a year since Virtual Coffee was born from my cry of desperation into the Twittersphere. From knowing that I couldn’t let myself be isolated during the time the world was calling fo...",
-      "tags": [],
+      "tags": ["Community","Personal"],
       "categories": [],
       "word_count": 631,
       "content_type": "blog_post"
@@ -753,7 +787,7 @@
       "url": "https://bekahhw.com//Getting-Out-of-My-Comfort-Zone",
       "date": "2021-03-13",
       "excerpt": "I like my comfort zone. A lot. It’s a familiar space. It’s a warm blanket, a cup of coffee, in front of a fire. It’s the crack of the bat against a baseball on a hot July day. It’s hearing that son...",
-      "tags": [],
+      "tags": ["Personal","Career"],
       "categories": [],
       "word_count": 606,
       "content_type": "blog_post"
@@ -765,7 +799,7 @@
       "date": "2021-02-12",
       "excerpt": "Life has been weird lately. It’s been complicated, and I’ve had a hard time understanding why. And then I read this tweet:
 ",
-      "tags": [],
+      "tags": ["Mental Health","Personal"],
       "categories": [],
       "word_count": 631,
       "content_type": "blog_post"
@@ -776,7 +810,7 @@
       "url": "https://bekahhw.com//Five-Hot-Takes-for-the-New-Year",
       "date": "2021-01-28",
       "excerpt": "I spend a lot of time stuck in my head, wondering if what I say is going to hurt someone or lead them on the wrong path, or flat-out be wrong. And that’s exhausting. I love going on podcasts, but t...",
-      "tags": [],
+      "tags": ["Opinion","Personal"],
       "categories": [],
       "word_count": 871,
       "content_type": "blog_post"
@@ -788,7 +822,7 @@
       "date": "2021-01-17",
       "excerpt": "This is a continuation of this post
 ",
-      "tags": [],
+      "tags": ["Technical","Testing"],
       "categories": [],
       "word_count": 665,
       "content_type": "blog_post"
@@ -799,7 +833,7 @@
       "url": "https://bekahhw.com//2020-A-Year-in-Review",
       "date": "2020-12-28",
       "excerpt": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light...",
-      "tags": [],
+      "tags": ["Personal"],
       "categories": [],
       "word_count": 1011,
       "content_type": "blog_post"
@@ -810,7 +844,7 @@
       "url": "https://bekahhw.com//I-Came-into-Tech-via-Trauma",
       "date": "2020-12-07",
       "excerpt": "I don’t have a traditional path into tech. I came into tech because my organs ruptured when I had my fourth kid. I came into tech because I had PTSD. I came into tech because I have ADHD. I came in...",
-      "tags": [],
+      "tags": ["Personal","Mental Health"],
       "categories": [],
       "word_count": 816,
       "content_type": "blog_post"
@@ -821,7 +855,7 @@
       "url": "https://bekahhw.com//We-need-to-talk-More-on-the-problems-juniors-are-facing",
       "date": "2020-11-30",
       "excerpt": "I spend a lot of time talking about the challenges junior developers face when they are trying to break into tech. And honestly, there’s probably a whole book to write about this, a whole chapter o...",
-      "tags": [],
+      "tags": ["Career","Opinion"],
       "categories": [],
       "word_count": 773,
       "content_type": "blog_post"
@@ -833,7 +867,7 @@
       "date": "2020-11-27",
       "excerpt": "I am a Woman in Tech.*
 ",
-      "tags": [],
+      "tags": ["Personal","Career"],
       "categories": [],
       "word_count": 676,
       "content_type": "blog_post"
@@ -844,7 +878,7 @@
       "url": "https://bekahhw.com//Let-Them-Write-Tests-An-Argument-for-Cypress",
       "date": "2020-11-21",
       "excerpt": "When I was learning to code, testing was covered a little bit, but I didn’t grasp the full awesomeness of what we test and why we test it. But I have been lucky enough–yes, I said lucky–to learn mo...",
-      "tags": [],
+      "tags": ["Technical","Testing"],
       "categories": [],
       "word_count": 572,
       "content_type": "blog_post"
@@ -855,7 +889,7 @@
       "url": "https://bekahhw.com//I'll-say-it-again-Kindess-Matters",
       "date": "2020-11-08",
       "excerpt": "The world can be a really messy and hard and sad place sometimes. And we’re all carrying our own stories. Some of us wear them on our sleeves. Some of us let them slip out from time to time. Some o...",
-      "tags": [],
+      "tags": ["Community","Opinion"],
       "categories": [],
       "word_count": 867,
       "content_type": "blog_post"
@@ -866,7 +900,7 @@
       "url": "https://bekahhw.com//Hacktoberfest-2020-The-best-one-yet",
       "date": "2020-11-02",
       "excerpt": "Last year, I didn’t complete Hacktoberfest. And I felt pretty bad about that.I spent hours looking through issues, hoping to find one that was tagged as a “good first issue” that was actually a goo...",
-      "tags": [],
+      "tags": ["Open Source","Community"],
       "categories": [],
       "word_count": 950,
       "content_type": "blog_post"
@@ -877,7 +911,7 @@
       "url": "https://bekahhw.com//New-Devs-Make-Pairing-a-Priority",
       "date": "2020-10-26",
       "excerpt": "One of the questions I’ve been asked most frequently is also one that I asked most frequently when I first started: “when will I start to feel comfortable, like I’m good enough to be a developer?” ...",
-      "tags": [],
+      "tags": ["Tips","Career"],
       "categories": [],
       "word_count": 546,
       "content_type": "blog_post"
@@ -888,7 +922,7 @@
       "url": "https://bekahhw.com//The-Thing-About-Trauama-Is",
       "date": "2020-10-02",
       "excerpt": "The thing about trauma is, it doesn’t stick to your timeline. The thing about trauma is, when you think you’re done with it, it creeps back in. The thing about trauma is, you find yourself in const...",
-      "tags": [],
+      "tags": ["Mental Health","Personal"],
       "categories": [],
       "word_count": 717,
       "content_type": "blog_post"
@@ -899,7 +933,7 @@
       "url": "https://bekahhw.com//Building-Community-is-just-as-Improtant-as-Building-Products",
       "date": "2020-09-22",
       "excerpt": "Move fast and break things. You hear that a lot in tech. And I’m here to call bullshit. Because you don’t build relationships fast and break them. You don’t create trust by breaking things. You don...",
-      "tags": [],
+      "tags": ["Community","Opinion"],
       "categories": ["life","and","code"],
       "word_count": 626,
       "content_type": "blog_post"
@@ -910,7 +944,7 @@
       "url": "https://bekahhw.com//ADHD,-the-Quarantine,-and-Me",
       "date": "2020-08-03",
       "excerpt": "A couple of months ago, I was diagnosed with ADHD. One of the things I’ve learned after being diagnosed is that there is so much I don’t know and I’m learning everyday. Yesterday, someone shared th...",
-      "tags": [],
+      "tags": ["Mental Health","Personal"],
       "categories": [],
       "word_count": 1902,
       "content_type": "blog_post"
@@ -921,7 +955,7 @@
       "url": "https://bekahhw.com//The-Tech-Industry-is-Failing-Junior-Devs",
       "date": "2020-07-20",
       "excerpt": "We talk a lot about how there aren’t opportunities for junior devs, about how we lure people into tech with promises of tons of jobs and good pay and without needing a degree. And then they graduat...",
-      "tags": [],
+      "tags": ["Career","Opinion"],
       "categories": [],
       "word_count": 939,
       "content_type": "blog_post"
@@ -932,7 +966,7 @@
       "url": "https://bekahhw.com//Twelve-Lessons-for-Twelve-Months-as-a-Dev",
       "date": "2020-07-01",
       "excerpt": "I started working as a developer a year ago today. To this day, I still don’t understand how/why I was hired, but I was/am super happy to have the opportunity to do work that I never truly believed...",
-      "tags": [],
+      "tags": ["Career","Personal","Tips"],
       "categories": [],
       "word_count": 1532,
       "content_type": "blog_post"
@@ -943,7 +977,7 @@
       "url": "https://bekahhw.com//A-Job-is-just-a-Job,-Except-When-It's-Not",
       "date": "2020-05-21",
       "excerpt": "Before I was a dev, I was an adjunct instructor at a university. If you’re not familiar with adjunct life, it sucks. It means that I worked part-time, took whatever courses were offered, and maybe ...",
-      "tags": [],
+      "tags": ["Career","Personal"],
       "categories": [],
       "word_count": 740,
       "content_type": "blog_post"
@@ -954,7 +988,7 @@
       "url": "https://bekahhw.com//Learning-Paralysis-How-to-pick-what-to-learn-next-when-there's-so-much-out-there",
       "date": "2020-05-03",
       "excerpt": "Whether you’ve been a dev for years or you’re learning now for the first time, there are always shiny new things to learn. And it’s never just one. They’re everywhere in front of you. They’re like ...",
-      "tags": [],
+      "tags": ["Learning","Tips"],
       "categories": [],
       "word_count": 613,
       "content_type": "blog_post"
@@ -965,7 +999,7 @@
       "url": "https://bekahhw.com//What-is-Virtual-Coffee",
       "date": "2020-04-28",
       "excerpt": "I’ve been doing virtual coffee for about a month now, and I couldn’t have predicted how much I would look forward to the days that I get to talk to other devs. Here’s the thing, I’m a shy introvert...",
-      "tags": [],
+      "tags": ["Community","Personal"],
       "categories": [],
       "word_count": 541,
       "content_type": "blog_post"
@@ -976,7 +1010,7 @@
       "url": "https://bekahhw.com//Leveling-Up-how-to-tell-if-you're-getting-better-when-you're-on-the-coding-treadmill",
       "date": "2020-04-26",
       "excerpt": "When you’re in a field that has a never-ending amount of learning, it’s hard to feel like you’re making progress. You’re on a treadmill and there will never be a finish line. And that’s simultaneou...",
-      "tags": [],
+      "tags": ["Career","Tips","Learning"],
       "categories": [],
       "word_count": 980,
       "content_type": "blog_post"
@@ -987,7 +1021,7 @@
       "url": "https://bekahhw.com//Yo-Parents,-How-you-doing",
       "date": "2020-04-20",
       "excerpt": "When we started this pandemic thing, I was thinking positively. I had podcasts and art projects, and we had three weeks of school at home. And, as you know, I lost my job. Then I lost my fitness cl...",
-      "tags": [],
+      "tags": ["Personal","Mental Health"],
       "categories": [],
       "word_count": 797,
       "content_type": "blog_post"
@@ -998,7 +1032,7 @@
       "url": "https://bekahhw.com//Another-One-About-Interviews-Breaking-Bekah",
       "date": "2020-04-13",
       "excerpt": "I got married when I was twenty-one, but I dated a lot before I was married, and I can say that I never have been as heart-broken as I have been during this interview process. To be perfectly hones...",
-      "tags": [],
+      "tags": ["Career","Interview","Mental Health"],
       "categories": [],
       "word_count": 1146,
       "content_type": "blog_post"
@@ -1009,7 +1043,7 @@
       "url": "https://bekahhw.com//We-Should-Be-Building-Community-Now-More-Than-Ever",
       "date": "2020-04-06",
       "excerpt": "If I’ve learned anything from going through a trauma, it’s that it takes time to heal, you have to be patient with yourself, and that community matters. And I can’t help but re-experience what I we...",
-      "tags": [],
+      "tags": ["Community","Personal"],
       "categories": [],
       "word_count": 831,
       "content_type": "blog_post"
@@ -1020,7 +1054,7 @@
       "url": "https://bekahhw.com//Job-Searching-in-the-Time-of-COVID-19",
       "date": "2020-03-31",
       "excerpt": "Friends, it’s been hard. Everything’s been hard for everyone. We’re struggling to fight despair, to dream of a future, to stay motivated. We’re losing our jobs, our “normal,” our hope. We’re trying...",
-      "tags": [],
+      "tags": ["Career","Personal"],
       "categories": [],
       "word_count": 1084,
       "content_type": "blog_post"
@@ -1031,7 +1065,7 @@
       "url": "https://bekahhw.com//Bootcamp-Isn't-All-Happy-Face-Emojis",
       "date": "2020-02-28",
       "excerpt": "Everyone’s experience in bootcamp is different, but every bootcamp graduate I’ve talked to–whether it’s been a full-time intense bootcamp, remote self-paced, or anything in between–have all admitte...",
-      "tags": [],
+      "tags": ["Bootcamp","Mental Health"],
       "categories": ["Bootcamp"],
       "word_count": 636,
       "content_type": "blog_post"
@@ -1042,7 +1076,7 @@
       "url": "https://bekahhw.com//Ask-Me-How-I-do-it-All-A-Story-of-MomGuilt",
       "date": "2020-01-24",
       "excerpt": "It’s okay to ask me how I “do it.” It’s ok for you to ask me how I balance motherhood and work. Not every mom is ok with that, and I get why. But the reality is that many moms, probably most, bear ...",
-      "tags": [],
+      "tags": ["Personal","Career"],
       "categories": [],
       "word_count": 906,
       "content_type": "blog_post"
@@ -1053,7 +1087,7 @@
       "url": "https://bekahhw.com//Developer-Toddlerhood-I've-Been-a-Dev-for-Six-Months",
       "date": "2020-01-02",
       "excerpt": "I’ve been a dev for six months. Most days, I still think I’m going to get fired. I think I’m not good enough. I think I should know more. But that’s kind of my MO. I always think I’m not doing as w...",
-      "tags": [],
+      "tags": ["Career","Personal"],
       "categories": [],
       "word_count": 635,
       "content_type": "blog_post"
@@ -1064,7 +1098,7 @@
       "url": "https://bekahhw.com//I'm-learning-something-new,-and-I-refuse-to-Feel-Imposter-Syndrome",
       "date": "2019-11-04",
       "excerpt": "I’m starting a new project today, which is usually followed by spending an unreasonable amount of time thinking that I’m not good enough to be a developer, that I’m going to get fired, that it was ...",
-      "tags": [],
+      "tags": ["Career","Mental Health"],
       "categories": [],
       "word_count": 401,
       "content_type": "blog_post"
@@ -1075,7 +1109,7 @@
       "url": "https://bekahhw.com//The-Rejection-I'm-So-Thankful-For",
       "date": "2019-10-29",
       "excerpt": "I’m a middle child through and through. I spent my childhood competing with my older brother. I think he could’ve cared less, but I spent my free time reading the same books he was reading two grad...",
-      "tags": [],
+      "tags": ["Career","Personal"],
       "categories": [],
       "word_count": 699,
       "content_type": "blog_post"
@@ -1087,7 +1121,7 @@
       "date": "2019-09-29",
       "excerpt": "This is not the post I wanted to write. This is a post about mental health. This is a post for anyone who struggles, who has felt the irrational grip of PTSD.
 ",
-      "tags": [],
+      "tags": ["Mental Health","Personal"],
       "categories": [],
       "word_count": 766,
       "content_type": "blog_post"
@@ -1099,7 +1133,7 @@
       "date": "2019-09-15",
       "excerpt": "Dear Past Bekah,
 ",
-      "tags": [],
+      "tags": ["Personal","Career"],
       "categories": [],
       "word_count": 599,
       "content_type": "blog_post"
@@ -1110,7 +1144,7 @@
       "url": "https://bekahhw.com//Reflections-on-the-first-month-as-a-dev",
       "date": "2019-08-01",
       "excerpt": "Confession: I never thought I’d be a developer. I thought that I would finish my bootcamp, and I fully believed that no one would hire me. I thought maybe I would end up teaching beginner coding co...",
-      "tags": [],
+      "tags": ["Career","Personal"],
       "categories": [],
       "word_count": 448,
       "content_type": "blog_post"
@@ -1121,7 +1155,7 @@
       "url": "https://bekahhw.com//I-m-in-the-Business-of-Breaking-Things",
       "date": "2019-07-20",
       "excerpt": "I’ve been doing something new with my coding. I’ve been doing two-hour code sprints–which seems more like a 5k, but whatever sprint is easier to say–where I eliminate distractions and just code. So...",
-      "tags": [],
+      "tags": ["Learning","Personal"],
       "categories": [],
       "word_count": 913,
       "content_type": "blog_post"
@@ -1132,7 +1166,7 @@
       "url": "https://bekahhw.com//You-Could-Be-a-Part-Time-Dev",
       "date": "2019-07-10",
       "excerpt": "Ok, if that title doesn’t automatically make the Flight of the Concords Part-Time Model play in your head, you should go listen to it right now. It’s been one very interesting first week of being a...",
-      "tags": [],
+      "tags": ["Career","Personal"],
       "categories": [],
       "word_count": 1823,
       "content_type": "blog_post"
@@ -1143,7 +1177,7 @@
       "url": "https://bekahhw.com//Women-of-Trauma-React-Redux-Project",
       "date": "2019-05-18",
       "excerpt": "I’ve stuck with the same project idea for the last three projects for a couple of reasons: I have a hard time coming up with ideas, I’m passionate about this idea, I wanted to clearly compare the p...",
-      "tags": [],
+      "tags": ["Technical","Learning","Mental Health"],
       "categories": [],
       "word_count": 454,
       "content_type": "blog_post"
@@ -1154,7 +1188,7 @@
       "url": "https://bekahhw.com//Moms-Who-Code",
       "date": "2019-05-12",
       "excerpt": "There are stages of learning. There are stages of being part of a community. This morning I went back and reread my blog post from last Mother’s Day, and most of what I wrote still stands. So today...",
-      "tags": [],
+      "tags": ["Personal","Career"],
       "categories": [],
       "word_count": 480,
       "content_type": "blog_post"
@@ -1165,7 +1199,7 @@
       "url": "https://bekahhw.com//Learning-How-to-Learn",
       "date": "2019-04-30",
       "excerpt": "I’ve been committed to this coding thing for about a year now. I’m about to finish Flatiron School, spread my wings and fly through into the tech universe. There are a lot of things I’ve learned ov...",
-      "tags": [],
+      "tags": ["Learning","Tips"],
       "categories": [],
       "word_count": 585,
       "content_type": "blog_post"
@@ -1176,7 +1210,7 @@
       "url": "https://bekahhw.com//The-Great-Experience-of-My-First-Tech-related-Job-Interview",
       "date": "2019-04-06",
       "excerpt": "My plan has always been to interview for jobs after I finished Flatiron School. But when the perfect job comes along, you have to apply for it. It was PT, remote, paid well, and was working for an ...",
-      "tags": [],
+      "tags": ["Career","Interview"],
       "categories": [],
       "word_count": 447,
       "content_type": "blog_post"
@@ -1187,7 +1221,7 @@
       "url": "https://bekahhw.com//My-Rails-+-JS-Project-A-lesson-in-detective-work",
       "date": "2019-03-23",
       "excerpt": "I’ll admit, when I started taking my Rails project and adding JavaScript, it broke my heart a little. I loved where I had left off and I had big plans for how to expand it. I could see it all in my...",
-      "tags": [],
+      "tags": ["Technical","Learning"],
       "categories": [],
       "word_count": 717,
       "content_type": "blog_post"
@@ -1199,7 +1233,7 @@
       "date": "2019-03-03",
       "excerpt": "There’s enough pressure going into an interview. You don’t need to be unprepared too. Feeling anxious about my upcoming job search, I turned to the hive mind that is Twitter. Here’s what I learned:
 ",
-      "tags": [],
+      "tags": ["Career","Tips"],
       "categories": [],
       "word_count": 706,
       "content_type": "blog_post"
@@ -1210,7 +1244,7 @@
       "url": "https://bekahhw.com//Building-Out-Our-Schema-Screenwriting-Project-Continued",
       "date": "2019-02-23",
       "excerpt": "So we have our models and associations, but before we really start to code, we need to get a better idea of what information these models will hold. When we look at the schema, it gives us a pictur...",
-      "tags": [],
+      "tags": ["Technical","Learning"],
       "categories": [],
       "word_count": 688,
       "content_type": "blog_post"
@@ -1221,7 +1255,7 @@
       "url": "https://bekahhw.com//Making-Associations-The-Basics",
       "date": "2019-02-17",
       "excerpt": "I like to think of associations as relationships. How is this model related to that model? If they met each other on the street, and their friend was there, how would they describe their relationsh...",
-      "tags": [],
+      "tags": ["Technical","Learning"],
       "categories": [],
       "word_count": 620,
       "content_type": "blog_post"
@@ -1232,7 +1266,7 @@
       "url": "https://bekahhw.com//For-All-My-Parents-Learning-to-Code",
       "date": "2019-02-01",
       "excerpt": "Look, if you’re a parent, I don’t have to tell you that life is hard with kids. It’s hard when they’re a baby, it’s hard when they’re adolescents, it’s hard when they’re teenagers. It’s hard. But l...",
-      "tags": [],
+      "tags": ["Personal","Career","Tips"],
       "categories": [],
       "word_count": 726,
       "content_type": "blog_post"
@@ -1243,7 +1277,7 @@
       "url": "https://bekahhw.com//Treating-Trauma-with-Technology,-Rails-Style",
       "date": "2019-01-24",
       "excerpt": "I have a love-hate relationship with my trauma. I hate it because of how it stopped my life for so long, how it prevented me from being myself, how it made me feel like I was stuck in this bubble o...",
-      "tags": [],
+      "tags": ["Technical","Mental Health","Personal"],
       "categories": [],
       "word_count": 962,
       "content_type": "blog_post"
@@ -1254,7 +1288,7 @@
       "url": "https://bekahhw.com//I've-coded-for-365-days-straight-and-here's-what-I-learned",
       "date": "2019-01-01",
       "excerpt": "When I woke up last January 1, I didn’t set out to code for a whole year with no days off. I didn’t set out to code in my car on long trips, to go to my first tech conference, or to be on tech-rela...",
-      "tags": [],
+      "tags": ["Personal","Learning"],
       "categories": [],
       "word_count": 893,
       "content_type": "blog_post"
@@ -1265,7 +1299,7 @@
       "url": "https://bekahhw.com//A-Year-in-Review",
       "date": "2018-12-06",
       "excerpt": "It’s been a year since I’ve started coding. December 6th is my one year GitHub-iversary, and December 11th, is my six month anniversary with Flatiron School. It’s amazing to reflect on the last yea...",
-      "tags": [],
+      "tags": ["Personal","Career"],
       "categories": [],
       "word_count": 1047,
       "content_type": "blog_post"
@@ -1276,7 +1310,7 @@
       "url": "https://bekahhw.com//Let's-do-some-chores-A-Sinatra-Project",
       "date": "2018-11-19",
       "excerpt": "For years, when I was teaching college English, I would give students an assignment that had general guidelines and expectations, but they would need to come up with a topic. There were always tear...",
-      "tags": [],
+      "tags": ["Technical","Learning"],
       "categories": [],
       "word_count": 936,
       "content_type": "blog_post"
@@ -1287,7 +1321,7 @@
       "url": "https://bekahhw.com//So-You-Want-to-Learn-to-Code",
       "date": "2018-10-08",
       "excerpt": "I get a lot of messages on social media asking me about coding, what it is, how to get started, whether or not to do a bootcamp, and where to get started. The truth is we are all the hero in our in...",
-      "tags": [],
+      "tags": ["Tips","Career","Learning"],
       "categories": [],
       "word_count": 757,
       "content_type": "blog_post"
@@ -1298,7 +1332,7 @@
       "url": "https://bekahhw.com//The-Coder's-Journey-Finding-a-Mentor",
       "date": "2018-09-26",
       "excerpt": "A couple of months ago I wrote about the Coder’s Journey, and one of the most important parts of any journey is finding a mentor. This might be the person who hands you the sword to defeat the drag...",
-      "tags": [],
+      "tags": ["Career","Tips"],
       "categories": [],
       "word_count": 603,
       "content_type": "blog_post"
@@ -1309,7 +1343,7 @@
       "url": "https://bekahhw.com//Class-and-Instance-methods,-Momlife-Style",
       "date": "2018-09-19",
       "excerpt": "Once you understand variables, you’re ready to dive into classes and objects. A class, in simple terms, is like a blueprint for objects. I like to think of it as an overall storage center for thing...",
-      "tags": [],
+      "tags": ["Technical","Learning"],
       "categories": [],
       "word_count": 626,
       "content_type": "blog_post"
@@ -1320,7 +1354,7 @@
       "url": "https://bekahhw.com//Breaking-Down-Ruby-Variable-Scope",
       "date": "2018-09-12",
       "excerpt": "I’m building my way up to a personal project. But before I approach the project, I want to reinforce basic knowledge by going over what I’ve learned about Ruby and SQL so I can do what I want. For ...",
-      "tags": [],
+      "tags": ["Technical","Learning"],
       "categories": [],
       "word_count": 690,
       "content_type": "blog_post"
@@ -1331,7 +1365,7 @@
       "url": "https://bekahhw.com//Project-Walkthrough",
       "date": "2018-08-21",
       "excerpt": "For my first solo project with Flatiron School, I had to create a CLI Ruby Gem where I scraped data from a website and went at least one level deep. Because I’m still in this weird space where I fe...",
-      "tags": [],
+      "tags": ["Technical","Learning"],
       "categories": [],
       "word_count": 904,
       "content_type": "blog_post"
@@ -1342,7 +1376,7 @@
       "url": "https://bekahhw.com//Top-10-Things-that-Got-Me-Through-My-First-Project",
       "date": "2018-08-20",
       "excerpt": "I hit the point in my Flatiron School curriculum where I had to step away from tutorials and do a project on my own. Nervous didn’t even begin to describe what I was feeling. On top of that, I had ...",
-      "tags": [],
+      "tags": ["Tips","Learning"],
       "categories": [],
       "word_count": 909,
       "content_type": "blog_post"
@@ -1353,7 +1387,7 @@
       "url": "https://bekahhw.com//Building-a-Library-Object-Relationships",
       "date": "2018-08-11",
       "excerpt": "I’ve been trying to understand Ruby object relationships for a while now. And generally, I have a grasp on what that means, but I still spend a lot of time figuring out what belongs to who and who ...",
-      "tags": [],
+      "tags": ["Technical","Learning"],
       "categories": [],
       "word_count": 603,
       "content_type": "blog_post"
@@ -1364,7 +1398,7 @@
       "url": "https://bekahhw.com//It's-Cool-To-talk-to-Yourself",
       "date": "2018-07-19",
       "excerpt": "I’m generally a visual or visual-kinesthetic learner. I think that’s one of the reasons I really enjoy learning with Flatiron School. There’s a lot of reading material, code alongs, and labs. There...",
-      "tags": [],
+      "tags": ["Learning","Tips"],
       "categories": [],
       "word_count": 637,
       "content_type": "blog_post"
@@ -1375,7 +1409,7 @@
       "url": "https://bekahhw.com//Git-and-Github,-the-Screenwriter's-Version",
       "date": "2018-07-09",
       "excerpt": "I’ve had this dream for a while to write a collaborative screenplay. Not a screenplay with a partner. I’ve already done that with my brother a couple of times. A collaborative project would allow m...",
-      "tags": [],
+      "tags": ["Technical","Learning"],
       "categories": [],
       "word_count": 821,
       "content_type": "blog_post"
@@ -1386,7 +1420,7 @@
       "url": "https://bekahhw.com//The-Coder's-Journey-Act-III",
       "date": "2018-06-19",
       "excerpt": "In this final post, we’ll see the hero make it to her end destination. She’s come through the hard part, working with her first client. Will she find it was worth it? Or will she forget everything ...",
-      "tags": [],
+      "tags": ["Learning","Personal"],
       "categories": [],
       "word_count": 342,
       "content_type": "blog_post"
@@ -1397,7 +1431,7 @@
       "url": "https://bekahhw.com//The-Coder's-Journey-Act-II",
       "date": "2018-06-14",
       "excerpt": "If you read my last post, you know I’ve made it a little further in my coder’s quest. This post, I’m switching it up a bit from Joseph Campbell to Chris Vogler, who’s 2007 take on the Hero’s Journe...",
-      "tags": [],
+      "tags": ["Learning","Personal"],
       "categories": [],
       "word_count": 667,
       "content_type": "blog_post"
@@ -1408,7 +1442,7 @@
       "url": "https://bekahhw.com//Things-are-about-to-get-serious",
       "date": "2018-06-11",
       "excerpt": "If you look back at my second blog post, you’ll see that Flatiron School was my first love that I hoped I might come back to someday. And I’m so happy to write that I’m the recipient of the of a Fa...",
-      "tags": [],
+      "tags": ["Bootcamp","Personal"],
       "categories": [],
       "word_count": 404,
       "content_type": "blog_post"
@@ -1419,7 +1453,7 @@
       "url": "https://bekahhw.com//The-Coder's-Journey-The-Ordinary-World",
       "date": "2018-06-07",
       "excerpt": "Last night, it hit me. Learning to code is the same thing as  what Joseph Campbell famously called the monomyth. Like the heroes of our favorite myths or action movies, we start with a call to adve...",
-      "tags": [],
+      "tags": ["Learning","Personal"],
       "categories": [],
       "word_count": 328,
       "content_type": "blog_post"
@@ -1430,7 +1464,7 @@
       "url": "https://bekahhw.com//Conferences-are-for-Newbies",
       "date": "2018-05-31",
       "excerpt": "It’s been a week since my first full, IRL conference, and my mind is still exploding. Special thanks to the wonderful organizers from Revolution Conference for the diversity ticket. Without it, I w...",
-      "tags": [],
+      "tags": ["Career","Tips","Community"],
       "categories": [],
       "word_count": 555,
       "content_type": "blog_post"
@@ -1443,7 +1477,7 @@
       "excerpt": "I’m an awkward INTJ. If you don’t know what that means, I love this description from 16 Personalities:
 
   INTJs are brilliant and confident in bodies of knowledge they have taken the time to unders...",
-      "tags": [],
+      "tags": ["Tips","Career","Community"],
       "categories": [],
       "word_count": 783,
       "content_type": "blog_post"
@@ -1456,7 +1490,7 @@
       "excerpt": "This is for all my moms out there learning to code. Happy Mothers Day!
 
 “How do you do it? How do you momlife and codelife at the same time? How do you not lose your mind?” Here’s the thing, you ha...",
-      "tags": [],
+      "tags": ["Personal","Career"],
       "categories": [],
       "word_count": 817,
       "content_type": "blog_post"
@@ -1467,7 +1501,7 @@
       "url": "https://bekahhw.com//I-m-Leaving-Academia-Because-I-Did-a-Coding-Bootcamp",
       "date": "2018-05-02",
       "excerpt": "I’ve adjuncted in a university English Department for the last ten years, and it took learning to code to realize that adjuncting was a dead-end job. In January, I took an accelerated bootcamp prep...",
-      "tags": [],
+      "tags": ["Bootcamp","Career"],
       "categories": ["life","and","code"],
       "word_count": 470,
       "content_type": "blog_post"
@@ -1478,7 +1512,7 @@
       "url": "https://bekahhw.com//To-Template-or-Not-to-Template",
       "date": "2018-04-26",
       "excerpt": "This post is going to reveal how inexperienced I am. About six weeks ago, I decided I was going to build a blog with Jekyll and host it with Github pages. I have no idea why. I’m sure I must’ve hea...",
-      "tags": [],
+      "tags": ["Learning","Technical"],
       "categories": ["life","and","code"],
       "word_count": 531,
       "content_type": "blog_post"
@@ -1489,7 +1523,7 @@
       "url": "https://bekahhw.com//How-coding-has-been-therapeutic-for-my-PTSD",
       "date": "2018-04-23",
       "excerpt": "I’m at a red light, but my mind’s not there. It’s back in the hospital, remembering the doctor saying “that’s strange.” I’m in the grocery store, but my mind’s not there. It’s in the doctor’s offic...",
-      "tags": [],
+      "tags": ["Mental Health","Personal"],
       "categories": ["life","and","code"],
       "word_count": 674,
       "content_type": "blog_post"
@@ -1500,7 +1534,7 @@
       "url": "https://bekahhw.com//How-the-humanities-can-save-technology",
       "date": "2018-04-20",
       "excerpt": "Obviously, the tech industry isn’t dead or even dying. In fact, it’s flourishing. So why would we need to save it? Well, no one can deny that there is a toxic culture going on in the tech industry,...",
-      "tags": [],
+      "tags": ["Career","Opinion"],
       "categories": [],
       "word_count": 415,
       "content_type": "blog_post"
@@ -1511,7 +1545,7 @@
       "url": "https://bekahhw.com//Don't-forget-the-lipstick-a-couple-best-practices-for-new-coders",
       "date": "2018-04-17",
       "excerpt": "I have a very disorganized 148 page google doc of notes I’ve taken from all the online resources I’ve used for HTML, CSS, JS, and ethereum. They don’t look pretty. In fact, they’re messier than my ...",
-      "tags": [],
+      "tags": ["Tips","Best Practices"],
       "categories": [],
       "word_count": 549,
       "content_type": "blog_post"
@@ -1522,7 +1556,7 @@
       "url": "https://bekahhw.com//If-one-of-your-goals-isn-t-to-help-someone,-you-re-doing-it-wrong",
       "date": "2018-04-14",
       "excerpt": "I’ve been incredibly fortunate to find an amazing community of people cheering me on as I learn to code. I haven’t had to face discrimination in the workplace, people demeaning my abilities because...",
-      "tags": [],
+      "tags": ["Career","Community"],
       "categories": [],
       "word_count": 667,
       "content_type": "blog_post"
@@ -1533,7 +1567,7 @@
       "url": "https://bekahhw.com//The-House-that-Code-Built",
       "date": "2018-04-13",
       "excerpt": "I’m the type of person who judges a book by its cover. (I know, I’m a college English teacher, I should know better. But I can tell you from experience that there are some awesome books with awesom...",
-      "tags": [],
+      "tags": ["Learning","Technical"],
       "categories": [],
       "word_count": 333,
       "content_type": "blog_post"
@@ -1544,7 +1578,7 @@
       "url": "https://bekahhw.com//I-m-Short,-But-Not-Selling-Myself-Short",
       "date": "2018-04-10",
       "excerpt": "I’m only 5’1 and ¾.  That’s right, when you’re short, you count that ¾. Nothing’s going to change the fact that I’ve been this height since I was 11.  Apparently, though, some people think my heigh...",
-      "tags": [],
+      "tags": ["Career","Opinion"],
       "categories": [],
       "word_count": 318,
       "content_type": "blog_post"
@@ -1555,7 +1589,7 @@
       "url": "https://bekahhw.com//New-Kid-on-the-Block(chain)",
       "date": "2018-04-05",
       "excerpt": "Yep, I love puns. I probably love them more than I love coding, but that’s because I’ve spent my last ten years as an adjunct English instructor. Actually, I think that I really enjoyed learning so...",
-      "tags": [],
+      "tags": ["Technical","Learning"],
       "categories": ["blockchain"],
       "word_count": 319,
       "content_type": "blog_post"
@@ -1566,7 +1600,7 @@
       "url": "https://bekahhw.com//The-Dating-Game-Learning-to-Code,-part-II",
       "date": "2018-03-30",
       "excerpt": "I’ve been dating around for a while now, and I’ve found some good partners and some bad partners. But what’s important to me? Well, I’m interested in know the what, how, and why questions. What are...",
-      "tags": [],
+      "tags": ["Bootcamp","Learning"],
       "categories": [],
       "word_count": 500,
       "content_type": "blog_post"
@@ -1577,7 +1611,7 @@
       "url": "https://bekahhw.com//The-Dating-Game-Learning-to-Code,-part-I",
       "date": "2018-03-24",
       "excerpt": "Learning to code by yourself is a lot like dating. You check out what’s out there, who’s doing what, who has a sleek, new interface, who keeps you engaged, and who can help you to be the fullest ve...",
-      "tags": [],
+      "tags": ["Bootcamp","Learning","Mental Health"],
       "categories": [],
       "word_count": 240,
       "content_type": "blog_post"

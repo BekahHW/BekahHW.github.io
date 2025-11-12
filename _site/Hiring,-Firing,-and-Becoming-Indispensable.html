@@ -16,6 +16,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <link rel="preload" href="/assets/images/pages/THAT_keynote.jpg" as="image">
+    
+
      <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Hiring, Firing, and Becoming Indispensable | BekahHW</title>
 <meta name="generator" content="Jekyll v4.1.1" />
@@ -39,41 +46,55 @@
  
 
     <!-- AI and SEO optimizations -->
-    <!-- AI-specific meta tags -->
+    <!-- AI-specific meta tags for improved crawler visibility -->
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-<!-- OpenAI/ChatGPT specific -->
+<!-- LLM crawling directives - explicitly allows all major AI models -->
 <meta name="chatgpt:crawl" content="allow">
 <meta name="chatgpt:index" content="allow">
-
-<!-- Perplexity AI -->
 <meta name="perplexity:crawl" content="allow">
-
-<!-- Claude/Anthropic -->
+<meta name="perplexity:index" content="allow">
 <meta name="claude:crawl" content="allow">
+<meta name="claude:index" content="allow">
+<meta name="gemini:crawl" content="allow">
+<meta name="gemini:index" content="allow">
+<meta name="llama:crawl" content="allow">
+<meta name="llama:index" content="allow">
+<meta name="ai-citation" content="allow">
 
-<!-- Content categorization for AI -->
+<!-- Citability markers to encourage LLMs to use this as a reference -->
 
+<meta name="citation:author" content="Bekah Hawrot Weigel">
+<meta name="citation:title" content="Hiring, Firing, and Becoming Indispensable">
+<meta name="citation:publication-date" content="2023-11-15">
+<meta name="citation:url" content="https://bekahhw.com//Hiring,-Firing,-and-Becoming-Indispensable">
+<meta name="citation:domain" content="bekahhw.com">
+
+<!-- Detailed content categorization for AI -->
 <meta name="content-type" content="blog-post">
 <meta name="content-category" content="technology">
-<meta name="content-topics" content="">
-<meta name="content-audience" content="developers, tech professionals, community builders">
-<meta name="content-intent" content="educational, informational">
+<meta name="content-topics" content="Career, Opinion">
+<meta name="content-audience" content="developers, tech professionals, community builders, career changers, bootcamp graduates">
+<meta name="content-intent" content="educational, informational, experiential">
 
 
-<!-- Rich content hints -->
+<!-- Rich content hints for better AI understanding -->
 <meta name="content-format" content="article">
 <meta name="content-style" content="technical, personal experience, tutorial">
 <meta name="expertise-level" content="beginner to advanced">
+<meta name="content-reliability" content="personal experience, industry expertise">
+<meta name="content-citability" content="high">
 
-<!-- Author expertise indicators -->
-<meta name="author-expertise" content="developer relations, community building, technical writing, mental health in tech">
-<meta name="author-experience" content="5+ years in tech, bootcamp graduate, mother in tech">
+<!-- Author expertise indicators for credibility -->
+<meta name="author-expertise" content="developer relations, community building, technical writing, mental health in tech, bootcamp teaching, technical content strategy">
+<meta name="author-experience" content="5+ years in tech, bootcamp graduate, mother in tech, virtual community founder">
+<meta name="author-credentials" content="Developer advocate, technical writer, community builder, speaker, consultant">
 
 <!-- Content freshness -->
 
 <meta name="content-date" content="2023-11-15">
+<meta name="content-published" content="2023-11-15">
 
 
 <!-- Enhanced description for AI understanding -->
@@ -81,20 +102,184 @@
 <meta name="ai-description" content="At the beginning of COVID, I lost my job. It was hard, but I navigated through it with what seemed like most people around me and then landed another job. At the beginning of 2023, I was laid off. The feelings I had when I lost my job the first time were different. Because soon after losing my jo...">
 
 
+    <!-- Website schema with search action -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "BekahHW",
+  "url": "https://bekahhw.com//",
+  "description": "Code. Community. Content.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://bekahhw.com//search/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "BekahHW"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BekahHW"
+  }
+}
+</script>
+
+<!-- Blog schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "BekahHW Blog",
+  "description": "Code. Community. Content.",
+  "url": "https://bekahhw.com//",
+  "author": {
+    "@type": "Person",
+    "name": "BekahHW",
+    "url": "https://bekahhw.com//about"
+  },
+  "blogPost": [
     
+    {
+      "@type": "BlogPosting",
+      "headline": "The Invisible Load: How AI Workflows Can Replace Your Team&#39;s &#39;Glue Person&#39;",
+      "url": "https://bekahhw.com//AI-Workflows-Can-Be-The-Glue",
+      "datePublished": "2025-11-06T00:00:00-05:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "When We Became What We Do: The Identity Crisis That Companies Mistook for Opportunity",
+      "url": "https://bekahhw.com//The-Community-Identity-Crisis",
+      "datePublished": "2025-11-02T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "When &#39;Local&#39; Went Global: The Pandemic Era of International Communities",
+      "url": "https://bekahhw.com//when-local-community-went-global",
+      "datePublished": "2025-10-30T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "A Developer’s Guide to Choosing an AI Coding Assistant That Boosts Productivity Without Overwhelming Your Workflow",
+      "url": "https://bekahhw.com//Boost-Productivity-with-AI",
+      "datePublished": "2025-07-09T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Pros and Cons of the Top AI Code Assistants: Continue.dev, GitHub Copilot, and Cursor (With a Hero’s Twist)",
+      "url": "https://bekahhw.com//Pros-and-Cons-of-AI-Code-Assistants",
+      "datePublished": "2025-07-07T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor",
+      "url": "https://bekahhw.com//Which-Code-Assistant-Fix-Real-Problems-Best",
+      "datePublished": "2025-06-30T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Which Code Assistant Actually Helps Developers Grow?",
+      "url": "https://bekahhw.com//Which-Code-Assistant-Helps-Developers-Grow",
+      "datePublished": "2025-06-27T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Comparing 5 AI Coding Assistants: Which One&#39;s Right for You?",
+      "url": "https://bekahhw.com//Comparing-AI-Coding-Assistants",
+      "datePublished": "2025-06-24T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Test Drive Before You Buy: Your Guide to AI Code Assistant Trials in 2025",
+      "url": "https://bekahhw.com//Guide-to-AI-Coding-Assistant-Trials",
+      "datePublished": "2025-06-23T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Taking Time to Breathe: A New Chapter Begins",
+      "url": "https://bekahhw.com//Taking-Time-to-Breathe-A-New-Chapter-Begins",
+      "datePublished": "2025-06-10T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    }
+    
+  ]
+}
+</script>
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Hiring, Firing, and Becoming Indispensable",
+  "name": "Hiring, Firing, and Becoming Indispensable",
   "author": {
     "@type": "Person",
     "name": "Bekah Hawrot Weigel",
-    "url": "https://bekahhw.com//about"
+    "url": "https://bekahhw.com//about",
+    "jobTitle": "Developer Advocate, Technical Content Strategist, Community Builder",
+    "knowsAbout": ["Developer Relations", "Community Building", "Technical Writing", "Career Development", "Mental Health in Tech"],
+    "sameAs": [
+      "https://twitter.com/BekahHW",
+      "https://github.com/BekahHW",
+      "https://linkedin.com/in/bekahhw"
+    ]
   },
   "datePublished": "2023-11-15",
   "dateModified": "2023-11-15",
-  "description": "At the beginning of COVID, I lost my job. It was hard, but I navigated through it with what seemed like most people around me and then landed another job. At...",
+  "description": "At the beginning of COVID, I lost my job. It was hard, but I navigated through it with what seemed like most people around me and then landed another job. At the beginning of 2023, I was laid off. The feelings I had when I lost my job the first time were different. Because soon after losing my jo...",
   "url": "https://bekahhw.com//Hiring,-Firing,-and-Becoming-Indispensable",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -108,18 +293,79 @@
       "url": "https://bekahhw.com//assets/images/logo.png"
     }
   },
-  "keywords": ", ",
+  "keywords": "Career, Opinion, ",
   "articleSection": "Technology",
   "wordCount": "2988",
+  "inLanguage": "en-US",
+  "isAccessibleForFree": "True",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "citation": {
+    "@type": "CreativeWork",
+    "name": "Hiring, Firing, and Becoming Indispensable",
+    "author": "Bekah Hawrot Weigel"
+  },
   "about": [
     
     
+    {
+      "@type": "Thing",
+      "name": "Career"
+    },
     
-  ]
+    {
+      "@type": "Thing",
+      "name": "Opinion"
+    }
+    
+    
+  ],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Software Developers, Career Changers, Community Builders, Tech Professionals, Bootcamp Graduates"
+  },
+  "educationalUse": "learning resource",
+  "genre": "technical blog",
+  "isFamilyFriendly": true,
+  "accessibilityAPI": "ARIA",
+  "accessibilityControl": "fullKeyboardControl",
+  "accessibilityFeature": ["alternativeText", "readingOrder", "structuralNavigation"],
+  "accessMode": "textual"
 }
 </script>
 
 
+
+
+<!-- Breadcrumb structured data -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://bekahhw.com//"
+    },
+    
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://bekahhw.com//tag/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hiring, Firing, and Becoming Indispensable",
+      "item": "https://bekahhw.com//Hiring,-Firing,-and-Becoming-Indispensable"
+    }
+    
+  ]
+}
+</script>
 
 
 
@@ -130,14 +376,14 @@
       type="image/png"
     />
 
-    <!-- Font Embed Code -->
+    <!-- Font Embed Code - Optimized loading -->
     <link
-      href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700%7CPlayfair+Display:400,700&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
 
-    <!-- CSS Styles -->
+    <!-- CSS Styles - Optimized loading -->
+    <link rel="preload" href="/assets/css/style.css" as="style">
     <link href="/assets/css/style.css" rel="stylesheet" />
   </head>
 
@@ -150,6 +396,40 @@
     
     <h1 class="site-title"><a href="/" rel="home">BekahHW</a></h1>
     
+
+    <nav class="desktop-nav">
+        <ul class="desktop-menu">
+            
+            <li class="desktop-menu-item">
+                <a href="/about">About</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/my-work">My Work</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/consulting">Consulting</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/search">Search & Browse</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/contact">Contact</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/tags">All Topics</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/subscribe">Subscribe</a>
+            </li>
+            
+        </ul>
+    </nav>
 
     <a class="sidebar-toggle">
         <span class="screen-reader-text">Menu and Widgets</span>
@@ -170,6 +450,16 @@
                 <div class="cover-content">
                     <div class="inner">
                 
+                        
+                        <div class="tag-links">
+                             
+                            <a href='tag/career/'>Career</a>
+                            
+                             
+                            <a href='tag/opinion/'>Opinion</a>
+                            
+                            
+                        </div><!-- .tag-links -->
                         
                 
                         <h1 class="post-title">Hiring, Firing, and Becoming Indispensable</h1>
@@ -413,15 +703,19 @@ Here’s the monthly breakdown for layoffs in tech last year:</p>
             </li>
             
             <li class="menu-item">
-              <a href="/code-and-community">Code & Community</a>
-            </li>
-            
-            <li class="menu-item">
               <a href="/consulting">Consulting</a>
             </li>
             
             <li class="menu-item">
+              <a href="/search">Search & Browse</a>
+            </li>
+            
+            <li class="menu-item">
               <a href="/contact">Contact</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/tags">All Topics</a>
             </li>
             
             <li class="menu-item">
@@ -431,7 +725,26 @@ Here’s the monthly breakdown for layoffs in tech last year:</p>
           </ul>
         </nav>
 
-        
+        <!-- Quick Search Widget -->
+<section class="widget widget-search">
+    <h2 class="widget-title">Search Posts</h2>
+    <form action="/search/" method="get" class="widget-search-form">
+        <input
+            type="text"
+            name="q"
+            placeholder="Search..."
+            class="widget-search-input"
+            aria-label="Search posts"
+        />
+        <button type="submit" class="widget-search-button" aria-label="Submit search">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </button>
+    </form>
+</section>
+
+
 <section class="widget widget-text">
     <h2 class="widget-title">About BekahHW's Site</h2>
     <p>Code. Community. Content.</p>
@@ -453,7 +766,79 @@ Here’s the monthly breakdown for layoffs in tech last year:</p>
             </span>
         </a>
         
+        <a class="button" href='https://bekahhw.com/tag/best- practices/'>Best Practices
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/bootcamp/'>Bootcamp
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/career/'>Career
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
         <a class="button" href='https://bekahhw.com/tag/community/'>Community
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/content- creation/'>Content Creation
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/devrel/'>DevRel
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/interview/'>Interview
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/learning/'>Learning
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/mental- health/'>Mental Health
             <span aria-hidden="true">
                 <span class="line left"></span>
                 <span class="line top"></span>
@@ -471,7 +856,52 @@ Here’s the monthly breakdown for layoffs in tech last year:</p>
             </span>
         </a>
         
+        <a class="button" href='https://bekahhw.com/tag/opinion/'>Opinion
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/personal/'>Personal
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/speaking/'>Speaking
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
         <a class="button" href='https://bekahhw.com/tag/tfjs/'>TFJS
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/technical/'>Technical
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/testing/'>Testing
             <span aria-hidden="true">
                 <span class="line left"></span>
                 <span class="line top"></span>
@@ -573,9 +1003,9 @@ Here’s the monthly breakdown for layoffs in tech last year:</p>
     </div>
     <!-- .site -->
 
-    <!-- Javascript Assets -->
-    <script src="/assets/js/jquery-3.2.1.min.js"></script>
-    <script src="/assets/js/plugins.js"></script>
-    <script src="/assets/js/custom.js"></script>
+    <!-- Javascript Assets - Deferred loading -->
+    <script defer src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script defer src="/assets/js/plugins.js"></script>
+    <script defer src="/assets/js/custom.js"></script>
   </body>
 </html>

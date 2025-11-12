@@ -8,10 +8,624 @@
     <language>en-us</language>
     <managingEditor>rhawrot@gmail.com (BekahHW)</managingEditor>
     <webMaster>rhawrot@gmail.com (BekahHW)</webMaster>
-    <lastBuildDate>Wed, 16 Jul 2025 10:34:46 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 12 Nov 2025 14:16:26 -0500</lastBuildDate>
     
       <item>
-        <title>A Developer’s Guide to Choosing an AI Coding Assistant That Boosts Productivity Without Overwhelming Your Workflow)</title>
+        <title>The Invisible Load: How AI Workflows Can Replace Your Team's 'Glue Person'</title>
+        <description>&lt;p&gt;Every team has one, and, tbh, a lot of relationships have one. The person who remembers. For teams, it might be the person who remembers to update the changelog. Who posts the weekly standup summary. Who follows up on that GitHub issue from three weeks ago. Who makes sure the docs match the latest release. Who bridges the gap between what engineering ships and what the rest of the company knows about.&lt;/p&gt;
+
+&lt;p&gt;We call this “glue work,” and research shows it disproportionately falls on women in teams, and mothers in relationships. It’s the invisible labor that keeps everything running smoothly, but rarely shows up in performance reviews or promotion discussions.&lt;/p&gt;
+
+&lt;p&gt;The problem is that glue work is essential, but it shouldn’t be someone’s primary job. And it definitely shouldn’t be the reason talented people get passed over for advancement.&lt;/p&gt;
+
+&lt;p&gt;But what if AI workflows could be the glue instead?&lt;/p&gt;
+
+&lt;h2 id=&quot;the-glue-work-problem&quot;&gt;The Glue Work Problem&lt;/h2&gt;
+
+&lt;p&gt;Tanya Reilly’s essay &lt;a href=&quot;https://www.noidea.dog/glue/&quot;&gt;“Being Glue”&lt;/a&gt; describes how critical but undervalued work like coordinating between teams, translating technical concepts, maintaining documentation, ensuring follow-through often becomes invisible. The people who do it often make everything seem easy. But there’s a cost, and it’s compounding in the background.&lt;/p&gt;
+
+&lt;p&gt;If you have one teammate who’s spending hours each week:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Updating tickets after standups&lt;/li&gt;
+  &lt;li&gt;Posting release summaries to Slack&lt;/li&gt;
+  &lt;li&gt;Making sure customer support knows about new features&lt;/li&gt;
+  &lt;li&gt;Chasing down PR reviews&lt;/li&gt;
+  &lt;li&gt;Updating documentation after merges&lt;/li&gt;
+  &lt;li&gt;Following up on blocked issues&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;when none of this is their actual job, then they may be your “glue.” All of it is necessary. But when they stop doing it, things fall apart.&lt;/p&gt;
+
+&lt;p&gt;Maybe it doesn’t seem that bad right now, but coordination work compounds as teams grow.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-if-workflows-could-be-the-glue&quot;&gt;What If Workflows Could Be the Glue?&lt;/h2&gt;
+
+&lt;p&gt;This is where composed AI workflows change everything. Not because they eliminate coordination work, but because they automate it at the seams between tasks.&lt;/p&gt;
+
+&lt;p&gt;In his post on &lt;a href=&quot;https://www.linkedin.com/pulse/individual-workflows-scale-linearly-composed-compound-chad-metcalf-x7fyc&quot;&gt;composed workflows&lt;/a&gt;, Continue CEO Chad Metcalf makes an important distinction: a single workflow saves time, but composed workflows compound. When the output of one workflow can trigger the next, you’re doing more than just automating individual tasks. You’re automating the entire coordination system.&lt;/p&gt;
+
+&lt;p&gt;Let’s look at what this actually means.&lt;/p&gt;
+
+&lt;h3 id=&quot;example-1-the-release-communication-burden&quot;&gt;Example 1: The Release Communication Burden&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Current state:&lt;/strong&gt; After every release, someone (usually the same someone) needs to:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Draft changelog entries&lt;/li&gt;
+  &lt;li&gt;Update product documentation&lt;/li&gt;
+  &lt;li&gt;Post to company Slack&lt;/li&gt;
+  &lt;li&gt;Update customer-facing docs&lt;/li&gt;
+  &lt;li&gt;Create support team briefing&lt;/li&gt;
+  &lt;li&gt;Close related Linear issues&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That “someone” spends 2-3 hours per release on coordination work. Not working on more impactful work. Just making sure everyone knows what shipped.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;With composed workflows:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Merge to main 
+  → Extract changes from PR descriptions 
+  → Draft changelog entry 
+  → Update technical docs 
+  → Generate customer-facing summary 
+  → Post to internal Slack 
+  → Update support knowledge base 
+  → Close related issues
+  → Post completion summary
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The entire coordination chain runs automatically. The output of one workflow triggers the next. No one spends their afternoon being glue. Instead, they become the human in the loop who reviews and improves the process.&lt;/p&gt;
+
+&lt;h3 id=&quot;example-2-the-follow-up-tax&quot;&gt;Example 2: The Follow-Up Tax&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Current state:&lt;/strong&gt; You’re in standup. Someone mentions they’re blocked on a security review. Everyone nods. The meeting ends.&lt;/p&gt;
+
+&lt;p&gt;Three days later, nothing’s happened because nobody remembered to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create a ticket&lt;/li&gt;
+  &lt;li&gt;Tag the security team&lt;/li&gt;
+  &lt;li&gt;Follow up when there’s no response&lt;/li&gt;
+  &lt;li&gt;Update the original ticket&lt;/li&gt;
+  &lt;li&gt;Let the blocked person know it’s unblocked&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Guess who remembers? The glue person, who now spends their time tracking other people’s blockers instead of writing code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;With composed workflows:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;Blocked on X&quot; detected in standup notes 
+  → Create Linear issue with context 
+  → Tag relevant team 
+  → Set reminder for 2 days 
+  → Follow up if no response 
+  → Update original ticket when resolved 
+  → Notify blocked person
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The follow-through happens automatically. Nobody has to be the memory keeper.&lt;/p&gt;
+
+&lt;h3 id=&quot;example-3-the-support-handoff&quot;&gt;Example 3: The Support Handoff&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Current state:&lt;/strong&gt; Customer reports a bug in Slack. Engineering fixes it. But somehow:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support never gets notified the fix is live&lt;/li&gt;
+  &lt;li&gt;Customer still thinks it’s broken&lt;/li&gt;
+  &lt;li&gt;Docs don’t reflect the fix&lt;/li&gt;
+  &lt;li&gt;The original Slack thread is forgotten&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Someone (the glue person) ends up manually connecting all these dots. Every. Single. Time.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;With composed workflows:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Bug report in Slack 
+  → Create Linear issue 
+  → PR created and merged 
+  → Update documentation 
+  → Generate fix summary 
+  → Post to support channel 
+  → Reply to original Slack thread 
+  → Close Linear issue with summary
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The entire loop closes itself. From report to fix to notification to documentation to closure. No human glue required.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-this-works-where-other-solutions-dont&quot;&gt;Why This Works Where Other Solutions Don’t&lt;/h2&gt;
+
+&lt;h3 id=&quot;its-not-about-replacing-people&quot;&gt;It’s Not About Replacing People&lt;/h3&gt;
+
+&lt;p&gt;AI workflows aren’t replacing the glue person’s judgment or expertise. They’re replacing the repetitive coordination tasks that shouldn’t require judgment.&lt;/p&gt;
+
+&lt;p&gt;When a PR merges, updating the changelog doesn’t need human insight. Following up on a blocked issue after two days doesn’t require strategic thinking. Posting a deployment summary to Slack isn’t creative work.&lt;/p&gt;
+
+&lt;p&gt;These are mechanical transitions between tasks. Perfect candidates for automation.&lt;/p&gt;
+
+&lt;h3 id=&quot;it-compounds-over-time&quot;&gt;It Compounds Over Time&lt;/h3&gt;
+
+&lt;p&gt;Here’s what makes this different from other automation attempts: composition creates compounding value.&lt;/p&gt;
+
+&lt;p&gt;Each workflow you add doesn’t just save time on that specific task. It amplifies the value of workflows already running. The deployment workflow outputs information the changelog workflow needs. The Linear sync workflow triggers the documentation update workflow. The customer support workflow feeds the product insights workflow.&lt;/p&gt;
+
+&lt;p&gt;You’re not just automating individual tasks. You’re automating the entire coordination system.&lt;/p&gt;
+
+&lt;h3 id=&quot;it-preserves-the-actual-value-of-glue&quot;&gt;It Preserves the Actual Value of “Glue”&lt;/h3&gt;
+
+&lt;p&gt;The valuable part of glue work isn’t the mechanical coordination. It’s the strategic connection-making, the pattern recognition, the ability to see across teams and translate context.&lt;/p&gt;
+
+&lt;p&gt;When AI workflows handle the mechanical parts, the humans who were doing glue work can focus on the strategic parts.&lt;/p&gt;
+
+&lt;p&gt;They can spend time:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Identifying patterns across customer feedback&lt;/li&gt;
+  &lt;li&gt;Improving team processes&lt;/li&gt;
+  &lt;li&gt;Mentoring junior developers&lt;/li&gt;
+  &lt;li&gt;Solving actually complex problems&lt;/li&gt;
+  &lt;li&gt;Advancing their technical skills&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The things that actually deserve their expertise.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-composition-advantage&quot;&gt;The Composition Advantage&lt;/h2&gt;
+
+&lt;p&gt;Individual workflows are helpful. Composed workflows are transformative.&lt;/p&gt;
+
+&lt;p&gt;As Chad Metcalf writes in his post on composed workflows: “Individual workflows give linear improvements. Composed workflows compound.” This distinction is crucial when thinking about how to replace organizational glue work.&lt;/p&gt;
+
+&lt;p&gt;Because here’s what happens when workflows compose: the coordination work stops being a burden on any individual. Instead, it becomes part of the system itself.&lt;/p&gt;
+
+&lt;p&gt;You’re not asking someone to remember to update the docs after deployment. The deployment workflow triggers the documentation workflow automatically. You’re not relying on someone to follow up on blocked issues. The standup workflow creates follow-up workflows with built-in reminders.&lt;/p&gt;
+
+&lt;p&gt;This is infrastructure that scales with your team. As you grow, the glue work compounds. But with composed workflows, the automation compounds instead.&lt;/p&gt;
+
+&lt;h2 id=&quot;real-team-impact-beyond-time-savings&quot;&gt;Real Team Impact: Beyond Time Savings&lt;/h2&gt;
+
+&lt;p&gt;Let’s talk about what this actually means for teams.&lt;/p&gt;
+
+&lt;h3 id=&quot;no-more-that-person&quot;&gt;No More “That Person”&lt;/h3&gt;
+
+&lt;p&gt;When coordination work is automated, it stops being concentrated on one or two people. The person who used to spend 10 hours a week on glue work can spend those hours on actual engineering. Or product work. Or whatever they were actually hired to do.&lt;/p&gt;
+
+&lt;p&gt;More importantly: they stop being the bottleneck. When knowledge and coordination flows through automated systems rather than through specific people, teams become more resilient. People can take vacation without everything falling apart. New team members can onboard without needing to know who to ask for everything.&lt;/p&gt;
+
+&lt;h3 id=&quot;career-equity&quot;&gt;Career Equity&lt;/h3&gt;
+
+&lt;p&gt;Glue work is often invisible during performance reviews. “Sarah keeps everything running smoothly” doesn’t translate to promotion decisions the way “shipped three major features” does.&lt;/p&gt;
+
+&lt;p&gt;When AI workflows handle coordination, engineers can focus on work that’s more visible and valued. This has disproportionate impact on people—often women and mothers—who tend to take on more glue work.&lt;/p&gt;
+
+&lt;h3 id=&quot;team-velocity-at-scale&quot;&gt;Team Velocity at Scale&lt;/h3&gt;
+
+&lt;p&gt;Small teams can coordinate informally. “Hey, remember to update the docs” works when you’re five people.&lt;/p&gt;
+
+&lt;p&gt;At 20 people? 50? Informal coordination breaks down. You need systems. The question is: will those systems be human-dependent, automated, or composed with a human in the loop?&lt;/p&gt;
+
+&lt;p&gt;Composed workflows scale. Human coordination doesn’t.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-actually-do-this&quot;&gt;How to Actually Do This&lt;/h2&gt;
+
+&lt;p&gt;Don’t start by trying to automate everything. Start with the most repetitive, predictable coordination work on your team.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1-identify-your-glue-work&quot;&gt;Step 1: Identify Your Glue Work&lt;/h3&gt;
+
+&lt;p&gt;Have an honest conversation. Ask:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;What coordination tasks happen after every release?&lt;/li&gt;
+  &lt;li&gt;What follow-ups consistently fall through the cracks?&lt;/li&gt;
+  &lt;li&gt;Where does information get stuck between teams?&lt;/li&gt;
+  &lt;li&gt;Who’s spending time on mechanical updates vs. strategic work?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Write it down. You’re looking for patterns, not one-off tasks.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2-build-one-workflow&quot;&gt;Step 2: Build One Workflow&lt;/h3&gt;
+
+&lt;p&gt;Pick the most painful coordination task. The one that happens constantly and requires zero judgment.&lt;/p&gt;
+
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Changelog updates after merges&lt;/li&gt;
+  &lt;li&gt;Standup note distribution&lt;/li&gt;
+  &lt;li&gt;PR review reminders&lt;/li&gt;
+  &lt;li&gt;Linear ticket status syncing&lt;/li&gt;
+  &lt;li&gt;Documentation updates post-deployment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Build a workflow that handles it end-to-end. Run it for a week. Measure intervention rate—how often does it need human correction?&lt;/p&gt;
+
+&lt;p&gt;Get that intervention rate below 5%. Then move to step 3.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3-compose&quot;&gt;Step 3: Compose&lt;/h3&gt;
+
+&lt;p&gt;Look at the output of your first workflow. What happens next in the coordination chain?&lt;/p&gt;
+
+&lt;p&gt;If your workflow posts deployment notes to Slack, what normally happens after that? Maybe documentation gets updated. Maybe customer support gets briefed. Maybe Linear tickets get closed.&lt;/p&gt;
+
+&lt;p&gt;Build workflows for those next steps. Connect them to your first workflow’s output.&lt;/p&gt;
+
+&lt;p&gt;Now you have composition. One workflow’s completion triggers the next. The coordination chain runs automatically.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-4-keep-going&quot;&gt;Step 4: Keep Going&lt;/h3&gt;
+
+&lt;p&gt;Each new workflow amplifies the ones before it. The deployment workflow feeds the documentation workflow. The documentation workflow triggers the changelog workflow. The changelog workflow posts to Slack, which triggers the customer communication workflow.&lt;/p&gt;
+
+&lt;p&gt;You’re not just saving time on individual tasks. You’re building a system where coordination happens automatically at every transition point.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-bigger-picture&quot;&gt;The Bigger Picture&lt;/h2&gt;
+
+&lt;p&gt;This isn’t just about efficiency. It’s about equity.&lt;/p&gt;
+
+&lt;p&gt;When essential coordination work is visible and automated, nobody gets stuck being the invisible glue. Everyone can focus on the work they’re actually good at, the work that gets recognized and rewarded.&lt;/p&gt;
+
+&lt;p&gt;Teams that build composed AI workflows aren’t just shipping faster. They’re redistributing the coordination burden from people to systems. They’re making space for everyone to do their best work.&lt;/p&gt;
+
+&lt;p&gt;Look at your team. Who’s the glue person? What would they be working on if they weren’t constantly coordinating?&lt;/p&gt;
+
+&lt;p&gt;That’s the real value of composition.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
+        <link>https://bekahhw.com//AI-Workflows-Can-Be-The-Glue</link>
+        <guid isPermaLink="true">https://bekahhw.com//AI-Workflows-Can-Be-The-Glue</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>When We Became What We Do: The Identity Crisis That Companies Mistook for Opportunity</title>
+        <description>&lt;p&gt;In March 2020, a &lt;em&gt;weird&lt;/em&gt; thing happened to how we answered the question “Who are you?”&lt;/p&gt;
+
+&lt;p&gt;Before the pandemic, most of us had multifaceted identities. I was the person who went to the gym and lifted weights 6x a week, who took my kids to the park all the time, who volunteered at the school, attended the occasional book club, and who took a break by going grocery shopping on Saturday mornings. For many of us, our sense of self was distributed across multiple domains, including social, familial, recreational, and professional.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-great-identity-consolidation&quot;&gt;The Great Identity Consolidation&lt;/h2&gt;
+
+&lt;p&gt;Lockdown stripped most of those identities away in a matter of weeks or even days. Even family gatherings and Sunday dinners and holiday traditions moved to Zoom calls or stopped entirely.&lt;/p&gt;
+
+&lt;p&gt;Every space where we’d embody our various identities closed. I couldn’t be “the person who deadlifted on Tuesdays” when there was no weightroom open. You can’t be “the parent who knows everyone at school” when school is a URL. You can’t be “the person who always hosts game night” when gathering is prohibited.&lt;/p&gt;
+
+&lt;p&gt;Our professional identity didn’t just persist. It intensified, because work didn’t stop. In actuality, for a lot of us it intensified or became the one thing we could control. I lost my job, but I could look for another. For many people, work-from-home meant &lt;em&gt;more&lt;/em&gt; hours. Slack channels kept pinging. Standups kept happening. Deadlines didn’t pause for a pandemic.&lt;/p&gt;
+
+&lt;p&gt;Suddenly, “developer” or “designer” or “product manager” wasn’t just what we &lt;em&gt;did&lt;/em&gt;. It became almost the entirety of who we &lt;em&gt;were&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Not by choice. By elimination.&lt;/p&gt;
+
+&lt;p&gt;Remote work intensified what researchers called “identity blur” or the breakdown of boundaries between personal and professional life. Not to mention that an entire generation of early-career professionals were doing their identity formation almost exclusively through the professional lens.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-tech-communities-exploded&quot;&gt;Why Tech Communities Exploded&lt;/h2&gt;
+
+&lt;p&gt;This identity shift created fertile ground for professional communities to thrive in unprecedented ways.&lt;/p&gt;
+
+&lt;p&gt;Developer communities, in particular, saw explosive growth. The community infrastructure was already there: Slack, Discord, forums, virtual meetups. But suddenly, these weren’t just places to ask technical questions or network for jobs. They became primary social spaces.&lt;/p&gt;
+
+&lt;p&gt;When I started Virtual Coffee in March of 2020, I was &lt;em&gt;desperately&lt;/em&gt; looking for &lt;em&gt;people&lt;/em&gt; after I lost my first developer job. It wasn’t supplementing my social life because it &lt;em&gt;was&lt;/em&gt; my social life. The Tuesday meetups became my weekly social anchor.&lt;/p&gt;
+
+&lt;p&gt;And I wasn’t alone. Across the tech ecosystem, professional communities became all-purpose gathering spaces. The hallway track at conferences had always been valuable, but now people were craving the hallway track without the conference. They wanted the coffee shop where everyone was a developer. They wanted to belong somewhere, and professional identity was one of the few identities still accessible.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-numbers-that-told-a-story&quot;&gt;The Numbers That Told a Story&lt;/h2&gt;
+
+&lt;p&gt;By 2021, the indicators were everywhere:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Community engagement increased&lt;/li&gt;
+  &lt;li&gt;Community programs saw increased recognition of their value&lt;/li&gt;
+  &lt;li&gt;Having an online community became more important in 2020&lt;/li&gt;
+  &lt;li&gt;Time on social and community platforms jumped dramatically&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But here’s what the numbers &lt;em&gt;weren’t&lt;/em&gt; saying: they weren’t showing that people had discovered a permanent need for professional community. They were showing that professional community was filling a vacuum left by every &lt;em&gt;other&lt;/em&gt; kind of community disappearing.&lt;/p&gt;
+
+&lt;p&gt;Professional community wasn’t competing with other professional communities. It was competing with—and replacing—gyms, coffee shops, happy hours, hobby groups, neighborhood connections, and casual friendships.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-company-gold-rush&quot;&gt;The Company Gold Rush&lt;/h2&gt;
+
+&lt;p&gt;Companies looked at those engagement numbers and saw opportunity.&lt;/p&gt;
+
+&lt;p&gt;If you were a tech company in 2020-2021 watching developers flock to online communities, the conclusion seemed obvious: we need a community. If you were hiring and saw that developer engagement was at all-time highs, you might think: we need a community manager. I became a technical community manager because tech was primed to invest in community roles.&lt;/p&gt;
+
+&lt;p&gt;The role that was previously a nice-to-have became a strategic imperative.&lt;/p&gt;
+
+&lt;p&gt;Companies launched Slacks, Discord servers, forums, and user groups. They hired community managers, developer advocates, and DevRel teams. They built content strategies around community engagement. They measured success by the metrics they were seeing everywhere: member counts, daily active users, message volume.&lt;/p&gt;
+
+&lt;p&gt;The logic seemed on track:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;People are engaging with online communities at unprecedented levels&lt;/li&gt;
+  &lt;li&gt;Our competitors are building communities&lt;/li&gt;
+  &lt;li&gt;Community drives product adoption and loyalty&lt;/li&gt;
+  &lt;li&gt;Therefore, we need to invest in community&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;But this logic missed &lt;em&gt;context&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-substitution-effect-nobody-acknowledged&quot;&gt;The Substitution Effect Nobody Acknowledged&lt;/h2&gt;
+
+&lt;p&gt;What companies were observing wasn’t a permanent shift in how people want to engage with brands or products. It was a temporary substitution driven by extraordinary circumstances.&lt;/p&gt;
+
+&lt;p&gt;In 2020-2021, professional communities were standing in for:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Local social connections (because we couldn’t gather)&lt;/li&gt;
+  &lt;li&gt;Recreational identities (because hobbies were paused)&lt;/li&gt;
+  &lt;li&gt;Casual professional networking (because conferences were canceled)&lt;/li&gt;
+  &lt;li&gt;Workspace camaraderie (because offices were closed)&lt;/li&gt;
+  &lt;li&gt;General human connection (because isolation was mandatory)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The engagement wasn’t high because people suddenly valued brand communities more. It was high because professional community was the &lt;em&gt;only&lt;/em&gt; community many people had access to.&lt;/p&gt;
+
+&lt;p&gt;Think about it this way: if you’re working from home, can’t go to the gym, can’t meet friends for coffee, and can’t attend local meetups, where do you find people? If your identity as a weight lifter is on hold because gyms are closed, and your identity as a parent is strained because you’re homeschooling, what’s left? Your professional identity. And where do professionals gather? Online, in communities organized around their work.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-success-really-looked-like&quot;&gt;What Success Really Looked Like&lt;/h2&gt;
+
+&lt;p&gt;Companies celebrated metrics that looked like success:&lt;/p&gt;
+
+&lt;p&gt;“Our Discord hit 10,000 members!”
+“Daily active users up 300%!”
+“Community engagement is our highest ever!”&lt;/p&gt;
+
+&lt;p&gt;But a lot of them were ignoring the fact that people weren’t necessarily there because your product was so compelling that they wanted to be part of your brand community. They were there because they were lonely, isolated, and craving connection, and your professional community was one of the only options available.&lt;/p&gt;
+
+&lt;p&gt;This isn’t to diminish the genuine connections people made or the real value these communities provided. Virtual Coffee meant–and still means–the world to me. The developer communities that emerged during this time saved people’s mental health and careers.&lt;/p&gt;
+
+&lt;p&gt;But the &lt;em&gt;reason&lt;/em&gt; for that value was specific to the moment. We were all in crisis, and professional community became a lifeline not because it was uniquely better than before, but because everything else was gone.&lt;/p&gt;
+
+&lt;h2 id=&quot;belonging-doesnt-scale-the-way-companies-hoped&quot;&gt;Belonging Doesn’t Scale the Way Companies Hoped&lt;/h2&gt;
+
+&lt;p&gt;But you can’t manufacture the conditions that created pandemic-era engagement.&lt;/p&gt;
+
+&lt;p&gt;You can’t make someone lonely enough to spend three hours a day in your Discord.&lt;/p&gt;
+
+&lt;p&gt;You can’t make someone isolated enough to treat your Slack like their primary social group.&lt;/p&gt;
+
+&lt;p&gt;You can’t make someone identity-starved enough to build their sense of self around your brand community.&lt;/p&gt;
+
+&lt;p&gt;And you most definitely should not want to.&lt;/p&gt;
+
+&lt;p&gt;As the world reopened, people’s identities re-diversified. The parent identity came back with in-person school. The athlete identity returned with reopened gyms. The friend identity flourished with in-person coffee dates. The hobbyist identity resumed with craft groups and sports leagues.&lt;/p&gt;
+
+&lt;p&gt;Professional identity didn’t disappear, but it was &lt;em&gt;one of many&lt;/em&gt; identities, not the primary or only identity.&lt;/p&gt;
+
+&lt;p&gt;But companies didn’t anticipate: people wanted to keep both.&lt;/p&gt;
+
+&lt;p&gt;The connections made during the pandemic weren’t casual networking. They were trauma bonds. We didn’t just share technical knowledge in those slacks and Zoom rooms. We &lt;em&gt;survived&lt;/em&gt; isolation together, processed fear together, figured out how to keep going together. We saw each other at our worst: unmuted kids screaming, laundry piles stacked and thrown across the floor, tears with lost jobs. We celebrated new babies through screens. We mourned miscarriages together in the #heavy channel. We watched marriages fall apart in real-time as people processed isolation and stress.&lt;/p&gt;
+
+&lt;p&gt;And we lost people.&lt;/p&gt;
+
+&lt;p&gt;And when that happened, we couldn’t gather. We couldn’t hug each other. We couldn’t sit together at a funeral. We watched memorial services on Zoom, crying alone in our homes, typing condolences in chat windows, wishing desperately we could just &lt;em&gt;be there&lt;/em&gt; together in person.&lt;/p&gt;
+
+&lt;p&gt;The grief was compounded by the medium. These were people who’d kept us sane, who we’d talked to nearly every day, who felt like lifelines. And when they were gone, we had to process that loss the same way we’d built the relationship, through screens, at a distance, without the physical comfort that humans need in grief.&lt;/p&gt;
+
+&lt;p&gt;These weren’t casual professional connections. These were people who’d seen us completely, who’d held space for our fear and loneliness, who’d shared their own vulnerability in ways that rarely happen in professional contexts. The bonds formed under those conditions of shared trauma, radical vulnerability, mutual survival, don’t just dissolve when offices reopen.&lt;/p&gt;
+
+&lt;p&gt;This wasn’t like moving to a new city and losing touch with old friends, or kids graduating so you stop seeing other parents at pickup. Those transitions are natural drift. This was different. People wanted to maintain these deep connections while returning to physical community.&lt;/p&gt;
+
+&lt;p&gt;But time is finite. You can’t spend three hours a day in the Virtual Coffee co-working room when you’re back at an actual office. You can’t attend every virtual event when you’re back at the gym, at your kid’s school, at in-person meetups.&lt;/p&gt;
+
+&lt;p&gt;The decline in engagement wasn’t people abandoning communities they didn’t care about. It was people being pulled between communities they cared about deeply and being forced to choose.&lt;/p&gt;
+
+&lt;p&gt;Some people stayed in their pandemic communities because those bonds meant everything. Some drifted away despite wanting to stay connected. Many tried to maintain both and felt guilty about not being as present online.&lt;/p&gt;
+
+&lt;p&gt;Professional identity didn’t disappear, but it returned to being one of many identities, not the primary or only identity. And with finite time and attention, something had to give.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-misread-that-shaped-a-strategy&quot;&gt;The Misread That Shaped a Strategy&lt;/h2&gt;
+
+&lt;p&gt;Companies saw the engagement decline and treated it like a problem to solve rather than a natural consequence of changed circumstances.
+The mistake wasn’t that companies built communities. Many of those communities genuinely serve people who need them, and many of those pandemic-era bonds are real and lasting.&lt;/p&gt;
+
+&lt;p&gt;The mistake was thinking they could recreate or sustain trauma-bond-level engagement without the trauma.&lt;/p&gt;
+
+&lt;p&gt;They thought the pandemic-era engagement levels were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sustainable (Actually, many required conditions no one should want to recreate)&lt;/li&gt;
+  &lt;li&gt;Universal (Actually, many were born of collective crisis)&lt;/li&gt;
+  &lt;li&gt;Reproducible (Actually, many were trauma bonds form under specific circumstances)&lt;/li&gt;
+  &lt;li&gt;Transferable (Actually, you can’t manufacture that depth of connection on command)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Companies built community strategies around peak crisis participation and crisis-level bonding. They staffed for engagement that made sense when professional community was substituting for all community and people were processing collective trauma together. They created expectations for involvement that assumed people’s entire social lives would continue to flow through professional channels with that same intensity.&lt;/p&gt;
+
+&lt;p&gt;When engagement inevitably declined, it wasn’t because the communities failed. People’s lives and needs changed, and then companies panicked. They hired more community managers. They added more features. They pushed harder for participation.&lt;/p&gt;
+
+&lt;p&gt;But you can’t solve for the absence of shared crisis with better Slack integrations.&lt;/p&gt;
+
+&lt;p&gt;And with that shift, professional communities changed in character, not just size.&lt;/p&gt;
+
+&lt;p&gt;Many became transactional. People drop in, ask a question, get an answer, leave. They need the &lt;em&gt;resource&lt;/em&gt;, the collective knowledge, the troubleshooting help, the documentation links. But they don’t want or need the &lt;em&gt;connection&lt;/em&gt;. They’re not looking for the coffee shop vibe anymore. They’re looking for Stack Overflow with a pulse.&lt;/p&gt;
+
+&lt;p&gt;This isn’t everyone. Remote workers still exist. Niche specialists still need their people. Global collaborators still benefit from async communication across time zones. People for whom online professional community isn’t a substitute for anything, because it’s genuinely where their professional community exists.&lt;/p&gt;
+
+&lt;p&gt;But even within those groups, the engagement looks different. It’s purposeful, not ambient. It’s “I’m here when I need something” rather than “this is where I hang out.”&lt;/p&gt;
+
+&lt;p&gt;And then there are the community builders caught in the middle, trying to recreate that pandemic-era connection and intimacy in product-focused communities where most people just want help with their API integration. They’re hosting office hours that get three attendees. They’re planning social events that get polite “maybe” responses. They’re fighting to build connection in spaces where the majority of members are perfectly content with drive-by interactions.&lt;/p&gt;
+
+&lt;p&gt;It’s not that these community builders are doing it wrong. &lt;em&gt;They’re trying to create depth in spaces where most people want efficiency.&lt;/em&gt; They’re optimizing for belonging when most users are optimizing for answers.&lt;/p&gt;
+
+&lt;p&gt;The communities that thrived on trauma bonds and shared vulnerability can’t be replicated in a product community where people just need their build to work. And expecting them to is setting community builders up to burn out trying to recreate something that only existed under very specific, unrepeatable conditions.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-job-is-this-community-actually-doing&quot;&gt;What job is this community actually doing?&lt;/h2&gt;
+
+&lt;p&gt;In 2020-2021, professional communities were doing the job of: general social connection, professional development, casual friendship, identity formation, and mental health support.&lt;/p&gt;
+
+&lt;p&gt;In 2025, they should be doing the job of: professional knowledge sharing, specific technical support, collaboration, and professional networking.&lt;/p&gt;
+
+&lt;p&gt;Those are different jobs requiring different strategies, different staffing, and different success metrics.&lt;/p&gt;
+
+&lt;p&gt;Communities that thrive post-pandemic aren’t trying to be everything to everyone. They’re specific about who they serve and why. They’re intentional about the value they provide. They recognize that lower engagement isn’t failure. It’s actually right-sizing.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-uncomfortable-truth&quot;&gt;The Uncomfortable Truth&lt;/h2&gt;
+
+&lt;p&gt;Not every company needs a community.&lt;/p&gt;
+
+&lt;p&gt;Even if you needed one in 2020, you might not need one now.&lt;/p&gt;
+
+&lt;p&gt;Even if your competitors have one, that doesn’t mean you should too.&lt;/p&gt;
+
+&lt;p&gt;Even if engagement was high during the pandemic, that doesn’t mean it should be high now.&lt;/p&gt;
+
+&lt;p&gt;The companies that will succeed with community in 2025 and beyond are the ones willing to ask: “Is this actually serving a real need, or are we chasing ghosts of pandemic-era metrics?”&lt;/p&gt;
+
+&lt;p&gt;Because belonging doesn’t scale the way we hoped. Identity doesn’t consolidate because we want it to. And crisis-driven engagement isn’t a sustainable business strategy.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;This is the second in a series exploring how our understanding of community has changed from 2020 to 2025. Next: How AI and changing expectations are breaking the communities that remain.&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Nov 2025 00:00:00 -0400</pubDate>
+        <link>https://bekahhw.com//The-Community-Identity-Crisis</link>
+        <guid isPermaLink="true">https://bekahhw.com//The-Community-Identity-Crisis</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        <category>Community</category>
+        
+        <category>Opinion</category>
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>When 'Local' Went Global: The Pandemic Era of International Communities</title>
+        <description>&lt;p&gt;During the pandemic, I occupied the same space—a Zoom room-with members of the Virtual Coffee community from all over the world. We’ve had members across the US, Canada, South America, Europe, Australia, and Asia. We saw each other whether in an official Virtual Coffee even or eventually in our virtual co-working room that stayed open 24/7. Sometimes we’d chat. Sometimes, we’d just… exist together.&lt;/p&gt;
+
+&lt;p&gt;It was the digital equivalent of running into someone in the dairy aisle, except the dairy aisle was a Zoom room, and the “someone” could be in Jakarta, São Paulo, Manchester, or Kansas City.&lt;/p&gt;
+
+&lt;p&gt;For a brief window in modern history, “local” stopped meaning geography and started meaning something else entirely.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-collapse-of-default-community&quot;&gt;The Collapse of Default Community&lt;/h2&gt;
+
+&lt;p&gt;Before March 2020, most of us didn’t have to think much about what “community” meant. It was simply the people you saw regularly: coworkers, neighbors, your kid’s soccer team parents, the familiar faces at church or the gym. Community was embedded in the infrastructure of daily life and was predictable, physical, and largely determined by proximity.&lt;/p&gt;
+
+&lt;p&gt;Then proximity disappeared.&lt;/p&gt;
+
+&lt;p&gt;When lockdowns began, the familiar networks evaporated overnight.&lt;/p&gt;
+
+&lt;p&gt;The impact was immediate and profound. &lt;a href=&quot;https://connect2affect.org/wp-content/uploads/2020/10/The-Pandemic-Effect-A-Social-Isolation-Report-AARP-Foundation.pdf&quot;&gt;Two-thirds of adults reported experiencing social isolation during the pandemic&lt;/a&gt;. For younger adults, &lt;a href=&quot;https://mcc.gse.harvard.edu/reports/loneliness-in-america&quot;&gt;61% of young felt “serious loneliness” during this period&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We didn’t lose our desire for community. We lost the infrastructure that had been quietly supporting it all along.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-great-virtualization&quot;&gt;The Great Virtualization&lt;/h2&gt;
+
+&lt;p&gt;What happened next wasn’t entirely new. People had been building online communities for years. But the scale and speed were unprecedented. Suddenly, everyone needed to figure out how to find belonging through a screen. When the physical infrastructure disappeared, we rebuilt it digitally.&lt;/p&gt;
+
+&lt;p&gt;From massive pandemic hackathons to new Slack and Discord communities, people everywhere began re-creating local-belonging at scale.&lt;/p&gt;
+
+&lt;p&gt;I started Virtual Coffee with weekly Tuesday meetings that were regular, predictable, and rhythmic. In a lot of ways, therapeutic. Then, the co-working room that transformed it into something that felt genuinely “local.” That room was open all the time. You could drop in whenever. You’d see who else was around. Sometimes you’d end up in a spontaneous conversation about your project, or someone’s career transition, or absolutely nothing at all.
+We added a virtual book club, CodeWars challenges, and another day of coffee chats. Interintellect salons hosted three-hour events where people from diverse backgrounds came together for intellectually stimulating conversation, bridging tech and non-tech interests through Discord.&lt;/p&gt;
+
+&lt;p&gt;The magic was in the serendipity. The unplanned encounters. The way you’d sign on to get work done and end up chatting with someone from Nigeria about their startup idea, or find yourself in a breakout room with a developer from Russia who was working through the same frustrating bug you’d just solved.&lt;/p&gt;
+
+&lt;p&gt;We were strangers from different continents creating something that felt remarkably like what a neighborhood coffee shop might have provided. Except our “neighborhood” spanned time zones, and our “coffee shop” never closed.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-made-it-work&quot;&gt;What Made It Work&lt;/h2&gt;
+
+&lt;p&gt;Looking back, I think the pandemic-era virtual communities that thrived shared a few key characteristics:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Regularity without rigidity. You knew when things were happening, but you weren’t required to show up. The co-working room was always there. The Tuesday meetings happened every Tuesday. This created rhythm, a temporal equivalent of “I know I’ll see you at the grocery store on Saturday mornings.”&lt;/li&gt;
+  &lt;li&gt;Space for the unplanned. I still believe that the most meaningful connections don’t happen during structured programming. They happened in the margins: before the official meeting start, in the co-working room at odd hours, in side channels where someone posted a random question and three people end up in a deep conversation.&lt;/li&gt;
+  &lt;li&gt;Low barriers, high humanity. The fact that events moved online opened communities up to people who might have been too uncomfortable to attend an in-person event due to anxiety, financial constraints, or something else, allowing for realtime conversations over Slack or Discord instead of struggling with in-person social time. Nobody cared about ring lights or professional setups–ok, maybe once I learned about those things, I did invest some money to upgrade a little bit. But we still showed up in our kitchens, with kids screaming in the background, with laundry visible behind us. The bar for participation was simply: be present, be kind, be human.&lt;/li&gt;
+  &lt;li&gt;Shared vulnerability. We were all figuring it out together. Nobody had their shit completely sorted. That leveled the playing field in a way that’s rare in professional communities. In other words, the senior engineer and the bootcamp student/grad (ie, &lt;em&gt;me&lt;/em&gt;) were equally disoriented by the moment we were living through.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-shift-back&quot;&gt;The Shift Back&lt;/h2&gt;
+
+&lt;p&gt;Then, gradually, the physical world opened back up.&lt;/p&gt;
+
+&lt;p&gt;People returned to offices, or to coffee shops, gyms, schools, or co-working spaces again. The default infrastructure of community came back in-person.&lt;/p&gt;
+
+&lt;p&gt;And the international local communities… shifted.&lt;/p&gt;
+
+&lt;p&gt;The co-working room got quieter. The Tuesday meetings still happen, but attendance has thinned. Not because people stopped caring, but because they could now get some of those needs met in physical space again. Time—everyone’s most finite resource—got redistributed back to the in-person world.&lt;/p&gt;
+
+&lt;p&gt;Before the pandemic, people spent the bulk of their social time at work, and remote work led to loneliness and feeling disconnected. The shared physical space offered opportunities to network, mentor others, and build community that were hard to recreate in a scattered, virtual workforce.&lt;/p&gt;
+
+&lt;p&gt;This wasn’t a failure. It was just the natural consequence of changed circumstances.&lt;/p&gt;
+
+&lt;p&gt;But it left a lot of questions unanswered.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-we-are-now&quot;&gt;Where We Are Now&lt;/h2&gt;
+
+&lt;p&gt;We’re in a strange liminal space. Virtual communities haven’t disappeared, but they’re not serving the same function they did in 2020-2022. The urgency is gone. Community programs saw an increased recognition of their value during the pandemic, but that recognition was tied to a specific moment in time—a moment that has passed.&lt;/p&gt;
+
+&lt;p&gt;People are negotiating between physical and digital belonging in ways we haven’t fully figured out yet.&lt;/p&gt;
+
+&lt;p&gt;And meanwhile, companies are asking: “Why isn’t our community as engaged as it was during the pandemic?”&lt;/p&gt;
+
+&lt;p&gt;But that’s the wrong question.&lt;/p&gt;
+
+&lt;p&gt;The right question is: &lt;em&gt;“Who actually needs this community now, and what are we building it for?”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;During the pandemic, virtual communities weren’t just filling a professional need. They were filling all our social needs. Professional community became a substitute for general community because it was all we had. The developer slack was my coffee shop, my gym, my after-work happy hour, my weekend hangout.&lt;/p&gt;
+
+&lt;p&gt;Now that general social needs can be met locally again for many people, the population who needs online-as-local has shifted back to who it always was:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fully remote workers who’ve left physical proximity to colleagues behind entirely&lt;/li&gt;
+  &lt;li&gt;Developers who want casual peer conversation without the overhead of professional networking events&lt;/li&gt;
+  &lt;li&gt;People who want the hallway track experience (those serendipitous conversations that happen between sessions)&lt;/li&gt;
+  &lt;li&gt;Specialists in niche areas where their “local” doesn’t have anyone else working on their specific stack or problem domain&lt;/li&gt;
+  &lt;li&gt;Disabled folks, caretakers, and others for whom physical gatherings have always been inaccessible&lt;/li&gt;
+  &lt;li&gt;Global collaborators building projects across continents and time zones&lt;/li&gt;
+  &lt;li&gt;People who want the coffee shop, but the coffee shop is all technies&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These communities still matter deeply. They’re still someone’s local. The mistake isn’t that these communities exist—it’s that companies think everyone needs this, all the time.&lt;/p&gt;
+
+&lt;p&gt;The coffee shop didn’t disappear; it just got quieter.&lt;/p&gt;
+
+&lt;h2 id=&quot;redefining-local-again&quot;&gt;Redefining Local, Again&lt;/h2&gt;
+
+&lt;p&gt;The always-on, drop-in, developer coffee shop model didn’t stop working. It just stopped being universal.&lt;/p&gt;
+
+&lt;p&gt;In 2020-2022, everyone needed it because everyone was isolated. In 2025, it serves a specific population: people whose physical environment doesn’t provide the technical community they need. This isn’t new. This population always existed. The pandemic just temporarily made everyone part of it.&lt;/p&gt;
+
+&lt;p&gt;The confusion comes from companies who saw engagement numbers during lockdown and thought, “This is what community looks like now.” They built strategies around peak-crisis participation and are now wondering why engagement dropped when the crisis ended.&lt;/p&gt;
+
+&lt;p&gt;But for the people who are fully remote, who do work in niche areas, who actually need virtual-as-local? The future of virtual community isn’t choosing between “always-on” and “seasonal engagement.” It’s recognizing that different models serve different needs:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Always-on spaces for people who need virtual-as-local (remote workers, niche specialists, global teams)&lt;/li&gt;
+  &lt;li&gt;Event-driven communities for people who have local networks but want to expand them occasionally&lt;/li&gt;
+  &lt;li&gt;Project-based cohorts for people collaborating on specific initiatives&lt;/li&gt;
+  &lt;li&gt;Hybrid models that acknowledge some members need daily presence while others drop in monthly&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The brief era when local went global taught us something important about what community actually requires. Not geography. Not even, proximity.&lt;/p&gt;
+
+&lt;p&gt;Rhythm, serendipity, and the willingness to show up wherever you are and be &lt;em&gt;human&lt;/em&gt; together.&lt;/p&gt;
+
+&lt;p&gt;Those needs haven’t disappeared. But the population experiencing them has returned to its pre-pandemic size—still significant, still vital, just less universal.&lt;/p&gt;
+
+&lt;p&gt;The question now is: can we build sustainable models for the people who actually need virtual-as-local, without expecting everyone to need it all the time?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This is the first in a series exploring how our understanding of community has changed from 2020 to 2025. Next: Why companies misread the moment and built communities for everyone when they should have built for someone. When the world redefined community, companies thought they could scale it. But belonging doesn’t scale, at least, not the way they hoped.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
+        <link>https://bekahhw.com//when-local-community-went-global</link>
+        <guid isPermaLink="true">https://bekahhw.com//when-local-community-went-global</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>A Developer’s Guide to Choosing an AI Coding Assistant That Boosts Productivity Without Overwhelming Your Workflow</title>
         <description>&lt;p&gt;&lt;em&gt;Finding the assistant that fits just right.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;At &lt;a href=&quot;http://virtualcoffee.io/&quot;&gt;Virtual Coffee&lt;/a&gt; over the last year, we’ve been talking about our experiences with different AI Coding Assistants.  Some of the things I’ve heard include, “It felt like I was constantly being interrupted,” “I barely notice it’s there until I need it,” “Sometimes it feels like it’s micromanaging me, so I turn it off.” A lot of times, it’s the same tool with different experiences.&lt;/p&gt;
@@ -787,6 +1401,10 @@ their entire development process.&lt;/p&gt;
         
         
         
+        <category>Personal</category>
+        
+        <category>Career</category>
+        
         
         
         
@@ -880,6 +1498,10 @@ their entire development process.&lt;/p&gt;
         <author>rhawrot@gmail.com (Bekah)</author>
         
         
+        
+        <category>Open Source</category>
+        
+        <category>Opinion</category>
         
         
         
@@ -1069,6 +1691,10 @@ Establish skill-sharing programs where people exchange knowledge&lt;/li&gt;
         
         
         
+        <category>Career</category>
+        
+        <category>Opinion</category>
+        
         
         
         
@@ -1198,6 +1824,10 @@ effectiveness&lt;/a&gt; and &lt;a href=&quot;https://www.vantagecircle.com/en/bl
         
         
         
+        <category>Career</category>
+        
+        <category>Opinion</category>
+        
         
         
         
@@ -1310,6 +1940,10 @@ effectiveness&lt;/a&gt; and &lt;a href=&quot;https://www.vantagecircle.com/en/bl
         <author>rhawrot@gmail.com (Bekah)</author>
         
         
+        
+        <category>Career</category>
+        
+        <category>Opinion</category>
         
         
         
@@ -1548,6 +2182,10 @@ effectiveness&lt;/a&gt; and &lt;a href=&quot;https://www.vantagecircle.com/en/bl
         
         
         
+        <category>AI</category>
+        
+        <category>Opinion</category>
+        
         
         
         
@@ -1687,6 +2325,10 @@ To gather meaningful data, your documentation needs appropriate tracking:&lt;/p&
         
         
         
+        <category>Content Creation</category>
+        
+        <category>Tips</category>
+        
         
         
         
@@ -1820,6 +2462,10 @@ To gather meaningful data, your documentation needs appropriate tracking:&lt;/p&
         <author>rhawrot@gmail.com (Bekah)</author>
         
         
+        
+        <category>Content Creation</category>
+        
+        <category>Tips</category>
         
         
         
@@ -2092,6 +2738,10 @@ There are two things that I wanted to implement while working on this:&lt;/p&gt;
         
         
         
+        <category>Technical</category>
+        
+        <category>Content Creation</category>
+        
         
         
         
@@ -2189,6 +2839,10 @@ There are two things that I wanted to implement while working on this:&lt;/p&gt;
         <author>rhawrot@gmail.com (Bekah)</author>
         
         
+        
+        <category>Content Creation</category>
+        
+        <category>Tips</category>
         
         
         
@@ -2316,243 +2970,9 @@ In a world of information overload (especially AI-generated information), storyt
         
         
         
+        <category>Content Creation</category>
         
-        
-        
-        
-      </item>
-    
-      <item>
-        <title>The Power of Storytelling in Tech Content</title>
-        <description>&lt;p&gt;I’ve been thinking a lot about how storytelling sometimes gets lost or becomes an afterthought when we’re consumed by data, specifications, or writing content with AI. But in reality, it’s one of the most powerful tools we have, especially now. It creates emotional connections, makes complex ideas memorable, and establishes trust with our audience.&lt;/p&gt;
-
-&lt;p&gt;If we want to engage our audience, influence decision-makers, or strengthen our brands, storytelling should play a key role.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-storytelling-works&quot;&gt;Why Storytelling Works&lt;/h2&gt;
-
-&lt;h3 id=&quot;the-neuroscience-behind-stories&quot;&gt;The Neuroscience Behind Stories&lt;/h3&gt;
-
-&lt;p&gt;Our brains are wired for storytelling. Neuroscience research shows that when we hear stories, multiple parts of our brain light up—not just the language-processing centers, but also areas responsible for emotions and memory. Paul J. Zak, a professor of neuroscience, found that stories that generate emotional connections trigger the release of oxytocin, a neurochemical that enhances trust and cooperation.&lt;/p&gt;
-
-&lt;p&gt;In other words, when you tell a compelling story, your audience is more likely to trust you, remember your message, and take action.&lt;/p&gt;
-
-&lt;h3 id=&quot;stories-make-tech-more-human&quot;&gt;Stories Make Tech More Human&lt;/h3&gt;
-
-&lt;p&gt;People don’t connect with features; they connect with experiences. Take Warby Parker, for example. Their brand wasn’t built on just selling eyewear. It was built on a story of accessibility and innovation. It was built on the story of the struggle of a student who couldn’t afford glasses, the industry’s monopolization, and the company’s mission to create affordable, stylish eyewear.&lt;/p&gt;
-
-&lt;p&gt;Similarly, think about how companies like OpenAI or GitHub frame their innovations. They don’t just talk about algorithms and infrastructure; they tell stories of empowerment, stories about how AI helps developers be more productive or how open source fosters collaboration.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-turn-dry-tech-content-into-a-compelling-story&quot;&gt;How to Turn Dry Tech Content into a Compelling Story&lt;/h2&gt;
-
-&lt;p&gt;If you want to leverage storytelling in your tech content, here’s a three-step framework to help you get started:&lt;/p&gt;
-
-&lt;h3 id=&quot;1-start-with-a-struggle-or-problem&quot;&gt;1. Start with a Struggle or Problem&lt;/h3&gt;
-
-&lt;p&gt;Great stories begin with a problem or challenge. This could be the difficulty of managing distributed systems, the frustration of inefficient workflows, or the struggle of navigating an open source contribution for the first time.&lt;/p&gt;
-
-&lt;p&gt;Example: Instead of saying, “Our new cloud solution optimizes deployment times,” start with a story:&lt;/p&gt;
-
-&lt;p&gt;“It’s 2 AM. You get a call, jolting you awake and now you find yourself frantically debugging a failed deployment. This isn’t the first time this has happened, and you’re tired of another sleepless night. There has to be a better way…”&lt;/p&gt;
-
-&lt;h3 id=&quot;2-show-the-transformation&quot;&gt;2. Show the Transformation&lt;/h3&gt;
-
-&lt;p&gt;Introduce your solution as a turning point in the narrative. How does it solve the problem? How does it change the experience for the user?&lt;/p&gt;
-
-&lt;p&gt;Example: Continuing the story:&lt;/p&gt;
-
-&lt;p&gt;“After implementing our automated deployment tool, you finally got a full night’s sleep when you were on call. The next time an update went live, it was seamless, no more late-night firefighting.”&lt;/p&gt;
-
-&lt;h3 id=&quot;3-end-with-a-resolution-and-impact&quot;&gt;3. End with a Resolution and Impact&lt;/h3&gt;
-
-&lt;p&gt;Show the bigger picture. How does this solution contribute to success, productivity, or innovation?&lt;/p&gt;
-
-&lt;p&gt;Example:&lt;/p&gt;
-
-&lt;p&gt;“Today, your team ships code faster and with fewer errors. They focus on innovation rather than crisis management, because the best engineers aren’t the ones pulling all-nighters; they’re the ones solving real problems.”&lt;/p&gt;
-
-&lt;h2 id=&quot;actionable-takeaway-apply-storytelling-to-your-tech-content&quot;&gt;Actionable Takeaway: Apply Storytelling to Your Tech Content&lt;/h2&gt;
-
-&lt;p&gt;Here’s how you can start incorporating storytelling into your content:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Identify Your Audience’s Pain Points&lt;/strong&gt;: What struggles do they face? Talk to real users or analyze common complaints in your industry. (That’s right, you should actually talk to people who use your products.)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Craft Narratives Around Those Challenges&lt;/strong&gt;: Frame your content like a journey, with real-world scenarios.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Use Emotion and Relatable Examples&lt;/strong&gt;: Whether it’s a developer, a manager, or an open source contributor, make your audience see themselves in the story.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
-
-&lt;p&gt;Tech content shouldn’t just about features and data. It should be about making people feel something. When you tell a compelling story, you don’t just inform, you inspire.&lt;/p&gt;
-
-&lt;p&gt;So the next time you’re drafting a case study, writing a blog, or presenting a product update, ask yourself: What’s the story here? Because the best tech writers aren’t just sharing information, they’re telling stories that people remember.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 05 Mar 2025 00:00:00 -0500</pubDate>
-        <link>https://bekahhw.com//Storytelling-in-Tech</link>
-        <guid isPermaLink="true">https://bekahhw.com//Storytelling-in-Tech</guid>
-        
-        <author>rhawrot@gmail.com (Bekah)</author>
-        
-        
-        
-        
-        
-        
-        
-      </item>
-    
-      <item>
-        <title>Google’s EEAT vs. Aristotle’s Rhetorical Triangle: SEO Is Just Ancient Rhetoric in Disguise</title>
-        <description>&lt;p&gt;Recently, I learned about Google’s EEAT (Experience, Expertise, Authoritativeness, Trustworthiness) framework. That’s the one that determines whether your content is worthy of showing up on search results or if it gets yeeted into the void of page two or beyond.&lt;/p&gt;
-
-&lt;p&gt;The more I thought about it, the more I realized that EEAT is just Aristotle’s rhetorical triangle with an SEO-friendly name.&lt;/p&gt;
-
-&lt;p&gt;The humor isn’t lost on me that same guy who spent his days philosophizing in ancient Greece (who I learned about in my Freshman Philosophy class) basically laid the groundwork for Google’s ranking algorithm. And if that doesn’t prove that everything in life is a remix, I don’t know what does.&lt;/p&gt;
-
-&lt;p&gt;But let’s break this down in a way that is useable for content creators.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-eeat&quot;&gt;What Is EEAT?&lt;/h2&gt;
-&lt;p&gt;In Google’s world, EEAT stands for:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Experience&lt;/strong&gt; – Have you actually done the thing you’re writing about?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Expertise&lt;/strong&gt; – Do you know your stuff?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Authoritativeness&lt;/strong&gt; – Are you recognized as a legit source?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Trustworthiness&lt;/strong&gt; – Can people rely on your content?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Basically, if you’re writing about deep-sea welding, Google wants to make sure you’re not my 10 year old who just watched a YouTube video about it and decided, “Yeah, I could generate a bunch words on this using ChatGPT.”&lt;/p&gt;
-
-&lt;h2 id=&quot;aristotles-rhetorical-triangle-the-og-eeat&quot;&gt;Aristotle’s Rhetorical Triangle: The OG EEAT&lt;/h2&gt;
-
-&lt;p&gt;Long before Google existed (or the internet, or electricity, or deodorant), Aristotle defined the three pillars of persuasion:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Ethos (Credibility)&lt;/strong&gt; – Are you a trustworthy source?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Pathos (Emotion)&lt;/strong&gt; – Can you connect with people’s lived experiences?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Logos (Logic)&lt;/strong&gt; – Do you have facts to back up what you’re saying?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sound familiar? That’s because it’s basically EEAT in a different era.&lt;/p&gt;
-
-&lt;p&gt;Here’s how they match up:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;EEAT (Google)&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;strong&gt;Aristotle’s Triangle&lt;/strong&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Experience&lt;/strong&gt; (Have you actually done this?)&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Pathos&lt;/strong&gt; (Can you connect with real-life experiences?)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Expertise&lt;/strong&gt; (Do you understand the topic deeply?)&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Logos&lt;/strong&gt; (Do you have the knowledge and logic to back it up?)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Authoritativeness &amp;amp; Trustworthiness&lt;/strong&gt; (Are you credible and reliable?)&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Ethos&lt;/strong&gt; (Are you a respected and believable source?)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;If Aristotle were alive today, he’d probably have a wildly successful blog, rank #1 on Google for How to Win an Argument, and be giving TED Talks about persuasion.&lt;/p&gt;
-
-&lt;h2 id=&quot;seo-is-just-rhetoric-for-the-internet-age&quot;&gt;SEO Is Just Rhetoric for the Internet Age&lt;/h2&gt;
-
-&lt;p&gt;The more you think about it, the more it makes sense. Google isn’t just rewarding well-researched content; it’s rewarding persuasive content.&lt;/p&gt;
-
-&lt;p&gt;Just like Aristotle’s rhetoric, SEO is about:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Knowing your audience (Google calls this “search intent”)&lt;/li&gt;
-  &lt;li&gt;Establishing credibility (Google calls this “authority”)&lt;/li&gt;
-  &lt;li&gt;Making a strong case (Google calls this “quality content”)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;At the end of the day, writing for SEO is about being convincing, trustworthy, and valuable. Just like a good argument, or, a well-structured ancient Greek debate.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-does-this-mean-for-you&quot;&gt;What Does This Mean for You?&lt;/h2&gt;
-
-&lt;p&gt;If you’re trying to write content that actually ranks, take a page from Google and Aristotle:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Share real experiences. (People can smell fake authority from a mile away.)&lt;/li&gt;
-  &lt;li&gt;Back up your claims with solid knowledge. (Google loves receipts.)&lt;/li&gt;
-  &lt;li&gt;Build credibility over time. (Trust isn’t built in a day.)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But what’s most important, in my opinion? Write for people. Be engaging. Tell a story. Drop a joke now and then. Because at the end of the day, whether you’re Aristotle in 350 BCE or a content creator in 2025, the best way to win people over is to be real, be knowledgeable, and make it worth their time.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 24 Feb 2025 00:00:00 -0500</pubDate>
-        <link>https://bekahhw.com//Ai-and-content-creation</link>
-        <guid isPermaLink="true">https://bekahhw.com//Ai-and-content-creation</guid>
-        
-        <author>rhawrot@gmail.com (Bekah)</author>
-        
-        
-        
-        
-        
-        
-        
-      </item>
-    
-      <item>
-        <title>Five Lessons for Five Years in Tech</title>
-        <description>&lt;p&gt;July marked my fifth year in tech.That’s half a decade in a career I never imagined myself in. &lt;a href=&quot;https://bekahhw.com/I-Came-into-Tech-via-Trauma&quot;&gt;I came into tech via trauma&lt;/a&gt;, so it’s always hard to answer the question about where I want to go next. But I’ve been getting that question a lot more lately. I think to understand where I want to go next (that post is coming soon), I need to reflect on where I’ve already been and what I’ve learned. With all of the time I’ve spent in tech, I’ve accumulated a toolbox of lessons – some through hard conversations, others through pushing myself beyond what I thought I was capable – that I know are useful to more than just me. Every year has added a new layer, a new ring in a tree, a new depth that shaped my understanding of tech.&lt;/p&gt;
-
-&lt;p&gt;There are some years where I felt stuck. There are other years — like this past one — where I’ve grown more than I could’ve imagined. Growing doesn’t happen in isolation. It happens when you listen to the people around you and you learn from them, and that extends through all of these lessons I’m sharing below:&lt;/p&gt;
-
-&lt;h2 id=&quot;embrace-change&quot;&gt;Embrace Change&lt;/h2&gt;
-
-&lt;p&gt;Working in tech is like standing in a river that’s constantly moving. No developer gets to work with the same stack forever, and that’s part of the excitement (and challenge). As Heraclitus put it, “No one steps in the same river twice.” That flow can be really intense – I’ve heard people commonly refer to it as drinking from a fire hose. More and more reports show that the half-life of tech-related skills is five or fewer years. That means that none of us can expect to learn something today and it will still be relevant five years from now. We have to keep learning. Embracing this flow means recognizing that your learning curve never really ends, so focus on adaptability over mastery. Small steps each day, like 10 minutes with a new framework or revisiting foundational knowledge, can keep you from feeling overwhelmed.&lt;/p&gt;
-
-&lt;p&gt;Personally, my role has shifted over the last five years out of circumstance and necessity. I started as a front-end developer, but I’ve also done mobile development, community building, developer experience and more. Part of this change means that you need to do frequent self-evaluations to understand the best fit for your skillset and be willing to either invest in learning something new and putting in the extra time to master it, or lean into your strengths and let it take you down that path.&lt;/p&gt;
-
-&lt;h2 id=&quot;people-first-always&quot;&gt;People First, Always&lt;/h2&gt;
-
-&lt;p&gt;In tech, it’s easy to get lost in code and strong opinions. The most successful people know that building relationships is just as important as building products. A study by MIT’s Human Dynamics Lab shows that top teams excel because of social connections, not individual IQs.&lt;/p&gt;
-
-&lt;p&gt;Let’s keep going with the nature analogies and think of your career as a garden: while your code/ability to understand a technology is the seasonal bloom, relationships are the perennials, coming back stronger year after year. &lt;a href=&quot;https://hbr.org/2021/10/get-better-at-networking-our-favorite-reads&quot;&gt;The Harvard Business Review reports that 85% of job opportunities come through networking&lt;/a&gt;. Furthermore, Arthur Brooks, in Build the Life You Want, emphasizes the importance of building and maintaining a supportive social network for both happiness and personal growth. He argues that cultivating relationships is essential because social connections play a critical role in emotional resilience, personal fulfillment, and overall well-being.&lt;/p&gt;
-
-&lt;p&gt;Make it a habit to connect with people across roles – reach out, share coffee (virtual or real), and invest time in understanding their work. These connections often open doors that technical skills alone can’t. Being proactive means nurturing relationships, and that requires effort. Building a strong network isn’t just about socializing; it’s about creating genuine, mutually beneficial connections that enrich everyone’s lives.&lt;/p&gt;
-
-&lt;h2 id=&quot;resilience-is-your-secret-weapon&quot;&gt;Resilience is Your Secret Weapon&lt;/h2&gt;
-
-&lt;p&gt;The tech industry can feel like bamboo – it spends years growing underground before it shoots up. There will be times when your career feels stuck, but that should be when roots are forming. Data from the Bureau of Labor Statistics shows that tech professionals experience 3-4 major transitions throughout their careers.&lt;/p&gt;
-
-&lt;p&gt;I’ve seen projects collapse and experienced layoffs myself. When I was laid off a couple of years ago, I immediately turned to my network, had conversations with people that I trusted, and invested in moving forward. Sure, it was hard and there were days that I didn’t want to get off the couch, but those conversations are what landed me my next role, and the one that I consider to be the most pivotal in my career. I’ve learned that resilience isn’t just about “bouncing back”; it’s about growing stronger through each setback. Think of resilience as a muscle you can train – each challenge strengthens it, so reflect on setbacks and see them as part of your career’s growth story.&lt;/p&gt;
-
-&lt;h2 id=&quot;storytelling-makes-you-stand-out&quot;&gt;Storytelling Makes You Stand Out&lt;/h2&gt;
-
-&lt;p&gt;Data might be king, but storytelling is the kingdom. Think about the last time a story moved you – it probably wasn’t about numbers alone. When we hear a story that we connect to, neurons fire and happy hormones are released in our body, connecting us to the storyteller. (If you want to learn more about why storytelling is important, check out &lt;a href=&quot;https://www.youtube.com/live/Dcz0dOQmcaE?si=krmf_qQm4PnjS4DL&quot;&gt;my keynote for THAT conf in 2023&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;Whether you’re pitching a project or explaining a complex concept, try to weave a narrative. The narrative also helps to provide context for your work. You’re not just coding features; you’re solving problems for real people. What are the problems? Why are you solving them? I’ve said this a bunch of times, but you could build the best product in the world, but if no one knows about it or understands what it is and why it’s valuable, it won’t matter. Frame your work as a journey, sharing the challenges and triumphs. You’ll make your work memorable and help your audience, technical or not, connect with your ideas.&lt;/p&gt;
-
-&lt;h2 id=&quot;embrace-creative-destruction&quot;&gt;Embrace “Creative Destruction”&lt;/h2&gt;
-
-&lt;p&gt;Treat your work like a bonsai tree: prune to grow. In tech, we often need to cut away pieces of what we thought were “masterpieces” as projects evolve. This isn’t failure; it’s creative destruction. In writing, we sometimes say, “don’t be afraid to kill your darlings” or “don’t be precious about your work.” It’s about the total story that you’re trying to tell. You might create something masterful, but if it doesn’t fit with the rest of the story, it’s taking away from that story. Embrace this! It’s about refining, adapting, and learning. Remember, your work isn’t a reflection of your worth. So, if your code or design doesn’t make it to production, don’t mourn it. Each iteration sharpens your skills and builds a foundation for future success.&lt;/p&gt;
-
-&lt;p&gt;I have a couple of running docs of things I’ve had to cut from projects. They live there in case I’ll need to use them again. Sometimes it’s helpful to write about it. Maybe you cut some “clever code.” It didn’t fit into the project but you might want to remember how you approached that problem solving. Almost everything we do can be a learning moment. Creative destruction allows us an opportunity for growth and self-refinement.&lt;/p&gt;
-
-&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
-
-&lt;p&gt;The last five years in tech have taught me a lot about myself. Sometimes it’s important to lean into strengths. Sometimes it’s important to improve our weaknesses. But when it comes down to it, it’s about nurturing resilience, cultivating connections, telling your story, and knowing when to let go. Every experience, from small wins to major setbacks to turning down that unexpected road, adds to the soil that your career grows in.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 08 Nov 2024 00:00:00 -0500</pubDate>
-        <link>https://bekahhw.com//Five-Lessons-for-Five-Years-in-Tech</link>
-        <guid isPermaLink="true">https://bekahhw.com//Five-Lessons-for-Five-Years-in-Tech</guid>
-        
-        <author>rhawrot@gmail.com (Bekah)</author>
-        
-        
+        <category>Tips</category>
         
         
         

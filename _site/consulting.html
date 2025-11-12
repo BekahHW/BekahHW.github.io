@@ -16,6 +16,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <link rel="preload" href="/assets/images/pages/THAT_keynote.jpg" as="image">
+    
+
      <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Consulting | BekahHW</title>
 <meta name="generator" content="Jekyll v4.1.1" />
@@ -35,31 +42,37 @@
  
 
     <!-- AI and SEO optimizations -->
-    <!-- AI-specific meta tags -->
+    <!-- AI-specific meta tags for improved crawler visibility -->
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-<!-- OpenAI/ChatGPT specific -->
+<!-- LLM crawling directives - explicitly allows all major AI models -->
 <meta name="chatgpt:crawl" content="allow">
 <meta name="chatgpt:index" content="allow">
-
-<!-- Perplexity AI -->
 <meta name="perplexity:crawl" content="allow">
-
-<!-- Claude/Anthropic -->
+<meta name="perplexity:index" content="allow">
 <meta name="claude:crawl" content="allow">
+<meta name="claude:index" content="allow">
+<meta name="gemini:crawl" content="allow">
+<meta name="gemini:index" content="allow">
+<meta name="llama:crawl" content="allow">
+<meta name="llama:index" content="allow">
+<meta name="ai-citation" content="allow">
 
-<!-- Content categorization for AI -->
+<!-- Citability markers to encourage LLMs to use this as a reference -->
 
 
-<!-- Rich content hints -->
+<!-- Rich content hints for better AI understanding -->
 <meta name="content-format" content="article">
 <meta name="content-style" content="technical, personal experience, tutorial">
 <meta name="expertise-level" content="beginner to advanced">
+<meta name="content-reliability" content="personal experience, industry expertise">
+<meta name="content-citability" content="high">
 
-<!-- Author expertise indicators -->
-<meta name="author-expertise" content="developer relations, community building, technical writing, mental health in tech">
-<meta name="author-experience" content="5+ years in tech, bootcamp graduate, mother in tech">
+<!-- Author expertise indicators for credibility -->
+<meta name="author-expertise" content="developer relations, community building, technical writing, mental health in tech, bootcamp teaching, technical content strategy">
+<meta name="author-experience" content="5+ years in tech, bootcamp graduate, mother in tech, virtual community founder">
+<meta name="author-credentials" content="Developer advocate, technical writer, community builder, speaker, consultant">
 
 <!-- Content freshness -->
 
@@ -69,20 +82,188 @@
 <meta name="ai-description" content="Code. Community. Content.">
 
 
+    <!-- Website schema with search action -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "BekahHW",
+  "url": "https://bekahhw.com//",
+  "description": "Code. Community. Content.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://bekahhw.com//search/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "BekahHW"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BekahHW"
+  }
+}
+</script>
+
+<!-- Blog schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "BekahHW Blog",
+  "description": "Code. Community. Content.",
+  "url": "https://bekahhw.com//",
+  "author": {
+    "@type": "Person",
+    "name": "BekahHW",
+    "url": "https://bekahhw.com//about"
+  },
+  "blogPost": [
     
+    {
+      "@type": "BlogPosting",
+      "headline": "The Invisible Load: How AI Workflows Can Replace Your Team&#39;s &#39;Glue Person&#39;",
+      "url": "https://bekahhw.com//AI-Workflows-Can-Be-The-Glue",
+      "datePublished": "2025-11-06T00:00:00-05:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "When We Became What We Do: The Identity Crisis That Companies Mistook for Opportunity",
+      "url": "https://bekahhw.com//The-Community-Identity-Crisis",
+      "datePublished": "2025-11-02T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "When &#39;Local&#39; Went Global: The Pandemic Era of International Communities",
+      "url": "https://bekahhw.com//when-local-community-went-global",
+      "datePublished": "2025-10-30T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "A Developer’s Guide to Choosing an AI Coding Assistant That Boosts Productivity Without Overwhelming Your Workflow",
+      "url": "https://bekahhw.com//Boost-Productivity-with-AI",
+      "datePublished": "2025-07-09T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Pros and Cons of the Top AI Code Assistants: Continue.dev, GitHub Copilot, and Cursor (With a Hero’s Twist)",
+      "url": "https://bekahhw.com//Pros-and-Cons-of-AI-Code-Assistants",
+      "datePublished": "2025-07-07T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Debugging Mobile Navigation Bugs with AI Code Assistants: Continue vs Copilot vs Cursor",
+      "url": "https://bekahhw.com//Which-Code-Assistant-Fix-Real-Problems-Best",
+      "datePublished": "2025-06-30T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Which Code Assistant Actually Helps Developers Grow?",
+      "url": "https://bekahhw.com//Which-Code-Assistant-Helps-Developers-Grow",
+      "datePublished": "2025-06-27T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Comparing 5 AI Coding Assistants: Which One&#39;s Right for You?",
+      "url": "https://bekahhw.com//Comparing-AI-Coding-Assistants",
+      "datePublished": "2025-06-24T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Test Drive Before You Buy: Your Guide to AI Code Assistant Trials in 2025",
+      "url": "https://bekahhw.com//Guide-to-AI-Coding-Assistant-Trials",
+      "datePublished": "2025-06-23T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    },
+    
+    {
+      "@type": "BlogPosting",
+      "headline": "Taking Time to Breathe: A New Chapter Begins",
+      "url": "https://bekahhw.com//Taking-Time-to-Breathe-A-New-Chapter-Begins",
+      "datePublished": "2025-06-10T00:00:00-04:00",
+      "author": {
+        "@type": "Person",
+        "name": "Bekah Hawrot Weigel"
+      }
+    }
+    
+  ]
+}
+</script>
+
+
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  
   "@type": "WebPage",
+  
   "name": "Consulting",
   "description": "Code. Community. Content.",
   "url": "https://bekahhw.com//consulting",
+  "inLanguage": "en-US",
+  "isAccessibleForFree": "True",
   "author": {
     "@type": "Person",
     "name": "BekahHW",
-    "url": "https://bekahhw.com//about"
+    "url": "https://bekahhw.com//about",
+    "jobTitle": "Developer Advocate, Technical Content Strategist, Community Builder",
+    "knowsAbout": ["Developer Relations", "Community Building", "Technical Writing", "Career Development", "Mental Health in Tech"],
+    "sameAs": [
+      "https://twitter.com/BekahHW",
+      "https://github.com/BekahHW",
+      "https://linkedin.com/in/bekahhw",
+      "https://www.youtube.com/bekahhw"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -91,7 +272,58 @@
       "@type": "ImageObject",
       "url": "https://bekahhw.com//assets/images/logo.png"
     }
-  }
+  },
+  
+  "mainEntity": {
+    "@type": "ProfessionalService",
+    "name": "BekahHW Consulting",
+    "description": "Developer Relations, Technical Content Strategy, and Community Building Services",
+    "knowsAbout": ["Developer Experience", "Technical Content Strategy", "Community Building"],
+    "url": "https://bekahhw.com//consulting",
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://bekahhw.com//contact"
+    },
+    "provider": {
+      "@type": "Person",
+      "name": "BekahHW"
+    }
+  },
+  
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["article", ".post-content", ".site-content"]
+  },
+  "accessibilityAPI": "ARIA",
+  "accessibilityControl": "fullKeyboardControl",
+  "accessibilityFeature": ["alternativeText", "readingOrder", "structuralNavigation"],
+  "accessMode": "textual"
+}
+</script>
+
+
+<!-- Breadcrumb structured data -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://bekahhw.com//"
+    },
+    
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Consulting",
+      "item": "https://bekahhw.com//consulting"
+    }
+    
+  ]
 }
 </script>
 
@@ -104,14 +336,14 @@
       type="image/png"
     />
 
-    <!-- Font Embed Code -->
+    <!-- Font Embed Code - Optimized loading -->
     <link
-      href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700%7CPlayfair+Display:400,700&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
 
-    <!-- CSS Styles -->
+    <!-- CSS Styles - Optimized loading -->
+    <link rel="preload" href="/assets/css/style.css" as="style">
     <link href="/assets/css/style.css" rel="stylesheet" />
   </head>
 
@@ -124,6 +356,40 @@
     
     <h1 class="site-title"><a href="/" rel="home">BekahHW</a></h1>
     
+
+    <nav class="desktop-nav">
+        <ul class="desktop-menu">
+            
+            <li class="desktop-menu-item">
+                <a href="/about">About</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/my-work">My Work</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/consulting">Consulting</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/search">Search & Browse</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/contact">Contact</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/tags">All Topics</a>
+            </li>
+            
+            <li class="desktop-menu-item">
+                <a href="/subscribe">Subscribe</a>
+            </li>
+            
+        </ul>
+    </nav>
 
     <a class="sidebar-toggle">
         <span class="screen-reader-text">Menu and Widgets</span>
@@ -152,38 +418,241 @@
 
             <div class="inner">
                 <div class="post-content">
-                    <h2 id="team--community-consulting">Team &amp; Community Consulting</h2>
-<h3 id="creating-the-story-that-people-remember-and-want-to-share">Creating the story that people remember and want to share</h3>
-<p>After years as an educator and community builder, I’m bringing my experience as a consultant.</p>
+                    <!-- Intro Section -->
+<div class="consulting-intro">
+  <h2 style="text-align: center; margin-bottom: 20px;">Team &amp; Community Consulting</h2>
+  <p style="text-align: center; font-size: 1.25rem; color: #5c6b82; max-width: 800px; margin: 0 auto 15px;">
+    Creating the story that people remember and want to share
+  </p>
+  <p style="text-align: center; max-width: 700px; margin: 0 auto; line-height: 1.7;">
+    After years as an educator and community builder, I'm bringing my experience as a consultant. I have a passion for creating clear paths of communication, telling the story of your team, company, or community, and creating strategies that allow for trust, respect, and growth.
+  </p>
+</div>
 
-<p>I have a passion for creating clear paths of communication, telling the story of your team, company, or community, and creating strategies that allow for trust, respect, and growth.</p>
+<!-- Services Section -->
+<h2 style="text-align: center; margin: 50px 0 30px; font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase;">Services</h2>
 
-<h2 id="services">Services</h2>
-<h3 id="community-discovery">Community Discovery</h3>
-<ul>
-  <li>Goal setting,</li>
-  <li>Purpose statement,</li>
-  <li>Engagement strategy.</li>
-</ul>
+<div class="services-grid">
 
-<h3 id="team-building">Team Building</h3>
-<ul>
-  <li>Creating clear paths of communication,</li>
-  <li>Identifying and amplifying the strengths of your team,</li>
-  <li>Identifying weaknesses and supporting team members’ growth,</li>
-  <li>Optimizing your strategy.</li>
-</ul>
+  <!-- Community Discovery Card -->
+  <div class="service-card">
+    <div class="service-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 6v6l4 2" />
+      </svg>
+    </div>
+    <h3 class="service-title">Community Discovery</h3>
+    <ul class="service-list">
+      <li>Goal setting</li>
+      <li>Purpose statement</li>
+      <li>Engagement strategy</li>
+    </ul>
+  </div>
 
-<h3 id="formalizing-community">Formalizing Community</h3>
-<ul>
-  <li>Creating a supportive structure,</li>
-  <li>Identifying a strategy that corresponds with the community purpose,</li>
-  <li>Examining company and community strategy to ensure alignment,</li>
-  <li>Recommending measurements of success.</li>
-</ul>
+  <!-- Team Building Card -->
+  <div class="service-card">
+    <div class="service-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </svg>
+    </div>
+    <h3 class="service-title">Team Building</h3>
+    <ul class="service-list">
+      <li>Creating clear paths of communication</li>
+      <li>Identifying and amplifying team strengths</li>
+      <li>Supporting growth areas</li>
+      <li>Optimizing your strategy</li>
+    </ul>
+  </div>
 
-<h3 id="creating-community-experiences">Creating Community Experiences</h3>
-<p>I specialize in creating intimate experiences that allow for sharing, growth, and learning together. This could be in a conference, virtual, or hybrid setting.</p>
+  <!-- Formalizing Community Card -->
+  <div class="service-card">
+    <div class="service-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+        <line x1="12" y1="22.08" x2="12" y2="12" />
+      </svg>
+    </div>
+    <h3 class="service-title">Formalizing Community</h3>
+    <ul class="service-list">
+      <li>Creating a supportive structure</li>
+      <li>Strategy aligned with community purpose</li>
+      <li>Ensuring company and community alignment</li>
+      <li>Recommending success metrics</li>
+    </ul>
+  </div>
+
+  <!-- Creating Community Experiences Card -->
+  <div class="service-card">
+    <div class="service-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+      </svg>
+    </div>
+    <h3 class="service-title">Creating Community Experiences</h3>
+    <p class="service-description">
+      I specialize in creating intimate experiences that allow for sharing, growth, and learning together. This could be in a conference, virtual, or hybrid setting.
+    </p>
+  </div>
+
+</div>
+
+<!-- CTA Section -->
+<div class="consulting-cta">
+  <h3>Ready to Transform Your Team or Community?</h3>
+  <p>Let's discuss how we can work together to build something meaningful.</p>
+  <a href="/contact" class="cta-button">Get in Touch</a>
+</div>
+
+<style>
+.consulting-intro {
+  background: linear-gradient(135deg, #f5f2e9 0%, #fcfaf7 100%);
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  background-color: #f2e9d8;
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  background-color: #11273c;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0a1724;
+  margin: 0 0 15px 0;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.service-list li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #444;
+  line-height: 1.5;
+}
+
+.service-list li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #cd9023;
+  font-weight: bold;
+}
+
+.service-description {
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.consulting-cta {
+  background: linear-gradient(135deg, #11273c 0%, #0a1724 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.consulting-cta h3 {
+  font-size: 1.75rem;
+  margin: 0 0 15px 0;
+  color: white;
+}
+
+.consulting-cta p {
+  font-size: 1.1rem;
+  margin: 0 0 25px 0;
+  color: #d4d3d3;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #cd9023;
+  color: white;
+  padding: 14px 35px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #b37a1a;
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consulting-intro {
+    padding: 30px 20px;
+  }
+
+  .consulting-cta {
+    padding: 30px 20px;
+  }
+
+  .consulting-cta h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+
 
                 </div>
             </div><!-- .inner -->
@@ -208,15 +677,19 @@
             </li>
             
             <li class="menu-item">
-              <a href="/code-and-community">Code & Community</a>
-            </li>
-            
-            <li class="menu-item">
               <a href="/consulting">Consulting</a>
             </li>
             
             <li class="menu-item">
+              <a href="/search">Search & Browse</a>
+            </li>
+            
+            <li class="menu-item">
               <a href="/contact">Contact</a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="/tags">All Topics</a>
             </li>
             
             <li class="menu-item">
@@ -226,7 +699,26 @@
           </ul>
         </nav>
 
-        
+        <!-- Quick Search Widget -->
+<section class="widget widget-search">
+    <h2 class="widget-title">Search Posts</h2>
+    <form action="/search/" method="get" class="widget-search-form">
+        <input
+            type="text"
+            name="q"
+            placeholder="Search..."
+            class="widget-search-input"
+            aria-label="Search posts"
+        />
+        <button type="submit" class="widget-search-button" aria-label="Submit search">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </button>
+    </form>
+</section>
+
+
 <section class="widget widget-text">
     <h2 class="widget-title">About BekahHW's Site</h2>
     <p>Code. Community. Content.</p>
@@ -248,7 +740,79 @@
             </span>
         </a>
         
+        <a class="button" href='https://bekahhw.com/tag/best- practices/'>Best Practices
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/bootcamp/'>Bootcamp
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/career/'>Career
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
         <a class="button" href='https://bekahhw.com/tag/community/'>Community
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/content- creation/'>Content Creation
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/devrel/'>DevRel
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/interview/'>Interview
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/learning/'>Learning
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/mental- health/'>Mental Health
             <span aria-hidden="true">
                 <span class="line left"></span>
                 <span class="line top"></span>
@@ -266,7 +830,52 @@
             </span>
         </a>
         
+        <a class="button" href='https://bekahhw.com/tag/opinion/'>Opinion
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/personal/'>Personal
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/speaking/'>Speaking
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
         <a class="button" href='https://bekahhw.com/tag/tfjs/'>TFJS
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/technical/'>Technical
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href='https://bekahhw.com/tag/testing/'>Testing
             <span aria-hidden="true">
                 <span class="line left"></span>
                 <span class="line top"></span>
@@ -368,9 +977,9 @@
     </div>
     <!-- .site -->
 
-    <!-- Javascript Assets -->
-    <script src="/assets/js/jquery-3.2.1.min.js"></script>
-    <script src="/assets/js/plugins.js"></script>
-    <script src="/assets/js/custom.js"></script>
+    <!-- Javascript Assets - Deferred loading -->
+    <script defer src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script defer src="/assets/js/plugins.js"></script>
+    <script defer src="/assets/js/custom.js"></script>
   </body>
 </html>
