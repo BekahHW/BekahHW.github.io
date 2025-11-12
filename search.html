@@ -1,41 +1,112 @@
 ---
 layout: page
-title: Search
+title: Search & Browse
 permalink: /search/
-description: "Search through all blog posts to find exactly what you're looking for"
+description: "Search through all blog posts or browse by date and topic"
 ---
 
-<div class="search-container">
-  <div class="search-box">
-    <input
-      type="text"
-      id="search-input"
-      placeholder="Search posts by title, content, tags, or categories..."
-      autocomplete="off"
-      aria-label="Search posts"
-    />
-    <button id="clear-search" aria-label="Clear search" style="display: none;">✕</button>
-  </div>
+<div class="search-browse-container">
+  <!-- Search Section -->
+  <section class="search-section">
+    <h2>Search Posts</h2>
+    <div class="search-box">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by title, content, or tags..."
+        autocomplete="off"
+        aria-label="Search posts"
+      />
+      <button id="clear-search" aria-label="Clear search" style="display: none;">✕</button>
+    </div>
 
-  <div id="search-stats" class="search-stats"></div>
+    <div id="search-stats" class="search-stats"></div>
 
-  <div id="popular-tags" class="popular-tags-section" style="display: none;">
-    <h3>Filter by topic:</h3>
-    <div id="popular-tags-list" class="popular-tags-list"></div>
-  </div>
+    <div id="popular-tags" class="popular-tags-section" style="display: none;">
+      <h3>Filter by topic:</h3>
+      <div id="popular-tags-list" class="popular-tags-list"></div>
+    </div>
 
-  <div id="search-results" class="search-results">
-    <p class="search-prompt">Start typing to search through {{ site.posts.size }} blog posts...</p>
-  </div>
+    <div id="search-results" class="search-results">
+      <p class="search-prompt">Start typing to search through {{ site.posts.size }} blog posts, or browse by year below...</p>
+    </div>
+  </section>
+
+  <!-- Archive Section -->
+  <section class="archive-section">
+    <h2>Browse by Date</h2>
+    <div class="archive-stats">
+      <div class="stat-item">
+        <span class="stat-number">{{ site.posts.size }}</span>
+        <span class="stat-label">Total Posts</span>
+      </div>
+    </div>
+
+    <div class="archive-list">
+      {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+      {% for year in postsByYear %}
+        <div class="archive-year">
+          <h3 class="year-heading" data-year="{{ year.name }}">
+            <button class="year-toggle" aria-expanded="false" aria-label="Toggle {{ year.name }}">
+              <span class="toggle-icon">▶</span>
+              {{ year.name }}
+              <span class="year-count">({{ year.items | size }} posts)</span>
+            </button>
+          </h3>
+
+          <div class="year-content" style="display: none;">
+            {% assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%B'" %}
+
+            {% for month in postsByMonth %}
+              <div class="archive-month">
+                <h4 class="month-heading">{{ month.name }}</h4>
+
+                <ul class="archive-posts">
+                  {% for post in month.items %}
+                    <li class="archive-post-item">
+                      <span class="archive-date">{{ post.date | date: "%b %d" }}</span>
+                      <a href="{{ site.baseurl }}{{ post.url }}" class="archive-post-link">
+                        {{ post.title }}
+                      </a>
+                      {% if post.tags.size > 0 %}
+                        <span class="archive-tags">
+                          {% for tag in post.tags limit:3 %}
+                            <span class="archive-tag" onclick="filterByTag('{{ tag }}')">{{ tag }}</span>
+                          {% endfor %}
+                        </span>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
 </div>
 
 <style>
-.search-container {
-  max-width: 800px;
+.search-browse-container {
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 0;
 }
 
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #333;
+}
+
+/* Search Styles */
 .search-box {
   position: relative;
   margin-bottom: 2rem;
@@ -80,6 +151,50 @@ description: "Search through all blog posts to find exactly what you're looking 
   font-size: 0.9rem;
 }
 
+.popular-tags-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #333;
+}
+
+.popular-tags-section h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.popular-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.popular-tag {
+  display: inline-block;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: 2px solid #e0e0e0;
+  font-weight: 500;
+}
+
+.popular-tag:hover,
+.popular-tag.active {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 .search-results {
   min-height: 200px;
 }
@@ -94,11 +209,6 @@ description: "Search through all blog posts to find exactly what you're looking 
 .search-result-item {
   border-bottom: 1px solid #e0e0e0;
   padding: 1.5rem 0;
-  transition: background-color 0.2s;
-}
-
-.search-result-item:hover {
-  background-color: #f9f9f9;
 }
 
 .search-result-item h3 {
@@ -153,55 +263,6 @@ description: "Search through all blog posts to find exactly what you're looking 
   transform: translateY(-1px);
 }
 
-.popular-tags-section {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background: #f9f9f9;
-  border-radius: 8px;
-  border-left: 4px solid #333;
-}
-
-.popular-tags-section h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #333;
-}
-
-.popular-tags-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.popular-tag {
-  display: inline-block;
-  background: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.875rem;
-  color: #333;
-  text-decoration: none;
-  transition: all 0.2s;
-  cursor: pointer;
-  border: 2px solid #e0e0e0;
-  font-weight: 500;
-}
-
-.popular-tag:hover {
-  background: #333;
-  color: #fff;
-  border-color: #333;
-  transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.popular-tag.active {
-  background: #333;
-  color: #fff;
-  border-color: #333;
-}
-
 .search-result-excerpt {
   color: #555;
   line-height: 1.6;
@@ -220,12 +281,162 @@ description: "Search through all blog posts to find exactly what you're looking 
   color: #666;
 }
 
-.no-results h3 {
-  margin-bottom: 0.5rem;
+/* Archive Styles */
+.archive-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.archive-year {
+  margin-bottom: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.year-heading {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.year-toggle {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: #f9f9f9;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.year-toggle:hover {
+  background: #f0f0f0;
+}
+
+.toggle-icon {
+  font-size: 0.875rem;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.year-toggle[aria-expanded="true"] .toggle-icon {
+  transform: rotate(90deg);
+}
+
+.year-count {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: normal;
+  margin-left: auto;
+}
+
+.year-content {
+  padding: 1rem 1.5rem;
+}
+
+.archive-month {
+  margin-bottom: 1.5rem;
+}
+
+.month-heading {
+  font-size: 1.125rem;
+  color: #555;
+  margin: 0 0 0.75rem 0;
+  font-weight: 600;
+}
+
+.archive-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.archive-post-item {
+  display: flex;
+  align-items: baseline;
+  padding: 0.5rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.archive-post-item:last-child {
+  border-bottom: none;
+}
+
+.archive-date {
+  font-size: 0.875rem;
+  color: #999;
+  min-width: 50px;
+  font-family: monospace;
+}
+
+.archive-post-link {
+  flex: 1;
+  color: #333;
+  text-decoration: none;
+  min-width: 200px;
+  transition: color 0.2s;
+}
+
+.archive-post-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.archive-tags {
+  display: inline-flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.archive-tag {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.archive-tag:hover {
+  background: #333;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
-  .search-container {
+  .search-browse-container {
     padding: 1rem;
   }
 
@@ -234,8 +445,10 @@ description: "Search through all blog posts to find exactly what you're looking 
     padding: 0.875rem 2.5rem 0.875rem 0.875rem;
   }
 
-  .search-result-item h3 {
-    font-size: 1.25rem;
+  .archive-post-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }
 </style>
@@ -260,7 +473,6 @@ description: "Search through all blog posts to find exactly what you're looking 
     })
     .catch(error => {
       console.error('Error loading search data:', error);
-      searchResults.innerHTML = '<p class="no-results">Error loading search data. Please try again later.</p>';
     });
 
   // Build popular tags section
@@ -276,7 +488,6 @@ description: "Search through all blog posts to find exactly what you're looking 
       }
     });
 
-    // Sort by count and get top tags
     const sortedTags = Object.entries(tagCounts)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 15);
@@ -286,7 +497,6 @@ description: "Search through all blog posts to find exactly what you're looking 
         `<a href="#" class="popular-tag" data-tag="${tag}">${tag} (${count})</a>`
       ).join('');
 
-      // Add click handlers
       popularTagsList.querySelectorAll('.popular-tag').forEach(tagEl => {
         tagEl.addEventListener('click', function(e) {
           e.preventDefault();
@@ -298,20 +508,20 @@ description: "Search through all blog posts to find exactly what you're looking 
   }
 
   // Filter by tag
-  function filterByTag(tag) {
+  window.filterByTag = function(tag) {
+    // Scroll to search section
+    document.querySelector('.search-section').scrollIntoView({ behavior: 'smooth' });
+
     if (activeTagFilter === tag) {
-      // Deactivate filter
       activeTagFilter = null;
       searchInput.value = '';
       performSearch('');
       document.querySelectorAll('.popular-tag').forEach(el => el.classList.remove('active'));
     } else {
-      // Activate filter
       activeTagFilter = tag;
       searchInput.value = tag;
       performSearch(tag);
 
-      // Update active state
       document.querySelectorAll('.popular-tag').forEach(el => {
         if (el.getAttribute('data-tag') === tag) {
           el.classList.add('active');
@@ -320,12 +530,12 @@ description: "Search through all blog posts to find exactly what you're looking 
         }
       });
     }
-  }
+  };
 
   // Search function
   function performSearch(query) {
     if (!query || query.trim().length === 0) {
-      searchResults.innerHTML = '<p class="search-prompt">Start typing to search through {{ site.posts.size }} blog posts...</p>';
+      searchResults.innerHTML = '<p class="search-prompt">Start typing to search through {{ site.posts.size }} blog posts, or browse by year below...</p>';
       searchStats.textContent = '';
       clearButton.style.display = 'none';
       popularTagsSection.style.display = 'none';
@@ -336,7 +546,6 @@ description: "Search through all blog posts to find exactly what you're looking 
     popularTagsSection.style.display = 'block';
     const searchTerms = query.toLowerCase().trim().split(/\s+/);
 
-    // Score and filter results
     const results = searchData.map(post => {
       let score = 0;
       const titleLower = post.title.toLowerCase();
@@ -346,14 +555,10 @@ description: "Search through all blog posts to find exactly what you're looking 
       const excerptLower = post.excerpt.toLowerCase();
 
       searchTerms.forEach(term => {
-        // Title matches are worth more
         if (titleLower.includes(term)) score += 10;
-        // Tag and category matches
         if (tagsLower.includes(term)) score += 8;
         if (categoriesLower.includes(term)) score += 8;
-        // Excerpt matches
         if (excerptLower.includes(term)) score += 5;
-        // Content matches
         if (contentLower.includes(term)) score += 2;
       });
 
@@ -365,15 +570,9 @@ description: "Search through all blog posts to find exactly what you're looking 
     displayResults(results, query);
   }
 
-  // Display results
   function displayResults(results, query) {
     if (results.length === 0) {
-      searchResults.innerHTML = `
-        <div class="no-results">
-          <h3>No results found</h3>
-          <p>Try different keywords or browse the <a href="{{ site.baseurl }}/archive/">archive</a></p>
-        </div>
-      `;
+      searchResults.innerHTML = '<div class="no-results"><h3>No results found</h3><p>Try different keywords or browse by year below</p></div>';
       searchStats.textContent = '';
       return;
     }
@@ -402,22 +601,17 @@ description: "Search through all blog posts to find exactly what you're looking 
     searchResults.innerHTML = html;
   }
 
-  // Highlight matching text
   function highlightText(text, query) {
     if (!query) return text;
-
     const terms = query.trim().split(/\s+/);
     let highlighted = text;
-
     terms.forEach(term => {
       const regex = new RegExp(`(${term})`, 'gi');
       highlighted = highlighted.replace(regex, '<mark class="highlight">$1</mark>');
     });
-
     return highlighted;
   }
 
-  // Event listeners
   let searchTimeout;
   searchInput.addEventListener('input', function() {
     clearTimeout(searchTimeout);
@@ -434,10 +628,7 @@ description: "Search through all blog posts to find exactly what you're looking 
     searchInput.focus();
   });
 
-  // Make filterByTag available globally for inline onclick
-  window.filterByTag = filterByTag;
-
-  // Check for URL parameter and perform search
+  // URL parameters
   const urlParams = new URLSearchParams(window.location.search);
   const queryParam = urlParams.get('q');
 
@@ -448,14 +639,23 @@ description: "Search through all blog posts to find exactly what you're looking 
     searchInput.focus();
   }
 
-  // Update URL when searching (without page reload)
   searchInput.addEventListener('input', function() {
     const query = this.value.trim();
     const newUrl = query
       ? `${window.location.pathname}?q=${encodeURIComponent(query)}`
       : window.location.pathname;
-
     window.history.replaceState({}, '', newUrl);
+  });
+
+  // Year toggle functionality
+  document.querySelectorAll('.year-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      const content = this.closest('.archive-year').querySelector('.year-content');
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      this.setAttribute('aria-expanded', !isExpanded);
+      content.style.display = isExpanded ? 'none' : 'block';
+    });
   });
 })();
 </script>
