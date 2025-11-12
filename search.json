@@ -1,0 +1,17 @@
+---
+layout: null
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date | date: "%B %d, %Y" }}",
+      "dateiso"  : "{{ post.date | date_to_xmlschema }}",
+      "categories" : "{{ post.categories | join: ', ' }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "excerpt"  : "{{ post.excerpt | strip_html | strip_newlines | escape }}",
+      "content"  : "{{ post.content | strip_html | strip_newlines | escape | truncate: 500 }}"
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

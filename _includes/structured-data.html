@@ -1,3 +1,60 @@
+<!-- Website schema with search action -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.name }}",
+  "url": "{{ site.production_url }}/",
+  "description": "{{ site.description }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ site.production_url }}/search/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "BekahHW"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.name }}"
+  }
+}
+</script>
+
+<!-- Blog schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "{{ site.name }} Blog",
+  "description": "{{ site.description }}",
+  "url": "{{ site.production_url }}/",
+  "author": {
+    "@type": "Person",
+    "name": "BekahHW",
+    "url": "{{ site.production_url }}/about"
+  },
+  "blogPost": [
+    {% for post in site.posts limit:10 %}
+    {
+      "@type": "BlogPosting",
+      "headline": "{{ post.title | escape }}",
+      "url": "{{ site.production_url }}{{ post.url }}",
+      "datePublished": "{{ post.date | date_to_xmlschema }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.data.authors[post.author].name | default: post.author | default: 'BekahHW' }}"
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
 {% if page.layout == 'post' %}
 <script type="application/ld+json">
 {
@@ -73,7 +130,13 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  {% if page.url contains '/search' %}
+  "@type": "SearchResultsPage",
+  {% elsif page.url contains '/archive' %}
+  "@type": "CollectionPage",
+  {% else %}
   "@type": "WebPage",
+  {% endif %}
   "name": "{{ page.title | default: site.name }}",
   "description": "{{ page.description | default: site.description | escape }}",
   "url": "{{ site.production_url }}{{ page.url }}",
@@ -100,6 +163,18 @@
       "url": "{{ site.production_url }}/assets/images/logo.png"
     }
   },
+  {% if page.url contains '/archive' %}
+  "mainEntity": {
+    "@type": "Blog",
+    "name": "{{ site.name }} Blog Archive",
+    "description": "Complete archive of all blog posts organized chronologically",
+    "url": "{{ site.production_url }}/archive/",
+    "author": {
+      "@type": "Person",
+      "name": "BekahHW"
+    }
+  },
+  {% else %}
   "mainEntity": {
     "@type": "ProfessionalService",
     "name": "BekahHW Consulting",
@@ -115,6 +190,7 @@
       "name": "BekahHW"
     }
   },
+  {% endif %}
   "speakable": {
     "@type": "SpeakableSpecification",
     "cssSelector": ["article", ".post-content", ".site-content"]

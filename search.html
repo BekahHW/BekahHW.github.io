@@ -1,0 +1,325 @@
+---
+layout: page
+title: Search
+permalink: /search/
+description: "Search through all blog posts to find exactly what you're looking for"
+---
+
+<div class="search-container">
+  <div class="search-box">
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Search posts by title, content, tags, or categories..."
+      autocomplete="off"
+      aria-label="Search posts"
+    />
+    <button id="clear-search" aria-label="Clear search" style="display: none;">✕</button>
+  </div>
+
+  <div id="search-stats" class="search-stats"></div>
+
+  <div id="search-results" class="search-results">
+    <p class="search-prompt">Start typing to search through {{ site.posts.size }} blog posts...</p>
+  </div>
+</div>
+
+<style>
+.search-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#search-input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+#search-input:focus {
+  border-color: #333;
+}
+
+#clear-search {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+#clear-search:hover {
+  color: #333;
+}
+
+.search-stats {
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.search-results {
+  min-height: 200px;
+}
+
+.search-prompt {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 2rem 0;
+}
+
+.search-result-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.5rem 0;
+  transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+  background-color: #f9f9f9;
+}
+
+.search-result-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.search-result-item h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.search-result-item h3 a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.search-result-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.search-result-meta span {
+  margin-right: 1rem;
+}
+
+.search-result-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.search-tag {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.search-result-excerpt {
+  color: #555;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.highlight {
+  background-color: #fff3cd;
+  padding: 0 0.2rem;
+  border-radius: 2px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 0;
+  color: #666;
+}
+
+.no-results h3 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    padding: 1rem;
+  }
+
+  #search-input {
+    font-size: 1rem;
+    padding: 0.875rem 2.5rem 0.875rem 0.875rem;
+  }
+
+  .search-result-item h3 {
+    font-size: 1.25rem;
+  }
+}
+</style>
+
+<script>
+(function() {
+  let searchData = [];
+  let searchInput = document.getElementById('search-input');
+  let searchResults = document.getElementById('search-results');
+  let searchStats = document.getElementById('search-stats');
+  let clearButton = document.getElementById('clear-search');
+
+  // Load search data
+  fetch('{{ site.baseurl }}/search.json')
+    .then(response => response.json())
+    .then(data => {
+      searchData = data;
+    })
+    .catch(error => {
+      console.error('Error loading search data:', error);
+      searchResults.innerHTML = '<p class="no-results">Error loading search data. Please try again later.</p>';
+    });
+
+  // Search function
+  function performSearch(query) {
+    if (!query || query.trim().length === 0) {
+      searchResults.innerHTML = '<p class="search-prompt">Start typing to search through {{ site.posts.size }} blog posts...</p>';
+      searchStats.textContent = '';
+      clearButton.style.display = 'none';
+      return;
+    }
+
+    clearButton.style.display = 'block';
+    const searchTerms = query.toLowerCase().trim().split(/\s+/);
+
+    // Score and filter results
+    const results = searchData.map(post => {
+      let score = 0;
+      const titleLower = post.title.toLowerCase();
+      const contentLower = post.content.toLowerCase();
+      const tagsLower = post.tags.toLowerCase();
+      const categoriesLower = post.categories.toLowerCase();
+      const excerptLower = post.excerpt.toLowerCase();
+
+      searchTerms.forEach(term => {
+        // Title matches are worth more
+        if (titleLower.includes(term)) score += 10;
+        // Tag and category matches
+        if (tagsLower.includes(term)) score += 8;
+        if (categoriesLower.includes(term)) score += 8;
+        // Excerpt matches
+        if (excerptLower.includes(term)) score += 5;
+        // Content matches
+        if (contentLower.includes(term)) score += 2;
+      });
+
+      return { post, score };
+    })
+    .filter(result => result.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+    displayResults(results, query);
+  }
+
+  // Display results
+  function displayResults(results, query) {
+    if (results.length === 0) {
+      searchResults.innerHTML = `
+        <div class="no-results">
+          <h3>No results found</h3>
+          <p>Try different keywords or browse the <a href="{{ site.baseurl }}/archive/">archive</a></p>
+        </div>
+      `;
+      searchStats.textContent = '';
+      return;
+    }
+
+    searchStats.textContent = `Found ${results.length} result${results.length !== 1 ? 's' : ''}`;
+
+    const html = results.map(({ post }) => {
+      const tags = post.tags ? post.tags.split(',').map(tag =>
+        `<span class="search-tag">${tag.trim()}</span>`
+      ).join('') : '';
+
+      return `
+        <article class="search-result-item">
+          <h3><a href="${post.url}">${highlightText(post.title, query)}</a></h3>
+          <div class="search-result-meta">
+            <span class="date">${post.date}</span>
+            ${post.categories ? `<span class="category">${post.categories}</span>` : ''}
+          </div>
+          ${post.excerpt ? `<p class="search-result-excerpt">${highlightText(post.excerpt, query)}</p>` : ''}
+          ${tags ? `<div class="search-result-tags">${tags}</div>` : ''}
+        </article>
+      `;
+    }).join('');
+
+    searchResults.innerHTML = html;
+  }
+
+  // Highlight matching text
+  function highlightText(text, query) {
+    if (!query) return text;
+
+    const terms = query.trim().split(/\s+/);
+    let highlighted = text;
+
+    terms.forEach(term => {
+      const regex = new RegExp(`(${term})`, 'gi');
+      highlighted = highlighted.replace(regex, '<mark class="highlight">$1</mark>');
+    });
+
+    return highlighted;
+  }
+
+  // Event listeners
+  let searchTimeout;
+  searchInput.addEventListener('input', function() {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      performSearch(this.value);
+    }, 300);
+  });
+
+  clearButton.addEventListener('click', function() {
+    searchInput.value = '';
+    performSearch('');
+    searchInput.focus();
+  });
+
+  // Check for URL parameter and perform search
+  const urlParams = new URLSearchParams(window.location.search);
+  const queryParam = urlParams.get('q');
+
+  if (queryParam) {
+    searchInput.value = queryParam;
+    performSearch(queryParam);
+  } else {
+    searchInput.focus();
+  }
+
+  // Update URL when searching (without page reload)
+  searchInput.addEventListener('input', function() {
+    const query = this.value.trim();
+    const newUrl = query
+      ? `${window.location.pathname}?q=${encodeURIComponent(query)}`
+      : window.location.pathname;
+
+    window.history.replaceState({}, '', newUrl);
+  });
+})();
+</script>

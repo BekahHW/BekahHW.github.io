@@ -82,6 +82,12 @@ navigation:
   - text: Consulting
     url: /consulting
 
+  - text: Search
+    url: /search
+
+  - text: Archive
+    url: /archive
+
   - text: Contact
     url: /contact
 
