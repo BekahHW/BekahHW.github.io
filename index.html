@@ -6,62 +6,46 @@ title: Home
 <!-- Posts Index -->
 <main class="site-main">
   <div class="site-content">
-    <div class="home-layout">
-      <!-- Main Content -->
-      <div class="home-posts">
-        <div class="post-list">
-          {% for post in paginator.posts %}
-          {% include postbox.html %}
-          {% endfor %}
-        </div><!-- .post-list -->
+    <div class="post-list inner">
+      {% for post in paginator.posts %}
+      {% include postbox.html %}
+      {% endfor %}
+    </div><!-- .post-list -->
 
-        <!-- Pagination-->
-        {% include pagination.html %}
-      </div><!-- .home-posts -->
+    <!-- Pagination-->
+    {% include pagination.html %}
 
-      <!-- Category Filter Sidebar -->
-      <div class="home-sidebar">
-        {% include category-filter.html %}
-      </div><!-- .home-sidebar -->
-    </div><!-- .home-layout -->
+    <!-- Search & Browse Link -->
+    <div class="search-browse-link">
+      <p>Can't find what you're looking for? Try the <a href="{{ site.baseurl }}/search/">Search & Browse</a> page.</p>
+    </div>
+
   </div><!-- .site-content -->
 </main><!-- .site-main -->
 
 <style>
-.home-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
+.search-browse-link {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #e0e0e0;
 }
 
-@media (min-width: 1024px) {
-  .home-layout {
-    grid-template-columns: 1fr 320px;
-  }
-
-  .home-sidebar {
-    order: 2;
-  }
-
-  .home-posts {
-    order: 1;
-  }
+.search-browse-link p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
 }
 
-@media (max-width: 1023px) {
-  .home-sidebar {
-    order: 1;
-  }
-
-  .home-posts {
-    order: 2;
-  }
+.search-browse-link a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-.post-list {
-  margin-bottom: 2rem;
+.search-browse-link a:hover {
+  color: #000;
+  text-decoration: underline;
 }
 </style>
