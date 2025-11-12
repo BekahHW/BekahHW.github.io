@@ -218,7 +218,7 @@
 	font-size: 14px;
 	border: 1px solid $gray;
 	border-radius: 4px;
-	background-color: $gray-dark;
+	background-color: rgba(255, 255, 255, 0.1);
 	color: $gray-lighter;
 	outline: none;
 	transition: border-color 0.3s;
@@ -231,6 +231,7 @@
 
 .widget-search-input:focus {
 	border-color: $color-accent;
+	background-color: rgba(255, 255, 255, 0.15);
 }
 
 .widget-search-button {
