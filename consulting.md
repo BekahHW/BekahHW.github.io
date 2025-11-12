@@ -3,29 +3,238 @@ layout: page
 title: Consulting
 featured_image: /assets/images/pages/consulting.svg
 ---
-## Team & Community Consulting
-### Creating the story that people remember and want to share
-After years as an educator and community builder, I'm bringing my experience as a consultant. 
 
-I have a passion for creating clear paths of communication, telling the story of your team, company, or community, and creating strategies that allow for trust, respect, and growth. 
+<!-- Intro Section -->
+<div class="consulting-intro">
+  <h2 style="text-align: center; margin-bottom: 20px;">Team & Community Consulting</h2>
+  <p style="text-align: center; font-size: 1.25rem; color: #5c6b82; max-width: 800px; margin: 0 auto 15px;">
+    Creating the story that people remember and want to share
+  </p>
+  <p style="text-align: center; max-width: 700px; margin: 0 auto; line-height: 1.7;">
+    After years as an educator and community builder, I'm bringing my experience as a consultant. I have a passion for creating clear paths of communication, telling the story of your team, company, or community, and creating strategies that allow for trust, respect, and growth.
+  </p>
+</div>
 
-## Services
-### Community Discovery
-- Goal setting, 
-- Purpose statement, 
-- Engagement strategy.
+<!-- Services Section -->
+<h2 style="text-align: center; margin: 50px 0 30px; font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase;">Services</h2>
 
-### Team Building
-- Creating clear paths of communication, 
-- Identifying and amplifying the strengths of your team,
-- Identifying weaknesses and supporting team members' growth, 
-- Optimizing your strategy.
+<div class="services-grid">
 
-### Formalizing Community
-- Creating a supportive structure,
-- Identifying a strategy that corresponds with the community purpose,
-- Examining company and community strategy to ensure alignment,
-- Recommending measurements of success.
+  <!-- Community Discovery Card -->
+  <div class="service-card">
+    <div class="service-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M12 6v6l4 2"/>
+      </svg>
+    </div>
+    <h3 class="service-title">Community Discovery</h3>
+    <ul class="service-list">
+      <li>Goal setting</li>
+      <li>Purpose statement</li>
+      <li>Engagement strategy</li>
+    </ul>
+  </div>
 
-### Creating Community Experiences
-I specialize in creating intimate experiences that allow for sharing, growth, and learning together. This could be in a conference, virtual, or hybrid setting.
+  <!-- Team Building Card -->
+  <div class="service-card">
+    <div class="service-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+        <circle cx="9" cy="7" r="4"/>
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+      </svg>
+    </div>
+    <h3 class="service-title">Team Building</h3>
+    <ul class="service-list">
+      <li>Creating clear paths of communication</li>
+      <li>Identifying and amplifying team strengths</li>
+      <li>Supporting growth areas</li>
+      <li>Optimizing your strategy</li>
+    </ul>
+  </div>
+
+  <!-- Formalizing Community Card -->
+  <div class="service-card">
+    <div class="service-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+        <line x1="12" y1="22.08" x2="12" y2="12"/>
+      </svg>
+    </div>
+    <h3 class="service-title">Formalizing Community</h3>
+    <ul class="service-list">
+      <li>Creating a supportive structure</li>
+      <li>Strategy aligned with community purpose</li>
+      <li>Ensuring company and community alignment</li>
+      <li>Recommending success metrics</li>
+    </ul>
+  </div>
+
+  <!-- Creating Community Experiences Card -->
+  <div class="service-card">
+    <div class="service-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+      </svg>
+    </div>
+    <h3 class="service-title">Creating Community Experiences</h3>
+    <p class="service-description">
+      I specialize in creating intimate experiences that allow for sharing, growth, and learning together. This could be in a conference, virtual, or hybrid setting.
+    </p>
+  </div>
+
+</div>
+
+<!-- CTA Section -->
+<div class="consulting-cta">
+  <h3>Ready to Transform Your Team or Community?</h3>
+  <p>Let's discuss how we can work together to build something meaningful.</p>
+  <a href="/contact" class="cta-button">Get in Touch</a>
+</div>
+
+<style>
+.consulting-intro {
+  background: linear-gradient(135deg, #f5f2e9 0%, #fcfaf7 100%);
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  background-color: #f2e9d8;
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  background-color: #11273c;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0a1724;
+  margin: 0 0 15px 0;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.service-list li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #444;
+  line-height: 1.5;
+}
+
+.service-list li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #cd9023;
+  font-weight: bold;
+}
+
+.service-description {
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.consulting-cta {
+  background: linear-gradient(135deg, #11273c 0%, #0a1724 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.consulting-cta h3 {
+  font-size: 1.75rem;
+  margin: 0 0 15px 0;
+  color: white;
+}
+
+.consulting-cta p {
+  font-size: 1.1rem;
+  margin: 0 0 25px 0;
+  color: #d4d3d3;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #cd9023;
+  color: white;
+  padding: 14px 35px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #b37a1a;
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consulting-intro {
+    padding: 30px 20px;
+  }
+
+  .consulting-cta {
+    padding: 30px 20px;
+  }
+
+  .consulting-cta h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
