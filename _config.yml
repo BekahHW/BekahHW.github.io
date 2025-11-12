@@ -82,14 +82,15 @@ navigation:
   - text: Consulting
     url: /consulting
 
-  - text: Search
+  - text: Search & Browse
     url: /search
 
-  - text: Archive
-    url: /archive
 
   - text: Contact
     url: /contact
+
+  - text: All Topics
+    url: /tags
 
   - text: Subscribe
     url: /subscribe
