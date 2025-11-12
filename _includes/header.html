@@ -13,6 +13,16 @@
     <h1 class="site-title"><a href="{{ site.baseurl }}/" rel="home">{{site.name}}</a></h1>
     {% endif %}
 
+    <nav class="desktop-nav">
+        <ul class="desktop-menu">
+            {% for link in site.navigation %}
+            <li class="desktop-menu-item">
+                <a href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
     <a class="sidebar-toggle">
         <span class="screen-reader-text">Menu and Widgets</span>
         <span class="icon" aria-hidden="true"></span>

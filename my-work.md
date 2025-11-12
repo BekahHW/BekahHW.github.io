@@ -129,11 +129,113 @@ featured_image: /assets/images/pages/BHW_speaker.jpeg
     <li><strong><a href="https://virtualcoffee.io/">Virtual Coffee:</a></strong> Founded a 1,000+ member developer community, hosted 250+ events, led mentorship, and created monthly challenges <a href="https://virtualcoffee.io/monthlychallenges">[Monthly Challenges]</a></li>
     <li><strong>#100DaysOfOSS:</strong> Designed a GitHub Education-supported program to help early contributors build experience <a href="https://opensauced.pizza/docs/community-resources/100daysofoss-growing-skills-and-real-world-experience/">[Learn More]</a></li>
     <li><strong>Docs & Guides:</strong> Wrote contributor onboarding and documentation for <a href="https://opensauced.pizza/docs/">OpenSauced</a> and <a href="https://vc-community-docs.netlify.app/docs/">Virtual Coffee</a></li>
-    <li><strong>Hacktoberfest:</strong> Created <a href="https://hacktoberfest.virtualcoffee.io/">Virtual Coffee’s OSS initiative</a> since 2021, guiding contributors through PRs and mentorship</li>
-    <li><strong>Livestreams & Podcasts:</strong> Hosted 50+ X Spaces and appeared on industry podcasts including <a href="https://www.youtube.com/live/Dcz0dOQmcaE?si=kaF2tAFuBX3P3yIs">SE Unlocked</a>, CodeNewbie, and The Undefined Podcast</li>
+    <li><strong>Hacktoberfest:</strong> Created <a href="https://hacktoberfest.virtualcoffee.io/">Virtual Coffee's OSS initiative</a> since 2021, guiding contributors through PRs and mentorship</li>
+    <li><strong>Livestreams & Podcasts:</strong> Co-hosted <a href="https://virtualcoffee.io/podcast/">The Virtual Coffee Podcast</a>, hosted 50+ X Spaces, and appeared on industry podcasts including <a href="https://www.youtube.com/live/Dcz0dOQmcaE?si=kaF2tAFuBX3P3yIs">SE Unlocked</a>, <a href="https://www.codenewbie.org/podcast/moms-who-code">CodeNewbie</a>, and <a href="https://www.youtube.com/watch?v=_smGYgKnu-o">The Undefined Podcast</a></li>
     <li><strong>Conference Partnerships:</strong> Collaborated with GitHub Education, CFE.dev, and MagnoliaJS to grow OSS contributor impact and awareness <a href="https://www.youtube.com/live/EvDJpN-jJgo?si=XeUHuFpupgCTb1RK">[Code & Coffee]</a></li>
   </ul>
 </details>
+
+<!-- Code & Open Source Projects Card -->
+<details class="card">
+  <summary>
+    <h3>Code & Open Source Projects</h3>
+    <div class="summary-header">
+      Active contributor and maintainer in the open source community, sharing code, experiments, and learning resources.
+    </div>
+    <div class="summary-footer">
+      <span class="card-arrow" aria-hidden="true"></span>
+    </div>
+  </summary>
+  <ul>
+    <li><strong><a href="https://github.com/BekahHW">GitHub:</a></strong> Open source contributions, projects, and collaborative work</li>
+    <li><strong><a href="https://expo.io/@bekahhw/snacks">Expo Snacks:</a></strong> Mobile development experiments and demos</li>
+    <li><strong>Educational Content:</strong> Created <a href="https://youtu.be/sU7-SfukPT8">Audience v. Community</a>, <a href="https://youtu.be/K4vFE12QDxA">How to get started in Community</a>, and <a href="https://youtu.be/i-94sdTLqNA">Open Source: 5 reasons to Contribute</a></li>
+    <li><strong>Live Learning:</strong> Featured on <a href="https://www.learnwithjason.dev/let-s-learn-tensorflow-js">Learn with Jason (TensorFlow.js)</a> and <a href="https://www.youtube.com/watch?v=YA0To1gOwus&t=10s">Virtual Coffee Hacktoberfest stream</a></li>
+  </ul>
+</details>
+
+<!-- Speaking & Media Appearances -->
+<h2 style="margin-top: 40px; text-align: center;">SPEAKING & MEDIA</h2>
+
+<section class="speaking-section">
+  <div class="container">
+    <div class="content-cards">
+
+      <!-- Keynote Card -->
+      <div class="content-card">
+        <h3 class="card-title">The Power of Storytelling</h3>
+        <p class="card-description">
+          Keynote on human stories in a digital world
+        </p>
+        <div class="card-type">KEYNOTE</div>
+        <a href="https://www.youtube.com/live/Dcz0dOQmcaE?feature=share" target="_blank" class="card-link" aria-label="Watch The Power of Storytelling keynote">
+          <span class="arrow-icon">→</span>
+        </a>
+      </div>
+
+      <!-- Cypress Testing Talk -->
+      <div class="content-card">
+        <h3 class="card-title">Testing with Cypress</h3>
+        <p class="card-description">
+          Mission Impossible Prep: A practical testing workshop
+        </p>
+        <div class="card-type">CONFERENCE TALK</div>
+        <a href="https://www.youtube.com/live/WhqURueG6Ao?feature=share" target="_blank" class="card-link" aria-label="Watch Mission Impossible Prep talk">
+          <span class="arrow-icon">→</span>
+        </a>
+      </div>
+
+      <!-- How to Apologize -->
+      <div class="content-card">
+        <h3 class="card-title">How to Apologize</h3>
+        <p class="card-description">
+          Communication skills for better relationships
+        </p>
+        <div class="card-type">TALK</div>
+        <a href="https://yougotthis.io/library/how-to-apologize/" target="_blank" class="card-link" aria-label="Watch How to Apologize talk">
+          <span class="arrow-icon">→</span>
+        </a>
+      </div>
+
+      <!-- Virtual Coffee Podcast -->
+      <div class="content-card">
+        <h3 class="card-title">Virtual Coffee Podcast</h3>
+        <p class="card-description">
+          Co-host featuring developer stories and learnings
+        </p>
+        <div class="card-type">PODCAST</div>
+        <a href="https://virtualcoffee.io/podcast/" target="_blank" class="card-link" aria-label="Listen to Virtual Coffee Podcast">
+          <span class="arrow-icon">→</span>
+        </a>
+      </div>
+
+      <!-- CodeNewbie Appearance -->
+      <div class="content-card">
+        <h3 class="card-title">Moms Who Code</h3>
+        <p class="card-description">
+          CodeNewbie podcast on career transitions and parenting
+        </p>
+        <div class="card-type">PODCAST GUEST</div>
+        <a href="https://www.codenewbie.org/podcast/moms-who-code" target="_blank" class="card-link" aria-label="Listen to CodeNewbie episode">
+          <span class="arrow-icon">→</span>
+        </a>
+      </div>
+
+      <!-- Feedback Video -->
+      <div class="content-card">
+        <h3 class="card-title">Four Ways to Give Good Feedback</h3>
+        <p class="card-description">
+          Practical tips for constructive feedback
+        </p>
+        <div class="card-type">YOUTUBE</div>
+        <a href="https://youtu.be/Ce6Bm2O7D58" target="_blank" class="card-link" aria-label="Watch feedback video">
+          <span class="arrow-icon">→</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
 <!-- Developer Education & Enablement Section -->
 <div class="dev-education-section-row">
 <div class="icon-cards-row">
