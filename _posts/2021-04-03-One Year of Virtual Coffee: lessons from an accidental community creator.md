@@ -2,6 +2,7 @@
 layout: post
 title: "One Year of Community: The Three Ls of an Accidental Community Creator"
 date: 2021-04-03
+tags: [Community, Personal]
 ---
 
 It started with a tweet.

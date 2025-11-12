@@ -3,6 +3,7 @@ layout: post
 title: "The Power of Storytelling in Tech Content"
 author: Bekah
 date: 2025-03-05
+tags: [Content Creation, Opinion]
 ---
 
 I've been thinking a lot about how storytelling sometimes gets lost or becomes an afterthought when we're consumed by data, specifications, or writing content with AI. But in reality, it's one of the most powerful tools we have, especially now. It creates emotional connections, makes complex ideas memorable, and establishes trust with our audience.

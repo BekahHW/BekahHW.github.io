@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-17
+tags: [Technical, Learning]
 title: "Making Associations: The Basics"
 ---
 

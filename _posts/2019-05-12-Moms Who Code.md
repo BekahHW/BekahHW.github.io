@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-12
+tags: [Personal, Career]
 title: "Moms Who Code"
 
 ---

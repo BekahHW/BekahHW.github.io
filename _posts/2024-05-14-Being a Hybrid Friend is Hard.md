@@ -3,6 +3,7 @@ layout: post
 title: "Being a Hybrid Friend is Hard"
 author: Bekah
 date: 2024-05-14
+tags: [Personal, Community]
 ---
 
 Before coming into tech, I saw my friends weekly. I’ve never had a lot of friends, but I’ve had friends. You know, the kind that know you and understand you and you can break into random songs in front of one minute, shit-talk them in a board game the next minute, and then break down and cry when they ask, “Are you doing ok today?” We all had the same zipcode, and regional understanding - there’s something unique and interesting and beautiful about living in an Appalachian region. When I got my first job in tech this started to change. When the pandemic hit, this **changed**.

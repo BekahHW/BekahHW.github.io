@@ -2,6 +2,7 @@
 layout: post
 title: "Communities Need Support"
 date: 2022-08-02
+tags: [Community, Opinion]
 ---
 
 

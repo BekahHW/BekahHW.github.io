@@ -2,6 +2,7 @@
 layout: post
 title: "The Coder's Journey: Act III"
 date: 2018-06-19
+tags: [Learning, Personal]
 ---
 
 In this final post, we’ll see the hero make it to her end destination. She’s come through the hard part, working with her first client. Will she find it was worth it? Or will she forget everything she’s learned and return to her old life?

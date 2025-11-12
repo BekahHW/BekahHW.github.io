@@ -3,6 +3,7 @@ layout: post
 title: "How to Create a Positive Community for Your Open Source Project"
 author: Bekah
 date: 2023-03-02
+tags: [Open Source, Community, Tips]
 ---
 
 Over the last couple of years, I've spent time maintaining open source projects and an open source community. In the projects I've maintained and worked on, creating a positive and safe space for community members is a priority-and one that I appreciate. The people who contribute and interact with your OSS can be the backbone of your project, and cultivating a welcoming space for them is incredibly important to the health and growth of your project and users. Here are some tips to make your open source project friendly to contributors.

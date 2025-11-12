@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-05-03
+tags: [Learning, Tips]
 title: "Learning Paralysis: How to pick what to learn next, when there's so much out there"
 ---
 

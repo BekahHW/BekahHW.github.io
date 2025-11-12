@@ -3,6 +3,7 @@ layout: post
 title: "Taking Time to Breathe: A New Chapter Begins"
 author: Bekah
 date: 2025-06-10
+tags: [Personal, Career]
 ---
 As of June 1st, I'm no longer with the Linux Foundation. While I'll share more details about this transition in a future post, I wanted to take a moment to reflect on what comes next.
 

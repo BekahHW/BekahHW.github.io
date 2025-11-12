@@ -2,6 +2,7 @@
 layout: post
 title: "Getting Out of My Comfort Zone"
 date: 2021-03-13
+tags: [Personal, Career]
 ---
 
 I _like_ my comfort zone. A lot. It's a familiar space. It's a warm blanket, a cup of coffee, in front of a fire. It's the crack of the bat against a baseball on a hot July day. It's hearing that song from when I was eleven and still knowing all the words. I think comfort zones are good, but pushing ourselves out of them, pushing ourselves into unknown territories, those are the places we grow.

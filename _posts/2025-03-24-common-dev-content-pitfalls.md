@@ -3,6 +3,7 @@ layout: post
 title: "Common Pitfalls in Developer Content: The 7 Deadly Sins of Developer Documentation"
 author: Bekah
 date: 2025-03-24
+tags: [Content Creation, Tips]
 ---
 
 Last week, I wrote about [Content Developers Love](https://bekahhw.com/Creating-Content-Developers-Love), and it's natural to follow that with some of the places where developer content goes wrong. It's usually not one thing that causes documentation to go wrong; it can be death by a thousand papercuts. Learning how to recognize some of the common problems can keep your writing on track or help you catch it before the problem becomes too big.

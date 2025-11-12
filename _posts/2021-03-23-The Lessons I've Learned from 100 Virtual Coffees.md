@@ -2,6 +2,7 @@
 layout: post
 title: "Lessons I've Learned from 100 Virtual Coffees"
 date: 2021-03-23
+tags: [Community, Personal]
 ---
 
 It's almost been a year since Virtual Coffee was born from my cry of desperation into the Twittersphere. From knowing that I couldn't let myself be isolated during the time the world was calling for isolation. I knew from my experience with trauma four years ago that _I_ needed community to get me through this, even though I'm shy and an introvert and that reaching out into the Twitter void and opening myself up at this most vulnerable moment was terrifying. And now on this 100th Coffee, I'm going to talk about what I've learned just from those zoom sessions--I'll save the rest of the things I've learned for the one-year Virtual Coffee post.

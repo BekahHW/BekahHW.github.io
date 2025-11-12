@@ -2,6 +2,7 @@
 layout: post
 title: "How the Humanities Can Save Technology"
 date: 2018-04-20
+tags: [Career, Opinion]
 ---
 
 Obviously, the tech industry isn’t dead or even dying. In fact, it’s flourishing. So why would we need to save it? Well, no one can deny that there is a toxic culture going on in the tech industry, and that there is a shifting focus in schools to [STEM rather than STEAM](https://www.computerweekly.com/feature/The-correlation-between-creativity-diversity-and-the-future-tech-workforce).  We’ve all heard about the bro-culture that pushes people in other groups out. And while there are some great people working on this, the humanities will be the one to save it. If you don’t care what I have to say about it, [Neil Gaiman is saying the same thing](https://www.theguardian.com/books/2013/oct/15/neil-gaiman-future-libraries-reading-daydreaming).

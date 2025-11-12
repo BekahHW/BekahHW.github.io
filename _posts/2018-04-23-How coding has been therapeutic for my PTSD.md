@@ -3,6 +3,7 @@ layout: post
 title: "How Coding has been Therapeutic for my PTSD"
 date: 2018-04-23
 categories: life and code
+tags: [Mental Health, Personal]
 ---
 
 I’m at a red light, but my mind’s not there. It’s back in the hospital, remembering the doctor saying “that’s strange.” I’m in the grocery store, but my mind’s not there. It’s in the doctor’s office, hearing the doctor say “You’re not my problem.” I’m playing with my kids, but my mind’s not there. It’s seeing the seven or eight inch frankenstein scar for the first time. It’s feeling the first time standing after surgery. It’s crying in my bedroom. It’s me saying, I can’t do this. I can’t do this. It’s on repeat. Over and over and over. Everyday for months.

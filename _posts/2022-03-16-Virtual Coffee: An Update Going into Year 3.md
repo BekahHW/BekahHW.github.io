@@ -2,6 +2,7 @@
 layout: post
 title: "Virtual Coffee: An Update Going into Year 3"
 date: 2022-03-16
+tags: [Community, Personal]
 ---
 
 We’re going into our third year of Virtual Coffee, and what a whirlwind it’s been! Virtual Coffee wasn’t a pre-planned community, something we spent careers trying to develop. It was a natural connection among people who wanted to be a part of something, to share, to find friends in the midst of a pandemic. Virtual Coffee has been one of the most beautiful experiences of my entire life. I’ve met so many people who have been willing to listen, support, give, and be generous with their talents. It started with a tweet. And then it grew into something beautiful.

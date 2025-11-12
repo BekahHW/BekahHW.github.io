@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-04-28
+tags: [Community, Personal]
 title: "What is Virtual Coffee?"
 ---
 

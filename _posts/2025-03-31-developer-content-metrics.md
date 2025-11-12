@@ -3,6 +3,7 @@ layout: post
 title: "Measuring the Impact of Developer Content: Metrics That Matter"
 author: Bekah
 date: 2025-03-31
+tags: [Content Creation, Tips]
 ---
 
 Last week, I was chatting with a Developer Advocate at Gitbook, and he asked me what metrics we looked at for docs at OpenSauced. The honest answer is that we didn’t have KPIs or OKRs or metrics that determined our success. Ultimately, our success was based on users being able to use the software and understand the value in the data we were exposing. Now, that doesn’t mean that I didn’t measure anything. It just means that we weren’t building dashboards to track progress. Ultimately, the metrics will depend on your team's goals, but here are some of the things I think are valuable in identifying whether or not the docs I’m working on are successful. 
