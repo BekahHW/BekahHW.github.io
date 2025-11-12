@@ -132,43 +132,9 @@ featured_image: /assets/images/pages/BHW_speaker.jpeg
     <li><strong>Hacktoberfest:</strong> Created <a href="https://hacktoberfest.virtualcoffee.io/">Virtual Coffee's OSS initiative</a> since 2021, guiding contributors through PRs and mentorship</li>
     <li><strong>Livestreams & Podcasts:</strong> Co-hosted <a href="https://virtualcoffee.io/podcast/">The Virtual Coffee Podcast</a>, hosted 50+ X Spaces, and appeared on industry podcasts including <a href="https://www.youtube.com/live/Dcz0dOQmcaE?si=kaF2tAFuBX3P3yIs">SE Unlocked</a>, <a href="https://www.codenewbie.org/podcast/moms-who-code">CodeNewbie</a>, and <a href="https://www.youtube.com/watch?v=_smGYgKnu-o">The Undefined Podcast</a></li>
     <li><strong>Conference Partnerships:</strong> Collaborated with GitHub Education, CFE.dev, and MagnoliaJS to grow OSS contributor impact and awareness <a href="https://www.youtube.com/live/EvDJpN-jJgo?si=XeUHuFpupgCTb1RK">[Code & Coffee]</a></li>
-  </ul>
-</details>
-
-<!-- Speaking & Conference Talks -->
-<details class="card">
-  <summary>
-    <h3>Speaking & Conference Talks</h3>
-    <div class="summary-header">
-      Keynotes, conference talks, and workshops on storytelling, community building, testing, and developer experience.
-    </div>
-    <div class="summary-footer">
-      <span class="card-arrow" aria-hidden="true"></span>
-    </div>
-  </summary>
-  <ul>
-    <li><strong><a href="https://www.youtube.com/live/Dcz0dOQmcaE?feature=share">The Power of Storytelling</a></strong> — Keynote on human stories in a digital world</li>
     <li><strong><a href="https://www.youtube.com/live/WhqURueG6Ao?feature=share">Testing with Cypress</a></strong> — Mission Impossible Prep: A practical testing workshop</li>
     <li><strong><a href="https://www.youtube.com/watch?v=MVxvH54uLrE">How to Apologize</a></strong> — Communication skills for better relationships</li>
-    <li><strong><a href="https://www.middevcon.com/speakers/bekah-weigel/">The Coder's Journey</a></strong> — Community and Gatekeepers talk at Mid-Atlantic Developers Conference</li>
-  </ul>
-</details>
-
-<!-- Code & Open Source -->
-<details class="card">
-  <summary>
-    <h3>Code & Open Source</h3>
-    <div class="summary-header">
-      Active contributor and maintainer, creating educational content and sharing learning in public.
-    </div>
-    <div class="summary-footer">
-      <span class="card-arrow" aria-hidden="true"></span>
-    </div>
-  </summary>
-  <ul>
-    <li><strong><a href="https://github.com/BekahHW">GitHub:</a></strong> Open source contributions, projects, and collaborative work</li>
-    <li><strong>Educational Videos:</strong> Created <a href="https://youtu.be/sU7-SfukPT8">Audience v. Community</a>, <a href="https://youtu.be/K4vFE12QDxA">How to get started in Community</a>, and <a href="https://youtu.be/i-94sdTLqNA">Open Source: 5 Reasons to Contribute</a></li>
-    <li><strong>Live Learning:</strong> Featured on <a href="https://www.learnwithjason.dev/let-s-learn-tensorflow-js">Learn with Jason (TensorFlow.js)</a> and <a href="https://www.youtube.com/watch?v=YA0To1gOwus&t=10s">Virtual Coffee Hacktoberfest stream</a></li>
+    <li><strong>Additional Conference Talks:</strong> <a href="/code-and-community">View all talks</a></li>
   </ul>
 </details>
 <!-- Developer Education & Enablement Section -->
