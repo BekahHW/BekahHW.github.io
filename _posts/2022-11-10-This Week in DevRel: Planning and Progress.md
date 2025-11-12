@@ -2,6 +2,7 @@
 layout: post
 title: "This week in DevRel: Planning and Progress"
 date: 2022-11-10
+tags: [DevRel, Personal]
 ---
 
 

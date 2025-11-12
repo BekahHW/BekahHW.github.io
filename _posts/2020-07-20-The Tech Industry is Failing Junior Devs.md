@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-07-20
+tags: [Career, Opinion]
 title: "The Tech Industry is Failing Junior Devs"
 ---
 

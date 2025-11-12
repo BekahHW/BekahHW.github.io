@@ -3,6 +3,7 @@ layout: post
 title: "Agents vs MCP: Is the AI Hype Shifting?"
 author: Bekah
 date: 2025-04-07
+tags: [AI, Opinion]
 ---
 
 If you've been following AI developments at all over the last year, I'm sure you heard about how autonomous AI agents were the next big thing that was going to change the landscape. You might have also heard names like AutoGPT, BabyAGI, and CAMEL AI. These agents could loop through tasks, reflect, plan, and even decide which tools to use. It felt a little like magic or sci fi to be able to give them a goal and watch them figure things out.

@@ -2,6 +2,7 @@
 layout: post
 title: "TensorFlow.js 101: Working with Models and TFHub"
 date: 2021-12-08
+tags: [TFJS, Technical]
 ---
 
 Models allow us to take data and make predictions, reactions, transformations, etc. There are models that work with images, audio, and other forms of data. We can do things like identify objects in images, create text from audio, and analyze the form of athletes doing things like swinging a baseball bat, doing a deadlift, or throwing a ball.

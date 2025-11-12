@@ -3,6 +3,7 @@ layout: post
 title: "Google’s EEAT vs. Aristotle’s Rhetorical Triangle: SEO Is Just Ancient Rhetoric in Disguise"
 author: Bekah
 date: 2025-02-24
+tags: [Content Creation, Opinion]
 ---
 Recently, I learned about Google’s EEAT (Experience, Expertise, Authoritativeness, Trustworthiness) framework. That's the one that determines whether your content is worthy of showing up on search results or if it gets yeeted into the void of page two or beyond.
 

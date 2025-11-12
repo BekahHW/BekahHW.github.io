@@ -3,6 +3,7 @@ layout: post
 title: "Assume Best Intent"
 author: Bekah
 date: 2023-01-20
+tags: [Community, Tips, Opinion]
 ---
 
 Virtual Coffee has been through a progression of announcements about who we are and what we do. And we’re very thankful for the people who have shared when we get it wrong. One of the times we’ve gotten it wrong was when we included the phrase “assume best intent.” We wanted everyone to assume that we all supported each other, saw each other with an equal lens, and wanted the best for each other. And while that would be great, the truth is that it doesn’t always happen. I’m thankful that one of our members pointed it out to us, and I’m sorry if using that phrase negatively impacted any of our members without us knowing. We’ve since updated our language, and we ask that everyone “lead with kindness, and recognize that the impact of our words matters.” We share our Code of Conduct and our Code of Conduct violation form to ensure that there’s a clear space for folks to share their experiences where they didn’t feel safe.

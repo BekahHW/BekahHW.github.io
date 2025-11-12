@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-04-20
+tags: [Personal, Mental Health]
 title: "Yo Parents, How you doing?"
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: "Reading List: The Community Builder Edition"
 date: 2022-11-09
+tags: [Community, Learning]
 
 ---
 

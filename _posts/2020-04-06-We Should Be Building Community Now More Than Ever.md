@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-04-06
+tags: [Community, Personal]
 title: "We Should Be Building Community Now More Than Ever"
 ---
 

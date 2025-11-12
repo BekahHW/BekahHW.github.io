@@ -2,6 +2,7 @@
 layout: post
 title: "Making Better Meetings"
 date: 2022-11-21
+tags: [Tips, Career]
 ---
 We’ve all been there: a meeting that should’ve been an email or a slack message or really nothing at all. There are few things that frustrate me more than wasted time. I’ve said this before, moms are great employees because we don’t have any time to waste. Not every second of the day has to be “productive” but when you have an activity that has a primary purpose of being productive, you better make sure that it is. 
 

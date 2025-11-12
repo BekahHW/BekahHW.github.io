@@ -2,6 +2,7 @@
 layout: post
 title: "Five Hot Takes for the New Year"
 date: 2021-01-28
+tags: [Opinion, Personal]
 ---
  
 I spend a lot of time stuck in my head, wondering if what I say is going to hurt someone or lead them on the wrong path, or flat-out be wrong. And that's exhausting. I love going on podcasts, but the after-effect is that I rethink my every statement to see if it could possibly hurt someone. And there have been times that I've asked podcasts to cut something. But the truth is, we all live our own story. And sometimes we say things wrong, but we give the right advice. And sometimes our advice is meaningful for a bunch of people, but not one. And sometimes our stories impact one person and that's it. But I'm here for that one person. Because if you have ever felt alone, like you are the only one who understands your experience, that _one_ experience that you can relate to, can make the _biggest_ difference.

@@ -3,6 +3,7 @@ layout: post
 title: "The Giving-Resilience Balance: Beyond Givers and Takers"
 author: Bekah
 date: 2025-04-08
+tags: [Career, Opinion]
 ---
 
 *In today's workplace, we need both a culture of contribution and the personal strength to thrive independently.*

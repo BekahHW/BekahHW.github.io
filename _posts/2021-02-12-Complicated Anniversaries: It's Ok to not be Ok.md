@@ -2,6 +2,7 @@
 layout: post
 title: "Complicated Anniversaries: It's Ok to Not Be Ok"
 date: 2021-02-12
+tags: [Mental Health, Personal]
 ---
 
 Life has been _weird_ lately. It's been complicated, and I've had a hard time understanding why. And then I read this tweet: 

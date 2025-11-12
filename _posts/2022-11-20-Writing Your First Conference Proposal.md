@@ -2,6 +2,7 @@
 layout: post
 title: "Writing Your First Conference Proposal"
 date: 2022-11-20
+tags: [Career, Tips, Speaking]
 ---
 Maybe you’ve been thinking about speaking at a conference, but you’re nervous. You’ve been to a conference or more than you can count, you’ve thought “I could’ve given a talk like that”, and you’ve even scrolled over some cfps trying to get up the courage to submit a talk. And then you don’t. Maybe it’s because your nerves or imposter syndrome got the best of you or maybe the deadline passed and you just couldn’t think up any ideas that you thought were worth talking about. Hopefully, this blog post will help you discover an idea and/or overcome the fear of submitting. 
 

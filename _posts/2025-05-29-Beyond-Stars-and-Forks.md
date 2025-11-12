@@ -3,6 +3,7 @@ layout: post
 title: "Beyond Stars and Forks: Why Open Source Needs Better Collaboration Metrics"
 author: Bekah
 date: 2025-05-29
+tags: [Open Source, Opinion]
 ---
 
 When we were working on the [Intro to Open Source](https://opensauced.pizza/learn/intro-to-oss) course, one of the biggest painpoints we noted with new contributors was the frustration they felt when their PRs weren’t merged in in what they felt was a reasonable amount of time. They had done their research, found an issue, gotten assigned, and then…nothing. No feedback. No merge. Just silence.

@@ -2,6 +2,7 @@
 layout: post
 title: "Overcoming Imposter Syndrome"
 date: 2022-11-03
+tags: [Career, Mental Health, Tips]
 ---
 Yesterday at [Virtual Coffee](https://virtualcoffee.io/), we talked about imposter syndrome, and I want to share some key takeaways. Imposter syndrome is the feeling of not belonging and thinking that you don’t deserve opportunities, promotions, salary, or acknowledgment. Because the phrase imposter syndrome gets thrown around a lot, I want to emphasize that it’s not necessarily that you feel like you should be further along in your learning journey or your career. The key word in the definition is _deserve_; you don’t think you deserve the role you landed, the promotion you received, or the recognition of the community. According to Suzanne Imes, PhD, "In our society there's a huge pressure to achieve…There can be a lot of confusion between approval and love and worthiness. Self-worth becomes contingent on achieving." Overcoming imposter syndrome can be challenging, especially in an industry where there’s always something new to learn, switching companies often obtain promotions, and the pace of work can feel like you’re always running a marathon. You can overcome these feelings, though, and I want to share a couple of ways.
 

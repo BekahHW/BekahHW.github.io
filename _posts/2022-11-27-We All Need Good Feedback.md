@@ -3,6 +3,7 @@ layout: post
 title: "We All Need Good Feedback"
 author: Bekah
 date: 2022-11-27
+tags: [Career, Tips]
 ---
 
 When you touch a hot surface, you get feedback when your hand hurts. When you hug someone you care about and who cares about you, those warm feelings are feedback. When you get a like on your post, that's a type of feedback. Feedback helps you to learn not to touch the burner, to connect you to other people who care about you too, and to decide who to write for. Feedback helps us all to grow, and that's why it should be built into our processes.

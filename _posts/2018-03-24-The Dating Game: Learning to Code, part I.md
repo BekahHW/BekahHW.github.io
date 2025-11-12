@@ -2,6 +2,7 @@
 layout: post
 title: "The Dating Game: Learning to Code, part I"
 date: 2018-03-24
+tags: [Bootcamp, Learning, Mental Health]
 ---
 
 

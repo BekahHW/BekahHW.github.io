@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-12-06
+tags: [Personal, Career]
 title: "A Year in Review"
 ---
 It’s been a year since I’ve started coding. December 6th is my one year GitHub-iversary, and December 11th, is my six month anniversary with Flatiron School. It’s amazing to reflect on the last year and all I’ve learned and the communities that I’ve found around me. I’ve found people who support me, make me laugh, and listen to me when I’m frustrated or when I have no idea what I’m doing. I’ve found a new passion for a journey I never expected to take--a beautiful new world that I am so excited to explore. In honor of these anniversaries, I’ve come up with my top ten list of things I’ve learned and found meaningful as a Code Newbie.

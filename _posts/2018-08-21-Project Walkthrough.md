@@ -2,6 +2,7 @@
 layout: post
 title: "Project Walkthrough"
 date: 2018-08-21
+tags: [Technical, Learning]
 ---
 
 For my first solo project with Flatiron School, I had to create a CLI Ruby Gem where I scraped data from a website and went at least one level deep. Because I'm still in this weird space where I feel like I don't know anything even though I've learned a lot over the past 232 days that I've coded, I was a little terrified to take a step toward my project. Luckily, my mentor messaged me about doing a video chat, and she got me going. But then I needed to do some mapping out.

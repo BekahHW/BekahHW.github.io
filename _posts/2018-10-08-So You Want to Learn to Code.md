@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-10-08
+tags: [Tips, Career, Learning]
 title: So You Want to Learn to Code
 ---
 I get a lot of messages on social media asking me about coding, what it is, how to get started, whether or not to do a bootcamp, and where to get started. The truth is we are all the hero in our individual journeys. What worked for Frodo wouldn't work for Veronica Mars, and what worked for her wouldn't work for someone else. But there are parts of each of our journeys that will overlap. And in the moments that they overlap, I can give you some insight.

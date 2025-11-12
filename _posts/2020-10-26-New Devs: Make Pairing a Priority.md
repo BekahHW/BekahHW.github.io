@@ -1,6 +1,7 @@
 ---
 type: post
 date: 2020-10-26
+tags: [Tips, Career]
 title: "New Devs: Make Pairing a Priority"
 ---
 

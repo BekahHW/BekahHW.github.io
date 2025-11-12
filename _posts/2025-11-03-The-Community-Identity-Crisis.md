@@ -2,6 +2,7 @@
 layout: post
 title: "When We Became What We Do: The Identity Crisis That Companies Mistook for Opportunity"
 date: 2025-11-02
+tags: [Community, Opinion]
 author: Bekah
 description: "During the pandemic, professional communities became stand-ins for friendship, therapy, and identity. That was survival mode. Today, they're moving back to their real job: sharing knowledge, solving technical problems, and driving collaboration."
 ---

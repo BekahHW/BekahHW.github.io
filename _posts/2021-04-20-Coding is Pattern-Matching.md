@@ -2,6 +2,7 @@
 layout: post
 title: "Coding is Pattern-Matching: a growth-mindset perspective"
 date: 2021-04-20
+tags: [Learning, Opinion]
 author: Bekah
 ---
 

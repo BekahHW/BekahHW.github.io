@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-09-29
+tags: [Mental Health, Personal]
 title: This is a Mental Health Post
 ---
 

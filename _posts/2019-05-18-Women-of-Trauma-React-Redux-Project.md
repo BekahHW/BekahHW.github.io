@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-05-18
+tags: [Technical, Learning, Mental Health]
 title: "Women of Trauma React Redux Project"
 ---
 I’ve stuck with the same project idea for the last three projects for a couple of reasons: I have a hard time coming up with ideas, I’m passionate about this idea, I wanted to clearly compare the processes of coding in different languages and that seemed easiest by carrying the idea across Ruby and into JS. Here I am again developing Women of Trauma with a Rails backend and a React frontend.

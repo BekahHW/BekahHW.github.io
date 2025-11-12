@@ -1,6 +1,7 @@
 ---
 title: I'm Learning Something New, and I Refuse to Feel Imposter Syndrome
 date: 2019-11-04
+tags: [Career, Mental Health]
 type: post
 ---
 I’m starting a new project today, which is usually followed by spending an unreasonable amount of time thinking that I’m not good enough to be a developer, that I’m going to get fired, that it was fun while it lasted. Except for this time, I’m not going to let it. This time, I’m going to remember that:

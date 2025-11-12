@@ -2,6 +2,7 @@
 layout: post
 title: "I'll say it again: Kindness Matters"
 date: 2020-11-08
+tags: [Community, Opinion]
 ---
 
 The world can be a really messy and hard and sad place sometimes. And we're all carrying our own stories. Some of us wear them on our sleeves. Some of us let them slip out from time to time. Some of us keep them very well hidden. Some of us do them all. But at the end of the day, it doesn't matter if we're a frontend dev--or if you know how to spell it--a backend dev, a data scientist, or learning to dev. We're all human. And kindness matters. I said it [before](https://bekahhw.github.io/blog/2018/04/14/If-one-of-your-goals-isn-t-to-help-someone,-you-re-doing-it-wrong), and I'll say it again.

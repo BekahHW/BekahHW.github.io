@@ -3,6 +3,7 @@ layout: post
 title: "To Template or Not to Template"
 date: 2018-04-26
 categories: life and code
+tags: [Learning, Technical]
 ---
 
 This post is going to reveal how inexperienced I am. About six weeks ago, I decided I was going to build a blog with Jekyll and host it with [Github pages](https://pages.github.com/). I have no idea why. I’m sure I must’ve heard it in a podcast, or article, or tweet. I mean, the name is pretty cool, but I prefer Gatsby over Jekyll if we’re talking names. Anyway, I started by creating the the blog without installing a bundler, and until a couple of weeks ago, I didn’t have any gem files in the repo. I was going off of a layout in a tutorial, and I had only a vague idea of what markdown is. Go ahead, call me names, shake your head, but don’t stop reading.

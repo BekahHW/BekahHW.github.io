@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-08-01
+tags: [Career, Personal]
 title: Reflections on the First Month as a Dev
 ---
 Confession: I never thought I’d be a developer. I thought that I would finish my bootcamp, and I fully believed that no one would hire me. I thought maybe I would end up teaching beginner coding courses because it’s not far from my last career. I’m a really driven person, but perfectionism keeps me from being a really confident person. I’ve been a dev now for a month, and I still can’t believe it. I frequently feel like I could be let go at any point, mostly because I still haven’t wrapped my head around this whole career transition thing yet.

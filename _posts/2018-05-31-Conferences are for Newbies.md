@@ -2,6 +2,7 @@
 layout: post
 title: "Conferences are for Newbies"
 date: 2018-05-31
+tags: [Career, Tips, Community]
 ---
 
 It's been a week since my first full, IRL conference, and my mind is still exploding. Special thanks to the wonderful organizers from [Revolution Conference](https://revolutionconf.com/) for the diversity ticket. Without it, I wouldn't have a renewed drive to learn as much as I can as fast as I can. I can't stop talking about how much I learned, hence this blog and the webinar--Chart your Territory: how to make the most out of your conference-- I'm giving June 7, 12:30EST. (I'll post the link when I have it.) But this post isn't about that; it's a list of my top five reasons newbies should attend conferences.

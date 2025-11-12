@@ -2,6 +2,7 @@
 layout: post
 title: "The House that Code Built"
 date: 2018-04-13
+tags: [Learning, Technical]
 ---
 
 I’m the type of person who judges a book by its cover. (I know, I’m a college English teacher, I should know better. But I can tell you from experience that there are some awesome books with awesome covers. Case in point: I’m reading the kids [Arlo Finch](https://johnaugust.com/arlo-finch) right now.) When you’re learning to code, it can be difficult to understand what you’re actually doing. Like, what if I’m importing that object. What does it look like when I do that?!? Not everything will have a visual representation, but it’s helpful to think about how the pieces work together to create what you see.

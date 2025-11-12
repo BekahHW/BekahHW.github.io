@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-01-01
+tags: [Personal, Learning]
 title: "I've Coded 365 Days Straight and Here's What I've Learned"
 ---
 

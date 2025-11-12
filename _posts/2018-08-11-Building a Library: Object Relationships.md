@@ -2,6 +2,7 @@
 type: post
 title: "Building a Library: Object Relationships"
 date: 2018-08-11
+tags: [Technical, Learning]
 ---
 I've been trying to understand Ruby object relationships for a while now. And generally, I have a grasp on what that means, but I still spend a lot of time figuring out what belongs to who and who has many of what. And then my brain starts to spin. But then I came across this [article](https://medium.com/@marcellamaki/object-relationships-in-basic-ruby-1af5773fff48), which spells it out really nicely. So to practice my understanding of the concepts, I came up with a parallel example. Instead of a cinema, I'm going to take you through a library, since I'm sitting in the library right now.
 

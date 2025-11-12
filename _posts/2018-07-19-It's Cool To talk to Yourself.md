@@ -2,6 +2,7 @@
 type: post
 title: "It's Cool to Talk To Yourself"
 date: 2018-07-19
+tags: [Learning, Tips]
 ---
 I’m generally a visual or visual-kinesthetic learner. I think that’s one of the reasons I really enjoy learning with [Flatiron School](flatironschool.com). There’s a lot of reading material, code alongs, and labs. There are some videos and supplementary videos, but the main source of learning is visual and kinesthetic. And I’ve become really comfortable doing all of these things. But this week, I started something new: walking someone else through my code. It. Was. Terrifying.  
 

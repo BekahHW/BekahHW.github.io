@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-07-01
+tags: [Career, Personal, Tips]
 title: "Twelve Lessons for Twelve Months as a Dev"
 ---
 

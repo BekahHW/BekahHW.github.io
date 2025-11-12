@@ -3,6 +3,7 @@ layout: post
 title: "Adding Multiple Authors to my Astro Writing Blog: A Technical Walkthrough"
 author: Bekah
 date: 2025-03-18
+tags: [Technical, Content Creation]
 ---
 
 At the end of last year, my brothers and I wrote our first novel together ([The Battle for Christmas: Reign of the Nutcrackers](https://dub.sh/b4c-astro)). That experience inspired us to continue writing together, starting with a monthly newsletter with short stories. At this point, we decided we wanted a website. We had been using [Kit](https://kit.com/) to send emails, and we liked that functionality, but as our writing resumes grow, we also wanted to have a place where people could see all of our work, and this is where our Astro site came in.

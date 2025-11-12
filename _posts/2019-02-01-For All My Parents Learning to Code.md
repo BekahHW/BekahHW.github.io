@@ -1,5 +1,6 @@
 ---
 date: 2019-02-01
+tags: [Personal, Career, Tips]
 layout: post
 title: "For All My Parents Learning to Code"
 ---

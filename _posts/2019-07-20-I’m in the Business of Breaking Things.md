@@ -2,6 +2,7 @@
 layout: post
 title: "I’m in the Business of Breaking Things"
 date: 2019-07-20
+tags: [Learning, Personal]
 ---
 
 I’ve been doing something new with my coding. I’ve been doing two-hour code sprints--which seems more like a 5k, but whatever sprint is easier to say--where I eliminate distractions and just code. So no social media, email, meetings, slack, etc. I post on Twitter what I’m going to do to see if anyone wants to join in with me, turn on some classical music and dive in. It’s been really great, and I find that I’m way more productive in large chunks of time, rather than 25-minute sessions. You should join me sometime! But here’s the thing, this week, I couldn’t get my code working. Most of those two-hour sessions were spent breaking things or fixing one thing that broke another. It was frustrating, but I’m working on being ok with it. I know, I know, all you experienced devs are out there with your lecture voice telling me, “welcome, to the dev world.” I get it, but it’s going to take some getting used to, ok?

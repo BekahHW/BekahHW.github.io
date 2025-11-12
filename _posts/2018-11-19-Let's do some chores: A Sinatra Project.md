@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2018-11-19
+tags: [Technical, Learning]
 title: "Let's do some chores: A Sinatra Project"
 ---
 

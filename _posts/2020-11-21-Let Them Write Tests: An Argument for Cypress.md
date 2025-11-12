@@ -2,6 +2,7 @@
 layout: post
 title: "Let Them Write Tests: An Argument for Cypress"
 date: 2020-11-21
+tags: [Technical, Testing]
 ---
 
 When I was learning to code, testing was covered a little bit, but I didn’t grasp the full awesomeness of what we test and why we test it. But I have been lucky enough--yes, I said lucky--to learn more about testing and dive into Testing Library and Cypress, but I’m just going to talk about Cypress here. Not only did I learn how to test, and strategies behind testing, but I also learned a lot about the codebase I was working in, how the components work together, how the user interacts with the program.

@@ -2,6 +2,7 @@
 layout: post
 title: "Let Them Write Tests: Writing Your First Cypress Test"
 date: 2021-01-17
+tags: [Technical, Testing]
 ---
 
 _This is a continuation of [this post](https://dev.to/bekahhw/let-them-write-tests-an-argument-for-cypress-19o2)_

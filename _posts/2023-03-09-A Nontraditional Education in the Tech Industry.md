@@ -3,6 +3,7 @@ layout: post
 title: "A Nontraditional Education in the Tech Industry"
 author: Bekah
 date: 2023-03-09
+tags: [Career, Opinion, Learning]
 ---
 
 In April 2020, in the midst of the pandemic, I started having virtual coffees. It started as once-a-week sessions where we talked about the pandemic and our lives, and being laid off, and homebirths, and having kids at home, and terrible interview practices, and what our hearts were broken for. And then it went to two times a week. And then it became a slack. And eventually, we became [Virtual Coffee](https://virtualcoffee.io/). We've grown a lot. And I know that I certainly have, but it took me a while to realize that.

@@ -3,6 +3,7 @@ layout: post
 title: "I'm Leaving Academia Because I did a Bootcamp"
 date: 2018-05-02
 categories: life and code
+tags: [Bootcamp, Career]
 ---
 
 I’ve adjuncted in a university English Department for the last ten years, and it took learning to code to realize that adjuncting was a dead-end job. In January, I took an accelerated bootcamp prep online for a couple of weeks. After that bootcamp, my perspective on education, my future, and my own capabilities changed. So in the middle of a [Moms Can: Code](www.momscancode.com) virtual co-working session, I emailed my department chair to tell him I wouldn’t be returning. It wasn’t just about the politics of academia, the lack of upward mobility, the no merit-based raises in the entire time I was there. Yes, that was part of it, but I needed to value myself and my time. My experience isn’t unique to academia.

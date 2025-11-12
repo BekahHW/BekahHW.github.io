@@ -2,6 +2,7 @@
 layout: post
 title: "Git and Github, the Screenwriter's Version"
 date: 2018-07-09
+tags: [Technical, Learning]
 ---
 
 

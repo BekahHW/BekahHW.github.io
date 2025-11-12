@@ -3,6 +3,7 @@ layout: post
 title: "Hiring, Firing, and Becoming Indispensable"
 author: Bekah
 date: 2023-11-15
+tags: [Career, Opinion]
 ---
 
 

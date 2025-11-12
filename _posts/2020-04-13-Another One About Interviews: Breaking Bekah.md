@@ -1,6 +1,7 @@
 ---
 type: post
 date: 2020-04-13
+tags: [Career, Interview, Mental Health]
 title: "Another One About Interviews: Breaking Bekah"
 ---
 

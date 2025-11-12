@@ -3,6 +3,7 @@ layout: post
 title: "Interview Questions to Assess Company Culture Fit"
 author: Bekah
 date: 2023-03-21
+tags: [Career, Interview, Tips]
 ---
 
 Culture is hard to define. And we all like a different type of culture. We grow, learn, communicate in different ways; there’s not one culture that benefits everyone. Having diverse cultures is a beautiful part of the industry because there’s a space for all of us. It might be hard to find sometimes; we might need to dig. But there’s the hope that we find the space that welcomes us, as ourselves. But how do we find that? It’s something I’ve thought about a lot recently. And something I’ve failed at in my career. I’m a trusting person. I was once in a behavioral interview where the hiring manager told me that it was both a strength and weakness that I was willing to have my heart broken. I’m not interested in toughening up. I don’t particularly like my heart breaking, but I’d rather put myself into a situation where my heart is in it, than one where I don’t care; and company culture plays an important role in the interview process, my success, and the questions I ask. 

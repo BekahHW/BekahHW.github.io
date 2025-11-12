@@ -2,6 +2,7 @@
 layout: post
 title: "Job Announcement: A Dev's Journey into Technical Community Building"
 date: 2022-01-26
+tags: [Career, Community]
 ---
 
 I’ve been a developer for two and a half years. And for that entire time I’ve worked as a freelancer and consultant. I’ve loved that work. One of my biggest pieces of advice to new developers has been to find a good and supportive person/team to work with. I’ve been lucky enough to have that almost the entire time. So I’ve worked with great people, I’ve enjoyed what I was doing and learned a ton along the way, and really had no aspirations to leave. So why am I leaving that all behind and taking on a new role, in a part of the tech industry I’ve never worked in, and joining my first DevRel team at Deepgram as their Technical Community Builder?

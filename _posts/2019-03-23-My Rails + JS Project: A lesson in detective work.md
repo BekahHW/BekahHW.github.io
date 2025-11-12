@@ -2,6 +2,7 @@
 layout: post
 title: "My Rails + JS Project: A lesson in detective work"
 date: 2019-03-23
+tags: [Technical, Learning]
 ---
 
 

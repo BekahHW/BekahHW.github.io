@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-02-23
+tags: [Technical, Learning]
 title: "Building Out Our Schema: Screenwriting Project Continued"
 ---
 
