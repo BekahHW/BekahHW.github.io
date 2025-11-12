@@ -1,0 +1,309 @@
+---
+layout: page
+title: Browse by Topic
+permalink: /tags/
+description: "Explore blog posts by topic - browse all tags and categories"
+---
+
+<div class="tags-container">
+  <div class="tags-intro">
+    <p>Explore {{ site.posts.size }} blog posts organized by topic. Click any tag to see related posts.</p>
+    <p><a href="{{ site.baseurl }}/search/">Looking for something specific? Try search →</a> | <a href="{{ site.baseurl }}/archive/">Browse by date →</a></p>
+  </div>
+
+  {% assign all_tags = site.tags | sort %}
+  {% assign tag_count = all_tags | size %}
+
+  <div class="tags-stats">
+    <div class="stat-item">
+      <span class="stat-number">{{ tag_count }}</span>
+      <span class="stat-label">Topics</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">{{ site.posts.size }}</span>
+      <span class="stat-label">Posts</span>
+    </div>
+  </div>
+
+  <div class="tags-cloud">
+    {% for tag in all_tags %}
+      {% assign tag_name = tag | first %}
+      {% assign tag_posts = tag | last %}
+      {% assign post_count = tag_posts | size %}
+
+      <!-- Calculate tag size based on post count -->
+      {% assign size_class = "tag-small" %}
+      {% if post_count >= 20 %}
+        {% assign size_class = "tag-xlarge" %}
+      {% elsif post_count >= 10 %}
+        {% assign size_class = "tag-large" %}
+      {% elsif post_count >= 5 %}
+        {% assign size_class = "tag-medium" %}
+      {% endif %}
+
+      <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/"
+         class="tag-item {{ size_class }}"
+         title="{{ post_count }} post{% if post_count != 1 %}s{% endif %}">
+        {{ tag_name }}
+        <span class="tag-count">({{ post_count }})</span>
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="tags-list">
+    <h2>All Topics A-Z</h2>
+
+    {% for tag in all_tags %}
+      {% assign tag_name = tag | first %}
+      {% assign tag_posts = tag | last %}
+
+      <div class="tag-section">
+        <h3 class="tag-heading">
+          <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/">
+            {{ tag_name }}
+          </a>
+          <span class="tag-post-count">{{ tag_posts | size }} post{% if tag_posts.size != 1 %}s{% endif %}</span>
+        </h3>
+
+        <ul class="tag-posts">
+          {% for post in tag_posts limit:5 %}
+            <li>
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+            </li>
+          {% endfor %}
+          {% if tag_posts.size > 5 %}
+            <li class="view-all">
+              <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/">
+                View all {{ tag_posts.size }} posts →
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.tags-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.tags-intro {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-left: 4px solid #333;
+  border-radius: 4px;
+}
+
+.tags-intro p {
+  margin: 0.5rem 0;
+}
+
+.tags-intro a {
+  color: #333;
+  font-weight: bold;
+}
+
+.tags-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tags-cloud {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: #fafafa;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag-item {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.tag-item:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tag-count {
+  font-size: 0.85em;
+  opacity: 0.7;
+  margin-left: 0.25rem;
+}
+
+/* Tag sizes based on post count */
+.tag-small {
+  font-size: 0.9rem;
+}
+
+.tag-medium {
+  font-size: 1.1rem;
+}
+
+.tag-large {
+  font-size: 1.3rem;
+}
+
+.tag-xlarge {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.tags-list {
+  margin-top: 3rem;
+}
+
+.tags-list > h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #333;
+}
+
+.tag-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tag-section:last-child {
+  border-bottom: none;
+}
+
+.tag-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.tag-heading a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.tag-heading a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.tag-post-count {
+  font-size: 0.875rem;
+  color: #999;
+  font-weight: normal;
+}
+
+.tag-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tag-posts li {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.tag-posts li a {
+  color: #555;
+  text-decoration: none;
+  flex: 1;
+  transition: color 0.2s;
+}
+
+.tag-posts li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #999;
+  white-space: nowrap;
+}
+
+.view-all {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.view-all a {
+  color: #333 !important;
+}
+
+@media (max-width: 768px) {
+  .tags-container {
+    padding: 1rem;
+  }
+
+  .tags-cloud {
+    padding: 1rem;
+  }
+
+  .tag-item {
+    font-size: 0.875rem !important;
+    padding: 0.375rem 0.75rem;
+  }
+
+  .tag-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .tag-posts li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+</style>
