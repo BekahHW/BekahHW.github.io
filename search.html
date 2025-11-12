@@ -32,6 +32,28 @@ description: "Search through all blog posts or browse by date and topic"
     </div>
   </section>
 
+  <!-- Browse by Topic Section -->
+  <section class="topics-section">
+    <h2>Browse by Topic</h2>
+    <p class="topics-intro">Click any topic to see all related posts.</p>
+
+    {% assign all_tags = site.tags | sort %}
+    <div class="topics-grid">
+      {% for tag in all_tags %}
+        {% assign tag_name = tag | first %}
+        {% assign tag_posts = tag | last %}
+        {% assign post_count = tag_posts | size %}
+
+        <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/"
+           class="topic-card"
+           title="{{ post_count }} post{% if post_count != 1 %}s{% endif %}">
+          <span class="topic-name">{{ tag_name }}</span>
+          <span class="topic-count">{{ post_count }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+
   <!-- Archive Section -->
   <section class="archive-section">
     <h2>Browse by Date</h2>
@@ -281,6 +303,70 @@ section h2 {
   color: #666;
 }
 
+/* Topics Section Styles */
+.topics-section {
+  margin-bottom: 4rem;
+}
+
+.topics-intro {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  background: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s;
+  min-height: 100px;
+}
+
+.topic-card:hover {
+  background: #333;
+  border-color: #333;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.topic-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  transition: color 0.3s;
+  margin-bottom: 0.5rem;
+}
+
+.topic-card:hover .topic-name {
+  color: #fff;
+}
+
+.topic-count {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.topic-card:hover .topic-count {
+  color: #fff;
+}
+
 /* Archive Styles */
 .archive-stats {
   display: grid;
@@ -443,6 +529,23 @@ section h2 {
   #search-input {
     font-size: 1rem;
     padding: 0.875rem 2.5rem 0.875rem 0.875rem;
+  }
+
+  .topics-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .topic-card {
+    padding: 1rem 0.75rem;
+    min-height: 80px;
+  }
+
+  .topic-name {
+    font-size: 0.9rem;
+  }
+
+  .topic-count {
+    font-size: 1.25rem;
   }
 
   .archive-post-item {
