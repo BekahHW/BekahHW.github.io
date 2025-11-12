@@ -8,6 +8,9 @@
 	position: absolute;
 	width: 100%;
 	z-index: 997;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .site-title {
@@ -34,4 +37,64 @@
 
 .site-logo img {
 	max-height: 60px;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+	display: none;
+	margin-right: 30px;
+}
+
+.desktop-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.desktop-menu-item {
+	margin: 0;
+}
+
+.desktop-menu-item a {
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	padding: 5px 0;
+	transition: color 0.3s;
+}
+
+.desktop-menu-item a:before {
+	background-color: $color-accent;
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	bottom: 0;
+	transition: width 0.3s;
+	width: 0;
+}
+
+.desktop-menu-item a:hover {
+	color: $color-accent;
+}
+
+.desktop-menu-item a:hover:before {
+	width: 100%;
+}
+
+/* Show desktop nav on larger screens, hide hamburger */
+@media only screen and (min-width: 1024px) {
+	.desktop-nav {
+		display: block;
+	}
+
+	.site-header .sidebar-toggle {
+		display: none;
+	}
 }

@@ -76,9 +76,6 @@ navigation:
   - text: My Work
     url: /my-work
 
-  - text: Code & Community
-    url: /code-and-community
-
   - text: Consulting
     url: /consulting
 
