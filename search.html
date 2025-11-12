@@ -19,6 +19,11 @@ description: "Search through all blog posts to find exactly what you're looking 
 
   <div id="search-stats" class="search-stats"></div>
 
+  <div id="popular-tags" class="popular-tags-section" style="display: none;">
+    <h3>Filter by topic:</h3>
+    <div id="popular-tags-list" class="popular-tags-list"></div>
+  </div>
+
   <div id="search-results" class="search-results">
     <p class="search-prompt">Start typing to search through {{ site.posts.size }} blog posts...</p>
   </div>
@@ -135,6 +140,66 @@ description: "Search through all blog posts to find exactly what you're looking 
   border-radius: 3px;
   font-size: 0.75rem;
   color: #555;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.search-tag:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+  transform: translateY(-1px);
+}
+
+.popular-tags-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #333;
+}
+
+.popular-tags-section h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.popular-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.popular-tag {
+  display: inline-block;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: 2px solid #e0e0e0;
+  font-weight: 500;
+}
+
+.popular-tag:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.popular-tag.active {
+  background: #333;
+  color: #fff;
+  border-color: #333;
 }
 
 .search-result-excerpt {
@@ -182,17 +247,80 @@ description: "Search through all blog posts to find exactly what you're looking 
   let searchResults = document.getElementById('search-results');
   let searchStats = document.getElementById('search-stats');
   let clearButton = document.getElementById('clear-search');
+  let popularTagsSection = document.getElementById('popular-tags');
+  let popularTagsList = document.getElementById('popular-tags-list');
+  let activeTagFilter = null;
 
   // Load search data
   fetch('{{ site.baseurl }}/search.json')
     .then(response => response.json())
     .then(data => {
       searchData = data;
+      buildPopularTags();
     })
     .catch(error => {
       console.error('Error loading search data:', error);
       searchResults.innerHTML = '<p class="no-results">Error loading search data. Please try again later.</p>';
     });
+
+  // Build popular tags section
+  function buildPopularTags() {
+    const tagCounts = {};
+
+    searchData.forEach(post => {
+      if (post.tags) {
+        const tags = post.tags.split(',').map(t => t.trim()).filter(t => t);
+        tags.forEach(tag => {
+          tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+        });
+      }
+    });
+
+    // Sort by count and get top tags
+    const sortedTags = Object.entries(tagCounts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 15);
+
+    if (sortedTags.length > 0) {
+      popularTagsList.innerHTML = sortedTags.map(([tag, count]) =>
+        `<a href="#" class="popular-tag" data-tag="${tag}">${tag} (${count})</a>`
+      ).join('');
+
+      // Add click handlers
+      popularTagsList.querySelectorAll('.popular-tag').forEach(tagEl => {
+        tagEl.addEventListener('click', function(e) {
+          e.preventDefault();
+          const tag = this.getAttribute('data-tag');
+          filterByTag(tag);
+        });
+      });
+    }
+  }
+
+  // Filter by tag
+  function filterByTag(tag) {
+    if (activeTagFilter === tag) {
+      // Deactivate filter
+      activeTagFilter = null;
+      searchInput.value = '';
+      performSearch('');
+      document.querySelectorAll('.popular-tag').forEach(el => el.classList.remove('active'));
+    } else {
+      // Activate filter
+      activeTagFilter = tag;
+      searchInput.value = tag;
+      performSearch(tag);
+
+      // Update active state
+      document.querySelectorAll('.popular-tag').forEach(el => {
+        if (el.getAttribute('data-tag') === tag) {
+          el.classList.add('active');
+        } else {
+          el.classList.remove('active');
+        }
+      });
+    }
+  }
 
   // Search function
   function performSearch(query) {
@@ -200,10 +328,12 @@ description: "Search through all blog posts to find exactly what you're looking 
       searchResults.innerHTML = '<p class="search-prompt">Start typing to search through {{ site.posts.size }} blog posts...</p>';
       searchStats.textContent = '';
       clearButton.style.display = 'none';
+      popularTagsSection.style.display = 'none';
       return;
     }
 
     clearButton.style.display = 'block';
+    popularTagsSection.style.display = 'block';
     const searchTerms = query.toLowerCase().trim().split(/\s+/);
 
     // Score and filter results
@@ -251,9 +381,10 @@ description: "Search through all blog posts to find exactly what you're looking 
     searchStats.textContent = `Found ${results.length} result${results.length !== 1 ? 's' : ''}`;
 
     const html = results.map(({ post }) => {
-      const tags = post.tags ? post.tags.split(',').map(tag =>
-        `<span class="search-tag">${tag.trim()}</span>`
-      ).join('') : '';
+      const tags = post.tags ? post.tags.split(',').map(tag => {
+        const trimmedTag = tag.trim();
+        return `<a href="#" class="search-tag" data-tag="${trimmedTag}" onclick="event.preventDefault(); filterByTag('${trimmedTag}')">${trimmedTag}</a>`;
+      }).join('') : '';
 
       return `
         <article class="search-result-item">
@@ -262,8 +393,8 @@ description: "Search through all blog posts to find exactly what you're looking 
             <span class="date">${post.date}</span>
             ${post.categories ? `<span class="category">${post.categories}</span>` : ''}
           </div>
-          ${post.excerpt ? `<p class="search-result-excerpt">${highlightText(post.excerpt, query)}</p>` : ''}
           ${tags ? `<div class="search-result-tags">${tags}</div>` : ''}
+          ${post.excerpt ? `<p class="search-result-excerpt">${highlightText(post.excerpt, query)}</p>` : ''}
         </article>
       `;
     }).join('');
@@ -297,9 +428,14 @@ description: "Search through all blog posts to find exactly what you're looking 
 
   clearButton.addEventListener('click', function() {
     searchInput.value = '';
+    activeTagFilter = null;
+    document.querySelectorAll('.popular-tag').forEach(el => el.classList.remove('active'));
     performSearch('');
     searchInput.focus();
   });
+
+  // Make filterByTag available globally for inline onclick
+  window.filterByTag = filterByTag;
 
   // Check for URL parameter and perform search
   const urlParams = new URLSearchParams(window.location.search);
