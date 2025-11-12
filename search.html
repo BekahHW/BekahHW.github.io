@@ -44,7 +44,7 @@ description: "Search through all blog posts or browse by date and topic"
         {% assign tag_posts = tag | last %}
         {% assign post_count = tag_posts | size %}
 
-        <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/"
+        <a href="{{ site.baseurl }}/search/?q={{ tag_name | url_encode }}"
            class="topic-card"
            title="{{ post_count }} post{% if post_count != 1 %}s{% endif %}">
           <span class="topic-name">{{ tag_name }}</span>
@@ -94,7 +94,7 @@ description: "Search through all blog posts or browse by date and topic"
                       {% if post.tags.size > 0 %}
                         <span class="archive-tags">
                           {% for tag in post.tags limit:3 %}
-                            <span class="archive-tag" onclick="filterByTag('{{ tag }}')">{{ tag }}</span>
+                            <span class="archive-tag" onclick="event.preventDefault(); filterByTag('{{ tag }}')">{{ tag }}</span>
                           {% endfor %}
                         </span>
                       {% endif %}

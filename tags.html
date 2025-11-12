@@ -41,7 +41,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
         {% assign size_class = "tag-medium" %}
       {% endif %}
 
-      <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/"
+      <a href="{{ site.baseurl }}/search/?q={{ tag_name | url_encode }}"
          class="tag-item {{ size_class }}"
          title="{{ post_count }} post{% if post_count != 1 %}s{% endif %}">
         {{ tag_name }}
@@ -59,7 +59,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
 
       <div class="tag-section">
         <h3 class="tag-heading">
-          <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/">
+          <a href="{{ site.baseurl }}/search/?q={{ tag_name | url_encode }}">
             {{ tag_name }}
           </a>
           <span class="tag-post-count">{{ tag_posts | size }} post{% if tag_posts.size != 1 %}s{% endif %}</span>
@@ -74,7 +74,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
           {% endfor %}
           {% if tag_posts.size > 5 %}
             <li class="view-all">
-              <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/">
+              <a href="{{ site.baseurl }}/search/?q={{ tag_name | url_encode }}">
                 View all {{ tag_posts.size }} posts →
               </a>
             </li>
