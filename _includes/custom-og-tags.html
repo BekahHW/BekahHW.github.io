@@ -1,0 +1,39 @@
+{% comment %}
+  Custom Open Graph and Twitter Card meta tags
+  This generates title-based cards for posts without featured_image
+  Uses og-image.vercel.app to generate cards with post titles
+{% endcomment %}
+
+{% if page.featured_image %}
+  {% comment %} Use the post's featured image {% endcomment %}
+  {% assign og_image = page.featured_image | prepend: site.baseurl | prepend: site.production_url %}
+{% elsif page.image %}
+  {% comment %} Use page.image if set {% endcomment %}
+  {% assign og_image = page.image | prepend: site.baseurl | prepend: site.production_url %}
+{% else %}
+  {% comment %} Generate dynamic OG image with post title {% endcomment %}
+  {% if page.layout == "post" and page.title %}
+    {% comment %} Use og-image service to generate a card with the title {% endcomment %}
+    {% assign encoded_title = page.title | url_encode %}
+    {% comment %} Clean design with your brand name {% endcomment %}
+    {% assign og_image = "https://og-image.vercel.app/" | append: encoded_title | append: ".png?theme=light&md=1&fontSize=75px&widths=800&heights=400" %}
+  {% else %}
+    {% comment %} Use default site image {% endcomment %}
+    {% assign og_image = site.image | prepend: site.baseurl | prepend: site.production_url %}
+  {% endif %}
+{% endif %}
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:image" content="{{ og_image }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="{{ page.title | default: site.name }}" />
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:image" content="{{ og_image }}" />
+<meta name="twitter:image:alt" content="{{ page.title | default: site.name }}" />
+{% if page.description %}
+<meta name="twitter:description" content="{{ page.description | strip_html | normalize_whitespace | truncate: 200 | escape }}" />
+{% elsif page.excerpt %}
+<meta name="twitter:description" content="{{ page.excerpt | strip_html | normalize_whitespace | truncate: 200 | escape }}" />
+{% endif %}
