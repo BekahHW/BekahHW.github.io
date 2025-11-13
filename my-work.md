@@ -129,9 +129,12 @@ featured_image: /assets/images/pages/BHW_speaker.jpeg
     <li><strong><a href="https://virtualcoffee.io/">Virtual Coffee:</a></strong> Founded a 1,000+ member developer community, hosted 250+ events, led mentorship, and created monthly challenges <a href="https://virtualcoffee.io/monthlychallenges">[Monthly Challenges]</a></li>
     <li><strong>#100DaysOfOSS:</strong> Designed a GitHub Education-supported program to help early contributors build experience <a href="https://opensauced.pizza/docs/community-resources/100daysofoss-growing-skills-and-real-world-experience/">[Learn More]</a></li>
     <li><strong>Docs & Guides:</strong> Wrote contributor onboarding and documentation for <a href="https://opensauced.pizza/docs/">OpenSauced</a> and <a href="https://vc-community-docs.netlify.app/docs/">Virtual Coffee</a></li>
-    <li><strong>Hacktoberfest:</strong> Created <a href="https://hacktoberfest.virtualcoffee.io/">Virtual Coffee’s OSS initiative</a> since 2021, guiding contributors through PRs and mentorship</li>
-    <li><strong>Livestreams & Podcasts:</strong> Hosted 50+ X Spaces and appeared on industry podcasts including <a href="https://www.youtube.com/live/Dcz0dOQmcaE?si=kaF2tAFuBX3P3yIs">SE Unlocked</a>, CodeNewbie, and The Undefined Podcast</li>
+    <li><strong>Hacktoberfest:</strong> Created <a href="https://hacktoberfest.virtualcoffee.io/">Virtual Coffee's OSS initiative</a> since 2021, guiding contributors through PRs and mentorship</li>
+    <li><strong>Livestreams & Podcasts:</strong> Co-hosted <a href="https://virtualcoffee.io/podcast/">The Virtual Coffee Podcast</a>, hosted 50+ X Spaces, and appeared on industry podcasts including <a href="https://www.youtube.com/live/Dcz0dOQmcaE?si=kaF2tAFuBX3P3yIs">SE Unlocked</a>, <a href="https://www.codenewbie.org/podcast/moms-who-code">CodeNewbie</a>, and <a href="https://www.youtube.com/watch?v=_smGYgKnu-o">The Undefined Podcast</a></li>
     <li><strong>Conference Partnerships:</strong> Collaborated with GitHub Education, CFE.dev, and MagnoliaJS to grow OSS contributor impact and awareness <a href="https://www.youtube.com/live/EvDJpN-jJgo?si=XeUHuFpupgCTb1RK">[Code & Coffee]</a></li>
+    <li><strong><a href="https://www.youtube.com/live/WhqURueG6Ao?feature=share">Testing with Cypress</a></strong> — Mission Impossible Prep: A practical testing workshop</li>
+    <li><strong><a href="https://www.youtube.com/watch?v=MVxvH54uLrE">How to Apologize</a></strong> — Communication skills for better relationships</li>
+    <li><strong>Additional Conference Talks:</strong> <a href="/code-and-community">View all talks</a></li>
   </ul>
 </details>
 <!-- Developer Education & Enablement Section -->

@@ -6,17 +6,32 @@ description: "Explore blog posts by topic - browse all tags and categories"
 ---
 
 <div class="tags-container">
-  <div class="tags-intro">
-    <p>Explore {{ site.posts.size }} blog posts organized by topic. Click any tag to see related posts.</p>
-    <p><a href="{{ site.baseurl }}/search/">Looking for something specific? Try search →</a> | <a href="{{ site.baseurl }}/archive/">Browse by date →</a></p>
+  <!-- Search Section -->
+  <div class="search-section">
+    <div class="search-box">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by title, content, or tags..."
+        autocomplete="off"
+        aria-label="Search posts"
+      />
+      <button id="clear-search" aria-label="Clear search" style="display: none;">✕</button>
+    </div>
+    <div id="search-stats" class="search-stats"></div>
+    <div id="search-results" class="search-results"></div>
   </div>
 
-  {% assign all_tags = site.tags | sort %}
-  {% assign tag_count = all_tags | size %}
+  <!-- View Toggle -->
+  <div class="view-toggle">
+    <button id="toggle-topics" class="view-btn active">Browse by Topic</button>
+    <button id="toggle-dates" class="view-btn">Browse by Date</button>
+  </div>
 
+  <!-- Stats -->
   <div class="tags-stats">
     <div class="stat-item">
-      <span class="stat-number">{{ tag_count }}</span>
+      <span class="stat-number" id="topics-count">{{ site.tags | size }}</span>
       <span class="stat-label">Topics</span>
     </div>
     <div class="stat-item">
@@ -25,88 +40,238 @@ description: "Explore blog posts by topic - browse all tags and categories"
     </div>
   </div>
 
-  <div class="tags-cloud">
-    {% for tag in all_tags %}
-      {% assign tag_name = tag | first %}
-      {% assign tag_posts = tag | last %}
-      {% assign post_count = tag_posts | size %}
+  <!-- Topics View -->
+  <div id="topics-view" class="content-view">
+    <div class="tags-cloud">
+      {% assign all_tags = site.tags | sort %}
+      {% for tag in all_tags %}
+        {% assign tag_name = tag | first %}
+        {% assign tag_posts = tag | last %}
+        {% assign post_count = tag_posts | size %}
 
-      <!-- Calculate tag size based on post count -->
-      {% assign size_class = "tag-small" %}
-      {% if post_count >= 20 %}
-        {% assign size_class = "tag-xlarge" %}
-      {% elsif post_count >= 10 %}
-        {% assign size_class = "tag-large" %}
-      {% elsif post_count >= 5 %}
-        {% assign size_class = "tag-medium" %}
-      {% endif %}
+        <!-- Calculate tag size based on post count -->
+        {% assign size_class = "tag-small" %}
+        {% if post_count >= 20 %}
+          {% assign size_class = "tag-xlarge" %}
+        {% elsif post_count >= 10 %}
+          {% assign size_class = "tag-large" %}
+        {% elsif post_count >= 5 %}
+          {% assign size_class = "tag-medium" %}
+        {% endif %}
 
-      <a href="{{ site.baseurl }}/search/?q={{ tag_name | url_encode }}"
-         class="tag-item {{ size_class }}"
-         title="{{ post_count }} post{% if post_count != 1 %}s{% endif %}">
-        {{ tag_name }}
-        <span class="tag-count">({{ post_count }})</span>
-      </a>
-    {% endfor %}
+        <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/"
+           class="tag-item {{ size_class }}"
+           title="{{ post_count }} post{% if post_count != 1 %}s{% endif %}">
+          {{ tag_name }}
+          <span class="tag-count">({{ post_count }})</span>
+        </a>
+      {% endfor %}
+    </div>
+
+    <div class="tags-list">
+      <h2>All Topics A-Z</h2>
+
+      {% for tag in all_tags %}
+        {% assign tag_name = tag | first %}
+        {% assign tag_posts = tag | last %}
+
+        <div class="tag-section">
+          <h3 class="tag-heading">
+            <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/">
+              {{ tag_name }}
+            </a>
+            <span class="tag-post-count">{{ tag_posts | size }} post{% if tag_posts.size != 1 %}s{% endif %}</span>
+          </h3>
+
+          <ul class="tag-posts">
+            {% for post in tag_posts limit:5 %}
+              <li>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+              </li>
+            {% endfor %}
+            {% if tag_posts.size > 5 %}
+              <li class="view-all">
+                <a href="{{ site.baseurl }}/tag/{{ tag_name | downcase | replace: ' ', '-' }}/">
+                  View all {{ tag_posts.size }} posts →
+                </a>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 
-  <div class="tags-list">
-    <h2>All Topics A-Z</h2>
+  <!-- Date View -->
+  <div id="dates-view" class="content-view" style="display: none;">
+    <div class="archive-list">
+      {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
-    {% for tag in all_tags %}
-      {% assign tag_name = tag | first %}
-      {% assign tag_posts = tag | last %}
+      {% for year in postsByYear %}
+        <div class="archive-year">
+          <h3 class="year-heading" data-year="{{ year.name }}">
+            <button class="year-toggle" aria-expanded="false" aria-label="Toggle {{ year.name }}">
+              <span class="toggle-icon">▶</span>
+              {{ year.name }}
+              <span class="year-count">({{ year.items | size }} posts)</span>
+            </button>
+          </h3>
 
-      <div class="tag-section">
-        <h3 class="tag-heading">
-          <a href="{{ site.baseurl }}/search/?q={{ tag_name | url_encode }}">
-            {{ tag_name }}
-          </a>
-          <span class="tag-post-count">{{ tag_posts | size }} post{% if tag_posts.size != 1 %}s{% endif %}</span>
-        </h3>
+          <div class="year-content" style="display: none;">
+            {% assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%B'" %}
 
-        <ul class="tag-posts">
-          {% for post in tag_posts limit:5 %}
-            <li>
-              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-              <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
-            </li>
-          {% endfor %}
-          {% if tag_posts.size > 5 %}
-            <li class="view-all">
-              <a href="{{ site.baseurl }}/search/?q={{ tag_name | url_encode }}">
-                View all {{ tag_posts.size }} posts →
-              </a>
-            </li>
-          {% endif %}
-        </ul>
-      </div>
-    {% endfor %}
+            {% for month in postsByMonth %}
+              <div class="archive-month">
+                <h4 class="month-heading">{{ month.name }}</h4>
+
+                <ul class="archive-posts">
+                  {% for post in month.items %}
+                    <li class="archive-post-item">
+                      <span class="archive-date">{{ post.date | date: "%b %d" }}</span>
+                      <a href="{{ site.baseurl }}{{ post.url }}" class="archive-post-link">
+                        {{ post.title }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
+
 <style>
+/* Base Container */
 .tags-container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 0;
 }
 
-.tags-intro {
-  margin-bottom: 3rem;
-  padding: 1.5rem;
-  background: #f9f9f9;
-  border-left: 4px solid #333;
-  border-radius: 4px;
+/* Search Section */
+.search-section {
+  margin-bottom: 2rem;
 }
 
-.tags-intro p {
-  margin: 0.5rem 0;
+.search-box {
+  position: relative;
+  margin-bottom: 1rem;
 }
 
-.tags-intro a {
+#search-input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+#search-input:focus {
+  border-color: #333;
+}
+
+#clear-search {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+#clear-search:hover {
   color: #333;
-  font-weight: bold;
+}
+
+.search-stats {
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.search-results {
+  min-height: 50px;
+}
+
+.search-result-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.search-result-item:hover {
+  border-color: #333;
+  background: #f9f9f9;
+}
+
+.search-result-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-result-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.search-result-title a:hover {
+  text-decoration: underline;
+}
+
+.search-result-date {
+  font-size: 0.875rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.search-result-excerpt {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* View Toggle */
+.view-toggle {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.view-btn {
+  padding: 0.75rem 2rem;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+
+.view-btn:hover {
+  border-color: #333;
+}
+
+.view-btn.active {
+  background: #333;
+  color: #fff;
+  border-color: #333;
 }
 
 .tags-stats {
@@ -306,4 +471,214 @@ description: "Explore blog posts by topic - browse all tags and categories"
     gap: 0.25rem;
   }
 }
+
+/* Archive/Date View Styles */
+.archive-list {
+  margin-top: 2rem;
+}
+
+.archive-year {
+  margin-bottom: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.year-heading {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.year-toggle {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: #f9f9f9;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.year-toggle:hover {
+  background: #f0f0f0;
+}
+
+.toggle-icon {
+  font-size: 0.875rem;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.year-toggle[aria-expanded="true"] .toggle-icon {
+  transform: rotate(90deg);
+}
+
+.year-count {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: normal;
+  margin-left: auto;
+}
+
+.year-content {
+  padding: 1rem 1.5rem;
+}
+
+.archive-month {
+  margin-bottom: 1.5rem;
+}
+
+.month-heading {
+  font-size: 1.125rem;
+  color: #555;
+  margin: 0 0 0.75rem 0;
+  font-weight: 600;
+}
+
+.archive-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.archive-post-item {
+  display: flex;
+  align-items: baseline;
+  padding: 0.5rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.archive-post-item:last-child {
+  border-bottom: none;
+}
+
+.archive-date {
+  font-size: 0.875rem;
+  color: #999;
+  min-width: 50px;
+  font-family: monospace;
+}
+
+.archive-post-link {
+  flex: 1;
+  color: #333;
+  text-decoration: none;
+  min-width: 200px;
+  transition: color 0.2s;
+}
+
+.archive-post-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
 </style>
+
+<script>
+// View Toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleTopics = document.getElementById('toggle-topics');
+  const toggleDates = document.getElementById('toggle-dates');
+  const topicsView = document.getElementById('topics-view');
+  const datesView = document.getElementById('dates-view');
+
+  toggleTopics.addEventListener('click', function() {
+    topicsView.style.display = 'block';
+    datesView.style.display = 'none';
+    toggleTopics.classList.add('active');
+    toggleDates.classList.remove('active');
+  });
+
+  toggleDates.addEventListener('click', function() {
+    topicsView.style.display = 'none';
+    datesView.style.display = 'block';
+    toggleDates.classList.add('active');
+    toggleTopics.classList.remove('active');
+  });
+
+  // Year toggle functionality for archive view
+  document.querySelectorAll('.year-toggle').forEach(button => {
+    button.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      const content = this.closest('.year-heading').nextElementSibling;
+
+      this.setAttribute('aria-expanded', !isExpanded);
+      content.style.display = isExpanded ? 'none' : 'block';
+    });
+  });
+
+  // Search functionality
+  let searchData = [];
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const searchStats = document.getElementById('search-stats');
+  const clearButton = document.getElementById('clear-search');
+
+  // Load search data
+  fetch('{{ site.baseurl }}/search.json')
+    .then(response => response.json())
+    .then(data => {
+      searchData = data;
+    })
+    .catch(error => {
+      console.error('Error loading search data:', error);
+    });
+
+  // Search input handler
+  searchInput.addEventListener('input', function() {
+    const query = this.value.trim();
+    performSearch(query);
+  });
+
+  // Clear button handler
+  clearButton.addEventListener('click', function() {
+    searchInput.value = '';
+    performSearch('');
+  });
+
+  // Search function
+  function performSearch(query) {
+    if (!query || query.length === 0) {
+      searchResults.innerHTML = '';
+      searchStats.textContent = '';
+      clearButton.style.display = 'none';
+      return;
+    }
+
+    clearButton.style.display = 'block';
+
+    const queryLower = query.toLowerCase();
+    const results = searchData.filter(post => {
+      const titleMatch = post.title.toLowerCase().includes(queryLower);
+      const contentMatch = post.content && post.content.toLowerCase().includes(queryLower);
+      const tagMatch = post.tags && post.tags.toLowerCase().includes(queryLower);
+
+      return titleMatch || contentMatch || tagMatch;
+    });
+
+    if (results.length === 0) {
+      searchResults.innerHTML = '<p>No results found for "' + query + '"</p>';
+      searchStats.textContent = '';
+    } else {
+      searchStats.textContent = 'Found ' + results.length + ' result' + (results.length !== 1 ? 's' : '');
+
+      searchResults.innerHTML = results.map(post => `
+        <div class="search-result-item">
+          <div class="search-result-title">
+            <a href="${post.url}">${post.title}</a>
+          </div>
+          <div class="search-result-date">${post.date}</div>
+          ${post.excerpt ? '<div class="search-result-excerpt">' + post.excerpt + '</div>' : ''}
+        </div>
+      `).join('');
+    }
+  }
+});
+</script>
