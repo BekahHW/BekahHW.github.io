@@ -4,9 +4,9 @@
             {% if post.tags.size > 0 %}
             {% for tag in post.tags %}
             {% if forloop.index == post.tags.size %}
-            <a href='{{ site.baseurl }}/search/?q={{ tag | url_encode }}'>{{ tag | camelcase }}</a>
+            <a href='{{ site.baseurl }}/tags/?q={{ tag | url_encode }}'>{{ tag | camelcase }}</a>
             {% else %}
-            <a href='{{ site.baseurl }}/search/?q={{ tag | url_encode }}'>{{ tag | camelcase }}</a>
+            <a href='{{ site.baseurl }}/tags/?q={{ tag | url_encode }}'>{{ tag | camelcase }}</a>
             {% endif %}
             {% endfor %}
             {% endif %}
