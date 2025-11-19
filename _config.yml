@@ -61,12 +61,23 @@ contact_page_description: "Hi! I'd love to be able to support you in your DevRel
 thankyou_page_description: "Your message has been successfully sent. I look forward to chatting very soon!"
 
 # Social links
-twitter: "BekahHW"
+twitter:
+  username: "BekahHW"
+  card: summary_large_image
 github: "BekahHW"
 instagram: "BekahHW"
 linkedin: "bekahhw"
 youtube: "@bekahhw"
 # rss: "feed.xml"
+
+# Default image for social media previews (Open Graph & Twitter Cards)
+# This will be used when posts don't have a featured_image
+image: /assets/images/pages/THAT_keynote.jpg
+
+# Author information for social media
+author:
+  name: "Bekah Hawrot Weigel"
+  twitter: "BekahHW"
 
 # Navigation
 navigation:
