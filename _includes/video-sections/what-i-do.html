@@ -1,51 +1,58 @@
-<!-- Section 2: What I Do — bold declarative blocks -->
-<section class="vr-what" id="what-i-do" aria-labelledby="vr-what-heading">
-  <div class="vr-what__inner">
+<!-- Scene 2: What I Do — five statements appear one at a time -->
+<!-- Delays: label 0.4s → 01 at 1.0s → 02 at 2.5s → 03 at 4.0s → 04 at 5.5s → 05 at 7.0s -->
+<section
+  class="vr-scene vr-scene--what"
+  id="vr-what"
+  role="region"
+  aria-label="Scene 2: What I Do"
+>
+  <div class="vr-what-content">
 
-    <p class="vr-section-label vr-animate">What I Do</p>
+    <span class="vr-section-label va" style="--vd:0.4s">What I Do</span>
 
-    <div class="vr-what__blocks" role="list">
+    <ol class="vr-what-list" role="list">
 
-      <div class="vr-what__block vr-animate vr-animate--delay-1" role="listitem">
-        <span class="vr-what__num" aria-hidden="true">01</span>
-        <p class="vr-what__text">
+      <li class="vr-what-item va" style="--vd:1.0s" role="listitem">
+        <span class="vr-what-item__num" aria-hidden="true">01</span>
+        <p class="vr-what-item__text">
           I build developer communities
           <strong>that outlast the moment.</strong>
         </p>
-      </div>
+      </li>
 
-      <div class="vr-what__block vr-animate vr-animate--delay-2" role="listitem">
-        <span class="vr-what__num" aria-hidden="true">02</span>
-        <p class="vr-what__text">
+      <li class="vr-what-item va" style="--vd:2.5s" role="listitem">
+        <span class="vr-what-item__num" aria-hidden="true">02</span>
+        <p class="vr-what-item__text">
           I turn complex technical work into
           <strong>content people actually read.</strong>
         </p>
-      </div>
+      </li>
 
-      <div class="vr-what__block vr-animate vr-animate--delay-3" role="listitem">
-        <span class="vr-what__num" aria-hidden="true">03</span>
-        <p class="vr-what__text">
+      <li class="vr-what-item va" style="--vd:4.0s" role="listitem">
+        <span class="vr-what-item__num" aria-hidden="true">03</span>
+        <p class="vr-what-item__text">
           I create the learning paths that
           <strong>move developers forward.</strong>
         </p>
-      </div>
+      </li>
 
-      <div class="vr-what__block vr-animate vr-animate--delay-4" role="listitem">
-        <span class="vr-what__num" aria-hidden="true">04</span>
-        <p class="vr-what__text">
+      <li class="vr-what-item va" style="--vd:5.5s" role="listitem">
+        <span class="vr-what-item__num" aria-hidden="true">04</span>
+        <p class="vr-what-item__text">
           I help teams operate confidently
           <strong>in an AI-shaped world.</strong>
         </p>
-      </div>
+      </li>
 
-      <div class="vr-what__block vr-animate vr-animate--delay-5" role="listitem">
-        <span class="vr-what__num" aria-hidden="true">05</span>
-        <p class="vr-what__text">
+      <li class="vr-what-item va" style="--vd:7.0s" role="listitem">
+        <span class="vr-what-item__num" aria-hidden="true">05</span>
+        <p class="vr-what-item__text">
           I speak, write, and teach across
           <strong>the full developer journey.</strong>
         </p>
-      </div>
+      </li>
 
-    </div>
+    </ol>
+
   </div>
 </section>

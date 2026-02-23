@@ -1,17 +1,23 @@
-<!-- Section 6: Call to Action — two clear pathways -->
-<section class="vr-cta" id="cta" aria-labelledby="vr-cta-heading">
-  <div class="vr-cta__inner">
+<!-- Scene 6: Call to Action — two pathways, stays indefinitely -->
+<!-- Delays: heading 0.6s → sub 1.6s → buttons 2.8s -->
+<section
+  class="vr-scene vr-scene--cta"
+  id="vr-cta"
+  role="region"
+  aria-label="Scene 6: Call to Action"
+>
+  <div class="vr-cta-content">
 
-    <h2 class="vr-cta__heading vr-animate" id="vr-cta-heading">
+    <h2 class="vr-cta__heading va" style="--vd:0.6s">
       Selective about what I take on.<br>Committed when I do.
     </h2>
 
-    <p class="vr-cta__sub vr-animate vr-animate--delay-1">
+    <p class="vr-cta__sub va" style="--vd:1.6s">
       If you&rsquo;re building something that needs the intersection of technical depth,
       strategic communication, and community &mdash; let&rsquo;s find out if it&rsquo;s a fit.
     </p>
 
-    <nav class="vr-cta__paths vr-animate vr-animate--delay-2" aria-label="Primary pathways">
+    <nav class="vr-cta__paths va" style="--vd:2.8s" aria-label="Primary pathways">
       <a href="/consulting" class="vr-cta__btn vr-cta__btn--primary">
         Work With Me
       </a>

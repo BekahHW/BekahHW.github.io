@@ -35,7 +35,7 @@
     />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700%7CPlayfair+Display:400,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700%7CPlayfair+Display:400,700,700italic&display=swap"
       rel="stylesheet"
     />
 
@@ -43,29 +43,72 @@
     <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet" />
     <link href="{{ site.baseurl }}/assets/css/video-resume.css" rel="stylesheet" />
 
-    <!-- Mermaid for diagram rendering -->
+    <!-- Mermaid: load synchronously so it's ready when scenes activate -->
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   </head>
 
   <body class="video-resume-template">
     <div id="page" class="site">
-      {% include header.html %}
 
+      <!-- Player: scenes fill the viewport above the controls bar -->
       <main
         class="video-resume"
-        id="video-resume-main"
+        id="vr-main"
         aria-label="Video Resume — Bekah Hawrot Weigel"
       >
         {{ content }}
       </main>
 
-      {% include footer.html %}
-    </div>
-    <!-- .site -->
+      <!-- Player controls bar (fixed to bottom) -->
+      <div class="vr-controls" id="vr-controls" role="region" aria-label="Playback controls">
+
+        <!-- Progress track -->
+        <div class="vr-controls__track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Scene progress">
+          <div class="vr-controls__fill" id="vr-progress-fill"></div>
+        </div>
+
+        <div class="vr-controls__row">
+
+          <!-- Left: play/pause + restart -->
+          <div class="vr-controls__left">
+            <button class="vr-btn" id="vr-play-pause" aria-label="Pause playback" title="Pause (Space)">
+              <svg class="vr-icon" id="vr-icon-pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <rect x="3" y="2" width="3.5" height="12" rx="1"/>
+                <rect x="9.5" y="2" width="3.5" height="12" rx="1"/>
+              </svg>
+              <svg class="vr-icon" id="vr-icon-play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" style="display:none">
+                <polygon points="3,1 13,8 3,15"/>
+              </svg>
+            </button>
+            <button class="vr-btn" id="vr-restart" aria-label="Restart from beginning" title="Restart">
+              <svg class="vr-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="1,3 1,7 5,7"/>
+                <path d="M2.4,10a6,6 0 1 0 .6-3.2"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Centre: scene indicator dots -->
+          <div class="vr-scene-dots" id="vr-scene-dots" role="tablist" aria-label="Jump to scene"></div>
+
+          <!-- Right: scene label + back link -->
+          <div class="vr-controls__right">
+            <span class="vr-scene-label" id="vr-scene-label" aria-live="polite"></span>
+            <a href="/" class="vr-btn vr-btn--close" aria-label="Back to site" title="Back to site">
+              <svg class="vr-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <line x1="2" y1="2" x2="14" y2="14"/>
+                <line x1="14" y1="2" x2="2" y2="14"/>
+              </svg>
+            </a>
+          </div>
+
+        </div><!-- .vr-controls__row -->
+      </div><!-- .vr-controls -->
+
+    </div><!-- .site -->
 
     <script defer src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js"></script>
     <script defer src="{{ site.baseurl }}/assets/js/plugins.js"></script>
-    <script defer src="{{ site.baseurl }}/assets/js/custom.js"></script>
-    <script defer src="{{ site.baseurl }}/assets/js/video-resume.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/video-resume.js"></script>
   </body>
 </html>

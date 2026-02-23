@@ -1,30 +1,37 @@
-<!-- Section 1: Hero — cinematic opener -->
-<section class="vr-hero" aria-labelledby="vr-hero-headline">
-  <div class="vr-hero__content">
+<!-- Scene 1: Hero — full-viewport dark opener -->
+<!-- Delays: eyebrow 0.4s → headline 1.1s → accent 2.3s → sub 3.3s → counter 4.6s -->
+<section
+  class="vr-scene vr-scene--hero"
+  id="vr-hero"
+  role="region"
+  aria-label="Scene 1: Hook"
+>
+  <div class="vr-hero-content">
 
-    <p class="vr-hero__eyebrow vr-animate">
+    <p class="vr-hero__eyebrow va" style="--vd:0.4s">
       Sr. Developer Advocate &middot; Community Architect &middot; Technical Storyteller
     </p>
 
-    <h1 class="vr-hero__headline vr-animate vr-animate--delay-1" id="vr-hero-headline">
-      The distance between a great product<br>
-      and the people who need it<br>
-      is not technical.
-      <span class="vr-hero__accent">It&rsquo;s human.</span>
+    <h1 class="vr-hero__headline">
+      <span class="va" style="--vd:1.1s">
+        The distance between a great product<br>
+        and the people who need it<br>
+        is not technical.
+      </span>
     </h1>
 
-    <p class="vr-hero__sub vr-animate vr-animate--delay-2">
+    <p class="vr-hero__accent va" style="--vd:2.3s">
+      It&rsquo;s human.
+    </p>
+
+    <p class="vr-hero__sub va" style="--vd:3.3s">
       Developer advocacy, community building, and content strategy &mdash;
       for teams ready to close that gap.
     </p>
 
-    <a
-      href="#what-i-do"
-      class="vr-hero__scroll vr-animate vr-animate--delay-3"
-      aria-label="Scroll to What I Do"
-    >
-      <span aria-hidden="true">↓</span>
-    </a>
+    <p class="vr-scene-counter va" style="--vd:4.6s" aria-hidden="true">
+      01 &mdash; 06
+    </p>
 
   </div>
 </section>
