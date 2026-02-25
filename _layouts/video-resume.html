@@ -57,6 +57,42 @@
         aria-label="Video Resume — Bekah Hawrot Weigel"
       >
         {{ content }}
+
+        <!-- ── Cinematic UI overlay ── -->
+        <div class="vr-ui" aria-hidden="true">
+
+          <!-- Back to site -->
+          <a href="/" class="vr-back" aria-hidden="false" aria-label="Back to main site">&#8592; Back</a>
+
+          <!-- Scene counter -->
+          <span class="vr-counter">1 / 7</span>
+
+          <!-- Top progress bar -->
+          <div class="vr-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div class="vr-progress__fill"></div>
+          </div>
+
+          <!-- Scene navigation dots -->
+          <nav class="vr-dots" aria-label="Scene navigation">
+            <button class="vr-dot is-active" aria-label="Scene 1: Introduction" data-scene="0"></button>
+            <button class="vr-dot" aria-label="Scene 2: What I Do" data-scene="1"></button>
+            <button class="vr-dot" aria-label="Scene 3: By the Numbers" data-scene="2"></button>
+            <button class="vr-dot" aria-label="Scene 4: Selected Work" data-scene="3"></button>
+            <button class="vr-dot" aria-label="Scene 5: AI &amp; Systems" data-scene="4"></button>
+            <button class="vr-dot" aria-label="Scene 6: The Throughline" data-scene="5"></button>
+            <button class="vr-dot" aria-label="Scene 7: Let's Connect" data-scene="6"></button>
+          </nav>
+
+          <!-- Playback controls -->
+          <div class="vr-controls">
+            <button class="vr-ctrl vr-ctrl--prev" aria-label="Previous scene">&#8592;</button>
+            <button class="vr-ctrl vr-ctrl--pause" aria-label="Pause">&#9646;&#9646;</button>
+            <button class="vr-ctrl vr-ctrl--next" aria-label="Next scene">&#8594;</button>
+          </div>
+
+        </div>
+        <!-- /.vr-ui -->
+
       </main>
 
       {% include footer.html %}
