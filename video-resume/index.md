@@ -7,6 +7,7 @@ permalink: /video-resume/
 
 {% include video-sections/hero.html %}
 {% include video-sections/what-i-do.html %}
+{% include video-sections/proof-numbers.html %}
 {% include video-sections/proof-of-work.html %}
 {% include video-sections/ai-systems.html %}
 {% include video-sections/throughline.html %}
