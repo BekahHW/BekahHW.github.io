@@ -4,7 +4,7 @@ title: "AI Ate the Homework: What Communities Are Actually For Now"
 date: 2025-11-24
 author: Bekah
 tags: [AI, Community]
-description: "Every team has someone doing invisible coordination work, updating changelogs, following up on blockers, bridging communication gaps. This 'glue work' often falls on women and rarely shows up in performance reviews. Composed AI workflows can automate mechanical coordination tasks, freeing talented teammates to focus on strategic and meaningful work."
+description: "Communities used to be where you went to ask questions and get help. Now that AI can answer most of those questions, what are communities actually for? Here's what the shift means for community builders and members."
 ---
 
 When I was learning to code, one of the things that motivated me most was the sense of community. I found a ton of value in the Twitter community, where people answered questions, shared resources, and celebrated each other's wins. I also found incredible support in online coding communities. A huge part of this was the ability to ask questions and get help from others who had been where I was. They brought empathy and experience in a way that documentation and tutorials couldn't, and made me feel like I could do it even when I didn't believe that.
