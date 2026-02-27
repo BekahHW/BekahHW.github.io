@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Capable AI Keeps Getting Blocked"
-date: 2025-02-26
+date: 2026-02-26
 author: Bekah
 tags: [AI]
 description: "When AI systems feel uncontrollable, it's not an irrational response for organizations to restrict them. Here's what that pattern signals about where we are."
