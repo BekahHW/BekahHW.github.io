@@ -21,9 +21,9 @@ post_class: post-template
                         {% if page.tags.size > 0 %}
                         <div class="tag-links">
                             {% for tag in page.tags %} {% if forloop.index == page.tags.size %}
-                            <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '- ' }}/'>{{ tag | camelcase }}</a>
+                            <a href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | camelcase }}</a>
                             {% else %}
-                            <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '- ' }}/'>{{ tag | camelcase }}</a>
+                            <a href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | camelcase }}</a>
                             {% endif %}
                             {% endfor %}
                         </div><!-- .tag-links -->
