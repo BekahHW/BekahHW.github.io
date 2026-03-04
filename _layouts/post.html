@@ -10,10 +10,15 @@ post_class: post-template
         <article class="post-template">
 
             <header class="cover post-header">
-            
+
                 {% if page.featured_image %}
-                <div class="cover-bg" style="background-image: url({{ site.baseurl }}{{ page.featured_image }})">
-                </div>
+                    {% if page.featured_image contains 'http' %}
+                    <div class="cover-bg" style="background-image: url({{ page.featured_image }})">
+                    </div>
+                    {% else %}
+                    <div class="cover-bg" style="background-image: url({{ site.baseurl }}{{ page.featured_image }})">
+                    </div>
+                    {% endif %}
                 {% endif %}
                 <div class="cover-content">
                     <div class="inner">
