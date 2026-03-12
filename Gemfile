@@ -11,12 +11,17 @@ source "https://rubygems.org"
 gem "jekyll", "4.1.1"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: [:windows, :mingw, :mswin, :x64_mingw, :jruby]
 
 group :jekyll_plugins do
   gem 'jekyll-paginate'
-  gem 'jekyll-tagsgenerator'
+  # jekyll-tagsgenerator removed: replaced by local _plugins/tag_generator.rb
+  # to avoid duplicate page generation that was causing build failures.
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
-  gem 'jekyll-author-page'
+end
+
+group :test do
+  gem 'minitest'
+  gem 'nokogiri'
 end
