@@ -61,9 +61,7 @@ contact_page_description: "Hi! I'd love to be able to support you in your DevRel
 thankyou_page_description: "Your message has been successfully sent. I look forward to chatting very soon!"
 
 # Social links
-twitter:
-  username: "BekahHW"
-  card: summary_large_image
+twitter: "BekahHW"
 github: "BekahHW"
 instagram: "BekahHW"
 linkedin: "bekahhw"
