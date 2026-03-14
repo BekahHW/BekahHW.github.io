@@ -8,7 +8,352 @@
     <language>en-us</language>
     <managingEditor>rhawrot@gmail.com (BekahHW)</managingEditor>
     <webMaster>rhawrot@gmail.com (BekahHW)</webMaster>
-    <lastBuildDate>Wed, 12 Nov 2025 14:19:04 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2026 17:46:27 -0400</lastBuildDate>
+    
+      <item>
+        <title>AI Has Entered the AI Development Loop</title>
+        <description>&lt;p&gt;It feels like we crossed a recursive threshold in February and the internet yawned.&lt;/p&gt;
+
+&lt;p&gt;In February 2026, OpenAI published this in &lt;a href=&quot;https://openai.com/index/introducing-gpt-5-3-codex/&quot;&gt;their blog&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“GPT-5.3-Codex is our first model that was instrumental in creating itself… our team was blown away by how much Codex was able to accelerate its own development.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That line matters more than most of the benchmarks that followed.&lt;/p&gt;
+
+&lt;p&gt;It doesn’t mean the model designed itself or trained itself. Humans still ran the research program. But it does mean something new: a model helping debug the experiments, analyze the results, and build the internal tools used to develop the next model.&lt;/p&gt;
+
+&lt;p&gt;In other words, AI has started participating in the process that improves AI. Not designing itself. Not training itself. But participating directly in the development loop.&lt;/p&gt;
+
+&lt;p&gt;It’s a subtle shift, but it changes the development loop in ways people haven’t fully processed yet.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-actually-happened-with-codex&quot;&gt;What Actually Happened with Codex&lt;/h2&gt;
+
+&lt;p&gt;Early versions of Codex were used by the team to debug and monitor their own training runs, track patterns, propose fixes, and build custom apps for researchers to compare behaviors against prior models. The model managed deployment work, fixed bugs, handled cache issues, and scaled dynamically during traffic surges. It built data pipelines, visualized thousands of data points, and summarized insights in minutes.&lt;/p&gt;
+
+&lt;p&gt;Humans still set the goals and approved the changes. But the feedback loop was tight enough that the team described themselves as “blown away” by how much it accelerated their workflow.&lt;/p&gt;
+
+&lt;p&gt;The important part isn’t that the model “built itself.” It didn’t.&lt;/p&gt;
+
+&lt;p&gt;The important part is that AI is now participating in the same engineering process that produces the next generation of AI.&lt;/p&gt;
+
+&lt;p&gt;For decades researchers have talked about recursive improvement — systems that help design or improve their successors. Until recently that mostly lived in theory or narrow experiments like AutoML and evolutionary optimization.&lt;/p&gt;
+
+&lt;p&gt;What’s different here is that the loop has moved from theory into the practical mechanics of AI development.&lt;/p&gt;
+
+&lt;p&gt;A model helping run experiments.&lt;br /&gt;
+A model helping debug infrastructure.&lt;br /&gt;
+A model helping analyze results that feed into the next model.&lt;/p&gt;
+
+&lt;p&gt;That shortens the distance between building an AI system and improving it.&lt;/p&gt;
+
+&lt;p&gt;And once that loop tightens enough, the limiting factor on progress starts to shift.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-near-term-is-already-here&quot;&gt;The Near-Term Is Already Here&lt;/h2&gt;
+
+&lt;p&gt;Inside major AI labs, development workflows are already changing.&lt;/p&gt;
+
+&lt;p&gt;Leadership comments and internal reports suggest that a large share of internal code is now AI-assisted. Engineers increasingly describe their role less as writing every line of code and more as supervising systems that generate, test, and iterate on it.&lt;/p&gt;
+
+&lt;p&gt;GPT-5.3-Codex is also the first OpenAI model rated “High capability” under their Preparedness Framework specifically for identifying software vulnerabilities. That’s one reason they launched a $10M API credit program aimed at security researchers the same week.&lt;/p&gt;
+
+&lt;p&gt;But the more important shift is development velocity.&lt;/p&gt;
+
+&lt;p&gt;When a model helps build the tools, pipelines, and analyses that support AI research, the iteration cycle compresses. Experiments run faster. Failures get diagnosed quicker. Teams can test more ideas in the same amount of time.&lt;/p&gt;
+
+&lt;p&gt;That’s not a new pattern to software engineering. Compilers eventually compile themselves. Build systems generate other build systems. Tooling improves the tooling that follows it.&lt;/p&gt;
+
+&lt;p&gt;What’s new is the intelligence now sitting inside that loop. That matters because progress in AI has often been limited less by ideas than by how quickly researchers can run experiments, interpret results, and try again.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-research-velocity-bottleneck&quot;&gt;The Research Velocity Bottleneck&lt;/h3&gt;
+
+&lt;p&gt;What makes this significant is research velocity. Progress in AI has often been limited less by ideas than by how quickly researchers can run experiments, interpret results, and try again. Training runs take time. Infrastructure breaks. Data pipelines fail. Evaluations produce thousands of signals that humans have to sift through before the next iteration begins.&lt;/p&gt;
+
+&lt;p&gt;When a model starts helping with those steps — debugging experiments, summarizing outcomes, generating analysis tools — the iteration cycle compresses. More experiments can run in the same amount of time. More hypotheses get tested. The frontier moves not because any single model is dramatically smarter, but because the feedback loop around improvement gets faster.&lt;/p&gt;
+
+&lt;p&gt;AI development has historically been limited by compute, data, and human research time. If part of that research loop becomes automated, the bottleneck shifts again.&lt;/p&gt;
+
+&lt;p&gt;This pattern shows up repeatedly in technological progress. Semiconductor advances accelerated when fabrication and testing cycles became automated. Software development accelerated when continuous integration systems started running builds and tests automatically. In both cases, the breakthrough was both better ideas and shortening the loop between trying something and learning whether it worked.&lt;/p&gt;
+
+&lt;p&gt;AI entering its own development loop looks similar. When the systems being improved start helping run the improvement process, iteration speeds up. And when iteration speeds up, progress compounds.&lt;/p&gt;
+
+&lt;p&gt;The question now isn’t whether a single model is dramatically smarter than the last one. It’s how quickly the next iteration can happen.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-medium-term-is-where-it-gets-uncomfortable&quot;&gt;The Medium-Term Is Where It Gets Uncomfortable&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://x.com/sama/status/1983584366547829073?lang=en&quot;&gt;Sam Altman has publicly said they have a goal of an “AI research intern” capability by September 2026 and “true automated AI researcher” by March 2028&lt;/a&gt;. As the loop tightens,  the cost of pushing the frontier drops. This will mean that either more companies can compete or the leaders pull further ahead because their iteration cycles compound faster. Meanwhile, parts of the engineering stack are already shifting.&lt;/p&gt;
+
+&lt;p&gt;That transition isn’t happening slowly. As we’ve seen repeatedly with technological shifts, organizations often adapt under competitive pressure rather than through careful planning which tends to produce messy transitions and uneven outcomes. And the ripple effects won’t stop at tech. Any field built around complex, repeatable knowledge work will feel some version of the same pressure.&lt;/p&gt;
+
+&lt;p&gt;What felt like a 5–10 year horizon for broad disruption is now measured in 1–3 years for many industries. This is why the anxiety feels bigger than “just devs.” It’s not isolated; it’s systemic acceleration.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-long-term-is-the-part-nobody-wants-to-say-out-loud&quot;&gt;The Long-Term Is the Part Nobody Wants to Say Out Loud&lt;/h2&gt;
+
+&lt;p&gt;If AI systems eventually assist with the full research loop the feedback cycle tightens further. Hypothesis generation, experiment design, training runs, evaluation, all of it. That doesn’t automatically mean runaway intelligence. Capabilities could compound in ways that are genuinely hard to reason about in advance. But it does mean the systems advancing AI become partially automated themselves.&lt;/p&gt;
+
+&lt;p&gt;That has implications people don’t fully understand yet.&lt;/p&gt;
+
+&lt;p&gt;Neither path is guaranteed. What’s not up for debate is that when AI writes the code that trains the next AI, auditing gets harder. Tiny undetected biases, optimization pressures, and specification gaming can propagate across iterations.&lt;/p&gt;
+
+&lt;p&gt;OpenAI and others have safeguards in place. The real question is whether those safeguards scale as quickly as the systems themselves.&lt;/p&gt;
+
+&lt;p&gt;That’s not a rhetorical question. It’s an open one.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-you-should-care-now&quot;&gt;Why You Should Care Now&lt;/h2&gt;
+
+&lt;p&gt;My instinct is usually to frame these shifts in ways that feel manageable, maybe even exciting. And some of it is exciting. But preparing people for what’s actually coming means being honest that the timeline is compressed, the impacts are uneven, and the people least prepared for the disruption will feel it most.&lt;/p&gt;
+
+&lt;p&gt;The anxiety you might feel reading this isn’t irrational. It’s information. The question is what you do with it.&lt;/p&gt;
+
+&lt;p&gt;The roles that will matter most aren’t necessarily the ones that write the most code. They’re the ones that can evaluate what AI produces critically, catch what automated systems miss, and understand enough about the systems they’re building on to ask the right questions. That’s worth investing in now, not when the next wave lands.&lt;/p&gt;
+
+&lt;p&gt;Machines are now helping build the machines that come after them.&lt;/p&gt;
+
+&lt;p&gt;That’s not the future. That’s February 2026.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 Mar 2026 00:00:00 -0500</pubDate>
+        <link>https://bekahhw.com//ai-in-the-ai-development-loop</link>
+        <guid isPermaLink="true">https://bekahhw.com//ai-in-the-ai-development-loop</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        <category>AI</category>
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>Why Capable AI Keeps Getting Blocked</title>
+        <description>&lt;p&gt;Amazon bans Claude Code internally. Enterprises quietly block Copilot. Security teams flag agentic workflows before they ever make it to production. SDK usage restrictions start showing up in internal policy docs that nobody announced out loud.&lt;/p&gt;
+
+&lt;p&gt;Different companies and reasons, but the same underlying instinct.&lt;/p&gt;
+
+&lt;p&gt;When something feels uncontrollable, the first response is rarely “let’s understand it better.” It’s “let’s shut it down.” When elevators became were first introduced, people refused to ride them alone. Building operators had to hire elevator attendants because people needed a human present to feel safe (keeping the human in the loop). The technology worked. The trust infrastructure didn’t exist yet.&lt;/p&gt;
+
+&lt;p&gt;It’s not a failure of vision yet. It’s a pretty rational response to a real problem, but it’s where things go from here that matters. The question isn’t “why are companies banning AI tools?” The question is “what would have to be true for those tools to not need banning in the first place?”&lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem-isnt-the-tools&quot;&gt;The Problem isn’t the Tools&lt;/h2&gt;
+
+&lt;p&gt;The last two years focused almost entirely on capability.&lt;/p&gt;
+
+&lt;p&gt;Bigger models.&lt;br /&gt;
+Autonomous agents.&lt;br /&gt;
+Sophisticated chaining.&lt;/p&gt;
+
+&lt;p&gt;Those bets paid off, and the systems are genuinely powerful.&lt;/p&gt;
+
+&lt;p&gt;But capability without visibility is risk with a good PR story.&lt;/p&gt;
+
+&lt;p&gt;We already learned this lesson in distributed systems. You don’t deploy a microservice without logs. You don’t scale a database without monitoring. You don’t run Kubernetes without observability. Those systems became trusted not because they were powerful, but because operators could see what they were doing.&lt;/p&gt;
+
+&lt;p&gt;AI agents haven’t reached that level of maturity.&lt;/p&gt;
+
+&lt;p&gt;An agent can:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Modify dozens of files&lt;/li&gt;
+  &lt;li&gt;Call external APIs&lt;/li&gt;
+  &lt;li&gt;Chain multiple model decisions&lt;/li&gt;
+  &lt;li&gt;Execute tools across a session&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And when the session ends, most of that reasoning disappears.&lt;/p&gt;
+
+&lt;p&gt;If something goes wrong:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Can you replay the exact decision path?&lt;/li&gt;
+  &lt;li&gt;Can you inspect intermediate model outputs?&lt;/li&gt;
+  &lt;li&gt;Can you produce a structured audit trail for security?&lt;/li&gt;
+  &lt;li&gt;Can you deterministically reproduce the outcome?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In many environments, the answer is no.&lt;/p&gt;
+
+&lt;p&gt;So institutions respond the way institutions always do when power outruns accountability: they restrict access. That’s institutions doing what institutions do when power outruns accountability.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-next-phase-of-ai-maturity&quot;&gt;The Next Phase of AI Maturity&lt;/h2&gt;
+
+&lt;p&gt;The bans aren’t the story. They’re a signal that we’ve entered a new phase of AI maturity, one where the capability questions are largely settled and the infrastructure questions are just getting started. Brian Douglas wrote more about this shift in his post &lt;a href=&quot;https://papercompute.com/blog/push-the-code-era-is-over/&quot;&gt;The Push Code Era is Over&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;What needs to exist isn’t another wrapper or another interface. It’s the same thing every distributed system eventually needed: operator-grade tooling. Full request and response recording. Durable execution trails. Deterministic replay. The primitives that let you run powerful systems with confidence instead of just running them with hope.&lt;/p&gt;
+
+&lt;p&gt;It’s not just about more capable agents. It’s about agents that are actually safe to operate at scale, ones that security teams can audit, that legal teams can defend, and that developers can trust with real work.&lt;/p&gt;
+
+&lt;p&gt;The question worth asking right now isn’t which tools are going to get banned next. It’s what would have to be true for those tools to not need banning in the first place.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 26 Feb 2026 00:00:00 -0500</pubDate>
+        <link>https://bekahhw.com//Why-AI-is-getting-Blocked</link>
+        <guid isPermaLink="true">https://bekahhw.com//Why-AI-is-getting-Blocked</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        <category>AI</category>
+        
+        
+        
+        
+        
+      </item>
+    
+      <item>
+        <title>AI Ate the Homework: What Communities Are Actually For Now</title>
+        <description>&lt;p&gt;When I was learning to code, one of the things that motivated me most was the sense of community. I found a ton of value in the Twitter community, where people answered questions, shared resources, and celebrated each other’s wins. I also found incredible support in online coding communities. A huge part of this was the ability to ask questions and get help from others who had been where I was. They brought empathy and experience in a way that documentation and tutorials couldn’t, and made me feel like I could do it even when I didn’t believe that.&lt;/p&gt;
+
+&lt;p&gt;A huge part of Virtual Coffee’s early growth was people finding each other to ask questions, get help, and learn together. It was a safe space to say “I don’t know how to do this” or “Is this interview experience ‘normal’?” and have someone patiently walk you through it.&lt;/p&gt;
+
+&lt;p&gt;Not only did having your question answered give you the information you needed, it gave you validation. You weren’t alone. You were struggling with something that other people struggled with too. But. it also felt good to help. And in a lot of ways, you experienced growth and it felt tangible when you were able to answer someone else’s question. Successful communities saw collective knowledge sharing, mutual aid, opportunities to learn together.&lt;/p&gt;
+
+&lt;p&gt;By 2024, something had fundamentally shifted.&lt;/p&gt;
+
+&lt;p&gt;ChatGPT could answer your JavaScript question in three seconds. Claude could debug your code and explain why. The questions that used to fill Discord and Slack, “how do I center a div?” or “what’s the difference between let and const?” or “why isn’t my API call working?” suddenly had a faster, always-available answer. And now, you prompt your LLM and get code that works, explanations that make sense, and debugging help without needing to wait for someone to see your question and respond.&lt;/p&gt;
+
+&lt;p&gt;And with that shift came a new tension nobody quite knew how to name: the growing frustration when someone asks a question that AI could have answered, and the growing anxiety about asking questions when you’re not sure if you’ve “done enough work first.”&lt;/p&gt;
+
+&lt;p&gt;The bar rose.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-numbers-tell-the-story&quot;&gt;The Numbers Tell the Story&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.slashdot.org/story/25/01/10/1729248/stackoverflow-usage-plummets-as-ai-chatbots-rise&quot;&gt;Stack Overflow traffic dropped 14% month-over-month from March to April 2023, right after GPT-4 launched. By December 2024, new questions had dropped 60% year-over-year. The volume of questions is down 75% from its 2017 peak and 76% since ChatGPT’s launch in November 2022.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Developers weren’t being difficult. They were being rational.&lt;/p&gt;
+
+&lt;p&gt;Why post a question on Stack Overflow and wait for someone to answer when ChatGPT gives you working code in seconds? Why search through Discord message history when Claude can explain the concept in plain English, tailored to your specific context? Why ask a community and risk judgment and assholes on the internet when AI is always available, non-judgmental, and fast?&lt;/p&gt;
+
+&lt;p&gt;AI could now handle most of the questions communities used to.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-unspoken-contract-changed&quot;&gt;The Unspoken Contract Changed&lt;/h2&gt;
+
+&lt;p&gt;Here’s what this shift did to the implicit contract of online communities:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In 2020-2021:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;You asked questions, even basic ones, and people were happy to help&lt;/li&gt;
+  &lt;li&gt;The community was the primary resource for learning and problem-solving&lt;/li&gt;
+  &lt;li&gt;At Virtual Coffee, we embraced horizontal mentrship—everyone could ask and everyone could answer&lt;/li&gt;
+  &lt;li&gt;Asking for help was normal and expected&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;In 2025-2026:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;You’re expected to try AI first before “wasting” people’s time&lt;/li&gt;
+  &lt;li&gt;The community is for questions AI &lt;em&gt;can’t&lt;/em&gt; answer&lt;/li&gt;
+  &lt;li&gt;There’s an unspoken frustration at questions ChatGPT could handle&lt;/li&gt;
+  &lt;li&gt;Asking for help requires demonstrating you’ve done your homework&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We started to see that community members who were tired of answering the same basic questions when AI could do it faster.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-communities-are-actually-for-now&quot;&gt;What Communities Are Actually For Now&lt;/h2&gt;
+
+&lt;p&gt;So if AI handles basic questions, what are communities actually &lt;em&gt;for&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;The answer should be: judgment, experience, connection, and the questions AI can’t answer.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“Should I take this job or stay at my current role?”&lt;/li&gt;
+  &lt;li&gt;“How do you actually work with this technology in production?”&lt;/li&gt;
+  &lt;li&gt;“What’s the culture like at {company}?”&lt;/li&gt;
+  &lt;li&gt;“I’m burned out. How did you work through it?”&lt;/li&gt;
+  &lt;li&gt;“Here’s this cool thing I built and I think it could help others. What do you think?”&lt;/li&gt;
+  &lt;li&gt;“How do you navigate sick kids and a feature launch???”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are inherently human questions requiring human judgment, lived experience, and contextual understanding. They’re the questions that make communities valuable. They’re the questions that foster connection and belonging. They’re the questions that create shared understanding and collective wisdom.&lt;/p&gt;
+
+&lt;p&gt;But here’s the problem: many communities haven’t consciously made this shift. They’re still structured around Q&amp;amp;A patterns that AI now handles better. They’re still trying to be “the place developers get answers” when that race is lost.&lt;/p&gt;
+
+&lt;p&gt;Product communities are particularly stuck. They’re trying to serve two populations:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Drive-by users&lt;/strong&gt; who just need their build to work and will never engage beyond that&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Community seekers&lt;/strong&gt; who want connection, depth, and belonging&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These need different things. The drive-by user benefits from AI-first + good docs. The community seeker needs human connection. Trying to serve both with the same strategy doesn’t work.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-sustainability-crisis&quot;&gt;The Sustainability Crisis&lt;/h2&gt;
+
+&lt;p&gt;This creates a sustainability problem that’s quietly breaking communities:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For community builders:&lt;/strong&gt;
+You’re caught between welcoming everyone and managing finite volunteer energy. When someone asks a question ChatGPT could answer in 3 seconds, do you answer it (and enable learned helplessness) or redirect them (and risk seeming unwelcoming)? There’s no good answer, and the constant navigation is exhausting.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For community members:&lt;/strong&gt;
+You’re navigating unwritten rules about what’s “appropriate” to ask. You feel guilty asking for help because maybe you didn’t try hard enough. You see others get redirected to AI and worry you’ll be next. The psychological safety that made communities work is eroding.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-uncomfortable-questions&quot;&gt;The Uncomfortable Questions&lt;/h2&gt;
+
+&lt;p&gt;Where does this leave us? With some hard questions we need to actually ask:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;About AI expectations:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How do we honor that AI makes many questions obsolete without making people feel unwelcome?&lt;/li&gt;
+  &lt;li&gt;What’s our responsibility when not everyone has the same AI access?&lt;/li&gt;
+  &lt;li&gt;How do we shift from “Q&amp;amp;A community” to “judgment and experience community”?&lt;/li&gt;
+  &lt;li&gt;What questions actually need humans now?&lt;/li&gt;
+  &lt;li&gt;Is “try ChatGPT first” gatekeeping or reasonable boundary?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;About community purpose:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Are we trying to be everything when we should be something specific?&lt;/li&gt;
+  &lt;li&gt;Can drive-by Q&amp;amp;A and deep connection coexist in one space?&lt;/li&gt;
+  &lt;li&gt;What happens when 80% of your community just wants fast answers?&lt;/li&gt;
+  &lt;li&gt;How do we serve people who need basic help without burning out the helpers?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;About sustainability:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Can volunteer-run communities survive when the “easy” questions (that felt good to answer) are gone?&lt;/li&gt;
+  &lt;li&gt;How do we make helping feel rewarding again when all that’s left are hard questions?&lt;/li&gt;
+  &lt;li&gt;What’s the minimum viable community when AI handles the basics?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-actually-works-now&quot;&gt;What Actually Works Now&lt;/h2&gt;
+
+&lt;p&gt;The communities thriving in 2026 aren’t the ones fighting AI or pretending it doesn’t exist. They’re the ones that:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Accepted the shift in purpose.&lt;/strong&gt; They’re not trying to be Stack Overflow. They’re spaces for nuanced discussion, career advice, lived experience, and human judgment calls. They’ve made peace with AI handling the basics.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Stay welcoming while having boundaries.&lt;/strong&gt; “Hey, ChatGPT might be faster for this!” is fine. “Why are you wasting our time?” is not. There’s a way to redirect to AI tools while maintaining psychological safety.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Separate transaction from connection.&lt;/strong&gt; Some spaces are for quick help (and that’s fine). Some spaces are for deeper belonging (and that’s different). Trying to be both creates friction.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Accepted different participation levels.&lt;/strong&gt; Drive-by questions are fine. People who only show up when they need something are fine. The always-engaged ideal is dead, and that’s okay.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Built for the people who actually need them now.&lt;/strong&gt; People navigating complex career decisions. People working with niche technologies where AI training is thin. People who need human judgment, not just answers. People without AI access. Not &lt;em&gt;everyone&lt;/em&gt;, because not everyone needs human community for Q&amp;amp;A anymore.&lt;/p&gt;
+
+&lt;p&gt;The bar that nobody asked for—AI capability—did change what communities are for. But it didn’t eliminate the need for community. It just clarified it.&lt;/p&gt;
+
+&lt;p&gt;We don’t need communities to answer “how do I center a div?” anymore. We need them for “should I take this job?” and “how do I not burn out?” and “what’s it actually like to work there?”&lt;/p&gt;
+
+&lt;p&gt;And honestly? Those are better questions. They just require us to be more human, not less.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 24 Nov 2025 00:00:00 -0500</pubDate>
+        <link>https://bekahhw.com//ai-impact-on-community</link>
+        <guid isPermaLink="true">https://bekahhw.com//ai-impact-on-community</guid>
+        
+        <author>rhawrot@gmail.com (Bekah)</author>
+        
+        
+        
+        <category>AI</category>
+        
+        <category>Community</category>
+        
+        
+        
+        
+        
+      </item>
     
       <item>
         <title>The Invisible Load: How AI Workflows Can Replace Your Team's 'Glue Person'</title>
@@ -2462,513 +2807,6 @@ To gather meaningful data, your documentation needs appropriate tracking:&lt;/p&
         <pubDate>Mon, 24 Mar 2025 00:00:00 -0400</pubDate>
         <link>https://bekahhw.com//common-dev-content-pitfalls</link>
         <guid isPermaLink="true">https://bekahhw.com//common-dev-content-pitfalls</guid>
-        
-        <author>rhawrot@gmail.com (Bekah)</author>
-        
-        
-        
-        <category>Content Creation</category>
-        
-        <category>Tips</category>
-        
-        
-        
-        
-        
-      </item>
-    
-      <item>
-        <title>Adding Multiple Authors to my Astro Writing Blog: A Technical Walkthrough</title>
-        <description>&lt;p&gt;At the end of last year, my brothers and I wrote our first novel together (&lt;a href=&quot;https://dub.sh/b4c-astro&quot;&gt;The Battle for Christmas: Reign of the Nutcrackers&lt;/a&gt;). That experience inspired us to continue writing together, starting with a monthly newsletter with short stories. At this point, we decided we wanted a website. We had been using &lt;a href=&quot;https://kit.com/&quot;&gt;Kit&lt;/a&gt; to send emails, and we liked that functionality, but as our writing resumes grow, we also wanted to have a place where people could see all of our work, and this is where our Astro site came in.&lt;/p&gt;
-
-&lt;p&gt;Now, I’ve been interested in checking out Astro for a while, but when I saw &lt;a href=&quot;https://luciacerchie.dev/&quot;&gt;Lucia Cerchie’s blog&lt;/a&gt; I fell in love with the Astro template (by &lt;a href=&quot;https://www.twitter.com/Charca&quot;&gt;Maxi Ferreira&lt;/a&gt;) she used. I decided to start there, but since this was a blog for me and both of my brothers, I would need to add functionality for multiple authors. Here’s how I did that.&lt;/p&gt;
-
-&lt;h2 id=&quot;learning-the-hard-way-my-journey-to-astro-content-collections&quot;&gt;Learning the Hard Way: My Journey to Astro Content Collections&lt;/h2&gt;
-
-&lt;p&gt;Before we get into it, I need to acknowledge that I started with a mistake. I did the thing I say not to do and I started without fully reading the documentation.&lt;/p&gt;
-
-&lt;p&gt;When I first added multiple author functionality, I created a simple JavaScript file to manage author data:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;BekahHW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;BekahHW&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Bekah grew up in a storytelling-rich environment with her brothers...&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/assets/bhw_headshot.jpg&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Josh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Josh&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Josh Hawrot is married to his inspiring wife Cruz...&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/assets/josh.jpg&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...another author&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;I connected this to my blog posts using dynamic routes. Everything worked, and I didn’t think twice about it. And then a couple of days later, I was looking at Astro documentation, when I had my facepalm moment: the documentation clearly outlined a more structured, type-safe approach using collections that would make my content more maintainable and scalable. It’s worth noting that I was also using an older version of Astro, and updating to 5.5.3 gave me more functionality.&lt;/p&gt;
-
-&lt;p&gt;From their docs:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Content collections are the best way to manage sets of content in any Astro project. Collections help to organize and query your documents, enable Intellisense and type checking in your editor, and provide automatic TypeScript type-safety for all of your content.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This was exactly what I had needed, and I missed it because I hadn’t spent enough time in the docs. Let’s just say this is one of those lessons you remember.&lt;/p&gt;
-
-&lt;p&gt;What I had &lt;em&gt;was&lt;/em&gt; working though, so why did I need to change?&lt;/p&gt;
-
-&lt;h2 id=&quot;why-i-needed-to-change&quot;&gt;Why I Needed to Change&lt;/h2&gt;
-
-&lt;p&gt;My original approach worked, but switching to Astro’s Content Collections API provided significant benefits:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Schema validation&lt;/strong&gt;: Content collections automatically validate my data structure, preventing errors before they happen&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;TypeScript integration&lt;/strong&gt;: I get autocompletion and type checking when working with author and blog data&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Structured content&lt;/strong&gt;: All data follows a consistent format, making it easier to maintain and extend&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Simplified queries&lt;/strong&gt;: The Collections API provides built-in methods for accessing content, eliminating custom filtering code&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Performance improvements&lt;/strong&gt;: Astro 5’s Content Layer API is specifically optimized for efficiency and scalability&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Additionally, with Astro 5’s reference system, I can establish proper relationships between content types. For example, I can directly reference an author from a blog post using reference(“authors”) in the schema, which creates a clean, maintainable connection between content.&lt;/p&gt;
-
-&lt;h2 id=&quot;migrating-to-astro-content-collections&quot;&gt;Migrating to Astro Content Collections&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Setting Up the Content Directory
-First, I created the proper content directory structure:
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;src/
-├── content/
-│   ├── config.ts  &amp;lt;- Configuration for all collections
-│   ├── authors/
-│   │   ├── Bekah.md
-│   │   ├── Josh.md
-│   │   └── Zach.md
-│   └── blog/
-│       └── my-blog-posts.md
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Defining Content Schemas&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The heart of content collections is the schema definition, which makes sure all your content follows a consistent structure:&lt;/p&gt;
-
-&lt;div class=&quot;language-ts highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// src/content/config.ts&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defineCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;astro:content&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;astro/loaders&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Define the schema for the authors collection&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defineCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;**/*.md&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./src/content/authors&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Define the schema for the blog collection&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;blog&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defineCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;**/*.md&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./src/content/blog&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;publishDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;authors&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Export the collections&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;collections&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;blog&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;Converting Author Data to Individual Files
-I converted each author from my JS object to individual Markdown files:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bekah&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bekah&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;grew&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;up&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;storytelling-rich&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;environment&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;her&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;brothers,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;books&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;imagination&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;were&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;central&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;daily&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;life...&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/assets/bhw_headshot.jpg&quot;&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Fixing Author Name Capitalization in the Blog List View&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;One issue I ran into was that the author name was appearing in all lowercase in the blog list view (/blog/). This happened because I was using the author ID (which is derived from filenames and always lowercase) instead of their actual name from the frontmatter. Here’s how I updated that in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src/pages/index.astro&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-ts highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Fetch all author entries&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorEntries&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;authors&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getAuthorName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorEntries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Fallback to ID if author not found&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
-
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;BaseLayout&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;blog&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Stories&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h1&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sortedPosts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;post-item&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`/blog/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;post-item-author&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;By&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`/authors/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getAuthorName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/span&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;
-              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;post-item-date&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;—&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;publishDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/span&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;})}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/BaseLayout&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Updating Templates to Use Content Collections
-Next, I refactored my blog and author pages to use the Content Collections API:
-```js
-—
-// src/pages/blog/[slug].astro
-import BaseLayout from ‘../../layouts/BaseLayout.astro’;
-import Bio from ‘../../components/Bio.astro’;
-import { getCollection, getEntry, render } from ‘astro:content’;
-import ShareButtons from ‘../../components/ShareButtons.astro’;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;export async function getStaticPaths() {
-try {
-    const blogEntries = await getCollection(‘blog’);&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Create routes using entry ID
-return blogEntries.map(post =&amp;gt; {
-  console.log(`Creating route for ${post.id}`);
-  return {
-    params: { slug: post.id },
-    props: { entryId: post.id },  // Just pass the ID
-  };
-});   } catch (error) {
-console.error(&quot;Error in getStaticPaths:&quot;, error);
-return [];   } }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;// Get blog post data from props
-const { entryId } = Astro.props;
-const entry = await getEntry(‘blog’, entryId);&lt;/p&gt;
-
-&lt;p&gt;if (!entry) {
-  return Astro.redirect(‘/404’);
-}&lt;/p&gt;
-
-&lt;p&gt;// Render the content
-const { Content } = await render(entry);
-const allAuthors = await getCollection(‘authors’);
-let author;
-if (entry.data.author?.id) {
-  try {
-    author = await getEntry(‘authors’, entry.data.author.id);
-    if (author) {
-      console.log(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Found author for ${entry.data.author.id}&lt;/code&gt;);
-    } else {
-      console.error(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Author not found: ${entry.data.author.id}&lt;/code&gt;);
-    }
-  } catch (error) {
-    console.error(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Error fetching author: ${error.message}&lt;/code&gt;);
-  }
-}&lt;/p&gt;
-
-&lt;h2 id=&quot;const-permalink--astrositehrefblogentryid&quot;&gt;const permalink = &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;${Astro.site.href}blog/${entry.id}&lt;/code&gt;;&lt;/h2&gt;
-
-&lt;p&gt;&amp;lt;BaseLayout title={entry.data.title} description={entry.data.description} permalink={permalink} current=”blog”&amp;gt;&lt;/p&gt;
-&lt;header&gt;
-    &lt;p&gt;{entry.data.publishDate} ~ {entry.data.readingTime}&lt;/p&gt;
-    &lt;h1&gt;{entry.data.title}&lt;/h1&gt;
-    &lt;hr /&gt;
-  &lt;/header&gt;
-&lt;div class=&quot;container&quot;&gt;
-    &lt;article class=&quot;content&quot;&gt;
-      &lt;Content /&gt;
-    &lt;/article&gt;
-    &lt;hr /&gt;
-    
-    {author &amp;amp;&amp;amp; (
-      &lt;div class=&quot;author-bio&quot;&gt;
-        &lt;h3&gt;About the Author&lt;/h3&gt;
-        &amp;lt;Bio 
-          name={author.data.name}
-          bio={author.data.bio}
-          avatar={author.data.avatar}
-        /&amp;gt;
-      &lt;/div&gt;
-    )}
-    
-    &amp;lt;ShareButtons title={entry.data.title} permalink={permalink} /&amp;gt;
-  &lt;/div&gt;
-&lt;p&gt;&amp;lt;/BaseLayout&amp;gt;
-```
-There are two things that I wanted to implement while working on this:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;At the bottom of every short story, you see the author and their bio&lt;/li&gt;
-  &lt;li&gt;When you click an author from the list view, you are taken to their page with links to all of their works.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Both of those are fully functional on the site now.&lt;/p&gt;
-
-&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
-
-&lt;p&gt;The good news is that I learned a lot during this project, including:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Read the documentation first: So much time and effort could have been saved&lt;/li&gt;
-  &lt;li&gt;Use the platform’s built-in features: Modern frameworks like Astro provide powerful tools&lt;/li&gt;
-  &lt;li&gt;Be willing to refactor: Sometimes you need to accept you’ve taken the wrong approach&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There are still things that I need to work on for the site. The next priority is to improve the mobile view and responsiveness, but I’m happy to have it working. We already have two of our short stories up there attributed to the correct authors, and in a couple of weeks mine will be there too. You can check out our &lt;a href=&quot;https://dub.sh/siblings-write&quot;&gt;site&lt;/a&gt; now!&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 18 Mar 2025 00:00:00 -0400</pubDate>
-        <link>https://bekahhw.com//astro-content-collections</link>
-        <guid isPermaLink="true">https://bekahhw.com//astro-content-collections</guid>
-        
-        <author>rhawrot@gmail.com (Bekah)</author>
-        
-        
-        
-        <category>Technical</category>
-        
-        <category>Content Creation</category>
-        
-        
-        
-        
-        
-      </item>
-    
-      <item>
-        <title>Creating Content Developers Love: A Guide to Developer Experience (DX) Content</title>
-        <description>&lt;p&gt;Over the past couple of years, I’ve been in the middle of conversations about whether or not DevRel belongs in marketing. At the end of the day, I don’t know that it matters if you understand developers. One of the biggest pain points I’ve seen from marketing teams is understanding how to talk to developers, because, as we all know, developers are highly sensitive to feeling like they’ve been “marketed to.” What that really means is that they have high standards for the content they consume. Developers want to know that you understand the information. They want precision, depth, and utility.&lt;/p&gt;
-
-&lt;p&gt;Last year, I saw a tweet from a team lead at a large company who said that they were working on choosing a new package for a feature they were working on. The number one reason they passed on some packages? Poor documentation and resources. Developers need to be able to understand how to use software so they can be effective as they create theirs. As I dive deeper into content creation targeting developers, I’m trying to find more ways to distill effective ways of presenting that content. In this post, I’m sharing how to present technical content to a technical audience.&lt;/p&gt;
-
-&lt;h2 id=&quot;understanding-the-developer-mindset&quot;&gt;Understanding the Developer Mindset&lt;/h2&gt;
-
-&lt;p&gt;Maybe the main skill a developer has is problem-solving. That’s because that’s what they do. Most of them aren’t asking the question, “What does your product do?” They’re asking, “How can this product help me to solve my current challenge?” When you create content that recognizes that ask,  you’re building credibility.&lt;/p&gt;
-
-&lt;p&gt;There is never an end to the challenges developers have to solve. That’s why it’s important to value their time. You need to get to the point, create a scannable and well-structured hierarchy, and provide complete solutions without unnecessary stops. As part of that, you need to understand that they’re likely also looking for technical depth. They want the authors to understand not just how to implement something, but also why it needs to be implemented. If there are limitations, admit them. Don’t try to hide them.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-clear-framework-for-developer-content&quot;&gt;The CLEAR framework for Developer Content&lt;/h2&gt;
-
-&lt;p&gt;There are a lot of ways that you can structure effective content, but sometimes it’s nice to have a framework to maintain consistency. Here are some takeaways from my experiences:&lt;/p&gt;
-
-&lt;h3 id=&quot;c---code-first-examples&quot;&gt;C - Code-First Examples&lt;/h3&gt;
-
-&lt;p&gt;Working code clearly communicates credibility to your audience. Ways to incorporate this could be:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Functional code examples that could be copied and pasted&lt;/li&gt;
-  &lt;li&gt;Explanations that followed the code, not preceded it&lt;/li&gt;
-  &lt;li&gt;Real-world scenarios rather than contrived examples&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Stripe is one of those companies that people point to as the standard for documentation. Their documentation leads with code examples, demonstrating both how the API works and how it responds to different inputs as well as common use cases.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Practical Tip&lt;/strong&gt;: Always test your code examples in an isolated environment before publishing. Nothing undermines credibility faster than sample code that doesn’t work as described.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;l---layered-complexity&quot;&gt;L - Layered Complexity&lt;/h3&gt;
-
-&lt;p&gt;Great developer content acknowledges different knowledge levels by layering information:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Entry points for new users and learners&lt;/li&gt;
-  &lt;li&gt;Deeper technical details for experienced users&lt;/li&gt;
-  &lt;li&gt;Advanced use cases and optimizations for experts&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Twilio’s documentation does this exceptionally well, offering quick starts for beginners alongside detailed API references and more advanced tutorials for complex implementation scenarios.&lt;/p&gt;
-
-&lt;h3 id=&quot;e---ecosystem-awareness&quot;&gt;E - Ecosystem Awareness&lt;/h3&gt;
-
-&lt;p&gt;Great Developer Experience content acknowledges the broader ecosystem in which your product operates.&lt;/p&gt;
-
-&lt;p&gt;Vercel’s Next.js documentation excels here, providing guidance on how Next.js interacts with various styling solutions, deployment platforms, and state management libraries.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Practical Tip&lt;/strong&gt;: Create integration guides for popular tools in your ecosystem. These high-value resources address real workflow challenges and demonstrate your understanding of the developer’s complete environment.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;a---accessible-terminology&quot;&gt;A - Accessible Terminology&lt;/h3&gt;
-
-&lt;p&gt;While technical depth is important, you should avoid unnecessary jargon or marketing speak.&lt;/p&gt;
-
-&lt;p&gt;Good developer content:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Defines terms clearly upon first use&lt;/li&gt;
-  &lt;li&gt;Avoids acronyms without explanation&lt;/li&gt;
-  &lt;li&gt;Uses consistent terminology throughout&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When documenting complex concepts, I’ve found that starting with an analogy that relates to widely understood programming concepts can be useful. From there, you can transition to more specific terms.&lt;/p&gt;
-
-&lt;h3 id=&quot;r---reproducible-workflows&quot;&gt;R - Reproducible Workflows&lt;/h3&gt;
-
-&lt;p&gt;Developers need to understand not just isolated features but complete workflows. Content that connects the dots and shows how components work together in a reproducible process is invaluable.&lt;/p&gt;
-
-&lt;p&gt;GitHub’s documentation on GitHub Actions demonstrates this principle well, walking developers through complete CI/CD workflows rather than just explaining individual actions in isolation.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Practical Tip&lt;/strong&gt;: Structure tutorials as complete journeys with clear starting conditions and defined outcomes. Make sure developers can reproduce your examples with minimal setup.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;developer-content-as-a-product&quot;&gt;Developer Content as a Product&lt;/h2&gt;
-
-&lt;p&gt;The most successful companies treat developer content not as a marketing afterthought but as a product in itself that’s designed with specific user needs in mind, measured by meaningful metrics, and continuously improved based on feedback.&lt;/p&gt;
-
-&lt;p&gt;Developers are among the most demanding content consumers, but also the most loyal when their needs are genuinely met. Great developer content doesn’t just support your product, it becomes one of your most valuable assets.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 17 Mar 2025 00:00:00 -0400</pubDate>
-        <link>https://bekahhw.com//Creating-Content-Developers-Love</link>
-        <guid isPermaLink="true">https://bekahhw.com//Creating-Content-Developers-Love</guid>
-        
-        <author>rhawrot@gmail.com (Bekah)</author>
-        
-        
-        
-        <category>Content Creation</category>
-        
-        <category>Tips</category>
-        
-        
-        
-        
-        
-      </item>
-    
-      <item>
-        <title>Content Strategy for Startups: Storytelling as a Growth Driver</title>
-        <description>&lt;p&gt;It started with an air mattress on the floor of a San Francisco apartment.&lt;/p&gt;
-
-&lt;p&gt;When Brian Chesky and Joe Gebbia couldn’t afford their rent in 2007, they purchased three air mattresses and created a simple WordPress website called “Air Bed &amp;amp; Breakfast,” renting the mattresses during a design conference when the hotels were sold out. That isn’t just the origin story of a company that would eventually be valued at over $100 billion. It’s a perfect example of how a compelling origin story can become a powerful asset.&lt;/p&gt;
-
-&lt;p&gt;The most successful startups aren’t just building products; they’re telling stories that resonate, inspire, and drive growth.&lt;/p&gt;
-
-&lt;h2 id=&quot;beyond-features-why-stories-drive-startup-growth&quot;&gt;Beyond Features: Why Stories Drive Startup Growth&lt;/h2&gt;
-
-&lt;p&gt;I taught college English for ten years before coming into tech. And what I’ve learned about academic writing and tech content is that people and companies who tell the best stories often win the market.&lt;/p&gt;
-
-&lt;p&gt;Think about how Figma moved from a niche design tool to an industry standard. Their storytelling centered around designers collaborating in real-time. By sharing stories of design teams achieving breakthrough moments together, they created emotional connections with their audience while showcasing product capabilities. Their collaboration and community narrative helped turn Figma into a $20 billion acquisition target and the go-to tool for design teams.&lt;/p&gt;
-
-&lt;p&gt;Earlier today, I spoke with a startup founder who asked how people changed their minds on trying out a new technology. I told them that the strongest predictor of change I’ve noticed is when trusted individuals share how they’ve successfully used new technology. We’re naturally more inclined to trust those we know. That might be people we “know” online from their social media posts or people we know personally. When we have their recommendation or hear their story of how they’ve used the product, we’re more likely to trust the product.&lt;/p&gt;
-
-&lt;p&gt;This little mantra captures the concept: features inform, but stories transform.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-idea-framework-a-strategic-approach-to-startup-content&quot;&gt;The IDEA Framework: A Strategic Approach to Startup Content&lt;/h2&gt;
-
-&lt;p&gt;There are a lot of different frameworks out there, but I’ve combined a couple in a way that’s informed by my own experience bringing users to OpenSauced and years of content development. The IDEA framework connects storytelling to content as a growth-driver:&lt;/p&gt;
-
-&lt;h3 id=&quot;i---inspire&quot;&gt;I - Inspire&lt;/h3&gt;
-
-&lt;p&gt;Content needs to sparks curiosity and emotional connection. For startups, this might mean:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Origin stories that highlight your founding journey and the problem you’re solving&lt;/li&gt;
-  &lt;li&gt;Vision stories that paint a picture of the world you’re helping create&lt;/li&gt;
-  &lt;li&gt;Customer success narratives that let your users be the heroes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Take the Spanx origin story from their &lt;a href=&quot;https://spanx.com/pages/about-us&quot;&gt;About Us page&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;SPANX founder Sara Blakely was getting ready for a party when she realized she didn’t have the right undergarment to provide a smooth look under white pants. Armed with scissors and sheer genius, she cut the feet off her control top pantyhose and the SPANX revolution began! With a focus on solving wardrobe woes, the SPANX brand has grown to offer bras, underwear, leggings, active and more. SPANX has secured its place in women’s hearts and in pop-culture with daily mentions everywhere from CNN to SNL.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The story captures the moment of inception and the expansion of the brand while demonstrating creativity.&lt;/p&gt;
-
-&lt;p&gt;At OpenSauced, we saw continuous engagement when sharing stories of developers who found community through open source contribution. These narratives didn’t just showcase our platform, they inspired others to see what was possible.&lt;/p&gt;
-
-&lt;h3 id=&quot;d---demonstrate&quot;&gt;D - Demonstrate&lt;/h3&gt;
-
-&lt;p&gt;Inspiration catches your audience’s attention, but to keep them around you need to draw them deeper. This is where demonstration comes in. In this context, demonstration is showing your solution in action. Here are some ways you can do that:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Case studies that walk through specific problems and solutions&lt;/li&gt;
-  &lt;li&gt;Interactive tutorials that give users immediate wins&lt;/li&gt;
-  &lt;li&gt;Comparative analyses that honestly position your offering&lt;/li&gt;
-  &lt;li&gt;Community showcase that shows how real users have successfully used your product&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Notion has perfected this approach by leveraging user stories to show the flexibility of their product. Instead of explaining features, they show real users from a variety of backgrounds and usecases and how they’ve built unique workflows. Authenticity is key here. Having examples that people trust from real users has helped pave the way for Notion’s explosive growth. Potential users can see themselves in the product through the stories of others.&lt;/p&gt;
-
-&lt;p&gt;This content doesn’t just tell. It shows.&lt;/p&gt;
-
-&lt;h3 id=&quot;e---educate&quot;&gt;E - Educate&lt;/h3&gt;
-
-&lt;p&gt;Following my previous response to the startup founder, I told them how important it is to educate your audience. Education hugely impacts adoption, builds trust, and positions you as an authority. Here are some ways to effectively educate your audience:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Clear, well-organized, and up-to-date documentation&lt;/li&gt;
-  &lt;li&gt;Resources that solve common pain points and show why your product is useful&lt;/li&gt;
-  &lt;li&gt;Industry reports that share valuable insights&lt;/li&gt;
-  &lt;li&gt;How-to content, quickstart guides, and tutorials that create immediate value&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;PostHog does an excellent job of educating users through their resources and their feature onboarding. Their comprehensive resources don’t just sell the product, they educate users to maximize their benefits.&lt;/p&gt;
-
-&lt;p&gt;Educational content also creates a reciprocity loop: you give knowledge freely, and users return the favor with their attention and trust.&lt;/p&gt;
-
-&lt;h3 id=&quot;a---activate&quot;&gt;A - Activate&lt;/h3&gt;
-
-&lt;p&gt;All of this process builds to what most companies want: activating the audience to take meaningful action. Additional ways to activate the audience include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Community-building initiatives that encourage participation (hackathons, meetups, etc.)&lt;/li&gt;
-  &lt;li&gt;Product adoption pathways that reduce friction (onboarding content)&lt;/li&gt;
-  &lt;li&gt;Opportunities for your users to share with others (share button, downloadable assets, collaboration requests, etc.)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Our most successful campaigns at OpenSauced weren’t just about sharing what new features we were shipping. They were about empowering our community to become advocates.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-storytelling-multiplier&quot;&gt;The Storytelling Multiplier&lt;/h2&gt;
-
-&lt;p&gt;When you weave storytelling through each stage of the IDEA framework, your content gains what I like to call the “storytelling multiplier effect.” I wrote about how to incorporate good storytelling last week in, &lt;a href=&quot;https://bekahhw.com/Storytelling-in-Tech&quot;&gt;The Power of Storytelling in Tech Content&lt;/a&gt;. Ideally, you’re not just communicating a feature. You’re creating an emotional connection and demonstrating real-world impact. That’s when the storytelling multiplier works.&lt;/p&gt;
-
-&lt;p&gt;Because humans are built for storytelling, we see clear ROIs:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Reduced education costs: Stories make complex concepts more accessible and memorable&lt;/li&gt;
-  &lt;li&gt;Increased retention: Emotional connections encourage loyalty and reduce churn&lt;/li&gt;
-  &lt;li&gt;Enhanced conversion: Narratives drive action more effectively than features and specifications&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;implementing-storytelling-in-your-startups-content-strategy&quot;&gt;Implementing Storytelling in Your Startup’s Content Strategy&lt;/h2&gt;
-
-&lt;p&gt;If you’re wondering where to start, here are a couple of things you can do:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Audit your current content&lt;/strong&gt;: Identify pieces that could be transformed with storytelling.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Collect narratives&lt;/strong&gt;: Systematically gather stories from customers, team members, and your founding journey.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Create story templates&lt;/strong&gt;: Develop frameworks that help your team consistently incorporate narrative elements.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Measure narrative engagement&lt;/strong&gt;: Look beyond standard metrics to measure how stories resonate (comment sentiment, sharing behavior, story recall).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;your-story-starts-now&quot;&gt;Your Story Starts Now&lt;/h2&gt;
-
-&lt;p&gt;Every startup has stories worth telling. Stories of problems solved, of excited customers, of visions realized. These stories aren’t marketing assets; they’re growth drivers that can transform your content strategy from a cost center to a competitive advantage.&lt;/p&gt;
-
-&lt;p&gt;Storytelling’s transforms transactional relationships into emotional connections.
-In a world of information overload (especially AI-generated information), storytelling isn’t optional. It’s essential. The startups that understand this will not only capture attention but also build the emotional connections that drive sustainable growth.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 10 Mar 2025 00:00:00 -0400</pubDate>
-        <link>https://bekahhw.com//startup-content-strategy</link>
-        <guid isPermaLink="true">https://bekahhw.com//startup-content-strategy</guid>
         
         <author>rhawrot@gmail.com (Bekah)</author>
         
