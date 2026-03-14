@@ -10,6 +10,7 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.3)
+    ffi (1.17.3-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.1)
     i18n (1.14.8)
@@ -50,9 +51,11 @@ GEM
     logger (1.7.0)
     mercenary (0.4.0)
     minitest (5.25.4)
-    nokogiri (1.13.10-arm64-darwin)
+    nokogiri (1.19.1-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.10-x86_64-darwin)
+    nokogiri (1.19.1-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.19.1-x86_64-linux-gnu)
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -72,6 +75,7 @@ GEM
 
 PLATFORMS
   universal-darwin-25
+  x86_64-linux
 
 DEPENDENCIES
   jekyll (= 4.1.1)
