@@ -11,7 +11,7 @@ source "https://rubygems.org"
 gem "jekyll", "4.1.1"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:windows, :mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :jekyll_plugins do
   gem 'jekyll-paginate'

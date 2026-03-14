@@ -1,6 +1,39 @@
 [
   
     {
+      "title"    : "AI Has Entered the AI Development Loop",
+      "url"      : "/ai-in-the-ai-development-loop",
+      "date"     : "March 04, 2026",
+      "dateiso"  : "2026-03-04T00:00:00-05:00",
+      "categories" : "",
+      "tags"     : "AI",
+      "excerpt"  : "It feels like we crossed a recursive threshold in February and the internet yawned.",
+      "content"  : "It feels like we crossed a recursive threshold in February and the internet yawned.In February 2026, OpenAI published this in their blog:  “GPT-5.3-Codex is our first model that was instrumental in creating itself… our team was blown away by how much Codex was able to accelerate its own development.”That line matters more than most of the benchmarks that followed.It doesn’t mean the model designed itself or trained itself. Humans still ran the research program. But it does mean something new:..."
+    },
+  
+    {
+      "title"    : "Why Capable AI Keeps Getting Blocked",
+      "url"      : "/Why-AI-is-getting-Blocked",
+      "date"     : "February 26, 2026",
+      "dateiso"  : "2026-02-26T00:00:00-05:00",
+      "categories" : "",
+      "tags"     : "AI",
+      "excerpt"  : "Amazon bans Claude Code internally. Enterprises quietly block Copilot. Security teams flag agentic workflows before they ever make it to production. SDK usage restrictions start showing up in internal policy docs that nobody announced out loud.",
+      "content"  : "Amazon bans Claude Code internally. Enterprises quietly block Copilot. Security teams flag agentic workflows before they ever make it to production. SDK usage restrictions start showing up in internal policy docs that nobody announced out loud.Different companies and reasons, but the same underlying instinct.When something feels uncontrollable, the first response is rarely “let’s understand it better.” It’s “let’s shut it down.” When elevators became were first introduced, people refused to r..."
+    },
+  
+    {
+      "title"    : "AI Ate the Homework: What Communities Are Actually For Now",
+      "url"      : "/ai-impact-on-community",
+      "date"     : "November 24, 2025",
+      "dateiso"  : "2025-11-24T00:00:00-05:00",
+      "categories" : "",
+      "tags"     : "AI, Community",
+      "excerpt"  : "When I was learning to code, one of the things that motivated me most was the sense of community. I found a ton of value in the Twitter community, where people answered questions, shared resources, and celebrated each other’s wins. I also found incredible support in online coding communities. A huge part of this was the ability to ask questions and get help from others who had been where I was. They brought empathy and experience in a way that documentation and tutorials couldn’t, and made me feel like I could do it even when I didn’t believe that.",
+      "content"  : "When I was learning to code, one of the things that motivated me most was the sense of community. I found a ton of value in the Twitter community, where people answered questions, shared resources, and celebrated each other’s wins. I also found incredible support in online coding communities. A huge part of this was the ability to ask questions and get help from others who had been where I was. They brought empathy and experience in a way that documentation and tutorials couldn’t, and made me..."
+    },
+  
+    {
       "title"    : "The Invisible Load: How AI Workflows Can Replace Your Team&#39;s &#39;Glue Person&#39;",
       "url"      : "/AI-Workflows-Can-Be-The-Glue",
       "date"     : "November 06, 2025",

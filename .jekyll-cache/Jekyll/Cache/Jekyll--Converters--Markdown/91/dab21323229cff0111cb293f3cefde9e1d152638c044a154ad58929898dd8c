@@ -1,0 +1,58 @@
+I"�<p>Amazon bans Claude Code internally. Enterprises quietly block Copilot. Security teams flag agentic workflows before they ever make it to production. SDK usage restrictions start showing up in internal policy docs that nobody announced out loud.</p>
+
+<p>Different companies and reasons, but the same underlying instinct.</p>
+
+<p>When something feels uncontrollable, the first response is rarely “let’s understand it better.” It’s “let’s shut it down.” When elevators became were first introduced, people refused to ride them alone. Building operators had to hire elevator attendants because people needed a human present to feel safe (keeping the human in the loop). The technology worked. The trust infrastructure didn’t exist yet.</p>
+
+<p>It’s not a failure of vision yet. It’s a pretty rational response to a real problem, but it’s where things go from here that matters. The question isn’t “why are companies banning AI tools?” The question is “what would have to be true for those tools to not need banning in the first place?”</p>
+
+<h2 id="the-problem-isnt-the-tools">The Problem isn’t the Tools</h2>
+
+<p>The last two years focused almost entirely on capability.</p>
+
+<p>Bigger models.<br />
+Autonomous agents.<br />
+Sophisticated chaining.</p>
+
+<p>Those bets paid off, and the systems are genuinely powerful.</p>
+
+<p>But capability without visibility is risk with a good PR story.</p>
+
+<p>We already learned this lesson in distributed systems. You don’t deploy a microservice without logs. You don’t scale a database without monitoring. You don’t run Kubernetes without observability. Those systems became trusted not because they were powerful, but because operators could see what they were doing.</p>
+
+<p>AI agents haven’t reached that level of maturity.</p>
+
+<p>An agent can:</p>
+
+<ul>
+  <li>Modify dozens of files</li>
+  <li>Call external APIs</li>
+  <li>Chain multiple model decisions</li>
+  <li>Execute tools across a session</li>
+</ul>
+
+<p>And when the session ends, most of that reasoning disappears.</p>
+
+<p>If something goes wrong:</p>
+<ul>
+  <li>Can you replay the exact decision path?</li>
+  <li>Can you inspect intermediate model outputs?</li>
+  <li>Can you produce a structured audit trail for security?</li>
+  <li>Can you deterministically reproduce the outcome?</li>
+</ul>
+
+<p>In many environments, the answer is no.</p>
+
+<p>So institutions respond the way institutions always do when power outruns accountability: they restrict access. That’s institutions doing what institutions do when power outruns accountability.</p>
+
+<h2 id="the-next-phase-of-ai-maturity">The Next Phase of AI Maturity</h2>
+
+<p>The bans aren’t the story. They’re a signal that we’ve entered a new phase of AI maturity, one where the capability questions are largely settled and the infrastructure questions are just getting started. Brian Douglas wrote more about this shift in his post <a href="https://papercompute.com/blog/push-the-code-era-is-over/">The Push Code Era is Over</a>.</p>
+
+<p>What needs to exist isn’t another wrapper or another interface. It’s the same thing every distributed system eventually needed: operator-grade tooling. Full request and response recording. Durable execution trails. Deterministic replay. The primitives that let you run powerful systems with confidence instead of just running them with hope.</p>
+
+<p>It’s not just about more capable agents. It’s about agents that are actually safe to operate at scale, ones that security teams can audit, that legal teams can defend, and that developers can trust with real work.</p>
+
+<p>The question worth asking right now isn’t which tools are going to get banned next. It’s what would have to be true for those tools to not need banning in the first place.</p>
+
+:ET
