@@ -26,6 +26,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
   <div class="view-toggle">
     <button id="toggle-topics" class="view-btn active">Browse by Topic</button>
     <button id="toggle-dates" class="view-btn">Browse by Date</button>
+    <button id="toggle-graph" class="view-btn">Browse by Context Graph</button>
   </div>
 
   <!-- Stats -->
@@ -142,7 +143,50 @@ description: "Explore blog posts by topic - browse all tags and categories"
       {% endfor %}
     </div>
   </div>
+
+  <!-- Context Graph View -->
+  <div id="graph-view" class="content-view" style="display: none;">
+    <div class="graph-toolbar">
+      <div class="graph-legend">
+        <div class="legend-item">
+          <span class="legend-dot legend-topic"></span>
+          <span>Topic</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot legend-post"></span>
+          <span>Post</span>
+        </div>
+        <div class="legend-item legend-hint">Click a node to explore &middot; Drag to rearrange &middot; Scroll to zoom</div>
+      </div>
+      <div class="graph-actions">
+        <input type="text" id="graph-search" placeholder="Filter nodes&hellip;" class="graph-search-input" aria-label="Filter graph nodes" autocomplete="off" />
+        <button id="graph-reset" class="graph-reset-btn">Reset View</button>
+      </div>
+    </div>
+
+    <div class="graph-workspace">
+      <div id="graph-canvas">
+        <svg id="graph-svg" aria-label="Interactive content relationship graph" role="img"></svg>
+        <div id="graph-loading" aria-live="polite">
+          <div class="graph-spinner"></div>
+          <p>Building graph&hellip;</p>
+        </div>
+      </div>
+
+      <aside id="graph-sidebar" aria-label="Selected node details">
+        <div class="sidebar-header">
+          <h3 id="sidebar-title"></h3>
+          <button id="sidebar-close" aria-label="Close panel">&#x2715;</button>
+        </div>
+        <div id="sidebar-content"></div>
+      </aside>
+    </div>
+
+    <p id="graph-mobile-msg">For the best experience, explore the context graph on a wider screen. Tap nodes to see details.</p>
+  </div>
 </div>
+
+<div id="graph-tooltip" role="tooltip" aria-hidden="true"></div>
 
 
 <style>
@@ -250,6 +294,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
   gap: 1rem;
   margin-bottom: 2rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .view-btn {
@@ -579,106 +624,811 @@ description: "Explore blog posts by topic - browse all tags and categories"
   color: #000;
   text-decoration: underline;
 }
+
+/* =============================================
+   CONTEXT GRAPH VIEW
+   ============================================= */
+
+/* Toolbar */
+.graph-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.graph-legend {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  color: #555;
+}
+
+.legend-hint {
+  font-size: 0.75rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.legend-dot {
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.legend-topic {
+  width: 18px;
+  height: 18px;
+  background: #222;
+}
+
+.legend-post {
+  width: 10px;
+  height: 10px;
+  background: #888;
+}
+
+.graph-actions {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+}
+
+.graph-search-input {
+  padding: 0.5rem 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 160px;
+}
+
+.graph-search-input:focus {
+  border-color: #333;
+}
+
+.graph-reset-btn {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.graph-reset-btn:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+/* Workspace */
+.graph-workspace {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+/* Canvas */
+#graph-canvas {
+  flex: 1;
+  min-width: 0;
+  min-height: 520px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fafafa;
+  position: relative;
+}
+
+#graph-svg {
+  display: block;
+  width: 100%;
+  cursor: grab;
+}
+
+#graph-svg:active {
+  cursor: grabbing;
+}
+
+/* Loading state */
+#graph-loading {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+#graph-loading.visible {
+  display: block;
+}
+
+.graph-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e0e0e0;
+  border-top-color: #333;
+  border-radius: 50%;
+  margin: 0 auto 0.75rem;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Sidebar */
+#graph-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  display: none;
+  overflow-y: auto;
+  max-height: 560px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+}
+
+#sidebar-title {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #222;
+  flex: 1;
+  padding-right: 0.5rem;
+  line-height: 1.4;
+}
+
+#sidebar-close {
+  background: none;
+  border: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+  color: #aaa;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+#sidebar-close:hover {
+  color: #333;
+}
+
+#sidebar-content {
+  padding: 0.875rem 1rem;
+}
+
+.sidebar-meta {
+  font-size: 0.8125rem;
+  color: #aaa;
+  margin: 0 0 0.625rem 0;
+}
+
+.sidebar-excerpt {
+  font-size: 0.8125rem;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 0.875rem;
+}
+
+.sidebar-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 0.875rem;
+}
+
+.sidebar-tag {
+  font-size: 0.6875rem;
+  padding: 0.2rem 0.45rem;
+  background: #f0f0f0;
+  border-radius: 4px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.sidebar-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #222;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  transition: background 0.2s;
+  margin-bottom: 1rem;
+}
+
+.sidebar-link:hover {
+  background: #000;
+  color: #fff;
+}
+
+.sidebar-related h4 {
+  font-size: 0.75rem;
+  color: #999;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-related-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-related-list li {
+  padding: 0.375rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar-related-list li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-related-list a {
+  color: #444;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  display: block;
+}
+
+.sidebar-related-list a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.sidebar-date {
+  font-size: 0.75rem;
+  color: #bbb;
+}
+
+.sidebar-more a {
+  color: #555 !important;
+  font-weight: 600;
+  font-size: 0.8125rem;
+}
+
+/* SVG graph elements */
+.graph-link {
+  stroke: #e0e0e0;
+  stroke-width: 1;
+  fill: none;
+  transition: stroke 0.2s, opacity 0.2s;
+}
+
+.graph-link.dim {
+  opacity: 0.08;
+}
+
+.graph-link.highlight {
+  stroke: #666;
+  stroke-width: 1.5;
+  opacity: 1;
+}
+
+.node-circle {
+  stroke: #fff;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: opacity 0.2s, stroke 0.2s, stroke-width 0.2s;
+}
+
+.node-topic .node-circle {
+  fill: #222;
+}
+
+.node-post .node-circle {
+  fill: #999;
+}
+
+.node-circle.dim {
+  opacity: 0.1;
+}
+
+.node-circle.highlight {
+  stroke: #e8a000;
+  stroke-width: 3;
+  opacity: 1;
+}
+
+.node-label {
+  font-size: 11px;
+  fill: #444;
+  text-anchor: middle;
+  pointer-events: none;
+  user-select: none;
+  font-weight: 600;
+}
+
+/* Tooltip */
+#graph-tooltip {
+  position: fixed;
+  z-index: 9999;
+  background: rgba(30, 30, 30, 0.9);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  pointer-events: none;
+  display: none;
+  max-width: 240px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Mobile note */
+#graph-mobile-msg {
+  display: none;
+  padding: 0.625rem 1rem;
+  background: #f9f9f9;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  color: #888;
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+/* Mobile overrides */
+@media (max-width: 768px) {
+  .graph-workspace {
+    flex-direction: column;
+  }
+
+  #graph-sidebar {
+    width: 100%;
+    max-height: 300px;
+  }
+
+  .graph-actions {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .graph-search-input {
+    width: 120px;
+  }
+
+  #graph-mobile-msg {
+    display: block;
+  }
+
+  .legend-hint {
+    display: none;
+  }
+}
 </style>
 
 <script>
-// View Toggle
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+
+  // ── View toggle ──────────────────────────────────────────────────────────
   const toggleTopics = document.getElementById('toggle-topics');
-  const toggleDates = document.getElementById('toggle-dates');
-  const topicsView = document.getElementById('topics-view');
-  const datesView = document.getElementById('dates-view');
+  const toggleDates  = document.getElementById('toggle-dates');
+  const toggleGraph  = document.getElementById('toggle-graph');
+  const topicsView   = document.getElementById('topics-view');
+  const datesView    = document.getElementById('dates-view');
+  const graphView    = document.getElementById('graph-view');
 
-  toggleTopics.addEventListener('click', function() {
-    topicsView.style.display = 'block';
-    datesView.style.display = 'none';
-    toggleTopics.classList.add('active');
-    toggleDates.classList.remove('active');
+  let graphInitialized = false;
+
+  function activateView(activeBtn, activeView) {
+    [topicsView, datesView, graphView].forEach(v => v.style.display = 'none');
+    [toggleTopics, toggleDates, toggleGraph].forEach(b => b.classList.remove('active'));
+    activeView.style.display = 'block';
+    activeBtn.classList.add('active');
+  }
+
+  toggleTopics.addEventListener('click', () => activateView(toggleTopics, topicsView));
+  toggleDates.addEventListener('click',  () => activateView(toggleDates, datesView));
+  toggleGraph.addEventListener('click',  () => {
+    activateView(toggleGraph, graphView);
+    if (!graphInitialized) {
+      graphInitialized = true;
+      loadGraph();
+    }
   });
 
-  toggleDates.addEventListener('click', function() {
-    topicsView.style.display = 'none';
-    datesView.style.display = 'block';
-    toggleDates.classList.add('active');
-    toggleTopics.classList.remove('active');
-  });
-
-  // Year toggle functionality for archive view
+  // ── Year toggle for archive view ─────────────────────────────────────────
   document.querySelectorAll('.year-toggle').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       const isExpanded = this.getAttribute('aria-expanded') === 'true';
       const content = this.closest('.year-heading').nextElementSibling;
-
       this.setAttribute('aria-expanded', !isExpanded);
       content.style.display = isExpanded ? 'none' : 'block';
     });
   });
 
-  // Search functionality
+  // ── Site search ───────────────────────────────────────────────────────────
   let searchData = [];
-  const searchInput = document.getElementById('search-input');
+  const searchInput  = document.getElementById('search-input');
   const searchResults = document.getElementById('search-results');
-  const searchStats = document.getElementById('search-stats');
-  const clearButton = document.getElementById('clear-search');
+  const searchStats  = document.getElementById('search-stats');
+  const clearButton  = document.getElementById('clear-search');
 
-  // Load search data
   fetch('{{ site.baseurl }}/search.json')
-    .then(response => response.json())
-    .then(data => {
-      searchData = data;
-    })
-    .catch(error => {
-      console.error('Error loading search data:', error);
-    });
+    .then(r => r.json())
+    .then(data => { searchData = data; })
+    .catch(err => console.error('Error loading search data:', err));
 
-  // Search input handler
-  searchInput.addEventListener('input', function() {
-    const query = this.value.trim();
-    performSearch(query);
-  });
-
-  // Clear button handler
-  clearButton.addEventListener('click', function() {
+  searchInput.addEventListener('input', function () { performSearch(this.value.trim()); });
+  clearButton.addEventListener('click', function () {
     searchInput.value = '';
     performSearch('');
   });
 
-  // Search function
   function performSearch(query) {
-    if (!query || query.length === 0) {
+    if (!query) {
       searchResults.innerHTML = '';
       searchStats.textContent = '';
       clearButton.style.display = 'none';
       return;
     }
-
     clearButton.style.display = 'block';
-
-    const queryLower = query.toLowerCase();
-    const results = searchData.filter(post => {
-      const titleMatch = post.title.toLowerCase().includes(queryLower);
-      const contentMatch = post.content && post.content.toLowerCase().includes(queryLower);
-      const tagMatch = post.tags && post.tags.toLowerCase().includes(queryLower);
-
-      return titleMatch || contentMatch || tagMatch;
-    });
-
-    if (results.length === 0) {
+    const q = query.toLowerCase();
+    const results = searchData.filter(post =>
+      (post.title && post.title.toLowerCase().includes(q)) ||
+      (post.content && post.content.toLowerCase().includes(q)) ||
+      (post.tags && post.tags.toLowerCase().includes(q))
+    );
+    if (!results.length) {
       searchResults.innerHTML = '<p>No results found for "' + query + '"</p>';
       searchStats.textContent = '';
     } else {
       searchStats.textContent = 'Found ' + results.length + ' result' + (results.length !== 1 ? 's' : '');
-
       searchResults.innerHTML = results.map(post => `
         <div class="search-result-item">
-          <div class="search-result-title">
-            <a href="${post.url}">${post.title}</a>
-          </div>
+          <div class="search-result-title"><a href="${post.url}">${post.title}</a></div>
           <div class="search-result-date">${post.date}</div>
           ${post.excerpt ? '<div class="search-result-excerpt">' + post.excerpt + '</div>' : ''}
-        </div>
-      `).join('');
+        </div>`).join('');
     }
   }
-});
+
+  // ── Context graph ─────────────────────────────────────────────────────────
+
+  /** Decode HTML entities so SVG textContent shows correct characters. */
+  function decodeHTML(str) {
+    if (!str) return '';
+    const t = document.createElement('textarea');
+    t.innerHTML = str;
+    return t.value;
+  }
+
+  function loadGraph() {
+    const loading = document.getElementById('graph-loading');
+    loading.classList.add('visible');
+
+    // Dynamically load D3 v7, then fetch data, then build graph
+    if (window.d3) {
+      fetchAndBuild(loading);
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js';
+    script.onload = () => fetchAndBuild(loading);
+    script.onerror = () => {
+      loading.querySelector('p').textContent = 'Failed to load graph library.';
+    };
+    document.head.appendChild(script);
+  }
+
+  function fetchAndBuild(loading) {
+    fetch('{{ site.baseurl }}/graph-data.json')
+      .then(r => r.json())
+      .then(data => {
+        loading.classList.remove('visible');
+        buildGraph(data);
+      })
+      .catch(() => {
+        loading.querySelector('p').textContent = 'Failed to load graph data.';
+      });
+  }
+
+  function buildGraph(rawData) {
+    const container = document.getElementById('graph-canvas');
+    const sidebar   = document.getElementById('graph-sidebar');
+    const tooltip   = document.getElementById('graph-tooltip');
+
+    // ── Build nodes ────────────────────────────────────────────────────────
+    const topicNodes = rawData.topics.map(t => ({
+      ...t,
+      r: Math.max(12, Math.sqrt(t.count) * 7)
+    }));
+    const postNodes = rawData.posts.map(p => ({ ...p, r: 6 }));
+    const nodes  = [...topicNodes, ...postNodes];
+    const byId   = {};
+    nodes.forEach(n => byId[n.id] = n);
+
+    // ── Build links (post → topic only) ───────────────────────────────────
+    const links = [];
+    const adj   = {};        // nodeId → Set of neighbour ids
+    nodes.forEach(n => adj[n.id] = new Set());
+
+    rawData.posts.forEach(post => {
+      (post.tags || []).forEach(tag => {
+        const tid = 'topic-' + tag.toLowerCase().replace(/ /g, '-');
+        if (byId[tid]) {
+          links.push({ source: post.id, target: tid });
+          adj[post.id].add(tid);
+          adj[tid].add(post.id);
+        }
+      });
+    });
+
+    // ── Pre-compute related posts (sidebar only, not drawn as edges) ───────
+    const related = {};
+    rawData.posts.forEach((p, i) => {
+      const rels = [];
+      rawData.posts.forEach((q, j) => {
+        if (i === j) return;
+        const shared = (p.tags || []).filter(t => (q.tags || []).includes(t));
+        if (shared.length >= 2) rels.push({ post: q, shared });
+      });
+      rels.sort((a, b) => b.shared.length - a.shared.length);
+      related[p.id] = rels.slice(0, 6);
+    });
+
+    // ── SVG setup ──────────────────────────────────────────────────────────
+    const W = container.clientWidth;
+    const H = Math.max(520, Math.round(window.innerHeight * 0.62));
+
+    const svg = d3.select('#graph-svg').attr('width', W).attr('height', H);
+    svg.selectAll('*').remove();
+
+    const g = svg.append('g').attr('class', 'graph-g');
+
+    // Zoom & pan
+    const zoom = d3.zoom()
+      .scaleExtent([0.1, 5])
+      .on('zoom', e => g.attr('transform', e.transform));
+    svg.call(zoom);
+    svg.on('dblclick.zoom', null);
+
+    // Click on SVG background → deselect
+    svg.on('click', function (e) {
+      if (e.target === this || e.target === g.node()) deselectAll();
+    });
+
+    // ── Initial positions ──────────────────────────────────────────────────
+    const ringR = Math.min(W, H) * 0.3;
+    topicNodes.forEach((n, i) => {
+      const a = (2 * Math.PI * i / topicNodes.length) - Math.PI / 2;
+      n.x = W / 2 + ringR * Math.cos(a);
+      n.y = H / 2 + ringR * Math.sin(a);
+    });
+    postNodes.forEach(n => {
+      const tags = n.tags || [];
+      if (tags.length) {
+        const pivot = byId['topic-' + tags[0].toLowerCase().replace(/ /g, '-')];
+        if (pivot && pivot.x != null) {
+          n.x = pivot.x + (Math.random() - 0.5) * 60;
+          n.y = pivot.y + (Math.random() - 0.5) * 60;
+          return;
+        }
+      }
+      n.x = W / 2 + (Math.random() - 0.5) * 120;
+      n.y = H / 2 + (Math.random() - 0.5) * 120;
+    });
+
+    // ── Force simulation ───────────────────────────────────────────────────
+    const sim = d3.forceSimulation(nodes)
+      .force('link',      d3.forceLink(links).id(d => d.id).distance(75).strength(0.25))
+      .force('charge',    d3.forceManyBody().strength(d => d.type === 'topic' ? -380 : -22))
+      .force('center',    d3.forceCenter(W / 2, H / 2))
+      .force('collision', d3.forceCollide().radius(d => d.r + 3).strength(0.8));
+
+    // ── Render links ───────────────────────────────────────────────────────
+    const linkSel = g.append('g').attr('class', 'links')
+      .selectAll('line').data(links).join('line')
+      .attr('class', 'graph-link');
+
+    // ── Render nodes ───────────────────────────────────────────────────────
+    const nodeSel = g.append('g').attr('class', 'nodes')
+      .selectAll('g').data(nodes).join('g')
+      .attr('class', d => `graph-node node-${d.type}`)
+      .call(d3.drag()
+        .on('start', (e, d) => {
+          if (!e.active) sim.alphaTarget(0.3).restart();
+          d.fx = d.x; d.fy = d.y;
+        })
+        .on('drag',  (e, d) => { d.fx = e.x; d.fy = e.y; })
+        .on('end',   (e, d) => {
+          if (!e.active) sim.alphaTarget(0);
+          d.fx = null; d.fy = null;
+        })
+      );
+
+    nodeSel.append('circle').attr('r', d => d.r).attr('class', 'node-circle');
+
+    // Topic labels (always visible)
+    nodeSel.filter(d => d.type === 'topic')
+      .append('text')
+      .attr('class', 'node-label')
+      .attr('dy', d => -d.r - 5)
+      .text(d => decodeHTML(d.label));
+
+    // ── Tooltip ────────────────────────────────────────────────────────────
+    nodeSel
+      .on('mouseenter', function (e, d) {
+        const label = d.type === 'topic'
+          ? `<strong>${decodeHTML(d.label)}</strong><br>${d.count} post${d.count !== 1 ? 's' : ''}`
+          : `<strong>${decodeHTML(d.title)}</strong><br>${d.date}${d.tags && d.tags.length ? '<br><em>' + d.tags.join(', ') + '</em>' : ''}`;
+        tooltip.innerHTML = label;
+        tooltip.style.display = 'block';
+      })
+      .on('mousemove', function (e) {
+        tooltip.style.left = (e.clientX + 14) + 'px';
+        tooltip.style.top  = (e.clientY - 12) + 'px';
+      })
+      .on('mouseleave', function () { tooltip.style.display = 'none'; })
+      .on('click', function (e, d) {
+        e.stopPropagation();
+        tooltip.style.display = 'none';
+        selectNode(d);
+      });
+
+    // ── Tick ───────────────────────────────────────────────────────────────
+    sim.on('tick', () => {
+      linkSel
+        .attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+        .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+      nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+    });
+
+    // Zoom-to-fit after simulation settles
+    setTimeout(zoomToFit, 1800);
+
+    // ── Selection logic ────────────────────────────────────────────────────
+    function selectNode(d) {
+      const neighbours = adj[d.id] || new Set();
+
+      linkSel.classed('dim', true).classed('highlight', false);
+      nodeSel.select('circle').classed('dim', true).classed('highlight', false);
+
+      linkSel
+        .filter(l => l.source.id === d.id || l.target.id === d.id)
+        .classed('dim', false).classed('highlight', true);
+
+      nodeSel
+        .filter(n => n.id === d.id || neighbours.has(n.id))
+        .select('circle').classed('dim', false).classed('highlight', true);
+
+      showSidebar(d, neighbours);
+    }
+
+    function deselectAll() {
+      linkSel.classed('dim', false).classed('highlight', false);
+      nodeSel.select('circle').classed('dim', false).classed('highlight', false);
+      sidebar.style.display = 'none';
+    }
+
+    // ── Sidebar ────────────────────────────────────────────────────────────
+    function showSidebar(d, neighbours) {
+      sidebar.style.display = 'block';
+      document.getElementById('sidebar-close').onclick = deselectAll;
+      const title   = document.getElementById('sidebar-title');
+      const content = document.getElementById('sidebar-content');
+
+      if (d.type === 'topic') {
+        title.textContent = decodeHTML(d.label);
+        const topicPosts = [...neighbours]
+          .map(id => byId[id])
+          .filter(n => n && n.type === 'post')
+          .sort((a, b) => b.date.localeCompare(a.date));
+
+        content.innerHTML = `
+          <p class="sidebar-meta">${d.count} post${d.count !== 1 ? 's' : ''} in this topic</p>
+          <a href="${d.url}" class="sidebar-link">View all ${decodeHTML(d.label)} posts &rarr;</a>
+          <div class="sidebar-related">
+            <h4>Posts in this topic</h4>
+            <ul class="sidebar-related-list">
+              ${topicPosts.slice(0, 8).map(p =>
+                `<li><a href="${p.url}">${decodeHTML(p.title)}</a><span class="sidebar-date"> &middot; ${p.date}</span></li>`
+              ).join('')}
+              ${topicPosts.length > 8 ? `<li class="sidebar-more"><a href="${d.url}">+&nbsp;${topicPosts.length - 8} more &rarr;</a></li>` : ''}
+            </ul>
+          </div>`;
+      } else {
+        title.textContent = decodeHTML(d.title);
+        const postRelated = related[d.id] || [];
+
+        content.innerHTML = `
+          <p class="sidebar-meta">${d.date}</p>
+          ${d.tags && d.tags.length ? `<div class="sidebar-tags">${d.tags.map(t => `<span class="sidebar-tag">${t}</span>`).join('')}</div>` : ''}
+          ${d.excerpt ? `<p class="sidebar-excerpt">${decodeHTML(d.excerpt)}</p>` : ''}
+          <a href="${d.url}" class="sidebar-link">Read post &rarr;</a>
+          ${postRelated.length ? `
+            <div class="sidebar-related">
+              <h4>Related posts</h4>
+              <ul class="sidebar-related-list">
+                ${postRelated.map(r =>
+                  `<li><a href="${r.post.url}">${decodeHTML(r.post.title)}</a><span class="sidebar-date"> &middot; ${r.post.date}</span></li>`
+                ).join('')}
+              </ul>
+            </div>` : ''}`;
+      }
+    }
+
+    // ── Zoom to fit ────────────────────────────────────────────────────────
+    function zoomToFit(pad) {
+      pad = pad || 50;
+      try {
+        const b = g.node().getBBox();
+        if (!b.width || !b.height) return;
+        const scale = Math.min(
+          (W - pad * 2) / b.width,
+          (H - pad * 2) / b.height,
+          1.0
+        );
+        const tx = (W - b.width * scale) / 2 - b.x * scale;
+        const ty = (H - b.height * scale) / 2 - b.y * scale;
+        svg.transition().duration(700)
+          .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+      } catch (_) {}
+    }
+
+    // ── Reset button ───────────────────────────────────────────────────────
+    document.getElementById('graph-reset').addEventListener('click', () => {
+      deselectAll();
+      zoomToFit();
+    });
+
+    // ── Graph search / filter ──────────────────────────────────────────────
+    document.getElementById('graph-search').addEventListener('input', function () {
+      const q = this.value.toLowerCase().trim();
+      if (!q) {
+        nodeSel.select('circle').classed('dim', false).classed('highlight', false);
+        linkSel.classed('dim', false);
+        return;
+      }
+      const hits = new Set();
+      nodes.forEach(n => {
+        const text = decodeHTML(n.type === 'topic' ? n.label : n.title).toLowerCase();
+        if (text.includes(q)) hits.add(n.id);
+      });
+      nodeSel.select('circle')
+        .classed('dim',       n => !hits.has(n.id))
+        .classed('highlight', n =>  hits.has(n.id));
+      linkSel.classed('dim', l => !hits.has(l.source.id) && !hits.has(l.target.id));
+    });
+  } // end buildGraph
+
+}); // end DOMContentLoaded
 </script>
