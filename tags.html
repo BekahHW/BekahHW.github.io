@@ -26,7 +26,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
   <div class="view-toggle">
     <button id="toggle-topics" class="view-btn active">Browse by Topic</button>
     <button id="toggle-dates" class="view-btn">Browse by Date</button>
-    <button id="toggle-graph" class="view-btn">Browse by Context Graph</button>
+    <button id="toggle-graph" class="view-btn">Browse by Topic Graph</button>
   </div>
 
   <!-- Stats -->
@@ -144,7 +144,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
     </div>
   </div>
 
-  <!-- Context Graph View -->
+  <!-- Topic Graph View -->
   <div id="graph-view" class="content-view" style="display: none;">
     <div class="graph-toolbar">
       <div class="graph-legend">
@@ -182,7 +182,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
       </aside>
     </div>
 
-    <p id="graph-mobile-msg">For the best experience, explore the context graph on a wider screen. Tap nodes to see details.</p>
+    <p id="graph-mobile-msg">For the best experience, explore the topic graph on a wider screen. Tap nodes to see details.</p>
   </div>
 </div>
 
@@ -631,7 +631,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
 }
 
 /* =============================================
-   CONTEXT GRAPH VIEW
+   TOPIC GRAPH VIEW
    ============================================= */
 
 /* Toolbar */
@@ -1126,7 +1126,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // ── Context graph ─────────────────────────────────────────────────────────
+  // ── Topic graph ─────────────────────────────────────────────────────────
 
   /** Decode HTML entities so SVG textContent shows correct characters. */
   function decodeHTML(str) {
