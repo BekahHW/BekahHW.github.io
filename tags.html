@@ -319,9 +319,9 @@ description: "Explore blog posts by topic - browse all tags and categories"
 }
 
 .view-btn.active {
-  background: #333;
+  background: linear-gradient(135deg, #cd9023, #9a6515);
   color: #fff;
-  border-color: #333;
+  border-color: #9a6515;
 }
 
 .tags-stats {
@@ -341,7 +341,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
 .stat-number {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: #cd9023;
   display: block;
 }
 
@@ -355,7 +355,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
 .tags-cloud {
   margin-bottom: 4rem;
   padding: 2rem;
-  background: #fafafa;
+  background: linear-gradient(135deg, #fdf9f2 0%, #f7f0e4 100%);
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
@@ -367,21 +367,21 @@ description: "Explore blog posts by topic - browse all tags and categories"
 .tag-item {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: #fff;
-  border: 2px solid #e0e0e0;
+  background: linear-gradient(135deg, #fdf5e6, #f4e1c0);
+  border: 2px solid #d4b87a;
   border-radius: 25px;
   text-decoration: none;
-  color: #333;
+  color: #5a3a0a;
   transition: all 0.3s;
   font-weight: 500;
 }
 
 .tag-item:hover {
-  background: #333;
+  background: linear-gradient(135deg, #cd9023, #7a5012);
   color: #fff;
-  border-color: #333;
+  border-color: #7a5012;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(205, 144, 35, 0.4);
 }
 
 .tag-count {
@@ -390,22 +390,36 @@ description: "Explore blog posts by topic - browse all tags and categories"
   margin-left: 0.25rem;
 }
 
-/* Tag sizes based on post count */
+/* Tag sizes based on post count — gradient deepens with popularity */
 .tag-small {
   font-size: 0.9rem;
+  background: linear-gradient(135deg, #fdf5e6, #f4e1c0);
+  border-color: #d4b87a;
+  color: #5a3a0a;
 }
 
 .tag-medium {
   font-size: 1.1rem;
+  background: linear-gradient(135deg, #f4e1c0, #e2b75a);
+  border-color: #cd9023;
+  color: #3a2800;
 }
 
 .tag-large {
   font-size: 1.3rem;
+  background: linear-gradient(135deg, #e2b75a, #cd9023);
+  border-color: #b07820;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
 .tag-xlarge {
   font-size: 1.5rem;
   font-weight: 700;
+  background: linear-gradient(135deg, #cd9023, #9a6515);
+  border-color: #7a5012;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .tags-list {
@@ -674,13 +688,13 @@ description: "Explore blog posts by topic - browse all tags and categories"
 .legend-topic {
   width: 18px;
   height: 18px;
-  background: #222;
+  background: radial-gradient(circle at 38% 35%, #e8c050, #9a6515);
 }
 
 .legend-post {
   width: 10px;
   height: 10px;
-  background: #888;
+  background: radial-gradient(circle at 38% 35%, #d4d3d3, #8a8888);
 }
 
 .graph-actions {
@@ -735,10 +749,10 @@ description: "Explore blog posts by topic - browse all tags and categories"
   flex: 1;
   min-width: 0;
   min-height: 520px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #d4b87a;
   border-radius: 8px;
   overflow: hidden;
-  background: #fafafa;
+  background: linear-gradient(160deg, #fdf9f2 0%, #f7f0e4 100%);
   position: relative;
 }
 
@@ -932,7 +946,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
 
 /* SVG graph elements */
 .graph-link {
-  stroke: #e0e0e0;
+  stroke: #d4b87a;
   stroke-width: 1;
   fill: none;
   transition: stroke 0.2s, opacity 0.2s;
@@ -943,7 +957,7 @@ description: "Explore blog posts by topic - browse all tags and categories"
 }
 
 .graph-link.highlight {
-  stroke: #666;
+  stroke: #cd9023;
   stroke-width: 1.5;
   opacity: 1;
 }
@@ -956,11 +970,11 @@ description: "Explore blog posts by topic - browse all tags and categories"
 }
 
 .node-topic .node-circle {
-  fill: #222;
+  fill: url(#grad-topic);
 }
 
 .node-post .node-circle {
-  fill: #999;
+  fill: url(#grad-post);
 }
 
 .node-circle.dim {
@@ -968,18 +982,19 @@ description: "Explore blog posts by topic - browse all tags and categories"
 }
 
 .node-circle.highlight {
-  stroke: #e8a000;
+  stroke: #cd9023;
   stroke-width: 3;
   opacity: 1;
+  filter: drop-shadow(0 0 4px rgba(205, 144, 35, 0.6));
 }
 
 .node-label {
   font-size: 11px;
-  fill: #444;
+  fill: #5a3a0a;
   text-anchor: middle;
   pointer-events: none;
   user-select: none;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Tooltip */
@@ -1216,6 +1231,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const svg = d3.select('#graph-svg').attr('width', W).attr('height', H);
     svg.selectAll('*').remove();
+
+    // ── Gradient defs for nodes ─────────────────────────────────────────────
+    const defs = svg.append('defs');
+    const topicGrad = defs.append('radialGradient')
+      .attr('id', 'grad-topic').attr('cx', '38%').attr('cy', '35%').attr('r', '65%');
+    topicGrad.append('stop').attr('offset', '0%').attr('stop-color', '#e8c050');
+    topicGrad.append('stop').attr('offset', '100%').attr('stop-color', '#9a6515');
+    const postGrad = defs.append('radialGradient')
+      .attr('id', 'grad-post').attr('cx', '38%').attr('cy', '35%').attr('r', '65%');
+    postGrad.append('stop').attr('offset', '0%').attr('stop-color', '#d4d3d3');
+    postGrad.append('stop').attr('offset', '100%').attr('stop-color', '#8a8888');
 
     const g = svg.append('g').attr('class', 'graph-g');
 
