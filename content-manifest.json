@@ -31,6 +31,10 @@ layout: null
       "description": "Technical tutorials, coding practices, and development workflows",
       "keywords": ["coding", "programming", "technical", "development", "tutorial"]
     },
+      "beginner": {
+      "description": "100-level content, introductory guides, and resources for new builders",
+      "keywords": ["coding", "ai", "technical", "development", "tutorial"]
+    },
     "career": {
       "description": "Career advice, job searching, and professional development in tech",
       "keywords": ["career", "job", "interview", "professional development", "bootcamp"]

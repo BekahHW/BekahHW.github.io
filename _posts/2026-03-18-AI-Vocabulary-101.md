@@ -4,7 +4,7 @@ title: "AI Vocabulary 101"
 date: 2026-03-18
 tags: [AI, Beginner]
 author: Bekah
-description: Smart, curious people keep hitting the same wall with AI: they don't have the words to name what they don't understand. Here are the terms that turn vague frustration into specific, solvable problems.
+description: "Smart, curious people keep hitting the same wall with AI: they don't have the words to name what they don't understand. Here are the terms that turn vague frustration into specific, solvable problems."
 ---
 
 I've been having a lot of conversations with non-tech people recently about AI. What I keep running into is the same pattern: smart, curious people who are genuinely trying to understand what's happening, but who don't have the vocabulary to name what they don't know. And when you can't name it, you can't ask the right question, which means you stay stuck at the surface.
