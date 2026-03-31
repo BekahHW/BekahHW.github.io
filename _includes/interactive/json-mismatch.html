@@ -1,0 +1,357 @@
+<style>
+/* ─── Shared container + atmosphere ───────────────────── */
+.aic-container {
+  font-family: inherit;
+  max-width: 700px;
+  margin: 2.5rem auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #f9f3e7 0%, #fdf8ef 42%, #f5ebd8 100%);
+  border: 1px solid rgba(130,88,8,0.55);
+  border-radius: 16px;
+  box-shadow:
+    0 20px 50px rgba(120,90,30,0.10),
+    0 0 0 1px rgba(255,220,80,0.18),
+    inset 0 0 0 1px rgba(255,230,120,0.28),
+    inset 0 1px 0 rgba(255,255,220,0.85);
+  --aic-gold:        #c59c50;
+  --aic-gold-light:  #e8c060;
+  --aic-active:      #6b4a0e;
+  --aic-active-dark: #5a3a08;
+  --aic-muted:       #7a6a50;
+  --aic-caption:     #4a3f2f;
+  --aic-label:       #9a7a30;
+  --aic-success:     #6b5c14;
+  --aic-text-muted:  #7a6a50;
+  --aic-danger:      #8a2a18;
+}
+.aic-container::before {
+  content: '';
+  position: absolute;
+  top: -40px; left: 50%;
+  transform: translateX(-50%);
+  width: 680px; height: 340px;
+  background: radial-gradient(ellipse at center,
+    rgba(255,250,200,0.38) 0%,
+    rgba(255,220,80,0.15) 38%,
+    rgba(220,170,40,0.05) 62%,
+    transparent 75%);
+  pointer-events: none; z-index: 0;
+}
+.aic-container::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; right: -50px;
+  width: 440px; height: 360px;
+  background: radial-gradient(ellipse at center,
+    rgba(255,220,80,0.14) 0%,
+    rgba(220,170,40,0.06) 50%,
+    transparent 70%);
+  pointer-events: none; z-index: 0;
+}
+.aic-section { position: relative; z-index: 1; padding: 2rem 2rem 1.75rem; }
+.aic-section-title {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.13em;
+  text-transform: uppercase; color: var(--aic-label);
+  margin: 0 0 1.5rem; padding-bottom: 0.7rem; position: relative;
+  text-shadow: 0 0 28px rgba(197,156,80,0.38), 0 0 10px rgba(232,192,96,0.22);
+}
+.aic-section-title::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, rgba(197,156,80,0.55), rgba(197,156,80,0.18) 60%, transparent);
+}
+/* Buttons */
+.aic-btn {
+  padding: 0.44rem 1.15rem;
+  border: 1px solid rgba(197,156,80,0.48); border-radius: 6px;
+  background: linear-gradient(180deg, rgba(255,250,238,0.95) 0%, rgba(244,230,198,0.90) 100%);
+  color: #5a3a08; cursor: pointer; font-family: inherit;
+  font-size: 0.82rem; font-weight: 500; line-height: 1.4;
+  box-shadow: 0 2px 10px rgba(197,156,80,0.08), inset 0 1px 0 rgba(255,255,255,0.70);
+  transition: background 0.18s, border-color 0.18s, box-shadow 0.18s, transform 0.14s;
+}
+.aic-btn:hover:not(:disabled) {
+  background: linear-gradient(180deg, rgba(255,252,242,1) 0%, rgba(248,234,205,1) 100%);
+  border-color: rgba(197,156,80,0.72);
+  box-shadow: 0 4px 16px rgba(197,156,80,0.18), inset 0 1px 0 rgba(255,255,255,0.75);
+  transform: translateY(-1px);
+}
+.aic-btn:focus-visible { outline: 2px solid #6b4a0e; outline-offset: 3px; }
+.aic-btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+/* Sparkle cloud */
+.aic-sparkle-cloud {
+  position: absolute; top: 0; left: 0;
+  width: 2px; height: 2px; border-radius: 50%;
+  background: rgba(255,255,220,0.90);
+  pointer-events: none; z-index: 1;
+  box-shadow:
+     88px  46px  6px  1px rgba(255,255,220,0.85),  88px  46px 20px  6px rgba(255,210, 60,0.40),  88px  46px 44px 14px rgba(220,160, 30,0.14),
+    310px  22px  6px  1px rgba(255,255,220,0.80), 310px  22px 18px  5px rgba(255,210, 60,0.38), 310px  22px 40px 12px rgba(220,160, 30,0.12),
+     48px 165px  6px  1px rgba(255,255,220,0.75),  48px 165px 20px  6px rgba(255,210, 60,0.34),  48px 165px 44px 14px rgba(220,160, 30,0.10),
+    510px  58px  5px  1px rgba(255,255,220,0.78), 510px  58px 16px  5px rgba(255,210, 60,0.35), 510px  58px 38px 11px rgba(220,160, 30,0.11),
+    210px 130px  5px  1px rgba(255,255,220,0.70), 210px 130px 14px  4px rgba(255,210, 60,0.30), 210px 130px 36px 10px rgba(220,160, 30,0.09);
+}
+/* jm- specific styles */
+.jm-cols {
+  display: flex; gap: 1rem; margin-bottom: 1rem;
+}
+.jm-col { flex: 1; min-width: 0; }
+.jm-col-label {
+  font-size: 0.68rem; font-weight: 600; letter-spacing: 0.10em;
+  text-transform: uppercase; color: var(--aic-label);
+  margin-bottom: 0.5rem;
+}
+.jm-json {
+  background: linear-gradient(180deg, rgba(255,252,244,0.96), rgba(250,242,224,0.90));
+  border: 1px solid rgba(120,80,5,0.38);
+  border-radius: 8px; overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255,255,220,0.70);
+}
+.jm-field {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.78rem; font-family: 'Courier New', monospace;
+  color: #4a3f2f; border-left: 3px solid transparent;
+  transition: background 0.35s, border-color 0.35s, color 0.35s;
+  border-bottom: 1px solid rgba(197,156,80,0.10);
+}
+.jm-field:last-child { border-bottom: none; }
+.jm-field .jm-key { flex: 1; }
+.jm-field .jm-indicator {
+  font-size: 0.9rem; margin-left: 0.5rem; opacity: 0;
+  transition: opacity 0.35s;
+}
+.jm-field.jm-ok {
+  border-left-color: rgba(80,160,80,0.65);
+  background: rgba(220,250,220,0.25);
+  color: #2a5a2a;
+}
+.jm-field.jm-ok .jm-indicator { opacity: 1; }
+.jm-field.jm-err {
+  border-left-color: rgba(192,64,48,0.65);
+  background: rgba(255,220,215,0.25);
+  color: #8a2a18;
+}
+.jm-field.jm-err .jm-indicator { opacity: 1; }
+.jm-result {
+  text-align: center; font-size: 0.82rem; font-weight: 600;
+  padding: 0.55rem 1rem; border-radius: 6px; margin-bottom: 1rem;
+  transition: background 0.35s, color 0.35s;
+  min-height: 2.2em; display: flex; align-items: center; justify-content: center;
+}
+.jm-result.jm-result-ok {
+  background: rgba(220,250,220,0.45); color: #2a5a2a;
+  border: 1px solid rgba(80,160,80,0.30);
+}
+.jm-result.jm-result-err {
+  background: rgba(255,220,215,0.45); color: #8a2a18;
+  border: 1px solid rgba(192,64,48,0.30);
+}
+.jm-controls { display: flex; justify-content: center; }
+@media (max-width: 520px) {
+  .jm-cols { flex-direction: column; }
+  .aic-section { padding: 1.25rem 1rem 1rem; }
+}
+</style>
+
+<div class="aic-container" id="jm-container">
+  <div class="aic-sparkle-cloud" aria-hidden="true"></div>
+  <div class="aic-section">
+    <p class="aic-section-title">Try it: field name mismatch</p>
+    <div class="jm-cols">
+      <div class="jm-col">
+        <div class="jm-col-label">API expects</div>
+        <div class="jm-json">
+          <div class="jm-field" id="jm-exp-0">
+            <span class="jm-key">"name"</span>
+            <span class="jm-indicator" id="jm-ind-exp-0"></span>
+          </div>
+          <div class="jm-field" id="jm-exp-1">
+            <span class="jm-key">"question"</span>
+            <span class="jm-indicator" id="jm-ind-exp-1"></span>
+          </div>
+          <div class="jm-field" id="jm-exp-2">
+            <span class="jm-key">"experience_level"</span>
+            <span class="jm-indicator" id="jm-ind-exp-2"></span>
+          </div>
+        </div>
+      </div>
+      <div class="jm-col">
+        <div class="jm-col-label">What you sent</div>
+        <div class="jm-json">
+          <div class="jm-field" id="jm-sent-0">
+            <span class="jm-key" id="jm-key-0">"username"</span>
+            <span class="jm-indicator" id="jm-ind-sent-0"></span>
+          </div>
+          <div class="jm-field" id="jm-sent-1">
+            <span class="jm-key" id="jm-key-1">"inquiry"</span>
+            <span class="jm-indicator" id="jm-ind-sent-1"></span>
+          </div>
+          <div class="jm-field" id="jm-sent-2">
+            <span class="jm-key" id="jm-key-2">"level"</span>
+            <span class="jm-indicator" id="jm-ind-sent-2"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jm-result" id="jm-result"></div>
+    <div class="jm-controls">
+      <button class="aic-btn" id="jm-toggle">Show the fix →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var state = 'broken'; // default
+
+  var BROKEN_KEYS = ['"username"', '"inquiry"', '"level"'];
+  var FIXED_KEYS  = ['"name"',     '"question"', '"experience_level"'];
+
+  var toggleBtn = document.getElementById('jm-toggle');
+  var resultEl  = document.getElementById('jm-result');
+
+  function getSentField(i)    { return document.getElementById('jm-sent-' + i); }
+  function getSentKey(i)      { return document.getElementById('jm-key-' + i); }
+  function getSentInd(i)      { return document.getElementById('jm-ind-sent-' + i); }
+  function getExpField(i)     { return document.getElementById('jm-exp-' + i); }
+  function getExpInd(i)       { return document.getElementById('jm-ind-exp-' + i); }
+
+  function applyBroken() {
+    for (var i = 0; i < 3; i++) {
+      var sf  = getSentField(i);
+      var sk  = getSentKey(i);
+      var si  = getSentInd(i);
+      var ef  = getExpField(i);
+      var ei  = getExpInd(i);
+
+      if (sk) sk.textContent = BROKEN_KEYS[i];
+
+      if (sf) { sf.classList.remove('jm-ok'); sf.classList.add('jm-err'); }
+      if (si) si.textContent = '✗';
+      if (ef) { ef.classList.remove('jm-ok'); ef.classList.add('jm-err'); }
+      if (ei) ei.textContent = '✗';
+    }
+
+    if (resultEl) {
+      resultEl.textContent = '✗ Fields not found — chain breaks here';
+      resultEl.className   = 'jm-result jm-result-err';
+    }
+    if (toggleBtn) toggleBtn.textContent = 'Show the fix →';
+    state = 'broken';
+  }
+
+  function applyFixed() {
+    for (var i = 0; i < 3; i++) {
+      var sf  = getSentField(i);
+      var sk  = getSentKey(i);
+      var si  = getSentInd(i);
+      var ef  = getExpField(i);
+      var ei  = getExpInd(i);
+
+      if (sk) sk.textContent = FIXED_KEYS[i];
+
+      if (sf) { sf.classList.remove('jm-err'); sf.classList.add('jm-ok'); }
+      if (si) si.textContent = '✓';
+      if (ef) { ef.classList.remove('jm-err'); ef.classList.add('jm-ok'); }
+      if (ei) ei.textContent = '✓';
+    }
+
+    if (resultEl) {
+      resultEl.textContent = '✓ Fields matched — chain continues';
+      resultEl.className   = 'jm-result jm-result-ok';
+    }
+    if (toggleBtn) toggleBtn.textContent = '← Show what breaks';
+    state = 'fixed';
+  }
+
+  function cascadeTo(targetFn) {
+    // Clear all first
+    for (var i = 0; i < 3; i++) {
+      var sf = getSentField(i);
+      var ef = getExpField(i);
+      var si = getSentInd(i);
+      var ei = getExpInd(i);
+      if (sf) { sf.classList.remove('jm-ok', 'jm-err'); }
+      if (ef) { ef.classList.remove('jm-ok', 'jm-err'); }
+      if (si) si.textContent = '';
+      if (ei) ei.textContent = '';
+    }
+    if (resultEl) {
+      resultEl.textContent = '';
+      resultEl.className   = 'jm-result';
+    }
+
+    // Cascade field updates
+    var delays = [0, 120, 240];
+    for (var j = 0; j < 3; j++) {
+      (function (idx) {
+        setTimeout(function () {
+          targetFn === 'fixed' ? applyFixedField(idx) : applyBrokenField(idx);
+        }, delays[idx]);
+      })(j);
+    }
+
+    // Apply result after last field
+    setTimeout(function () {
+      if (targetFn === 'fixed') {
+        if (resultEl) {
+          resultEl.textContent = '✓ Fields matched — chain continues';
+          resultEl.className   = 'jm-result jm-result-ok';
+        }
+        if (toggleBtn) toggleBtn.textContent = '← Show what breaks';
+        state = 'fixed';
+      } else {
+        if (resultEl) {
+          resultEl.textContent = '✗ Fields not found — chain breaks here';
+          resultEl.className   = 'jm-result jm-result-err';
+        }
+        if (toggleBtn) toggleBtn.textContent = 'Show the fix →';
+        state = 'broken';
+      }
+    }, delays[2] + 180);
+  }
+
+  function applyBrokenField(i) {
+    var sf = getSentField(i);
+    var sk = getSentKey(i);
+    var si = getSentInd(i);
+    var ef = getExpField(i);
+    var ei = getExpInd(i);
+    if (sk) sk.textContent = BROKEN_KEYS[i];
+    if (sf) { sf.classList.remove('jm-ok'); sf.classList.add('jm-err'); }
+    if (si) si.textContent = '✗';
+    if (ef) { ef.classList.remove('jm-ok'); ef.classList.add('jm-err'); }
+    if (ei) ei.textContent = '✗';
+  }
+
+  function applyFixedField(i) {
+    var sf = getSentField(i);
+    var sk = getSentKey(i);
+    var si = getSentInd(i);
+    var ef = getExpField(i);
+    var ei = getExpInd(i);
+    if (sk) sk.textContent = FIXED_KEYS[i];
+    if (sf) { sf.classList.remove('jm-err'); sf.classList.add('jm-ok'); }
+    if (si) si.textContent = '✓';
+    if (ef) { ef.classList.remove('jm-err'); ef.classList.add('jm-ok'); }
+    if (ei) ei.textContent = '✓';
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      if (state === 'broken') {
+        cascadeTo('fixed');
+      } else {
+        cascadeTo('broken');
+      }
+    });
+  }
+
+  // Initialize in broken state
+  applyBroken();
+
+})();
+</script>

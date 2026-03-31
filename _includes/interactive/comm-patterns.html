@@ -1,0 +1,529 @@
+<style>
+/* ─── Shared container + atmosphere ───────────────────── */
+.aic-container {
+  font-family: inherit;
+  max-width: 700px;
+  margin: 2.5rem auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #f9f3e7 0%, #fdf8ef 42%, #f5ebd8 100%);
+  border: 1px solid rgba(130,88,8,0.55);
+  border-radius: 16px;
+  box-shadow:
+    0 20px 50px rgba(120,90,30,0.10),
+    0 0 0 1px rgba(255,220,80,0.18),
+    inset 0 0 0 1px rgba(255,230,120,0.28),
+    inset 0 1px 0 rgba(255,255,220,0.85);
+  --aic-gold:        #c59c50;
+  --aic-gold-light:  #e8c060;
+  --aic-active:      #6b4a0e;
+  --aic-active-dark: #5a3a08;
+  --aic-muted:       #7a6a50;
+  --aic-caption:     #4a3f2f;
+  --aic-label:       #9a7a30;
+  --aic-success:     #6b5c14;
+  --aic-text-muted:  #7a6a50;
+  --aic-danger:      #8a2a18;
+}
+.aic-container::before {
+  content: '';
+  position: absolute;
+  top: -40px; left: 50%;
+  transform: translateX(-50%);
+  width: 680px; height: 340px;
+  background: radial-gradient(ellipse at center,
+    rgba(255,250,200,0.38) 0%,
+    rgba(255,220,80,0.15) 38%,
+    rgba(220,170,40,0.05) 62%,
+    transparent 75%);
+  pointer-events: none; z-index: 0;
+}
+.aic-container::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; right: -50px;
+  width: 440px; height: 360px;
+  background: radial-gradient(ellipse at center,
+    rgba(255,220,80,0.14) 0%,
+    rgba(220,170,40,0.06) 50%,
+    transparent 70%);
+  pointer-events: none; z-index: 0;
+}
+.aic-section, .aic-divider { position: relative; z-index: 1; }
+.aic-section { padding: 2rem 2rem 1.75rem; }
+.aic-section-panel {
+  background: linear-gradient(180deg, rgba(255,252,244,0.94) 0%, rgba(250,242,224,0.88) 100%);
+  border: 1px solid rgba(120,80,5,0.42);
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow:
+    0 8px 24px rgba(100,70,10,0.07),
+    inset 0 0 0 1px rgba(255,225,100,0.22),
+    inset 0 1px 0 rgba(255,255,220,0.88),
+    inset 0 -8px 24px rgba(220,170,50,0.05);
+}
+.aic-section-title {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.13em;
+  text-transform: uppercase; color: var(--aic-label);
+  margin: 0 0 1.5rem; padding-bottom: 0.7rem; position: relative;
+  text-shadow: 0 0 28px rgba(197,156,80,0.38), 0 0 10px rgba(232,192,96,0.22);
+}
+.aic-section-title::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, rgba(197,156,80,0.55), rgba(197,156,80,0.18) 60%, transparent);
+}
+/* Tab rail */
+.aic-tab-rail {
+  margin-bottom: 1.25rem;
+  background: linear-gradient(180deg, rgba(255,253,245,0.7), rgba(250,243,225,0.4));
+  border-radius: 8px 8px 0 0;
+}
+.aic-dots { display: flex; gap: 0; border-bottom: 1px solid rgba(197,156,80,0.25); }
+.aic-dot {
+  position: relative; padding: 0.55rem 1.25rem 0.65rem;
+  font-size: 0.82rem; font-weight: 500; color: #7a6a50;
+  cursor: pointer; user-select: none; white-space: nowrap;
+  transition: color 0.2s; border-radius: 0; background: none;
+}
+.aic-dot::after {
+  content: ''; position: absolute; bottom: -1px; left: 0; right: 0;
+  height: 2px; background: transparent;
+  transition: background 0.25s, box-shadow 0.25s;
+}
+.aic-dot:hover { color: #6b4a0e; }
+.aic-dot.aic-dot-active {
+  color: #5a3a08; font-weight: 600;
+  text-shadow: 0 0 16px rgba(197,156,80,0.55), 0 0 6px rgba(232,192,96,0.30);
+  background: linear-gradient(180deg, rgba(255,252,232,0.60), rgba(255,244,210,0.70));
+}
+.aic-dot.aic-dot-active::after {
+  background: linear-gradient(90deg, #c59c50, #f0cd74, #c59c50);
+  box-shadow: 0 0 10px rgba(197,156,80,0.42), 0 1px 0 rgba(255,255,255,0.5);
+}
+/* Pattern stage */
+.aic-pattern-area {
+  position: relative;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 42%, rgba(255,255,248,0.85) 0%, rgba(253,248,232,0.55) 55%, transparent 100%),
+    linear-gradient(180deg, rgba(252,247,235,0.92) 0%, rgba(246,238,216,0.82) 100%);
+  border: 1px solid rgba(120,80,5,0.38);
+  border-radius: 10px;
+  padding: 2.25rem 1.5rem;
+  min-height: 155px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.25rem; overflow: hidden;
+  box-shadow:
+    inset 0 2px 8px rgba(255,255,220,0.70),
+    inset 0 0 0 1px rgba(255,225,100,0.20),
+    inset 0 -4px 14px rgba(210,160,40,0.06),
+    0 4px 18px rgba(120,85,10,0.08);
+}
+.aic-pattern-area::before {
+  content: ''; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px; height: 180px;
+  background: radial-gradient(ellipse at center,
+    rgba(255,250,200,0.55) 0%, rgba(255,220,80,0.22) 38%,
+    rgba(220,170,40,0.08) 65%, transparent 80%);
+  pointer-events: none; z-index: 0;
+}
+.aic-pattern { display: none; width: 100%; }
+.aic-pattern.aic-pattern-visible { display: block; }
+/* Diagram */
+.aic-diagram { display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+.aic-node {
+  border-radius: 10px; padding: 0.6rem 1.1rem;
+  text-align: center; font-size: 0.85rem; min-width: 95px;
+  transition: all 0.35s ease;
+}
+/* Node glow keyframe */
+@keyframes aic-node-glow {
+  0%, 100% {
+    box-shadow:
+      0 0  6px  2px rgba(255,255,200,0.70),
+      0 0 20px  7px rgba(255,210, 60,0.38),
+      0 0 52px 18px rgba(210,155, 30,0.16),
+      inset 0 1px 0 rgba(255,255,220,0.60);
+  }
+  50% {
+    box-shadow:
+      0 0 10px  4px rgba(255,255,220,0.90),
+      0 0 32px 11px rgba(255,210, 60,0.55),
+      0 0 80px 28px rgba(210,155, 30,0.24),
+      inset 0 1px 0 rgba(255,255,230,0.80);
+  }
+}
+.aic-node-user {
+  background: linear-gradient(135deg, #f8e7a8 0%, #f3d98b 52%, #ecd07b 100%);
+  border: 1.5px solid rgba(197,156,80,0.78); color: #5a3a08;
+  animation: aic-node-glow 3.5s ease-in-out infinite;
+}
+.aic-node-ai {
+  background: linear-gradient(160deg, #ece8de, #e4ddd0);
+  border: 1.5px solid rgba(170,155,120,0.35); color: #6a5c44;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+}
+.aic-node-ai:has(#aic-rr-state > span) {
+  background: linear-gradient(135deg, #f8e7a8 0%, #f3d98b 52%, #ecd07b 100%);
+  border-color: rgba(197,156,80,0.78); color: #5a3a08;
+  animation: aic-node-glow 2.2s ease-in-out infinite;
+}
+.aic-arrow { font-size: 1.1rem; color: rgba(180,140,60,0.65); flex-shrink: 0; }
+/* Waiting dots */
+@keyframes aic-bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.45; }
+  40%           { transform: translateY(-6px); opacity: 1; }
+}
+.aic-waiting { display: flex; gap: 5px; justify-content: center; margin-top: 6px; }
+.aic-waiting-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #c59c50; box-shadow: 0 0 4px rgba(197,156,80,0.5);
+  animation: aic-bounce 1.2s ease-in-out infinite;
+}
+.aic-waiting-dot:nth-child(2) { animation-delay: 0.2s; }
+.aic-waiting-dot:nth-child(3) { animation-delay: 0.4s; }
+/* Streaming */
+@keyframes aic-blink {
+  0%, 100% { opacity: 1; } 50% { opacity: 0; }
+}
+.aic-cursor {
+  display: inline-block; width: 2px; height: 1em;
+  background: #c59c50; box-shadow: 0 0 6px rgba(197,156,80,0.7);
+  vertical-align: text-bottom; margin-left: 1px;
+  animation: aic-blink 0.75s step-end infinite;
+}
+.aic-stream-reply {
+  text-align: left; font-size: 0.82rem; min-width: 110px; min-height: 1.5em;
+  margin-top: 6px; line-height: 1.5;
+  background: linear-gradient(135deg, rgba(255,248,232,0.8), rgba(255,243,210,0.6));
+  border: 1px solid rgba(197,156,80,0.2);
+  box-shadow: inset 0 1px 3px rgba(197,156,80,0.08);
+  border-radius: 5px; padding: 0.3rem 0.5rem;
+}
+/* Events */
+.aic-events-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+.aic-node-agent {
+  background: linear-gradient(160deg, #ece8de, #e4ddd0);
+  border: 1.5px solid rgba(170,155,120,0.35); color: #6a5c44;
+  border-radius: 10px; padding: 0.6rem 1.1rem; text-align: center;
+  font-size: 0.85rem; min-width: 95px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+  transition: all 0.45s ease;
+}
+.aic-node-agent.aic-agent-active {
+  background: linear-gradient(135deg, #f8e7a8 0%, #f3d98b 52%, #ecd07b 100%);
+  border-color: rgba(197,156,80,0.78); color: #5a3a08;
+  animation: aic-node-glow 2.2s ease-in-out infinite;
+}
+@keyframes aic-pulse {
+  0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); }
+}
+.aic-trigger-badge {
+  display: inline-block; padding: 0.32rem 1rem; border-radius: 20px;
+  background: linear-gradient(135deg, rgba(197,156,80,0.18), rgba(232,192,96,0.12));
+  border: 1px solid rgba(197,156,80,0.42); color: #6b4a0e;
+  font-size: 0.8rem; font-weight: 600;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+}
+.aic-trigger-badge.aic-trigger-firing {
+  animation: aic-pulse 0.4s ease-in-out 3;
+  background: linear-gradient(135deg, rgba(197,156,80,0.38), rgba(232,192,96,0.28));
+  box-shadow: 0 0 16px rgba(197,156,80,0.44), inset 0 1px 0 rgba(255,255,255,0.5);
+}
+.aic-action-line { font-size: 0.82rem; color: #6b5c14; min-height: 1.5em; font-weight: 600; }
+/* Nav controls */
+.aic-pattern-controls {
+  display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;
+}
+.aic-counter { font-size: 0.76rem; color: var(--aic-label); letter-spacing: 0.06em; }
+.aic-pattern-label {
+  font-size: 0.82rem; color: #4a3f2f; text-align: center;
+  font-style: italic; margin: 0; line-height: 1.65; padding: 0 0.5rem;
+}
+/* Buttons */
+.aic-btn {
+  padding: 0.44rem 1.15rem;
+  border: 1px solid rgba(197,156,80,0.48); border-radius: 6px;
+  background: linear-gradient(180deg, rgba(255,250,238,0.95) 0%, rgba(244,230,198,0.90) 100%);
+  color: #5a3a08; cursor: pointer; font-family: inherit;
+  font-size: 0.82rem; font-weight: 500; line-height: 1.4;
+  box-shadow: 0 2px 10px rgba(197,156,80,0.08), inset 0 1px 0 rgba(255,255,255,0.70);
+  transition: background 0.18s, border-color 0.18s, box-shadow 0.18s, transform 0.14s;
+}
+.aic-btn:hover:not(:disabled) {
+  background: linear-gradient(180deg, rgba(255,252,242,1) 0%, rgba(248,234,205,1) 100%);
+  border-color: rgba(197,156,80,0.72);
+  box-shadow: 0 4px 16px rgba(197,156,80,0.18), inset 0 1px 0 rgba(255,255,255,0.75);
+  transform: translateY(-1px);
+}
+.aic-btn:focus-visible { outline: 2px solid #6b4a0e; outline-offset: 3px; }
+.aic-btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+/* Sparkle cloud */
+.aic-sparkle-cloud {
+  position: absolute; top: 0; left: 0;
+  width: 2px; height: 2px; border-radius: 50%;
+  background: rgba(255,255,220,0.90);
+  pointer-events: none; z-index: 1;
+  box-shadow:
+     88px  46px  6px  1px rgba(255,255,220,0.85),  88px  46px 20px  6px rgba(255,210, 60,0.40),  88px  46px 44px 14px rgba(220,160, 30,0.14),
+    310px  22px  6px  1px rgba(255,255,220,0.80), 310px  22px 18px  5px rgba(255,210, 60,0.38), 310px  22px 40px 12px rgba(220,160, 30,0.12),
+     48px 165px  6px  1px rgba(255,255,220,0.75),  48px 165px 20px  6px rgba(255,210, 60,0.34),  48px 165px 44px 14px rgba(220,160, 30,0.10),
+    510px  58px  5px  1px rgba(255,255,220,0.78), 510px  58px 16px  5px rgba(255,210, 60,0.35), 510px  58px 38px 11px rgba(220,160, 30,0.11),
+    210px 130px  5px  1px rgba(255,255,220,0.70), 210px 130px 14px  4px rgba(255,210, 60,0.30), 210px 130px 36px 10px rgba(220,160, 30,0.09);
+}
+/* Mobile */
+@media (max-width: 520px) {
+  .aic-section       { padding: 1.25rem 1rem 1rem; }
+  .aic-section-panel { padding: 1.25rem 1rem; }
+  .aic-dot           { padding: 0.45rem 0.8rem; font-size: 0.78rem; }
+  .aic-pattern-area  { padding: 1.75rem 0.75rem; }
+}
+</style>
+
+<div class="aic-container" id="aic-patterns-demo">
+  <div class="aic-sparkle-cloud" aria-hidden="true"></div>
+  <div class="aic-section">
+    <p class="aic-section-title">How AI Tools Communicate</p>
+    <div class="aic-tab-rail">
+      <div class="aic-dots" id="aic-dots">
+        <span class="aic-dot aic-dot-active" data-idx="0">Request / Response</span>
+        <span class="aic-dot" data-idx="1">Streaming</span>
+        <span class="aic-dot" data-idx="2">Events</span>
+      </div>
+    </div>
+    <div class="aic-pattern-area">
+      <!-- Pattern 0 -->
+      <div class="aic-pattern aic-pattern-visible" id="aic-p0">
+        <div class="aic-diagram">
+          <div class="aic-node aic-node-user">
+            <div>👤 User</div>
+            <div style="font-size:0.75rem;margin-top:5px;color:#7a6a50">"What time is it?"</div>
+          </div>
+          <div class="aic-arrow">→</div>
+          <div class="aic-node aic-node-ai" style="min-width:110px">
+            <div>🤖 AI</div>
+            <div id="aic-rr-state" style="margin-top:6px">
+              <div class="aic-waiting">
+                <div class="aic-waiting-dot"></div>
+                <div class="aic-waiting-dot"></div>
+                <div class="aic-waiting-dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pattern 1 -->
+      <div class="aic-pattern" id="aic-p1">
+        <div class="aic-diagram">
+          <div class="aic-node aic-node-user">
+            <div>👤 User</div>
+            <div style="font-size:0.75rem;margin-top:5px;color:#7a6a50">"What time is it?"</div>
+          </div>
+          <div class="aic-arrow">→</div>
+          <div class="aic-node aic-node-ai" style="min-width:130px">
+            <div>🤖 AI</div>
+            <div class="aic-stream-reply">
+              <span id="aic-stream-text"></span><span class="aic-cursor" id="aic-stream-cursor"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pattern 2 -->
+      <div class="aic-pattern" id="aic-p2">
+        <div class="aic-events-wrap">
+          <div class="aic-node aic-node-agent" id="aic-agent-node" style="display:inline-block">
+            <div>🤖 Agent</div>
+            <div id="aic-agent-state" style="font-size:0.75rem;margin-top:4px">idle — waiting</div>
+          </div>
+          <div style="font-size:0.85rem;color:#7a6a50">
+            <span id="aic-trigger-badge" class="aic-trigger-badge">📧 New Email</span>
+          </div>
+          <div class="aic-action-line" id="aic-action-line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="aic-pattern-controls">
+      <button class="aic-btn" id="aic-prev" disabled>← Prev</button>
+      <span class="aic-counter" id="aic-counter">1 / 3</span>
+      <button class="aic-btn" id="aic-next">Next →</button>
+    </div>
+    <p class="aic-pattern-label" id="aic-pattern-label">
+      <strong>Request/Response</strong>: One tool asks, the other answers. You send a prompt, you get text back, you pass it to the next step. Think of it like sending a text message and waiting for a reply before doing anything else.
+    </p>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var PATTERNS = [
+    {
+      id: 'aic-p0',
+      label: 'Request/Response: One tool asks, the other answers. You send a prompt, you get text back, you pass it to the next step. Think of it like sending a text message and waiting for a reply before doing anything else.'
+    },
+    {
+      id: 'aic-p1',
+      label: 'Streaming: Instead of waiting for the full response, the output arrives piece by piece. This is why ChatGPT seems to type its answer in real time rather than making you wait for the whole thing to appear at once. It\'s useful when you\'re generating long content or building something that needs to feel responsive.'
+    },
+    {
+      id: 'aic-p2',
+      label: 'Events: Instead of asking and waiting, a tool watches for something to happen and then reacts. A new email arrives. A file is uploaded. A timer fires. The agent picks it up and acts without anyone pressing a button. This is how you build things that run in the background autonomously.'
+    }
+  ];
+
+  var currentIdx = 0;
+  var patternTimers = [];
+
+  var prevBtn   = document.getElementById('aic-prev');
+  var nextBtn   = document.getElementById('aic-next');
+  var counterEl = document.getElementById('aic-counter');
+  var labelEl   = document.getElementById('aic-pattern-label');
+  var dots      = document.querySelectorAll('#aic-dots .aic-dot');
+
+  function pLater(fn, ms) { patternTimers.push(setTimeout(fn, ms)); }
+  function cancelPattern() { patternTimers.forEach(clearTimeout); patternTimers = []; }
+
+  function showPattern(idx) {
+    cancelPattern();
+
+    PATTERNS.forEach(function (p) {
+      var el = document.getElementById(p.id);
+      if (el) el.classList.remove('aic-pattern-visible');
+    });
+
+    var target = document.getElementById(PATTERNS[idx].id);
+    if (target) target.classList.add('aic-pattern-visible');
+
+    dots.forEach(function (d, i) {
+      d.classList.toggle('aic-dot-active', i === idx);
+    });
+
+    if (counterEl) counterEl.textContent = (idx + 1) + ' / ' + PATTERNS.length;
+    if (labelEl)   labelEl.textContent   = PATTERNS[idx].label;
+    if (prevBtn)   prevBtn.disabled      = idx === 0;
+    if (nextBtn)   nextBtn.disabled      = idx === PATTERNS.length - 1;
+
+    if (idx === 0) animRR();
+    if (idx === 1) animStream();
+    if (idx === 2) animEvents();
+  }
+
+  /* Pattern 0 — Request / Response */
+  function animRR() {
+    var stateEl = document.getElementById('aic-rr-state');
+    if (!stateEl) return;
+
+    function cycle() {
+      stateEl.innerHTML = '<div class="aic-waiting">' +
+        '<div class="aic-waiting-dot"></div>' +
+        '<div class="aic-waiting-dot"></div>' +
+        '<div class="aic-waiting-dot"></div>' +
+        '</div>';
+
+      pLater(function () {
+        stateEl.innerHTML = '<span style="font-size:0.8rem">"It\'s 3:42 PM."</span>';
+      }, 2200);
+
+      pLater(cycle, 4800);
+    }
+
+    cycle();
+  }
+
+  /* Pattern 1 — Streaming */
+  function animStream() {
+    var textEl  = document.getElementById('aic-stream-text');
+    if (!textEl) return;
+    var words   = ["It's", " 3:42", " PM.", " Need", " anything", " else?"];
+    var wordIdx = 0;
+
+    function cycle() {
+      textEl.textContent = '';
+      wordIdx = 0;
+      tick();
+    }
+
+    function tick() {
+      if (wordIdx < words.length) {
+        textEl.textContent += words[wordIdx];
+        wordIdx++;
+        pLater(tick, 260 + Math.floor(Math.random() * 160));
+      } else {
+        pLater(cycle, 2800);
+      }
+    }
+
+    pLater(cycle, 300);
+  }
+
+  /* Pattern 2 — Events */
+  function animEvents() {
+    var agentNode    = document.getElementById('aic-agent-node');
+    var agentState   = document.getElementById('aic-agent-state');
+    var triggerBadge = document.getElementById('aic-trigger-badge');
+    var actionLine   = document.getElementById('aic-action-line');
+    if (!agentNode || !agentState || !triggerBadge || !actionLine) return;
+
+    function cycle() {
+      agentNode.classList.remove('aic-agent-active');
+      agentState.textContent = 'idle — waiting';
+      agentState.style.color = '';
+      triggerBadge.classList.remove('aic-trigger-firing');
+      actionLine.textContent = '';
+
+      pLater(function () {
+        triggerBadge.classList.add('aic-trigger-firing');
+      }, 1400);
+
+      pLater(function () {
+        agentNode.classList.add('aic-agent-active');
+        agentState.textContent = 'active';
+        agentState.style.color = 'var(--aic-success)';
+      }, 2400);
+
+      pLater(function () {
+        actionLine.textContent = '✓ Draft reply composed & sent';
+      }, 3300);
+
+      pLater(cycle, 6000);
+    }
+
+    cycle();
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function () {
+      if (currentIdx > 0) { currentIdx--; showPattern(currentIdx); }
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function () {
+      if (currentIdx < PATTERNS.length - 1) { currentIdx++; showPattern(currentIdx); }
+    });
+  }
+
+  dots.forEach(function (dot) {
+    dot.addEventListener('click', function () {
+      var idx = parseInt(dot.getAttribute('data-idx'), 10);
+      if (!isNaN(idx)) { currentIdx = idx; showPattern(idx); }
+    });
+  });
+
+  showPattern(0);
+
+  if (window.MutationObserver) {
+    var observer = new MutationObserver(function () {
+      if (!document.getElementById('aic-patterns-demo')) {
+        cancelPattern();
+        observer.disconnect();
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+
+})();
+</script>

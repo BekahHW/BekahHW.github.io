@@ -1,0 +1,373 @@
+<style>
+/* ─── Shared container + atmosphere ───────────────────── */
+.aic-container {
+  font-family: inherit;
+  max-width: 700px;
+  margin: 2.5rem auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #f9f3e7 0%, #fdf8ef 42%, #f5ebd8 100%);
+  border: 1px solid rgba(130,88,8,0.55);
+  border-radius: 16px;
+  box-shadow:
+    0 20px 50px rgba(120,90,30,0.10),
+    0 0 0 1px rgba(255,220,80,0.18),
+    inset 0 0 0 1px rgba(255,230,120,0.28),
+    inset 0 1px 0 rgba(255,255,220,0.85);
+  --aic-gold:        #c59c50;
+  --aic-gold-light:  #e8c060;
+  --aic-active:      #6b4a0e;
+  --aic-active-dark: #5a3a08;
+  --aic-muted:       #7a6a50;
+  --aic-caption:     #4a3f2f;
+  --aic-label:       #9a7a30;
+  --aic-success:     #6b5c14;
+  --aic-text-muted:  #7a6a50;
+  --aic-danger:      #8a2a18;
+}
+.aic-container::before {
+  content: '';
+  position: absolute;
+  top: -40px; left: 50%;
+  transform: translateX(-50%);
+  width: 680px; height: 340px;
+  background: radial-gradient(ellipse at center,
+    rgba(255,250,200,0.38) 0%,
+    rgba(255,220,80,0.15) 38%,
+    rgba(220,170,40,0.05) 62%,
+    transparent 75%);
+  pointer-events: none; z-index: 0;
+}
+.aic-container::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; right: -50px;
+  width: 440px; height: 360px;
+  background: radial-gradient(ellipse at center,
+    rgba(255,220,80,0.14) 0%,
+    rgba(220,170,40,0.06) 50%,
+    transparent 70%);
+  pointer-events: none; z-index: 0;
+}
+.aic-section { position: relative; z-index: 1; padding: 2rem 2rem 1.75rem; }
+.aic-section-title {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.13em;
+  text-transform: uppercase; color: var(--aic-label);
+  margin: 0 0 1.5rem; padding-bottom: 0.7rem; position: relative;
+  text-shadow: 0 0 28px rgba(197,156,80,0.38), 0 0 10px rgba(232,192,96,0.22);
+}
+.aic-section-title::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, rgba(197,156,80,0.55), rgba(197,156,80,0.18) 60%, transparent);
+}
+/* Node glow keyframe */
+@keyframes aic-node-glow {
+  0%, 100% {
+    box-shadow:
+      0 0  6px  2px rgba(255,255,200,0.70),
+      0 0 20px  7px rgba(255,210, 60,0.38),
+      0 0 52px 18px rgba(210,155, 30,0.16),
+      inset 0 1px 0 rgba(255,255,220,0.60);
+  }
+  50% {
+    box-shadow:
+      0 0 10px  4px rgba(255,255,220,0.90),
+      0 0 32px 11px rgba(255,210, 60,0.55),
+      0 0 80px 28px rgba(210,155, 30,0.24),
+      inset 0 1px 0 rgba(255,255,230,0.80);
+  }
+}
+/* Buttons */
+.aic-btn {
+  padding: 0.44rem 1.15rem;
+  border: 1px solid rgba(197,156,80,0.48); border-radius: 6px;
+  background: linear-gradient(180deg, rgba(255,250,238,0.95) 0%, rgba(244,230,198,0.90) 100%);
+  color: #5a3a08; cursor: pointer; font-family: inherit;
+  font-size: 0.82rem; font-weight: 500; line-height: 1.4;
+  box-shadow: 0 2px 10px rgba(197,156,80,0.08), inset 0 1px 0 rgba(255,255,255,0.70);
+  transition: background 0.18s, border-color 0.18s, box-shadow 0.18s, transform 0.14s;
+}
+.aic-btn:hover:not(:disabled) {
+  background: linear-gradient(180deg, rgba(255,252,242,1) 0%, rgba(248,234,205,1) 100%);
+  border-color: rgba(197,156,80,0.72);
+  box-shadow: 0 4px 16px rgba(197,156,80,0.18), inset 0 1px 0 rgba(255,255,255,0.75);
+  transform: translateY(-1px);
+}
+.aic-btn:focus-visible { outline: 2px solid #6b4a0e; outline-offset: 3px; }
+.aic-btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+/* Sparkle cloud */
+.aic-sparkle-cloud {
+  position: absolute; top: 0; left: 0;
+  width: 2px; height: 2px; border-radius: 50%;
+  background: rgba(255,255,220,0.90);
+  pointer-events: none; z-index: 1;
+  box-shadow:
+     88px  46px  6px  1px rgba(255,255,220,0.85),  88px  46px 20px  6px rgba(255,210, 60,0.40),  88px  46px 44px 14px rgba(220,160, 30,0.14),
+    310px  22px  6px  1px rgba(255,255,220,0.80), 310px  22px 18px  5px rgba(255,210, 60,0.38), 310px  22px 40px 12px rgba(220,160, 30,0.12),
+     48px 165px  6px  1px rgba(255,255,220,0.75),  48px 165px 20px  6px rgba(255,210, 60,0.34),  48px 165px 44px 14px rgba(220,160, 30,0.10),
+    510px  58px  5px  1px rgba(255,255,220,0.78), 510px  58px 16px  5px rgba(255,210, 60,0.35), 510px  58px 38px 11px rgba(220,160, 30,0.11),
+    210px 130px  5px  1px rgba(255,255,220,0.70), 210px 130px 14px  4px rgba(255,210, 60,0.30), 210px 130px 36px 10px rgba(220,160, 30,0.09);
+}
+/* Section B specific */
+@keyframes aic-shake {
+  0%, 100% { transform: translateX(0); }
+  20%  { transform: translateX(-4px); }
+  40%  { transform: translateX(4px); }
+  60%  { transform: translateX(-3px); }
+  80%  { transform: translateX(3px); }
+}
+.aic-pipeline {
+  display: flex; align-items: center; gap: 0.4rem;
+  justify-content: center; flex-wrap: wrap; margin-bottom: 1.5rem;
+}
+.aic-pipeline-arrow { color: rgba(180,140,60,0.5); font-size: 0.9rem; flex-shrink: 0; }
+.aic-step {
+  flex: 0 1 auto; min-width: 80px; max-width: 112px;
+  border: 1.5px solid rgba(170,155,120,0.28); border-radius: 9px;
+  padding: 0.65rem 0.5rem; text-align: center; font-size: 0.8rem;
+  background: linear-gradient(160deg, #ece8de, #e4ddd0);
+  color: #6a5c44; box-shadow: inset 0 1px 0 rgba(255,255,255,0.38);
+  transition: all 0.3s ease;
+}
+.aic-step-icon   { font-size: 1.2rem; line-height: 1; }
+.aic-step-name   { font-weight: 600; margin: 0.2rem 0 0.1rem; color: inherit; }
+.aic-step-tokens { font-size: 0.7rem; color: #7a6a50; opacity: 0.85; }
+.aic-step.aic-step-running {
+  background: linear-gradient(135deg, #f8e7a8 0%, #f3d98b 52%, #ecd07b 100%);
+  border-color: rgba(197,156,80,0.6); color: #5a3a08;
+  animation: aic-node-glow 1.8s ease-in-out infinite;
+}
+.aic-step.aic-step-done {
+  background: linear-gradient(135deg, #fef8e8, #fdf3cc);
+  border-color: rgba(197,156,80,0.38); color: #7a5a18;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+}
+.aic-step.aic-step-error {
+  background: linear-gradient(135deg, #f8e1dc, #f2cfc5);
+  border: 1.5px solid rgba(192,64,48,0.45); color: #8a2a18;
+  box-shadow: 0 0 16px rgba(192,64,48,0.10);
+  animation: aic-shake 0.45s ease-in-out;
+}
+.aic-ctx-header {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-size: 0.8rem; margin-bottom: 0.4rem;
+}
+.aic-ctx-label { font-weight: 600; color: #4a3f2f; }
+.aic-ctx-pct { color: #7a6a50; font-size: 0.75rem; font-feature-settings: "tnum"; }
+.aic-ctx-track {
+  background: rgba(160,130,70,0.16); border: 1px solid rgba(160,130,70,0.22);
+  border-radius: 5px; height: 20px; overflow: hidden; position: relative;
+  margin-bottom: 0.85rem; box-shadow: inset 0 1px 3px rgba(130,100,40,0.10);
+}
+.aic-ctx-fill {
+  height: 100%; width: 0%;
+  background: linear-gradient(90deg, #d4a840, #e8c060);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.28);
+  transition: width 0.55s ease-in-out, background 0.3s;
+}
+.aic-ctx-fill.aic-ctx-over {
+  background: linear-gradient(90deg, #c04030, #dc5847 55%, #b93a2c 100%);
+  box-shadow: 0 0 10px rgba(180,60,40,0.18), inset 0 1px 0 rgba(255,255,255,0.22);
+}
+.aic-ctx-limit {
+  position: absolute; right: 0; top: 0; bottom: 0;
+  width: 2px; background: rgba(180,60,40,0.45);
+}
+.aic-status {
+  min-height: 2.8em; font-size: 0.82rem; color: #7a6a50;
+  margin-bottom: 0.9rem; text-align: center; line-height: 1.6; font-style: italic;
+}
+.aic-status.aic-status-ok    { color: #6b5c14; font-weight: 600; font-style: normal; }
+.aic-status.aic-status-error { color: #8a2a18; font-weight: 600; font-style: normal; }
+.aic-ctx-controls { display: flex; gap: 0.75rem; justify-content: center; }
+.aic-btn-primary {
+  background: linear-gradient(180deg, rgba(248,232,172,0.95) 0%, rgba(234,210,138,0.92) 100%);
+  border-color: rgba(197,156,80,0.65); color: #4a2e06; font-weight: 600;
+  box-shadow: 0 2px 12px rgba(197,156,80,0.14), inset 0 1px 0 rgba(255,255,255,0.60);
+}
+.aic-btn-primary:hover:not(:disabled) {
+  background: linear-gradient(180deg, rgba(252,238,182,1) 0%, rgba(240,218,148,1) 100%);
+  border-color: rgba(197,156,80,0.82);
+  box-shadow: 0 5px 20px rgba(197,156,80,0.24), inset 0 1px 0 rgba(255,255,255,0.65);
+  transform: translateY(-1px);
+}
+@media (max-width: 520px) {
+  .aic-section        { padding: 1.25rem 1rem 1rem; }
+  .aic-pipeline-arrow { display: none; }
+  .aic-step           { min-width: 62px; }
+}
+</style>
+
+<div class="aic-container" id="aic-ctx-window-demo">
+  <div class="aic-sparkle-cloud" aria-hidden="true"></div>
+  <div class="aic-section">
+    <p class="aic-section-title">Context Window: What Actually Breaks</p>
+    <div class="aic-pipeline" id="aic-pipeline">
+      <div class="aic-step" id="aic-s0">
+        <div class="aic-step-icon">🔍</div>
+        <div class="aic-step-name">Retrieve</div>
+        <div class="aic-step-tokens">~800 tokens</div>
+      </div>
+      <div class="aic-pipeline-arrow">→</div>
+      <div class="aic-step" id="aic-s1">
+        <div class="aic-step-icon">📝</div>
+        <div class="aic-step-name">Summarize</div>
+        <div class="aic-step-tokens">~600 tokens</div>
+      </div>
+      <div class="aic-pipeline-arrow">→</div>
+      <div class="aic-step" id="aic-s2">
+        <div class="aic-step-icon">🎨</div>
+        <div class="aic-step-name">Format</div>
+        <div class="aic-step-tokens">~700 tokens</div>
+      </div>
+      <div class="aic-pipeline-arrow">→</div>
+      <div class="aic-step" id="aic-s3">
+        <div class="aic-step-icon">📤</div>
+        <div class="aic-step-name">Send</div>
+        <div class="aic-step-tokens">~400 tokens</div>
+      </div>
+    </div>
+    <div class="aic-ctx-header">
+      <span class="aic-ctx-label">Context window (2 048 token limit)</span>
+      <span class="aic-ctx-pct" id="aic-ctx-pct">0 / 2 048</span>
+    </div>
+    <div class="aic-ctx-track">
+      <div class="aic-ctx-fill" id="aic-ctx-fill"></div>
+      <div class="aic-ctx-limit"></div>
+    </div>
+    <div class="aic-status" id="aic-status">Click <strong>Run Chain</strong> to watch the context window fill step by step.</div>
+    <div class="aic-ctx-controls">
+      <button class="aic-btn aic-btn-primary" id="aic-run">▶ Run Chain</button>
+      <button class="aic-btn" id="aic-reset">↺ Reset</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var timers = [];
+  function later(fn, ms) { timers.push(setTimeout(fn, ms)); }
+  function cancelAll() { timers.forEach(clearTimeout); timers = []; }
+
+  var CTX_LIMIT = 2048;
+
+  var STEPS = [
+    { id: 'aic-s0', name: 'Retrieve',  icon: '🔍', tokens: 800 },
+    { id: 'aic-s1', name: 'Summarize', icon: '📝', tokens: 600 },
+    { id: 'aic-s2', name: 'Format',    icon: '🎨', tokens: 700 },
+    { id: 'aic-s3', name: 'Send',      icon: '📤', tokens: 400 }
+  ];
+
+  var runBtn   = document.getElementById('aic-run');
+  var resetBtn = document.getElementById('aic-reset');
+  var ctxFill  = document.getElementById('aic-ctx-fill');
+  var ctxPct   = document.getElementById('aic-ctx-pct');
+  var statusEl = document.getElementById('aic-status');
+
+  function getStep(id) { return document.getElementById(id); }
+
+  function setCtx(tokens) {
+    var pct = Math.min(1, tokens / CTX_LIMIT);
+    ctxFill.style.width = (pct * 100) + '%';
+    ctxPct.textContent  = tokens + ' / ' + CTX_LIMIT;
+    if (tokens > CTX_LIMIT) {
+      ctxFill.classList.add('aic-ctx-over');
+    }
+  }
+
+  function resetCtx() {
+    cancelAll();
+    if (runBtn) runBtn.disabled = false;
+
+    STEPS.forEach(function (s) {
+      var el = getStep(s.id);
+      if (el) el.classList.remove('aic-step-running', 'aic-step-done', 'aic-step-error');
+    });
+
+    if (ctxFill) {
+      ctxFill.style.width = '0%';
+      ctxFill.classList.remove('aic-ctx-over');
+    }
+    if (ctxPct)   ctxPct.textContent = '0 / ' + CTX_LIMIT;
+    if (statusEl) {
+      statusEl.innerHTML  = 'Click <strong>Run Chain</strong> to watch the context window fill step by step.';
+      statusEl.className  = 'aic-status';
+    }
+  }
+
+  function runChain() {
+    if (runBtn) runBtn.disabled = true;
+    var accumulated = 0;
+    var stepIdx     = 0;
+
+    function nextStep() {
+      if (stepIdx >= STEPS.length) {
+        if (statusEl) {
+          statusEl.innerHTML = '✓ Chain complete — all steps finished within the context limit.';
+          statusEl.className = 'aic-status aic-status-ok';
+        }
+        if (runBtn) runBtn.disabled = false;
+        return;
+      }
+
+      var step = STEPS[stepIdx];
+      var el   = getStep(step.id);
+
+      if (el) el.classList.add('aic-step-running');
+      if (statusEl) {
+        statusEl.innerHTML = 'Running ' + step.icon + ' <strong>' + step.name + '</strong>…';
+        statusEl.className = 'aic-status';
+      }
+
+      later(function () {
+        accumulated += step.tokens;
+        var overflow = accumulated > CTX_LIMIT;
+
+        setCtx(accumulated);
+        if (el) el.classList.remove('aic-step-running');
+
+        if (overflow) {
+          if (el) el.classList.add('aic-step-error');
+
+          for (var i = stepIdx + 1; i < STEPS.length; i++) {
+            var rem = getStep(STEPS[i].id);
+            if (rem) rem.classList.add('aic-step-error');
+          }
+
+          if (statusEl) {
+            statusEl.innerHTML =
+              '⚠️ Context overflow at <strong>' + step.name + '</strong>! ' +
+              accumulated + ' tokens accumulated — limit is ' + CTX_LIMIT + '. ' +
+              'Remaining steps were dropped.';
+            statusEl.className = 'aic-status aic-status-error';
+          }
+          if (runBtn) runBtn.disabled = false;
+          return;
+        }
+
+        if (el) el.classList.add('aic-step-done');
+        stepIdx++;
+        later(nextStep, 700);
+      }, 900);
+    }
+
+    nextStep();
+  }
+
+  if (runBtn)   runBtn.addEventListener('click', runChain);
+  if (resetBtn) resetBtn.addEventListener('click', resetCtx);
+
+  if (window.MutationObserver) {
+    var observer = new MutationObserver(function () {
+      if (!document.getElementById('aic-ctx-window-demo')) {
+        cancelAll();
+        observer.disconnect();
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+
+})();
+</script>
