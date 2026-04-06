@@ -1,0 +1,61 @@
+I"�<p>If you read <a href="2026-03-18-AI Vocabulary 101.md">the vocabulary post</a>, you know what a prompt is. You know the difference between a model and a model family. You’ve got the words now.
+This post is about what to do with them.</p>
+
+<p>Having vocabulary for the pieces doesn’t automatically tell you how the pieces move. You can know what a prompt is and still write ones that produce wildly inconsistent results. You can understand what an agent is and still not know why yours keeps breaking at step three. The gap between “it kind of works” and “it actually works” isn’t usually a vocabulary problem anymore. It’s a structure problem.
+That structure comes down to three things and how they talk to each other.</p>
+
+<p><img src="/assets/images/posts/2026/ai_building_blocks_overview.svg" alt="Diagram showing the three components of an AI system: the model, the prompt, and the tools" /></p>
+
+<p>These three concepts build on each other. You cannot have a workflow without prompts. You cannot have tool chaining without workflows. Understanding them in order is the fastest path to building things that actually behave the way you intended.</p>
+
+<h2 id="what-is-a-prompt">What is a Prompt?</h2>
+
+<p>A prompt is your instruction to the LLM. It’s the text you write before you press send. But it’s also a lot more than that, because the LLM doesn’t “know” what you mean the way another person would. It pattern-matches on what you’ve written and generates the most statistically likely useful response.</p>
+
+<p>That sounds mechanical. And it is. But it’s also why how you write the prompt changes the output dramatically.</p>
+
+<p>Think of it like talking to a contractor. “Build me a kitchen” and “Build me a 12x14 kitchen with white shaker cabinets, quartz countertops, and an island with seating for four” will get you very different results, even if you’re talking to the same person.</p>
+
+<p><img src="/assets/images/posts/2026/prompt_anatomy.svg" alt="anatomy of a prompt diagram" /></p>
+
+<p>The LLM fills in whatever you leave blank. Sometimes that’s fine. Often it’s the source of that feeling when you get a response that’s almost what you wanted but weirdly off.</p>
+
+<h2 id="what-is-an-ai-workflow">What is an AI Workflow?</h2>
+
+<p>A workflow is what happens when you stop treating the AI like a single-shot answer machine and start treating it like a collaborator on a multi-step process.</p>
+
+<p>Most real tasks aren’t one prompt deep. “Write a blog post for me” sounds like one instruction, but if you actually want a good output, it’s more like: research the topic, outline the structure, draft the intro, write the body, edit for tone, format for publishing. That’s six distinct steps.</p>
+
+<p>A workflow is those steps, defined in sequence. The output of one step becomes the input of the next.</p>
+
+<p>This is the shift that changes everything for people who are building with AI seriously. You stop asking “what should I prompt?” and start asking “what are the steps this task actually requires?”</p>
+
+<p><img src="/assets/images/posts/2026/workflow_sequence.svg" alt="workflow diagram" /></p>
+
+<p>If you’ve been frustrated that the AI doesn’t produce what you actually want in one shot, this is probably why. You’re expecting one step to do the work of five.</p>
+
+<h2 id="what-is-tool-chaining">What is Tool Chaining?</h2>
+
+<p>Tool chaining is what happens when you connect the AI to other tools, and those tools pass information back and forth automatically. The AI isn’t just generating text. It’s calling a search API, reading the results, feeding those results into the next prompt, then writing output to a database or sending an email.</p>
+
+<p>Each tool in that chain does one thing. The AI reasons about what tool to use next and what to pass to it.</p>
+
+<p>Think of it like an assembly line where the AI is the foreman deciding which station does what, and in what order.</p>
+
+<p><img src="/assets/images/posts/2026/tool_chaining_flow.svg" alt="tool chaining diagram" /></p>
+
+<p>The difference between a workflow and tool chaining is that a workflow can be manual. You can paste outputs from step to step yourself. Tool chaining is when that handoff becomes automatic, which is what people mean when they start talking about “AI agents.”</p>
+
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+
+<p>Here’s what a lot of people miss: these three things aren’t separate techniques. They’re nested.</p>
+
+<p>Every tool chain is made of workflows. Every workflow is made of prompts. If your prompts are vague, your workflows produce inconsistent outputs. If your workflows aren’t structured, your tool chains break in unpredictable places.
+This is not just about being more technical. It’s about building something that actually behaves the same way twice.</p>
+
+<p>What are you building right now where the output feels inconsistent? That inconsistency probably lives in one of these three layers.</p>
+
+<p>The people who move forward aren’t smarter. They just start thinking in systems instead of prompts.</p>
+
+<p>In the next post, we’ll make that concrete by walking through the actual tools and how they pass information between each other.</p>
+:ET

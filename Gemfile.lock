@@ -52,8 +52,6 @@ GEM
     minitest (5.25.4)
     nokogiri (1.13.10-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.10-x86_64-darwin)
-      racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (5.1.1)
@@ -71,6 +69,7 @@ GEM
     unicode-display_width (1.8.0)
 
 PLATFORMS
+  universal-darwin-23
   universal-darwin-25
 
 DEPENDENCIES

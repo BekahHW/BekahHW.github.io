@@ -1,6 +1,50 @@
 [
   
     {
+      "title"    : "Productive Is the Least Interesting Word We Have for AI",
+      "url"      : "/hidden-ai-work",
+      "date"     : "March 31, 2026",
+      "dateiso"  : "2026-03-31T00:00:00-04:00",
+      "categories" : "",
+      "tags"     : "AI, DevRel, Developer Experience",
+      "excerpt"  : "Once I was in an interview, and I was asked what motivated me. My answer was momentum. And maybe that’s why working with AI can be so engaging sometimes. And maybe it’s also why it could be so frustrating. When we feel like we have momentum and we’re moving more quickly than usual, that’s motivating. But when you’re stuck and you can’t get the LLM to do what you want it to, despite prompting in 5 different ways, it’s frustrating.",
+      "content"  : "Once I was in an interview, and I was asked what motivated me. My answer was momentum. And maybe that’s why working with AI can be so engaging sometimes. And maybe it’s also why it could be so frustrating. When we feel like we have momentum and we’re moving more quickly than usual, that’s motivating. But when you’re stuck and you can’t get the LLM to do what you want it to, despite prompting in 5 different ways, it’s frustrating.A lot of times, we end up figuring it out and then we call the s..."
+    },
+  
+    {
+      "title"    : "How AI Tools Talk to Each Other",
+      "url"      : "/how-ai-tools-communicate",
+      "date"     : "March 26, 2026",
+      "dateiso"  : "2026-03-26T00:00:00-04:00",
+      "categories" : "",
+      "tags"     : "AI",
+      "excerpt"  : "  Part of the AI Foundations series. New to AI? Start with AI Vocabulary 101 and AI 102 before diving in here.",
+      "content"  : "  Part of the AI Foundations series. New to AI? Start with AI Vocabulary 101 and AI 102 before diving in here.This weekend, my daughter ran in her first high school track meet. One of the other girls relay teams was disqualified for dropping the baton. I don’t know much about track, so I was surprised to learn that dropping the baton can result in a DQ (disqualification). The thing that really sucks is that those girls were the fastest team, even after having to recover the dropped baton. But..."
+    },
+  
+    {
+      "title"    : "AI 102: From Vocabulary to Systems",
+      "url"      : "/AI-102",
+      "date"     : "March 18, 2026",
+      "dateiso"  : "2026-03-18T00:00:00-04:00",
+      "categories" : "",
+      "tags"     : "AI, Beginner",
+      "excerpt"  : "If you read the vocabulary post, you know what a prompt is. You know the difference between a model and a model family. You’ve got the words now.This post is about what to do with them.",
+      "content"  : "If you read the vocabulary post, you know what a prompt is. You know the difference between a model and a model family. You’ve got the words now.This post is about what to do with them.Having vocabulary for the pieces doesn’t automatically tell you how the pieces move. You can know what a prompt is and still write ones that produce wildly inconsistent results. You can understand what an agent is and still not know why yours keeps breaking at step three. The gap between “it kind of works” and ..."
+    },
+  
+    {
+      "title"    : "AI Vocabulary 101",
+      "url"      : "/AI-Vocabulary-101",
+      "date"     : "March 18, 2026",
+      "dateiso"  : "2026-03-18T00:00:00-04:00",
+      "categories" : "",
+      "tags"     : "AI, Beginner",
+      "excerpt"  : "I’ve been having a lot of conversations with non-tech people recently about AI. What I keep running into is the same pattern: smart, curious people who are genuinely trying to understand what’s happening, but who don’t have the vocabulary to name what they don’t know. And when you can’t name it, you can’t ask the right question, which means you stay stuck at the surface.",
+      "content"  : "I’ve been having a lot of conversations with non-tech people recently about AI. What I keep running into is the same pattern: smart, curious people who are genuinely trying to understand what’s happening, but who don’t have the vocabulary to name what they don’t know. And when you can’t name it, you can’t ask the right question, which means you stay stuck at the surface.The car wash test is a perfect example of this.A few months ago, screenshots flooded social media of people asking ChatGPT, ..."
+    },
+  
+    {
       "title"    : "AI Has Entered the AI Development Loop",
       "url"      : "/ai-in-the-ai-development-loop",
       "date"     : "March 04, 2026",

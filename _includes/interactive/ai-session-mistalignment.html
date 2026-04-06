@@ -1,0 +1,546 @@
+<div class="aic-shell" data-aic-demo>
+    <style>
+      .aic-shell {
+        --aic-border: rgba(120, 120, 140, 0.24);
+        --aic-text: inherit;
+        --aic-muted: rgba(90, 90, 110, 0.88);
+        --aic-accent: #6d5efc;
+        --aic-accent-soft: rgba(109, 94, 252, 0.12);
+        --aic-warn: #b45309;
+        --aic-warn-soft: rgba(180, 83, 9, 0.12);
+        --aic-good: #166534;
+        --aic-good-soft: rgba(22, 101, 52, 0.12);
+        --aic-bad: #b91c1c;
+        --aic-bad-soft: rgba(185, 28, 28, 0.12);
+        margin: 2.5rem 0 0;
+        font-family: inherit;
+        color: var(--aic-text);
+        background: transparent;
+      }
+  
+      @media (prefers-color-scheme: dark) {
+        .aic-shell {
+          --aic-border: rgba(255, 255, 255, 0.14);
+          --aic-muted: rgba(220, 220, 235, 0.72);
+          --aic-accent-soft: rgba(129, 140, 248, 0.16);
+          --aic-warn-soft: rgba(245, 158, 11, 0.16);
+          --aic-good-soft: rgba(34, 197, 94, 0.16);
+          --aic-bad-soft: rgba(248, 113, 113, 0.14);
+        }
+      }
+  
+      .aic-shell * {
+        box-sizing: border-box;
+        font-family: inherit;
+      }
+  
+      .aic-wrap {
+        border: 1px solid var(--aic-border);
+        border-radius: 22px;
+        padding: 1.1rem;
+        background: transparent;
+      }
+  
+      .aic-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+      }
+  
+      .aic-kicker {
+        margin: 0 0 0.35rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--aic-muted);
+      }
+  
+      .aic-title {
+        margin: 0;
+        font-size: 1.15rem;
+        line-height: 1.2;
+      }
+  
+      .aic-subtitle {
+        margin: 0.45rem 0 0;
+        color: var(--aic-muted);
+        line-height: 1.5;
+        max-width: 58ch;
+        font-size: 0.96rem;
+      }
+  
+      .aic-controls {
+        display: flex;
+        gap: 0.55rem;
+        flex-wrap: wrap;
+      }
+  
+      .aic-btn {
+        appearance: none;
+        border: 1px solid var(--aic-border);
+        background: transparent;
+        color: inherit;
+        border-radius: 999px;
+        padding: 0.68rem 0.95rem;
+        cursor: pointer;
+        line-height: 1;
+        transition: 160ms ease;
+        font-size: 0.94rem;
+      }
+  
+      .aic-btn:hover:not(:disabled) {
+        border-color: var(--aic-accent);
+        background: var(--aic-accent-soft);
+        transform: translateY(-1px);
+      }
+  
+      .aic-btn:disabled {
+        opacity: 0.45;
+        cursor: not-allowed;
+        transform: none;
+      }
+  
+      .aic-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+        gap: 1rem;
+        align-items: start;
+      }
+  
+      @media (max-width: 820px) {
+        .aic-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+  
+      .aic-card {
+        border: 1px solid var(--aic-border);
+        border-radius: 18px;
+        padding: 1rem;
+        background: transparent;
+      }
+  
+      .aic-label {
+        margin: 0 0 0.8rem;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--aic-muted);
+      }
+  
+      .aic-transcript {
+        display: grid;
+        gap: 0.75rem;
+      }
+  
+      .aic-line {
+        border: 1px solid var(--aic-border);
+        border-radius: 14px;
+        padding: 0.85rem 0.95rem;
+        opacity: 0.32;
+        transform: translateY(4px);
+        transition: 220ms ease;
+      }
+  
+      .aic-line.aic-active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+  
+      .aic-line[data-role="assistant"] {
+        background: var(--aic-accent-soft);
+      }
+  
+      .aic-line[data-role="user"] {
+        background: rgba(127, 127, 127, 0.08);
+      }
+  
+      .aic-line-title {
+        font-size: 0.79rem;
+        font-weight: 700;
+        color: var(--aic-muted);
+        margin-bottom: 0.34rem;
+      }
+  
+      .aic-line-body {
+        line-height: 1.55;
+        font-size: 0.98rem;
+      }
+  
+      .aic-line-body code {
+        font-size: 0.92em;
+      }
+  
+      .aic-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        width: fit-content;
+        border-radius: 999px;
+        border: 1px solid var(--aic-border);
+        padding: 0.42rem 0.72rem;
+        font-size: 0.82rem;
+        margin-bottom: 0.9rem;
+      }
+  
+      .aic-chip.warn {
+        color: var(--aic-warn);
+        background: var(--aic-warn-soft);
+      }
+  
+      .aic-chip.good {
+        color: var(--aic-good);
+        background: var(--aic-good-soft);
+      }
+  
+      .aic-chip.bad {
+        color: var(--aic-bad);
+        background: var(--aic-bad-soft);
+      }
+  
+      .aic-step-title {
+        margin: 0 0 0.5rem;
+        font-size: 1.06rem;
+        line-height: 1.3;
+      }
+  
+      .aic-step-copy,
+      .aic-step-note {
+        margin: 0;
+        line-height: 1.65;
+        font-size: 0.98rem;
+      }
+  
+      .aic-step-note {
+        margin-top: 0.85rem;
+        padding-left: 0.85rem;
+        border-left: 3px solid var(--aic-accent);
+        color: var(--aic-muted);
+      }
+  
+      .aic-progress {
+        display: flex;
+        gap: 0.48rem;
+        margin-top: 1rem;
+      }
+  
+      .aic-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        border: 1px solid var(--aic-border);
+        background: transparent;
+        transition: 180ms ease;
+      }
+  
+      .aic-dot.aic-current {
+        background: var(--aic-accent);
+        border-color: var(--aic-accent);
+        transform: scale(1.15);
+      }
+  
+      .aic-bottom {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+  
+      .aic-diagram {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+      }
+  
+      .aic-node {
+        min-width: 118px;
+        text-align: center;
+        padding: 0.72rem 0.88rem;
+        border: 1px solid var(--aic-border);
+        border-radius: 14px;
+        line-height: 1.3;
+        font-size: 0.94rem;
+      }
+  
+      .aic-node.aic-hidden-layer {
+        border-color: var(--aic-warn);
+        background: var(--aic-warn-soft);
+      }
+  
+      .aic-arrow {
+        opacity: 0.55;
+        font-weight: 700;
+      }
+  
+      .aic-quiz {
+        border: 1px dashed var(--aic-border);
+        border-radius: 16px;
+        padding: 0.95rem;
+      }
+  
+      .aic-quiz p {
+        margin: 0;
+        line-height: 1.6;
+      }
+  
+      .aic-choices {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55rem;
+        margin-top: 0.85rem;
+        margin-bottom: 0.8rem;
+      }
+  
+      .aic-choice {
+        appearance: none;
+        border: 1px solid var(--aic-border);
+        background: transparent;
+        color: inherit;
+        border-radius: 999px;
+        padding: 0.58rem 0.82rem;
+        cursor: pointer;
+        transition: 160ms ease;
+      }
+  
+      .aic-choice:hover {
+        border-color: var(--aic-accent);
+        background: var(--aic-accent-soft);
+      }
+  
+      .aic-choice.aic-selected {
+        border-color: var(--aic-accent);
+        background: var(--aic-accent-soft);
+      }
+  
+      .aic-answer {
+        display: none;
+        line-height: 1.65;
+        padding-left: 0.85rem;
+        border-left: 3px solid var(--aic-good);
+      }
+  
+      .aic-answer.aic-visible {
+        display: block;
+      }
+    </style>
+  
+    <div class="aic-wrap">
+      <div class="aic-top">
+        <div>
+          <p class="aic-kicker">Interactive explainer</p>
+          <h3 class="aic-title">Slow this moment down</h3>
+          <p class="aic-subtitle">
+            This is a real slice of a session. The task gets done. That is exactly why the hidden work is easy to miss.
+          </p>
+        </div>
+        <div class="aic-controls">
+          <button class="aic-btn" data-aic-prev>Previous</button>
+          <button class="aic-btn" data-aic-next>Next</button>
+        </div>
+      </div>
+  
+      <div class="aic-grid">
+        <div class="aic-card">
+          <p class="aic-label">Session replay</p>
+          <div class="aic-transcript">
+            <div class="aic-line" data-aic-line="0" data-role="assistant">
+              <div class="aic-line-title">Assistant</div>
+              <div class="aic-line-body">
+                You’ll need to move the SVG files… or confirm the filenames. Also, I need to update the image extensions from <code>.png</code> to <code>.svg</code>.
+              </div>
+            </div>
+  
+            <div class="aic-line" data-aic-line="1" data-role="user">
+              <div class="aic-line-title">Me</div>
+              <div class="aic-line-body">update to SVGs</div>
+            </div>
+  
+            <div class="aic-line" data-aic-line="2" data-role="assistant">
+              <div class="aic-line-title">Assistant</div>
+              <div class="aic-line-body">Updates the references to <code>.svg</code>.</div>
+            </div>
+  
+            <div class="aic-line" data-aic-line="3" data-role="assistant">
+              <div class="aic-line-title">Assistant</div>
+              <div class="aic-line-body">It doesn’t exist. You need to create it.</div>
+            </div>
+  
+            <div class="aic-line" data-aic-line="4" data-role="assistant">
+              <div class="aic-line-title">Assistant</div>
+              <div class="aic-line-body">Creates the directory.</div>
+            </div>
+  
+            <div class="aic-line" data-aic-line="5" data-role="user">
+              <div class="aic-line-title">Me</div>
+              <div class="aic-line-body">they’re in there</div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="aic-card">
+          <p class="aic-label">What this step means</p>
+          <div class="aic-chip good" data-aic-chip>Looks productive</div>
+          <h4 class="aic-step-title" data-aic-title></h4>
+          <p class="aic-step-copy" data-aic-copy></p>
+          <p class="aic-step-note" data-aic-note></p>
+          <div class="aic-progress" data-aic-progress></div>
+        </div>
+      </div>
+  
+      <div class="aic-bottom">
+        <div class="aic-card">
+          <p class="aic-label">Where the work actually is</p>
+          <div class="aic-diagram" data-aic-diagram></div>
+        </div>
+  
+        <div class="aic-quiz">
+          <p><strong>Quick check:</strong> what is the most useful way to describe what happened here?</p>
+          <div class="aic-choices">
+            <button class="aic-choice" data-aic-choice="hallucination">The model hallucinated</button>
+            <button class="aic-choice" data-aic-choice="failed">The task failed</button>
+            <button class="aic-choice" data-aic-choice="misalignment">The session drifted out of alignment with the environment</button>
+          </div>
+          <div class="aic-answer" data-aic-answer>
+            The most useful answer is the third one. The task was still moving forward, but the session kept needing small corrections to bring the model’s assumptions back into alignment with reality. That is the layer “productive” tends to hide.
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      (function () {
+        var currentScript = document.currentScript;
+        var root = currentScript && currentScript.parentElement;
+        if (!root || root.__aicBound) return;
+        root.__aicBound = true;
+  
+        var steps = [
+          {
+            line: 0,
+            title: "The task sounds clean",
+            copy: "At the beginning, this still looks like ordinary progress. Update the image extensions. Move on.",
+            note: "This is the version of the session that usually survives in memory: a task, not a workflow full of tiny adjustments.",
+            chipClass: "good",
+            chipText: "Looks productive",
+            diagram: ["Intent", "Output"]
+          },
+          {
+            line: 1,
+            title: "A correction enters the loop",
+            copy: "The task is still small, but now the session is no longer just executing. It is adapting to the actual environment.",
+            note: "Nothing has failed in any dramatic way. But the work has already shifted from output to alignment.",
+            chipClass: "warn",
+            chipText: "Small correction",
+            diagram: ["Intent", "Model assumptions", "Output"]
+          },
+          {
+            line: 3,
+            title: "Reality pushes back",
+            copy: "This is the moment I keep coming back to. The model is moving forward, but from an assumption that does not fully match what exists.",
+            note: "This is not a flashy error. It is a quiet mismatch between the model’s working reality and the actual environment.",
+            chipClass: "bad",
+            chipText: "Misalignment",
+            diagram: ["Intent", "Model assumptions", "Misalignment", "Actual environment", "Output"]
+          },
+          {
+            line: 5,
+            title: "The hidden work becomes visible",
+            copy: "The task does get done. But only because someone keeps bringing the session back into alignment with reality.",
+            note: "Productive is what this looked like from the outside. Alignment work is what it looked like from the inside.",
+            chipClass: "warn",
+            chipText: "Hidden work",
+            diagram: ["Intent", "Model assumptions", "Misalignment", "Actual environment", "Execution → fix → retry"]
+          }
+        ];
+  
+        var index = 0;
+        var lines = Array.prototype.slice.call(root.querySelectorAll("[data-aic-line]"));
+        var prev = root.querySelector("[data-aic-prev]");
+        var next = root.querySelector("[data-aic-next]");
+        var chip = root.querySelector("[data-aic-chip]");
+        var title = root.querySelector("[data-aic-title]");
+        var copy = root.querySelector("[data-aic-copy]");
+        var note = root.querySelector("[data-aic-note]");
+        var progress = root.querySelector("[data-aic-progress]");
+        var diagram = root.querySelector("[data-aic-diagram]");
+        var choices = Array.prototype.slice.call(root.querySelectorAll("[data-aic-choice]"));
+        var answer = root.querySelector("[data-aic-answer]");
+  
+        function renderProgress() {
+          progress.innerHTML = "";
+          for (var i = 0; i < steps.length; i++) {
+            var dot = document.createElement("span");
+            dot.className = "aic-dot" + (i === index ? " aic-current" : "");
+            progress.appendChild(dot);
+          }
+        }
+  
+        function renderDiagram(nodes) {
+          diagram.innerHTML = "";
+          for (var i = 0; i < nodes.length; i++) {
+            var node = document.createElement("div");
+            node.className = "aic-node" + (nodes[i] === "Misalignment" ? " aic-hidden-layer" : "");
+            node.textContent = nodes[i];
+            diagram.appendChild(node);
+  
+            if (i < nodes.length - 1) {
+              var arrow = document.createElement("div");
+              arrow.className = "aic-arrow";
+              arrow.textContent = "→";
+              diagram.appendChild(arrow);
+            }
+          }
+        }
+  
+        function render() {
+          var step = steps[index];
+  
+          lines.forEach(function (line) {
+            var lineIndex = Number(line.getAttribute("data-aic-line"));
+            line.classList.toggle("aic-active", lineIndex <= step.line);
+          });
+  
+          chip.className = "aic-chip " + step.chipClass;
+          chip.textContent = step.chipText;
+          title.textContent = step.title;
+          copy.textContent = step.copy;
+          note.textContent = step.note;
+  
+          renderProgress();
+          renderDiagram(step.diagram);
+  
+          prev.disabled = index === 0;
+          next.disabled = index === steps.length - 1;
+        }
+  
+        prev.addEventListener("click", function () {
+          if (index > 0) {
+            index -= 1;
+            render();
+          }
+        });
+  
+        next.addEventListener("click", function () {
+          if (index < steps.length - 1) {
+            index += 1;
+            render();
+          }
+        });
+  
+        choices.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            choices.forEach(function (choice) {
+              choice.classList.remove("aic-selected");
+            });
+            btn.classList.add("aic-selected");
+            answer.classList.add("aic-visible");
+          });
+        });
+  
+        render();
+      })();
+    </script>
+  </div>

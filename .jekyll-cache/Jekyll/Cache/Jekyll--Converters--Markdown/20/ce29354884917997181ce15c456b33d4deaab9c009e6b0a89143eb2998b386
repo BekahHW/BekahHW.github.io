@@ -1,0 +1,450 @@
+I"�s<p>&lt;!DOCTYPE html&gt;</p>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Session Explorer</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0a0914;
+  color: #e2dff5;
+  min-height: 100vh;
+  padding: 2rem 1.5rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+h1 { font-size: 21px; font-weight: 600; color: #f0eeff; margin-bottom: 4px; }
+.subtitle { font-size: 13px; color: #5e5a90; margin-bottom: 2rem; line-height: 1.5; }
+
+.session-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.tab {
+  font-size: 12px; font-weight: 500; padding: 6px 14px; border-radius: 20px;
+  border: 1px solid #2a2548; background: transparent; color: #7770b0;
+  cursor: pointer; font-family: inherit; transition: all 0.15s;
+}
+.tab:hover { background: #15122a; color: #b0aad8; }
+.tab.active { border-color: transparent; color: #0a0914; font-weight: 600; }
+
+.main-grid {
+  display: grid; grid-template-columns: 1fr 280px; gap: 14px;
+  margin-bottom: 14px; align-items: start;
+}
+@media (max-width: 620px) { .main-grid { grid-template-columns: 1fr; } }
+
+.graph-panel { background: #0e0c1e; border: 1px solid #1e1c38; border-radius: 14px; overflow: hidden; }
+.panel-header {
+  padding: 12px 16px; border-bottom: 1px solid #1a1830;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.panel-title { font-size: 13px; font-weight: 600; color: #b8b2e0; }
+.panel-hint  { font-size: 11px; color: #44408a; }
+#graphCanvas { display: block; width: 100%; cursor: pointer; }
+
+.sidebar { display: flex; flex-direction: column; gap: 12px; }
+
+.metrics-card { background: #0e0c1e; border: 1px solid #1e1c38; border-radius: 14px; padding: 16px; }
+.metrics-title {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.07em;
+  text-transform: uppercase; color: #44408a; margin-bottom: 14px;
+}
+.metric-row {
+  display: flex; align-items: baseline; justify-content: space-between;
+  padding: 7px 0; border-bottom: 1px solid #15122a;
+}
+.metric-row:last-child { border-bottom: none; }
+.metric-label { font-size: 12px; color: #7770b0; }
+.metric-value { font-size: 14px; font-weight: 600; }
+
+.detail-card {
+  background: #0e0c1e; border: 1px solid #1e1c38; border-radius: 14px;
+  padding: 16px; min-height: 180px; transition: border-color 0.2s; flex: 1;
+}
+.detail-card.lit { border-color: #3d3870; }
+.detail-empty {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; min-height: 140px; color: #2e2a60;
+  font-size: 12px; text-align: center; gap: 8px;
+}
+.detail-empty-icon { font-size: 26px; }
+.detail-badge {
+  display: inline-block; font-size: 10px; font-weight: 700; padding: 3px 9px;
+  border-radius: 20px; margin-bottom: 8px; letter-spacing: 0.05em; text-transform: uppercase;
+}
+.detail-heading { font-size: 14px; font-weight: 600; color: #e0dbf8; line-height: 1.4; margin-bottom: 8px; }
+.detail-body { font-size: 12px; color: #7770a8; line-height: 1.7; }
+.detail-note {
+  margin-top: 10px; font-size: 11px; color: #44408a; border-top: 1px solid #1a1830;
+  padding-top: 8px; font-style: italic; line-height: 1.5;
+}
+
+.strip-panel { background: #0e0c1e; border: 1px solid #1e1c38; border-radius: 14px; overflow: hidden; }
+.strip-header { padding: 12px 16px; border-bottom: 1px solid #1a1830; display: flex; align-items: center; justify-content: space-between; }
+.strip-filters { display: flex; gap: 5px; flex-wrap: wrap; }
+.sf-btn {
+  font-size: 11px; padding: 3px 10px; border-radius: 20px; border: 1px solid #2a2548;
+  background: transparent; color: #5e5a90; cursor: pointer; font-family: inherit; transition: all 0.15s;
+}
+.sf-btn:hover { background: #15122a; }
+.sf-btn.active { color: #0a0914; border-color: transparent; font-weight: 600; }
+
+.msg-scroll {
+  display: flex; overflow-x: auto; gap: 10px; padding: 14px 16px; scroll-behavior: smooth;
+}
+.msg-scroll::-webkit-scrollbar { height: 3px; }
+.msg-scroll::-webkit-scrollbar-track { background: transparent; }
+.msg-scroll::-webkit-scrollbar-thumb { background: #2a2548; border-radius: 2px; }
+
+.msg-card {
+  flex-shrink: 0; width: 210px; background: #13112a; border: 1px solid #1e1c38;
+  border-radius: 10px; padding: 11px; cursor: pointer; transition: all 0.15s;
+}
+.msg-card:hover { transform: translateY(-1px); }
+.msg-card.selected { transform: translateY(-2px); }
+.card-meta { display: flex; gap: 6px; margin-bottom: 6px; align-items: center; }
+.role-badge { font-size: 10px; font-weight: 600; padding: 2px 6px; border-radius: 8px; }
+.role-user { background: #1a1848; color: #818cf8; }
+.role-asst { background: #0d2828; color: #2dd4bf; }
+.card-date { font-size: 10px; color: #3a3870; }
+.card-text {
+  font-size: 12px; color: #9090c0; line-height: 1.5;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.card-bar { height: 2px; border-radius: 1px; margin-top: 9px; }
+
+.honest-note {
+  margin-top: 14px; background: #0e0c1e; border: 1px solid #1e1c38;
+  border-left: 3px solid #a78bfa; border-radius: 10px; padding: 14px 16px;
+  font-size: 12px; color: #6660a8; line-height: 1.7;
+}
+.honest-note strong { color: #b0aad8; }
+</style>
+</head>
+<body>
+
+<h1>What was actually happening</h1>
+<p class="subtitle">4 real work sessions captured by Tapes · 13.1M tokens total<br />Select a session, then click nodes to explore. Metrics are from the data. Task/overhead labels are qualitative.</p>
+
+<div class="session-tabs" id="sessionTabs"></div>
+
+<div class="main-grid">
+  <div class="graph-panel">
+    <div class="panel-header">
+      <span class="panel-title" id="graphTitle">select a session above</span>
+      <span class="panel-hint">click nodes to inspect</span>
+    </div>
+    <canvas id="graphCanvas"></canvas>
+  </div>
+
+  <div class="sidebar">
+    <div class="metrics-card">
+      <div class="metrics-title">Real session metrics</div>
+      <div class="metric-row"><span class="metric-label">Tokens</span><span class="metric-value" id="mTokens" style="color:#a78bfa">—</span></div>
+      <div class="metric-row"><span class="metric-label">User messages</span><span class="metric-value" id="mUser" style="color:#818cf8">—</span></div>
+      <div class="metric-row"><span class="metric-label">Tool calls</span><span class="metric-value" id="mTools" style="color:#2dd4bf">—</span></div>
+      <div class="metric-row"><span class="metric-label">Tokens / tool call</span><span class="metric-value" id="mTpt" style="color:#fbbf24">—</span></div>
+      <div class="metric-row"><span class="metric-label">User : tool ratio</span><span class="metric-value" id="mRatio" style="color:#f472b6">—</span></div>
+    </div>
+    <div class="detail-card" id="detailCard">
+      <div class="detail-empty" id="detailEmpty">
+        <div class="detail-empty-icon">◎</div>
+        <div>select a session<br />then click a node</div>
+      </div>
+      <div id="detailContent" style="display:none">
+        <div class="detail-badge" id="dBadge"></div>
+        <div class="detail-heading" id="dHeading"></div>
+        <div class="detail-body" id="dBody"></div>
+        <div class="detail-note" id="dNote"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="strip-panel">
+  <div class="strip-header">
+    <span class="panel-title">Real messages</span>
+    <div class="strip-filters">
+      <button class="sf-btn active" onclick="sfFilter('all',this)">All</button>
+      <button class="sf-btn" onclick="sfFilter('overhead',this)">Overhead</button>
+      <button class="sf-btn" onclick="sfFilter('task',this)">Task</button>
+    </div>
+  </div>
+  <div class="msg-scroll" id="msgScroll"></div>
+</div>
+
+<div class="honest-note">
+  <strong>What's real vs qualitative:</strong> Token counts, message counts, tool calls, and tokens-per-tool-call come directly from the Tapes session data. "Task" vs "overhead" labels are my qualitative read of each exchange — not automated metrics. The argument holds. The percentage chart in the previous version did not.
+</div>
+
+<script>
+const SESSIONS = [
+  {
+    id:'mar18', label:'Mar 18', desc:'Blog post import', color:'#818cf8',
+    tokens:1794794, userMsgs:24, toolCalls:16, tpt:112174, ratio:'1.5×',
+    nodes:[
+      {id:0,type:'task',    label:'Publish\nthe post',  x:.18,y:.20,r:22, heading:'Task: publish AI Vocabulary 101', body:'Get a blog post from Claude.ai Projects into the Jekyll repo with its diagrams. Simple in intent. Everything downstream was overhead.',note:'16 tool calls total. High tokens-per-call because context grew with each correction.'},
+      {id:1,type:'overhead',label:'No bridge\nexists',   x:.40,y:.10,r:16, heading:'Discovery: the two environments don\'t connect', body:'"Do you have a teleport command?" — had to be asked before work could begin. Two messages to establish that Claude Code and Claude.ai Projects share no context.',note:'Alignment tax on environment discovery. Not failure — necessary overhead.'},
+      {id:2,type:'overhead',label:'Format\nwrong',       x:.60,y:.18,r:15, heading:'Correction: PNG assumed, files were SVG', body:'The model wrote .png placeholders. The files were SVGs. One correction message, one re-pass. Small — but required discovering the mismatch first.',note:''},
+      {id:3,type:'overhead',label:'Filename\nmismatch',  x:.78,y:.10,r:17, heading:'Alignment: what was on disk vs what was assumed', body:'"ai-llms-models.svg" was written. File was "ai-llms-model.svg". "context-window.svg" was written. File used underscore. One character difference each. Two extra passes.',note:'The task was update image references. The overhead was reconciling assumptions against disk state.'},
+      {id:4,type:'overhead',label:'Folder\nmissing',     x:.68,y:.42,r:14, heading:'Confirmation: did the directory actually get created?', body:'"Does the 2026 folder exist? I don\'t see it." The model created a directory silently. User had to separately verify it existed. Pure confirmation overhead.',note:''},
+      {id:5,type:'task',    label:'Post\npublished',     x:.28,y:.50,r:18, heading:'Post published', body:'AI Vocabulary 101 is live. Task completed. But 24 user messages for 16 tool calls — 1.5× ratio — means nearly half the user messages were correction and direction, not new work.',note:''},
+    ],
+    edges:[[0,1],[1,2],[2,3],[3,4],[4,5],[0,5]],
+    msgs:[
+      {role:'user',kind:'overhead',date:'Mar 18',text:'do you have a teleport command that pulls conversations from project conversations?',detail:'Environment discovery. Had to happen before any task work could begin. This question is also the premise of the blog post.'},
+      {role:'asst',kind:'overhead',date:'Mar 18',text:'I can\'t directly access Claude.ai Projects — no integration exists between Claude Code and Claude.ai.',detail:'Alignment: correcting the user\'s mental model. Two messages to establish shared reality before work began.'},
+      {role:'user',kind:'task',    date:'Mar 18',text:'I have a claude project with a blog post I want put into this repo. There are diagrams. I want to hand the work off to you.',detail:'The actual task — stated only after the environment discovery resolved.'},
+      {role:'user',kind:'overhead',date:'Mar 18',text:'they\'re svgs. You can find them in documents/ai blogpost',detail:'Correcting file format assumption. One message, one re-pass.'},
+      {role:'asst',kind:'overhead',date:'Mar 18',text:'Two filenames don\'t match: ai-llms-model.svg (not ai-llms-models.svg) and context_window.svg (not context-window.svg).',detail:'Reality mismatch on filenames. Model guessed; reality differed.'},
+      {role:'user',kind:'overhead',date:'Mar 18',text:'does the 2026 folder exist? I don\'t see it',detail:'Verification loop. Model created directory silently. User had to check.'},
+    ],
+  },
+  {
+    id:'mar20', label:'Mar 20', desc:'Docs PR + discovery', color:'#2dd4bf',
+    tokens:1926760, userMsgs:29, toolCalls:34, tpt:56669, ratio:'0.9×',
+    nodes:[
+      {id:0,type:'task',    label:'Docs PR\nrename',     x:.20,y:.20,r:22, heading:'Task: rename tapes.db → tapes.sqlite across docs', body:'Clear scope, precise spec. Pull latest, replace across all files, add migration note. Low-overhead task — the model had enough context to execute without back-and-forth.',note:'0.9× ratio: more tool calls than user messages. The most efficient session in the file.'},
+      {id:1,type:'task',    label:'Agent\nconfig',       x:.58,y:.15,r:18, heading:'Task: create devrel-blog-writer agent', body:'Build a Claude Code agent config for writing SEO/GEO-optimized posts in Bekah\'s voice. Well-scoped, detailed requirements, clear output format.',note:''},
+      {id:2,type:'overhead',label:'Where\'s\nthe data?', x:.38,y:.48,r:17, heading:'Discovery: where does Tapes store session data?', body:'"Where is tapes recording data for this session?" — asked mid-session. The tool capturing the work was invisible until this moment. Answer: ~/.tapes/tapes.sqlite.',note:'The meta-moment: Tapes was running, capturing everything, and the user didn\'t know where the data lived until asking.'},
+      {id:3,type:'overhead',label:'Outside\nthe project',x:.70,y:.42,r:15, heading:'Clarification: Tapes runs at process level, not project level', body:'"So it\'s running outside of this project, but capturing this conversation?" Two messages to establish scope. Process-level, not project-level. Data lands in ~/.tapes/ regardless of which project you\'re in.',note:''},
+    ],
+    edges:[[0,2],[1,2],[2,3]],
+    msgs:[
+      {role:'user',kind:'task',    date:'Mar 20',text:'create a new PR that updates the docs to replace "./tapes.db" with "./tapes.sqlite" throughout.',detail:'Well-scoped. This session\'s efficiency (0.9× ratio) comes from tasks like this — clear spec, no ambiguity.'},
+      {role:'user',kind:'task',    date:'Mar 20',text:'Create an agent configuration: blog post devrel writer, write_like_bekah skill, GEO and SEO optimized.',detail:'Second task, same session. Also well-scoped. Returns only JSON.'},
+      {role:'user',kind:'overhead',date:'Mar 20',text:'where is tapes recording data for this session?',detail:'Discovery overhead — the tool capturing everything was invisible until this question.'},
+      {role:'user',kind:'overhead',date:'Mar 20',text:'I ran: curl -fsSL https://download.tapes.dev/install | bash. then tapes start claude.',detail:'Confirming setup worked as expected.'},
+      {role:'user',kind:'overhead',date:'Mar 20',text:'so it\'s running outside of this project, but capturing this conversation?',detail:'Clarifying scope. Two messages to establish this.'},
+    ],
+  },
+  {
+    id:'mar26', label:'Mar 26', desc:'Interactive component', color:'#fbbf24',
+    tokens:5911714, userMsgs:65, toolCalls:59, tpt:100198, ratio:'1.1×',
+    nodes:[
+      {id:0,type:'task',    label:'Build\ninteractive', x:.18,y:.18,r:24, heading:'Task: build the ai-tool-communication interactive', body:'Vanilla JS interactive explainer for the Jekyll post. Read repo layout files first, build the component, test in browser. The largest task in the dataset.',note:'59 tool calls — most of any session. Required reading layout files, writing multiple new files, iterative browser testing.'},
+      {id:1,type:'overhead',label:'Wrong\nposition',    x:.42,y:.10,r:16, heading:'Bug: component rendered below the post footer', body:'"The demo is generating below the post and the share footer." Layout bug — the include was in the wrong position. Required a structural fix.',note:''},
+      {id:2,type:'overhead',label:'Restyle\npass 1',    x:.65,y:.18,r:18, heading:'Iteration: restyle to feel luminous and editorial', body:'After the component worked correctly, a full visual restyle was requested. First pass came back "too flat, too matte, too low-contrast. Softly beige, not luminous."',note:'Subjective aesthetic language has to translate into specific CSS values. This is where alignment tax climbs.'},
+      {id:3,type:'overhead',label:'Context\nran out',   x:.82,y:.32,r:17, heading:'Session hit context limit — summarize and resume', body:'5.9M tokens filled the context window. The model wrote a full summary of everything done; that summary started a new continuation session.',note:'Summary-and-continue adds its own overhead: time to write, risk of losing nuance in compression.'},
+      {id:4,type:'overhead',label:'Twinkle\nrequest',   x:.58,y:.50,r:15, heading:'Iteration: CSS-only twinkles', body:'"Add 6–10 CSS-only twinkles. Sparse, elegant, warm-gold/ivory, subtle. No glitter, no icons, no JS changes." The constraint list encodes prior failed attempts.',note:'Each "no X" was almost certainly learned from a previous attempt that did X.'},
+      {id:5,type:'overhead',label:'Check\nlocalhost',   x:.28,y:.55,r:14, heading:'Confirmation: browser verification woven throughout', body:'Every visual change required a human to check localhost. "Do you have it running locally?" Confirmation overhead the data cannot automate away.',note:''},
+    ],
+    edges:[[0,1],[1,2],[2,3],[3,4],[0,5],[4,5]],
+    msgs:[
+      {role:'user',kind:'task',    date:'Mar 26',text:'after completing the following, test in the browser. you are not completed until it works. [Task: Add Interactive Explainer to Jekyll Blog]',detail:'Primary task. High complexity — reading repo layout files, building new files, browser testing.'},
+      {role:'user',kind:'overhead',date:'Mar 26',text:'the demo is generating below the post and the share footer. It needs to render where it\'s being called.',detail:'Layout bug. Component in the wrong position in the rendered page.'},
+      {role:'user',kind:'task',    date:'Mar 26',text:'# Task: Restyle interactive component to feel luminous, editorial, and polished',detail:'Visual restyle after functional work was done. This is where alignment tax climbs.'},
+      {role:'user',kind:'overhead',date:'Mar 26',text:'The current result is too flat, too matte, and too low-contrast. It looks softly beige, but not luminous.',detail:'First restyle pass didn\'t match intent. Subjective language — "beige not luminous" — had to map to CSS.'},
+      {role:'user',kind:'overhead',date:'Mar 26',text:'Keep the current design. Add 6–10 total CSS-only twinkles. Sparse, elegant, subtle. No glitter, no icons, no JS changes.',detail:'Constraint list encodes history: each "no X" was probably learned from a previous attempt.'},
+      {role:'user',kind:'overhead',date:'Mar 26',text:'do you have it running locally?',detail:'Confirmation overhead woven through the session.'},
+    ],
+  },
+  {
+    id:'mar27', label:'Mar 27', desc:'Visual polish', color:'#f472b6',
+    tokens:3505266, userMsgs:33, toolCalls:30, tpt:116842, ratio:'1.1×',
+    nodes:[
+      {id:0,type:'overhead',label:'Dots not\nvisible',   x:.22,y:.18,r:18, heading:'"I don\'t see any glowing dots"', body:'The twinkles weren\'t showing. Turned out the model implemented 1–2px dots — technically sparkles, visually invisible. Correct interpretation of the words; wrong result.',note:'116,842 tokens per tool call — highest of any session. High ratio of reasoning-to-execution.'},
+      {id:1,type:'overhead',label:'Reference\nimage',    x:.50,y:.10,r:16, heading:'Shared reference: "more like this image"', body:'A reference image was shared to anchor visual intent. Before iteration could continue: "Are you able to see the image?" — a shared-reality check.',note:'Before visual work could proceed, the parties had to confirm they were looking at the same thing.'},
+      {id:2,type:'overhead',label:'"Dirty\nnot magic"', x:.74,y:.22,r:21, heading:'Highest alignment-density moment in the dataset', body:'"The sparkles should be bright, like a star or a light bulb." Not a spec — a subjective visual quality. "Dirty," "magical," "star," "light bulb" had to map to hex values, opacity, blur radius. Three full iteration cycles.',note:'Semantic alignment: both sides using words, but the words pointing at different visual realities.'},
+      {id:3,type:'task',    label:'Palette\nresolved',   x:.50,y:.52,r:17, heading:'Alignment landed after three passes', body:'Decoded: "dirty amber" → wrong. "Star/light bulb" → near-white core, bright yellow bloom, outward fade. The CSS change was small. The translation took the session.',note:''},
+    ],
+    edges:[[0,1],[1,2],[2,3],[0,3]],
+    msgs:[
+      {role:'user',kind:'overhead',date:'Mar 27',text:'I don\'t see any glowing dots. The dots shouldn\'t be random. Glow when a tab is active, when a transition is happening.',detail:'Twinkle implementation was invisible. Correction plus new direction.'},
+      {role:'user',kind:'overhead',date:'Mar 27',text:'it doesn\'t look like the image I gave you. Are you able to see the image?',detail:'Shared-reality check. Had to confirm the model was working from the same visual reference.'},
+      {role:'user',kind:'overhead',date:'Mar 27',text:'maybe the issue is the color palette. It looks dirty, not magical. Sparkles should be bright, like a star or a light bulb.',detail:'Semantic alignment: subjective visual language that had to map to CSS. Three cycles to resolve.'},
+      {role:'asst',kind:'overhead',date:'Mar 27',text:'The palette is all muted amber-brown. Stars have near-white/bright-yellow core. Shifting toward bright white-yellow with high opacity.',detail:'Successful alignment after three passes. Technical fix was fast; the translation took the time.'},
+    ],
+  },
+];
+
+let activeSession = null, selectedNode = null, hoveredNode = null, sfType = 'all', animFrame = 0;
+const canvas = document.getElementById('graphCanvas');
+const ctx = canvas.getContext('2d');
+let W, H;
+
+const NODE_COLORS = { task:'#2dd4bf', overhead:'#a78bfa' };
+
+function initTabs() {
+  const c = document.getElementById('sessionTabs');
+  SESSIONS.forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = 'tab';
+    btn.innerHTML = `<strong>${s.label}</strong> &nbsp;${s.desc}`;
+    btn.onclick = () => selectSession(s, btn);
+    c.appendChild(btn);
+  });
+}
+
+function selectSession(s, btn) {
+  activeSession = s; selectedNode = null;
+  document.querySelectorAll('.tab').forEach(b => { b.classList.remove('active'); b.style.background = ''; b.style.color = ''; });
+  btn.classList.add('active'); btn.style.background = s.color; btn.style.color = '#0a0914';
+  document.getElementById('graphTitle').textContent = `${s.label} — ${s.desc}`;
+  document.getElementById('mTokens').textContent = (s.tokens/1e6).toFixed(1)+'M';
+  document.getElementById('mUser').textContent   = s.userMsgs;
+  document.getElementById('mTools').textContent  = s.toolCalls;
+  document.getElementById('mTpt').textContent    = Math.round(s.tpt/1000)+'K';
+  document.getElementById('mRatio').textContent  = s.ratio;
+  clearDetail(); resize(); renderStrip();
+}
+
+function resize() {
+  const r = canvas.parentElement.getBoundingClientRect();
+  W = r.width; H = Math.round(Math.min(W * 0.62, 380));
+  canvas.width = W; canvas.height = H;
+}
+
+function nodePos(n) { return { x: n.x*W, y: n.y*H }; }
+
+function draw() {
+  animFrame++;
+  ctx.clearRect(0, 0, W, H);
+
+  if (!activeSession) {
+    ctx.fillStyle = '#2a2560'; ctx.font = '13px -apple-system,sans-serif';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText('select a session above to explore', W/2, H/2);
+    return;
+  }
+
+  const {nodes, edges} = activeSession;
+
+  // grid
+  ctx.fillStyle = 'rgba(80,70,140,0.08)';
+  for (let x=0;x<W;x+=30) for (let y=0;y<H;y+=30) { ctx.beginPath(); ctx.arc(x,y,1,0,Math.PI*2); ctx.fill(); }
+
+  // edges
+  edges.forEach(([a,b]) => {
+    const na=nodes[a], nb=nodes[b], pa=nodePos(na), pb=nodePos(nb);
+    const g = ctx.createLinearGradient(pa.x,pa.y,pb.x,pb.y);
+    g.addColorStop(0, NODE_COLORS[na.type]+'55'); g.addColorStop(1, NODE_COLORS[nb.type]+'55');
+    ctx.save(); ctx.strokeStyle=g; ctx.lineWidth=1.5; ctx.setLineDash([4,6]);
+    ctx.beginPath(); ctx.moveTo(pa.x,pa.y); ctx.lineTo(pb.x,pb.y); ctx.stroke(); ctx.setLineDash([]);
+    const dx=pb.x-pa.x, dy=pb.y-pa.y, len=Math.hypot(dx,dy);
+    const ax=pb.x-(dx/len)*(nb.r+5), ay=pb.y-(dy/len)*(nb.r+5);
+    ctx.fillStyle=NODE_COLORS[nb.type]+'70';
+    ctx.beginPath(); ctx.translate(ax,ay); ctx.rotate(Math.atan2(dy,dx));
+    ctx.moveTo(0,0); ctx.lineTo(-7,3); ctx.lineTo(-7,-3); ctx.closePath(); ctx.fill();
+    ctx.restore();
+  });
+
+  // nodes
+  nodes.forEach(n => {
+    const p=nodePos(n), nc=NODE_COLORS[n.type];
+    const r=n.r+(hoveredNode===n.id?3:0);
+    const pulse=Math.sin(animFrame*0.035+n.id*1.3)*0.35+0.65;
+    const sel=selectedNode===n.id;
+
+    // glow
+    const gr=r+20+(sel?10:0);
+    const glow=ctx.createRadialGradient(p.x,p.y,r,p.x,p.y,gr);
+    glow.addColorStop(0,nc+'50'); glow.addColorStop(1,nc+'00');
+    ctx.save(); ctx.globalAlpha=pulse*(sel?1:0.65); ctx.fillStyle=glow;
+    ctx.beginPath(); ctx.arc(p.x,p.y,gr,0,Math.PI*2); ctx.fill(); ctx.restore();
+
+    // fill
+    const fill=ctx.createRadialGradient(p.x-r*.3,p.y-r*.3,0,p.x,p.y,r);
+    fill.addColorStop(0,nc+'cc'); fill.addColorStop(1,nc+'55');
+    ctx.fillStyle=fill; ctx.beginPath(); ctx.arc(p.x,p.y,r,0,Math.PI*2); ctx.fill();
+    ctx.strokeStyle=sel?'#fff':nc; ctx.lineWidth=sel?2.5:1.5; ctx.stroke();
+
+    // label
+    ctx.fillStyle='#fff'; ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.font=`${Math.max(9,Math.round(r*.40))}px -apple-system,sans-serif`;
+    const lines=n.label.split('\n'), lh=r*.52, sy=p.y-((lines.length-1)*lh)/2;
+    lines.forEach((ln,i) => ctx.fillText(ln, p.x, sy+i*lh));
+  });
+
+  // legend
+  const lx=14, ly=H-44;
+  [['task','#2dd4bf','Direct work'],['overhead','#a78bfa','Overhead / alignment']].forEach(([,c,lbl],i) => {
+    ctx.fillStyle=c; ctx.beginPath(); ctx.arc(lx+5,ly+i*18,5,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='#5550a0'; ctx.font='11px -apple-system,sans-serif';
+    ctx.textAlign='left'; ctx.textBaseline='middle'; ctx.fillText(lbl,lx+15,ly+i*18);
+  });
+}
+
+function animate() { draw(); requestAnimationFrame(animate); }
+animate();
+
+function getNodeAt(cx,cy) {
+  if (!activeSession) return null;
+  return activeSession.nodes.find(n => Math.hypot(cx-nodePos(n).x, cy-nodePos(n).y) <= n.r+10);
+}
+
+canvas.addEventListener('mousemove', e => {
+  const r=canvas.getBoundingClientRect(), n=getNodeAt(e.clientX-r.left, e.clientY-r.top);
+  hoveredNode=n?n.id:null; canvas.style.cursor=n?'pointer':'default';
+});
+canvas.addEventListener('click', e => {
+  const r=canvas.getBoundingClientRect(), n=getNodeAt(e.clientX-r.left, e.clientY-r.top);
+  if (!n) return;
+  selectedNode=selectedNode===n.id?null:n.id;
+  selectedNode!==null ? showNodeDetail(n) : clearDetail();
+});
+canvas.addEventListener('mouseleave', () => { hoveredNode=null; });
+window.addEventListener('resize', resize);
+
+function showNodeDetail(n) {
+  document.getElementById('detailEmpty').style.display='none';
+  document.getElementById('detailContent').style.display='block';
+  document.getElementById('detailCard').classList.add('lit');
+  const b=document.getElementById('dBadge');
+  b.textContent=n.type==='task'?'direct work':'overhead';
+  b.style.background=n.type==='task'?'#0d2828':'#2a1848';
+  b.style.color=n.type==='task'?'#2dd4bf':'#a78bfa';
+  document.getElementById('dHeading').textContent=n.heading;
+  document.getElementById('dBody').textContent=n.body;
+  const nt=document.getElementById('dNote');
+  nt.textContent=n.note||''; nt.style.display=n.note?'block':'none';
+}
+function clearDetail() {
+  document.getElementById('detailEmpty').style.display='flex';
+  document.getElementById('detailContent').style.display='none';
+  document.getElementById('detailCard').classList.remove('lit');
+}
+
+function sfFilter(type, btn) {
+  sfType=type;
+  document.querySelectorAll('.sf-btn').forEach(b => { b.classList.remove('active'); b.style.background=''; b.style.color=''; });
+  btn.classList.add('active'); btn.style.background='#818cf8'; btn.style.color='#0a0914';
+  renderStrip();
+}
+
+function renderStrip() {
+  const scroll=document.getElementById('msgScroll');
+  const all=activeSession?activeSession.msgs:SESSIONS.flatMap(s=>s.msgs);
+  const filtered=all.filter(m=>sfType==='all'||m.kind===sfType);
+  if (!filtered.length) { scroll.innerHTML='<div style="padding:16px;font-size:12px;color:#3a3870;">No messages in this view.</div>'; return; }
+  scroll.innerHTML=filtered.map((m,i) => {
+    const bc=m.kind==='task'?'#2dd4bf':'#a78bfa';
+    return `<div class="msg-card" onclick="selectCard(this,'${encodeURIComponent(m.detail)}')" style="border-color:${bc}22">
+      <div class="card-meta">
+        <span class="role-badge ${m.role==='user'?'role-user':'role-asst'}">${m.role}</span>
+        <span class="card-date">${m.date}</span>
+      </div>
+      <div class="card-text">${m.text}</div>
+      <div class="card-bar" style="background:${bc}"></div>
+    </div>`;
+  }).join('');
+}
+
+function selectCard(el, enc) {
+  document.querySelectorAll('.msg-card').forEach(c=>c.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('detailEmpty').style.display='none';
+  document.getElementById('detailContent').style.display='block';
+  document.getElementById('detailCard').classList.add('lit');
+  const b=document.getElementById('dBadge');
+  b.textContent='message context'; b.style.background='#1a1848'; b.style.color='#818cf8';
+  document.getElementById('dHeading').textContent='';
+  document.getElementById('dBody').textContent=decodeURIComponent(enc);
+  document.getElementById('dNote').style.display='none';
+}
+
+initTabs(); resize(); renderStrip();
+</script>
+</body>
+</html>
+:ET

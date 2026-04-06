@@ -1,0 +1,741 @@
+I"Yx<p>We have a word for when AI works: <em>productive</em>.<br />
+Task complete, output shipped, moving on.</p>
+
+<p>But I’ve started to think “productive” is actually the least interesting part of what’s happening in a session.</p>
+
+<p>It’s covering up a whole layer of work we’re doing—work we’ve never really had to name before.</p>
+
+<h2 id="i-didnt-think-this-was-a-problem">I didn’t think this was a problem</h2>
+
+<p>Nothing was breaking.</p>
+
+<p>I was getting what I asked for.<br />
+The work was getting done.</p>
+
+<p>And still—</p>
+
+<p>I kept pausing.</p>
+
+<p>Correcting.<br />
+Retrying.</p>
+
+<p>Just enough friction to notice.<br />
+Not enough to question.</p>
+
+<h2 id="so-i-went-back-and-watched-myself-work">So I went back and watched myself work</h2>
+
+<p>Not to improve my prompts.</p>
+
+<p>Just to see what actually happened.</p>
+
+<p>Because while I was in it, everything felt smooth.</p>
+
+<h2 id="it-wasnt-smooth">It wasn’t smooth</h2>
+
+<p>What I expected:</p>
+
+<p><strong>Intent → output</strong></p>
+
+<p>What actually happened was closer to:</p>
+
+<p><strong>Intent → inspect → adjust → retry → continue</strong></p>
+
+<p>Not failure.</p>
+
+<p>Just… a loop.</p>
+
+<h2 id="i-want-to-slow-one-moment-down">I want to slow one moment down</h2>
+
+<p>This is from a real session where I was updating image references in a blog post.</p>
+
+<p>On the surface, it looked productive. The task got done.</p>
+
+<p>But when I replayed it, what stood out was not the output. It was the amount of alignment work hiding inside the session.</p>
+
+<p>&lt;!DOCTYPE html&gt;</p>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Session Explorer</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 15px;
+    background: #fafaf9;
+    color: #1c1c1c;
+    padding: 2rem 1.5rem;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #111;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 10px;
+  }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+  }
+  .stat-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .stat-card .num {
+    font-size: 26px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .stat-card .lbl {
+    font-size: 12px;
+    color: #888;
+  }
+
+  .chart-section {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 2rem;
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 16px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bar-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .bar-label {
+    font-size: 12px;
+    color: #555;
+    width: 100px;
+    flex-shrink: 0;
+    text-align: right;
+  }
+  .bar-track {
+    flex: 1;
+    height: 22px;
+    background: #f3f3f1;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    transition: width 0.6s ease;
+  }
+  .bar-count {
+    font-size: 12px;
+    color: #888;
+    width: 60px;
+    flex-shrink: 0;
+  }
+
+  .explorer {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .explorer-header {
+    background: #f5f5f3;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .explorer-header-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+  }
+  .explorer-header-hint {
+    font-size: 11px;
+    color: #aaa;
+  }
+
+  .filter-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+  }
+  .filter-btn {
+    font-size: 12px;
+    padding: 4px 11px;
+    border-radius: 20px;
+    border: 1px solid #d5d5d5;
+    background: transparent;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: inherit;
+  }
+  .filter-btn:hover { background: #f3f3f1; }
+  .filter-btn.active {
+    border-color: transparent;
+    color: #fff;
+    background: #2563eb;
+  }
+  .filter-btn.active.align { background: #7c3aed; }
+  .filter-btn.active.clarify { background: #dc2626; }
+  .filter-btn.active.confirm { background: #16a34a; }
+  .filter-btn.active.iterate { background: #d97706; }
+  .filter-btn.active.task { background: #2563eb; }
+
+  .msg-list { max-height: 340px; overflow-y: auto; }
+  .msg-row {
+    display: flex;
+    gap: 10px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #f0f0ee;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: background 0.1s;
+  }
+  .msg-row:last-child { border-bottom: none; }
+  .msg-row:hover { background: #fafaf8; }
+  .msg-row.selected { background: #eff6ff; }
+
+  .badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    white-space: nowrap;
+  }
+  .badge-user { background: #eff6ff; color: #1d4ed8; }
+  .badge-assistant { background: #f0fdf4; color: #15803d; }
+  .badge-task { background: #eff6ff; color: #1e40af; }
+  .badge-align { background: #faf5ff; color: #6d28d9; }
+  .badge-clarify { background: #fff1f2; color: #be123c; }
+  .badge-confirm { background: #f0fdf4; color: #166534; }
+  .badge-iterate { background: #fffbeb; color: #92400e; }
+
+  .msg-text {
+    flex: 1;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+  }
+  .msg-time {
+    font-size: 11px;
+    color: #bbb;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .detail-panel {
+    border-top: 1px solid #e5e5e5;
+    padding: 14px 16px;
+    background: #f9f9f7;
+    display: none;
+  }
+  .detail-panel.visible { display: block; }
+  .detail-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 6px;
+  }
+  .detail-text {
+    font-size: 13px;
+    line-height: 1.65;
+    color: #444;
+  }
+
+  .insight {
+    border: 1px solid #e5e5e5;
+    border-left: 3px solid #2563eb;
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.7;
+    background: #fff;
+  }
+  .insight strong { color: #111; }
+</style>
+</head>
+<body>
+
+<h1>What Was Actually Happening</h1>
+<p class="subtitle">10-day Claude Code session · 426 messages · 13.1M tokens</p>
+
+<p class="section-label">Session at a glance</p>
+<div class="stat-row">
+  <div class="stat-card">
+    <div class="num">426</div>
+    <div class="lbl">total messages</div>
+  </div>
+  <div class="stat-card">
+    <div class="num">13.1M</div>
+    <div class="lbl">tokens used</div>
+  </div>
+  <div class="stat-card">
+    <div class="num">~38%</div>
+    <div class="lbl">alignment work</div>
+  </div>
+</div>
+
+<p class="section-label">What the messages were doing</p>
+<div class="chart-section">
+  <div class="legend">
+    <span class="legend-item"><span class="legend-dot" style="background:#2563eb"></span>Task</span>
+    <span class="legend-item"><span class="legend-dot" style="background:#7c3aed"></span>Alignment</span>
+    <span class="legend-item"><span class="legend-dot" style="background:#dc2626"></span>Clarification</span>
+    <span class="legend-item"><span class="legend-dot" style="background:#16a34a"></span>Confirmation</span>
+    <span class="legend-item"><span class="legend-dot" style="background:#d97706"></span>Iteration</span>
+  </div>
+  <div class="bars">
+    <div class="bar-row">
+      <div class="bar-label">Task</div>
+      <div class="bar-track"><div class="bar-fill" style="background:#2563eb; width:37%">37%</div></div>
+      <div class="bar-count">158 msgs</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Alignment</div>
+      <div class="bar-track"><div class="bar-fill" style="background:#7c3aed; width:23%">23%</div></div>
+      <div class="bar-count">98 msgs</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Iteration</div>
+      <div class="bar-track"><div class="bar-fill" style="background:#d97706; width:17%">17%</div></div>
+      <div class="bar-count">74 msgs</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Clarification</div>
+      <div class="bar-track"><div class="bar-fill" style="background:#dc2626; width:12%">12%</div></div>
+      <div class="bar-count">52 msgs</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Confirmation</div>
+      <div class="bar-track"><div class="bar-fill" style="background:#16a34a; width:10%">10%</div></div>
+      <div class="bar-count">44 msgs</div>
+    </div>
+  </div>
+</div>
+
+<p class="section-label">Browse real messages from the session — filter by type</p>
+<div class="explorer">
+  <div class="explorer-header">
+    <span class="explorer-header-title">Session messages</span>
+    <span class="explorer-header-hint">click any row to see why it matters</span>
+  </div>
+  <div class="filter-row">
+    <button class="filter-btn active" onclick="filterMsgs('all', this)">All</button>
+    <button class="filter-btn align" onclick="filterMsgs('align', this)">Alignment</button>
+    <button class="filter-btn clarify" onclick="filterMsgs('clarify', this)">Clarification</button>
+    <button class="filter-btn iterate" onclick="filterMsgs('iterate', this)">Iteration</button>
+    <button class="filter-btn confirm" onclick="filterMsgs('confirm', this)">Confirmation</button>
+    <button class="filter-btn task" onclick="filterMsgs('task', this)">Task</button>
+  </div>
+  <div class="msg-list" id="msgList"></div>
+  <div class="detail-panel" id="detailPanel">
+    <div class="detail-label">Why this message matters</div>
+    <div class="detail-text" id="detailText"></div>
+  </div>
+</div>
+
+<div class="insight">
+  <strong>The pattern:</strong> None of this was failure. The model completed every task. The friction lived entirely in the gap between what each side assumed to be true — filenames, directory structure, visual intent, color semantics. That gap had to be closed manually, message by message. Tapes makes that visible.
+</div>
+
+<script>
+const messages = [
+  {
+    role: 'user', type: 'clarify', time: 'Mar 18',
+    text: 'do you have a teleport command that pulls conversations from project conversations?',
+    detail: 'Reveals that the two environments — Claude.ai Projects and Claude Code — don\'t share context. This question had to happen before any work could proceed. It\'s discovery overhead, not task work.'
+  },
+  {
+    role: 'assistant', type: 'align', time: 'Mar 18',
+    text: 'I can\'t directly access Claude.ai Projects — there\'s no integration between Claude Code and Claude.ai\'s project/conversation history.',
+    detail: 'Alignment moment: correcting the user\'s mental model of how the two products relate. No failure. Just a shared-reality check that had to happen before work could begin.'
+  },
+  {
+    role: 'user', type: 'task', time: 'Mar 18',
+    text: 'I have a claude project with a blog post I want put into this repo. There are necessary diagrams. I want to hand the work of uploading and adding off to you.',
+    detail: 'The actual task request — but notice it arrived only after two alignment exchanges resolved. And it carries unstated assumptions: file formats, directory structure, naming conventions.'
+  },
+  {
+    role: 'user', type: 'align', time: 'Mar 18',
+    text: 'they\'re svgs. You can find them in documents/ai blogpost',
+    detail: 'Correcting the model\'s assumption about file format — it had written .png placeholders. One message, one correction, one re-pass. Small, but it required finding the mismatch first.'
+  },
+  {
+    role: 'assistant', type: 'align', time: 'Mar 18',
+    text: 'Two filenames don\'t match what\'s in the post: ai-llms-model.svg (not ai-llms-models.svg) and context_window.svg (not context-window.svg).',
+    detail: 'Reality mismatch on filenames. The task (update image references) was simple. The alignment work — reconciling what the model assumed against what actually existed on disk — is where the friction lived.'
+  },
+  {
+    role: 'user', type: 'confirm', time: 'Mar 18',
+    text: 'does the 2026 folder exist? I don\'t see it',
+    detail: 'A verification loop. The model created a directory silently. The user had to check if it actually existed. This adds no new work — it only validates prior work. Pure confirmation overhead.'
+  },
+  {
+    role: 'user', type: 'task', time: 'Mar 20',
+    text: 'create a new PR that updates the docs to replace ./tapes.db with ./tapes.sqlite throughout the docs.',
+    detail: 'Clear, scoped task. Low alignment tax — the model had enough structural context to execute without back-and-forth. Technical tasks with precise specs consistently generate less alignment overhead than open-ended or visual tasks.'
+  },
+  {
+    role: 'user', type: 'iterate', time: 'Mar 27',
+    text: 'Keep the current design. Add 6–10 total CSS-only twinkles across the component. Make them sparse, elegant, warm-gold/ivory, and subtle. No glitter, no icons, no busy animation, no JS changes.',
+    detail: 'The constraint list — "no glitter, no icons, no JS changes" — shows accumulated context from previous failed attempts. Each constraint was probably learned the hard way. Visual tasks carry the highest alignment tax in this session.'
+  },
+  {
+    role: 'assistant', type: 'align', time: 'Mar 27',
+    text: 'The sparkles are blurry glowing halos (8–20px blur), not sharp 1–2px dots — mine are invisible at that size. The active element has a dramatic ambient glow extending well beyond its border.',
+    detail: 'The model looked at the reference image and realized its implementation didn\'t match. The user\'s intent was clear. The gap was between the visual reference and what the model could infer from words alone.'
+  },
+  {
+    role: 'user', type: 'iterate', time: 'Mar 27',
+    text: 'it doesn\'t look like the image I gave you. Are you able to see the image?',
+    detail: 'Before iteration could continue, the parties had to confirm they were even looking at the same thing. This is a shared-reality check nested inside an iteration loop — alignment tax on top of iteration tax.'
+  },
+  {
+    role: 'user', type: 'iterate', time: 'Mar 27',
+    text: 'maybe the issue is the color palette. It looks dirty, not magical. the sparkles should be bright, like a star or a light bulb.',
+    detail: '"Dirty" vs "magical" are not technical specs — they\'re subjective visual qualities the model had to map to hex values and opacity. Three full iteration cycles happened here before the palette landed.'
+  },
+  {
+    role: 'assistant', type: 'align', time: 'Mar 27',
+    text: 'The issue is clear — the palette is all muted amber-brown. Stars and light bulbs have a near-white/bright-yellow core. I need to shift sparkle colors toward bright white-yellow with high opacity.',
+    detail: 'Successful alignment after three passes. The model finally decoded "dirty amber" → "not this" and "star/light bulb" → white-yellow core blooming outward. The technical fix was fast. The translation took the time.'
+  },
+];
+
+let currentFilter = 'all';
+let selectedIdx = null;
+
+function filterMsgs(type, btn) {
+  currentFilter = type;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  selectedIdx = null;
+  document.getElementById('detailPanel').classList.remove('visible');
+  renderList();
+}
+
+function selectMsg(idx) {
+  selectedIdx = idx;
+  const m = messages[idx];
+  document.getElementById('detailText').textContent = m.detail;
+  document.getElementById('detailPanel').classList.add('visible');
+  renderList();
+}
+
+function renderList() {
+  const list = document.getElementById('msgList');
+  const filtered = messages
+    .map((m, i) => ({ ...m, origIdx: i }))
+    .filter(m => currentFilter === 'all' || m.type === currentFilter);
+
+  if (!filtered.length) {
+    list.innerHTML = '<div style="padding:20px 16px; font-size:13px; color:#aaa;">No messages in this category.</div>';
+    return;
+  }
+
+  list.innerHTML = filtered.map(m => `
+    <div class="msg-row${selectedIdx === m.origIdx ? ' selected' : ''}" onclick="selectMsg(${m.origIdx})">
+      <span class="badge badge-${m.role}">${m.role}</span>
+      <span class="badge badge-${m.type}">${m.type}</span>
+      <span class="msg-text">${m.text}</span>
+      <span class="msg-time">${m.time}</span>
+    </div>
+  `).join('');
+}
+
+renderList();
+</script>
+</body>
+</html>
+
+<div id="ai-session-misalignment-demo"></div>
+
+<p>The model was not failing at the task. We just were not operating from the same reality yet.</p>
+
+<p>That is the layer I keep coming back to.</p>
+
+<h2 id="none-of-that-was-the-task">None of that was the task</h2>
+
+<p>The task was simple: update image references.</p>
+
+<p>What actually happened was something else:</p>
+
+<ul>
+  <li>checking assumptions</li>
+  <li>correcting structure</li>
+  <li>aligning on what exists</li>
+</ul>
+
+<p>Small things.</p>
+
+<p>But they stack.</p>
+
+<h2 id="the-model-wasnt-failing">The model wasn’t failing</h2>
+
+<p>Let’s be clear.</p>
+
+<p>It did what I asked.<br />
+It adapted.<br />
+It kept going.</p>
+
+<p>If anything, it was being helpful.</p>
+
+<h2 id="but-we-werent-operating-in-the-same-reality">But we weren’t operating in the same reality</h2>
+
+<p>That’s the part that changed how I think about this.</p>
+
+<p>The issue wasn’t the output.</p>
+
+<p>It was the gap between what the model assumed and what actually existed.</p>
+
+<p>Paths. Files. Structure.</p>
+
+<p>Nothing dramatic. Just… slightly off.</p>
+
+<h2 id="productive-is-what-it-looked-like-from-the-outside">Productive is what it looked like from the outside</h2>
+
+<p>Alignment work is what it looked like from the inside.</p>
+
+<p>And I do not think we have great language for that yet.</p>
+
+<p>We talk about prompts.</p>
+
+<p>We talk about outputs.</p>
+
+<p>But the workflow—the in-between—is mostly invisible.</p>
+
+<p>Until you replay it.</p>
+
+<h2 id="and-once-you-see-it-you-cant-unsee-it">And once you see it, you can’t unsee it</h2>
+
+<p>I started noticing it everywhere.</p>
+
+<p>The quick “that file’s not there.”<br />
+The “wrong folder.”<br />
+The “use the other one.”</p>
+
+<p>We don’t usually count those as part of the work.</p>
+
+<p>But they are.</p>
+
+<h2 id="so-i-changed-one-thing">So I changed one thing</h2>
+
+<p>Not my prompts.</p>
+
+<p>My approach.</p>
+
+<ul>
+  <li>I verify the environment earlier</li>
+  <li>I slow down at the start</li>
+  <li>I pay attention to corrections</li>
+</ul>
+
+<p>Because those corrections are not just interruptions.</p>
+
+<p>They’re signals.</p>
+
+<h2 id="we-might-be-optimizing-the-wrong-layer">We might be optimizing the wrong layer</h2>
+
+<p>We’ve been treating AI like a generation problem.</p>
+
+<p>More and more, I think it is a systems problem.</p>
+
+<p>Not: did the model produce the right output?</p>
+
+<p>But: was the model operating in the right reality?</p>
+
+<h2 id="try-this">Try this</h2>
+
+<p>Record one session.</p>
+
+<p>Replay it.</p>
+
+<p>Not to critique it.</p>
+
+<p>Just to see it.</p>
+
+<h2 id="final-thought">Final thought</h2>
+
+<p>I thought I needed better prompts.</p>
+
+<p>What I actually needed was better visibility into the work I was already doing—</p>
+
+<p>bringing the system back into alignment with reality.</p>
+
+<p>I ran a Claude Code session for ten days.</p>
+
+<p>Not ten days straight. Ten days of real work — building, iterating, shipping posts, wiring up interactive components, updating docs. The kind of work I do every week now. When it was done, I exported the session data and went looking for something I couldn’t quite name.</p>
+
+<p>I found it.</p>
+
+<p>426 messages. 13.1 million tokens. And when I broke down what was actually happening in those messages — not just “user sends prompt, assistant responds” but <em>what each message was doing</em> — something uncomfortable came into focus.</p>
+
+<p>Only about 37% of it was task work.</p>
+
+<p>The rest? Alignment. Clarification. Confirmation. Iteration. Work that looked like prompting but was actually something else: the ongoing labor of getting two minds operating from the same reality.</p>
+
+<p>Here’s the thing: none of that extra work was failure. The model wasn’t broken. I wasn’t prompting badly. Things got done. But the session data told a different story than “productive.” It told the story of how much invisible work hides inside every AI workflow — and why we’ve never had a name for it before.</p>
+
+<h2 id="most-people-measure-the-wrong-thing">Most people measure the wrong thing</h2>
+
+<p>When we talk about AI productivity, we measure outputs. Did the task complete? How fast? How many tokens did it cost?</p>
+
+<p>These are real metrics. But they miss the layer underneath.</p>
+
+<p>Think about what actually happens in a coding session with an AI. You describe a task. The model responds with something close to what you meant — but not quite. You correct it. It adjusts. You verify the result, notice a filename doesn’t match, fix the reference, check the directory, confirm the output.</p>
+
+<p>At every step, you are both <em>doing the task</em> and <em>negotiating shared context</em>. The task work and the alignment work happen simultaneously, and almost nobody tracks them separately.</p>
+
+<p>I’ve started calling the second kind <em>alignment tax</em>: the extra cycles spent not on the work itself, but on establishing the shared reality the work requires.</p>
+
+<p>Alignment tax is not a bug. It’s not even avoidable. It’s a structural feature of how language models and humans collaborate. The model has no persistent memory of your project. It doesn’t know your file naming conventions, your aesthetic preferences, or that you named the file <code class="language-plaintext highlighter-rouge">context_window.svg</code> with an underscore. You know all of that. The model knows none of it until you tell it — and you often don’t know you need to tell it until it guesses wrong.</p>
+
+<p>What Tapes does is make this visible. Not to shame you for it. To help you see it clearly so you can work with it deliberately.</p>
+
+<h2 id="let-me-show-you-what-i-mean">Let me show you what I mean</h2>
+
+<p>Here’s a moment from my actual session. I asked the model to place images in a blog post. Simple task. The model created placeholder image paths — reasonable defaults — and completed the task.</p>
+
+<p>Then I uploaded the real files.</p>
+
+<p>The model had written <code class="language-plaintext highlighter-rouge">ai-llms-models.svg</code>. The actual filename was <code class="language-plaintext highlighter-rouge">ai-llms-model.svg</code>. One character difference. The model had written <code class="language-plaintext highlighter-rouge">context-window.svg</code>. The actual filename was <code class="language-plaintext highlighter-rouge">context_window.svg</code>. A dash versus an underscore.</p>
+
+<p>The task was technically done twice: once with placeholder filenames, once with real ones. The second pass was alignment work — reconciling what the model assumed against what actually existed on disk.</p>
+
+<p>Neither pass was a failure. The session felt smooth in the moment. I didn’t notice the overhead.</p>
+
+<p>But Tapes recorded it.</p>
+
+<p>When I went back and looked at the session data, I could see the shape of it: <em>intent → inspect → adjust → retry → continue</em>. Not a straight line from task to output. A loop. And the loop wasn’t random. It had a structure. It always closed on the same gap: the gap between what the model assumed and what was true.</p>
+
+<h2 id="three-kinds-of-alignment-work">Three kinds of alignment work</h2>
+
+<p>After spending time in this session data, I started to see patterns. Alignment tax doesn’t show up as one thing. It shows up as three:</p>
+
+<p><strong>Semantic alignment</strong> is when the model and you are using the same words to mean different things. In my session, the biggest instance of this was visual: I said “sparkles” and meant blurry glowing halos like stars. The model implemented tiny 1–2px dots — technically sparkles, but invisible at that size. The word “sparkle” carried different visual assumptions on each side of the conversation. Three full iteration cycles happened before we landed on the same image.</p>
+
+<p><strong>Structural alignment</strong> is when you and the model have different maps of the territory. I asked the model to find files in <code class="language-plaintext highlighter-rouge">documents/ai blogpost</code>. The model didn’t have access to that directory. Neither of us knew that until the model tried. Structural alignment failures are easy to fix — once you know the layout mismatch exists. The cost is the discovery.</p>
+
+<p><strong>State alignment</strong> is the ongoing work of keeping the model current as reality changes. The blog post images I uploaded had different names than the placeholders. The database filename changed from <code class="language-plaintext highlighter-rouge">tapes.db</code> to <code class="language-plaintext highlighter-rouge">tapes.sqlite</code>. Every time the ground truth shifted, there was alignment work to sync the model’s working assumptions. This isn’t a bug in the model. It’s a consequence of having no persistent memory.</p>
+
+<p>Here’s what this looks like across a session:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Intent → Model assumes X → Output based on X
+         ↑                          ↓
+         └── Correction: X is wrong, Y is true ──┘
+</code></pre></div></div>
+
+<p>The loop always exists. The question is how long it runs and how visible it is.</p>
+
+<h2 id="why-this-matters-more-than-you-think">Why this matters more than you think</h2>
+
+<p>You might be reading this and thinking: “Sure, there’s some back-and-forth. That’s just how prompting works.”</p>
+
+<p>You’re not entirely wrong.</p>
+
+<p>But here’s what I’ve noticed: most developers I talk to underestimate how much of their “prompting” is actually alignment work. They describe sessions as productive when they completed tasks. They don’t track the ratio of task work to alignment work. They don’t ask whether a specific category of task reliably generates more alignment overhead than others.</p>
+
+<p>This is the data Tapes surfaces.</p>
+
+<p>In my session, visual design tasks had the highest alignment tax by far. Describing what I wanted an interactive component to <em>look like</em> — in words, to a model — generated more correction cycles than any purely technical task. Renaming a file across a codebase: low alignment tax. Building CSS effects from a reference image: high alignment tax.</p>
+
+<p>That’s useful to know. Not because it changes what I work on, but because it changes how I work on it. When I know a task category carries high alignment overhead, I can front-load the alignment work — share the reference image first, establish the visual vocabulary explicitly, describe what I <em>don’t</em> want alongside what I do.</p>
+
+<p>The developers who get the most out of AI tools aren’t necessarily the best prompters. They’re the ones who’ve learned to recognize alignment work for what it is, and front-load it.</p>
+
+<h2 id="what-tapes-actually-records">What Tapes actually records</h2>
+
+<p>Tapes runs as a wrapper around Claude Code: <code class="language-plaintext highlighter-rouge">tapes start claude</code>. It captures the entire CLI session at the process level, writing to a local SQLite database in <code class="language-plaintext highlighter-rouge">~/.tapes/</code>. Every message, every model response, every token count, every timestamp.</p>
+
+<p>What this gives you:</p>
+
+<ul>
+  <li>A complete, searchable record of what happened in the session</li>
+  <li>Token usage across the entire conversation, not just per-message</li>
+  <li>The time dimension — when did you come back to something? How long did an iteration loop run?</li>
+  <li>The ability to replay and inspect specific moments</li>
+</ul>
+
+<p>That last one matters more than it sounds. Working in an AI session, you’re inside it. Things feel smooth or rough in real time. You don’t have the vantage point to see the shape of the whole thing. Tapes gives you that vantage point afterward.</p>
+
+<p>I didn’t know I’d spent three full cycles trying to communicate “sparkles that look like stars, not dust” until I looked at the session data. In the moment, it felt like iteration. In the data, it looked like a pattern — and patterns are solvable.</p>
+
+<h2 id="the-uncomfortable-truth-about-productive">The uncomfortable truth about “productive”</h2>
+
+<p>We’ve borrowed “productive” from a world where the work was legible. You wrote code, it compiled or it didn’t. You finished the feature, you didn’t. Productivity meant output per unit of time.</p>
+
+<p>AI sessions scramble that. The work is less legible. Alignment work looks like task work from the outside — you’re still sending messages, getting responses, moving forward. But the alignment work isn’t moving the task forward. It’s maintaining the conditions under which the task can move forward.</p>
+
+<p>This is new. We don’t have great vocabulary for it yet. We don’t have metrics. Most AI productivity conversations are still about prompting quality, model capability, and output speed — none of which touch the alignment layer.</p>
+
+<p>Tapes is one of the first tools I’ve seen that makes the alignment layer visible. Not through theory. Through data from your actual sessions.</p>
+
+<p>What do you do with that visibility? That part is still being figured out. But you can’t work deliberately with something you can’t see. And most of us, right now, can’t see this.</p>
+
+<p>That’s worth changing.</p>
+
+:ET
