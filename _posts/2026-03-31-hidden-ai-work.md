@@ -1,8 +1,8 @@
 ---
 layout: post-interactive
-title: "Productive Is the Least Interesting Word We Have for AI"
+title: "Momentum vs. Alignment Tax: Hidden Costs in Your LLM Sessions"
 description: "What looks productive in an AI session often hides a whole layer of alignment work we do not even notice while we are doing it."
-date: 2026-03-31
+date: 2026-04-06
 tags: [AI, DevRel, Developer Experience]
 author: Bekah
 interactive_js: ai-session-tax.html
@@ -21,7 +21,7 @@ It's never just a user sending a message and the agent responding. It's alignmen
 What I found was that probably under 40% of those sessions were actually task work. It's not to say that the other 60% was a failure. The session was productive in the way that most of us mean that word. But the data tells a more honest story. I learned about how much invisible work hides inside an AI workflow, and how alignment tax impacts the quickest way to success.
 
 
-## I didn’t think this was a problem
+## What is Alignment Tax in AI workflows?
 
 Thinking back about my own experience, I was thinking more about the outputs than about what was happening because nothing was breaking *eventually* I was getting what I was asking for. Sure, I was looking at things like how fast it was completed and how many tokens were being used, but I wasn't looking closely enough about what was happening in the conversation.
 
@@ -33,6 +33,18 @@ So to sum this up a bit, I was doing two things at once:
 2. establishing the shared context the task depends on.
 
 Those aren't the same kinds of work. The second is the alignment tax. Those are the extra cycles spent not on the work itself, but on establishing the shared reality required for the work.
+
+> Alignment tax comes from the distance between what you mean and how clearly you can express it in a form the model can act on.
+
+In practice, that means an AI task is rarely just:
+
+**user request → model response**
+
+More often, it looks like this:
+
+**intent → interpretation → output → correction → retry → verification → continuation**
+
+That extra loop is where a lot of AI workflow overhead lives.
 
 In my case, the model didn't recognize my file naming conventions. It didn't understand my visual references. It didn't know which assumptions were safe and which ones were going to cost me another three turns. I knew some of that. I didn't know some of it until the model guessed wrong and exposed the gap. That's the part I'm interested in here, because it helps me work more deliberately.
 
@@ -73,18 +85,15 @@ Intent → Model assumes X → Output based on X
          ↑                          ↓
          └── Correction: X is wrong, Y is true ──┘
 ```
-## Some of the Alignment Tax Was Mine
+## Why Traces and Telemetry Matter for AI Agents
 
 Let's be fair. A lot of the alignment tax was on me. In my session, visual design tasks had the highest alignment tax by far. Trying to describe what I wanted something to *look* like in precise enough language for the model to execute. This is probably obvious, but I am not a designer. 
 
 It's worth calling out because that means some of what I'm calling alignment tax is really a mismatch between the kind of work I’m doing and the precision I can bring to it. I can usually describe structural changes pretty cleanly. I am much worse at describing visual nuance on the first try.
 
-> Alignment tax comes from the distance between what you mean and how clearly you can express it in a form the model can act on.
-
 Once you can see your own patterns, you can do something with them. You can front-load more context, change how you prompt, reach for examples earlier, or you can recognize a certain kind of task is going to cost you more than it would cost someone whose specialty actually lives there.
 
-
-[tapes](https://tapes.dev/) didn't just surface what happened in my session. It showed me where I tended to loop. These are my weak spots that are causing extra alignment overhead. It helped me identify where another person's workflow or skill might help me collapse my five rounds into one. In my mind, this is a way to identify where shared skills could actually matter.
+[tapes](https://tapes.dev/) didn't just surface what happened in my session. It made the structure of the session visible. I could see where interpretation drifted, where retries piled up, where assumptions entered, and where progress slowed down. It showed me where I tended to loop. It showed me my own weak spots that are causing extra alignment overhead. It helped me identify where another person's workflow or skill might help me collapse my five rounds into one. In my mind, this is a way to identify where shared skills could actually matter.
 
 Digging deeper into the data, I was able to recognize a set of handoffs between intention, interpretation, execution, correction, and continuation.
 
@@ -101,7 +110,7 @@ Logs can tell you that something happened, but traces and telemetry help you see
 
 As these systems become more agentic, more tool-driven, and more multi-step, that visibility matters more, not less.
 
-## Productivity isn't the Metric
+## Why AI productivity can be misleading
 
 The word "productive" feels inherited from a world where work was easier to isolate. Alignment work looks a lot like task work from the outside. You're still typing, responding, and making progress at least some of the time. But not all forward motion is equal. Some of that motion is the work, some is maintaining the conditions under which the work can happen. Not just so we can complain about it (although I have), but because it gives us something we can look at directly. 
 

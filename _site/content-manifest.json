@@ -7,18 +7,18 @@
     "topics": ["Developer Relations", "Community Building", "Programming", "AI", "Mental Health in Tech", "Career Development"],
     "content_types": ["blog_posts", "technical_tutorials", "career_advice", "personal_experiences"],
     "target_audience": ["developers", "tech professionals", "community builders", "career changers", "bootcamp graduates"],
-    "last_updated": "2026-04-06"
+    "last_updated": "2026-04-07"
   },
   "posts": [
     
     {
-      "title": "Productive Is the Least Interesting Word We Have for AI",
+      "title": "Momentum vs. Alignment Tax: Hidden Costs in Your LLM Sessions",
       "url": "https://bekahhw.com//hidden-ai-work",
-      "date": "2026-03-31",
+      "date": "2026-04-06",
       "excerpt": "Once I was in an interview, and I was asked what motivated me. My answer was momentum. And maybe that’s why working with AI can be so engaging sometimes. And maybe it’s also why it could be so frus...",
       "tags": ["AI","DevRel","Developer Experience"],
       "categories": [],
-      "word_count": 3474,
+      "word_count": 3551,
       "content_type": "blog_post"
     },
     
