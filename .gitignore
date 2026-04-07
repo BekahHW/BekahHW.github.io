@@ -1,4 +1,7 @@
 .claude/
-_site/
-LI/
+.bundle/
+vendor/bundle/vendor/bundle/
 .jekyll-cache/
+_site/
+.sass-cache/
+.jekyll-metadata
