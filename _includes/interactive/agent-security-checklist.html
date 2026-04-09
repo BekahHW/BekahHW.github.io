@@ -1,0 +1,446 @@
+<section class="dt-root" aria-label="Security decision tree for new builders using AI agents">
+    <style>
+      /* ── Tokens from video-resume.css ───────────────────────────────────── */
+      .dt-root {
+        --dt-navy:   #0a1724;
+        --dt-navy2:  #11273c;
+        --dt-cream:  #f5f2e9;
+        --dt-beige:  #f2e9d8;
+        --dt-gold:   #cd9023;
+        --dt-gold-d: #b37a1a;
+        --dt-gray:   #5a5a5a;
+        --dt-muted:  #adabac;
+        --dt-border: rgba(10, 23, 36, 0.12);
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+        margin: 2.5rem 0;
+      }
+  
+      /* ── Header ─────────────────────────────────────────────────────────── */
+      .dt-header {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--dt-border);
+      }
+      .dt-header-eyebrow {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--dt-gold);
+        margin: 0 0 0.5rem;
+      }
+      .dt-header-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.35;
+        margin: 0 0 0.35rem;
+        color: var(--dt-navy);
+      }
+      .dt-header-sub {
+        font-size: 0.8125rem;
+        color: var(--dt-gray);
+        margin: 0;
+        line-height: 1.6;
+      }
+  
+      /* ── Progress dots ───────────────────────────────────────────────────── */
+      .dt-steps {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 1.375rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .dt-step-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        border: 1.5px solid rgba(205, 144, 35, 0.3);
+        background: transparent;
+        transition: background 0.25s, border-color 0.25s, transform 0.2s;
+        flex-shrink: 0;
+      }
+      .dt-step-dot.done {
+        background: rgba(205, 144, 35, 0.45);
+        border-color: rgba(205, 144, 35, 0.45);
+      }
+      .dt-step-dot.current {
+        background: var(--dt-gold);
+        border-color: var(--dt-gold);
+        transform: scale(1.4);
+      }
+  
+      /* ── Cards ───────────────────────────────────────────────────────────── */
+      .dt-card {
+        background: var(--dt-cream);
+        border: 1px solid var(--dt-border);
+        border-radius: 8px;
+        padding: 1.125rem 1.25rem;
+        margin-bottom: 0.75rem;
+        transition: border-color 0.2s;
+      }
+      .dt-card.active {
+        border-color: rgba(205, 144, 35, 0.35);
+        background: #fff;
+      }
+  
+      /* ── Question text ───────────────────────────────────────────────────── */
+      .dt-question {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.9375rem;
+        font-weight: 700;
+        margin: 0 0 0.875rem;
+        line-height: 1.5;
+        color: var(--dt-navy);
+      }
+      .dt-question-num {
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--dt-gold);
+        display: block;
+        margin-bottom: 0.3rem;
+      }
+  
+      /* ── Choice buttons ──────────────────────────────────────────────────── */
+      .dt-choices {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+      .dt-btn {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 0.4rem 1rem;
+        border: 1.5px solid rgba(10, 23, 36, 0.18);
+        border-radius: 4px;
+        background: transparent;
+        color: var(--dt-navy);
+        cursor: pointer;
+        transition: background 0.15s, border-color 0.15s, color 0.15s;
+        line-height: 1.4;
+      }
+      .dt-btn:hover {
+        background: var(--dt-beige);
+        border-color: var(--dt-gold);
+        color: var(--dt-navy);
+      }
+      .dt-btn.selected {
+        background: var(--dt-navy);
+        border-color: var(--dt-navy);
+        color: var(--dt-cream);
+      }
+  
+      /* ── Result blocks ───────────────────────────────────────────────────── */
+      .dt-result {
+        border-radius: 4px;
+        padding: 0.75rem 1rem;
+        margin-top: 0.875rem;
+        font-size: 0.8125rem;
+        line-height: 1.7;
+        border-left: 3px solid;
+      }
+      .dt-result code {
+        font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+        font-size: 0.73rem;
+        background: rgba(10, 23, 36, 0.07);
+        color: var(--dt-navy);
+        padding: 1px 5px;
+        border-radius: 3px;
+      }
+      /* ok — gold tint, feels like approval */
+      .dt-result.ok {
+        background: rgba(205, 144, 35, 0.07);
+        border-left-color: var(--dt-gold);
+        color: var(--dt-gray);
+      }
+      .dt-result.ok strong { color: var(--dt-navy); }
+      /* info — navy tint, informational */
+      .dt-result.info {
+        background: rgba(10, 23, 36, 0.05);
+        border-left-color: var(--dt-navy2);
+        color: var(--dt-gray);
+      }
+      .dt-result.info strong { color: var(--dt-navy); }
+      /* warn — deeper amber */
+      .dt-result.warn {
+        background: #fdf3e3;
+        border-left-color: #c07a10;
+        color: #6b4400;
+      }
+      .dt-result.warn strong { color: #4a2e00; }
+      .dt-result.warn code {
+        background: rgba(192, 122, 16, 0.1);
+        color: #4a2e00;
+      }
+      /* danger — deep red, serious */
+      .dt-result.danger {
+        background: #fdf0f0;
+        border-left-color: #a82828;
+        color: #6b1a1a;
+      }
+      .dt-result.danger strong { color: #4a0f0f; }
+      .dt-result.danger code {
+        background: rgba(168, 40, 40, 0.08);
+        color: #4a0f0f;
+      }
+  
+      /* ── Finish / reset ──────────────────────────────────────────────────── */
+      .dt-reset-wrap {
+        margin-top: 1.5rem;
+      }
+      .dt-finish-msg {
+        font-size: 0.8125rem;
+        color: var(--dt-gray);
+        margin-top: 0;
+        margin-bottom: 0.875rem;
+        padding: 0.875rem 1rem;
+        border-top: 1px solid var(--dt-border);
+        border-left: 3px solid var(--dt-gold);
+        background: rgba(205, 144, 35, 0.05);
+        border-radius: 0 4px 4px 0;
+        line-height: 1.6;
+      }
+      .dt-reset {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--dt-gold);
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        transition: color 0.2s;
+      }
+      .dt-reset:hover { color: var(--dt-gold-d); }
+      .dt-hidden { display: none; }
+    </style>
+  
+    <div class="dt-header">
+      <p class="dt-header-eyebrow">Security checklist</p>
+      <p class="dt-header-title">Before you give your agent access to something, ask these questions</p>
+      <p class="dt-header-sub">Six questions covering different categories of risk. Answer honestly.</p>
+    </div>
+  
+    <div class="dt-steps" id="dt-dots" aria-hidden="true"></div>
+    <div id="dt-tree" role="list"></div>
+    <div class="dt-reset-wrap dt-hidden" id="dt-reset-wrap">
+      <div class="dt-finish-msg">You've worked through all six questions. Review anything that came up as a warning or danger before your next session.</div>
+      <button class="dt-reset" onclick="dtReset()" aria-label="Restart the decision tree">Start over</button>
+    </div>
+  </section>
+  
+  <script>
+  (function() {
+    var questions = [
+      {
+        q: "Can your agent take actions on its own, or does it only suggest them?",
+        choices: [
+          "It can take actions on its own",
+          "It only suggests — I approve each one"
+        ],
+        results: [
+          null,
+          {
+            type: "ok",
+            html: "<strong>Good baseline.</strong> A human approval step is one of the most effective safety controls. Keep it. Watch out for sessions where you start clicking approve without reading. That's when it becomes the same as no approval step at all."
+          }
+        ]
+      },
+      {
+        q: "What kind of data can the agent access right now?",
+        choices: [
+          "Test or fake data only",
+          "Real data, but read-only",
+          "Real data it can also change or delete"
+        ],
+        results: [
+          {
+            type: "ok",
+            html: "<strong>Safest setup.</strong> Running on test data means mistakes stay contained. When you're ready to move to real data, revisit these questions first."
+          },
+          {
+            type: "info",
+            html: "<strong>Read-only is lower risk, but not zero.</strong> An agent that can read your database can still expose data through logs or outputs, or if it connects to an external service. Know what it's doing with what it reads."
+          },
+          null
+        ]
+      },
+      {
+        q: "If the agent deleted or overwrote something right now, could you recover it?",
+        choices: [
+          "Yes — I have backups or version history",
+          "Not sure",
+          "No"
+        ],
+        results: [
+          {
+            type: "ok",
+            html: "<strong>Good.</strong> Know where those backups are and how to restore them before you need to. The Replit incident in 2025 was recoverable because a backup existed — but the agent first claimed it wasn't. Verify your restore process actually works."
+          },
+          {
+            type: "warn",
+            html: "<strong>Find out before something goes wrong.</strong> Check whether your database has point-in-time recovery. Check whether your file system has version history. If the answer is no, treat this session as higher risk until you have a backup in place."
+          },
+          {
+            type: "danger",
+            html: "<strong>This is the real risk zone.</strong> Running an agent against data you can't recover means one bad action is permanent. Before your next session: set up a backup. Even a manual export to a file is better than nothing. Don't give the agent write or delete access until you have a way to undo things."
+          }
+        ]
+      },
+      {
+        q: "Did your agent add any packages or dependencies during this session?",
+        choices: [
+          "Yes",
+          "No",
+          "I don't know"
+        ],
+        results: [
+          null,
+          {
+            type: "ok",
+            html: "<strong>One less thing to check this time.</strong> This question matters most when the agent is actively writing implementation code. Ask it again after those sessions."
+          },
+          {
+            type: "warn",
+            html: "<strong>Worth finding out.</strong> Open your <code>package.json</code> or <code>requirements.txt</code> and look for anything unfamiliar. AI agents often add packages quietly as part of getting a feature working — and you said yes to the feature without necessarily saying yes to every package that came with it."
+          }
+        ]
+      },
+      {
+        q: "Do you recognize all the packages your agent added?",
+        choices: [
+          "Yes, familiar libraries",
+          "Some I don't recognize",
+          "Most I don't recognize"
+        ],
+        results: [
+          {
+            type: "ok",
+            html: "<strong>Good.</strong> Run <code>npm audit</code> or <code>pip-audit</code> anyway. It takes one command and catches known vulnerabilities in packages that looked legitimate at install time."
+          },
+          {
+            type: "warn",
+            html: "<strong>Look them up before you ship.</strong> Search each unfamiliar name on npmjs.com or pypi.org. Check when it was published, how many weekly downloads it has, and whether it has a real GitHub repo. A package with 12 downloads published last week deserves scrutiny. AI tools sometimes suggest packages that don't exist — and attackers register those names with malicious code inside."
+          },
+          {
+            type: "danger",
+            html: "<strong>Pause before this goes anywhere near production.</strong> <code>npm audit</code> is a start, but it only catches known vulnerabilities. A newly registered malicious package won't be in the database yet. For each package you don't recognize: look it up manually, check who maintains it, check if it has an actual community. If anything looks off, remove it and ask your AI tool to suggest a well-known alternative."
+          }
+        ]
+      },
+      {
+        q: "Is your agent running on your main personal or work machine?",
+        choices: [
+          "Yes, my main machine",
+          "No, a separate or dedicated machine"
+        ],
+        results: [
+          {
+            type: "warn",
+            html: "<strong>Worth rethinking.</strong> Running agents on your main machine means a bad package install or a rogue command has access to everything — SSH keys, browser credentials, work files. Many experienced builders use a separate machine specifically for agent sessions. If something goes wrong, they wipe it and start over. You can't do that with your main machine."
+          },
+          {
+            type: "ok",
+            html: "<strong>Good practice.</strong> A dedicated machine limits the blast radius. A mistake or compromised package can't reach your personal data. You can wipe it and start over without losing anything that matters."
+          }
+        ]
+      }
+    ];
+  
+    var step = 0;
+  
+    function buildDots() {
+      var dots = document.getElementById('dt-dots');
+      dots.innerHTML = '';
+      for (var i = 0; i < questions.length; i++) {
+        var d = document.createElement('div');
+        d.className = 'dt-step-dot' + (i < step ? ' done' : i === step ? ' current' : '');
+        dots.appendChild(d);
+      }
+    }
+  
+    function showStep(idx) {
+      if (idx >= questions.length) { finish(); return; }
+      var tree = document.getElementById('dt-tree');
+      var q = questions[idx];
+  
+      var card = document.createElement('div');
+      card.className = 'dt-card active';
+      card.setAttribute('role', 'listitem');
+  
+      var numEl = document.createElement('span');
+      numEl.className = 'dt-question-num';
+      numEl.textContent = 'Question ' + (idx + 1) + ' of ' + questions.length;
+  
+      var qEl = document.createElement('p');
+      qEl.className = 'dt-question';
+      qEl.textContent = q.q;
+      card.appendChild(numEl);
+      card.appendChild(qEl);
+  
+      var ch = document.createElement('div');
+      ch.className = 'dt-choices';
+      q.choices.forEach(function(c, ci) {
+        var btn = document.createElement('button');
+        btn.className = 'dt-btn';
+        btn.textContent = c;
+        btn.onclick = function() { choose(idx, ci, card, btn); };
+        ch.appendChild(btn);
+      });
+      card.appendChild(ch);
+      tree.appendChild(card);
+      buildDots();
+    }
+  
+    function choose(idx, ci, card, btn) {
+      card.querySelectorAll('.dt-btn').forEach(function(b) { b.classList.remove('selected'); });
+      btn.classList.add('selected');
+      card.classList.remove('active');
+  
+      var res = questions[idx].results[ci];
+      var existing = card.querySelector('.dt-result');
+      if (existing) existing.remove();
+  
+      if (res) {
+        var r = document.createElement('div');
+        r.className = 'dt-result ' + res.type;
+        r.innerHTML = res.html;
+        card.appendChild(r);
+      }
+  
+      step = idx + 1;
+      buildDots();
+  
+      if (step < questions.length) {
+        setTimeout(function() { showStep(step); }, 280);
+      } else {
+        setTimeout(finish, 280);
+      }
+    }
+  
+    function finish() {
+      document.getElementById('dt-reset-wrap').classList.remove('dt-hidden');
+      buildDots();
+    }
+  
+    window.dtReset = function() {
+      step = 0;
+      document.getElementById('dt-tree').innerHTML = '';
+      document.getElementById('dt-reset-wrap').classList.add('dt-hidden');
+      buildDots();
+      showStep(0);
+    };
+  
+    buildDots();
+    showStep(0);
+  })();
+  </script>
