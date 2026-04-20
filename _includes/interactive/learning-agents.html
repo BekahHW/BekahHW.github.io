@@ -1,0 +1,961 @@
+<section class="learning-agents-root" aria-label="Interactive guide to working with AI agents">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+    .learning-agents-root {
+      --navy: #111B5E;
+      --navy-light: #172580;
+      --navy-soft: #7484E7;
+      --navy-lighter: #b5c7d6;
+      --paper: #f5f2e9;
+      --paper-2: #ece5d6;
+      --ink: #1a1714;
+      --ink-soft: #4a4339;
+      --gold: #cd9023;
+      --border: rgba(10, 23, 36, 0.12);
+      font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      margin: 2.5rem 0;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Interactive Card */
+    .la-card {
+      border: 1px solid var(--navy);
+      padding: 1.75rem;
+      margin: 2rem 0;
+      background: var(--paper);
+      position: relative;
+    }
+
+    .la-card-label {
+      position: absolute;
+      top: -10px;
+      left: 1rem;
+      background: var(--paper);
+      padding: 0 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    .la-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin: 0 0 0.35rem;
+      line-height: 1.25;
+      color: var(--ink);
+    }
+
+    .la-card-subtitle {
+      font-size: 0.92rem;
+      line-height: 1.5;
+      color: var(--ink-soft);
+      margin: 0 0 1.25rem;
+      font-style: italic;
+    }
+
+    /* Section Headings */
+    .la-section {
+      margin: 3rem 0 1.5rem;
+    }
+
+
+    .la-section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.015em;
+      margin: 0;
+      color: var(--ink);
+    }
+
+    /* Brief Builder */
+    .la-brief-buttons {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .la-btn {
+      background: transparent;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+      font-family: 'Lato', sans-serif;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      padding: 0.5rem 1rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .la-btn:hover {
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    .la-btn.active {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--paper);
+    }
+
+    .la-brief-text {
+      background: var(--paper-2);
+      padding: 1.25rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      border: 1px solid var(--ink);
+    }
+
+    .la-clarity {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .la-clarity-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .la-clarity-bars {
+      display: flex;
+      gap: 3px;
+    }
+
+    .la-clarity-bar {
+      width: 22px;
+      height: 6px;
+      border: 1px solid var(--ink);
+      transition: background 0.3s ease;
+    }
+
+    .la-clarity-bar.filled {
+      background: var(--navy);
+    }
+
+    .la-clarity-bar.empty {
+      background: var(--paper-2);
+    }
+
+    .la-problems {
+      animation: fadeUp 0.4s ease both;
+    }
+
+    .la-problems-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 0.5rem;
+    }
+
+    .la-problems-list {
+      margin: 0;
+      padding-left: 1.2rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .la-problems-list li {
+      margin-bottom: 0.25rem;
+    }
+
+    .la-success {
+      padding: 1rem;
+      background: var(--navy-lighter);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      font-style: italic;
+      animation: fadeUp 0.4s ease both;
+    }
+
+    /* Trust Slider */
+    .la-slider-wrap {
+      margin-bottom: 1.5rem;
+    }
+
+    .la-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+      width: 100%;
+    }
+
+    .la-slider::-webkit-slider-runnable-track {
+      height: 2px;
+      background: var(--ink);
+    }
+
+    .la-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: var(--navy);
+      margin-top: -9px;
+      cursor: grab;
+      border: 2px solid var(--paper);
+    }
+
+    .la-slider::-moz-range-track {
+      height: 2px;
+      background: var(--ink);
+    }
+
+    .la-slider::-moz-range-thumb {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: var(--navy);
+      cursor: grab;
+      border: 2px solid var(--paper);
+    }
+
+    .la-slider-labels {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 1.5rem;
+    }
+
+    .la-trust-result {
+      padding: 1.25rem;
+      background: var(--paper-2);
+      border: 1px solid var(--ink);
+      transition: all 0.3s ease;
+    }
+
+    .la-trust-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .la-trust-desc {
+      font-size: 0.98rem;
+      line-height: 1.6;
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Pitfalls */
+    .la-pitfalls {
+      display: grid;
+      gap: 0.75rem;
+      margin: 2rem 0 2.5rem;
+    }
+
+    .la-pitfall {
+      border: 1px solid var(--ink);
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      background: var(--paper);
+      transition: all 0.2s ease;
+    }
+
+    .la-pitfall:hover {
+      transform: translateY(-2px);
+    }
+
+    .la-pitfall.open {
+      background: var(--paper-2);
+      cursor: default;
+    }
+
+    .la-pitfall-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .la-pitfall-icon {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--navy);
+      line-height: 1;
+      margin-top: -4px;
+    }
+
+    .la-pitfall-text {
+      flex: 1;
+    }
+
+    .la-pitfall-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .la-pitfall-teaser {
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--ink-soft);
+      font-style: italic;
+    }
+
+    .la-pitfall-body {
+      margin-top: 0.85rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--ink);
+      font-size: 0.98rem;
+      line-height: 1.65;
+      animation: fadeUp 0.4s ease both;
+    }
+
+    .la-pitfall-reveal {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: var(--navy);
+      text-transform: uppercase;
+      align-self: center;
+      font-weight: 500;
+    }
+
+    /* Loop Diagram */
+    .la-diagram {
+      background: var(--paper-2);
+      padding: 2rem;
+      border: 1px solid var(--ink);
+      margin: 2rem 0 2.5rem;
+    }
+
+    .la-diagram svg {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Checklist */
+    .la-checklist-progress {
+      margin-bottom: 1rem;
+    }
+
+    .la-progress-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .la-progress-bar {
+      height: 4px;
+      background: var(--paper-2);
+      border: 1px solid var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .la-progress-fill {
+      height: 100%;
+      background: var(--navy);
+      transition: width 0.3s ease;
+    }
+
+    .la-checklist-items {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .la-checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.65rem 0.5rem;
+      font-size: 0.98rem;
+      line-height: 1.4;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      user-select: none;
+    }
+
+    .la-checkbox-item:hover {
+      background: rgba(26, 23, 20, 0.04);
+    }
+
+    .la-checkbox {
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--paper);
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+      transition: all 0.15s ease;
+    }
+
+    .la-checkbox.checked {
+      background: var(--navy);
+    }
+
+    .la-checkbox-text {
+      transition: opacity 0.2s ease;
+    }
+
+    .la-checkbox-text.checked {
+      text-decoration: line-through;
+      opacity: 0.55;
+    }
+
+    .la-checklist-complete {
+      margin-top: 1.25rem;
+      padding: 1rem;
+      background: var(--navy-lighter);
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.5;
+      animation: fadeUp 0.4s ease both;
+    }
+
+    /* Divider */
+    .la-divider {
+      display: flex;
+      justify-content: center;
+      margin: 3rem 0;
+      gap: 0.6rem;
+    }
+
+    .la-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--ink);
+      opacity: 0.35;
+    }
+
+    @media (max-width: 768px) {
+      .la-card {
+        padding: 1.25rem;
+      }
+      
+      .la-section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+
+  <!-- Section 01: What the agent actually is -->
+  <div class="la-section">
+    <h2 class="la-section-title">What the agent actually is</h2>
+  </div>
+
+  <p style="font-size: 1.08rem; line-height: 1.7; margin-bottom: 1.5rem;">
+    An agent isn't a mind. It's a very well-read improviser. It has read a mountain of code and conversation, and it's making its best guess about what you want based on what you wrote and what's in the room.
+  </p>
+
+  <p style="font-size: 1.08rem; line-height: 1.7; margin-bottom: 1.5rem;">
+    That means two things matter more than anything else. What you tell it. And what's already in the project when you start.
+  </p>
+
+  <p style="font-size: 1.08rem; line-height: 1.7; margin-bottom: 2.5rem;">
+    Everything in this post is a variation on that theme.
+  </p>
+
+  <!-- Interactive: Brief Builder -->
+  <div class="la-card">
+    <div class="la-card-label">Try it</div>
+    <h3 class="la-card-title">What makes a brief strong?</h3>
+    <p class="la-card-subtitle">Click through three versions of the same request and watch the gaps disappear.</p>
+
+    <div class="la-brief-buttons">
+      <button class="la-btn active" data-brief="vague">Vague</button>
+      <button class="la-btn" data-brief="okay">Okay</button>
+      <button class="la-btn" data-brief="strong">Strong</button>
+    </div>
+
+    <div class="la-brief-text" id="brief-text">Build me a login page.</div>
+
+    <div class="la-clarity">
+      <span class="la-clarity-label">Clarity</span>
+      <div class="la-clarity-bars" id="clarity-bars"></div>
+    </div>
+
+    <div id="brief-feedback"></div>
+  </div>
+
+  <p style="font-size: 1.08rem; line-height: 1.7; margin-top: 2rem; margin-bottom: 1.5rem;">
+    The pattern isn't hard. Tell the agent what you're doing, where the work lives, what already exists that it should respect, and how you'll know it worked. That's the whole job.
+  </p>
+
+  <p style="font-size: 1.08rem; line-height: 1.7;">
+    To be honest, this is also the part that gets skipped most. The excitement of watching something appear on screen is strong. The discipline of briefing well is quieter.
+  </p>
+
+  <div class="la-divider">
+    <span class="la-dot"></span>
+    <span class="la-dot"></span>
+    <span class="la-dot"></span>
+  </div>
+
+  <!-- Section 02: How much to trust it -->
+  <div class="la-section">
+    <h2 class="la-section-title">How much to trust it</h2>
+  </div>
+
+  <p style="font-size: 1.08rem; line-height: 1.7; margin-bottom: 1.5rem;">
+    Trust is where most new builders go wrong, in both directions. Some people don't trust the agent at all and refuse to let it touch anything meaningful. Others trust it completely and wake up to a production incident.
+  </p>
+
+  <p style="font-size: 1.08rem; line-height: 1.7; margin-bottom: 2rem;">
+    The right answer depends on what's at stake. Move the slider.
+  </p>
+
+  <div class="la-card">
+    <div class="la-card-label">Calibrate</div>
+    <h3 class="la-card-title">Where's your trust dial right now?</h3>
+
+    <div class="la-slider-wrap">
+      <input type="range" class="la-slider" id="trust-slider" min="0" max="100" value="50" aria-label="Trust level">
+    </div>
+
+    <div class="la-slider-labels">
+      <span>Skeptical</span>
+      <span>Balanced</span>
+      <span>Blind trust</span>
+    </div>
+
+    <div class="la-trust-result">
+      <div class="la-trust-label" id="trust-label" style="color: #0a1724;">Appropriately cautious</div>
+      <div class="la-trust-desc" id="trust-desc">
+        You're reviewing what matters and letting the agent run on what doesn't. This is the zone. Stay here.
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size: 1.08rem; line-height: 1.7; margin-top: 2rem; margin-bottom: 1.5rem;">
+    Trust is situational. I trust an agent to scaffold a boring form. I don't trust it to handle payment logic without me reading every character. Neither of those positions is wrong. They're responses to different levels of risk.
+  </p>
+
+  <p style="font-size: 1.08rem; line-height: 1.7;">
+    The skill you're building is knowing which situation you're in.
+  </p>
+
+  <div class="la-divider">
+    <span class="la-dot"></span>
+    <span class="la-dot"></span>
+    <span class="la-dot"></span>
+  </div>
+
+  <!-- Section 03: Five ways it goes sideways -->
+  <div class="la-section">
+    <h2 class="la-section-title">Five ways it goes sideways</h2>
+  </div>
+
+  <p style="font-size: 1.08rem; line-height: 1.7; margin-bottom: 2rem;">
+    Every new builder I've coached has hit at least three of these. Click one. See if you recognize yourself.
+  </p>
+
+  <div class="la-pitfalls">
+    <div class="la-pitfall" data-pitfall="trust">
+      <div class="la-pitfall-content">
+        <span class="la-pitfall-icon">◐</span>
+        <div class="la-pitfall-text">
+          <div class="la-pitfall-title">Trusting the first answer</div>
+          <div class="la-pitfall-teaser">The agent sounds sure. That doesn't mean it's right.</div>
+          <div class="la-pitfall-body" style="display: none;">
+            Agents produce fluent, confident output. Fluency is not correctness. Read what it wrote. Run it. If it touches real data or real money, read it twice.
+          </div>
+        </div>
+        <span class="la-pitfall-reveal">Reveal</span>
+      </div>
+    </div>
+
+    <div class="la-pitfall" data-pitfall="scope">
+      <div class="la-pitfall-content">
+        <span class="la-pitfall-icon">◑</span>
+        <div class="la-pitfall-text">
+          <div class="la-pitfall-title">Scope creep mid-session</div>
+          <div class="la-pitfall-teaser">You asked for A. Now you're debating B, C, and a redesign of D.</div>
+          <div class="la-pitfall-body" style="display: none;">
+            When you drift, the agent drifts with you. Finish A, confirm A works, then open a new session for B. Fresh context beats tangled context every time.
+          </div>
+        </div>
+        <span class="la-pitfall-reveal">Reveal</span>
+      </div>
+    </div>
+
+    <div class="la-pitfall" data-pitfall="context">
+      <div class="la-pitfall-content">
+        <span class="la-pitfall-icon">◒</span>
+        <div class="la-pitfall-text">
+          <div class="la-pitfall-title">Assuming shared context</div>
+          <div class="la-pitfall-teaser">The agent doesn't know what you know.</div>
+          <div class="la-pitfall-body" style="display: none;">
+            It doesn't know your folder structure, your naming conventions, which files are old, or that the function you mentioned last week even exists. Show, don't assume.
+          </div>
+        </div>
+        <span class="la-pitfall-reveal">Reveal</span>
+      </div>
+    </div>
+
+    <div class="la-pitfall" data-pitfall="review">
+      <div class="la-pitfall-content">
+        <span class="la-pitfall-icon">◓</span>
+        <div class="la-pitfall-text">
+          <div class="la-pitfall-title">Shipping without reading</div>
+          <div class="la-pitfall-teaser">If you didn't read it, you didn't ship it. The agent did.</div>
+          <div class="la-pitfall-body" style="display: none;">
+            You are the accountable one. Not the tool. Read every file it changed, even if the change looks small. Especially if the change looks small.
+          </div>
+        </div>
+        <span class="la-pitfall-reveal">Reveal</span>
+      </div>
+    </div>
+
+    <div class="la-pitfall" data-pitfall="loop">
+      <div class="la-pitfall-content">
+        <span class="la-pitfall-icon">●</span>
+        <div class="la-pitfall-text">
+          <div class="la-pitfall-title">The infinite fix loop</div>
+          <div class="la-pitfall-teaser">Every fix breaks something new.</div>
+          <div class="la-pitfall-body" style="display: none;">
+            If you've been going back and forth more than three times on the same bug, stop. Something is structurally wrong, and more prompting won't find it. Step back, look at the code yourself, or start a fresh session with a clearer brief.
+          </div>
+        </div>
+        <span class="la-pitfall-reveal">Reveal</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="la-divider">
+    <span class="la-dot"></span>
+    <span class="la-dot"></span>
+    <span class="la-dot"></span>
+  </div>
+
+  <!-- Section 04: The loop -->
+  <div class="la-section">
+    <h2 class="la-section-title">The loop you're actually in</h2>
+  </div>
+
+  <p style="font-size: 1.08rem; line-height: 1.7; margin-bottom: 2rem;">
+    The mental model most new builders start with is one-shot. I ask, it delivers, we move on. The reality is iterative. Here's what good iteration actually looks like.
+  </p>
+
+  <div class="la-diagram">
+    <svg viewBox="0 0 600 280">
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill="#1a1714" />
+        </marker>
+      </defs>
+
+      <!-- Nodes -->
+      <g>
+        <circle cx="90" cy="60" r="32" fill="#f5f2e9" stroke="#1a1714" stroke-width="1.5" />
+        <text x="90" y="64" text-anchor="middle" font-family="Playfair Display, serif" font-size="13" font-weight="600" fill="#1a1714">Intent</text>
+        <text x="90" y="115" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1" fill="#4a4339">WHAT YOU WANT</text>
+      </g>
+      <g>
+        <circle cx="300" cy="60" r="32" fill="#f5f2e9" stroke="#1a1714" stroke-width="1.5" />
+        <text x="300" y="64" text-anchor="middle" font-family="Playfair Display, serif" font-size="13" font-weight="600" fill="#1a1714">Context</text>
+        <text x="300" y="115" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1" fill="#4a4339">WHAT YOU SHARE</text>
+      </g>
+      <g>
+        <circle cx="510" cy="60" r="32" fill="#f5f2e9" stroke="#1a1714" stroke-width="1.5" />
+        <text x="510" y="64" text-anchor="middle" font-family="Playfair Display, serif" font-size="13" font-weight="600" fill="#1a1714">Output</text>
+        <text x="510" y="115" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1" fill="#4a4339">WHAT IT MAKES</text>
+      </g>
+      <g>
+        <circle cx="510" cy="210" r="32" fill="#f5f2e9" stroke="#1a1714" stroke-width="1.5" />
+        <text x="510" y="214" text-anchor="middle" font-family="Playfair Display, serif" font-size="13" font-weight="600" fill="#1a1714">Review</text>
+        <text x="510" y="265" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1" fill="#4a4339">WHAT YOU CATCH</text>
+      </g>
+      <g>
+        <circle cx="300" cy="210" r="32" fill="#f5f2e9" stroke="#1a1714" stroke-width="1.5" />
+        <text x="300" y="214" text-anchor="middle" font-family="Playfair Display, serif" font-size="13" font-weight="600" fill="#1a1714">Adjust</text>
+        <text x="300" y="265" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1" fill="#4a4339">WHAT YOU CORRECT</text>
+      </g>
+      <g>
+        <circle cx="90" cy="210" r="32" fill="#f5f2e9" stroke="#1a1714" stroke-width="1.5" />
+        <text x="90" y="214" text-anchor="middle" font-family="Playfair Display, serif" font-size="13" font-weight="600" fill="#1a1714">Ship</text>
+        <text x="90" y="265" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1" fill="#4a4339">WHEN IT'S READY</text>
+      </g>
+
+      <!-- Arrows -->
+      <line x1="122" y1="60" x2="268" y2="60" stroke="#1a1714" stroke-width="1.2" marker-end="url(#arrow)" />
+      <line x1="332" y1="60" x2="478" y2="60" stroke="#1a1714" stroke-width="1.2" marker-end="url(#arrow)" />
+      <line x1="510" y1="92" x2="510" y2="178" stroke="#1a1714" stroke-width="1.2" marker-end="url(#arrow)" />
+      <line x1="478" y1="210" x2="332" y2="210" stroke="#1a1714" stroke-width="1.2" marker-end="url(#arrow)" />
+      <line x1="268" y1="210" x2="122" y2="210" stroke="#1a1714" stroke-width="1.2" marker-end="url(#arrow)" />
+
+      <!-- Loop back - dashed -->
+      <path d="M 300 178 Q 300 135 300 92" stroke="#0a1724" stroke-width="1.5" fill="none" stroke-dasharray="5,4" marker-end="url(#arrow)" />
+      <text x="315" y="140" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1" fill="#0a1724" font-weight="600">LOOP BACK</text>
+    </svg>
+  </div>
+
+  <p style="font-size: 1.08rem; line-height: 1.7; margin-bottom: 1.5rem;">
+    The blue path is where most of the real work happens. Most new builders try to collapse it, hoping the first output is the last one. It almost never is.
+  </p>
+
+  <p style="font-size: 1.08rem; line-height: 1.7;">
+    Plan for two or three trips around the loop. Budget for it. Accept it as part of the job instead of as a failure mode.
+  </p>
+
+  <div class="la-divider">
+    <span class="la-dot"></span>
+    <span class="la-dot"></span>
+    <span class="la-dot"></span>
+  </div>
+
+  <!-- Section 05: Pre-ship checklist -->
+  <div class="la-section">
+    <h2 class="la-section-title">The pre-ship checklist</h2>
+  </div>
+
+  <p style="font-size: 1.08rem; line-height: 1.7; margin-bottom: 2rem;">
+    Before you push a change an agent made, run through this. Check each one as you go.
+  </p>
+
+  <div class="la-card">
+    <div class="la-card-label">Checklist</div>
+    <h3 class="la-card-title">Is this ready?</h3>
+
+    <div class="la-checklist-progress">
+      <div class="la-progress-header">
+        <span>Confidence</span>
+        <span id="checklist-count">0 / 7</span>
+      </div>
+      <div class="la-progress-bar">
+        <div class="la-progress-fill" id="checklist-progress" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <div class="la-checklist-items" id="checklist-items">
+      <div class="la-checkbox-item" data-id="c1">
+        <span class="la-checkbox"></span>
+        <span class="la-checkbox-text">I can describe what I'm building in one sentence</span>
+      </div>
+      <div class="la-checkbox-item" data-id="c2">
+        <span class="la-checkbox"></span>
+        <span class="la-checkbox-text">I know which files the agent can and cannot touch</span>
+      </div>
+      <div class="la-checkbox-item" data-id="c3">
+        <span class="la-checkbox"></span>
+        <span class="la-checkbox-text">I have a way to undo what the agent does (git, backups)</span>
+      </div>
+      <div class="la-checkbox-item" data-id="c4">
+        <span class="la-checkbox"></span>
+        <span class="la-checkbox-text">I read the code the agent produced before running it</span>
+      </div>
+      <div class="la-checkbox-item" data-id="c5">
+        <span class="la-checkbox"></span>
+        <span class="la-checkbox-text">I tested the happy path</span>
+      </div>
+      <div class="la-checkbox-item" data-id="c6">
+        <span class="la-checkbox"></span>
+        <span class="la-checkbox-text">I tested what happens when things go wrong</span>
+      </div>
+      <div class="la-checkbox-item" data-id="c7">
+        <span class="la-checkbox"></span>
+        <span class="la-checkbox-text">I can explain what changed, even at a high level</span>
+      </div>
+    </div>
+
+    <div id="checklist-complete" style="display: none;" class="la-checklist-complete">
+      You're ready. Go ship it.
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    'use strict';
+
+    // Brief Builder
+    const briefs = {
+      vague: {
+        text: "Build me a login page.",
+        score: 1,
+        problems: [
+          "No framework specified",
+          "No styling direction",
+          "No fields listed",
+          "No success criteria"
+        ]
+      },
+      okay: {
+        text: "Build me a React login page with email and password, styled with Tailwind, that shows an error message when login fails.",
+        score: 3,
+        problems: [
+          "Missing validation rules",
+          "No design reference",
+          "Unclear where the auth call goes"
+        ]
+      },
+      strong: {
+        text: "Build a React login component using Tailwind. Two fields, email and password. Validate email format client-side before submit. On submit, call the function signInUser(email, password) which I've already written in /src/auth.js. Show a red error banner above the form if signInUser throws. Match the visual style of the LandingHero component already in /src/components.",
+        score: 5,
+        problems: []
+      }
+    };
+
+    let currentBrief = 'vague';
+
+    function updateBrief(brief) {
+      currentBrief = brief;
+      
+      // Update buttons
+      document.querySelectorAll('.la-btn[data-brief]').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.brief === brief);
+      });
+
+      // Update text
+      document.getElementById('brief-text').textContent = briefs[brief].text;
+
+      // Update clarity bars
+      const barsContainer = document.getElementById('clarity-bars');
+      barsContainer.innerHTML = '';
+      for (let i = 1; i <= 5; i++) {
+        const bar = document.createElement('span');
+        bar.className = 'la-clarity-bar ' + (i <= briefs[brief].score ? 'filled' : 'empty');
+        barsContainer.appendChild(bar);
+      }
+
+      // Update feedback
+      const feedbackContainer = document.getElementById('brief-feedback');
+      if (briefs[brief].problems.length > 0) {
+        feedbackContainer.innerHTML = `
+          <div class="la-problems">
+            <div class="la-problems-title">What the agent will have to guess</div>
+            <ul class="la-problems-list">
+              ${briefs[brief].problems.map(p => `<li>${p}</li>`).join('')}
+            </ul>
+          </div>
+        `;
+      } else {
+        feedbackContainer.innerHTML = `
+          <div class="la-success">
+            Nothing left to guess. The agent can just work.
+          </div>
+        `;
+      }
+    }
+
+    document.querySelectorAll('.la-btn[data-brief]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        updateBrief(this.dataset.brief);
+      });
+    });
+
+    // Initialize brief
+    updateBrief('vague');
+
+    // Trust Slider
+    const trustSlider = document.getElementById('trust-slider');
+    const trustLabel = document.getElementById('trust-label');
+    const trustDesc = document.getElementById('trust-desc');
+
+    const trustLevels = [
+      { max: 25, label: "Over-skeptical", color: "#1a1714", desc: "You're reviewing every line and shipping nothing. Your caution is admirable and also paralyzing. Let the agent handle the safe stuff." },
+      { max: 55, label: "Appropriately cautious", color: "#0a1724", desc: "You're reviewing what matters and letting the agent run on what doesn't. This is the zone. Stay here." },
+      { max: 80, label: "Getting risky", color: "#b4621a", desc: "You're starting to skim. If the next change touches auth, payments, or user data, go back to reading." },
+      { max: 100, label: "Blind trust territory", color: "#a62828", desc: "You're auto-accepting changes you haven't read. This ends in a post-mortem. Pull back." }
+    ];
+
+    function updateTrust(value) {
+      const level = trustLevels.find(l => value < l.max) || trustLevels[trustLevels.length - 1];
+      trustLabel.textContent = level.label;
+      trustLabel.style.color = level.color;
+      trustDesc.textContent = level.desc;
+    }
+
+    trustSlider.addEventListener('input', function() {
+      updateTrust(parseInt(this.value));
+    });
+
+    // Initialize trust
+    updateTrust(50);
+
+    // Pitfalls
+    document.querySelectorAll('.la-pitfall').forEach(pitfall => {
+      pitfall.addEventListener('click', function() {
+        if (this.classList.contains('open')) return;
+        
+        this.classList.add('open');
+        const body = this.querySelector('.la-pitfall-body');
+        const reveal = this.querySelector('.la-pitfall-reveal');
+        
+        body.style.display = 'block';
+        reveal.style.display = 'none';
+      });
+    });
+
+    // Checklist
+    const checklistItems = document.querySelectorAll('.la-checkbox-item');
+    const checklistProgress = document.getElementById('checklist-progress');
+    const checklistCount = document.getElementById('checklist-count');
+    const checklistComplete = document.getElementById('checklist-complete');
+    let checkedCount = 0;
+
+    checklistItems.forEach(item => {
+      item.addEventListener('click', function() {
+        const checkbox = this.querySelector('.la-checkbox');
+        const text = this.querySelector('.la-checkbox-text');
+        const isChecked = checkbox.classList.contains('checked');
+        
+        if (isChecked) {
+          checkbox.classList.remove('checked');
+          checkbox.textContent = '';
+          text.classList.remove('checked');
+          checkedCount--;
+        } else {
+          checkbox.classList.add('checked');
+          checkbox.textContent = '✓';
+          text.classList.add('checked');
+          checkedCount++;
+        }
+        
+        // Update progress
+        const progress = (checkedCount / checklistItems.length) * 100;
+        checklistProgress.style.width = progress + '%';
+        checklistCount.textContent = checkedCount + ' / ' + checklistItems.length;
+        
+        // Show completion message
+        if (checkedCount === checklistItems.length) {
+          checklistComplete.style.display = 'block';
+        } else {
+          checklistComplete.style.display = 'none';
+        }
+      });
+    });
+  })();
+  </script>
+</section>

@@ -1,6 +1,6 @@
 .claude/
 .bundle/
-vendor/bundle/vendor/bundle/
+vendor/bundle
 .jekyll-cache/
 _site/
 .sass-cache/
