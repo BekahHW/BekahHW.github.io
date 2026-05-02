@@ -86,6 +86,218 @@ featured_image: /assets/images/pages/BHW_speaker.jpeg
   </div>
 </section>
 
+<!-- Creative Writing Portfolio Section -->
+<section class="writing-portfolio-section">
+  <a href="https://www.siblingswrite.com/" target="_blank" rel="noopener noreferrer" class="writing-portfolio-card">
+    <div class="wp-stars"></div>
+    <div class="wp-shooting-star"></div>
+    <div class="wp-content">
+      <span class="wp-badge">Creative Writing &amp; Publishing</span>
+      <h3 class="wp-title">Siblings Write</h3>
+      <p class="wp-desc">A collaborative creative writing space I share with my brothers — where imagination, whimsy, and wonder take the page.</p>
+      <span class="wp-link">Explore our world →</span>
+    </div>
+  </a>
+</section>
+
+<script>
+(function() {
+  var container = document.querySelector('.wp-stars');
+  if (!container) return;
+  for (var i = 0; i < 55; i++) {
+    var star = document.createElement('span');
+    star.className = 'wp-star';
+    star.style.left = (Math.random() * 100) + '%';
+    star.style.top = (Math.random() * 100) + '%';
+    var size = (0.8 + Math.random() * 2.4) + 'px';
+    star.style.width = size;
+    star.style.height = size;
+    star.style.animationDelay = (Math.random() * 4) + 's';
+    star.style.animationDuration = (1.5 + Math.random() * 2.5) + 's';
+    container.appendChild(star);
+  }
+})();
+</script>
+
+<style>
+.writing-portfolio-section {
+  margin: 0 0 30px;
+}
+
+.writing-portfolio-card {
+  display: block;
+  position: relative;
+  border-radius: 16px;
+  padding: 44px 40px 38px;
+  overflow: hidden;
+  text-decoration: none;
+  min-height: 220px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f9f4ec 0%, #ede4d0 100%);
+  border: 1px solid #d4c4a0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.5s ease, border-color 0.5s ease;
+}
+
+/* Night-sky gradient overlay */
+.writing-portfolio-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 25% 55%, #1e0a42 0%, #0a0f2e 45%, #0d1a3a 72%, #060d28 100%);
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  z-index: 0;
+}
+
+.writing-portfolio-card:hover {
+  box-shadow: 0 8px 40px rgba(80, 40, 160, 0.45);
+  border-color: rgba(120, 80, 200, 0.5);
+}
+
+.writing-portfolio-card:hover::before {
+  opacity: 1;
+}
+
+/* Stars */
+.wp-stars {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.wp-star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.writing-portfolio-card:hover .wp-star {
+  animation-name: wp-twinkle;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /* animation-delay and animation-duration are set inline per star by JS */
+}
+
+@keyframes wp-twinkle {
+  0%   { opacity: 0;   transform: scale(0.7); }
+  25%  { opacity: 0.95; transform: scale(1.3); }
+  55%  { opacity: 0.4;  transform: scale(0.9); }
+  80%  { opacity: 1.0;  transform: scale(1.2); }
+  100% { opacity: 0;   transform: scale(0.7); }
+}
+
+/* Shooting star */
+.wp-shooting-star {
+  position: absolute;
+  top: 10%;
+  left: -140px;
+  width: 110px;
+  height: 2px;
+  background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.15) 25%, rgba(255,255,255,0.85) 75%, white 100%);
+  border-radius: 100px;
+  transform: rotate(20deg);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.writing-portfolio-card:hover .wp-shooting-star {
+  animation: wp-shoot 3.8s ease-in-out 0.35s infinite;
+}
+
+@keyframes wp-shoot {
+  0%   { opacity: 0;  transform: rotate(20deg) translateX(0); }
+  6%   { opacity: 1; }
+  38%  { opacity: 0;  transform: rotate(20deg) translateX(1400px); }
+  100% { opacity: 0;  transform: rotate(20deg) translateX(1400px); }
+}
+
+/* Content */
+.wp-content {
+  position: relative;
+  z-index: 3;
+}
+
+.wp-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8a7a5a;
+  margin-bottom: 14px;
+  transition: color 0.5s ease;
+}
+
+.writing-portfolio-card:hover .wp-badge {
+  color: rgba(180, 160, 255, 0.85);
+}
+
+.wp-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #0a1724;
+  margin: 0 0 16px;
+  line-height: 1.2;
+  transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+.writing-portfolio-card:hover .wp-title {
+  color: #fff;
+  text-shadow:
+    0 0 14px rgba(210, 180, 255, 0.95),
+    0 0 34px rgba(160, 110, 255, 0.65),
+    0 0 60px rgba(100, 60, 220, 0.4);
+}
+
+.wp-desc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #5a4f40;
+  margin: 0 0 28px;
+  max-width: 520px;
+  transition: color 0.5s ease;
+}
+
+.writing-portfolio-card:hover .wp-desc {
+  color: rgba(215, 205, 240, 0.9);
+}
+
+.wp-link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b4fa0;
+  background: rgba(100, 60, 180, 0.08);
+  padding: 9px 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(100, 60, 180, 0.22);
+  transition: color 0.5s ease, background 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+  letter-spacing: 0.5px;
+}
+
+.writing-portfolio-card:hover .wp-link {
+  color: #e8d8ff;
+  background: rgba(140, 90, 255, 0.25);
+  border-color: rgba(180, 140, 255, 0.55);
+  box-shadow: 0 0 18px rgba(140, 90, 255, 0.45), inset 0 0 8px rgba(140, 90, 255, 0.12);
+}
+
+@media (max-width: 480px) {
+  .writing-portfolio-card {
+    padding: 30px 20px;
+  }
+  .wp-title {
+    font-size: 24px;
+  }
+}
+</style>
+
 <!-- CTA Section -->
 <div class="contact-cta">
   <h3>Let's Work Together!</h3>
