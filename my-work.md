@@ -202,6 +202,8 @@ featured_image: /assets/images/pages/BHW_speaker.jpeg
   <p>Build scalable content workflows with clear success metrics, automation, and developer-first feedback loops.</p>
 </div>
 
+</div><!-- /.icon-cards-row -->
+</div><!-- /.dev-education-section-row -->
 
 <style>
   .dev-education-section-row {
