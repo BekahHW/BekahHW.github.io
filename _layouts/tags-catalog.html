@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="page-template page-template--wide tags-catalog-page">
+  <header class="page-header" style="position:relative;">
+    {% if page.marginalia %}
+    <span class="note" style="top:{{ page.marginalia_top | default: '48px' }};" aria-hidden="true">{{ page.marginalia }}</span>
+    {% endif %}
+    <p class="eyebrow">Course catalog</p>
+    <h1>{{ page.title }}</h1>
+    <p class="catalog-lede">{{ page.description }}</p>
+  </header>
+
+  <div class="page-content page-content-wide">
+    {{ content }}
+  </div>
+</article>
+
+<script defer src="{{ site.baseurl }}/assets/js/tags-catalog.js"></script>
