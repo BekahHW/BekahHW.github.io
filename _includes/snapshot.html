@@ -1,0 +1,15 @@
+{% assign snap_src = include.src | default: page.snapshot.src %}
+{% assign snap_alt = include.alt | default: page.snapshot.alt %}
+{% assign snap_caption = include.caption | default: page.snapshot.caption %}
+{% assign snap_side = include.side | default: page.snapshot.side | default: 'right' %}
+
+<figure class="snapshot{% if snap_side == 'left' %} snapshot--left{% endif %}">
+  {% if snap_src %}
+  <img src="{{ site.baseurl }}{{ snap_src }}" alt="{{ snap_alt | escape }}" width="290" height="363" loading="lazy">
+  {% else %}
+  <div class="snapshot-placeholder" role="img" aria-label="{{ snap_alt | default: 'Photo placeholder' | escape }}"></div>
+  {% endif %}
+  {% if snap_caption %}
+  <figcaption>{{ snap_caption }}</figcaption>
+  {% endif %}
+</figure>

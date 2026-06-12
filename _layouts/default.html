@@ -6,22 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Performance optimizations -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    {% if site.cover_image %}
-    <link rel="preload" href="{{ site.baseurl }}/assets/images/{{ site.cover_image }}" as="image">
-    {% endif %}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
 
-    {% if site.plugins_dir contains 'jekyll-seo-tag' %} {% include head-seo.html
-    %} {% else %}
+    {% if site.plugins_dir contains 'jekyll-seo-tag' %}
+    {% include head-seo.html %}
+    {% else %}
     <title>
-      {% if page.title %}{{ page.title | escape }}{% else %}{{ site.name |
-      escape }}{% endif %}
+      {% if page.title %}{{ page.title | escape }} | {{ site.title | default: site.name | escape }}{% else %}{{ site.title | default: site.name | escape }}{% endif %}
     </title>
     <meta
       name="description"
-      content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}"
+      content="{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}"
     />
     <link
       rel="canonical"
@@ -29,112 +26,33 @@
     />
     {% endif %}
 
-    <!-- Custom Open Graph and Twitter Card images -->
     {% include custom-og-tags.html %}
-
-    <!-- AI and SEO optimizations -->
     {% include ai-meta.html %}
     {% include structured-data.html %}
 
-    <!-- Site Favicon -->
     <link
       rel="shortcut icon"
       href="{{ site.url }}/{{ site.baseurl }}{{ site.favicon }}"
       type="image/png"
     />
 
-    <!-- Font Embed Code - Optimized loading -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700%7CPlayfair+Display:400,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- CSS Styles - Optimized loading -->
     <link rel="preload" href="{{ site.baseurl }}/assets/css/style.css" as="style">
     <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet" />
+    {{ page.extra_head }}
   </head>
 
-  <body
-    class="{% if paginator.page > 1 %}paged {% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}"
-  >
-    <div id="page" class="site">
-      {% if page.url == "/" %} {% include header.html %}
-      <div class="cover hero">
-        {% if site.cover_image %}
-        <div
-          class="cover-bg"
-          style="background-image: url({{ site.baseurl }}/assets/images/{{ site.cover_image }})"
-          loading="eager"
-        ></div>
-        {% endif %}
-        <div class="cover-content">
-          <div class="inner">
-            <h2 class="hero-title">{{ site.greetings }}</h2>
-            <!-- <p class="hero-text">{{ site.description }}</p> -->
-          <div class="hero-cta">
-  {{ site.hero_description_html }}
-</div>
-            <a href="#" class="arrow-down">
-              <span class="screen-reader-text">Scroll Down</span>
-            </a>
-            <!-- <a href="{{ site.mailchimp_url }}" class="subscribe button"
-              >Subscribe
-              <span aria-hidden="true">
-                <span class="line left"></span>
-                <span class="line top"></span>
-                <span class="line right"></span>
-                <span class="line bottom"></span>
-              </span>
-            </a> -->
-          </div>
-          <!-- .inner -->
-        </div>
-        <!-- .cover-content -->
-      </div>
-      <!-- .cover -->
-
-      {% else %} {% include header.html %} {% if paginator.page > 1 and
-      page.class == home-template %}
-      <div class="cover hero">
-        {% if site.cover_image %}
-        <div
-          class="cover-bg"
-          style="background-image: url({{ site.baseurl }}/assets/images/{{ site.cover_image }})"
-          loading="eager"
-        ></div>
-        {% endif %}
-
-        <div class="cover-content">
-          <div class="inner">
-            <h2 class="hero-title">{{ site.greetings }}</h2>
-            <a href="{{ site.mailchimp_url }}" class="subscribe button"
-              >Subscribe
-              <span aria-hidden="true">
-                <span class="line left"></span>
-                <span class="line top"></span>
-                <span class="line right"></span>
-                <span class="line bottom"></span>
-              </span>
-            </a>
-          </div>
-          <!-- .inner -->
-        </div>
-        <!-- .cover-content -->
-      </div>
-      <!-- .cover -->
-      {% endif %} {% endif %}
-     
-      
-      {{ content }} {% if paginator.total_posts >
-      site.paginate %} {% if page.class == 'tag-template' %} {% include
-      tag-pagination.html %} {% endif %} {% endif %} {% include sidebar.html %}
+  <body class="{% if page.body_class %}{{ page.body_class }}{% elsif paginator.page > 1 %}paged{% else %}home-template{% endif %}">
+    <div class="page{% if page.narrow %} page--narrow{% endif %}">
+      {% unless page.hide_nav %}{% include nav.html %}{% endunless %}
+      {{ content }}
       {% include footer.html %}
     </div>
-    <!-- .site -->
 
-    <!-- Javascript Assets - Deferred loading -->
+    <script defer src="{{ site.baseurl }}/assets/js/looseleaf.js"></script>
+    {% if page.layout == 'two-column' or page.layout == 'post' %}
     <script defer src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js"></script>
     <script defer src="{{ site.baseurl }}/assets/js/plugins.js"></script>
     <script defer src="{{ site.baseurl }}/assets/js/custom.js"></script>
+    {% endif %}
   </body>
 </html>

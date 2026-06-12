@@ -1,0 +1,8 @@
+{% assign post_slug = page.url | remove: '/' %}
+{% assign course_code = site.data.ai_foundations.slug_codes[post_slug] %}
+{% if course_code %}
+<aside class="ai-foundations-banner">
+  <span class="course-code">{{ course_code }}</span>
+  Part of the <a href="{{ site.baseurl }}/ai-foundations/">AI Foundations reading path</a>
+</aside>
+{% endif %}

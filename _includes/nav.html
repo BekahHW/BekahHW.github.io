@@ -1,0 +1,11 @@
+<nav class="site-nav" aria-label="Main">
+  <a class="wordmark" href="{{ site.baseurl }}/">BekahHW</a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu" type="button">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    {% for link in site.navigation %}
+    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
+    {% endfor %}
+  </div>
+</nav>

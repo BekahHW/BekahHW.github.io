@@ -1,7 +1,13 @@
 ---
 layout: page
 title: Consulting
-featured_image: /assets/images/pages/consulting.svg
+wide: true
+marginalia: bring good questions
+snapshot:
+  src: /assets/images/pages/consulting.svg
+  alt: Consulting workshop illustration
+  caption: office hours, basically
+  side: left
 ---
 
 <!-- Intro Section -->

@@ -1,0 +1,47 @@
+slug_codes:
+  AI-Vocabulary-101: "AI 101"
+  AI-102: "AI 102"
+  how-ai-tools-communicate: "AI 201"
+  ai-security-101: "AI 202"
+  learning-to-work-with-agents: "AI 301"
+  ai-in-the-ai-development-loop: "AI 302"
+
+units:
+  - name: "Unit one · The vocabulary"
+    note: "start here if all of this is new"
+    note_top: "18px"
+    readings:
+      - code: "AI 101"
+        slug: "AI-Vocabulary-101"
+        description: "The words you need before anything else makes sense. Prompts, models, model families, and the difference between them, explained for smart people who haven't had time to keep up."
+        meta: "for the AI-curious"
+      - code: "AI 102"
+        slug: "AI-102"
+        description: "You've got the words. This is what to do with them. How the pieces fit together into systems you can actually reason about."
+        meta: "builds on AI 101"
+
+  - name: "Unit two · How the pieces connect"
+    note: "my favorite to write"
+    note_top: "18px"
+    readings:
+      - code: "AI 201"
+        slug: "how-ai-tools-communicate"
+        description: "MCP, tool calls, and the plumbing between AI systems. The connective tissue nobody explains in plain language."
+        meta: "light technical"
+      - code: "AI 202"
+        slug: "ai-security-101"
+        description: "A guide to AI security 101. What can go wrong when agents act on your behalf, and how the people whose job is alignment think about keeping them in line."
+        meta: "required reading before you automate anything"
+
+  - name: "Unit three · Working with agents"
+    note: "where it all comes together"
+    note_top: "18px"
+    readings:
+      - code: "AI 301"
+        slug: "learning-to-work-with-agents"
+        description: "Creativity and expertise are no longer bottlenecked by technical skill. What that means for how you build, and how you think about building."
+        meta: "the payoff"
+      - code: "AI 302"
+        slug: "ai-in-the-ai-development-loop"
+        description: "We crossed a recursive threshold and the internet yawned. Extra credit for readers who want to think about where this is heading."
+        meta: "extra credit"

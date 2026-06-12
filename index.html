@@ -1,51 +1,46 @@
 ---
-layout: default
-title: Home
+layout: home
+title: Developer Experience, AI, and Community
 ---
 
-<!-- Posts Index -->
-<main class="site-main">
-  <div class="site-content">
-    <div class="post-list inner">
-      {% for post in paginator.posts %}
-      {% include postbox.html %}
-      {% endfor %}
-    </div><!-- .post-list -->
-
-    <!-- Pagination-->
-    {% include pagination.html %}
-
-    <!-- Browse Topics Link -->
-    <div class="search-browse-link">
-      <p>Can't find what you're looking for? <a href="{{ site.baseurl }}/tags/">Search or Browse by Topic</a></p>
+<section class="hero">
+  <span class="note" style="top:96px;" aria-hidden="true">ten years of essays prepared me for this</span>
+  <div>
+    <p class="eyebrow">Developer experience · AI · Community</p>
+    <h1 id="headline">I spent ten years teaching college English. Now I teach developers, search engines, and AI systems <span class="pen">to understand each other.</span></h1>
+    <button class="draft-toggle" id="redraft" type="button" aria-label="Show an alternate headline draft">see another draft of this headline</button>
+    <p class="sub" id="subline">Writing about developer experience, AI tooling, and the communities that make tech worth working in.</p>
+    <div class="cta-row">
+      <a class="btn" href="{{ site.baseurl }}/ai-foundations/">Start with AI Foundations →</a>
+      {% assign latest_post = site.posts.first %}
+      {% if latest_post %}
+      <a class="btn ghost" href="{{ latest_post.url | absolute_url }}">Read the latest</a>
+      {% endif %}
     </div>
+  </div>
+  {% include snapshot.html src="/assets/images/pages/THAT_keynote.jpg" alt="Bekah speaking on stage at THAT Conference" caption="hi, that's me" side="right" %}
+</section>
 
-  </div><!-- .site-content -->
-</main><!-- .site-main -->
+<div class="currently" style="position:relative;">
+  <span class="note" style="top:14px;" aria-hidden="true">the "now" line</span>
+  <div><span class="label">Currently</span> {{ site.data.currently.currently }}</div>
+  <div><span class="label">Writing about</span> {{ site.data.currently.writing_about }}</div>
+  <div><span class="label">Building</span>
+    {% for item in site.data.currently.building %}
+    {% if forloop.last and forloop.length > 1 %} · {% endif %}
+    <a href="{{ item.url }}">{{ item.text }}</a>{% unless forloop.last %} · {% endunless %}
+    {% endfor %}
+  </div>
+</div>
 
-<style>
-.search-browse-link {
-  text-align: center;
-  padding: 2rem 0 1rem;
-  margin-top: 2rem;
-  border-top: 1px solid #e0e0e0;
-}
+<p class="unit-head">Latest from the blog</p>
 
-.search-browse-link p {
-  color: #666;
-  font-size: 1rem;
-  margin: 0;
-}
+{% for post in paginator.posts %}
+{% include post-card.html post=post first=forloop.first %}
+{% endfor %}
 
-.search-browse-link a {
-  color: #333;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.2s;
-}
+{% include pagination.html %}
 
-.search-browse-link a:hover {
-  color: #000;
-  text-decoration: underline;
-}
-</style>
+<div class="search-browse-link">
+  <p>Can't find what you're looking for? <a href="{{ site.baseurl }}/tags/">Search or Browse by Topic</a></p>
+</div>

@@ -1,15 +1,22 @@
 ---
 layout: page
 title: About
-featured_image: /assets/images/pages/about.png
+marginalia: same job, different classroom
+marginalia_top: 48px
+snapshot:
+  alt: Bekah, candid photo placeholder
+  caption: not pictured, the screenplay
+  side: left
 ---
 
-I graduated from the Flatiron School Software Engineering program in May of 2019, and since then, I’ve been a front-end and React Native development and Team & Community Building consultant, created the developer community  <a href="https://virtualcoffee.io/">Virtual Coffee</a>, and spent a lot of time educating, listening, and growing with the tech community. I’m currently a Developer Experience Lead for AI Platforms.
+Before I taught developers, I taught college freshmen how to write essays. For ten years. So when people ask how an English professor ends up leading developer experience for an AI platform, the honest answer is that it's the same job. You figure out what someone doesn't understand yet, and you build them a path to understanding it.
 
-Prior to tech, I spent 10 years teaching college English, three years organizing events and community, and I fully embrace being a writer of many genres: code, short fiction, non-fiction, screenplay, documentation, curriculum, and, of course, blog posts!
+I graduated from Flatiron School's software engineering program in 2019 and went looking for the community I needed as a new developer. When I couldn't find it, I built it. [Virtual Coffee](https://virtualcoffee.io/) started as a Zoom call in 2020 and grew into a community of more than a thousand developers who show up for each other every week.
 
->To create is to bring light to the unknown.<cite>Albert Camus</cite>
+Since then I've worked across developer relations and developer experience, including roles at Deepgram, OpenSauced, and Continue. I've built open source courses with hundreds of students around the world, given keynotes, hosted more events than I can count, and written documentation, curriculum, blog posts, short fiction, and one screenplay I will neither confirm nor deny.
 
-As a hobby, I like to lift heavy things and see how high I can jump.
+These days I'm the Developer Experience Lead for AI Platform at Paper Compute, where I spend my time making AI tooling legible. To developers, to search engines, and to AI systems themselves. I think of it as teaching, because it is.
 
-_Thanks for reading!_
+Outside of work, I mom hard x4, write fiction with my brothers at [Siblings Write](https://siblingswrite.com/), lift heavy things, and see how high I can jump.
+
+If you want to work together, talk shop, or tell me what confused you in one of my posts, I'd genuinely love to hear it. [Say hi.](/contact/)
