@@ -1,0 +1,8 @@
+<article class="post-card{% if include.first %} post-card--first{% endif %}"{% if include.first %} style="position:relative;"{% endif %}>
+  {% if include.first %}
+  <span class="note" style="top:24px;" aria-hidden="true">newest</span>
+  {% endif %}
+  <p class="code">{{ include.post.date | date: "%B %-d, %Y" }}</p>
+  <h2><a href="{{ include.post.url | absolute_url }}">{{ include.post.title }}</a></h2>
+  <p>{{ include.post.excerpt | strip_html | truncatewords: 40 }}</p>
+</article>

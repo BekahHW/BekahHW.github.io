@@ -1,0 +1,124 @@
+/* Legacy styles for pages not yet fully migrated to looseleaf */
+
+.offsite-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.offsite-links .circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.offsite-links .circle:hover {
+  color: var(--ballpoint);
+  border-color: var(--ballpoint);
+}
+
+/* Contact form */
+.contact-form {
+  margin-top: 1.5rem;
+}
+
+.form-item {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 13px;
+  margin-bottom: 0.35rem;
+}
+
+.form-label span {
+  color: var(--pencil);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  max-width: 100%;
+  font-family: var(--body);
+  font-size: 16px;
+  padding: 10px 12px;
+  border: 1.5px solid color-mix(in srgb, var(--ink) 20%, transparent);
+  border-radius: 2px;
+  background: #fff;
+}
+
+.form-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Post pages (later-phase looseleaf migration) */
+.post-template .cover {
+  margin-bottom: 2rem;
+}
+
+.post-template .post-title {
+  font-family: var(--display);
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.15;
+  margin: 0 0 12px;
+}
+
+.post-template .post-meta {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--pencil);
+  margin-bottom: 24px;
+}
+
+.post-template .post-meta a {
+  color: var(--ballpoint);
+}
+
+.post-template .post-content {
+  max-width: 65ch;
+}
+
+.post-template .post-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-template .tag-links a {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ballpoint);
+  text-decoration: none;
+}
+
+.post-footer.share-post {
+  margin-top: 2rem;
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+.post-footer .circle {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  margin-left: 6px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.page-template--wide .page-content-wide {
+  max-width: none;
+}

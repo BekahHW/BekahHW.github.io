@@ -2,56 +2,49 @@
 layout: default
 ---
 
-<main class="site-main">
-    <div class="site-content">
-        <article class="page-template">
+<article class="page-template page-template--wide">
+  <header class="page-header{% if page.snapshot %} page-header--with-snapshot{% if page.snapshot.side == 'left' %} snapshot-left{% endif %}{% endif %}" style="position:relative;">
+    {% if page.marginalia %}
+    <span class="note" style="top:{{ page.marginalia_top | default: '48px' }};" aria-hidden="true">{{ page.marginalia }}</span>
+    {% endif %}
 
-            <header class="cover post-header">
-                {% if page.featured_image %}
-                <div class="cover-bg" style="background-image: url({{ site.baseurl }}{{ page.featured_image }})">
-                </div>
-                {% endif %}
-                <div class="cover-content">
-                    <div class="inner">
-                        <h1 class="post-title">{{ page.title }}</h1>
-                        <a href="#content-section" class="arrow-down" aria-label="Scroll down to content">
-                            <span class="screen-reader-text">Scroll Down</span>
-                        </a>
-                    </div><!-- .inner -->
-                </div><!-- .cover-content -->
-            </header><!-- .post-header -->
+    <div>
+      <h1>{{ page.title }}</h1>
+    </div>
 
-            <div class="inner" id="content-section">
-                <div class="post-content">
-                    <!-- Two-Column Layout Container -->
-                    <div class="two-column-layout">
-                        <!-- Left Column - Fixed Content -->
-                        <div class="left-column">
+    {% if page.snapshot %}
+    {% include snapshot.html %}
+    {% endif %}
+  </header>
+
+  <div class="page-content page-content-wide">
+    <div class="two-column-layout">
+      <div class="left-column">
 
 <section class="stats-card">
   <h2 class="stats-heading">Impact</h2>
   
 
   <div class="stats-grid">
-    <div class="stat-item" data-value="500000">
+    <div class="stat-item">
       <div class="stat-counter">
-        <span class="stat-counter__value">0</span>
+        <span class="stat-counter__value">500,000</span>
         <span class="stat-counter__plus">+</span>
       </div>
       <p class="stat-item__label">Blog Readership</p>
     </div>
     
-    <div class="stat-item" data-value="300">
+    <div class="stat-item">
       <div class="stat-counter stat-counter--with-avatars">
-        <span class="stat-counter__value">0</span>
+        <span class="stat-counter__value">300</span>
         <span class="stat-counter__plus">+</span>
       </div>
       <p class="stat-item__label">OSS Course Participants</p>
     </div>
     
-    <div class="stat-item" data-value="1000">
+    <div class="stat-item">
       <div class="stat-counter">
-        <span class="stat-counter__value">0</span>
+        <span class="stat-counter__value">1,000</span>
         <span class="stat-counter__plus">+</span>
       </div>
       <p class="stat-item__label">Virtual Coffee Community Members All Time</p>
@@ -111,105 +104,14 @@ layout: default
 
 
 
-<script>
- document.addEventListener('DOMContentLoaded', function() {
-  // Get all the counters
-  const counters = document.querySelectorAll('.stat-counter__value, .animate-count, .stat-value');
-  const statsSection = document.querySelector('.stats-card');
-  
-  // Simple function to animate a counter from 0 to target value
-  function animateCounter(counter, targetValue) {
-    let current = 0;
-    const increment = targetValue > 1000 ? Math.ceil(targetValue / 30) : Math.ceil(targetValue / 20);
-    
-    counter.textContent = '0';
-    
-    const timer = setInterval(function() {
-      current += increment;
-      if (current >= targetValue) {
-        counter.textContent = targetValue;
-        clearInterval(timer);
-      } else {
-        counter.textContent = current;
-      }
-    }, 50);
-  }
-  
-  // Function to start all animations with sequential delays
-  function startSequentialAnimations() {
-    counters.forEach((counter, index) => {
-      // Add 300ms delay between each counter animation
-      const delay = index * 300;
-      
-      setTimeout(() => {
-        // Determine target value based on counter type
-        let targetValue;
-        
-        if (counter.classList.contains('stat-counter__value')) {
-          // For counters in .stat-counter elements
-          const statItem = counter.closest('.stat-item');
-          targetValue = parseInt(statItem ? statItem.getAttribute('data-value') || '0' : '0', 10);
-        } else if (counter.classList.contains('animate-count')) {
-          // For elements with .animate-count class
-          targetValue = parseInt(counter.textContent.replace(/[^\d]/g, '') || '0', 10);
-        } else if (counter.classList.contains('stat-value')) {
-          // For percentage values
-          targetValue = parseInt(counter.textContent || '0', 10);
-        }
-        
-        // Only animate if we got a valid target value
-        if (!isNaN(targetValue) && targetValue > 0) {
-          console.log(`Animating counter ${index + 1} to ${targetValue} with delay ${delay}ms`);
-          animateCounter(counter, targetValue);
-        }
-      }, delay);
-    });
-  }
-  
-  // Use Intersection Observer to trigger animations when stats section is visible
-  if (statsSection && 'IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          console.log('Stats section visible, starting sequential animations');
-          startSequentialAnimations();
-          observer.unobserve(statsSection);
-        }
-      });
-    }, { threshold: 0.1 }); // Start when 10% visible
-    
-    observer.observe(statsSection);
-    console.log('Intersection Observer set up, waiting for stats section to be visible');
-  } else {
-    // Fallback if IntersectionObserver not supported or stats section not found
-    console.log('Using fallback animation trigger');
-    window.addEventListener('scroll', function scrollHandler() {
-      const rect = statsSection ? statsSection.getBoundingClientRect() : { top: 0, bottom: 0 };
-      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-      
-      if (isVisible) {
-        startSequentialAnimations();
-        window.removeEventListener('scroll', scrollHandler);
-      }
-    });
-  }
-});
-</script>
                         </div>
-                        
-                        
-                        <!-- Right Column - Scrollable Content -->
+
                         <div class="right-column">
                             {{content}}
                         </div>
                     </div>
                 </div>
-            </div><!-- .inner -->
-
-        </article><!-- .page-template -->
-
-    </div><!-- .site-content -->
-</main><!-- .site-main -->
+</article>
 
 <!-- Include custom CSS for two-column layout and styling -->
 <style>

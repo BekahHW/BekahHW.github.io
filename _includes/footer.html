@@ -1,15 +1,11 @@
 <footer class="site-footer">
-    <div class="inner">
-
-        {% include social-links.html %}
-        <div class="site-info">
-            <a href="#">{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }} . Subtle theme by
-            <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>.
-            <br /> Powered by
-            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
-        </div><!-- .site-info -->
-
-        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
-
-    </div><!-- .inner -->
-</footer><!-- .site-footer -->
+  <div class="footer-links">
+    <a href="{{ site.baseurl }}/contact">Contact</a>
+    <a href="{{ site.baseurl }}/tags/">All Topics</a>
+    {% include social-links.html %}
+  </div>
+  <div class="site-info">
+    <a href="{{ site.baseurl }}/">{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }}.
+    Powered by <a target="_blank" rel="noopener noreferrer" href="https://jekyllrb.com/">Jekyll</a>.
+  </div>
+</footer>

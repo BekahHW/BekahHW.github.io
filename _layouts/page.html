@@ -2,30 +2,22 @@
 layout: default
 ---
 
-<main class="site-main">
-    <div class="site-content">
-        <article class="page-template">
+<article class="page-template">
+  <header class="page-header{% if page.snapshot %} page-header--with-snapshot{% if page.snapshot.side == 'left' %} snapshot-left{% endif %}{% endif %}" style="position:relative;">
+    {% if page.marginalia %}
+    <span class="note" style="top:{{ page.marginalia_top | default: '48px' }};" aria-hidden="true">{{ page.marginalia }}</span>
+    {% endif %}
 
-            <header class="cover post-header">
-                {% if page.featured_image %}
-                <div class="cover-bg" style="background-image: url({{ site.baseurl }}{{ page.featured_image }})">
-                </div>
-                {% endif %}
-                <div class="cover-content">
-                    <div class="inner">
-                        <h1 class="post-title">{{ page.title }}</h1>
-                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
-                    </div><!-- .inner -->
-                </div><!-- .cover-content -->
-            </header><!-- .post-header -->
+    <div>
+      <h1>{{ page.title }}</h1>
+    </div>
 
-            <div class="inner">
-                <div class="post-content">
-                    {{content}}
-                </div>
-            </div><!-- .inner -->
+    {% if page.snapshot %}
+    {% include snapshot.html %}
+    {% endif %}
+  </header>
 
-        </article><!-- .page-template -->
-
-    </div><!-- .site-content -->
-</main><!-- .site-main -->
+  <div class="page-content{% if page.wide %} page-content-wide{% endif %}">
+    {{ content }}
+  </div>
+</article>

@@ -1,7 +1,13 @@
 ---
 layout: two-column
 title: "Connecting Devs, Docs, & DX: My Work"
-featured_image: /assets/images/pages/BHW_speaker.jpeg
+wide: true
+marginalia: numbers lie, but nicely
+snapshot:
+  src: /assets/images/pages/BHW_speaker.jpeg
+  alt: Bekah speaking to a developer community
+  caption: the work is mostly people
+  side: right
 ---
 
 <!-- Featured Content Section -->

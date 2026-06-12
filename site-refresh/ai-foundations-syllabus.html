@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Foundations · A Reading Path · BekahHW</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FBFAF6;
+    --rule-blue: #C9D7E4;      /* notebook rule lines */
+    --margin-red: #D6453D;     /* looseleaf margin rule + red pen */
+    --ink: #1F2A3D;            /* ink navy */
+    --ballpoint: #2456A6;      /* ballpoint blue, links + accents */
+    --pencil: #6B7280;         /* secondary text */
+    --done: #2E7D4F;           /* grading-pen green */
+    --display: 'Young Serif', Georgia, serif;
+    --body: 'Source Serif 4', Georgia, serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+    --hand: 'Caveat', 'Segoe Script', cursive;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    /* notebook rule lines, faint */
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 35px,
+      color-mix(in srgb, var(--rule-blue) 38%, transparent) 35px,
+      color-mix(in srgb, var(--rule-blue) 38%, transparent) 36px
+    );
+  }
+
+  /* The looseleaf margin rule — the page's signature */
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 56px 28px 96px 28px;
+    position: relative;
+  }
+  @media (min-width: 860px) {
+    .page { padding-left: 168px; }
+    .page::before {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 120px;
+      width: 2px;
+      background: var(--margin-red);
+      opacity: 0.55;
+    }
+  }
+
+  /* Red-pen marginalia, desktop only */
+  .note {
+    display: none;
+    font-family: var(--hand);
+    font-size: 21px;
+    line-height: 1.2;
+    color: var(--margin-red);
+    transform: rotate(-2.5deg);
+  }
+  @media (min-width: 860px) {
+    .note {
+      display: block;
+      position: absolute;
+      left: -158px;
+      width: 130px;
+      text-align: right;
+    }
+  }
+
+  /* Course header */
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pencil);
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(34px, 5.5vw, 52px);
+    line-height: 1.08;
+    margin-bottom: 18px;
+  }
+  .lede {
+    max-width: 56ch;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .lede em { font-style: italic; }
+
+  /* Syllabus facts table */
+  .facts {
+    font-family: var(--mono);
+    font-size: 14px;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 14px 0;
+    margin-bottom: 10px;
+    display: grid;
+    gap: 6px;
+  }
+  .facts div span:first-child {
+    color: var(--pencil);
+    display: inline-block;
+    min-width: 132px;
+  }
+
+  .progress-line {
+    font-family: var(--hand);
+    font-size: 22px;
+    color: var(--ballpoint);
+    min-height: 32px;
+    margin-bottom: 44px;
+    transform: rotate(-1deg);
+  }
+
+  /* Unit headers */
+  .unit-head {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pencil);
+    margin: 44px 0 6px 0;
+    position: relative;
+  }
+
+  /* Reading entries */
+  .reading {
+    position: relative;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 16px;
+    padding: 20px 0 22px 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 16%, transparent);
+  }
+  .reading:last-of-type { border-bottom: none; }
+
+  /* Checkbox styled like a syllabus tickbox */
+  .tick {
+    appearance: none;
+    width: 22px; height: 22px;
+    margin-top: 6px;
+    border: 1.5px solid var(--ink);
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .tick:checked::after {
+    content: "✓";
+    position: absolute;
+    top: -7px; left: 1px;
+    font-family: var(--hand);
+    font-size: 27px;
+    color: var(--done);
+    transform: rotate(-6deg);
+  }
+  .tick:focus-visible { outline: 2px solid var(--ballpoint); outline-offset: 3px; }
+
+  .reading .code {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--margin-red);
+    letter-spacing: 0.08em;
+    margin-bottom: 2px;
+  }
+  .reading h2 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.25;
+    margin-bottom: 6px;
+  }
+  .reading h2 a {
+    color: var(--ink);
+    text-decoration: none;
+    background-image: linear-gradient(var(--ballpoint), var(--ballpoint));
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    transition: background-size 220ms ease;
+  }
+  .reading h2 a:hover,
+  .reading h2 a:focus-visible { background-size: 100% 2px; color: var(--ballpoint); }
+
+  .reading p { color: var(--ink); max-width: 58ch; margin-bottom: 8px; }
+  .reading .meta {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--pencil);
+  }
+  .reading.is-done h2 a { color: var(--pencil); }
+  .reading.is-done p { color: var(--pencil); }
+
+  /* Office hours / footer block */
+  .office-hours {
+    margin-top: 64px;
+    border: 1.5px solid var(--ink);
+    border-radius: 3px;
+    padding: 26px 28px;
+    background: color-mix(in srgb, var(--paper) 60%, white);
+    position: relative;
+  }
+  .office-hours h3 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .office-hours p { max-width: 58ch; margin-bottom: 14px; }
+  .office-hours a.btn {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--paper);
+    background: var(--ink);
+    padding: 10px 18px;
+    border-radius: 2px;
+  }
+  .office-hours a.btn:hover { background: var(--ballpoint); }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <p class="eyebrow">A reading path from bekahhw.com</p>
+    <h1>AI Foundations</h1>
+    <p class="lede">
+      Most AI content assumes you already get it. This series doesn't.
+      Six readings, in order, from your first vocabulary words to working
+      alongside agents. No prerequisites except curiosity.
+    </p>
+
+    <div class="facts">
+      <div><span>Instructor</span> BekahHW, recovering English professor</div>
+      <div><span>Format</span> Self-paced. Read on your couch.</div>
+      <div><span>Prerequisites</span> None. Genuinely none.</div>
+      <div><span>Office hours</span> Always open. See below.</div>
+    </div>
+    <p class="progress-line" id="progress" aria-live="polite">Check off readings as you go.</p>
+  </header>
+
+  <p class="unit-head">Unit one · The vocabulary</p>
+
+  <article class="reading" style="position:relative;">
+    <span class="note" style="top:18px;">start here if all of this is new</span>
+    <input type="checkbox" class="tick" aria-label="Mark AI Vocabulary 101 as read">
+    <div>
+      <p class="code">AI 101</p>
+      <h2><a href="https://bekahhw.com/AI-Vocabulary-101">AI Vocabulary 101</a></h2>
+      <p>The words you need before anything else makes sense. Prompts, models, model families, and the difference between them, explained for smart people who haven't had time to keep up.</p>
+      <p class="meta">≈ 8 min · for the AI-curious</p>
+    </div>
+  </article>
+
+  <article class="reading">
+    <input type="checkbox" class="tick" aria-label="Mark AI 102 as read">
+    <div>
+      <p class="code">AI 102</p>
+      <h2><a href="https://bekahhw.com/AI-102">AI 102, From Vocabulary to Systems</a></h2>
+      <p>You've got the words. This is what to do with them. How the pieces fit together into systems you can actually reason about.</p>
+      <p class="meta">≈ 10 min · builds on AI 101</p>
+    </div>
+  </article>
+
+  <p class="unit-head">Unit two · How the pieces connect</p>
+
+  <article class="reading" style="position:relative;">
+    <span class="note" style="top:18px;">my favorite to write</span>
+    <input type="checkbox" class="tick" aria-label="Mark How AI Tools Talk to Each Other as read">
+    <div>
+      <p class="code">AI 201</p>
+      <h2><a href="https://bekahhw.com/how-ai-tools-communicate">How AI Tools Talk to Each Other</a></h2>
+      <p>MCP, tool calls, and the plumbing between AI systems. The connective tissue nobody explains in plain language.</p>
+      <p class="meta">≈ 9 min · light technical</p>
+    </div>
+  </article>
+
+  <article class="reading">
+    <input type="checkbox" class="tick" aria-label="Mark AI Security 101 as read">
+    <div>
+      <p class="code">AI 202</p>
+      <h2><a href="https://bekahhw.com/ai-security-101">Your AI Agent Will Eventually Do Something Stupid</a></h2>
+      <p>A guide to AI security 101. What can go wrong when agents act on your behalf, and how the people whose job is alignment think about keeping them in line.</p>
+      <p class="meta">≈ 12 min · required reading before you automate anything</p>
+    </div>
+  </article>
+
+  <p class="unit-head">Unit three · Working with agents</p>
+
+  <article class="reading" style="position:relative;">
+    <span class="note" style="top:18px;">where it all comes together</span>
+    <input type="checkbox" class="tick" aria-label="Mark Learning to Work with Agents as read">
+    <div>
+      <p class="code">AI 301</p>
+      <h2><a href="https://bekahhw.com/learning-to-work-with-agents">Learning to Work with Agents, Not Around Them</a></h2>
+      <p>Creativity and expertise are no longer bottlenecked by technical skill. What that means for how you build, and how you think about building.</p>
+      <p class="meta">≈ 10 min · the payoff</p>
+    </div>
+  </article>
+
+  <article class="reading">
+    <input type="checkbox" class="tick" aria-label="Mark AI in the AI Development Loop as read">
+    <div>
+      <p class="code">AI 302</p>
+      <h2><a href="https://bekahhw.com/ai-in-the-ai-development-loop">AI Has Entered the AI Development Loop</a></h2>
+      <p>We crossed a recursive threshold and the internet yawned. Extra credit for readers who want to think about where this is heading.</p>
+      <p class="meta">≈ 7 min · extra credit</p>
+    </div>
+  </article>
+
+  <section class="office-hours" style="position:relative;">
+    <span class="note" style="top:26px;">no appointment needed</span>
+    <h3>Office hours</h3>
+    <p>Finished the series and still have questions? Good. Questions mean it's working. Tell me what clicked, what didn't, or what you want explained next.</p>
+    <a class="btn" href="https://bekahhw.com/contact">Ask me anything →</a>
+  </section>
+
+</div>
+
+<script>
+  const ticks = document.querySelectorAll('.tick');
+  const progress = document.getElementById('progress');
+  const total = ticks.length;
+  const lines = {
+    0: "Check off readings as you go.",
+    half: "Halfway there. Keep going.",
+    almost: "One left. Finish strong.",
+    done: "All six. A+ work. See you at office hours."
+  };
+  ticks.forEach(t => t.addEventListener('change', () => {
+    t.closest('.reading').classList.toggle('is-done', t.checked);
+    const done = [...ticks].filter(x => x.checked).length;
+    if (done === 0) progress.textContent = lines[0];
+    else if (done === total) progress.textContent = lines.done;
+    else if (done === total - 1) progress.textContent = lines.almost;
+    else if (done >= total / 2) progress.textContent = lines.half;
+    else progress.textContent = done + " of " + total + " readings complete.";
+  }));
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+---
+layout: default
+title: AI Foundations, a Reading Path
+description: Six readings in order, from your first AI vocabulary words to working alongside agents. A self-paced reading path with no prerequisites except curiosity.
+permalink: /ai-foundations/
+narrow: true
+body_class: ai-foundations-page
+---
+
+<div class="ai-foundations">
+  <header class="syllabus-header" style="position:relative;">
+    <span class="note" style="top:18px;" aria-hidden="true">syllabus, not syllabus</span>
+    <p class="eyebrow">A reading path from bekahhw.com</p>
+    <h1>AI Foundations</h1>
+    <p class="lede">
+      Most AI content assumes you already get it. This series doesn't.
+      Six readings, in order, from your first vocabulary words to working
+      alongside agents. No prerequisites except curiosity.
+    </p>
+
+    <div class="facts">
+      <div><span>Instructor</span> BekahHW, recovering English professor</div>
+      <div><span>Format</span> Self-paced. Read on your couch.</div>
+      <div><span>Prerequisites</span> None. Genuinely none.</div>
+      <div><span>Office hours</span> Always open. See below.</div>
+    </div>
+    <p class="progress-line" id="aiFoundationsProgress" aria-live="polite">Check off readings as you go.</p>
+  </header>
+
+  {% for unit in site.data.ai_foundations.units %}
+  <p class="unit-head">{{ unit.name }}</p>
+
+  {% for reading in unit.readings %}
+  {% assign post = site.posts | where_exp: "item", "item.url contains reading.slug" | first %}
+  {% assign word_count = post.content | number_of_words %}
+  {% assign reading_time = word_count | plus: 199 | divided_by: 200 %}
+  {% if reading_time < 1 %}{% assign reading_time = 1 %}{% endif %}
+
+  <article class="reading"{% if unit.note and forloop.first %} style="position:relative;"{% endif %}>
+    {% if unit.note and forloop.first %}
+    <span class="note" style="top:{{ unit.note_top | default: '18px' }};" aria-hidden="true">{{ unit.note }}</span>
+    {% endif %}
+    <input type="checkbox" class="tick" data-slug="{{ reading.slug }}" aria-label="Mark {{ post.title | default: reading.code }} as read">
+    <div>
+      <p class="code">{{ reading.code }}</p>
+      <h2><a href="{{ site.baseurl }}/{{ reading.slug }}/">{{ post.title | default: reading.code }}</a></h2>
+      <p>{{ reading.description }}</p>
+      <p class="meta">≈ {{ reading_time }} min · {{ reading.meta }}</p>
+    </div>
+  </article>
+  {% endfor %}
+  {% endfor %}
+
+  <section class="office-hours" style="position:relative;">
+    <span class="note" style="top:26px;" aria-hidden="true">no appointment needed</span>
+    <h3>Office hours</h3>
+    <p>Finished the series and still have questions? Good. Questions mean it's working. Tell me what clicked, what didn't, or what you want explained next.</p>
+    <a class="btn" href="{{ site.baseurl }}/contact/">Ask me anything →</a>
+  </section>
+</div>

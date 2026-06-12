@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BekahHW · Homepage Hero Rough</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FBFAF6;
+    --rule-blue: #C9D7E4;
+    --margin-red: #D6453D;
+    --ink: #1F2A3D;
+    --ballpoint: #2456A6;
+    --pencil: #6B7280;
+    --display: 'Young Serif', Georgia, serif;
+    --body: 'Source Serif 4', Georgia, serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+    --hand: 'Caveat', 'Segoe Script', cursive;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 35px,
+      color-mix(in srgb, var(--rule-blue) 38%, transparent) 35px,
+      color-mix(in srgb, var(--rule-blue) 38%, transparent) 36px
+    );
+  }
+
+  .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 28px 80px 28px;
+    position: relative;
+  }
+  @media (min-width: 760px) {
+    .page { padding-left: 128px; padding-right: 36px; }
+    .page::before {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 88px;
+      width: 2px;
+      background: var(--margin-red);
+      opacity: 0.55;
+    }
+  }
+  @media (min-width: 1100px) {
+    .page { padding-left: 156px; }
+    .page::before { left: 110px; }
+  }
+
+  .note {
+    display: none;
+    font-family: var(--hand);
+    font-size: 21px;
+    line-height: 1.2;
+    color: var(--margin-red);
+    transform: rotate(-2.5deg);
+  }
+  @media (min-width: 1100px) {
+    .note {
+      display: block;
+      position: absolute;
+      left: -146px;
+      width: 118px;
+      text-align: right;
+    }
+  }
+
+  /* Nav */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 26px;
+    padding: 26px 0 10px 0;
+    position: relative;
+  }
+  .wordmark {
+    font-family: var(--display);
+    font-size: 21px;
+    color: var(--ink);
+    text-decoration: none;
+    margin-right: auto;
+  }
+  .nav-links { display: flex; flex-wrap: wrap; gap: 10px 26px; align-items: baseline; }
+  nav a:not(.wordmark) {
+    font-family: var(--mono);
+    font-size: 13.5px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1.5px solid transparent;
+    padding-bottom: 2px;
+  }
+  nav a:not(.wordmark):hover,
+  nav a:not(.wordmark):focus-visible {
+    color: var(--ballpoint);
+    border-bottom-color: var(--ballpoint);
+  }
+
+  /* Hamburger, drawn like three pen strokes */
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition: transform 180ms ease, opacity 180ms ease;
+  }
+  .menu-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .menu-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .menu-btn:focus-visible { outline: 2px solid var(--ballpoint); outline-offset: 3px; }
+
+  @media (max-width: 699px) {
+    .menu-btn { display: flex; }
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0; right: 0;
+      z-index: 10;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      background: var(--paper);
+      border: 1.5px solid var(--ink);
+      border-radius: 3px;
+      box-shadow: 0 6px 18px rgba(31, 42, 61, 0.14);
+      padding: 6px 0;
+    }
+    .nav-links.open { display: flex; }
+    .nav-links a {
+      width: 100%;
+      padding: 12px 20px;
+      border-bottom: none !important;
+    }
+    .nav-links a:hover { background: color-mix(in srgb, var(--rule-blue) 30%, transparent); }
+  }
+
+  /* Hero */
+  .hero {
+    padding: 72px 0 64px 0;
+    position: relative;
+  }
+  @media (min-width: 700px) {
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr clamp(200px, 26vw, 290px);
+      gap: 36px;
+      align-items: start;
+    }
+  }
+
+  /* Taped photo */
+  .snapshot {
+    margin: 48px auto 0 auto;
+    width: 100%;
+    max-width: 290px;
+    background: #fff;
+    padding: 12px 12px 16px 12px;
+    box-shadow: 0 4px 14px rgba(31, 42, 61, 0.16);
+    transform: rotate(2.2deg);
+    position: relative;
+  }
+  @media (min-width: 700px) { .snapshot { margin-top: 32px; } }
+  .snapshot img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: var(--rule-blue);
+    color: transparent; /* hides alt text if the image fails to load */
+  }
+  .snapshot::before,
+  .snapshot::after {
+    content: "";
+    position: absolute;
+    width: 86px;
+    height: 26px;
+    background: rgba(233, 226, 200, 0.75);
+    box-shadow: 0 1px 2px rgba(31, 42, 61, 0.12);
+  }
+  .snapshot::before { top: -12px; left: -26px; transform: rotate(-38deg); }
+  .snapshot::after { top: -12px; right: -26px; transform: rotate(38deg); }
+  .snapshot figcaption {
+    font-family: var(--hand);
+    font-size: 21px;
+    color: var(--ink);
+    text-align: center;
+    margin-top: 10px;
+    transform: rotate(-1deg);
+  }
+  .hero .eyebrow {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pencil);
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(32px, 4.6vw, 50px);
+    line-height: 1.12;
+    max-width: 19ch;
+    margin-bottom: 22px;
+  }
+  .hero h1 .pen {
+    color: var(--margin-red);
+    font-style: normal;
+  }
+  .hero .sub {
+    font-size: 19px;
+    max-width: 52ch;
+    margin-bottom: 32px;
+  }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  a.btn {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--paper);
+    background: var(--ink);
+    padding: 12px 20px;
+    border-radius: 2px;
+  }
+  a.btn:hover { background: var(--ballpoint); }
+  a.btn.ghost {
+    color: var(--ink);
+    background: transparent;
+    border: 1.5px solid var(--ink);
+  }
+  a.btn.ghost:hover { color: var(--ballpoint); border-color: var(--ballpoint); background: transparent; }
+
+  /* Draft toggle, a red-pen revision gimmick */
+  .draft-toggle {
+    display: block;
+    margin: -6px 0 20px 0;
+    font-family: var(--hand);
+    font-size: 21px;
+    color: var(--margin-red);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform: rotate(-1.5deg);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 5px;
+  }
+  .draft-toggle:focus-visible { outline: 2px solid var(--ballpoint); outline-offset: 3px; }
+
+  /* Currently strip */
+  .currently {
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 14px 0;
+    font-family: var(--mono);
+    font-size: 14px;
+    display: grid;
+    gap: 6px;
+    margin-bottom: 56px;
+  }
+  .currently span.label {
+    color: var(--pencil);
+    display: inline-block;
+    min-width: 110px;
+  }
+  .currently a { color: var(--ballpoint); }
+
+  /* Latest posts strip */
+  .unit-head {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pencil);
+    margin: 0 0 6px 0;
+  }
+  .post {
+    position: relative;
+    padding: 20px 0 22px 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 16%, transparent);
+  }
+  .post .code {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--margin-red);
+    letter-spacing: 0.08em;
+    margin-bottom: 2px;
+  }
+  .post h2 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.25;
+    margin-bottom: 6px;
+  }
+  .post h2 a {
+    color: var(--ink);
+    text-decoration: none;
+    background-image: linear-gradient(var(--ballpoint), var(--ballpoint));
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    transition: background-size 220ms ease;
+  }
+  .post h2 a:hover, .post h2 a:focus-visible { background-size: 100% 2px; color: var(--ballpoint); }
+  .post p { max-width: 58ch; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <nav>
+    <a class="wordmark" href="#">BekahHW</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#">About</a>
+      <a href="#">My Work</a>
+      <a href="#">Consulting</a>
+      <a href="#">Writing</a>
+      <a href="#">Subscribe</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <span class="note" style="top:96px;">ten years of essays prepared me for this</span>
+    <div>
+      <p class="eyebrow">Developer experience · AI · Community</p>
+      <h1 id="headline">I spent ten years teaching college English. Now I teach developers, search engines, and AI systems <span class="pen">to understand each other.</span></h1>
+      <button class="draft-toggle" id="redraft" aria-label="Show an alternate headline draft">see another draft of this headline</button>
+      <p class="sub" id="subline">Writing about developer experience, AI tooling, and the communities that make tech worth working in.</p>
+      <div class="cta-row">
+        <a class="btn" href="#">Start with AI Foundations →</a>
+        <a class="btn ghost" href="#">Read the latest</a>
+      </div>
+    </div>
+    <figure class="snapshot">
+      <img src="https://bekahhw.com/assets/images/pages/THAT_keynote.jpg" alt="Bekah speaking on stage at THAT Conference">
+      <figcaption>hi, that's me</figcaption>
+    </figure>
+  </section>
+
+  <div class="currently" style="position:relative;">
+    <span class="note" style="top:14px;">the "now" line</span>
+    <div><span class="label">Currently</span> Developer Experience Lead, AI Platform</div>
+    <div><span class="label">Writing about</span> what AI agent sessions actually cost</div>
+    <div><span class="label">Building</span> <a href="#">Virtual Coffee</a> · <a href="#">Siblings Write</a></div>
+  </div>
+
+  <p class="unit-head">Latest from the blog</p>
+
+  <article class="post" style="position:relative;">
+    <span class="note" style="top:24px;">newest</span>
+    <p class="code">April 19, 2026</p>
+    <h2><a href="#">Learning to Work with Agents, Not Around Them</a></h2>
+    <p>Products launching from solo indie hackers who don't know how to code isn't rare anymore. It's the new normal.</p>
+  </article>
+
+  <article class="post">
+    <p class="code">April 6, 2026</p>
+    <h2><a href="#">Your AI Agent Will Eventually Do Something Stupid</a></h2>
+    <p>A guide to AI security 101, with help from the people whose whole job is keeping agents aligned.</p>
+  </article>
+
+</div>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('nav') && navLinks.classList.contains('open')) {
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  const drafts = [
+    {
+      h: 'I spent ten years teaching college English. Now I teach developers, search engines, and AI systems <span class="pen">to understand each other.</span>',
+      s: 'Writing about developer experience, AI tooling, and the communities that make tech worth working in.'
+    },
+    {
+      h: 'Clarity is <span class="pen">a developer tool.</span>',
+      s: 'I write about AI, developer experience, and community. Former English professor, current AI platform DX lead, permanent explainer of things.'
+    },
+    {
+      h: 'Most AI content assumes you already get it. <span class="pen">Mine doesn\'t.</span>',
+      s: 'Plain-language writing on AI tooling, agents, and developer experience, from someone who taught writing for a decade before she taught machines.'
+    }
+  ];
+  let i = 0;
+  document.getElementById('redraft').addEventListener('click', () => {
+    i = (i + 1) % drafts.length;
+    document.getElementById('headline').innerHTML = drafts[i].h;
+    document.getElementById('subline').textContent = drafts[i].s;
+  });
+</script>
+</body>
+</html>

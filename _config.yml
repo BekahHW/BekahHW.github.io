@@ -1,4 +1,5 @@
 # Site setings
+title: BekahHW
 name: "BekahHW"
 description: "Code. Community. Content."
 hero_description_html: "<p>I help teams level up their developer experience, content strategy, and community.
@@ -88,11 +89,8 @@ navigation:
   - text: Consulting
     url: /consulting
 
-  - text: Contact
-    url: /contact
-
-  - text: All Topics
-    url: /tags
+  - text: Writing
+    url: /
 
   - text: Subscribe
     url: /subscribe
@@ -142,3 +140,4 @@ exclude:
   - "*.code-workspace"
   - node_modules
   - vendor
+  - site-refresh
