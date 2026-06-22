@@ -1,0 +1,22 @@
+{
+  "name": "bekahhw.github.io",
+  "version": "1.0.0",
+  "description": "To run this project locally: - fork and clone the repository - run ```bundle install``` ( if you do not have bundler installed run ```gem install bundler``` ) - run ```jekyll serve```",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:38893/git/BekahHW/BekahHW.github.io"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
