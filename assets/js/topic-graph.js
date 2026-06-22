@@ -120,7 +120,7 @@
       panelPosts.appendChild(article);
     });
 
-    if (topic && topic.count > posts.length) {
+    if (topic && topic.count > 12) {
       panelMore.hidden = false;
       panelMore.innerHTML = '<a href="' + topic.url + '">View all ' + topic.count + ' posts →</a>';
     } else {
