@@ -1,13 +1,13 @@
 treatise-on-writing:
   title: "A Treatise on Writing in the AI Age"
   posts:
-    - title: "AI Has Entered the AI Development Loop"
-      slug: ai-in-the-ai-development-loop
-    - title: "Why Writing Still Matters More Than Ever"
-      slug:
-    - title: "Writing as a Competitive Advantage"
-      slug:
-    - title: "The Death of Generic AI Content"
-      slug:
-    - title: "Principles for Writing in the AI Age"
-      slug:
+    - title: "Why We Write"
+      slug: why-we-write
+    - title: "The Disclosure Double Standard"
+      slug: the-disclosure-double-standard
+    - title: "The Stigma Machine"
+      slug: the-stigma-machine
+    - title: "The Wrong Problem"
+      slug: the-wrong-problem
+    - title: "Ownership, Not Origin"
+      slug: ownership-not-origin
