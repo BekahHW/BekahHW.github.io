@@ -5,48 +5,54 @@ post_class: post-template
 ---
 
 <article class="post-template">
-  <header class="post-header-block" style="position:relative; padding: 24px 0;">
-    {% if page.tags.size > 0 %}
-    <div class="tag-links">
-      {% for tag in page.tags %}
-      <a href="{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/">{{ tag | camelcase }}</a>{% unless forloop.last %}, {% endunless %}
-      {% endfor %}
+  <div class="post-layout{% if page.series %} post-layout--with-series{% endif %}">
+    <div class="post-main">
+      <header class="post-header-block" style="position:relative; padding: 24px 0;">
+        {% if page.tags.size > 0 %}
+        <div class="tag-links">
+          {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/">{{ tag | camelcase }}</a>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <h1 class="post-title">{{ page.title }}</h1>
+
+        <div class="post-meta">
+          {% for author in site.data.authors %}
+          {% if author[1].username == page.author %}
+          {% if author[1].picture %}
+          <img class="author-avatar" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ page.author }}">
+          {% endif %}
+          <span class="post-author"><a href="{{ site.baseurl }}/author/{{ page.author }}/">{{ author[1].name }}</a></span>
+          {% endif %}
+          {% endfor %}
+          <time class="published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        </div>
+      </header>
+
+      <div class="post-content">
+        {% include ai-foundations-banner.html %}
+        {{ content }}
+      </div>
+
+      <footer class="post-footer share-post">
+        <span>Share:</span>
+        <a class="circle" target="_blank" rel="noopener noreferrer"
+          href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}">
+          <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
+        </a>
+        <a class="circle" target="_blank" rel="noopener noreferrer"
+          href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}">
+          <i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span>
+        </a>
+      </footer>
+
+      {% include disqus.html %}
     </div>
-    {% endif %}
 
-    <h1 class="post-title">{{ page.title }}</h1>
-
-    <div class="post-meta">
-      {% for author in site.data.authors %}
-      {% if author[1].username == page.author %}
-      {% if author[1].picture %}
-      <img class="author-avatar" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ page.author }}">
-      {% endif %}
-      <span class="post-author"><a href="{{ site.baseurl }}/author/{{ page.author }}/">{{ author[1].name }}</a></span>
-      {% endif %}
-      {% endfor %}
-      <time class="published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-    </div>
-  </header>
-
-  <div class="post-content">
-    {% include ai-foundations-banner.html %}
-    {{ content }}
+    {% include series-nav.html %}
   </div>
-
-  <footer class="post-footer share-post">
-    <span>Share:</span>
-    <a class="circle" target="_blank" rel="noopener noreferrer"
-      href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}">
-      <i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span>
-    </a>
-    <a class="circle" target="_blank" rel="noopener noreferrer"
-      href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}">
-      <i class="icon-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span>
-    </a>
-  </footer>
-
-  {% include disqus.html %}
 </article>
 
 {% include post-navigation.html %}
