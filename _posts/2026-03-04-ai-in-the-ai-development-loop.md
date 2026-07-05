@@ -4,6 +4,7 @@ title: "AI Has Entered the AI Development Loop"
 date: 2026-03-04
 author: Bekah
 tags: [AI]
+series: treatise-on-writing
 description: "A quiet line in the GPT-5.3 Codex announcement revealed something bigger: AI is now participating in the process that improves AI. Why that changes development velocity."
 featured_image: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gsfmdjrkj31y9taw6cf3.png"
 ---

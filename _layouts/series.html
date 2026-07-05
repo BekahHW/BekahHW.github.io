@@ -1,0 +1,38 @@
+---
+layout: default
+disqus: false
+narrow: true
+---
+
+{% assign s = site.data.series[page.series] %}
+<div class="ai-foundations">
+  <header class="syllabus-header" style="position:relative;">
+    <p class="eyebrow">A series from bekahhw.com</p>
+    <h1>{{ s.title }}</h1>
+    <p class="lede">{{ page.description }}</p>
+  </header>
+
+  {% for item in s.posts %}
+  {% assign n = forloop.index %}
+  {% assign candidate_url = item.slug | prepend: "/" %}
+  {% assign matched = site.posts | where: "url", candidate_url | first %}
+  <article class="reading">
+    <span class="reading-index" aria-hidden="true">{{ n | prepend: "0" | slice: -2, 2 }}</span>
+    <div>
+      <p class="code">Part {{ n }} of {{ s.posts.size }}</p>
+      <h2>
+        {% if item.slug and item.slug != "" and matched %}
+        <a href="{{ site.baseurl }}{{ candidate_url }}">{{ item.title }}</a>
+        {% else %}
+        {{ item.title }}
+        {% endif %}
+      </h2>
+      {% if matched %}
+      <p>{{ matched.description | default: matched.excerpt | strip_html | truncate: 160 }}</p>
+      {% else %}
+      <p class="meta">Coming soon</p>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>

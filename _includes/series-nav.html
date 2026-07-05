@@ -1,0 +1,44 @@
+{% if page.series %}
+{% assign s = site.data.series[page.series] %}
+{% if s %}
+{% assign total = s.posts.size %}
+{% assign post_slug = page.url | remove: '/' %}
+{% assign current_index = 0 %}
+{% for item in s.posts %}
+{% if item.slug == post_slug %}{% assign current_index = forloop.index %}{% endif %}
+{% endfor %}
+<aside class="post-sidebar">
+  <details class="series-widget">
+    <summary class="series-widget__summary">
+      <span class="series-widget__icon" aria-hidden="true">&#128214;</span>
+      <span class="series-widget__intro">
+        <span class="series-widget__title">{{ s.title }}</span>
+        <span class="series-widget__meta">{{ total }}-part series{% if current_index > 0 %} &middot; Part {{ current_index }} of {{ total }}{% endif %}</span>
+      </span>
+      <span class="series-widget__toggle-text" aria-hidden="true">View series posts <span class="series-widget__chevron">&darr;</span></span>
+    </summary>
+
+    <ol class="series-widget__list">
+      {% for item in s.posts %}
+      {% assign n = forloop.index %}
+      {% assign candidate_url = item.slug | prepend: "/" %}
+      {% assign matched = site.posts | where: "url", candidate_url %}
+      <li class="series-widget__item{% if n == current_index %} is-current{% endif %}">
+        <span class="series-widget__number">{{ n | prepend: "0" | slice: -2, 2 }}</span>
+        <span class="series-widget__item-title">
+          {% if item.slug and item.slug != "" and matched.size > 0 %}
+          <a href="{{ site.baseurl }}{{ candidate_url }}">{{ item.title }}</a>
+          {% else %}
+          {{ item.title }}
+          {% endif %}
+        </span>
+        {% if n == current_index %}<span class="series-widget__arrow" aria-hidden="true">&rarr;</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+
+    <a class="series-widget__view-all" href="{{ site.baseurl }}/series/{{ page.series }}/">View all posts in this series &rarr;</a>
+  </details>
+</aside>
+{% endif %}
+{% endif %}
