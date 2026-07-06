@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why We Write"
-date: 2026-07-06
+date: 2026-07-05
 author: Bekah
 tags: [AI, Writing]
 series: treatise-on-writing

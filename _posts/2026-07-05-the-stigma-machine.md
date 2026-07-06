@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Stigma Machine"
-date: 2026-07-10
+date: 2026-07-05
 author: Bekah
 tags: [AI, Writing]
 series: treatise-on-writing
