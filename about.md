@@ -5,6 +5,7 @@ marginalia: same job, different classroom
 marginalia_top: 48px
 snapshot:
   alt: Bekah, candid photo placeholder
+  src: /assets/images/pages/headshot_close.jpg
   caption: not pictured, the screenplay
   side: left
 ---
