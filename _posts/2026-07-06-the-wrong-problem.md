@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Wrong Problem"
-date: 2026-07-13
+date: 2026-07-06 12:00:00
 author: Bekah
 tags: [AI, Writing]
 series: treatise-on-writing

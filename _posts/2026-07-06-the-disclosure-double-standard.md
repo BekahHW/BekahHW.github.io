@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Disclosure Double Standard"
-date: 2026-07-08
+date: 2026-07-06 10:00:00
 author: Bekah
 tags: [AI, Writing]
 series: treatise-on-writing

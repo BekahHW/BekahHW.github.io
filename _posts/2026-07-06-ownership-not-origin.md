@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ownership, Not Origin"
-date: 2026-07-15
+date: 2026-07-06 13:00:00
 author: Bekah
 tags: [AI, Writing]
 series: treatise-on-writing
