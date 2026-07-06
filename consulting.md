@@ -4,7 +4,7 @@ title: Consulting
 wide: true
 marginalia: bring good questions
 snapshot:
-  src: /assets/images/pages/consulting.svg
+  src: /assets/images/pages/bhw_dg.jpg
   alt: Consulting workshop illustration
   caption: office hours, basically
   side: left
