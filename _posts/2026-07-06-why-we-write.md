@@ -11,9 +11,9 @@ featured_image: "/assets/images/posts/2026/dev-to-moderator-flag.png"
 
 *A Treatise on Writing in the AI Age, Part 1*
 
-Last week, one of my blog posts was flagged on Dev.to flagged one of my blog posts.
+Last week, one of my blog posts was flagged on Dev.to.
 
-Before anything else, I want to be clear about the people involved, because this series is not about them. The moderator also reached out privately, and the note was personal and genuinely kind. Everyone was doing their job exactly the way the policy asked. That's the point. A system can be staffed entirely by decent people and still be built wrong.
+I want to be clear that this series is not specifically about that event or the people involved. It's a broader exploration of using AI during the writing process and rules around labeling any AI-assisted writing. This just happens to be a relevant example. Everyone was doing their job exactly the way the policy asked. That's the point. A system can be staffed entirely by decent people and still be built wrong.
 
 ![Sloan the DEV Moderator flags a post for AI assistance and asks the author to add a disclaimer per DEV's guidelines, warning that failure to comply could lower the post's visibility or get it unpublished.](/assets/images/posts/2026/dev-to-moderator-flag.png)
 
