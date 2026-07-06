@@ -3,6 +3,12 @@
   <span class="note" style="top:24px;" aria-hidden="true">newest</span>
   {% endif %}
   <p class="code">{{ include.post.date | date: "%B %-d, %Y" }}</p>
+  {% if include.post.series %}
+  {% assign post_series = site.data.series[include.post.series] %}
+  {% if post_series %}
+  <p class="post-card__series">{{ post_series.title }}</p>
+  {% endif %}
+  {% endif %}
   <h2><a href="{{ include.post.url | absolute_url }}">{{ include.post.title }}</a></h2>
-  <p>{{ include.post.excerpt | strip_html | truncatewords: 40 }}</p>
+  <p>{{ include.post.description | default: include.post.excerpt | strip_html | truncatewords: 40 }}</p>
 </article>
