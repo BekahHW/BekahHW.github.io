@@ -11,7 +11,7 @@ featured_image: "/assets/images/posts/2026/zerogpt-human-written.png"
 
 *A Treatise on Writing in the AI Age, Part 3*
 
-Let's do a small experiment. Imagine two identical blog posts. They have the same ideas, structure, sentences. Everything is the same example one has a small grey badge that says, "AI-assisted" and the other doesn't.
+Let's do a small experiment. Imagine two identical blog posts. They have the same ideas, structure, sentences. Everything is the same except example one has a small grey badge that says, "AI-assisted" and the other example doesn't.
 
 Which one do you read more generously? Which author do you assume worked harder? If you shared one with your team, which would it be?
 
