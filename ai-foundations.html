@@ -43,7 +43,7 @@ body_class: ai-foundations-page
     <input type="checkbox" class="tick" data-slug="{{ reading.slug }}" aria-label="Mark {{ post.title | default: reading.code }} as read">
     <div>
       <p class="code">{{ reading.code }}</p>
-      <h2><a href="{{ site.baseurl }}/{{ reading.slug }}/">{{ post.title | default: reading.code }}</a></h2>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title | default: reading.code }}</a></h2>
       <p>{{ reading.description }}</p>
       <p class="meta">≈ {{ reading_time }} min · {{ reading.meta }}</p>
     </div>

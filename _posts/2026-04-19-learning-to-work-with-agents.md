@@ -18,15 +18,7 @@ The problem isn't that non-technical builders are shipping. The problem is nobod
 
 ---
 
-## What the agent actually is
-
-An agent isn't a mind. It's a very well-read improviser. It has read a mountain of code and conversation, and it's making its best guess about what you want based on what you wrote and what's in the room.
-
-That means two things matter more than anything else. What you tell it. And what's already in the project when you start.
-
-Everything in this post is a variation on that theme.
-
-> **New to AI terminology?** If words like "agent," "model," or "context window" feel fuzzy, start with [AI Vocabulary 101](/2026/03/18/AI-Vocabulary-101.html) to build your foundation.
+> **New to AI terminology?** If words like "agent," "model," or "context window" feel fuzzy, start with [AI Vocabulary 101](/AI-Vocabulary-101) to build your foundation.
 
 {% include interactive/learning-agents.html %}
 
@@ -48,8 +40,8 @@ You're not trying to become a developer. You're already doing the work. Keep goi
 
 Ready to level up your AI work? Here's where to go next:
 
-- **[AI 102: From Vocabulary to Systems](/2026/03/24/AI-102.html)** — Understanding prompts, workflows, and tool chaining. The shift from "what should I prompt?" to "what are the steps this task requires?"
+- **[AI 102: From Vocabulary to Systems](/AI-102)** — Understanding prompts, workflows, and tool chaining. The shift from "what should I prompt?" to "what are the steps this task requires?"
 
-- **[Momentum vs. Alignment Tax: Hidden Costs in Your LLM Sessions](/2026/04/06/hidden-ai-work.html)** — What looks productive in an AI session often hides a whole layer of alignment work. Learn to spot where your workflow is getting expensive.
+- **[Momentum vs. Alignment Tax: Hidden Costs in Your LLM Sessions](/hidden-ai-work)** — What looks productive in an AI session often hides a whole layer of alignment work. Learn to spot where your workflow is getting expensive.
 
-- **[Your AI Agent Will Eventually Do Something Stupid: A Guide to AI Security 101](/2026/04/09/ai-security-101.html)** — Before you hand your agent the keys to everything, understand what those keys open. Essential reading for anyone building with AI agents.
+- **[Your AI Agent Will Eventually Do Something Stupid: A Guide to AI Security 101](/ai-security-101)** — Before you hand your agent the keys to everything, understand what those keys open. Essential reading for anyone building with AI agents.

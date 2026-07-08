@@ -3,17 +3,13 @@
     <div class="inner">
 
     {% if paginator.previous_page %}
-    <a class="newer-posts arrow-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-      <span class="screen-reader-text">Newer Posts</span>
-    </a>
+    <a class="newer-posts arrow-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">← Newer Posts</a>
     {% endif %}
-    
+
     <span class="page-number"> Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
     {% if paginator.next_page %}
-    <a class="older-posts arrow-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-      <span class="screen-reader-text">Older Posts</span>
-    </a>
+    <a class="older-posts arrow-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts →</a>
     {% endif %}
 
     </div><!-- .inner -->
