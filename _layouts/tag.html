@@ -34,5 +34,7 @@ class: 'tag-template'
             {% for post in paginator.posts %}{% include postbox.html %}{% endfor %}
         </div>
 
+        {% include tag-pagination.html %}
+
     </div><!-- .site-content -->
 </main><!-- .site-main -->

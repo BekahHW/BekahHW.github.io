@@ -18,16 +18,7 @@
 require 'minitest/autorun'
 require 'nokogiri'
 require 'set'
-
-SITE_DIR  = File.expand_path('../_site', __dir__)
-POSTS_DIR = File.expand_path('../_posts', __dir__)
-
-# ---------------------------------------------------------------------------
-# Helper: read a file as UTF-8
-# ---------------------------------------------------------------------------
-def read_utf8(path)
-  File.read(path, encoding: 'UTF-8')
-end
+require_relative 'test_helper'
 
 # ---------------------------------------------------------------------------
 # Helper: collect every tag slug from _posts front-matter

@@ -24,4 +24,5 @@ end
 group :test do
   gem 'minitest'
   gem 'nokogiri'
+  gem 'rake'
 end
