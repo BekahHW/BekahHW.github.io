@@ -1,7 +1,7 @@
 {% comment %}
   Custom Open Graph and Twitter Card meta tags
-  This generates title-based cards for posts without featured_image
-  Uses og-image.vercel.app to generate cards with post titles
+  Posts without a featured_image/page.image fall back to a static, site-branded
+  card (assets/images/og-default.png) instead of a third-party image-generation service.
 {% endcomment %}
 
 {% if page.featured_image %}
@@ -10,17 +10,11 @@
 {% elsif page.image %}
   {% comment %} Use page.image if set {% endcomment %}
   {% assign og_image = page.image | prepend: site.baseurl | prepend: site.production_url %}
+{% elsif page.layout == "post" %}
+  {% assign og_image = "assets/images/og-default.png" | prepend: site.production_url %}
 {% else %}
-  {% comment %} Generate dynamic OG image with post title {% endcomment %}
-  {% if page.layout == "post" and page.title %}
-    {% comment %} Use og-image service to generate a card with the title {% endcomment %}
-    {% assign encoded_title = page.title | url_encode %}
-    {% comment %} Clean design with your brand name {% endcomment %}
-    {% assign og_image = "https://og-image.vercel.app/" | append: encoded_title | append: ".png?theme=light&md=1&fontSize=75px&widths=800&heights=400" %}
-  {% else %}
-    {% comment %} Use default site image {% endcomment %}
-    {% assign og_image = site.image | prepend: site.baseurl | prepend: site.production_url %}
-  {% endif %}
+  {% comment %} Use default site image {% endcomment %}
+  {% assign og_image = site.image | prepend: site.baseurl | prepend: site.production_url %}
 {% endif %}
 
 <!-- Open Graph Meta Tags -->
