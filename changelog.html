@@ -1,0 +1,35 @@
+---
+layout: page
+permalink: /changelog/
+title: Changelog
+description: "A running notebook of experiments, half-built ideas, and things I learned from poking at session data."
+marginalia: jotted down, not polished
+marginalia_top: 48px
+---
+{% assign entries = site.changelog | sort: "date" | reverse %}
+<div class="changelog">
+  <p class="changelog__intro">
+    A running notebook of experiments, half-built ideas, and things I learned from poking at session data.
+    New notes land here first.
+    <a class="changelog__rss" href="{{ site.baseurl }}/changelog.xml">Subscribe via RSS</a>
+  </p>
+
+  <ol class="changelog__list">
+    {% for entry in entries %}
+    <li class="changelog-entry" id="{{ entry.slug }}">
+      <time class="changelog-entry__date" datetime="{{ entry.date | date_to_xmlschema }}">{{ entry.date | date: "%b %-d, %Y" }}</time>
+      <h2 class="changelog-entry__title">
+        {% if entry.link %}<a href="{{ entry.link }}">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}
+      </h2>
+      <p class="changelog-entry__desc">{{ entry.description }}</p>
+      {% assign body = entry.content | strip %}
+      {% if body != "" %}
+      <div class="changelog-entry__body">{{ entry.content }}</div>
+      {% endif %}
+      {% if entry.tags %}
+      <p class="changelog-entry__tags">{% for tag in entry.tags %}<span>#{{ tag }}</span>{% endfor %}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</div>
