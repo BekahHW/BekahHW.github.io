@@ -1,7 +1,27 @@
 <footer class="site-footer">
+  {% assign notebook = site.changelog | sort: "date" | reverse %}
+  {% if notebook.size > 0 %}
+  <section class="footer-notebook" aria-labelledby="footer-notebook-title">
+    <div class="footer-notebook__head">
+      <h2 id="footer-notebook-title" class="footer-notebook__title">From the notebook</h2>
+      <a href="{{ site.baseurl }}/changelog.xml" class="footer-notebook__rss">RSS</a>
+    </div>
+    <ul class="footer-notebook__list">
+      {% for entry in notebook limit:3 %}
+      <li>
+        <time datetime="{{ entry.date | date_to_xmlschema }}">{{ entry.date | date: "%b %-d" }}</time>
+        <a href="{{ site.baseurl }}/changelog/#{{ entry.slug }}">{{ entry.title }}</a>
+        <span class="footer-notebook__desc">{{ entry.description | truncatewords: 22 }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="{{ site.baseurl }}/changelog/" class="footer-notebook__all">Read the whole notebook &rarr;</a>
+  </section>
+  {% endif %}
   <div class="footer-links">
     <a href="{{ site.baseurl }}/contact">Contact</a>
     <a href="{{ site.baseurl }}/tags/">All Topics</a>
+    <a href="{{ site.baseurl }}/changelog/">Changelog</a>
     {% include social-links.html %}
   </div>
   <div class="site-info">

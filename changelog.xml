@@ -1,0 +1,26 @@
+---
+layout: null
+---
+{% assign root = site.production_url | split: '/' | join: '/' %}{% assign entries = site.changelog | sort: "date" | reverse %}<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.name | xml_escape }} Changelog</title>
+    <description>A running notebook of experiments, half-built ideas, and things I learned from poking at session data.</description>
+    <link>{{ root }}/changelog/</link>
+    <atom:link href="{{ root }}/changelog.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    {% for entry in entries limit:50 %}
+    <item>
+      <title>{{ entry.title | xml_escape }}</title>
+      <description>{{ entry.description | markdownify | append: entry.content | xml_escape }}</description>
+      <pubDate>{{ entry.date | date_to_rfc822 }}</pubDate>
+      <link>{% if entry.link %}{{ entry.link | xml_escape }}{% else %}{{ root }}/changelog/#{{ entry.slug }}{% endif %}</link>
+      <guid isPermaLink="false">{{ root }}/changelog/#{{ entry.slug }}</guid>
+      {% for tag in entry.tags %}
+      <category>{{ tag | xml_escape }}</category>
+      {% endfor %}
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

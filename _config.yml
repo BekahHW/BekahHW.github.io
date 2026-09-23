@@ -109,6 +109,12 @@ paginate_path: /page:num/
 # Permalinks
 permalink: /:title
 
+# Changelog notebook. Drop a markdown file in _changelog/ to add an entry.
+# Entries render on /changelog/ and in /changelog.xml, not as their own pages.
+collections:
+  changelog:
+    output: false
+
 # Other
 markdown: kramdown
 
@@ -135,6 +141,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - _changelog/README.md
   - LICENSE
   - CNAME
   - "*.code-workspace"
