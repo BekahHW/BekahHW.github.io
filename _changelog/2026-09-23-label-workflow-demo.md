@@ -5,3 +5,5 @@ description: "I made a terminal demo of the paperctl label workflow: create a la
 link: https://papercompute.com/docs/paper/cli/labels
 tags: [labels, video, demos]
 ---
+
+![Frame from the terminal demo: paperctl label add commands tagging three fabricated sessions with a migration label](/assets/images/changelog/label-workflow-demo.png)

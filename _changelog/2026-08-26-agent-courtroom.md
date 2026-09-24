@@ -5,3 +5,5 @@ description: "We took a month-long migration we'd already shipped and put the de
 link: https://papercompute.com/concepts/agent-session-replay
 tags: [session-data, decisions, agents]
 ---
+
+![Title card from the agent courtroom demo: put a decision on trial, every claim cites a session](/assets/images/changelog/agent-courtroom.png)
