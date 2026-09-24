@@ -5,3 +5,5 @@ description: "Every console feature now gets a trailer set in three styles: acti
 link: https://papercompute.com/docs/paper/console/
 tags: [video, demos, marketing]
 ---
+
+![Title plate from the action-movie cut of the digest trailer: THE DIGEST, this week on your dashboard](/assets/images/changelog/product-trailers.png)

@@ -5,3 +5,5 @@ description: "I gave my own Claude Code month the Spotify Wrapped treatment: 282
 link: https://papercompute.com/docs/paper/console/insights/
 tags: [session-data, visualization, fun]
 ---
+
+!['My Agent Personality Type: The Terminal Native' share card from Agent Wrapped, August 2026](/assets/images/changelog/agent-wrapped-august.png)
