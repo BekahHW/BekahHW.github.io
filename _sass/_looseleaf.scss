@@ -1111,7 +1111,7 @@ a.btn.ghost:hover {
 
 .changelog-entry__body img {
   display: block;
-  max-width: min(480px, 100%);
+  max-width: unquote("min(480px, 100%)");
   height: auto;
   margin: 4px 0 10px;
 }
