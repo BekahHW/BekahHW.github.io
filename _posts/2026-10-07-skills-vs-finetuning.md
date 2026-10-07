@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Skills vs. fine-tuning (or, why my kids are terrible at putting away laundry)"
-date: 2026-08-07
+date: 2026-10-07
 author: Bekah
 tags: [AI, Learning, Parenting]
 description: "Exploring the difference between skills and fine-tuning through the lens of parenting and AI."
@@ -10,7 +10,8 @@ description: "Exploring the difference between skills and fine-tuning through th
 With four kids, laundry is one of those things that is never really done. There is always a basket somewhere, clean clothes waiting to be folded, dirty clothes that made it *near* the dirty clothes basket. And it wouldn't be a week in our house without a random single sock in the middle of the floor.
 
 When I tell one of my kids, “Put away your laundry,” I know what I mean. However, that does not mean they know what I mean.
-![laundry piled on top of a single drawer](image.png)
+
+![laundry piled on top of a single drawer](/assets/images/posts/2026/laundry-drawer.jpg)
 
 Apparently, my 12 year old interprets “put away your laundry” as:
 1. Pick up the entire pile of clothes.
