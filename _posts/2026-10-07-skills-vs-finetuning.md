@@ -94,27 +94,9 @@ There’s another parenting problem here. Let’s say I’m extremely committed 
 
 So they learn the lesson very, very well. Now one of them spends forty-five minutes searching for a permission slip because asking me would mean admitting they hadn’t looked hard enough. That’s not really the behavior I wanted either. I want persistence, but I accidentally taught reluctance to ask for help.
 
-Fine-tuning can work the same way.You’re not just teaching individual answers. You’re shifting tendencies. Push too hard toward caution and the model might stop taking reasonable action.
+Fine-tuning can work the same way. You’re not just teaching individual answers. You’re shifting tendencies. Push too hard toward caution and the model might stop taking reasonable action.
 Push too hard toward autonomy and it might stop asking when it should. Teach it to avoid one failure mode and you can accidentally create another.
 
 So the goal isn’t just collecting examples of things the agent did wrong. It’s figuring out what behavior you actually want instead. Skills are great when we know the process and can write it down. Prompts are great when we need to give the model instructions right now and we'll probably never need to repeat them again.
 
 Fine-tuning is interesting when we keep seeing the same behavioral pattern across different kinds of work and we want the better behavior to become the default. Sometimes the answer is a better checklist. Sometimes it’s a better instruction. And sometimes you realize you’ve explained how to put away the laundry fifty times and maybe it’s time for the lesson to stick.
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-ChatGPT can make mistakes. Check important info.
