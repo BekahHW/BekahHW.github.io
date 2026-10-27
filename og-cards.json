@@ -1,0 +1,20 @@
+---
+layout: null
+sitemap: false
+---
+{% comment %}
+  Manifest read by scripts/og-cards.mjs after the Jekyll build.
+  One entry per post that needs a generated social card.
+{% endcomment %}
+[
+{% assign card_posts = site.posts | where_exp: "post", "post.featured_image == nil" | where_exp: "post", "post.image == nil" %}
+{% for post in card_posts %}
+  {
+    "slug": {{ post.url | slugify | jsonify }},
+    "title": {{ post.title | strip_html | jsonify }},
+    "description": {{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 180 | jsonify }},
+    "date": {{ post.date | date: "%B %-d, %Y" | jsonify }},
+    "tags": {{ post.tags | slice: 0, 3 | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

@@ -148,3 +148,6 @@ exclude:
   - node_modules
   - vendor
   - site-refresh
+  - scripts
+  - package.json
+  - package-lock.json
