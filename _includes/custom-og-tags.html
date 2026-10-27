@@ -1,39 +1,48 @@
 {% comment %}
   Custom Open Graph and Twitter Card meta tags
-  This generates title-based cards for posts without featured_image
-  Uses og-image.vercel.app to generate cards with post titles
+  Posts without a featured_image or image get a generated looseleaf card,
+  built after the Jekyll build by scripts/og-cards.mjs (see og-cards.json)
 {% endcomment %}
 
+{% assign site_root = site.production_url | append: "/" | replace: "//", "/" | replace: ":/", "://" %}
+
 {% if page.featured_image %}
-  {% comment %} Use the post's featured image {% endcomment %}
-  {% assign og_image = page.featured_image | prepend: site.baseurl | prepend: site.production_url %}
+  {% assign og_image = page.featured_image %}
 {% elsif page.image %}
-  {% comment %} Use page.image if set {% endcomment %}
-  {% assign og_image = page.image | prepend: site.baseurl | prepend: site.production_url %}
+  {% assign og_image = page.image %}
+{% elsif page.collection == "posts" and page.title %}
+  {% assign og_image = page.url | slugify | prepend: "/assets/images/og/" | append: ".png" %}
 {% else %}
-  {% comment %} Generate dynamic OG image with post title {% endcomment %}
-  {% if page.layout == "post" and page.title %}
-    {% comment %} Use og-image service to generate a card with the title {% endcomment %}
-    {% assign encoded_title = page.title | url_encode %}
-    {% comment %} Clean design with your brand name {% endcomment %}
-    {% assign og_image = "https://og-image.vercel.app/" | append: encoded_title | append: ".png?theme=light&md=1&fontSize=75px&widths=800&heights=400" %}
-  {% else %}
-    {% comment %} Use default site image {% endcomment %}
-    {% assign og_image = site.image | prepend: site.baseurl | prepend: site.production_url %}
-  {% endif %}
+  {% assign og_image = site.image %}
 {% endif %}
+{% unless og_image contains "://" %}
+  {% assign og_image = og_image | prepend: site.baseurl | prepend: site_root | replace: ".com//", ".com/" %}
+{% endunless %}
+
+{% assign og_title = page.title | default: site.title | strip_html | escape %}
+{% assign og_description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 200 | escape %}
+{% assign og_url = page.url | replace: "index.html", "" | prepend: site_root | replace: ".com//", ".com/" %}
 
 <!-- Open Graph Meta Tags -->
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:type" content="{% if page.collection == "posts" %}article{% else %}website{% endif %}" />
+<meta property="og:title" content="{{ og_title }}" />
+<meta property="og:description" content="{{ og_description }}" />
+<meta property="og:url" content="{{ og_url }}" />
 <meta property="og:image" content="{{ og_image }}" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="{{ page.title | default: site.name }}" />
+<meta property="og:image:alt" content="{{ og_title }}" />
+{% if page.collection == "posts" %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+<meta property="article:author" content="{{ site.author.name }}" />
+{% endif %}
 
 <!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@{{ site.twitter }}" />
+<meta name="twitter:creator" content="@{{ site.author.twitter }}" />
+<meta name="twitter:title" content="{{ og_title }}" />
+<meta name="twitter:description" content="{{ og_description }}" />
 <meta name="twitter:image" content="{{ og_image }}" />
-<meta name="twitter:image:alt" content="{{ page.title | default: site.name }}" />
-{% if page.description %}
-<meta name="twitter:description" content="{{ page.description | strip_html | normalize_whitespace | truncate: 200 | escape }}" />
-{% elsif page.excerpt %}
-<meta name="twitter:description" content="{{ page.excerpt | strip_html | normalize_whitespace | truncate: 200 | escape }}" />
-{% endif %}
+<meta name="twitter:image:alt" content="{{ og_title }}" />
