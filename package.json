@@ -24,6 +24,6 @@
     "@fontsource/young-serif": "^5.3.0",
     "@resvg/resvg-js": "^2.6.2",
     "jest": "^30.4.2",
-    "satori": "^0.16.0"
+    "satori": "^0.33.5"
   }
 }
